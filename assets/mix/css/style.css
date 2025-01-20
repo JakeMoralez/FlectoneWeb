@@ -36,6 +36,8 @@ b {
 }
 .title-image {
     width: 14rem;
+    cursor: pointer;
+    border-radius: 100rem;
 }
 .title-text {
     color: var(--blue-color);

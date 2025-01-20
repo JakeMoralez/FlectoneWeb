@@ -3,8 +3,11 @@
     --main-bg-color: #1b1b1b;
     --secondary-bg-color: lch(from var(--main-bg-color) calc(l + 2) c h);
     --blue-color: #298dff;
+    --color-white: #fff;
+    --color-green: #1dbb61;
     --filter: opacity(40%);
     --filter-hover: opacity(60%);
     --hover-blue-color: lch(from var(--blue-color) calc(l + 4) c h);
     --hover-bg-color: lch(from var(--secondary-bg-color) calc(l + 2) c h);
+    --hover-green-color: lch(from var(--color-green) calc(l + 4) c h);
 }

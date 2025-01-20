@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlectoneMix</title>
-    <link rel="stylesheet" href="../../assets/chat/css/style.css" id="style">
+    <title>FlectoneChat</title>
+    <link rel="stylesheet" href="../../assets/chat/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/dark.css" id="themeHref">
     <link rel="shortcut icon" href="../../assets/images/logo.png" type="image/x-icon">
 </head>
-<body id="body">
-    <main>
-        <article class="title">
-            <img src="../../assets/images/logo.png" alt="" class="logo">
-            <h1>FlectoneChat</h1>
-            <H3>Simplified and augmented the server game by adding convenient features, but is closed</H3>
-            <span class="buttons">
-                <a class="modrinth-button" href="https://modrinth.com/plugin/flectonepulse" target="_blank">
-                    <img src="../../assets/chat/images/modrinth.png" alt="">Check out the new FlectonePulse
-                </a>
-            </span>
-            <div style="margin-top: .5vw;width: 15vw;display: flex;justify-content: center;align-items: center;">
-                <a href="../../chat" class="panel-button"><img class="panel-image" src="../../assets/images/translate.svg" alt=""></a>
-                <a href="https://discord.com/invite/3a4kdeuDzE" class="button link"><img class="link-img" src="../../assets/images/discord.png" alt=""></a>
-                <a href="https://www.youtube.com/@thefaser" class="button link"><img class="link-img" src="../../assets/images/youtube.png" alt=""></a>
-                <a href="https://github.com/Flectone/" class="button link"><img class="link-img" src="../../assets/images/github.png" alt=""></a>
+<body>
+<main class="main">
+    <article class="title">
+        <img class="title-image" src="../../assets/images/logo.png" alt="logo" onclick="window.open('../../', '_self')">
+        <h1 class="title-text">FlectoneChat</h1>
+        <h3 class="title-description">Simplified and augmented the server game by adding convenient features, but is closed</h3>
+        <a class="title-button" href="https://modrinth.com/plugin/flectonepulse"><h4>Check out the new FlectonePulse</h4></a>
+        <div class="panel">
+            <a class="panel-button" href="https://discord.flectone.net"><img class="panel-image" src="../../assets/images/discord.png" alt=""></a>
+            <a class="panel-button" href="https://github.com/Flectone/"><img class="panel-image" src="../../assets/images/github.png" alt=""></a>
+            <a class="panel-button" href="https://www.youtube.com/@thefaser"><img class="panel-image" src="../../assets/images/youtube.png" alt=""></a>
+            <a class="panel-button" href="../../chat"><img class="panel-image" src="../../assets/images/translate.svg" alt=""></a>
+            <a class="panel-button" onclick="switchLinkElement('../../assets/css/dark.css', '../../assets/css/light.css')"><img class="panel-image" src="../../assets/images/sun.svg" alt=""></a>
+        </div>
+    </article>
+    <article class="overview" id="overview">
+        <div class="example-image">
+            <div class="blur"></div>
+            <div class="arrows">
+                <button class="arrow" id="left" onclick="left()"><img src="../../assets/chat/images/left.png" alt=""></button>
+                <button class="arrow" id="right" onclick="right()"><img src="../../assets/chat/images/right.png" alt=""></button>
             </div>
-        </article>
-        <article class="overview" id="overview">
-            <div class="example">
-                <div class="blur"></div>
-                <div class="arrows">
-                    <button class="arrow" id="left" onclick="left()"><img src="../../assets/chat/images/left.png" alt=""></button>
-                    <button class="arrow" id="right" onclick="right()"><img src="../../assets/chat/images/right.png" alt=""></button>
-                </div>
-                <img src="" alt="" class="img">
-                <div class="description">
-                    <h2 id="description">Chat bubble</h2>
-                </div>
-                <div class="wiki">
-                    <h2>It's all in <a href="https://flectone.net/en/pulse/" target="_blank">FlectonePulse</a></h2>
-                </div>
+            <img src="" alt="" class="img">
+            <div class="description">
+                <h2 id="description">Chat bubble</h2>
             </div>
-        </article>
-    </main>
-    <script src="../../assets/chat/script/example-en.js"></script>
+            <div class="wiki">
+                <h2>It's all in <a href="https://flectone.net/pulse/" target="_blank">FlectonePulse</a></h2>
+            </div>
+        </div>
+    </article>
+</main>
+<script src="../../assets/chat/script/example-en.js"></script>
+<script src="../../assets/mix/js/theme.js"></script>
 </body>
 </html>
+
