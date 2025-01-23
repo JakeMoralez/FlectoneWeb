@@ -1,5 +1,5 @@
 let img = document.querySelector(".img");
-let example = document.querySelector(".example");
+let example = document.querySelector(".example-image");
 let value = 1;
 let max = 6;
 let description = document.querySelector("#description")
@@ -13,32 +13,32 @@ function right() {
         case 1: 
         description.innerText = "Chat bubble";
         description.setAttribute('style', 'opacity: 1;')
-        img.setAttribute("style", 'width: 19vw')
+        img.setAttribute("style", 'width: 19rem')
         break
 
         case 2: 
         description.innerText = "Information about the item in chat";
-        img.setAttribute("style", 'width: 17vw')
+        img.setAttribute("style", 'width: 17rem')
         break
 
         case 3: 
         description.innerText = "Spoiler";
-        img.setAttribute("style", 'width: 29vw')
+        img.setAttribute("style", 'width: 29rem')
         break
 
         case 4: 
         description.innerText = "Changing the chat color";
-        img.setAttribute("style", 'width: 40vw')
+        img.setAttribute("style", 'width: 40rem')
         break
 
         case 5: 
         description.innerText = "Signing of items";
-        img.setAttribute("style", 'width: 35vw')
+        img.setAttribute("style", 'width: 35rem')
         break
 
         case 6: 
         description.innerText = "Markers";
-        img.setAttribute("style", 'width: 38vw')
+        img.setAttribute("style", 'width: 38rem')
         break
             
     }
@@ -56,33 +56,33 @@ function left() {
 
     switch (value) {
         case 1: 
-        description.innerText = "Чат над головой";
-        img.setAttribute("style", 'width: 19vw')
+        description.innerText = "Chat bubble";
+        img.setAttribute("style", 'width: 19rem')
         break
 
         case 2: 
-        description.innerText = "Информация о вещи в чате";
-        img.setAttribute("style", 'width: 17vw')
+        description.innerText = "Information about the item in chat";
+        img.setAttribute("style", 'width: 17rem')
         break
 
         case 3: 
-        description.innerText = "Спойлер";
-        img.setAttribute("style", 'width: 29vw')
+        description.innerText = "Spoiler";
+        img.setAttribute("style", 'width: 29rem')
         break
 
         case 4: 
-        description.innerText = "Смена цвета чата";
-        img.setAttribute("style", 'width: 40vw')
+        description.innerText = "Changing the chat color";
+        img.setAttribute("style", 'width: 40rem')
         break
 
         case 5: 
-        description.innerText = "Подписание предметов";
-        img.setAttribute("style", 'width: 35vw')
+        description.innerText = "Signing of items";
+        img.setAttribute("style", 'width: 35rem')
         break
 
         case 6: 
-        description.innerText = "Метки";
-        img.setAttribute("style", 'width: 38vw')
+        description.innerText = "Markers";
+        img.setAttribute("style", 'width: 38rem')
         break
     }
 
@@ -90,5 +90,5 @@ function left() {
     example.setAttribute("style", `background-image: url(../../assets/chat/images/${value}.gif);`);
 }
 
-img.setAttribute("src", `./assets/chat/images/${value}.gif`);
+img.setAttribute("src", `../../assets/chat/images/${value}.gif`);
 example.setAttribute("style", `background-image: url(../../assets/chat/images/${value}.gif);`);
