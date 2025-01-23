@@ -1,16 +1,14 @@
-# Достижение
-Путь `localizations > en_us.yml > message.advancement`
+<!--@include: @/parts/module/message/advancement.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.advancement`
 
-## Пояснение
-Сообщение при получении достижения игроком
-![task](/task.png)
+<!--@include: @/parts/module/message/advancement.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.advancement>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 advancement:
   task:
@@ -30,35 +28,6 @@ advancement:
     one-to-one: "<fcolor:1>🌠 Granted the advancement <fcolor:2><advancement></fcolor:2> to <display_name>"
 ```
 
-## Параметры
+<!--@include: @/parts/module/message/advancement.md#parameters-->
+<!--@include: @/parts/module/message/advancement.md#localization-->
 
-- [Сообщения](/docs/message/advancement/)
-- [Права](/docs/permission/message/advancement/)
-
-### `task`
-
-Сообщение при получении обычного достижения
-![task](/task.png)
-
-### `goal`
-
-Сообщение при достижении цели
-![goal](/goal.png)
-
-### `challenge`
-
-Сообщение при завершении испытания
-![challenge](/challenge.png)
-
-### `revoke`
-
-Сообщение при использовании `/advancement revoke`
-
-### `grant`
-- По умолчанию:
-```yaml
-many-to-one: "<fcolor:1>🌠 Granted <fcolor:2><number></fcolor:2> advancements to <display_name>"
-one-to-one: "<fcolor:1>🌠 Granted the advancement <fcolor:2><advancement></fcolor:2> to <display_name>"
-```
-
-Сообщение при использовании `/advancement grant`

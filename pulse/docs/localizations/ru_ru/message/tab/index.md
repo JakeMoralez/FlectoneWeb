@@ -1,5 +1,6 @@
-# Таб
-Путь `localizations > ru_ru.yml > message.tab.*`
+<!--@include: @/parts/module/message/tab.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.tab.*`
 
-## Пояснение
-Категория, отвечающая за сообщения в ТАБе
+<!--@include: @/parts/module/message/tab.md#explanation-->
+
+<!--@include: @/parts/module/message/tab.md#parameters-->

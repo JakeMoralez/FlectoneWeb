@@ -1,32 +1,20 @@
-# Комманда /clearmail
-Путь `localizations > ru_ru.yml > command.clearmail`
+<!--@include: @/parts/module/command/clearmail.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.clearmail`
 
-## Пояснение
-Сообщения для комманды `/clearmail`
-![command clearmail](/commandclearmail.png)
+<!--@include: @/parts/module/command/clearmail.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.clearmail>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 clearmail:
   null-mail: "<color:#ff7171><b>⁉</b> Письма не найдено"
   format: "<fcolor:2>✉ [УДАЛЕНО] Письмо #<id> для <display_name> » <fcolor:1><message>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/clearmail/)
-- [Права](/docs/permission/command/clearmail/)
-
-### `null-mail`
-
-Сообщение, если введённое письмо не найдено
-
-### `format`
-
-Формат сообщения, которое будет отправлено
+<!--@include: @/parts/module/command/clearmail.md#parameters-->
+<!--@include: @/parts/module/command/clearmail.md#localization-->
 

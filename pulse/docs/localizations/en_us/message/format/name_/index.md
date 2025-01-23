@@ -1,16 +1,14 @@
-# Имя
-Путь `localizations > en_us.yml > message.format.name`
+<!--@include: @/parts/module/message/format/name_.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.format.name`
 
-## Пояснение
-Категория, отвечающая за сообщения связанные с ником игрока
-- [При наведении](/docs/localizations/en_us/player/name/hover/)
+<!--@include: @/parts/module/message/format/name_.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.format.name>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 name-:
   display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Write to <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
@@ -20,28 +18,5 @@ name-:
   suffix: "<afk_suffix><vault_suffix>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/format/name/)
-- [Права](/docs/permission/message/format/name/)
-
-### `display`
-
-Отвечает за имя игрока
-![name display](/namedisplay.png)
-
-### `entity`
-
-Отвечает за имя сущности
-
-### `unknown`
-
-Отвечает за неизвестное имя
-
-### `prefix`
-
-Префикс, которой отображается у команды, если включен ник
-
-### `suffix`
-
-Суффикс, которой отображается у команды, если включен ник
+<!--@include: @/parts/module/message/format/name_.md#parameters-->
+<!--@include: @/parts/module/message/format/name_.md#localization-->

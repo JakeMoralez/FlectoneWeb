@@ -1,31 +1,19 @@
-# Спойлер
-Путь `localizations > ru_ru.yml > message.format.spoiler`
+<!--@include: @/parts/module/message/format/spoiler.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.format.spoiler`
 
-## Пояснение
-Сообщения для спойлера
-![spoiler](/spoiler.png)
+<!--@include: @/parts/module/message/format/spoiler.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.format.spoiler>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 spoiler:
   symbol: "█"
   hover: "<fcolor:2><message>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/format/spoiler/)
-- [Права](/docs/permission/message/format/spoiler/)
-
-### `symbol`
-
-Символ, на который заменяется каждая буква
-
-### `hover`
-
-Сообщение, которое показывается при наведении
+<!--@include: @/parts/module/message/format/spoiler.md#parameters-->
+<!--@include: @/parts/module/message/format/spoiler.md#localization-->

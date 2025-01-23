@@ -1,30 +1,21 @@
-# Комманда /me
-Путь `localizations > ru_ru.yml > command.me`
+<!--@include: @/parts/module/command/me.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.me`
 
-## Пояснение
-Сообщения для комманды `/me`
-![command me](/commandme.png)
+<!--@include: @/parts/module/command/me.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.me>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 me:
   format: "<fcolor:1>✎ <display_name> <message>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/me/)
-- [Права](/docs/permission/command/me/)
-
-### `format`
-
-Формат сообщения, которое будет отправлено
-![command me](/commandme.png)
+<!--@include: @/parts/module/command/me.md#parameters-->
+<!--@include: @/parts/module/command/me.md#localization-->
 
 
 

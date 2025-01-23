@@ -1,16 +1,14 @@
-# Комманда /helper
-Путь `localizations > ru_ru.yml > command.helper`
+<!--@include: @/parts/module/command/helper.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.helper`
 
-## Пояснение
-Сообщения для комманды `/helper`
-![command helper](/commandhelper.png)
+<!--@include: @/parts/module/command/helper.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.helper>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 helper:
   null-helper: "<color:#ff7171><b>⁉</b> Сейчас нет людей, кто бы смог помочь"
@@ -18,20 +16,6 @@ helper:
   player: "<fcolor:2>👤 Запрос отправлен, ожидай ответа"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/helper/)
-- [Права](/docs/permission/command/helper/)
-
-### `null-helper`
-
-Сообщение, если на сервере нет людей, которые смогут помочь
-
-### `global`
-
-Сообщение для тех, кто должен помочь
-
-### `player`
-
-Сообщение для игрока
+<!--@include: @/parts/module/command/helper.md#parameters-->
+<!--@include: @/parts/module/command/helper.md#localization-->
 

@@ -1,16 +1,14 @@
-# Комманда /mutelist
-Путь `localizations > ru_ru.yml > command.mutelist`
+<!--@include: @/parts/module/command/mutelist.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.mutelist`
 
-## Пояснение
-Сообщения для комманды `/mutelist`
-![command mutelist](/commandmutelist.png)
+<!--@include: @/parts/module/command/mutelist.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.mutelist>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 mutelist:
   empty: "<color:#98FB98>☺ Муты не найдены"
@@ -26,54 +24,6 @@ mutelist:
     footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/mutelist/)
-- [Права](/docs/permission/command/mutelist/)
-
-### `empty`
-
-Сообщение, если список игроков с мутами пуст
-
-### `null-page`
-
-Сообщение, если введённая страница не существует
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `global`
-
-::: details Сообщения для глобальных мутов
-
-#### `header`
-
-Верхняя часть сообщения списка
-
-#### `line`
-
-Формат каждого мута из списка
-
-#### `footer`
-
-Нижняя часть сообщения списка
-:::
-
-### `player`
-
-::: details Сообщения для мутов игрока
-
-#### `header`
-
-Верхняя часть сообщения списка
-
-#### `line`
-
-Формат каждого мута из списка
-
-#### `footer`
-
-Нижняя часть сообщения списка
-:::
+<!--@include: @/parts/module/command/mutelist.md#parameters-->
+<!--@include: @/parts/module/command/mutelist.md#localization-->
 

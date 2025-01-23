@@ -1,16 +1,14 @@
-# Комманда /flectonepulse
-Путь `localizations > en_us.yml > command.flectonepulse`
+<!--@include: @/parts/module/command/flectonepulse.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.flectonepulse`
 
-## Пояснение
-Сообщения для комманды `/flectonepulse`
-![command flectonepulse](/commandflectonepulse.png)
+<!--@include: @/parts/module/command/flectonepulse.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.flectonepulse>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 flectonepulse:
   format-false: "<color:#ff7171>★ An has error occurred while reloading"
@@ -18,20 +16,6 @@ flectonepulse:
   format-true-text: "<fcolor:2>★ IMPORTANT! <br>Only texts have been updated, for a FULL reload you need to use: <br><fcolor:1>/flectonepulse reload"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/flectonepulse/)
-- [Права](/docs/permission/command/flectonepulse/)
-
-### `format-false`
-
-Сообщение при возникновении ошибки
-
-### `format-true`
-
-Формат сообщения, которое будет отправлено при перезагрузке всего `FlectonePulse`
-
-### `format-true-text`
-
-Форма сообщения, которое будет отправлено при перезагрузке текста
+<!--@include: @/parts/module/command/flectonepulse.md#parameters-->
+<!--@include: @/parts/module/command/flectonepulse.md#localization-->
 

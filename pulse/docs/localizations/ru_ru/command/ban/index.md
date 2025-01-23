@@ -1,16 +1,14 @@
-# Комманда /ban
-Путь `localizations > ru_ru.yml > command.ban`
+<!--@include: @/parts/module/command/ban.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.ban`
 
-## Пояснение
-Сообщения для комманды `/ban`
-![command ban](/commandban.png)
+<!--@include: @/parts/module/command/ban.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.ban>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 ban:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -22,41 +20,6 @@ ban:
   connection-attempt: "<color:#ff7171>🔒 Заблокированный <fcolor:2><player></fcolor> попытался подключиться <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/ban/)
-- [Права](/docs/permission/command/ban/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `null-time`
-
-Сообщение, если введено невозможное время
-
-#### `reasons`
-
-Список с ключами и значениями, где ключом является слово, а значением конкретная причина
-
-::: tip Можно вписывать свои причины, например
-```yaml
-random_kek: "Random reason"
-```
-Тогда если я напишу `/ban player 1d random_kek`, то причиной будет `Random reason`
-
-Если причина не указана, будет использоваться `default`
-:::
-
-#### `server`
-
-Сообщение для всех
-
-#### `person`
-
-Сообщение для игрока
-
-#### `connection-attempt`
-
-Сообщение, если заблокированный игрок пытался подключиться
+<!--@include: @/parts/module/command/ban.md#parameters-->
+<!--@include: @/parts/module/command/ban.md#localization-->
 

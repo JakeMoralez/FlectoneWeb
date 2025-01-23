@@ -1,15 +1,14 @@
-# Чат
-Путь `localizations > en_us.yml > message.chat`
+<!--@include: @/parts/module/message/chat.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.chat`
 
-## Пояснение
-Сообщения при использовании чата игроком
+<!--@include: @/parts/module/message/chat.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.chat>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 chat:
   null-chat: "<color:#ff7171><b>⁉</b> Chat is disabled on this server"
@@ -19,19 +18,5 @@ chat:
     local: "<display_name><fcolor:3>: <message>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/chat/)
-- [Права](/docs/permission/message/chat/)
-
-### `null-chat`
-
-Сообщение, если в чат ничего не удалось отправить
-
-### `null-recipient`
-
-Сообщение, если никто не увидел сообщение игрока
-
-### `types`
-
-Список чатов и их формат
+<!--@include: @/parts/module/message/chat.md#parameters-->
+<!--@include: @/parts/module/message/chat.md#localization-->

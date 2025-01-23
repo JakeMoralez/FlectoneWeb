@@ -1,26 +1,18 @@
-# Правое нажатие
-Путь `localizations > en_us.yml > message.contact.rightclick`
+<!--@include: @/parts/module/message/contact/rightclick.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.contact.rightclick`
 
-## Пояснение
-Сообщения при нажатии на игрока
-![right click](/rightclick.png)
+<!--@include: @/parts/module/message/contact/rightclick.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.contact.rightclick>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 rightclick:
   format: "<fcolor:1>◁ <display_name> ▷"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/contact/rightclick/)
-- [Права](/docs/permission/message/contact/rightclick/)
-
-### `format`
-
-Сообщение, которое будет отправлено игроку, нажавшему на другого игрока
+<!--@include: @/parts/module/message/contact/rightclick.md#parameters-->
+<!--@include: @/parts/module/message/contact/rightclick.md#localization-->

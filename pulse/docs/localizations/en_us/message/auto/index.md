@@ -1,16 +1,14 @@
-# Автоматическое
-Путь `localizations > en_us.yml > message.auto`
+<!--@include: @/parts/module/message/auto.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.auto`
 
-## Пояснение
-Автоматическое сообщение раз в какой-то промежуток времени
-![auto](/auto.png)
+<!--@include: @/parts/module/message/auto.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.auto>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 auto:
   values:
@@ -20,11 +18,5 @@ auto:
     - "<br><fcolor:1>◇ This server uses <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/auto/)
-- [Права](/docs/permission/message/auto/)
-
-### `values`
-
-Список автоматических сообщений
+<!--@include: @/parts/module/message/auto.md#parameters-->
+<!--@include: @/parts/module/message/auto.md#localization-->

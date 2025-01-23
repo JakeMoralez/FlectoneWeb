@@ -1,16 +1,14 @@
-# Комманда /maintenance
-Путь `localizations > ru_ru.yml > command.maintenace`
+<!--@include: @/parts/module/command/maintenance.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.maintenace`
 
-## Пояснение
-Сообщения для комманды `/maintenance`
-![command maintenance](/commandmaintenance.png)
+<!--@include: @/parts/module/command/maintenance.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.maintenance>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 maintenance:
   not: "<color:#ff7171><b>⁉</b> Технические работы не идут"
@@ -22,35 +20,5 @@ maintenance:
   format-false: "<fcolor:1>★ Ты <fcolor:2>выключил</fcolor:2> технические работы на сервере"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/maintenance/)
-- [Права](/docs/permission/command/maintenance/)
-
-### `not`
-
-Сообщение при попытке отключения технических работ, если они не включены
-
-### `already`
-
-Сообщение при попытке включения технических работ, если они включены
-
-### `server-description`
-
-Сообщения при просмотре сервера, если включены технические работы
-
-### `server-version`
-
-Название версии сервера, если включены технические работы
-
-### `kick`
-
-Причина исключения с сервера при включении технических работ
-
-### `format-true`
-
-Сообщение при включении технических работ
-
-### `format-false`
-
-Сообщение при отключении технических работ
+<!--@include: @/parts/module/command/maintenance.md#parameters-->
+<!--@include: @/parts/module/command/maintenance.md#localization-->

@@ -1,16 +1,14 @@
-# Комманда /unwarn
-Путь `localizations > en_us.yml > command.unwarn`
+<!--@include: @/parts/module/command/unwarn.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.unwarn`
 
-## Пояснение
-Сообщения для комманды `/unwarn`
-![command unwarn](/commandunwarn.png)
+<!--@include: @/parts/module/command/unwarn.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.unwarn>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 unwarn:
   null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
@@ -18,19 +16,5 @@ unwarn:
   format: "<color:#98FB98>🔓 <fcolor:2><moderator></fcolor> unwarned the player <fcolor:2><player></fcolor>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/unwarn/)
-- [Права](/docs/permission/command/unwarn/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `not-warned`
-
-Сообщение, если введённый игрок не имеет предупреждения
-
-### `format`
-
-Сообщение при снятии предупреждения
+<!--@include: @/parts/module/command/unwarn.md#parameters-->
+<!--@include: @/parts/module/command/unwarn.md#localization-->

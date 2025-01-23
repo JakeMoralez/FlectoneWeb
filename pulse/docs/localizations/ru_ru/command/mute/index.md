@@ -1,16 +1,14 @@
-# Комманда /mute
-Путь `localizations > ru_ru.yml > command.mute`
+<!--@include: @/parts/module/command/mute.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.mute`
 
-## Пояснение
-Сообщения для комманды `/mute`
-![command mute](/commandmute.png)
+<!--@include: @/parts/module/command/mute.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.mute>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 mute:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -21,37 +19,6 @@ mute:
   person: "<color:#ff7171>🔒 Ты замучен, осталось <time_left>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/mute/)
-- [Права](/docs/permission/command/mute/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `null-time`
-
-Сообщение, если введено невозможное время
-
-### `reasons`
-
-Список с ключами и значениями, где ключом является слово, а значением конкретная причина
-
-::: tip Можно вписывать свои причины, например
-```yaml
-random_kek: "Random reason"
-```
-Тогда если я напишу `/mute player 1d random_kek`, то причиной будет `Random reason`
-
-Если причина не указана, будет использоваться `default`
-:::
-
-### `server`
-
-Сообщение для всех
-
-### `person`
-
-Сообщение для игрока
+<!--@include: @/parts/module/command/mute.md#parameters-->
+<!--@include: @/parts/module/command/mute.md#localization-->
 

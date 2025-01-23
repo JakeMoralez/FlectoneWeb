@@ -1,16 +1,14 @@
-# Комманда /dice
-Путь `localizations > ru_ru.yml > command.dice`
+<!--@include: @/parts/module/command/dice.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.dice`
 
-## Пояснение
-Сообщения для комманды `/dice`
-![command dice](/commanddice.png)
+<!--@include: @/parts/module/command/dice.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.dice>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 dice:
   symbols:
@@ -23,16 +21,6 @@ dice:
   format: "<fcolor:1>✎ <display_name> кинул кубики <message> (<sum>)"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/dice/)
-- [Права](/docs/permission/command/dice/)
-
-### `symbols`
-
-Список индексов (выпавшее число) и символов (кубики)
-
-### `format`
-
-Формат сообщения, которое будет отправлено
+<!--@include: @/parts/module/command/dice.md#parameters-->
+<!--@include: @/parts/module/command/dice.md#localization-->
 

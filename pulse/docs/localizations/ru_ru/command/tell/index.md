@@ -1,16 +1,14 @@
-# Комманда /tell
-Путь `localizations > ru_ru.yml > command.tell`
+<!--@include: @/parts/module/command/tell.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.tell`
 
-## Пояснение
-Сообщения для комманды `/tell`
-![command tell](/commandtell.png)
+<!--@include: @/parts/module/command/tell.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.tell>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 tell:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -19,25 +17,7 @@ tell:
   myself: "<fcolor:2>✉ [Заметка] <fcolor:1><message>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/tell/)
-- [Права](/docs/permission/command/tell/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `sender`
-
-Сообщение для отправителя
-
-### `receiver`
-
-Сообщение для получателя
-
-### `myself`
-
-Сообщение для отправителя, если он и есть получатель т.е. для себя
+<!--@include: @/parts/module/command/tell.md#parameters-->
+<!--@include: @/parts/module/command/tell.md#localization-->
 
 

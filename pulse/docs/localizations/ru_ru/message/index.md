@@ -1,5 +1,6 @@
-# Русская локализация
-Файл `localizations > ru_ru.yml > message.*`
+<!--@include: @/parts/module/message.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.*`
 
-## Пояснение
-Локализация главных сообщений
+<!--@include: @/parts/module/message.md#explanation-->
+
+<!--@include: @/parts/module/message.md#parameters-->

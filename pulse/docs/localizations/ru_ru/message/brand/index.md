@@ -1,16 +1,14 @@
-# Бренд
-Путь `localizations > ru_ru.yml > message.brand`
+<!--@include: @/parts/module/message/brand.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.brand`
 
-## Пояснение
-Сообщения бренда сервера
-![brand](/brand.png)
+<!--@include: @/parts/module/message/brand.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.brand>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 brand:
   values:
@@ -18,18 +16,6 @@ brand:
     - "<aqua>Майнкрафт"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/brand/)
-- [Права](/docs/permission/message/brand/)
-
-### `values`
-
-Список сообщений для бренда
-
-::: warning ВАЖНО
-В сообщение можно вставлять только обычные цвета
-:::
-
-<!--@include: @/parts/color.md-->
+<!--@include: @/parts/module/message/brand.md#parameters-->
+<!--@include: @/parts/module/message/brand.md#localization-->
 

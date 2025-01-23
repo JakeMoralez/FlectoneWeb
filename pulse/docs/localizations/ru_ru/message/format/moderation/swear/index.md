@@ -1,26 +1,18 @@
-# Ругательство
-Путь `localizations > ru_ru.yml > message.format.moderation.swear
+<!--@include: @/parts/module/message/format/moderation/swear.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.format.moderation.swear`
 
-## Пояснение
-Форматирование упоминания
+<!--@include: @/parts/module/message/format/moderation/swear.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.format.moderation.swear>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 swear:
   symbol: "❤"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/format/moderation/swear/)
-- [Права](/docs/permission/message/format/moderation/swear/)
-
-### `symbol`
-
-Символ, которым заменяется каждая буква ругательства
-![swear](/swear.png)
+<!--@include: @/parts/module/message/format/moderation/swear.md#parameters-->
+<!--@include: @/parts/module/message/format/moderation/swear.md#localization-->

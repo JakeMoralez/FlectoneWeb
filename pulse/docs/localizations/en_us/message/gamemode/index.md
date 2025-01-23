@@ -1,16 +1,14 @@
-# Режим игры
-Путь `localizations > en_us.yml > message.gamemode`
+<!--@include: @/parts/module/message/gamemode.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.gamemode`
 
-## Пояснение
-Сообщение при использовании `/gamemode`
-![gamemode](/gamemode.png)
+<!--@include: @/parts/module/message/gamemode.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.gamemode>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 gamemode:
   self:
@@ -25,15 +23,5 @@ gamemode:
     spectator: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Spectator Mode"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/gamemode/)
-- [Права](/docs/permission/message/gamemode/)
-
-### `self`
-
-Сообщение при смене режима игры самому себе или получателю, когда его режим изменён
-
-### `multiple`
-
-Сообщение при смене режима игры другому игроку
+<!--@include: @/parts/module/message/gamemode.md#parameters-->
+<!--@include: @/parts/module/message/gamemode.md#localization-->

@@ -1,16 +1,14 @@
-# Комманда /chatsetting
-Путь `localizations > ru_ru.yml > command.chatsetting`
+<!--@include: @/parts/module/command/chatsetting.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.chatsetting`
 
-## Пояснение
-Сообщения для комманды `/chatsetting`
-![command chatsetting](/commandchatsetting.png)
+<!--@include: @/parts/module/command/chatsetting.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.chatsetting>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 chatsetting:
   no-permission: "<color:#ff7171><b>⁉</b> Нет разрешения на изменение этой настройки"
@@ -186,52 +184,6 @@ chatsetting:
         - "<color:#ff7171>Скрыты"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/chatsetting/)
-- [Права](/docs/permission/command/chatsetting/)
-
-### `no-permission`
-
-Сообщение, если для изменения настройки требуется определённое право
-
-### `disable`
-
-::: details Сообщения об отключении
-#### `you`
-
-Сообщение, если отправитель отключил комманду в `/chatsetting`
-
-#### `he`
-
-Сообщение, если получатель отключил комманду в `/chatsetting`
-
-#### `server`
-
-Сообщение, если сервер отключил комманду для `/chatsetting`
-
-:::
-
-### `header`
-
-Название для GUI
-
-### `settings`
-
-Список настроек и их сообщений, где:
-- Первая строчка - название предмета, если включено
-- Остальные строчки - описание предмета, если включено
-- Вторая строчка - название предмета, если выключено
-- Остальные строчки - описание предмета, если выключено
-
-::: tip Например возьмём `REPLY`
-```yaml
-# включено
-- - "<fcolor:2>Команда /reply" # название предмета
-  - "<color:#98FB98>Показывается" # описание
-# выключено
-- - "<fcolor:2>Команда /reply" # название предмета
-  - "<color:#ff7171>Скрыта" # описание
-```
-:::
+<!--@include: @/parts/module/command/chatsetting.md#parameters-->
+<!--@include: @/parts/module/command/chatsetting.md#localization-->
 

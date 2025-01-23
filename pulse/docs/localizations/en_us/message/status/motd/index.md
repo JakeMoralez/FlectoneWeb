@@ -1,16 +1,14 @@
-# Описание
-Путь `localizations > en_us.yml > message.status.motd`
+<!--@include: @/parts/module/message/status/motd.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.status.motd`
 
-## Пояснение
-Приветственные сообщения сервера
-![motd](/motd.png)
+<!--@include: @/parts/module/message/status/motd.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.status.motd>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 motd:
   values:
@@ -20,12 +18,6 @@ motd:
     - "<fcolor:1>Welcome to our server!"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/status/motd/)
-- [Права](/docs/permission/message/status/motd/)
-
-### `values`
-
-Список сообщений, которые будут показываться
+<!--@include: @/parts/module/message/status/motd.md#parameters-->
+<!--@include: @/parts/module/message/status/motd.md#localization-->
 

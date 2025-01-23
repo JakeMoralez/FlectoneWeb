@@ -1,33 +1,25 @@
-# Нижнее
-Путь `localizations > en_us.yml > message.tab.footer`
+<!--@include: @/parts/module/message/tab/footer.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.tab.footer`
 
-## Пояснение
-Сообщения, отвечающие за нижнюю часть ТАБа
-![footer](/footer.png)
+<!--@include: @/parts/module/message/tab/footer.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.tab.footer>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 footer:
   lists:
     - - " "
-      - "<fcolor:1>TPS <tps>, Online <online"
+      - "<fcolor:1>TPS <tps>, Online <online>"
       - " "
     - - " "
       - "<fcolor:1>Hello <fcolor:2><player></fcolor:2>!"
       - " "
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/tab/footer/)
-- [Права](/docs/permission/message/tab/footer/)
-
-### `lists`
-
-Список сообщений, где `- -` разделяет разные форматы
+<!--@include: @/parts/module/message/tab/footer.md#parameters-->
+<!--@include: @/parts/module/message/tab/footer.md#localization-->
 

@@ -1,32 +1,20 @@
-# Комманда /translateto
-Путь `localizations > ru_ru.yml > command.translateto`
+<!--@include: @/parts/module/command/translateto.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.translateto`
 
-## Пояснение
-Сообщения для комманды `/translateto`
-![command translateto](/commandtranslateto.png)
+<!--@include: @/parts/module/command/translateto.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.translateto>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 translateto:
   null-or-error: "<color:#ff7171><b>⁉</b> Ошибка, возможно ты указал неправильный язык"
   format: "<fcolor:1>📖 [<language>] <display_name> перевёл → <fcolor:2><message>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/translateto/)
-- [Права](/docs/permission/command/translateto/)
-
-### `null-or-error`
-
-Сообщение, если произошла ошибка при переводе
-
-### `format`
-
-Формат сообщения, которое будет отправлено
+<!--@include: @/parts/module/command/translateto.md#parameters-->
+<!--@include: @/parts/module/command/translateto.md#localization-->
 

@@ -1,27 +1,19 @@
-# Комманда /do
-Путь `localizations > ru_ru.yml > command.do`
+<!--@include: @/parts/module/command/do.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.do`
 
-## Пояснение
-Сообщения для комманды `/do`
-![command do](/commanddo.png)
+<!--@include: @/parts/module/command/do.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.do>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 do:
   format: "<fcolor:1>✎ <message> (<i><display_name></i>)"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/do/)
-- [Права](/docs/permission/command/do/)
-
-### `format`
-
-Формат сообщения, которое будет отправлено
+<!--@include: @/parts/module/command/do.md#parameters-->
+<!--@include: @/parts/module/command/do.md#localization-->
 

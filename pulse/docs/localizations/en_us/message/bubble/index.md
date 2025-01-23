@@ -1,26 +1,18 @@
-# Над головой
-Путь `localizations > en_us.yml > message.bubble`
+<!--@include: @/parts/module/message/bubble.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.bubble`
 
-## Пояснение
-Сообщения над головой при использовании чата игроком
-![bubble](/bubble.gif)
+<!--@include: @/parts/module/message/bubble.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.bubble>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 bubble:
   format: "<fcolor:3><message>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/bubble/)
-- [Права](/docs/permission/message/bubble/)
-
-### `format`
-
-Формат сообщения над головой
+<!--@include: @/parts/module/message/bubble.md#parameters-->
+<!--@include: @/parts/module/message/bubble.md#localization-->

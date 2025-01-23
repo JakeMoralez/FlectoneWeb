@@ -1,26 +1,18 @@
-# Отключение
-Путь `localizations > en_us.yml > message.quit`
+<!--@include: @/parts/module/message/quit.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.quit`
 
-## Пояснение
-Сообщения о том, что игрок отключился
-![quit](/quit.png)
+<!--@include: @/parts/module/message/quit.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.quit>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 quit:
   format: "<color:#ff4e4e>← <display_name>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/quit/)
-- [Права](/docs/permission/message/quit/)
-
-### `format`
-
-Сообщение при отключении с сервера
+<!--@include: @/parts/module/message/quit.md#parameters-->
+<!--@include: @/parts/module/message/quit.md#localization-->

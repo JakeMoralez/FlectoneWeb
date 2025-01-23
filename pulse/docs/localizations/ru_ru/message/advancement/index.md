@@ -1,16 +1,14 @@
-# Достижение
-Путь `localizations > ru_ru.yml > message.advancement`
+<!--@include: @/parts/module/message/advancement.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.advancement`
 
-## Пояснение
-Сообщение при получении достижения игроком
-![task](/task.png)
+<!--@include: @/parts/module/message/advancement.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.advancement>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 advancement:
   task:
@@ -30,30 +28,6 @@ advancement:
     one-to-one: "<fcolor:1>🌠 Достижение <fcolor:2><advancement></fcolor:2> выдано игроку <display_name>"
 ```
 
-## Параметры
+<!--@include: @/parts/module/message/advancement.md#parameters-->
+<!--@include: @/parts/module/message/advancement.md#localization-->
 
-- [Сообщения](/docs/message/advancement/)
-- [Права](/docs/permission/message/advancement/)
-
-### `task`
-
-Сообщение при получении обычного достижения
-![task](/task.png)
-
-### `goal`
-
-Сообщение при достижении цели
-![goal](/goal.png)
-
-### `challenge`
-
-Сообщение при завершении испытания
-![challenge](/challenge.png)
-
-### `revoke`
-
-Сообщение при использовании `/advancement revoke`
-
-### `grant`
-
-Сообщение при использовании `/advancement grant`

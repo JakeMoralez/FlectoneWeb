@@ -1,16 +1,14 @@
-# Комманда /unban
-Путь `localizations > ru_ru.yml > command.unban`
+<!--@include: @/parts/module/command/unban.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.unban`
 
-## Пояснение
-Сообщения для комманды `/unban`
-![command unban](/commandunban.png)
+<!--@include: @/parts/module/command/unban.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.unban>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 unban:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -18,19 +16,5 @@ unban:
   format: "<color:#98FB98>🔓 <fcolor:2><moderator></fcolor> разблокировал игрока <fcolor:2><player></fcolor>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/unban/)
-- [Права](/docs/permission/command/unban/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `not-banned`
-
-Сообщение, если введённый игрок не заблокирован
-
-### `format`
-
-Сообщение при разблокировке
+<!--@include: @/parts/module/command/unban.md#parameters-->
+<!--@include: @/parts/module/command/unban.md#localization-->

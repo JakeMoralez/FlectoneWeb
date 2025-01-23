@@ -1,30 +1,19 @@
-# Отключение
-Путь `localizations > ru_ru.yml > message.quit`
+<!--@include: @/parts/module/message/quit.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.quit`
 
-## Пояснение
-Сообщения о том, что игрок отключился
-![quit](/quit.png)
+<!--@include: @/parts/module/message/quit.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.quit>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 quit:
   format: "<color:#ff4e4e>← <display_name>"
   format-first-time: "<color:#ff4e4e>← <display_name> <fcolor:1>впервые вышел!"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/quit/)
-- [Права](/docs/permission/message/quit/)
-
-### `format`
-
-Сообщение при отключении с сервера
-
-### `format-first-time`
-Сообщение при первом отключении с сервера   
+<!--@include: @/parts/module/message/quit.md#parameters-->
+<!--@include: @/parts/module/message/quit.md#localization-->

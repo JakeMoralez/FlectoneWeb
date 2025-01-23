@@ -1,16 +1,14 @@
-# Верхнее
-Путь `localizations > ru_ru.yml > message.tab.header`
+<!--@include: @/parts/module/message/tab/header.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.tab.header`
 
-## Пояснение
-Сообщения, отвечающие за верхнюю часть ТАБа
-![header](/header.png)
+<!--@include: @/parts/module/message/tab/header.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.tab.header>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 header:
   lists:
@@ -22,12 +20,6 @@ header:
       - " "
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/tab/header/)
-- [Права](/docs/permission/message/tab/header/)
-
-### `lists`
-
-Список сообщений, где `- -` разделяет разные форматы
+<!--@include: @/parts/module/message/tab/header.md#parameters-->
+<!--@include: @/parts/module/message/tab/header.md#localization-->
 

@@ -1,16 +1,14 @@
-# Комманда /ball
-Путь `localizations > en_us.yml > command.ball`
+<!--@include: @/parts/module/command/ball.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.ball`
 
-## Пояснение
-Сообщения для комманды `/ball`
-![command ball](/commandball.png)
+<!--@include: @/parts/module/command/ball.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.ball>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 ball:
   format: "<color:#9370DB>❓ <display_name> asked: <message> <br>🔮 Ball answered: <u><answer></u>"
@@ -34,16 +32,6 @@ ball:
     - "Undeniably"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/ball/)
-- [Права](/docs/permission/command/ball/)
-
-### `format`
-
-Формат сообщения, которое будет отправлено
-
-### `answers`
-
-Список возможных ответов
+<!--@include: @/parts/module/command/ball.md#parameters-->
+<!--@include: @/parts/module/command/ball.md#localization-->
 

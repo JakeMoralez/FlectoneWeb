@@ -1,16 +1,14 @@
-# Комманда /warn
-Путь `localizations > en_us.yml > command.warn`
+<!--@include: @/parts/module/command/warn.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.warn`
 
-## Пояснение
-Сообщения для комманды `/warn`
-![command warn](/commandwarn.png)
+<!--@include: @/parts/module/command/warn.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.warn>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 warn:
   null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
@@ -21,37 +19,6 @@ warn:
   person: "<color:#ff7171>🔒 You are warned a <time>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/warn/)
-- [Права](/docs/permission/command/warn/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `null-time`
-
-Сообщение, если введено невозможное время
-
-### `reasons`
-
-Список с ключами и значениями, где ключом является слово, а значением конкретная причина
-
-::: tip Можно вписывать свои причины, например
-```yaml
-random_kek: "Random reason"
-```
-Тогда если я напишу `/warn player 1d random_kek`, то причиной будет `Random reason`
-
-Если причина не указана, будет использоваться `default`
-:::
-
-### `server`
-
-Сообщение для всех
-
-### `person`
-
-Сообщение для игрока
+<!--@include: @/parts/module/command/warn.md#parameters-->
+<!--@include: @/parts/module/command/warn.md#localization-->
 

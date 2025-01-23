@@ -1,16 +1,14 @@
-# Комманда /spy
-Путь `localizations > ru_ru.yml > command.spy`
+<!--@include: @/parts/module/command/_spy.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.spy`
 
-## Пояснение
-Сообщения для комманды `/spy`
-![command spy](/commandspy.gif)
+<!--@include: @/parts/module/command/_spy.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.spy>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 spy:
   format-true: "<fcolor:1>[👁] Ты <color:#98FB98>включил <fcolor:1>слежку"
@@ -18,20 +16,5 @@ spy:
   format-log: "<fcolor:1>[👁] <display_name> <color:#98FB98><action> <fcolor:1>→ <fcolor:2><message>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/spy/)
-- [Права](/docs/permission/command/spy/)
-
-### `format-true`
-
-Сообщение при включении слежки
-
-### `format-false`
-
-Сообщение при выключении слежки
-
-### `format-log`
-
-Формат сообщения, которое будет отправлено при слежке за действием
-
+<!--@include: @/parts/module/command/_spy.md#parameters-->
+<!--@include: @/parts/module/command/_spy.md#localization-->

@@ -1,16 +1,14 @@
-# Комманда /mail
-Путь `localizations > ru_ru.yml > command.mail`
+<!--@include: @/parts/module/command/mail.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.mail`
 
-## Пояснение
-Сообщения для комманды `/mail`
-![command mail](/commandmail.png)
+<!--@include: @/parts/module/command/mail.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.mail>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 mail:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -18,20 +16,6 @@ mail:
   receiver: "<fcolor:2>✉ Письмо от <display_name> » <fcolor:1><message>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/mail/)
-- [Права](/docs/permission/command/mail/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `sender`
-
-Сообщение для отправителя
-
-### `receiver`
-
-Сообщение для получателя
+<!--@include: @/parts/module/command/mail.md#parameters-->
+<!--@include: @/parts/module/command/mail.md#localization-->
 

@@ -1,28 +1,20 @@
-# Комманда /reply
-Путь `localizations > ru_ru.yml > command.reply`
+<!--@include: @/parts/module/command/_reply.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.reply`
 
-## Пояснение
-Сообщения для комманды `/reply`
-![command reply](/commandreply.png)
+<!--@include: @/parts/module/command/_reply.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.reply>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 reply:
   null-receiver: "<color:#ff7171><b>⁉</b> Некому отвечать"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/reply/)
-- [Права](/docs/permission/command/reply/)
-
-### `null-receiver`
-
-Сообщение, если получатель не найден
+<!--@include: @/parts/module/command/_reply.md#parameters-->
+<!--@include: @/parts/module/command/_reply.md#localization-->
 
 

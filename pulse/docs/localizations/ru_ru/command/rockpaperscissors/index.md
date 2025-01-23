@@ -1,16 +1,14 @@
-# Комманда /rockpaperscissors
-Путь `localizations > ru_ru.yml > command.rockpaperscissors`
+<!--@include: @/parts/module/command/rockpaperscissors.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.rockpaperscissors`
 
-## Пояснение
-Сообщения для комманды `/rockpaperscissors`
-![command rockpaperscissors](/commandrockpaperscissors.png)
+<!--@include: @/parts/module/command/rockpaperscissors.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.rockpaperscissors>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 rockpaperscissors:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -29,53 +27,7 @@ rockpaperscissors:
     rock: "камень"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/rockpaperscissors/)
-- [Права](/docs/permission/command/rockpaperscissors/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `null-game`
-
-Сообщение, если игры не существует
-
-### `wrong-move`
-
-Сообщение при невозможном ходе
-
-### `already`
-
-Сообщение, если игрок уже сделал ход
-
-### `myself`
-
-Сообщение, если игрок решил поиграть с самим собой
-
-### `sender`
-
-Сообщение для отправителя
-
-### `receiver`
-
-Сообщение для получателя
-
-### `format-move`
-
-Сообщение при ходе
-
-### `format-win`
-
-Сообщение при победе
-
-### `forma-draw`
-
-Сообщение при ничье
-
-### `strategies`
-
-Список стратегий и их названий
+<!--@include: @/parts/module/command/rockpaperscissors.md#parameters-->
+<!--@include: @/parts/module/command/rockpaperscissors.md#localization-->
 
 

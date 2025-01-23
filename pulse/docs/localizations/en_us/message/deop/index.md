@@ -1,26 +1,18 @@
-# Деоп
-Путь `localizations > en_us.yml > message.deop`
+<!--@include: @/parts/module/message/deop.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.deop`
 
-## Пояснение
-Сообщение при использовании `/deop`
-![deop](/deop.png)
+<!--@include: @/parts/module/message/deop.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.deop>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 deop:
   format: "<fcolor:1>🤖 Made <display_name> no longer a server operator"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/deop/)
-- [Права](/docs/permission/message/deop/)
-
-### `format`
-
-Сообщение, которое будет отправлено
+<!--@include: @/parts/module/message/deop.md#parameters-->
+<!--@include: @/parts/module/message/deop.md#localization-->

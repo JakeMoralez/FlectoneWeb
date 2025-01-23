@@ -1,16 +1,14 @@
-# Комманда /tictactoe
-Путь `localizations > ru_ru.yml > command.tictactoe`
+<!--@include: @/parts/module/command/tictactoe.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.tictactoe`
 
-## Пояснение
-Сообщения для комманды `/tictactoe`
-![command tictactoe](/commandtictactoe.png)
+<!--@include: @/parts/module/command/tictactoe.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.tictactoe>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 tictactoe:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -36,92 +34,6 @@ tictactoe:
   format-create: "<click:run_command:\"/tictactoe %d create\"><fcolor:1>☐ Есть предложение сыграть в крестики-нолики от <display_name>, принять? [+]"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/tictactoe/)
-- [Права](/docs/permission/command/tictactoe/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `myself`
-
-Сообщение, если введённый игрок пытается поиграть сам с собой
-
-### `wrong-game`
-
-Сообщение, если указанной игры не существует
-
-### `wrong-move`
-
-Сообщение, если такой ход невозможен
-
-### `wrong-by-player`
-
-Сообщение, если один из игроков, участвующий в игре, вышел
-
-### `symbols`
-
-::: details Сообщения для символов
-#### `empty`
-
-Формат сообщения для пустой клетки
-
-#### `first`
-
-Формат сообщения для клетки первого игрока
-
-#### `first-remove`
-
-Формат сообщения для удаления клетки первого игрока
-
-#### `first-win`
-
-Формат сообщения для победной клетки первого игрока
-
-#### `second`
-
-Формат сообщения для клетки второго игрока
-
-#### `second-remove`
-
-Формат сообщения для удаления клетки второго игрока
-
-#### `second-win`
-
-Формат сообщения для победной клетки второго игрока
-:::
-
-### `field`
-
-Формат сообщения для игрового поля
-
-### `current-move`
-
-Формат сообщения для информации о текущем ходе
-
-### `last-move`
-
-Форма сообщения для информации о прошлом ходе
-
-### `format-move`
-
-Формат сообщения для оповещения о ходе
-
-### `format-win`
-
-Сообщение при победе
-
-### `format-draw`
-
-Сообщение при ничье
-
-### `sender`
-
-Сообщение для отправителя при запросе
-
-### `receiver`
-
-Сообщение для получателя при запросе
+<!--@include: @/parts/module/command/tictactoe.md#parameters-->
+<!--@include: @/parts/module/command/tictactoe.md#localization-->
 

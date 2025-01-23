@@ -1,16 +1,14 @@
-# Комманда /banlist
-Путь `localizations > ru_ru.yml > command.banlist`
+<!--@include: @/parts/module/command/banlist.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.banlist`
 
-## Пояснение
-Сообщения для комманды `/banlist`
-![command banlist](/commandbanlist.png)
+<!--@include: @/parts/module/command/banlist.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.banlist>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 banlist:
   empty: "<color:#98FB98>☺ Блокировки не найдены"
@@ -26,58 +24,6 @@ banlist:
     footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/banlist/)
-- [Права](/docs/permission/command/banlist/)
-
-### `empty`
-
-Сообщение, если список заблокированных игроков пуст
-
-### `null-page`
-
-Сообщение, если введённая страница не существует
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `permanent-name`
-
-Сообщение для обозначения времени, если игрок заблокирован навсегда
-
-### `global`
-
-::: details Сообщения для глобальных блокировок
-
-#### `header`
-
-Верхняя часть сообщения списка
-
-#### `line`
-
-Формат каждого бана из списка
-
-#### `footer`
-
-Нижняя часть сообщения списка
-:::
-
-### `player`
-
-::: details Сообщения для блокировок игрока
-
-#### `header`
-
-Верхняя часть сообщения списка
-
-#### `line`
-
-Формат каждого бана из списка
-
-#### `footer`
-
-Нижняя часть сообщения списка
-:::
+<!--@include: @/parts/module/command/ban.md#parameters-->
+<!--@include: @/parts/module/command/ban.md#localization-->
 

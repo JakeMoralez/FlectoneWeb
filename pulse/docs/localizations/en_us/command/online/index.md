@@ -1,16 +1,14 @@
-# Комманда /online
-Путь `localizations > en_us.yml > command.online`
+<!--@include: @/parts/module/command/online.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.online`
 
-## Пояснение
-Сообщения для комманды `/online`
-![command online](/commandonline.png)
+<!--@include: @/parts/module/command/online.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.online>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 online:
   null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
@@ -20,29 +18,7 @@ online:
   format-total: "<fcolor:1>⌛ <display_name> <fcolor:1>has spent a total of <time> on server"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/online/)
-- [Права](/docs/permission/command/online/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `format-current`
-
-Сообщение, если введённый игрок на сервере
-
-### `format-first`
-
-Формат сообщения `/online first`, которое будет отправлено
-
-### `format-last`
-
-Формат сообщения `/online last`, которое будет отправлено
-
-### `format-total`
-
-Формат сообщения `/online total`, которое будет отправлено
+<!--@include: @/parts/module/command/online.md#parameters-->
+<!--@include: @/parts/module/command/online.md#localization-->
 
 

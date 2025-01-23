@@ -1,26 +1,18 @@
-# Оп
-Путь `localizations > ru_ru.yml > message.op`
+<!--@include: @/parts/module/message/op.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.op`
 
-## Пояснение
-Сообщение при использовании `/op`
-![op](/op.png)
+<!--@include: @/parts/module/message/op.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.op>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 op:
   format: "<fcolor:1>🤖 <display_name> назначен оператором сервера"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/op/)
-- [Права](/docs/permission/message/op/)
-
-### `format`
-
-Сообщение, которое будет отправлено
+<!--@include: @/parts/module/message/op.md#parameters-->
+<!--@include: @/parts/module/message/op.md#localization-->

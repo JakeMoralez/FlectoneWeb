@@ -1,16 +1,14 @@
-# Афк
-Путь `localizations > en_us.yml > message.contact.afk`
+<!--@include: @/parts/module/message/contact/afk.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.contact.afk`
 
-## Пояснение
-Сообщения при изменении режима АФК
-![afk](/afkglobalmessage.png)
+<!--@include: @/parts/module/message/contact/afk.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.contact.afk>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 afk:
   suffix: " <color:#FFFF00>⌚</color>"
@@ -22,20 +20,5 @@ afk:
     local: "<gradient:#ffd500:#FFFF00>⌚ Now you're not afk"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/contact/afk/)
-- [Права](/docs/permission/message/contact/afk/)
-
-### `suffix`
-
-Суффикс, который выдаётся игроку, если он встал в АФК
-![afksuffix](/afksuffix.png)
-
-### `format-true`
-
-Сообщение, если игрок отошёл
-
-### `format-false`
-
-Сообщение, если игрок вернулся
+<!--@include: @/parts/module/message/contact/afk.md#parameters-->
+<!--@include: @/parts/module/message/contact/afk.md#localization-->

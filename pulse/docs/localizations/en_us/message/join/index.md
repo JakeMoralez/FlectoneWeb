@@ -1,31 +1,19 @@
-# Подключение
-Путь `localizations > en_us.yml > message.join`
+<!--@include: @/parts/module/message/join.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.join`
 
-## Пояснение
-Сообщения о том, что игрок подключился
-![join](/join.png)
+<!--@include: @/parts/module/message/join.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.join>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 join:
   format: "<color:#4eff52>→ <display_name>"
   format-first-time: "<color:#4eff52>→ <display_name> <fcolor:1>welcome!"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/join/)
-- [Права](/docs/permission/message/join/)
-
-### `format`
-
-Сообщение при подключении на сервер
-
-### `format-first-time`
-
-Сообщение при первом подключении на сервер
+<!--@include: @/parts/module/message/join.md#parameters-->
+<!--@include: @/parts/module/message/join.md#localization-->

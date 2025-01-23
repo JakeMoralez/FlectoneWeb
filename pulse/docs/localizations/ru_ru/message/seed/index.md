@@ -1,26 +1,18 @@
-# Сид
-Путь `localizations > ru_ru.yml > message.seed`
+<!--@include: @/parts/module/message/seed.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.seed`
 
-## Пояснение
-Сообщение при использовании `/seed`
-![seed](/seed.png)
+<!--@include: @/parts/module/message/seed.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.seed>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 seed:
   format: "<fcolor:1>🌐 Ключ генератора: [<fcolor:2><hover:show_text:'<fcolor:2>Нажми, чтобы скопировать в буфер обмена'><click:copy_to_clipboard:<seed>><seed></click></fcolor:2>]"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/seed/)
-- [Права](/docs/permission/message/seed/)
-
-### `format`
-
-Сообщение, которое будет отправлено
+<!--@include: @/parts/module/message/seed.md#parameters-->
+<!--@include: @/parts/module/message/seed.md#localization-->

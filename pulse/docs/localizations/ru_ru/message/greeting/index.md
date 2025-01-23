@@ -1,27 +1,18 @@
-# Приветствие
-Путь `localizations > ru_ru.yml > message.greeting`
+<!--@include: @/parts/module/message/greeting.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.greeting`
 
-## Пояснение
-Личное сообщение игроку при подключении на сервер
-![greeting](/greeting.png)
+<!--@include: @/parts/module/message/greeting.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.greeting>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 greeting:
   format: "<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]  <fcolor:1>Привет,<br>[#][#][#][#][#][#][#][#]  <player><br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/greeting/)
-- [Права](/docs/permission/message/greeting/)
-
-### `format`
-
-Личное сообщение игроку при подключении
-![greeting](/greeting.png)
+<!--@include: @/parts/module/message/greeting.md#parameters-->
+<!--@include: @/parts/module/message/greeting.md#localization-->

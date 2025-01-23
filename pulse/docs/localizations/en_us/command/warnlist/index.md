@@ -1,16 +1,14 @@
-# Комманда /warnlist
-Путь `localizations > en_us.yml > command.warnlist`
+<!--@include: @/parts/module/command/warnlist.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.warnlist`
 
-## Пояснение
-Сообщения для комманды `/warnlist`
-![command warnlist](/commandwarnlist.png)
+<!--@include: @/parts/module/command/warnlist.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.warnlist>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 warnlist:
   empty: "<color:#98FB98>☺ No warns found"
@@ -26,54 +24,6 @@ warnlist:
     footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/warnlist/)
-- [Права](/docs/permission/command/warnlist/)
-
-### `empty`
-
-Сообщение, если список игроков предупреждений пуст
-
-### `null-page`
-
-Сообщение, если введённая страница не существует
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `global`
-
-::: details Сообщения для глобальных предупреждений
-
-#### `header`
-
-Верхняя часть сообщения списка
-
-#### `line`
-
-Формат каждого предупреждения из списка
-
-#### `footer`
-
-Нижняя часть сообщения списка
-:::
-
-### `player`
-
-::: details Сообщения для предупреждений игрока
-
-#### `header`
-
-Верхняя часть сообщения списка
-
-#### `line`
-
-Формат каждого предупреждения из списка
-
-#### `footer`
-
-Нижняя часть сообщения списка
-:::
+<!--@include: @/parts/module/command/warnlist.md#parameters-->
+<!--@include: @/parts/module/command/warnlist.md#localization-->
 

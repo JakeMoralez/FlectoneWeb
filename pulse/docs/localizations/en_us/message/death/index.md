@@ -1,16 +1,14 @@
-# Смерть
-Путь `localizations > en_us.yml > message.death`
+<!--@include: @/parts/module/message/death.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.death`
 
-## Пояснение
-Сообщения о смерти
-![death](/deathserver.png)
+<!--@include: @/parts/module/message/death.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.death>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 death:
   types:
@@ -116,13 +114,7 @@ death:
     death.fell.killer: "<color:#778899>🪦 <fcolor:1><display_name> was doomed to fall"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/death/)
-- [Права](/docs/permission/message/death/)
-
-### `types`
-
-Весь список смертей, где ключом является название смерти, а значением сообщение, которое будет использоваться
+<!--@include: @/parts/module/message/death.md#parameters-->
+<!--@include: @/parts/module/message/death.md#localization-->
 
 

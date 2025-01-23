@@ -1,15 +1,14 @@
-# Форматирование
-Путь `localizations > ru_ru.yml > message.format`
+<!--@include: @/parts/module/message/format.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.format`
 
-## Пояснение
-Сообщения, которые форматируются
+<!--@include: @/parts/module/message/format.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.format>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 format:
   tags:
@@ -24,56 +23,5 @@ format:
     IMAGE: "<image:\"<message>\"><u>🖃 Картинка</u></image>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/format/)
-- [Права](/docs/permission/message/format/)
-
-### tags
-
-::: details Настройка тегов
-#### `url`
-
-Сообщение, если это ссылка
-![url](/url.png)
-
-#### `IMAGE`
-
-Сообщение, если это изображение
-![image](/image.png)
-
-#### `PING`
-
-Сообщение, если это пинг
-![ping](/ping.png)
-
-#### `TPS`
-
-Сообщение, если это ТПС
-![tps](/tps.png)
-
-#### `ONLINE`
-
-Сообщение, если это онлайн
-![online](/online.png)
-
-#### `COORDS`
-
-Сообщение, если это координаты
-![coords](/coords.png)
-
-#### `STATS`
-
-Сообщение, если это статистика
-![stats](/stats.png)
-
-#### `SKIN`
-
-Сообщение, если это скин
-![skin](/skin.png)
-
-#### `ITEM`
-
-Сообщение, если это предмет
-![item](/item.png)
-:::
+<!--@include: @/parts/module/message/format.md#parameters-->
+<!--@include: @/parts/module/message/format.md#localization-->

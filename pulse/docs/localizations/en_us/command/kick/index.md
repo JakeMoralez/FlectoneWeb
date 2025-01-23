@@ -1,16 +1,14 @@
-# Комманда /kick
-Путь `localizations > en_us.yml > command.kick`
+<!--@include: @/parts/module/command/kick.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.kick`
 
-## Пояснение
-Сообщения для комманды `/kick`
-![command kick](/commandkick.png)
+<!--@include: @/parts/module/command/kick.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.kick>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 kick:
   null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
@@ -20,34 +18,6 @@ kick:
   person: "<color:#ff7171>🔒 KICK 🔒 <fcolor:1><br><br>ID: <id><br><br>Date: <date><br><br>Moderator: <moderator><br><br>Reason: <reason>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/kick/)
-- [Права](/docs/permission/command/kick/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-#### `reasons`
-
-Список с ключами и значениями, где ключом является слово, а значением конкретная причина
-
-::: tip Можно вписывать свои причины, например
-```yaml
-random_kek: "Random reason"
-```
-Тогда если я напишу `/kick player random_kek`, то причиной будет `Random reason`
-
-Если причина не указана, будет использоваться `default`
-
-:::
-
-### `server`
-
-Сообщение для всех
-
-### `person`
-
-Сообщение для игрока
+<!--@include: @/parts/module/command/kick.md#parameters-->
+<!--@include: @/parts/module/command/kick.md#localization-->
 

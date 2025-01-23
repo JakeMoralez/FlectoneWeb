@@ -1,16 +1,14 @@
-# Комманда /flectonepulse
-Путь `localizations > ru_ru.yml > command.flectonepulse`
+<!--@include: @/parts/module/command/flectonepulse.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.flectonepulse`
 
-## Пояснение
-Сообщения для комманды `/flectonepulse`
-![command flectonepulse](/commandflectonepulse.png)
+<!--@include: @/parts/module/command/flectonepulse.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.flectonepulse>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 flectonepulse:
   format-false: "<color:#ff7171>★ Возникла проблема при перезагрузке"
@@ -18,20 +16,6 @@ flectonepulse:
   format-true-text: "<fcolor:2>★ ВАЖНО! Перезагружен только текст, для ПОЛНОЙ перезагрузки нужно использовать: <br><fcolor:1>/flectonepulse reload"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/flectonepulse/)
-- [Права](/docs/permission/command/flectonepulse/)
-
-### `format-false`
-
-Сообщение при возникновении ошибки
-
-### `format-true`
-
-Формат сообщения, которое будет отправлено при перезагрузке всего `FlectonePulse`
-
-### `format-true-text`
-
-Форма сообщения, которое будет отправлено при перезагрузке текста
+<!--@include: @/parts/module/command/flectonepulse.md#parameters-->
+<!--@include: @/parts/module/command/flectonepulse.md#localization-->
 

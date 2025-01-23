@@ -1,32 +1,20 @@
-# Комманда /clearchat
-Путь `localizations > ru_ru.yml > command.clearchat`
+<!--@include: @/parts/module/command/clearchat.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.clearchat`
 
-## Пояснение
-Сообщения для комманды `/clearchat`
-![command clearchat](/commandclearchat.png)
+<!--@include: @/parts/module/command/clearchat.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.clearchat>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 clearchat:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
   format: "<fcolor:1>💬 Чат очищен"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/clearchat/)
-- [Права](/docs/permission/command/clearchat/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `format`
-
-Сообщение после очищения чата
+<!--@include: @/parts/module/command/clearchat.md#parameters-->
+<!--@include: @/parts/module/command/clearchat.md#localization-->
 

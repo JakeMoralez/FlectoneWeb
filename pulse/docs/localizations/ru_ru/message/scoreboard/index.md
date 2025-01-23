@@ -1,16 +1,14 @@
-# Скорборд
-Путь `localizations > ru_ru.yml > message.scoreboard`
+<!--@include: @/parts/module/message/scoreboard.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.scoreboard`
 
-## Пояснение
-Сообщение в правой части экрана
-![scoreboard](/scoreboard.png)
+<!--@include: @/parts/module/message/scoreboard.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.scoreboard>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 scoreboard:
   values:
@@ -24,11 +22,5 @@ scoreboard:
       - " "
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/scoreboard/)
-- [Права](/docs/permission/message/scoreboard/)
-
-### `values`
-
-Список сообщений, где `- -` разделяет разные форматы
+<!--@include: @/parts/module/message/scoreboard.md#parameters-->
+<!--@include: @/parts/module/message/scoreboard.md#localization-->

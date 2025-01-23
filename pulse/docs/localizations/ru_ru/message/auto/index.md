@@ -1,16 +1,14 @@
-# Автоматическое
-Путь `localizations > ru_ru.yml > message.auto`
+<!--@include: @/parts/module/message/auto.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > message.auto`
 
-## Пояснение
-Автоматическое сообщение раз в какой-то промежуток времени
-![auto](/auto.png)
+<!--@include: @/parts/module/message/auto.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.message.auto>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 auto:
   values:
@@ -20,11 +18,5 @@ auto:
     - "<br><fcolor:1>   ✉ Заходи в телеграм ✉ <br><fcolor:2>    <u><click:open_url:\"https://t.me/flectone\"><hover:show_text:\"<fcolor:2>https://t.me/flectone\">https://t.me/flectone</hover></click></u><br>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/auto/)
-- [Права](/docs/permission/message/auto/)
-
-### `values`
-
-Список автоматических сообщений
+<!--@include: @/parts/module/message/auto.md#parameters-->
+<!--@include: @/parts/module/message/auto.md#localization-->

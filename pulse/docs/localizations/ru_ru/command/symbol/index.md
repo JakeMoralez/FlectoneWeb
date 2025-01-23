@@ -1,16 +1,14 @@
-# Комманда /symbol
-Путь `localizations > ru_ru.yml > command.symbol`
+<!--@include: @/parts/module/command/_symbol.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.symbol`
 
-## Пояснение
-Сообщения для комманды `/symbol`
-![command symbol](/commandsymbol.png)
+<!--@include: @/parts/module/command/_symbol.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.symbol>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 symbol:
   format: "<click:suggest_command:\"<message>\"><fcolor:2>🖥 Нажми, чтобы использовать: <fcolor:1><message>"
@@ -34,16 +32,6 @@ symbol:
     transport: "транспорт"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/symbol/)
-- [Права](/docs/permission/command/symbol/)
-
-### `format`
-
-Формат сообщения, которое будет отправлено
-
-### `categories`
-
-Список категорий и их названий для подсказок
+<!--@include: @/parts/module/command/_symbol.md#parameters-->
+<!--@include: @/parts/module/command/_symbol.md#localization-->
 

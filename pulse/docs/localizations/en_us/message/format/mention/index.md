@@ -1,31 +1,19 @@
-# Упоминание
-Путь `localizations > en_us.yml > message.format.mention`
+<!--@include: @/parts/module/message/format/mention.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.format.mention`
 
-## Пояснение
-Форматирование упоминания
+<!--@include: @/parts/module/message/format/mention.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.format.mention>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 mention:
   person: "<fcolor:2>You were mentioned"
   format: "<fcolor:2>@<target></fcolor>"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/format/mention/)
-- [Права](/docs/permission/message/format/mention/)
-
-### `person`
-
-Сообщение игроку при упоминании
-
-### `format`
-
-Сообщение, если это упоминание игрока
-![mention](/mention.png)
+<!--@include: @/parts/module/message/format/mention.md#parameters-->
+<!--@include: @/parts/module/message/format/mention.md#localization-->

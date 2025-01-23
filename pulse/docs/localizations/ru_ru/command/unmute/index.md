@@ -1,16 +1,14 @@
-# Комманда /unmute
-Путь `localizations > ru_ru.yml > command.unmute`
+<!--@include: @/parts/module/command/unmute.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > ru_ru.yml > command.unmute`
 
-## Пояснение
-Сообщения для комманды `/unmute`
-![command unmute](/commandunmute.png)
+<!--@include: @/parts/module/command/unmute.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <ru_ru.command.unmute>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 unmute:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -18,19 +16,5 @@ unmute:
   format: "<color:#98FB98>🔓 <fcolor:2><moderator></fcolor> размутил игрока <fcolor:2><player></fcolor>"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/unmute/)
-- [Права](/docs/permission/command/unmute/)
-
-### `null-player`
-
-Сообщение, если введённый игрок не найден
-
-### `not-muted`
-
-Сообщение, если введённый игрок не замучен
-
-### `format`
-
-Сообщение при размуте
+<!--@include: @/parts/module/command/unmute.md#parameters-->
+<!--@include: @/parts/module/command/unmute.md#localization-->

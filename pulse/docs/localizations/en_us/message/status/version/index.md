@@ -1,27 +1,19 @@
-# Версия
-Путь `localizations > en_us.yml > message.status.version`
+<!--@include: @/parts/module/message/status/version.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > message.status.version`
 
-## Пояснение
-Название версии сервера
-![version](/version.png)
+<!--@include: @/parts/module/message/status/version.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.message.status.version>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 version:
   name: "Minecraft server"
 ```
 
-## Параметры
-
-- [Сообщения](/docs/message/status/version/)
-- [Права](/docs/permission/message/status/version/)
-
-### `name`
-
-Название версии сервера
+<!--@include: @/parts/module/message/status/version.md#parameters-->
+<!--@include: @/parts/module/message/status/version.md#localization-->
 

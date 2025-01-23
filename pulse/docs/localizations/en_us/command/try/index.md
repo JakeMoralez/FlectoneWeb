@@ -1,33 +1,21 @@
-# Комманда /try
-Путь `localizations > en_us.yml > command.try`
+<!--@include: @/parts/module/command/try.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.try`
 
-## Пояснение
-Сообщения для комманды `/try`
-![command try](/commandtry.png)
+<!--@include: @/parts/module/command/try.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.try>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 try:
   format-true: "<color:#98FB98>☺ <display_name> <message> <percent>%"
   format-false: "<color:#F08080>☹ <display_name> <message> <percent>%"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/try/)
-- [Права](/docs/permission/command/try/)
-
-### `format-true`
-
-Формат сообщения, которое будет отправлено, если действие выполнено успешно
-
-### `format-false`
-
-Формат сообщения, которое будет отправлено, если действие выполнено неуспешно
+<!--@include: @/parts/module/command/try.md#parameters-->
+<!--@include: @/parts/module/command/try.md#localization-->
 
 

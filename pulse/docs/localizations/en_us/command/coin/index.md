@@ -1,16 +1,14 @@
-# Комманда /coin
-Путь `localizations > en_us.yml > command.coin`
+<!--@include: @/parts/module/command/coin.md#title-->
+<!--@include: @/parts/words.md#path--> `localizations > en_us.yml > command.coin`
 
-## Пояснение
-Сообщения для комманды `/coin`
-![command coin](/commandcoin.png)
+<!--@include: @/parts/module/command/coin.md#explanation-->
 
-## Редактирование
+<!--@include: @/parts/words.md#edit-->
 ```yaml
 <en_us.command.coin>
 ```
 
-### По умолчанию
+<!--@include: @/parts/words.md#default-->
 ```yaml
 coin:
   head: "heads"
@@ -19,24 +17,6 @@ coin:
   format-draw: "<fcolor:1>✎ <display_name> player got edge :)"
 ```
 
-## Параметры
-
-- [Комманда](/docs/command/coin/)
-- [Права](/docs/permission/command/coin/)
-
-### `head`
-
-Название стороны монетки
-
-### `tail`
-
-Название другой стороны монетки
-
-### `format`
-
-Формат сообщения, которое будет отправлено
-
-### `format-draw`
-
-Сообщение, если монетка упала на ребро
+<!--@include: @/parts/module/command/coin.md#parameters-->
+<!--@include: @/parts/module/command/coin.md#localization-->
 
