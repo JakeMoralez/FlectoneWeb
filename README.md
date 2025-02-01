@@ -14,7 +14,7 @@
 
 ## 🧱 Project structure
 
-```
+```php
 FlectoneWeb
 ├─ src
 │ ├─ assets # Static assets and resources
