@@ -5,7 +5,6 @@ import { CardFooter } from "./ui/card";
 import { CardHeader } from "./ui/card";
 import { Button } from "./ui/button";
 import { CardContent } from "./ui/card";
-import { Star } from "lucide-astro";
 import Image from "astro/components/Image.astro";
 import flectoneMix from "../assets/flectonemix.png";
 import flectoneChat from "../assets/flectonechat.gif";
@@ -48,10 +47,7 @@ import platforms from "../assets/platforms.svg";
       <div class="pt-6">
         <div class="flex flex-col lg:flex-row gap-6">
           <Card className="lg:w-1/2 dark:bg-neutral-800/50">
-            <a
-              href="https://flectone.net/mix/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href="/mix" rel="noopener noreferrer"
               ><CardHeader>
                 <CardTitle><h2>FlectoneMix</h2></CardTitle>
                 <CardDescription
@@ -70,10 +66,7 @@ import platforms from "../assets/platforms.svg";
             >
           </Card>
           <Card className="lg:w-1/2 dark:bg-neutral-800/50">
-            <a
-              href="https://flectone.net/chat/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href="/chat" rel="noopener noreferrer"
               ><CardHeader>
                 <CardTitle><h2>FlectoneChat</h2></CardTitle>
                 <CardDescription

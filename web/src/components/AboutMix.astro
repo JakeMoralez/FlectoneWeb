@@ -1,0 +1,41 @@
+---
+import { Button } from "./ui/button";
+import { Download, Github, GithubIcon, LucideGithub } from "lucide-react";
+import Image from "astro/components/Image.astro";
+import flectoneMix from "../assets/flectonemix.png";
+---
+
+<div class="max-w-screen-xl mx-auto pt-32">
+  <div class="flex justify-between">
+    <div class="w-1/2">
+      <header>
+        <h1>FlectoneMix</h1>
+        <p>
+          Was created to make it easier to find and install things<br /> for minecraft,
+          but the project has been shut down
+        </p>
+        <h3 class="mt-6">
+          <span class="text-sky-500">65138</span> downloads in history
+        </h3>
+      </header>
+      <div class="flex gap-3 mt-6">
+        <a href="https://boosty.to/thefaser/"
+          ><Button className="bg-orange-300 hover:bg-orange-400"
+            ><Download /><span>Available on Boosty</span></Button
+          ></a
+        >
+        <a href="https://github.com/Flectone/"
+          ><Button><Github /><span>Github</span></Button></a
+        >
+      </div>
+      <!-- <Button className="bg-sky-500 hover:bg-sky-600"
+        ><Download />Available on Boosty</Button
+      >
+      <Button>ale</Button> -->
+    </div>
+    <div class="w-1/2">
+      <h2 class="text-center rounded-b-3xl">Program showcase</h2>
+      <Image src={flectoneMix} alt="flectone mix showcase" />
+    </div>
+  </div>
+</div>
