@@ -14,6 +14,7 @@
 
 ## 🧱 Project structure
 
+```php
 FlectoneWeb
 ├─ src
 │ ├─ assets # Static assets and resources
@@ -30,6 +31,7 @@ FlectoneWeb
 │ ├─ integration # Integration documentation
 │ └─ message # Messaging system docs
 └─ public # Public static files
+```
 
 ## 🎯 Overview
 
@@ -57,11 +59,11 @@ Modern, fast and responsive web platform built for Flectone Network using cuttin
 
 ## 🛠️ Tech Stack
 
-| Category | Technologies                                                                                                                                                                                                                 |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Core     | [![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat&logo=astro&logoColor=white)](https://astro.build) [![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat&logo=vue.js&logoColor=white)](https://vuejs.org) |
-| Styling  | [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)                                                                                      |
-| Runtime  | [![Bun](https://img.shields.io/badge/Bun-000000?style=flat&logo=bun&logoColor=white)](https://bun.sh)                                                                                                                        |
+| Category | Technologies                                                                                                                                                                                                                    |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Core     | [![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat&logo=astro&logoColor=white)](https://astro.build) [![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev) |
+| Styling  | [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)                                                                                         |
+| Runtime  | [![Bun](https://img.shields.io/badge/Bun-000000?style=flat&logo=bun&logoColor=white)](https://bun.sh)                                                                                                                           |
 
 ## 🚀 Quick Start
 
@@ -115,5 +117,5 @@ npm run docs:dev
 npm run docs:build
 
 # Preview build
-bun preview
+npm run docs:preview
 ```
