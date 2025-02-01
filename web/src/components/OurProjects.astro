@@ -1,0 +1,100 @@
+---
+import { Card, CardDescription } from "./ui/card";
+import { CardTitle } from "./ui/card";
+import { CardFooter } from "./ui/card";
+import { CardHeader } from "./ui/card";
+import { Button } from "./ui/button";
+import { CardContent } from "./ui/card";
+import { Star } from "lucide-astro";
+import Image from "astro/components/Image.astro";
+import flectoneMix from "../assets/flectonemix.png";
+import flectoneChat from "../assets/flectonechat.gif";
+import platforms from "../assets/platforms.svg";
+---
+
+<div class="max-w-screen-xl mx-auto pt-32">
+  <header class="flex flex-col items-center">
+    <h1><span class="text-cyan-600">Flectone</span> projects</h1>
+  </header>
+  <div class="mx-auto max-w-screen-md">
+    <div class="pt-12">
+      <Card className="dark:bg-neutral-800/50">
+        <CardHeader>
+          <div class="flex items-center justify-between relative">
+            <div>
+              <CardTitle
+                ><h2>
+                  <span class="text-cyan-600">Flectone</span>Pulse
+                </h2></CardTitle
+              >
+              <CardDescription>
+                <p>New project for easy server customization</p>
+              </CardDescription>
+            </div>
+            <Image
+              class="hidden md:block pt-14 lg:absolute md:absolute right-0 lg:w-40 md:w-36 w-28"
+              src={platforms}
+              alt="platform logo"
+              quality={100}
+            />
+          </div>
+        </CardHeader>
+        <CardFooter>
+          <a href="https://flectone.net/en/pulse/">
+            <Button className="bg-cyan-600 hover:bg-cyan-700">Details</Button
+            ></a
+          >
+        </CardFooter>
+      </Card>
+      <div class="pt-6">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <Card className="lg:w-1/2 dark:bg-neutral-800/50">
+            <a
+              href="https://flectone.net/mix/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><CardHeader>
+                <CardTitle><h2>FlectoneMix</h2></CardTitle>
+                <CardDescription
+                  ><p>
+                    Previously used to download stuff from videos
+                  </p></CardDescription
+                >
+              </CardHeader>
+              <CardContent>
+                <Image
+                  class="rounded-lg"
+                  src={flectoneMix}
+                  alt="flectone mix logo"
+                />
+              </CardContent></a
+            >
+          </Card>
+          <Card className="lg:w-1/2 dark:bg-neutral-800/50">
+            <a
+              href="https://flectone.net/chat/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><CardHeader>
+                <CardTitle><h2>FlectoneChat</h2></CardTitle>
+                <CardDescription
+                  ><p>
+                    Father of FlectonePulse, he's death though
+                  </p></CardDescription
+                >
+              </CardHeader>
+              <CardContent>
+                <Image
+                  class="rounded-lg w-full"
+                  src={flectoneChat}
+                  alt="flectone chat logo"
+                  quality={100}
+                />
+              </CardContent></a
+            >
+          </Card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
