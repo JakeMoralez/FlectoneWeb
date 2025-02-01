@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="assets/favicon.ico" alt="Flectone Logo" width="120" />
+  <img src="assets/favicons/favicon.ico" alt="Flectone Logo" width="120" />
   
   # ⚡️ Flectone Web
   
-  🚀 Modern web platform for Flectone Network
+  🚀 Modern web solution for Flectone Network
 
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 [![Powered by Bun](https://img.shields.io/badge/Powered%20by-Bun-orange)](https://bun.sh)
@@ -35,7 +35,7 @@ FlectoneWeb
 
 ## 🎯 Overview
 
-Modern, fast and responsive web platform built for Flectone Network using cutting-edge technologies.
+Modern, fast and responsive web solution built for Flectone Network using Astro, VitePress.
 
 ## ✨ Features
 
@@ -47,7 +47,7 @@ Modern, fast and responsive web platform built for Flectone Network using cuttin
 
 🌍 **Internationalization**
 
-- English and Russian support
+- RU/EN support
 - Easy language switching
 - SEO-friendly URLs
 
