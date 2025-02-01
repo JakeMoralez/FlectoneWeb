@@ -2,6 +2,9 @@
 import { Button } from "./ui/button";
 import { Github, Heart } from "lucide-react";
 import { CarouselPlugin } from "./shared/Carousel";
+import { useTranslations } from "@/utils/i18n";
+const currentLocale = Astro.currentLocale || "en";
+const { t } = useTranslations(currentLocale as "en" | "ru");
 ---
 
 <div class="max-w-screen-xl mx-auto pt-32">
@@ -9,34 +12,28 @@ import { CarouselPlugin } from "./shared/Carousel";
     <div class="w-1/2">
       <header>
         <h1>FlectoneChat</h1>
-        <p>
-          Simplified and augmented the server game<br /> by adding convenient features,
-          but it's closed
+        <p class="w-96">
+          {t("fchat-description")}
         </p>
         <h2 class="mt-8 w-96">
-          Better use <span class="text-sky-500">FlectonePulse</span>
+          {t("use-pulse")}
+          <span class="text-sky-500">FlectonePulse</span>
         </h2>
-        <p>
-          Why? Because FlectoneChat is no longer supported<br />
-        </p>
+        <p>{t("why-use")}</p>
       </header>
       <div class="flex gap-3 mt-6">
         <a href="https://modrinth.com/plugin/flectonepulse"
           ><Button className="bg-green-400 hover:bg-green-500"
-            ><Heart /><span>Check out better FlectonePulse</span></Button
+            ><Heart /><span>{t("modrinth-button")}</span></Button
           ></a
         >
         <a href="https://github.com/Flectone/"
           ><Button><Github /><span>Github</span></Button></a
         >
       </div>
-      <!-- <Button className="bg-sky-500 hover:bg-sky-600"
-        ><Download />Available on Boosty</Button
-      >
-      <Button>ale</Button> -->
     </div>
     <div class="w-1/2">
-      <h2 class="text-center rounded-b-3xl">FlectoneChat features</h2>
+      <h2 class="text-center rounded-b-3xl">{t("chat-features")}</h2>
       <CarouselPlugin client:load />
     </div>
   </div>

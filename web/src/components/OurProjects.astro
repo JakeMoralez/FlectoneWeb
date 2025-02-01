@@ -9,11 +9,18 @@ import Image from "astro/components/Image.astro";
 import flectoneMix from "../assets/flectonemix.png";
 import flectoneChat from "../assets/flectonechat.gif";
 import platforms from "../assets/platforms.svg";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { useTranslations } from "@/utils/i18n";
+
+const currentLocale = Astro.currentLocale || "en";
+const flectoneMixUrl = getRelativeLocaleUrl(currentLocale, "mix");
+const flectoneChatUrl = getRelativeLocaleUrl(currentLocale, "chat");
+const { t } = useTranslations(currentLocale as "en" | "ru");
 ---
 
 <div class="max-w-screen-xl mx-auto pt-32">
   <header class="flex flex-col items-center">
-    <h1><span class="text-sky-500">Flectone</span> projects</h1>
+    <h1>{t("header")} <span class="text-sky-500">Flectone</span></h1>
   </header>
   <div class="mx-auto max-w-screen-md">
     <div class="pt-12">
@@ -27,7 +34,7 @@ import platforms from "../assets/platforms.svg";
                 </h2></CardTitle
               >
               <CardDescription>
-                <p>New project for easy server customization</p>
+                <p>{t("pulse-description")}</p>
               </CardDescription>
             </div>
             <Image
@@ -40,19 +47,21 @@ import platforms from "../assets/platforms.svg";
         </CardHeader>
         <CardFooter>
           <a href="https://flectone.net/en/pulse/">
-            <Button className="bg-sky-600 hover:bg-sky-700">Details</Button></a
+            <Button className="bg-sky-600 hover:bg-sky-700"
+              ><span>{t("pulse-button")}</span></Button
+            ></a
           >
         </CardFooter>
       </Card>
       <div class="pt-6">
         <div class="flex flex-col lg:flex-row gap-6">
           <Card className="lg:w-1/2 dark:bg-neutral-800/50">
-            <a href="/mix" rel="noopener noreferrer"
+            <a href={flectoneMixUrl} rel="noopener noreferrer"
               ><CardHeader>
                 <CardTitle><h2>FlectoneMix</h2></CardTitle>
                 <CardDescription
                   ><p>
-                    Previously used to download stuff from videos
+                    {t("mix-description")}
                   </p></CardDescription
                 >
               </CardHeader>
@@ -66,12 +75,12 @@ import platforms from "../assets/platforms.svg";
             >
           </Card>
           <Card className="lg:w-1/2 dark:bg-neutral-800/50">
-            <a href="/chat" rel="noopener noreferrer"
+            <a href={flectoneChatUrl} rel="noopener noreferrer"
               ><CardHeader>
                 <CardTitle><h2>FlectoneChat</h2></CardTitle>
                 <CardDescription
                   ><p>
-                    Father of FlectonePulse, he's death though
+                    {t("chat-description")}
                   </p></CardDescription
                 >
               </CardHeader>

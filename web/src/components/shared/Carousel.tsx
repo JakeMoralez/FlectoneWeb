@@ -8,15 +8,22 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import firstImg from "../../assets/1.gif";
+import secondImg from "../../assets/2.gif";
+import thirdImg from "../../assets/3.gif";
+import fourthImg from "../../assets/4.gif";
+import fifthImg from "../../assets/5.gif";
+import sixthImg from "../../assets/6.gif";
+import Image from "astro/components/Image.astro";
 
 export function CarouselPlugin() {
   const carouselItems = [
-    { image: "1.gif", caption: "Chat bubble" },
-    { image: "2.gif", caption: "Info about item in chat" },
-    { image: "3.gif", caption: "Spoiler" },
-    { image: "4.gif", caption: "Custom chat colors" },
-    { image: "5.gif", caption: "Item signing" },
-    { image: "6.gif", caption: "Marks" },
+    { image: firstImg, caption: "Chat bubble" },
+    { image: secondImg, caption: "Info about item in chat" },
+    { image: thirdImg, caption: "Spoiler" },
+    { image: fourthImg, caption: "Custom chat colors" },
+    { image: fifthImg, caption: "Item signing" },
+    { image: sixthImg, caption: "Marks" },
   ];
 
   const plugin = React.useRef(
@@ -38,7 +45,7 @@ export function CarouselPlugin() {
                 <CardContent className="flex flex-col h-80 items-center justify-center p-6 gap-4 ">
                   <h3 className="text-center font-medium">{item.caption}</h3>
                   <img
-                    src={`../src/assets/${item.image}`}
+                    src={item.image.src}
                     alt={item.caption}
                     className="object-contain max-h-40"
                   />

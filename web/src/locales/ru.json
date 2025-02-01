@@ -1,0 +1,20 @@
+{
+  "home": "Домой",
+  "about": "Про нас",
+  "header": "Проекты",
+  "pulse-description": "Новый проект для легкой кастомизации сервера",
+  "pulse-button": "Подробнее",
+  "mix-description": "Использовался для скачивания ресурсов",
+  "chat-description": "Отец FlectonePulse, хотя он умер",
+  "about-header": "Flectone это...",
+  "about-description": "Проект человека по имени TheFaser (Артём)",
+  "fchat-description": "Упрощает и дополняет игру на сервере добавлением удобных фичей, но проект был закрыт",
+  "use-pulse": "Юзай",
+  "why-use": "Почему? Флектон чат более не поддерживается",
+  "modrinth-button": "Посмотри на FlectonePulse",
+  "chat-features": "Фишки FlectoneChat",
+  "mix-header": "Демонистрация программы",
+  "fmix-description": "Был создан, чтобы облегчить поиск и установку вещей для Minecraft, но проект был закрыт",
+  "download-count": "скачиваний в истории",
+  "boosty-button": "Доступно на Boosty"
+}

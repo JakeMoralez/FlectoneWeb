@@ -13,6 +13,10 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
+  i18n: {
+    locales: ["en", "ru"],
+    defaultLocale: "ru",
+  },
 
   vite: {
     plugins: [],
