@@ -1,21 +1,20 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
+import { Languages } from "lucide-react";
+import { Button } from "./ui/button";
 
 const currentLocale = Astro.currentLocale || "en";
 const targetLocale = currentLocale === "en" ? "ru" : "en";
 
-// Get current path without locale prefix
 const currentPath = Astro.url.pathname
   .replace(`/${currentLocale}/`, "")
   .replace(/^\//, "");
 
-// Generate new URL using Astro's i18n utility
 const newPath = getRelativeLocaleUrl(targetLocale, currentPath);
 ---
 
-<a
-  href={newPath}
-  class="px-3 py-1 rounded-md dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors"
->
-  {targetLocale.toUpperCase()}
+<a href={newPath} class="transition-colors">
+  <Button size="sm" variant="ghost">
+    <Languages />{currentLocale.toLocaleUpperCase()}
+  </Button>
 </a>

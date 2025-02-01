@@ -28,13 +28,17 @@ const { t } = useTranslations(currentLocale as "en" | "ru");
           ></a
         >
         <a href="https://github.com/Flectone/"
-          ><Button><Github /><span>Github</span></Button></a
+          ><Button variant="ghost"><Github /><span>Github</span></Button></a
         >
       </div>
     </div>
     <div class="w-1/2">
       <h2 class="text-center rounded-b-3xl">{t("chat-features")}</h2>
       <CarouselPlugin client:load />
+      <p class="font-montserrat italic text-center">
+        {t("things")}{" "}
+        <span class="text-sky-500 text-center"> FlectonePulse </span>
+      </p>
     </div>
   </div>
 </div>
