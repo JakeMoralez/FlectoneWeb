@@ -24,13 +24,13 @@ FlectoneWeb
 │ └─ styles # Global styles and CSS
 │
 └─ pulse
-├─ .vitepress # VitePress configuration
-├─ docs # Documentation content
-│ ├─ command # Command reference docs
-│ ├─ config # Configuration guides
-│ ├─ integration # Integration documentation
-│ └─ message # Messaging system docs
-└─ public # Public static files
+  ├─ .vitepress # VitePress configuration
+  └─ docs # Documentation content
+    ├─ command # Command reference docs
+    ├─ config # Configuration guides
+    ├─ integration # Integration documentation
+    ├─ message # Messaging system docs
+    └─ public # Public static files
 ```
 
 ## 🎯 Overview
