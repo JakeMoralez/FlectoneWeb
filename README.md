@@ -14,6 +14,7 @@
 
 ## 🧱 Project structure
 
+```
 FlectoneWeb
 ├─ src
 │ ├─ assets # Static assets and resources
@@ -30,6 +31,7 @@ FlectoneWeb
 │ ├─ integration # Integration documentation
 │ └─ message # Messaging system docs
 └─ public # Public static files
+```
 
 ## 🎯 Overview
 
