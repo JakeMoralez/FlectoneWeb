@@ -14,7 +14,6 @@ import thirdImg from "../../assets/3.gif";
 import fourthImg from "../../assets/4.gif";
 import fifthImg from "../../assets/5.gif";
 import sixthImg from "../../assets/6.gif";
-import Image from "astro/components/Image.astro";
 
 export function CarouselPlugin() {
   const carouselItems = [
@@ -41,7 +40,7 @@ export function CarouselPlugin() {
         {carouselItems.map((item, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <Card className="dark:bg-neutral-900 rounded-3xl">
+              <Card className="dark:bg-neutral-800/50 rounded-3xl">
                 <CardContent className="flex flex-col h-80 items-center justify-center p-6 gap-4 ">
                   <h3 className="text-center font-medium">{item.caption}</h3>
                   <img
@@ -49,12 +48,6 @@ export function CarouselPlugin() {
                     alt={item.caption}
                     className="object-contain max-h-40"
                   />
-                  <p className="font-montserrat italic">
-                    All these things available in{" "}
-                    <span className="text-sky-500 text-start">
-                      FlectonePulse
-                    </span>
-                  </p>
                 </CardContent>
               </Card>
             </div>
