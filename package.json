@@ -1,12 +1,22 @@
 {
   "name": "flectoneweb",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.4.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+
+    "dev:pulse": "cd pulse && npm run docs:dev",
+    "dev:en-pulse": "cd en/pulse && npm run docs:dev",
+
+    "build:pulse": "cd pulse && npm run docs:build",
+    "build:en-pulse": "cd en/pulse && npm run docs:build",
+
+    "copy:pulse": "cp -R pulse/.vitepress/dist dist/pulse && cp -R en/pulse/.vitepress/dist dist/en/pulse",
+
+    "build:all": "bun run build && bun run build:pulse && bun run build:en-pulse && bun run copy:pulse"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
