@@ -1,120 +1,69 @@
 # Форматирование
-Путь `message.yml > format.*`
 
-## Пояснение
 Модуль, форматирующий отправленные сообщения
 
-## Редактирование
-```yaml
-<message.format>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format`
 
-### По умолчанию
-```yaml
-format:
-  enable: true
-  tags:
-    PING:
-      enable: true
-      trigger: "%ping%"
-    TPS:
-      enable: true
-      trigger: "%tps%"
-    ONLINE:
-      enable: true
-      trigger: "%online%"
-    COORDS:
-      enable: true
-      trigger: "%coords%"
-    STATS:
-      enable: true
-      trigger: "%stats%"
-    SKIN:
-      enable: true
-      trigger: "%skin%"
-    ITEM:
-      enable: true
-      trigger: "%item%"
-    URL:
-      enable: true
-      trigger: "(?<!:\")((https?|ftp|gopher|telnet|file):((//)|(\\\\))+[\\w:#@%/;$()~_?+-=\\\\.&]*)"
-    IMAGE:
-      enable: true
-      trigger: "(?<!:\")((https?|ftp|gopher|telnet|file):\\/\\/(?:i\\.imgur\\.com|media\\.discordapp\\.net)\\/[\\w:#@%/;$()~_?+-=\\\\.&]*)"
-    SPOILER:
-      enable: true
-      trigger: "\\Q||\\E"
-    BOLD:
-      enable: true
-      trigger: "\\Q**\\E"
-    ITALIC:
-      enable: true
-      trigger: "\\Q##\\E"
-    UNDERLINE:
-      enable: true
-      trigger: "\\Q__\\E"
-    OBFUSCATED:
-      enable: true
-      trigger: "\\Q??\\E"
-    STRIKETHROUGH:
-      enable: true
-      trigger: "\\Q~~\\E"
-    HOVER:
-      enable: true
-      trigger: null
-    CLICK:
-      enable: true
-      trigger: null
-    COLOR:
-      enable: true
-      trigger: null
-    KEYBIND:
-      enable: true
-      trigger: null
-    TRANSLATABLE:
-      enable: true
-      trigger: null
-    TRANSLATABLE_FALLBACK:
-      enable: true
-      trigger: null
-    INSERTION:
-      enable: true
-      trigger: null
-    FONT:
-      enable: true
-      trigger: null
-    DECORATION:
-      enable: true
-      trigger: null
-    GRADIENT:
-      enable: true
-      trigger: null
-    RAINBOW:
-      enable: true
-      trigger: null
-    RESET:
-      enable: true
-      trigger: null
-    NEWLINE:
-      enable: true
-      trigger: null
-    TRANSITION:
-      enable: true
-      trigger: null
-    SELECTOR:
-      enable: true
-      trigger: null
-    SCORE:
-      enable: true
-      trigger: null
-    NBT:
-      enable: true
-      trigger: null
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#format
+<<< @/files/localizations/en_us.yml#format
+:::
 
-- [Права](/docs/permission/message/format/)
+### `url`
+
+Сообщение, если это ссылка
+![url](/url.png)
+
+### `IMAGE`
+
+Сообщение, если это изображение
+![image](/image.png)
+
+### `PING`
+
+Сообщение, если это пинг
+![ping](/ping.png)
+
+### `TPS`
+
+Сообщение, если это ТПС
+![tps](/tps.png)
+
+### `ONLINE`
+
+Сообщение, если это онлайн
+![online](/online.png)
+
+### `COORDS`
+
+Сообщение, если это координаты
+![coords](/coords.png)
+
+### `STATS`
+
+Сообщение, если это статистика
+![stats](/stats.png)
+
+### `SKIN`
+
+Сообщение, если это скин
+![skin](/skin.png)
+
+### `ITEM`
+
+Сообщение, если это предмет
+![item](/item.png)
+
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → format`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#format
 
 <!--@include: @/parts/enable.md-->
 
@@ -184,3 +133,20 @@ format:
 | `<selector>`              | [Selector](https://docs.advntr.dev/minimessage/format.html#selector)         | Селектор мобов                                                                                 |
 | `<score>`                 | [Score](https://docs.advntr.dev/minimessage/format.html#score)               | Значение у команды (scoreboard)                                                                |
 | `<nbt>`                   | [NBT](https://docs.advntr.dev/minimessage/format.html#nbt)                   | Вставка NBT компонента                                                                         |
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.format`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#format
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+
+### `all`
+
+Право для использования всех возможных форматирований
+
+### `tags`
+
+Список тегов и их прав для использования

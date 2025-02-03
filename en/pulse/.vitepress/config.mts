@@ -69,7 +69,7 @@ export default defineConfig({
     returnToTopLabel: 'Вернуться к началу',
     langMenuLabel: 'Изменить язык',
     editLink: {
-      pattern: 'https://github.com/Flectone/FlectonePulseWeb/master/docs/:path',
+      pattern: 'https://github.com/Flectone/FlectonePulseWeb/edit/master/:path',
       text: 'Редактировать эту страницу на GitHub'
     },
 
@@ -102,294 +102,15 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Файл config.yml',
+        text: '📁 Конфигурация',
         link: '/docs/config/',
-        collapsed: false,
+        collapsed: true,
         items: []
       },
       {
-        text: 'Папка localizations/',
-        link: '/docs/localizations/',
-        collapsed: false,
-        items: [
-          {
-            text: 'Файл ru_ru.yml',
-            link: '/docs/localizations/ru_ru/',
-            collapsed: true,
-            items: [
-              {
-                text: 'Комманды',
-                link: '/docs/localizations/ru_ru/command/',
-                collapsed: true,
-                items: [
-                  { text: 'Ball', link: '/docs/localizations/ru_ru/command/ball/' },
-                  { text: 'Ban', link: '/docs/localizations/ru_ru/command/ban/' },
-                  { text: 'Banlist', link: '/docs/localizations/ru_ru/command/banlist/' },
-                  { text: 'Broadcast', link: '/docs/localizations/ru_ru/command/broadcast/' },
-                  { text: 'Chatcolor', link: '/docs/localizations/ru_ru/command/chatcolor/' },
-                  { text: 'Chatsetting', link: '/docs/localizations/ru_ru/command/chatsetting/' },
-                  { text: 'Clearchat', link: '/docs/localizations/ru_ru/command/clearchat/' },
-                  { text: 'Clearmail', link: '/docs/localizations/ru_ru/command/clearmail/' },
-                  { text: 'Coin', link: '/docs/localizations/ru_ru/command/coin/' },
-                  { text: 'Dice', link: '/docs/localizations/ru_ru/command/dice/' },
-                  { text: 'Do', link: '/docs/localizations/ru_ru/command/do/' },
-                  { text: 'Flectonepulse', link: '/docs/localizations/ru_ru/command/flectonepulse/' },
-                  { text: 'Geolocate', link: '/docs/localizations/ru_ru/command/geolocate/' },
-                  { text: 'Helper', link: '/docs/localizations/ru_ru/command/helper/' },
-                  { text: 'Ignore', link: '/docs/localizations/ru_ru/command/ignore/' },
-                  { text: 'Ignorelist', link: '/docs/localizations/ru_ru/command/ignorelist/' },
-                  { text: 'Kick', link: '/docs/localizations/ru_ru/command/kick/' },
-                  { text: 'Mail', link: '/docs/localizations/ru_ru/command/mail/' },
-                  { text: 'Maintenance', link: '/docs/localizations/ru_ru/command/maintenance/' },
-                  { text: 'Me', link: '/docs/localizations/ru_ru/command/me/' },
-                  { text: 'Mute', link: '/docs/localizations/ru_ru/command/mute/' },
-                  { text: 'Mutelist', link: '/docs/localizations/ru_ru/command/mutelist/' },
-                  { text: 'Online', link: '/docs/localizations/ru_ru/command/online/' },
-                  { text: 'Poll', link: '/docs/localizations/ru_ru/command/poll/' },
-                  { text: 'Reply', link: '/docs/localizations/ru_ru/command/reply/' },
-                  { text: 'Rockpaperscissors', link: '/docs/localizations/ru_ru/command/rockpaperscissors/' },
-                  { text: 'Spy', link: '/docs/localizations/ru_ru/command/spy/' },
-                  { text: 'Stream', link: '/docs/localizations/ru_ru/command/stream/' },
-                  { text: 'Symbol', link: '/docs/localizations/ru_ru/command/symbol/' },
-                  { text: 'Tell', link: '/docs/localizations/ru_ru/command/tell/' },
-                  { text: 'Tictactoe', link: '/docs/localizations/ru_ru/command/tictactoe/' },
-                  { text: 'Translateto', link: '/docs/localizations/ru_ru/command/translateto/' },
-                  { text: 'Try', link: '/docs/localizations/ru_ru/command/try/' },
-                  { text: 'Unban', link: '/docs/localizations/ru_ru/command/unban/' },
-                  { text: 'Unmute', link: '/docs/localizations/ru_ru/command/unmute/' },
-                  { text: 'Unwarn', link: '/docs/localizations/ru_ru/command/unwarn/' },
-                  { text: 'Warn', link: '/docs/localizations/ru_ru/command/warn/' },
-                  { text: 'Warnlist', link: '/docs/localizations/ru_ru/command/warnlist/' },
-                ]
-              },
-              {
-                text: 'Интеграции',
-                link: '/docs/localizations/ru_ru/integration/',
-                collapsed: true,
-                items: [
-                  { text: 'Дискорд', link: '/docs/localizations/ru_ru/integration/discord/' },
-                  { text: 'Телеграм', link: '/docs/localizations/ru_ru/integration/telegram/' },
-                  { text: 'Твич', link: '/docs/localizations/ru_ru/integration/twitch/' },
-                ]
-              },
-              {
-                text: 'Сообщения',
-                link: '/docs/localizations/ru_ru/message/',
-                collapsed: true,
-                items: [
-                  { text: 'Достижение', link: '/docs/localizations/ru_ru/message/advancement/' },
-                  { text: 'Автоматическое', link: '/docs/localizations/ru_ru/message/auto/' },
-                  { text: 'Бренд', link: '/docs/localizations/ru_ru/message/brand/' },
-                  { text: 'Над головой', link: '/docs/localizations/ru_ru/message/bubble/' },
-                  { text: 'Чат', link: '/docs/localizations/ru_ru/message/chat/' },
-                  { text: 'Очищение', link: '/docs/localizations/ru_ru/message/clear/' },
-                  {
-                    text: 'Контактирование',
-                    link: '/docs/localizations/ru_ru/message/contact/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Афк', link: '/docs/localizations/ru_ru/message/contact/afk/' },
-                      { text: 'Правое нажатие', link: '/docs/localizations/ru_ru/message/contact/rightclick/' },
-                      { text: 'Подпись', link: '/docs/localizations/ru_ru/message/contact/sign/' },
-                      { text: 'Плевок', link: '/docs/localizations/ru_ru/message/contact/spit/' },
-                    ]
-                  },
-                  { text: 'Смерть', link: '/docs/localizations/ru_ru/message/death/' },
-                  { text: 'Деоп', link: '/docs/localizations/ru_ru/message/deop/' },
-                  { text: 'Зачарование', link: '/docs/localizations/ru_ru/message/enchant/' },
-                  {
-                    text: 'Форматирование',
-                    link: '/docs/localizations/ru_ru/message/format/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Упоминание', link: '/docs/localizations/ru_ru/message/format/mention/' },
-                      {
-                        text: 'Модерация',
-                        link: '/docs/localizations/ru_ru/message/format/moderation/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Ругательство', link: '/docs/localizations/ru_ru/message/format/moderation/swear/' },
-                        ]
-                      },
-                      { text: 'Имя', link: '/docs/localizations/ru_ru/message/format/name_/' },
-                      { text: 'Спойлер', link: '/docs/localizations/ru_ru/message/format/spoiler/' },
-                    ]
-                  },
-                  { text: 'Режим игры', link: '/docs/localizations/ru_ru/message/gamemode/' },
-                  { text: 'Приветствие', link: '/docs/localizations/ru_ru/message/greeting/' },
-                  { text: 'Подключение', link: '/docs/localizations/ru_ru/message/join/' },
-                  { text: 'Оп', link: '/docs/localizations/ru_ru/message/op/' },
-                  { text: 'Отключение', link: '/docs/localizations/ru_ru/message/quit/' },
-                  { text: 'Скорборд', link: '/docs/localizations/ru_ru/message/scoreboard/' },
-                  { text: 'Сид', link: '/docs/localizations/ru_ru/message/seed/' },
-                  { text: 'Сетблок', link: '/docs/localizations/ru_ru/message/setblock/' },
-                  { text: 'Спавнпоинт', link: '/docs/localizations/ru_ru/message/spawnpoint/' },
-                  {
-                    text: 'Статус',
-                    link: '/docs/localizations/ru_ru/message/status/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Описание', link: '/docs/localizations/ru_ru/message/status/motd/' },
-                      { text: 'Игроки', link: '/docs/localizations/ru_ru/message/status/players/' },
-                      { text: 'Версия', link: '/docs/localizations/ru_ru/message/status/version/' },
-                    ]
-                  },
-                  {
-                    text: 'Таб',
-                    link: '/docs/localizations/ru_ru/message/tab/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Имя в списке', link: '/docs/localizations/ru_ru/message/tab/playerlistname/' },
-                      { text: 'Верхнее', link: '/docs/localizations/ru_ru/message/tab/header/' },
-                      { text: 'Нижнее', link: '/docs/localizations/ru_ru/message/tab/footer/' },
-                    ]
-                  },
-                ]
-              },
-            ]
-          },
-          {
-            text: 'Файл en_us.yml',
-            link: '/docs/localizations/en_us/',
-            collapsed: true,
-            items: [
-              {
-                text: 'Комманды',
-                link: '/docs/localizations/en_us/command/',
-                collapsed: true,
-                items: [
-                  { text: 'Ball', link: '/docs/localizations/en_us/command/ball/' },
-                  { text: 'Ban', link: '/docs/localizations/en_us/command/ban/' },
-                  { text: 'Banlist', link: '/docs/localizations/en_us/command/banlist/' },
-                  { text: 'Broadcast', link: '/docs/localizations/en_us/command/broadcast/' },
-                  { text: 'Chatcolor', link: '/docs/localizations/en_us/command/chatcolor/' },
-                  { text: 'Chatsetting', link: '/docs/localizations/en_us/command/chatsetting/' },
-                  { text: 'Clearchat', link: '/docs/localizations/en_us/command/clearchat/' },
-                  { text: 'Clearmail', link: '/docs/localizations/en_us/command/clearmail/' },
-                  { text: 'Coin', link: '/docs/localizations/en_us/command/coin/' },
-                  { text: 'Dice', link: '/docs/localizations/en_us/command/dice/' },
-                  { text: 'Do', link: '/docs/localizations/en_us/command/do/' },
-                  { text: 'Flectonepulse', link: '/docs/localizations/en_us/command/flectonepulse/' },
-                  { text: 'Geolocate', link: '/docs/localizations/en_us/command/geolocate/' },
-                  { text: 'Helper', link: '/docs/localizations/en_us/command/helper/' },
-                  { text: 'Ignore', link: '/docs/localizations/en_us/command/ignore/' },
-                  { text: 'Ignorelist', link: '/docs/localizations/en_us/command/ignorelist/' },
-                  { text: 'Kick', link: '/docs/localizations/en_us/command/kick/' },
-                  { text: 'Mail', link: '/docs/localizations/en_us/command/mail/' },
-                  { text: 'Maintenance', link: '/docs/localizations/en_us/command/maintenance/' },
-                  { text: 'Me', link: '/docs/localizations/en_us/command/me/' },
-                  { text: 'Mute', link: '/docs/localizations/en_us/command/mute/' },
-                  { text: 'Mutelist', link: '/docs/localizations/en_us/command/mutelist/' },
-                  { text: 'Online', link: '/docs/localizations/en_us/command/online/' },
-                  { text: 'Poll', link: '/docs/localizations/en_us/command/poll/' },
-                  { text: 'Reply', link: '/docs/localizations/en_us/command/reply/' },
-                  { text: 'Rockpaperscissors', link: '/docs/localizations/en_us/command/rockpaperscissors/' },
-                  { text: 'Spy', link: '/docs/localizations/en_us/command/spy/' },
-                  { text: 'Stream', link: '/docs/localizations/en_us/command/stream/' },
-                  { text: 'Symbol', link: '/docs/localizations/en_us/command/symbol/' },
-                  { text: 'Tell', link: '/docs/localizations/en_us/command/tell/' },
-                  { text: 'Tictactoe', link: '/docs/localizations/en_us/command/tictactoe/' },
-                  { text: 'Translateto', link: '/docs/localizations/en_us/command/translateto/' },
-                  { text: 'Try', link: '/docs/localizations/en_us/command/try/' },
-                  { text: 'Unban', link: '/docs/localizations/en_us/command/unban/' },
-                  { text: 'Unmute', link: '/docs/localizations/en_us/command/unmute/' },
-                  { text: 'Unwarn', link: '/docs/localizations/en_us/command/unwarn/' },
-                  { text: 'Warn', link: '/docs/localizations/en_us/command/warn/' },
-                  { text: 'Warnlist', link: '/docs/localizations/en_us/command/warnlist/' },
-                ]
-              },
-              {
-                text: 'Интеграции',
-                link: '/docs/localizations/en_us/integration/',
-                collapsed: true,
-                items: [
-                  { text: 'Дискорд', link: '/docs/localizations/en_us/integration/discord/' },
-                  { text: 'Телеграм', link: '/docs/localizations/en_us/integration/telegram/' },
-                  { text: 'Твич', link: '/docs/localizations/en_us/integration/twitch/' },
-                ]
-              },
-              {
-                text: 'Сообщения',
-                link: '/docs/localizations/en_us/message/',
-                collapsed: true,
-                items: [
-                  { text: 'Достижение', link: '/docs/localizations/en_us/message/advancement/' },
-                  { text: 'Автоматическое', link: '/docs/localizations/en_us/message/auto/' },
-                  { text: 'Бренд', link: '/docs/localizations/en_us/message/brand/' },
-                  { text: 'Над головой', link: '/docs/localizations/en_us/message/bubble/' },
-                  { text: 'Чат', link: '/docs/localizations/en_us/message/chat/' },
-                  { text: 'Очищение', link: '/docs/localizations/en_us/message/clear/' },
-                  {
-                    text: 'Контактирование',
-                    link: '/docs/localizations/en_us/message/contact/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Афк', link: '/docs/localizations/en_us/message/contact/afk/' },
-                      { text: 'Правое нажатие', link: '/docs/localizations/en_us/message/contact/rightclick/' },
-                      { text: 'Подпись', link: '/docs/localizations/en_us/message/contact/sign/' },
-                      { text: 'Плевок', link: '/docs/localizations/en_us/message/contact/spit/' },
-                    ]
-                  },
-                  { text: 'Смерть', link: '/docs/localizations/en_us/message/death/' },
-                  { text: 'Деоп', link: '/docs/localizations/en_us/message/deop/' },
-                  { text: 'Зачарование', link: '/docs/localizations/en_us/message/enchant/' },
-                  {
-                    text: 'Форматирование',
-                    link: '/docs/localizations/en_us/message/format/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Упоминание', link: '/docs/localizations/en_us/message/format/mention/' },
-                      {
-                        text: 'Модерация',
-                        link: '/docs/localizations/en_us/message/format/moderation/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Ругательство', link: '/docs/localizations/en_us/message/format/moderation/swear/' },
-                        ]
-                      },
-                      { text: 'Имя', link: '/docs/localizations/en_us/message/format/name_/' },
-                      { text: 'Спойлер', link: '/docs/localizations/en_us/message/format/spoiler/' },
-                    ]
-                  },
-                  { text: 'Режим игры', link: '/docs/localizations/en_us/message/gamemode/' },
-                  { text: 'Приветствие', link: '/docs/localizations/en_us/message/greeting/' },
-                  { text: 'Подключение', link: '/docs/localizations/en_us/message/join/' },
-                  { text: 'Оп', link: '/docs/localizations/en_us/message/op/' },
-                  { text: 'Отключение', link: '/docs/localizations/en_us/message/quit/' },
-                  { text: 'Скорборд', link: '/docs/localizations/en_us/message/scoreboard/' },
-                  { text: 'Сид', link: '/docs/localizations/en_us/message/seed/' },
-                  { text: 'Сетблок', link: '/docs/localizations/en_us/message/setblock/' },
-                  { text: 'Спавнпоинт', link: '/docs/localizations/en_us/message/spawnpoint/' },
-                  {
-                    text: 'Статус',
-                    link: '/docs/localizations/en_us/message/status/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Описание', link: '/docs/localizations/en_us/message/status/motd/' },
-                      { text: 'Игроки', link: '/docs/localizations/en_us/message/status/players/' },
-                      { text: 'Версия', link: '/docs/localizations/en_us/message/status/version/' },
-                    ]
-                  },
-                  {
-                    text: 'Таб',
-                    link: '/docs/localizations/en_us/message/tab/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Имя в списке', link: '/docs/localizations/en_us/message/tab/playerlistname/' },
-                      { text: 'Верхнее', link: '/docs/localizations/en_us/message/tab/header/' },
-                      { text: 'Нижнее', link: '/docs/localizations/en_us/message/tab/footer/' },
-                    ]
-                  },
-                ]
-              },
-            ]
-          },
-        ]
-      },
-      {
-        text: 'Файл command.yml',
+        text: '🛠️Комманды',
         link: '/docs/command/',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Afk', link: '/docs/command/afk/' },
           { text: 'Ball', link: '/docs/command/ball/' },
@@ -416,6 +137,7 @@ export default defineConfig({
           { text: 'Mute', link: '/docs/command/mute/' },
           { text: 'Mutelist', link: '/docs/command/mutelist/' },
           { text: 'Online', link: '/docs/command/online/' },
+          { text: 'Ping', link: '/docs/command/ping/' },
           { text: 'Poll', link: '/docs/command/poll/' },
           { text: 'Reply', link: '/docs/command/reply/' },
           { text: 'Rockpaperscissors', link: '/docs/command/rockpaperscissors/' },
@@ -435,12 +157,11 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Файл integration.yml',
+        text: '🔗 Интеграции',
         link: '/docs/integration/',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Дискорд', link: '/docs/integration/discord/' },
-          { text: 'InteractiveChat', link: '/docs/integration/interactivechat/' },
           { text: 'LuckPerms', link: '/docs/integration/luckperms/' },
           { text: 'PlaceholderAPI', link: '/docs/integration/placeholderapi/' },
           { text: 'PlasmoVoice', link: '/docs/integration/plasmovoice/' },
@@ -453,9 +174,9 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Файл message.yml',
+        text: '💬 Сообщения',
         link: '/docs/message/',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Достижение', link: '/docs/message/advancement/' },
           { text: 'Наковальня', link: '/docs/message/anvil/' },
@@ -490,7 +211,7 @@ export default defineConfig({
               { text: 'Цвета', link: '/docs/message/format/color/' },
               { text: 'Смайлики', link: '/docs/message/format/emoji/' },
               { text: 'Изображение', link: '/docs/message/format/image/' },
-              { text: 'Упоминание', link: '/docs/message/format/image/' },
+              { text: 'Упоминание', link: '/docs/message/format/mention/' },
               {
                 text: 'Модерация',
                 link: '/docs/message/format/moderation/',
@@ -543,174 +264,6 @@ export default defineConfig({
               { text: 'Верхнее', link: '/docs/message/tab/header/' },
               { text: 'Нижнее', link: '/docs/message/tab/footer/' },
               { text: 'Имя в списке', link: '/docs/message/tab/playerlistname/' },
-            ]
-          },
-        ]
-      },
-      {
-        text: 'Файл permission.yml',
-        link: '/docs/permission/',
-        collapsed: false,
-        items: [
-          {
-            text: 'Комманды',
-            link: '/docs/permission/command/',
-            collapsed: true,
-            items: [
-              { text: 'Afk', link: '/docs/permission/command/afk/' },
-              { text: 'Ball', link: '/docs/permission/command/ball/' },
-              { text: 'Ban', link: '/docs/permission/command/ban/' },
-              { text: 'Banlist', link: '/docs/permission/command/banlist/' },
-              { text: 'Broadcast', link: '/docs/permission/command/broadcast/' },
-              { text: 'Chatcolor', link: '/docs/permission/command/chatcolor/' },
-              { text: 'Chatsetting', link: '/docs/permission/command/chatsetting/' },
-              { text: 'Clearchat', link: '/docs/permission/command/clearchat/' },
-              { text: 'Clearmail', link: '/docs/permission/command/clearmail/' },
-              { text: 'Coin', link: '/docs/permission/command/coin/' },
-              { text: 'Dice', link: '/docs/permission/command/dice/' },
-              { text: 'Do', link: '/docs/permission/command/do/' },
-              { text: 'Flectonepulse', link: '/docs/permission/command/flectonepulse/' },
-              { text: 'Geolocate', link: '/docs/permission/command/geolocate/' },
-              { text: 'Helper', link: '/docs/permission/command/helper/' },
-              { text: 'Ignore', link: '/docs/permission/command/ignore/' },
-              { text: 'Ignorelist', link: '/docs/permission/command/ignorelist/' },
-              { text: 'Kick', link: '/docs/permission/command/kick/' },
-              { text: 'Mail', link: '/docs/permission/command/mail/' },
-              { text: 'Maintenance', link: '/docs/permission/command/maintenance/' },
-              { text: 'Mark', link: '/docs/permission/command/mark/' },
-              { text: 'Me', link: '/docs/permission/command/me/' },
-              { text: 'Mute', link: '/docs/permission/command/mute/' },
-              { text: 'Mutelist', link: '/docs/permission/command/mutelist/' },
-              { text: 'Online', link: '/docs/permission/command/online/' },
-              { text: 'Poll', link: '/docs/permission/command/poll/' },
-              { text: 'Reply', link: '/docs/permission/command/reply/' },
-              { text: 'Rockpaperscissors', link: '/docs/permission/command/rockpaperscissors/' },
-              { text: 'Spit', link: '/docs/permission/command/spit/' },
-              { text: 'Spy', link: '/docs/permission/command/spy/' },
-              { text: 'Stream', link: '/docs/permission/command/stream/' },
-              { text: 'Symbol', link: '/docs/permission/command/symbol/' },
-              { text: 'Tell', link: '/docs/permission/command/tell/' },
-              { text: 'Tictactoe', link: '/docs/permission/command/tictactoe/' },
-              { text: 'Translateto', link: '/docs/permission/command/translateto/' },
-              { text: 'Try', link: '/docs/permission/command/try/' },
-              { text: 'Unban', link: '/docs/permission/command/unban/' },
-              { text: 'Unmute', link: '/docs/permission/command/unmute/' },
-              { text: 'Unwarn', link: '/docs/permission/command/unwarn/' },
-              { text: 'Warn', link: '/docs/permission/command/warn/' },
-              { text: 'Warnlist', link: '/docs/permission/command/warnlist/' },
-            ]
-          },
-          {
-            text: 'Интеграции',
-            link: '/docs/permission/integration/',
-            collapsed: true,
-            items: [
-              { text: 'Дискорд', link: '/docs/permission/integration/discord/' },
-              { text: 'InteractiveChat', link: '/docs/permission/integration/interactivechat/' },
-              { text: 'LuckPerms', link: '/docs/permission/integration/luckperms/' },
-              { text: 'PlaceholderAPI', link: '/docs/permission/integration/placeholderapi/' },
-              { text: 'PlasmoVoice', link: '/docs/permission/integration/plasmovoice/' },
-              { text: 'SimpleVoice', link: '/docs/permission/integration/simplevoice/' },
-              { text: 'SkinsRestorer', link: '/docs/permission/integration/skinsrestorer/' },
-              { text: 'SuperVanish', link: '/docs/permission/integration/supervanish/' },
-              { text: 'Телеграм', link: '/docs/permission/integration/telegram/' },
-              { text: 'Твич', link: '/docs/permission/integration/twitch/' },
-              { text: 'Vault', link: '/docs/permission/integration/vault/' },
-            ]
-          },
-          {
-            text: 'Сообщения',
-            link: '/docs/permission/message/',
-            collapsed: true,
-            items: [
-              { text: 'Достижение', link: '/docs/permission/message/advancement/' },
-              { text: 'Наковальня', link: '/docs/permission/message/anvil/' },
-              { text: 'Автоматическое', link: '/docs/permission/message/auto/' },
-              { text: 'Книга', link: '/docs/permission/message/book/' },
-              { text: 'Бренд', link: '/docs/permission/message/brand/' },
-              { text: 'Над головой', link: '/docs/permission/message/bubble/' },
-              { text: 'Чат', link: '/docs/permission/message/chat/' },
-              { text: 'Очищение', link: '/docs/permission/message/clear/' },
-              {
-                text: 'Контактирование',
-                link: '/docs/permission/message/contact/',
-                collapsed: true,
-                items: [
-                  { text: 'Афк', link: '/docs/permission/message/contact/afk/' },
-                  { text: 'Стуки', link: '/docs/permission/message/contact/knock/' },
-                  { text: 'Метка', link: '/docs/permission/message/contact/mark/' },
-                  { text: 'Правое нажатие', link: '/docs/permission/message/contact/rightclick/' },
-                  { text: 'Подпись', link: '/docs/permission/message/contact/sign/' },
-                  { text: 'Плевок', link: '/docs/permission/message/contact/spit/' },
-                  { text: 'Снятие подписи', link: '/docs/permission/message/contact/unsign/' },
-                ]
-              },
-              { text: 'Смерть', link: '/docs/permission/message/death/' },
-              { text: 'Деоп', link: '/docs/permission/message/deop/' },
-              { text: 'Зачарование', link: '/docs/permission/message/enchant/' },
-              {
-                text: 'Форматирование',
-                link: '/docs/permission/message/format/',
-                collapsed: true,
-                items: [
-                  { text: 'Цвета', link: '/docs/permission/message/format/color/' },
-                  { text: 'Смайлики', link: '/docs/permission/message/format/emoji/' },
-                  { text: 'Изображение', link: '/docs/permission/message/format/image/' },
-                  { text: 'Упоминание', link: '/docs/permission/message/format/image/' },
-                  {
-                    text: 'Модерация',
-                    link: '/docs/permission/message/format/moderation/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Капс', link: '/docs/permission/message/format/moderation/caps/' },
-                      { text: 'Ругательство', link: '/docs/permission/message/format/moderation/swear/' },
-                    ]
-                  },
-                  { text: 'Имя', link: '/docs/permission/message/format/name_/' },
-                  { text: 'Спойлер', link: '/docs/permission/message/format/spoiler/' },
-                  { text: 'Измерение', link: '/docs/permission/message/format/world/' },
-                ]
-              },
-              { text: 'Режим игры', link: '/docs/permission/message/gamemode/' },
-              { text: 'Приветствие', link: '/docs/permission/message/greeting/' },
-              { text: 'Подключение', link: '/docs/permission/message/join/' },
-              {
-                text: 'Значения',
-                link: '/docs/permission/message/objective/',
-                collapsed: true,
-                items: [
-                  { text: 'Под ником', link: '/docs/permission/message/objective/belowname/' },
-                  { text: 'В табе', link: '/docs/permission/message/objective/tabname/' },
-                ]
-              },
-              { text: 'Оп', link: '/docs/permission/message/op/' },
-              { text: 'Отключение', link: '/docs/permission/message/quit/' },
-              { text: 'Скорборд', link: '/docs/permission/message/scoreboard/' },
-              { text: 'Сид', link: '/docs/permission/message/seed/' },
-              { text: 'Сетблок', link: '/docs/permission/message/setblock/' },
-              { text: 'Табличка', link: '/docs/permission/message/sign/' },
-              { text: 'Спавнпоинт', link: '/docs/permission/message/spawnpoint/' },
-              {
-                text: 'Статус',
-                link: '/docs/permission/message/status/',
-                collapsed: true,
-                items: [
-                  { text: 'Иконка', link: '/docs/permission/message/status/icon/' },
-                  { text: 'Описание', link: '/docs/permission/message/status/motd/' },
-                  { text: 'Игроки', link: '/docs/permission/message/status/players/' },
-                  { text: 'Версия', link: '/docs/permission/message/status/version/' },
-                ]
-              },
-              {
-                text: 'Таб',
-                link: '/docs/permission/message/tab/',
-                collapsed: true,
-                items: [
-                  { text: 'Верхнее', link: '/docs/permission/message/tab/header/' },
-                  { text: 'Нижнее', link: '/docs/permission/message/tab/footer/' },
-                  { text: 'Имя в списке', link: '/docs/permission/message/tab/playerlistname/' },
-                ]
-              },
             ]
           },
         ]

@@ -1,55 +1,40 @@
 # Чат
-Путь `message.yml > chat`
 
-## Пояснение
 Модуль, отвечающий за отправленные сообщения игроком в чат
 
-## Редактирование
-```yaml
-<message.chat>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.chat`
 
-### По умолчанию
-```yaml
-chat:
-  enable: true
-  types:
-    local:
-      enable: true
-      null-recipient: true
-      cancel: true
-      range: 100
-      priority: 0
-      trigger: ""
-      cooldown:
-        enable: false
-        duration: 60
-      sound:
-        enable: false
-        type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    global:
-      enable: true
-      null-recipient: true
-      cancel: false
-      range: -2
-      priority: 5
-      trigger: "!"
-      cooldown:
-        enable: false
-        duration: 60
-      sound:
-        enable: false
-        type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#chat
+<<< @/files/localizations/en_us.yml#chat
+:::
 
-- [Локализация](/docs/localizations/ru_ru/message/chat/)
-- [Права](/docs/permission/message/chat/)
+### `null-chat`
+
+Сообщение, если в чат ничего не удалось отправить
+
+### `null-recipient`
+
+Сообщение, если никто не увидел сообщение игрока
+
+### `types`
+
+Список чатов и их формат
+
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → chat`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#chat
 
 <!--@include: @/parts/enable.md-->
 
-### `type`
+### `types`
 
 Список всех чатов с их [настройкой](#настройка-чата), можно добавлять свои
 
@@ -79,22 +64,15 @@ chat:
 
 ### `null-recipient`
 
-- Сообщение изменяется тут [Чат](/docs/localizations/ru_ru/message/chat/)
-
 Включает сообщение о том, что отправленное сообщение никто не увидел
 ![null recipient](/nullrecipient.png)
 
 ### `cancel`
 
 - Если `true`, то ивент сообщения чата отменяется для других плагинов
-
-- Если необходимо, чтобы другой плагин, связанный с чатом - работал, то нужно ставить `false`
-::: tip Например по умолчанию чат `global` имеет `cancel: false`
-Чтобы глобальные сообщения также обрабатывались другими плагинами (по типу DiscordSRV, InteractiveChat и т.д.)
-:::
-::: warning Если `false`, то это вызывает дублирование сообщения в консоль
-![chat console](/chatconsole.png)
-:::
+- Если необходимо, чтобы другой плагин, связанный с чатом (DiscordSRV например) - работал, то нужно ставить `false`
+- Если `false`, то это также вызывает дублирование в консоль
+  ![chat console](/chatconsole.png)
 
 <!--@include: @/parts/range.md-->
 
@@ -102,7 +80,7 @@ chat:
 
 Приоритет чата, который используется для выбора, когда у нескольких чатов одинаковый `trigger`. Выбирается тот, у кого приоритет больше
 
-::: tip Например есть чаты
+::: tip НАПРИМЕР ЕСТЬ ЧАТЫ
 ```yaml
 admin:
   priority: 20
@@ -117,15 +95,31 @@ helper:
 
 ### `trigger`
 
-Сообщение, с которого должно начинаться отправленное сообщение для [типа](#type) чата
+Сообщение, с которого должно начинаться отправленное сообщение для чата
 
-::: tip Значение `trigger` может быть каким угодно:
+::: tip ЗНАЧЕНИЕ `trigger` МОЖЕТ БЫТЬ ЛЮБЫМ:
 - `!`, `admin`, `.f` и т.д.
-- пустым т.е. `trigger: ""`, тогда для этого [типа](#type) чата подходит любое сообщение
-:::
+- пустым т.е. `trigger: ""`, тогда для этого чата подходит любое сообщение
+  :::
 
 В итоговом сообщении `trigger` удаляется, т.е. если игрок отправил `!привет`, в итоге будет `привет` без `!`
 
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.chat`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#chat
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+
+### `types`
+
+Список чатов и их прав
+
+- <!--@include: @/parts/permission/cooldown.md-->
+- <!--@include: @/parts/permission/sound.md-->

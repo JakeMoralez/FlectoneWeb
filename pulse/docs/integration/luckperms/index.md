@@ -1,26 +1,15 @@
 # LuckPerms
-Путь `integration.yml >luckperms`
 
-## Пояснение
 Интеграция с LuckPerms позволяет:
-- Проверять права у **оффлайн игроков** 
+- Проверять права у **оффлайн игроков**
 - Сортировать игроков в ТАБе по [весу группы](https://luckperms.net/wiki/Weight)
 
-## Редактирование
-```yaml
-<integration.luckperms>
-```
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml → luckperms`
 
-### По умолчанию
-```yaml
-luckperms:
-  enable: true
-  tab-sort: false
-```
-
-## Параметры
-
-- [Права](/docs/permission/integration/luckperms/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#luckperms
 
 <!--@include: @/parts/enable.md-->
 
@@ -28,3 +17,11 @@ luckperms:
 
 Включает или выключает сортировку в ТАБе по [весу группы](https://luckperms.net/wiki/Weight)
 
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration.luckperms`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#luckperms
+
+<!--@include: @/parts/permission/permissionTier3.md-->

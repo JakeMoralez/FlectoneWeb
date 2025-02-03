@@ -1,7 +1,5 @@
 # Телеграм
-Путь `integration.yml >telegram`
 
-## Пояснение
 Интеграция с Telegram позволяет отправлять сообщения:
 - из Minecraft в Telegram
 - из Telegram в Minecraft
@@ -10,28 +8,55 @@
 ![telegram message 2](/telegrammessage2.png)
 ![minecraft message](/telegramminecraftmessage.png)
 
+<!--@include: @/parts/messageTag.md-->
 
-## Редактирование
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → integration.telegram`
+
+<!--@include: @/parts/words.md#default--> 
+
+::: code-group
+<<< @/files/localizations/ru_ru.yml#telegram
+<<< @/files/localizations/en_us.yml#telegram
+:::
+
+### `Плейсхолдеры`
+
+Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
+::: tip НАПРИМЕР ДЛЯ СООБЩЕНИЯ О БЛОКИРОВКЕ
+Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри телеграм сообщений
+:::
+
+Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
+- `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
+- `<player>` ник игрока, который отправил сообщение
+
+Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
+
+### `for-minecraft`
+
+Формат сообщения, которое будет отправлено из Телеграма в Майнкрафт
+
+### `message-channel`
+
+Список сообщений с форматом итогового сообщения
+
+::: tip ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
+1. Возьми название из списка `типы сообщений`
+2. Вставь в `message-channel`
 ```yaml
-<integration.telegram>
+название_сообщения: "<final_message>"
 ```
+:::
 
-### По умолчанию
-```yaml
-telegram:
-  enable: false
-  token: ""
-  message-channel:
-    CHAT: []
-    FROM_TELEGRAM_TO_MINECRAFT: []
-  destination:
-    type: CHAT
-```
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml → telegram`
 
-## Параметры
-
-- [Локализация](/docs/localizations/ru_ru/integration/telegram/)
-- [Права](/docs/permission/integration/telegram/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#telegram
 
 <!--@include: @/parts/enable.md-->
 
@@ -67,14 +92,20 @@ message-channel:
 
 Если ваш канал является Форумом (Топиком), то айди **ГЛАВНОГО** канала нужно указывать без `_`
 
-1. Айди моего главного канала (он всегда заканчивается на `_1`) это `-1002341720267_1` 
+1. Айди моего главного канала (он всегда заканчивается на `_1`) это `-1002341720267_1`
 2. Значит вписывать нужно **ТОЛЬКО** `-1002341720267`
 
 Для других чатов из форума это правило не действует и нужно вписывать **ПОЛНЫЙ** айди
 
 :::
 
-<!--@include: @/parts/messageTag.md-->
-
 <!--@include: @/parts/destination.md-->
 
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration.telegram`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#telegram
+
+<!--@include: @/parts/permission/permissionTier3.md-->

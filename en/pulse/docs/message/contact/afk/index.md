@@ -1,38 +1,41 @@
 # Афк
-Путь `message.yml > contact.afk`
 
-## Пояснение
 Игрок становится АФК, если ничего не делает какой-то промежуток времени
 ![afk global message](/afkglobalmessage.png)
 
 Если человек АФК, то ему выдаётся определённый суффикс
 ![afk suffix](/afksuffix.png)
 
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.contact.afk`
 
-## Редактирование
-```yaml
-<message.contact.afk>
-```
+<!--@include: @/parts/words.md#default--> 
 
-### По умолчанию
-```yaml
-afk:
-  enable: true
-  range: -1
-  delay: 3000
-  ignore:
-    - "afk"
-  destination:
-    type: CHAT
-  ticker:
-    enable: true
-    period: 20
-```
+::: code-group
+<<< @/files/localizations/ru_ru.yml#afk
+<<< @/files/localizations/en_us.yml#afk
+:::
 
-## Параметры
+### `suffix`
 
-- [Локализация](/docs/localizations/ru_ru/message/contact/afk/)
-- [Права](/docs/permission/message/contact/afk/)
+Суффикс, который выдаётся игроку, если он встал в АФК
+![afksuffix](/afksuffix.png)
+
+### `format-true`
+
+Сообщение, если игрок отошёл
+
+### `format-false`
+
+Сообщение, если игрок вернулся
+
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → contact.afk`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#afk
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
@@ -51,9 +54,20 @@ afk:
 | `chat` - когда игрок пишет в чат     |
 | `quit` - когда игрок выходит         |
 
-::: tip Например
+::: tip НАПРИМЕР
 Если я впишу в список комманду `tell` и игрок будет в режиме АФК, то он сможет использовать комманду `tell` и его не выкинет с режима АФК
 :::
 
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/ticker.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.afk`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#afk
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->

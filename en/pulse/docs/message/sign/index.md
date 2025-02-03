@@ -1,26 +1,22 @@
 # Табличка
-Путь `message.yml > sign`
 
-## Пояснение
 Модуль, отвечающий за сообщения на табличке
 ![sign](/signoak.gif)
 
-## Редактирование
-```yaml
-<message.sign>
-```
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → sign`
 
-### По умолчанию
-```yaml
-sign:
-  enable: true
-  sound:
-    enable: false
-```
-
-## Параметры
-
-- [Права](/docs/permission/message/sign/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#blocksign
 
 <!--@include: @/parts/enable.md-->
-<!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.sign`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#blocksign
+
+<!--@include: @/parts/permission/permissionTier3.md-->

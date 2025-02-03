@@ -1,43 +1,13 @@
-# Файл `config.yml`
+# Конфигурация
 
-## Пояснение
-Файл по настройке плагина `FlectonePulse`
+Основная конфигурация `FlectonePulse`, без которой невозможна работа
 
-## Редактирование
-```yaml
-<config>
-```
+[//]: # (config.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `config.yml`
 
-### По умолчанию
-```yaml
-console: "Console"
-version: "0.3.0"
-language: "en_us"
-language-player: true
-metrics: true
-bungeecord: false
-velocity: false
-clusters: []
-log-filter:
-   - "Paper Async Command Builder"
-   - "Caught previously unhandled exception :"
-   - "Error received from Telegram GetUpdates Request"
-   - "OkHttp TaskRunner"
-
-database:
-   type: SQLITE
-   name: "flectonepulse"
-   host: "localhost"
-   port: "3306"
-   user: "root"
-   password: "1234"
-   parameters: "?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8"
-
-module:
-   enable: true
-```
-
-## Параметры
+<!--@include: @/parts/words.md#default-->
+<<< @/files/config.yml#config
 
 ### `console`
 
@@ -86,7 +56,7 @@ module:
 
 ### `bungeecord`
 
-::: tip Чтобы плагин работал на **BungeeCord**:
+::: tip ЧТОБЫ ПЛАГИН РАБОТАЛ НА BUNGEECORD:
 1. Включи его здесь
 2. Для **BungeeCord** сервера закинь файл `FlectonePulse-bungee.jar` в папку `plugins`
 3. Перезапусти **BungeeCord** и сервера, где стоит **FlectonePulse**
@@ -94,7 +64,7 @@ module:
 
 ### `velocity`
 
-::: tip Чтобы плагин работал на **Velocity**:
+::: tip ЧТОБЫ ПЛАГИН РАБОТАЛ НА VELOCITY:
 1. Включи его здесь
 2. Для **Velocity** сервера закинь файл `FlectonePulse-velocity.jar` в папку `plugins`
 3. Перезапусти **Velocity** и сервера, где стоит **FlectonePulse**
@@ -102,17 +72,17 @@ module:
 
 ### `clusters`
 
-Список кластеров, к которым должен быть подключён сервер. Используется только когда включён режим прокси. 
+Список кластеров, к которым должен быть подключён сервер. Используется только тогда, когда включен режим прокси.
 Если список пустой, то сервер получает все сообщения с других серверов
 
 ::: tip КАК ИСПОЛЬЗОВАТЬ?
-Нужно вписать название кластера на серверах, где сообщение будет получено или отправлено
+Нужно вписать название кластера на серверах, где сообщение будет получено и отправлено
 ```yaml
 clusters: 
    - "test_cluster"
 ```
 
-Так сервера связываются между собой и сообщения будут только между ними
+Так сервера связываются между собой и сообщения будут только между этими кластерами
 :::
 
 ### `log-filter`
@@ -121,7 +91,7 @@ clusters:
 
 Списком указываются сообщения, которые нужно не показывать, используя ключевые слова, встречающиеся в сообщении
 
-::: tip Например я хочу отфильтровать
+::: tip НАПРИМЕР Я ХОЧУ ОТФИЛЬТРОВАТЬ
 ![filter](/filter.png)
 
 Значит нужно вписать:
@@ -172,7 +142,7 @@ clusters:
 
 - Каждый модуль имеет родителя (тот, кто выше находится)
 
-::: tip Например есть
+::: tip НАПРИМЕР
 ```yaml
 house:
   door:
@@ -184,7 +154,7 @@ house:
 
 - Каждый модуль зависит от `enable` родителя
 
-::: tip Например есть
+::: tip НАПРИМЕР
 ```yaml
 house:
   enable: false // [!code highlight]

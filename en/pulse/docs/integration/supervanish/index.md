@@ -1,23 +1,21 @@
 # SuperVanish
-Путь `integration.yml >supervanish`
 
-## Пояснение
 Интеграция с SuperVanish (и PremiumVanish) скрывает действия игроков в ванише
 
-## Редактирование
-```yaml
-<integration.supervanish>
-```
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml → supervanish`
 
-### По умолчанию
-```yaml
-supervanish:
-  enable: true
-```
-
-## Параметры
-
-- [Права](/docs/permission/integration/supervanish/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#supervanish
 
 <!--@include: @/parts/enable.md-->
 
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration.supervanish`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#supervanish
+
+<!--@include: @/parts/permission/permissionTier3.md-->

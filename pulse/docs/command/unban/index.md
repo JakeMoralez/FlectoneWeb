@@ -1,35 +1,37 @@
-# Комманда /unban
-Путь `command.yml > unban`
+# Комманда `/unban`
 
-## Пояснение
 Комманда для того, чтобы разблокировать игрока
 ![command unban](/commandunban.png)
 
-## Редактирование
-```yaml
-<command.unban>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.unban`
 
-### По умолчанию
-```yaml
-unban:
-  enable: true
-  range: -2
-  aliases:
-    - "unban"
-    - "pardon"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#unban
+<<< @/files/localizations/en_us.yml#unban
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/unban/)
-- [Права](/docs/permission/command/unban/)
+### `null-player`
+
+Сообщение, если введённый игрок не найден
+
+### `not-banned`
+
+Сообщение, если введённый игрок не заблокирован
+
+### `format`
+
+Сообщение при разблокировке
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → unban`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#unban
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
@@ -37,3 +39,15 @@ unban:
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.unban`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#unban
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->
+

@@ -1,11 +1,9 @@
 # PlaceholderAPI
-Путь `integration.yml >placeholderapi`
 
-## Пояснение
 Интеграция с PlaceholderAPI:
 - Позволяет использовать любые [плейсхолдеры](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders)
 
-::: tip Например
+::: tip НАПРИМЕР
 `%server_tps%`, `%server_online%` и т.д., если установлен соответствующий модуль с помощью `/papi ecloud download модуль`
 :::
 
@@ -23,20 +21,24 @@
 | `%flectonepulse_online%`        | Количество игроков на сервере                                      |
 | `%flectonepulse_tps%%`          | ТПС сервера                                                        |
 
-## Редактирование
-```yaml
-<integration.placeholderapi>
-```
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml → placeholderapi`
 
-### По умолчанию
-```yaml
-placeholderapi:
-  enable: true
-```
-
-## Параметры
-
-- [Права](/docs/permission/integration/placeholderapi/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#placeholderapi
 
 <!--@include: @/parts/enable.md-->
 
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration.placeholderapi`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#placeholderapi
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+
+### `use`
+
+Право для использования плейсхолдеров из PlaceholderAPI в сообщении

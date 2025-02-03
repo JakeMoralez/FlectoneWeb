@@ -1,7 +1,5 @@
-# Комманда /afk
-Путь `command.yml > afk`
+# Комманда `/afk`
 
-## Пояснение
 Комманда для смены режима AFK
 ![afk](/afkglobalmessage.png)
 
@@ -9,28 +7,23 @@
 Комманда не будет работать, если модуль [`AFK`](/docs/message/contact/afk/) выключен
 :::
 
-## Редактирование
-```yaml
-<command.afk>
-```
-
-### По умолчанию
-```yaml
-afk:
-  enable: true
-  aliases:
-    - "afk"
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
-
-## Параметры
-
-- [Права](/docs/permission/command/afk/)
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → afk`
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#afk
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.afk`
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#afk
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->

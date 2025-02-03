@@ -1,30 +1,69 @@
-![flectonepulse](/flectonepulse.png)
-
-<div class="center-row">
-    <a href="https://www.spigotmc.org/"><img src="/bukkit.svg" alt="bukkit" class="hover-brightness"></a>
-    <a href="https://www.spigotmc.org/"><img src="/spigot.svg" alt="spigot" class="hover-brightness"></a>
-    <a href="https://papermc.io/"><img src="/paper.svg" alt="paper" class="hover-brightness"></a>
-    <a href="https://purpurmc.org/"><img src="/purpur.svg" alt="purpur" class="hover-brightness"></a>
-    <a href="https://papermc.io/software/folia"><img src="/folia.svg" alt="folia" class="hover-brightness"></a>
+![pulse](https://flectone.net/pulse/flectonepulse.png)
+<div class="center-row" align="center">
+    <h1> FlectonePulse — документация </h1>
+    <p>Полное руководство по настройке и использованию плагина FlectonePulse.</p>
 </div>
 
-<br>
+---
 
-<div class="center-row">
-    <a href="https://www.spigotmc.org/wiki/bungeecord/"><img src="/bungeecord.svg" alt="bungeecord" class="hover-brightness"></a>
-    <a href="https://papermc.io/software/velocity"><img src="/velocity.svg" alt="velocity" class="hover-brightness"></a>
+## 📁 Конфигурация
+
+### Основные настройки
+Описание основных параметров конфигурации плагина.  
+[Подробнее →](/docs/config/)
+
+### Язык и локализация
+Настройка языков и автоматическое определение языка игрока.  
+[Подробнее →](/docs/config#language)
+
+---
+
+## 🛠️ Комманды
+
+### Список комманд
+Полный список доступных комманд и их описание.  
+[Подробнее →](/docs/command/)
+
+### Настройка комманд
+Как настроить и кастомизировать комманды под свои нужды.  
+[Подробнее →](/docs/command/afk/)
+
+---
+
+## 🔗 Интеграции
+
+### Discord
+Интеграция с Discord для синхронизации чата и уведомлений.  
+[Подробнее →](/docs/integration/discord/)
+
+### Telegram
+Настройка бота Telegram для управления сервером.  
+[Подробнее →](/docs/integration/telegram/)
+
+### Twitch
+Интеграция с Twitch для уведомлений о стримах.  
+[Подробнее →](/docs/integration/twitch/)
+
+### Другие плагины
+Интеграция с популярными плагинами, такими как LuckPerms, PlaceholderAPI и другими.  
+[Подробнее →](/docs/integration/)
+
+---
+
+## 💬 Сообщения
+
+### Кастомизация сообщений
+Как изменить стандартные сообщения и добавить свои.  
+[Подробнее →](/docs/message/chat/)
+
+### Форматирование текста
+Использование цветов, анимаций и форматирования в сообщениях.  
+[Подробнее →](/docs/message/format/)
+
+---
+
+<div align="center">
+  <h3>🚀 Начни использовать FlectonePulse уже сегодня!</h3>
+  <a href="https://modrinth.com/plugin/flectonepulse"><img src="https://flectone.net/pulse/modrinth.svg" alt="modrinth" class="hover-brightness"></a>
+  <a href="https://discord.flectone.net/"><img src="https://flectone.net/pulse/discord.svg" alt="discord" class="hover-brightness"></a>
 </div>
-
-
-<style>
-.center-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.hover-brightness:hover {
-    filter: brightness(1.2);
-    transition: 0.3s;
-}
-</style>

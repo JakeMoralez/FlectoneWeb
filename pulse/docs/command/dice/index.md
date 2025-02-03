@@ -1,36 +1,33 @@
-# Комманда /dice
-Путь `command.yml > dice`
+# Комманда `/dice`
 
-## Пояснение
 Комманда для броска кубиков на удачу
 ![command dice](/commanddice.png)
 
-## Редактирование
-```yaml
-<command.dice>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.dice`
 
-### По умолчанию
-```yaml
-dice:
-  enable: true
-  range: -2
-  min: 1
-  max: 6
-  aliases:
-    - "dice"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#dice
+<<< @/files/localizations/en_us.yml#dice
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/dice/)
-- [Права](/docs/permission/command/dice/)
+### `symbols`
+
+Список индексов (выпавшее число) и символов (кубики)
+
+### `format`
+
+Формат сообщения, которое будет отправлено
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → dice`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#dice
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
@@ -47,3 +44,14 @@ dice:
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.dice`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#dice
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->

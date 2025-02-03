@@ -1,34 +1,29 @@
-# Комманда /me
-Путь `command.yml > me`
+# Комманда `/me`
 
-## Пояснение
 Комманда для отображения действия
 ![command me](/commandme.png)
 
-## Редактирование
-```yaml
-<command.me>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.me`
 
-### По умолчанию
-```yaml
-me:
-  enable: true
-  range: -2
-  aliases:
-    - "me"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#me
+<<< @/files/localizations/en_us.yml#me
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/me/)
-- [Права](/docs/permission/command/me/)
+### `format`
+
+Формат сообщения, которое будет отправлено
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → me`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#me
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
@@ -36,3 +31,14 @@ me:
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.me`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#me
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->

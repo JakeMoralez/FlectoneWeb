@@ -1,7 +1,5 @@
 # Твич
-Путь `integration.yml >twitch`
 
-## Пояснение
 Интеграция с Twitch позволяет:
 - отправлять сообщения из Minecraft в Twitch
 - отправлять сообщения из Twitch в Minecraft
@@ -10,31 +8,56 @@
 ![twitch message](/twitchmessage.png)
 ![minecraft message](/twitchminecraftmessage.png)
 
-## Редактирование
+<!--@include: @/parts/messageTag.md-->
+
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → integration.twitch`
+
+<!--@include: @/parts/words.md#default--> 
+
+::: code-group
+<<< @/files/localizations/ru_ru.yml#twitch
+<<< @/files/localizations/en_us.yml#twitch
+:::
+
+### `Плейсхолдеры`
+
+Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
+::: tip НАПРИМЕР ДЛЯ СООБЩЕНИЯ О БЛОКИРОВКЕ
+Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри твич сообщений
+:::
+
+Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
+- `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
+- `<player>` ник игрока, который отправил сообщение
+
+Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
+
+### `for-minecraft`
+- По умолчанию `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
+
+Формат сообщения, которое будет отправлено из Твича в Майнкрафт
+
+### `message-channel`
+
+Список сообщений с форматом итогового сообщения
+
+::: tip ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
+1. Возьми название из списка `типы сообщений`
+2. Вставь в `message-channel`
 ```yaml
-<integration.twitch>
+название_сообщения: "<final_message>"
 ```
+:::
 
-### По умолчанию
-```yaml
-twitch:
-  enable: false
-  client-id: ""
-  token: ""
-  message-channel:
-    CHAT: []
-    FROM_TWITCH_TO_MINECRAFT: []
-  follow-channel:
-    faseri4ka:
-      - "stream start https://twitch.tv/faseri4ka"
-  destination:
-    type: CHAT
-```
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml → twitch`
 
-## Параметры
-
-- [Локализация](/docs/localizations/ru_ru/integration/twitch/)
-- [Права](/docs/permission/integration/twitch/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#twitch
 
 <!--@include: @/parts/enable.md-->
 
@@ -45,12 +68,12 @@ twitch:
 
 ### `client-id`
 
-[Идентификатор](https://twitchtokengenerator.com/) пользователя
+[Идентификатор](https://twitchtokengenerator.com/) пользователя. Можно использовать environment variables, например `${VALUE}`
 ![client id](/twitchclientid.png)
 
 ### `token`
 
-[Токен](https://twitchtokengenerator.com/) пользователя для подключения
+[Токен](https://twitchtokengenerator.com/) пользователя для подключения. Можно использовать environment variables, например `${VALUE}`
 ![token](/twitchtoken.png)
 
 ### `message-channel`
@@ -66,10 +89,8 @@ message-channel:
     - "faseri4ka" // [!code highlight]
 ```
 
-Каналов может быть сколько угодно, главное, чтобы к ним был доступ у клиента из [секреты](/docs/secrets/twitch/)
+Каналов может быть сколько угодно, главное, чтобы к ним был доступ у подключенного аккаунта
 :::
-
-<!--@include: @/parts/messageTag.md-->
 
 ### `follow-channel`
 
@@ -84,9 +105,17 @@ follow-channel:
     - "stream start https://twitch.tv/faseri4ka"
 ```
 
-- Каналов может быть до 10 одновременно, главное, чтобы к ним был доступ у клиента из [секреты](/docs/secrets/twitch/)
+- Каналов может быть до 10 одновременно, главное, чтобы к ним был доступ у подключенного аккаунта
 - Комманд, при начале трансляции, может быть сколько угодно и какие угодно
 :::
 
 <!--@include: @/parts/destination.md-->
 
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration.twitch`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#twitch
+
+<!--@include: @/parts/permission/permissionTier3.md-->

@@ -1,37 +1,33 @@
-# Комманда /try
-Путь `command.yml > try`
+# Комманда `/try`
 
-## Пояснение
 Комманда для отображения выполнения действия с шансом
 ![command try](/commandtry.png)
 
-## Редактирование
-```yaml
-<command.try>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.try`
 
-### По умолчанию
-```yaml
-try:
-  enable: true
-  range: -2
-  min: 0
-  max: 100
-  good: 50
-  aliases:
-    - "try"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#try
+<<< @/files/localizations/en_us.yml#try
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/try/)
-- [Права](/docs/permission/command/try/)
+### `format-true`
+
+Формат сообщения, которое будет отправлено, если действие выполнено успешно
+
+### `format-false`
+
+Формат сообщения, которое будет отправлено, если действие выполнено неуспешно
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → try`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#try
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
@@ -52,3 +48,15 @@ try:
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.try`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#try
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->
+

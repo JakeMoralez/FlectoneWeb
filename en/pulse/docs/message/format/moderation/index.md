@@ -1,22 +1,21 @@
 # Модерация
-Путь `message.yml > format.moderation.*`
 
-## Пояснение
 Модуль, отвечающий за модерацию сообщений
 
-## Редактирование
-```yaml
-<message.format.moderation>
-```
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → format.moderation`
 
-### По умолчанию
-```yaml
-moderation:
-  enable: true
-```
-
-## Параметры
-
-- [Права](/docs/permission/message/format/moderation/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#moderation
 
 <!--@include: @/parts/enable.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.format.moderation`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#moderation
+
+<!--@include: @/parts/permission/permissionTier3.md-->

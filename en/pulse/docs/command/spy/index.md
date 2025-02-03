@@ -1,42 +1,37 @@
-# Комманда /spy
-Путь `command.yml > spy`
+# Комманда `/spy`
 
-## Пояснение
 Комманда для отслеживания за действиями игроков
 ![command spy](/commandspy.gif)
 
-## Редактирование
-```yaml
-<command.spy>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.spy`
 
-### По умолчанию
-```yaml
-spy:
-  enable: true
-  range: -2
-  aliases:
-    - "spy"
-  categories:
-    command:
-      - "tell"
-    action:
-      - "anvil"
-      - "book"
-      - "sign"
-      - "chat"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#spy
+<<< @/files/localizations/en_us.yml#spy
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/spy/)
-- [Права](/docs/permission/command/spy/)
+### `format-true`
+
+Сообщение при включении слежки
+
+### `format-false`
+
+Сообщение при выключении слежки
+
+### `format-log`
+
+Формат сообщения, которое будет отправлено при слежке за действием
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → spy`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#spy
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
@@ -49,3 +44,15 @@ spy:
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.spy`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#spy
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->
+

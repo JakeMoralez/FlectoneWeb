@@ -1,38 +1,56 @@
-# Комманда /stream
-Путь `command.yml > stream`
+# Комманда `/stream`
 
-## Пояснение
 Комманда для оповещения о запуске трансляции
 ![command stream](/commandstream.png)
 
-Если стрим включен, то игроку выдаётся префикс
+Если игрок имеет право на комманду, то ему выдаётся префикс при включении/выключении
 ![command stream prefix](/commandstreamprefix.png)
 
-## Редактирование
-```yaml
-<command.stream>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.stream`
 
-### По умолчанию
-```yaml
-stream:
-  enable: true
-  range: -2
-  aliases:
-    - "stream"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: true
-    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#stream
+<<< @/files/localizations/en_us.yml#stream
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/stream/)
-- [Права](/docs/permission/command/stream/)
+### `already`
+
+Сообщение, если игрок, который ведёт трансляцию, пытается запустить ещё одну трансляцию
+
+### `not`
+
+Сообщение, если игрок, который не ведёт трансляцию, пытается закончить трансляцию
+
+### `prefix-true`
+
+Префикс игрока, который в данный момент ведёт трансляцию
+
+### `prefix-false`
+
+Префикс игрока, который имеет право вести трансляцию, но в данный момент не ведёт её
+
+### `url-tag`
+
+Формат каждой ссылки в оповещении
+
+### `format-start`
+
+Оповещение о начале трансляции
+
+### `format-end`
+
+Сообщение, если игрок закончил трансляцию
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → stream`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#stream
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
@@ -40,3 +58,15 @@ stream:
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.stream`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#stream
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->
+

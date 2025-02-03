@@ -1,36 +1,42 @@
 # Автоматическое
-Путь `message.yml > auto`
 
-## Пояснение
 Сообщение от сервера раз в какой-то промежуток времени
 ![auto](/auto.png)
 
-## Редактирование
-```yaml
-<message.auto>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.auto`
 
-### По умолчанию
-```yaml
-auto:
-  enable: false
-  random: true
-  destination:
-    type: CHAT
-  ticker:
-    enable: true
-    period: 9000
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#auto
+<<< @/files/localizations/en_us.yml#auto
+:::
 
-- [Локализация](/docs/localizations/ru_ru/message/auto/)
-- [Права](/docs/permission/message/auto/)
+### `values`
+
+Список автоматических сообщений
+
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → auto`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#auto
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/random.md-->
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/ticker.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.auto`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#auto
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/sound.md-->

@@ -1,24 +1,22 @@
 # PlasmoVoice
-Путь `integration.yml >plasmovoice`
 
-## Пояснение
 Интеграция с PlasmoVoice позволяет мутить игроков, которые были замучены с помощью `/mute`
 ![mute](/mute.png)
 
-## Редактирование
-```yaml
-<integration.plasmovoice>
-```
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml → plasmovoice`
 
-### По умолчанию
-```yaml
-plasmovoice:
-  enable: true
-```
-
-## Параметры
-
-- [Права](/docs/permission/integration/plasmovoice/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#plasmovoice
 
 <!--@include: @/parts/enable.md-->
 
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration.plasmovoice`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#plasmovoice
+
+<!--@include: @/parts/permission/permissionTier3.md-->

@@ -1,0 +1,93 @@
+#  ___       ___  __  ___  __        ___ 
+# |__  |    |__  /  `  |  /  \ |\ | |__
+# |    |___ |___ \__,  |  \__/ | \| |___
+#  __             __   ___ 
+# |__) |  | |    /__` |__  
+# |    \__/ |___ .__/ |___   /\
+#                           /  \
+# __/\___  ____/\_____  ___/    \______
+#        \/           \/  
+# 
+#region integration
+enable: true
+#endregion integration
+#region discord
+discord:
+  enable: false
+  token: ""
+  presence:
+    enable: true
+    status: "ONLINE"
+    activity:
+      enable: true
+      type: "PLAYING"
+      name: "FlectonePulse"
+      url: "https://flectone.net/pulse/"
+  channel-info:
+    enable: false
+    ticker:
+      enable: true
+      period: 1200
+  message-channel:
+    FROM_DISCORD_TO_MINECRAFT: ""
+    CHAT: ""
+  destination:
+    type: CHAT
+#endregion discord
+#region interactivechat
+interactivechat:
+  enable: true
+#endregion interactivechat
+#region luckperms
+luckperms:
+  enable: true
+  tab-sort: false
+#endregion luckperms
+#region placeholderapi
+placeholderapi:
+  enable: true
+#endregion placeholderapi
+#region plasmovoice
+plasmovoice:
+  enable: true
+#endregion plasmovoice
+#region simplevoice
+simplevoice:
+  enable: true
+#endregion simplevoice
+#region skinsrestorer
+skinsrestorer:
+  enable: true
+#endregion skinsrestorer
+#region supervanish
+supervanish:
+  enable: true
+#endregion supervanish
+#region telegram
+telegram:
+  enable: false
+  token: ""
+  message-channel:
+    FROM_TELEGRAM_TO_MINECRAFT: []
+    CHAT: []
+  destination:
+    type: CHAT
+#endregion telegram
+#region twitch
+twitch:
+  enable: false
+  client-id: ""
+  token: ""
+  message-channel:
+    FROM_TWITCH_TO_MINECRAFT: []
+    CHAT: []
+  follow-channel:
+    faseri4ka:
+      - "stream start https://twitch.tv/faseri4ka"
+  destination:
+    type: CHAT
+#endregion twitch
+#region vault
+vault:
+  enable: true
+#endregion vault

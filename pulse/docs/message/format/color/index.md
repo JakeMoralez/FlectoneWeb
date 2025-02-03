@@ -1,34 +1,18 @@
 # Цвета
-Путь `message.yml > format.color`
 
-## Пояснение
 Тег `fcolor` используется для индивидуальных настроек цвета у каждого игрока
 
 Использование: `<fcolor:номер>`
 
-![color message](/colormessage.png)
-![color](/color.gif)
+![color message](/colormessage.png)  
+![color](/color.gif)  
 
-## Редактирование
-```yaml
-<message.format.color>
-```
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → format.color`
 
-### По умолчанию
-```yaml
-color:
-  enable: true
-  use-recipient-colors: true
-  values:
-    1: "#ADD8E6"
-    2: "#87CEFA"
-    3: "#A9A9A9"
-    4: "#FFFAFA"
-```
-
-## Параметры
-
-- [Права](/docs/permission/message/format/color/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#color
 
 <!--@include: @/parts/enable.md-->
 
@@ -51,3 +35,12 @@ color:
 `1` - номер для цвета `#ADD8E6` <br><br>
 Чтобы такой тег использовать, нужно писать `<fcolor:1>`
 :::
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.format.color`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#color
+
+<!--@include: @/parts/permission/permissionTier3.md-->

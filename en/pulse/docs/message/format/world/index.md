@@ -1,34 +1,15 @@
 # Измерение
-Путь `message.yml > format.world`
 
-## Пояснение
 Модуль, отвечающий за тег `<world_prefix>` т.е. за цвет измерения
-![world tab](/worldtab.png)
+![world tab](/worldtab.png)  
 ![world chat](/worldchat.png)
 
-## Редактирование
-```yaml
-<message.format.world>
-```
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → format.world`
 
-### По умолчанию
-```yaml
-world:
-  enable: true
-  mode: TYPE
-  values:
-    normal: "<color:#98FB98>"
-    nether: "<color:#F08080>"
-    the_end: "<color:#9370DB>"
-    custom: "<color:#98FB98>"
-    world: "<color:#98FB98>"
-    world_nether: "<color:#F08080>"
-    world_the_end: "<color:#9370DB>"
-```
-
-## Параметры
-
-- [Права](/docs/permission/message/format/world/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#world
 
 <!--@include: @/parts/enable.md-->
 
@@ -44,3 +25,12 @@ world:
 ### `values`
 
 Список миров и их `<world_prefix>`
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.format.world`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#world
+
+<!--@include: @/parts/permission/permissionTier3.md-->

@@ -1,40 +1,57 @@
-# Комманда /ban
-Путь `command.yml > ban`
+# Комманда `/ban`
 
-## Пояснение
 Комманда для того, чтобы заблокировать игрока
 ![command ban](/commandban.png)
 
-От лица игрока
-![command ban player](/commandbanplayer.png)
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.ban`
 
-## Редактирование
+<!--@include: @/parts/words.md#default--> 
+
+::: code-group
+<<< @/files/localizations/ru_ru.yml#ban
+<<< @/files/localizations/en_us.yml#ban
+:::
+
+### `null-player`
+
+Сообщение, если введённый игрок не найден
+
+### `null-time`
+
+Сообщение, если введено невозможное время
+
+### `reasons`
+
+Список с ключами и значениями, где ключом является слово, а значением конкретная причина
+
+::: tip Можно вписывать свои причины, например
 ```yaml
-<command.ban>
+random_kek: "Random reason"
 ```
+Тогда если я напишу `/ban player 1d random_kek`, то причиной будет `Random reason`
 
-### По умолчанию
-```yaml
-ban:
-  enable: true
-  suggest-offline-players: true
-  show-connection-attempts: true
-  range: -2
-  aliases:
-    - "ban"
-    - "tempban"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+Если причина не указана, будет использоваться `default`
+:::
 
-## Параметры
+### `server`
 
-- [Локализация](/docs/localizations/ru_ru/command/ban/)
-- [Права](/docs/permission/command/ban/)
+Сообщение для всех
+
+### `person`
+
+Сообщение для игрока
+
+### `connection-attempt`
+
+Сообщение, если заблокированный игрок пытался подключиться
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → ban`
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#ban
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/suggestOfflinePlayers.md-->
@@ -49,3 +66,13 @@ ban:
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.ban`
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#ban
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->

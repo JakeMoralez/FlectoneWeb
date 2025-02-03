@@ -1,39 +1,73 @@
-# Комманда /rockpaperscissors
-Путь `command.yml > rockpaperscissors`
+# Комманда `/rockpaperscissors`
 
-## Пояснение
 Комманда для того, чтобы предложить поиграть в камень-ножницы-бумага
 ![command rockpaperscissors](/commandrockpaperscissors.png)
 
-## Редактирование
-```yaml
-<command.rockpaperscissors>
-```
+::: danger ВНИМАТЕЛЬНО
+Комманда не будет работать, если модуль [`Tell`](/docs/command/tell/) выключен
+:::
 
-### По умолчанию
-```yaml
-rockpaperscissors:
-  enable: true
-  aliases:
-    - "rockpaperscissors"
-    - "rps"
-  strategies:
-    rock:
-      - "scissors"
-    paper:
-      - "rock"
-    scissors:
-      - "paper"
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.rockpaperscissors`
 
-## Параметры
+<!--@include: @/parts/words.md#default--> 
 
-- [Локализация](/docs/localizations/ru_ru/command/rockpaperscissors/)
-- [Права](/docs/permission/command/rockpaperscissors/)
+::: code-group
+<<< @/files/localizations/ru_ru.yml#rockpaperscissors
+<<< @/files/localizations/en_us.yml#rockpaperscissors
+:::
+
+### `null-player`
+
+Сообщение, если введённый игрок не найден
+
+### `null-game`
+
+Сообщение, если игры не существует
+
+### `wrong-move`
+
+Сообщение при невозможном ходе
+
+### `already`
+
+Сообщение, если игрок уже сделал ход
+
+### `myself`
+
+Сообщение, если игрок решил поиграть с самим собой
+
+### `sender`
+
+Сообщение для отправителя
+
+### `receiver`
+
+Сообщение для получателя
+
+### `format-move`
+
+Сообщение при ходе
+
+### `format-win`
+
+Сообщение при победе
+
+### `forma-draw`
+
+Сообщение при ничье
+
+### `strategies`
+
+Список стратегий и их названий
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → rockpaperscissors`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#rockpaperscissors
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/aliases.md-->
@@ -65,3 +99,15 @@ customvalue:
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.rockpaperscissors`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#rockpaperscissors
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->
+

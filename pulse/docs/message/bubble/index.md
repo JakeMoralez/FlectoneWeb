@@ -1,30 +1,9 @@
 # Над головой
-Путь `message.yml > bubble`
 
-## Пояснение
 Модуль, отвечающий за сообщения над головой
 ![bubble](/bubble.gif)
 
 Идея взята из [LightChatBubbles](https://github.com/atesin/LightChatBubbles)
-
-## Редактирование
-```yaml
-<message.bubble>
-```
-
-### По умолчанию
-```yaml
-bubble:
-  enable: true
-  new-system: true
-  distance: 30.0
-  line-width: 200
-  read-speed: 100.0
-  handicap-chars: 10.0
-  height: 0.2
-```
-
-## Длительность сообщения
 
 ### Формула длительности
 
@@ -32,22 +11,29 @@ bubble:
 long duration = (countWords + handicapChars) / readSpeed * 1200;
 ```
 
-Длительность = (`количество слов` + [`handicap-chars`](#handicap-chars)) / [`read-speed`](#read-speed) * `1200`
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.bubble`
 
-## Параметры
+<!--@include: @/parts/words.md#default--> 
 
-- [Локализация](/docs/localizations/ru_ru/message/bubble/)
-- [Права](/docs/permission/message/bubble/)
+::: code-group
+<<< @/files/localizations/ru_ru.yml#bubble
+<<< @/files/localizations/en_us.yml#bubble
+:::
+
+### `format`
+
+Формат сообщения над головой
+
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → bubble`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#bubble
 
 <!--@include: @/parts/enable.md-->
-
-### `new-system`
-
-Включает работу сообщений над головой через Text Display
-
-::: warning ПРЕДУПРЕЖДЕНИЕ
-Это будет работать только на серверах 1.19.4 и выше
-:::
 
 ### `distance`
 
@@ -65,10 +51,41 @@ long duration = (countWords + handicapChars) / readSpeed * 1200;
 
 Дополнительное время для коротких сообщений
 
-### `height`
+### `modern`
 
-Насколько высоко от головы будет сообщение
+Сообщения над головой через Text Display
 
 ::: warning ПРЕДУПРЕЖДЕНИЕ
-Это будет работать только на серверах 1.19.4 и выше, при включённом `new-system`
+Это работает только на серверах 1.19.4 и выше
 :::
+
+::: details НАСТРОЙКА
+#### `enable`
+
+Включает работоспособность
+
+#### `has-shadow`
+
+Включает тень у текста
+
+#### `height`
+
+Насколько высоко над игроком будет сообщение
+
+#### `scale`
+
+Насколько большим будет сообщение
+
+#### `background`
+
+Цвет фона сообщения, он имеет прозрачность т.е. альфа-канал. [Сайт для выбора цвета](https://rgbacolorpicker.com/color-wheel-picker)
+:::
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.bubble`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#bubble
+
+<!--@include: @/parts/permission/permissionTier3.md-->

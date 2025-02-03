@@ -1,7 +1,5 @@
 # Дискорд
-Путь `integration.yml >discord`
 
-## Пояснение
 Интеграция с Discord позволяет отправлять сообщения:
 - из Minecraft в Discord
 - из Discord в Minecraft
@@ -9,41 +7,192 @@
 ![discord message](/discordmessage.png)
 ![minecraft message](/discordminecraftmessage.png)
 
+<!--@include: @/parts/messageTag.md-->
 
-## Редактирование
-```yaml
-<integration.discord>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → integration.discord`
 
-### По умолчанию
+<!--@include: @/parts/words.md#default--> 
+
+::: code-group
+<<< @/files/localizations/ru_ru.yml#discord
+<<< @/files/localizations/en_us.yml#discord
+:::
+
+### `Плейсхолдеры`
+
+Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
+::: tip НАПРИМЕР ДЛЯ СООБЩЕНИЯ О БЛОКИРОВКЕ
+Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри дискорд сообщений
+:::
+
+Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
+- `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
+- `<player>` ник игрока, который отправил сообщение
+
+Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
+
+### `for-minecraft`
+
+Формат сообщения, которое будет отправлено из Дискорда в Майнкрафт
+
+### `info-channel`
+
+Список айди каналов и их названий
+
+### `message-channel`
+
+Список сообщений с их настройкой
+
+::: details Настройка сообщения
+
+![discord](https://docs.discord4j.com/img/embed-preview.png)
+
+Если параметр пустой, то он не будет использован в итоговом сообщении
+
+#### `content`
+
+Содержание обычного сообщения от лица бота дискорда
+![discord content](/discordcontent.png)
+
+#### `webhook`
+
+Дискорд вебхук
+![discord webhook](/discordwebhook.png)
+
+
+##### `enable`
+
+Если включено, то сообщение будет являться вебхуком
+
+##### `avatar`
+
+Ссылка для создания аватарки игрока. Если будешь менять на свою, то ссылка должна содержать `<skin>`
+
+##### `content`
+
+Содержание сообщения вебхука
+
+#### `embed`
+
+Дискорд эмбед сообщение
+![discord embed](/discordembed.png)
+
+##### `enable`
+
+Если включено, то сообщение будет содержать `embed`
+
+##### `color`
+
+Цвет `embed` сообщения
+
+##### `title`
+
+Название `embed` сообщения
+
+##### `url`
+
+Ссылка для `embed` сообщения
+
+##### `author`
+
+Автор `embed` сообщения
+
+###### `name`
+
+Название автора `embed` сообщения
+
+###### `url`
+
+Ссылка на автора `embed` сообщения
+
+###### `icon-url`
+
+Ссылка на аватарку автора `embed` сообщения. Если будешь менять на свою, то ссылка должна содержать `<skin>`
+
+##### `description`
+
+Описание `embed` сообщения
+
+##### `thumbnail`
+
+Маленькое изображение внутри `embed` сообщения
+
+###### `name`
+
+Название поля внутри `embed` сообщения
+
+###### `value`
+
+Значение поля внутри `embed` сообщения
+
+###### `inline`
+
+Если включено, то поле будет расположен в столбик с другими полями
+
+##### `image`
+
+Главное изображение `embed` сообщения
+
+##### `timestamp`
+
+Если включено, то `embed` сообщение будет включать время создания
+
+##### `footer`
+
+Нижняя часть `embed` сообщения
+
+###### `text`
+
+Текст в нижней части `embed` сообщения
+
+###### `icon-url`
+
+Изображение в нижней части `embed` сообщения
+
+:::
+
+::: tip ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
+1. Возьми название из списка `типы сообщений`
+2. Вставь в `message-channel`
 ```yaml
-discord:
-  enable: false
-  token: ""
-  presence:
-    enable: true
-    status: "ONLINE"
-    activity:
-      enable: true
-      type: "PLAYING"
-      name: "FlectonePulse"
-      url: "https://flectone.net/pulse/"
-  channel-info:
+название_сообщения:
+  content: ""
+  webhook:
     enable: false
-    ticker:
-      enable: true
-      period: 1200
-  message-channel:
-    FROM_DISCORD_TO_MINECRAFT: ""
-    CHAT: ""
-  destination:
-    type: CHAT
+    avatar: "https://mc-heads.net/avatar/<skin>/32.png"
+    content: ""
+  embed:
+    enable: false
+    color: ""
+    title: ""
+    url: ""
+    author:
+      name: ""
+      url: ""
+      icon-url: "https://mc-heads.net/avatar/<skin>/16.png"
+    description: ""
+    thumbnail: ""
+    fields:
+      - name: ""
+        value: ""
+        inline: false
+    image: ""
+    timestamp: true
+    footer:
+      text: ""
+      icon-url: "https://mc-heads.net/avatar/<skin>/16.png"
 ```
+:::
 
-## Параметры
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml → discord`
 
-- [Локализация](/docs/localizations/ru_ru/integration/discord/)
-- [Права](/docs/permission/integration/discord/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#discord
 
 <!--@include: @/parts/enable.md-->
 
@@ -54,7 +203,7 @@ discord:
 
 ### `token`
 
-[Токен](https://discordgsm.com/guide/how-to-get-a-discord-bot-token) дискорд бота для подключения
+[Токен](https://discordgsm.com/guide/how-to-get-a-discord-bot-token) дискорд бота для подключения. Можно использовать environment variables, например `${VALUE}`
 
 ### `presence`
 
@@ -132,7 +281,13 @@ message-channel:
 ```
 :::
 
-<!--@include: @/parts/messageTag.md-->
-
 <!--@include: @/parts/destination.md-->
 
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration.discord`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#discord
+
+<!--@include: @/parts/permission/permissionTier3.md-->

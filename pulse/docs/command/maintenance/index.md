@@ -1,43 +1,72 @@
-# Комманда /maintenance
-Путь `command.yml > maintenance`
+# Комманда `/maintenance`
 
-## Пояснение
 Комманда для включения технических работ
 ![command maintenance](/commandmaintenance.png)
 ![command maintenance server](/commandmaintenanceserver.png)
 
-## Редактирование
-```yaml
-<command.maintenance>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.maintenance`
 
-### По умолчанию
-```yaml
-maintenance:
-  enable: true
-  turned-on: false
-  aliases:
-    - "maintenance"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#maintenance
+<<< @/files/localizations/en_us.yml#maintenance
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/maintenance/)
-- [Права](/docs/permission/command/maintenance/)
+### `not`
 
-<!--@include: @/parts/enable.md-->
+Сообщение при попытке отключения технических работ, если они не включены
 
-### `turned-on`
+### `already`
 
-Включает или выключает технические работы на сервере
+Сообщение при попытке включения технических работ, если они включены
+
+### `server-description`
+
+Сообщения при просмотре сервера, если включены технические работы
+
+### `server-version`
+
+Название версии сервера, если включены технические работы
+
+### `kick`
+
+Причина исключения с сервера при включении технических работ
+
+### `format-true`
+
+Сообщение при включении технических работ
+
+### `format-false`
+
+Сообщение при отключении технических работ
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → maintenance`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#maintenance
 
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.maintenance`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#maintenance
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+
+### `join`
+
+Право для подключения к серверу во время технических работ
+
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->

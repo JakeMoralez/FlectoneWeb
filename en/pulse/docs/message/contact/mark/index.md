@@ -1,38 +1,18 @@
 # Метка
-Путь `message.yml > contact.mark`
 
-## Пояснение
 Марка создаётся c помощью **ПКМ** и деревянного меча в главной руке
 ![mark](/mark.gif)
 
-::: info Условие
+::: info ПРИМЕЧАНИЕ
 Меч можно переименовать в наковальне на [доступный цвет](#доступные-цвета), например `RED` и метка будет красной
 :::
 
-## Редактирование
-```yaml
-<message.contact.mark>
-```
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → contact.mark`
 
-### По умолчанию
-```yaml
-mark:
-  enable: false
-  limit: true
-  color: true
-  range: 100
-  duration: 60
-  item: "WOODEN_SWORD"
-  entity: "MAGMA_CUBE"
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
-
-## Параметры
-
-- [Права](/docs/permission/message/contact/mark/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#mark
 
 <!--@include: @/parts/enable.md-->
 
@@ -46,7 +26,6 @@ mark:
 <!--@include: @/parts/color.md-->
 
 ### `range`
-- По умолчанию `100`
 
 Расстояние в блоках, насколько далеко можно разместить метку
 
@@ -62,5 +41,16 @@ mark:
 
 Хитбокс моба, который используется для создания метки
 
-<!--@include: @/parts/ticker.md-->
+<!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.mark`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#mark
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->

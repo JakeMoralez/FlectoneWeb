@@ -1,38 +1,47 @@
-# Комманда /reply
-Путь `command.yml > reply`
+# Комманда `/reply`
 
-## Пояснение
 Комманда для того, чтобы написать личное сообщение последнему написавшему игроку
 ![command reply](/commandreply.png)
 
-::: danger Внимательно
+::: danger ВНИМАТЕЛЬНО
 Комманда не будет работать, если модуль [`Tell`](/docs/command/tell/) выключен
 :::
 
-## Редактирование
-```yaml
-<command.reply>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.reply`
 
-### По умолчанию
-```yaml
-reply:
-  enable: true
-  aliases:
-    - "reply"
-    - "r"
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#reply
+<<< @/files/localizations/en_us.yml#reply
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/reply/)
-- [Права](/docs/permission/command/reply/)
+### `null-receiver`
+
+Сообщение, если получатель не найден
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → reply`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#reply
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.reply`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#reply
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->
+

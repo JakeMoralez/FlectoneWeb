@@ -1,37 +1,52 @@
-# Комманда /ignore
-Путь `command.yml > ignore`
+# Комманда `/ignore`
 
-## Пояснение
 Комманда для игнорирования всех сообщений от игрока
 ![command ignore](/commandignore.png)
 
 Убирается игнорирование с помощью повторного использования
 ![command unignore](/commandunignore.png)
 
-## Редактирование
-```yaml
-<command.ignore>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.ignore`
 
-### По умолчанию
-```yaml
-ignore:
-  enable: true
-  suggest-offline-players: true
-  aliases:
-    - "ignore"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#ignore
+<<< @/files/localizations/en_us.yml#ignore
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/ignore/)
-- [Права](/docs/permission/command/ignore/)
+### `null-player`
+
+Сообщение, если введённый игрок не найден
+
+### `myself`
+
+Сообщение, если игрок пытается игнорировать самого себя
+
+### `he`
+
+Сообщение, если получатель игнорирует отправителя
+
+### `you`
+
+Сообщение, если отправитель игнорирует получателя
+
+### `format-true`
+
+Сообщение при успешном игнорировании
+
+### `format-false`
+
+Сообщение при снятии игнорирования
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → ignore`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#ignore
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/suggestOfflinePlayers.md-->
@@ -39,3 +54,14 @@ ignore:
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.ignore`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#ignore
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->

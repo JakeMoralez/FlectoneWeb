@@ -1,24 +1,22 @@
 # SkinsRestorer
-Путь `integration.yml >skinsrestorer`
 
-## Пояснение
 Интеграция с SkinsRestorer позволяет получать скины **оффлайн игроков**
 ![skinsrestorer](/skinsrestorer.png)
 
-## Редактирование
-```yaml
-<integration.skinsrestorer>
-```
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml → skinsrestorer`
 
-### По умолчанию
-```yaml
-skinsrestorer:
-  enable: true
-```
-
-## Параметры
-
-- [Права](/docs/permission/integration/skinsrestorer/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#skinsrestorer
 
 <!--@include: @/parts/enable.md-->
 
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration.skinsrestorer`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#skinsrestorer
+
+<!--@include: @/parts/permission/permissionTier3.md-->

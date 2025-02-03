@@ -1,22 +1,21 @@
 # Контактирование
-Путь `message.yml > contact.*`
 
-## Пояснение
 Модуль, отвечающий за сообщения при взаимодействии
 
-## Редактирование
-```yaml
-<message.contact>
-```
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → contact`
 
-### По умолчанию
-```yaml
-contact:
-  enable: true
-```
-
-## Параметры
-
-- [Права](/docs/permission/message/contact/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#contact
 
 <!--@include: @/parts/enable.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.contact`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#contact
+
+<!--@include: @/parts/permission/permissionTier3.md-->

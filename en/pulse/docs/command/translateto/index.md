@@ -1,35 +1,33 @@
-# Комманда /translateto
-Путь `command.yml > translateto`
+# Комманда `/translateto`
 
-## Пояснение
 Комманда для перевода сообщения с одного языка на другой
 ![command translateto](/commandtranslateto.png)
 
-## Редактирование
-```yaml
-<command.translateto>
-```
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.translateto`
 
-### По умолчанию
-```yaml
-translateto:
-  enable: true
-  range: -2
-  aliases:
-    - "translateto"
-  destination:
-    type: CHAT
-  cooldown:
-    enable: false
-    duration: 60
-  sound:
-    enable: false
-```
+<!--@include: @/parts/words.md#default--> 
 
-## Параметры
+::: code-group
+<<< @/files/localizations/ru_ru.yml#translateto
+<<< @/files/localizations/en_us.yml#translateto
+:::
 
-- [Локализация](/docs/localizations/ru_ru/command/translateto/)
-- [Права](/docs/permission/command/translateto/)
+### `null-or-error`
+
+Сообщение, если произошла ошибка при переводе
+
+### `format`
+
+Формат сообщения, которое будет отправлено
+
+[//]: # (command.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `command.yml → translateto`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/command.yml#translateto
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
@@ -37,3 +35,15 @@ translateto:
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → command.translateto`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#translateto
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->
+

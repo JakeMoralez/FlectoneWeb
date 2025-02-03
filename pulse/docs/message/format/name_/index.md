@@ -1,29 +1,47 @@
 # Имя
-Путь `message.yml > module.player.name-`
 
-## Пояснение
 Модуль, отвечающий за имя игрока
-![name tab](/nametab.png)
+![name tab](/nametab.png)  
+![name display](/namedisplay.png)  
+
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.name_`
+
+<!--@include: @/parts/words.md#default--> 
+
+::: code-group
+<<< @/files/localizations/ru_ru.yml#name_
+<<< @/files/localizations/en_us.yml#name_
+:::
+
+### `display`
+
+Отвечает за имя игрока
 ![name display](/namedisplay.png)
 
-## Редактирование
-```yaml
-<message.module.player.name->
-```
+### `entity`
 
-### По умолчанию
-```yaml
-name-:
-  enable: true
-  team: true
-  visible: false
-  color: "<white>"
-```
+Отвечает за имя сущности
 
-## Параметры
+### `unknown`
 
-- [Локализация](/docs/localizations/ru_ru/message/format/name/)
-- [Права](/docs/permission/message/format/name/)
+Отвечает за неизвестное имя
+
+### `prefix`
+
+Префикс, которой отображается у команды, если включен ник
+
+### `suffix`
+
+Суффикс, которой отображается у команды, если включен ник
+
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → format.name_`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#name_
 
 <!--@include: @/parts/enable.md-->
 
@@ -40,3 +58,12 @@ name-:
 Цвет команды игрока из доступных
 
 <!--@include: @/parts/color.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.format.name_`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#name_
+
+<!--@include: @/parts/permission/permissionTier3.md-->

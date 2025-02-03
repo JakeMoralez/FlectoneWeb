@@ -1,21 +1,22 @@
-# Файл `integration.yml`
+# Интеграции
 
-## Пояснение
-Файл по настройке интеграций `FlectonePulse`
+Категория, отвечающая за настройку всех интеграций
 
-## Редактирование
-```yaml
-<integration>
-```
+[//]: # (integration.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `integration.yml`
 
-### По умолчанию
-```yaml
-enable: true
-```
-
-## Параметры
-
-- [Локализация](/docs/localizations/ru_ru/integration/)
-- [Права](/docs/permission/integration/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/integration.yml#integration
 
 <!--@include: @/parts/enable.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → integration`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#integration
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+

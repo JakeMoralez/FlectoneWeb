@@ -1,34 +1,18 @@
 # Снятие подписи
-Путь `message.yml > contact.unsign`
 
-## Пояснение
 Снятие подписи происходит с помощью **ЛКМ** на точиле, если игрок держит в **главной** руке предмет с подписью
 ![unsign](/unsign.gif)
 
-::: info Условие
+::: info ПРИМЕЧАНИЕ
 Игрок может снять только свою подпись
 :::
 
-## Редактирование
-```yaml
-<message.contact.unsign>
-```
+[//]: # (message.yml)
+<!--@include: @/parts/words.md#setting-->
+<!--@include: @/parts/words.md#path--> `message.yml → contact.unsign`
 
-### По умолчанию
-```yaml
-unsign:
-  enable: false
-  drop-dye: true
-  block: "GRINDSTONE"
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-```
-
-## Параметры
-
-- [Права](/docs/permission/message/contact/unsign/)
+<!--@include: @/parts/words.md#default-->
+<<< @/files/message.yml#unsign
 
 <!--@include: @/parts/enable.md-->
 
@@ -43,3 +27,14 @@ unsign:
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
+
+[//]: # (permission.yml)
+<!--@include: @/parts/words.md#permission-->
+<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.unsign`
+
+<!--@include: @/parts/words.md#default-->
+<<< @/files/permission.yml#unsign
+
+<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/sound.md-->
