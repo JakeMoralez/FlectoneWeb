@@ -15,6 +15,7 @@ import { useTranslations } from "@/utils/i18n";
 const currentLocale = Astro.currentLocale || "en";
 const flectoneMixUrl = getRelativeLocaleUrl(currentLocale, "mix");
 const flectoneChatUrl = getRelativeLocaleUrl(currentLocale, "chat");
+const flectonePulseUrl = getRelativeLocaleUrl(currentLocale, "pulse");
 const { t } = useTranslations(currentLocale as "en" | "ru");
 ---
 
@@ -46,7 +47,7 @@ const { t } = useTranslations(currentLocale as "en" | "ru");
           </div>
         </CardHeader>
         <CardFooter>
-          <a href="https://flectone.net/en/pulse/">
+          <a href={flectonePulseUrl}>
             <Button className="bg-sky-600 hover:bg-sky-700"
               ><span class="text-white">{t("pulse-button")}</span></Button
             ></a
