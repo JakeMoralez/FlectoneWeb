@@ -27,13 +27,9 @@ FlectoneWeb/
 │   ├── pages/            # Application pages and routes
 │   └── styles/           # Global styles and CSS
 │
-├── pulse/                # VitePress documentation (RU)
-│   ├── .vitepress/       # VitePress configuration
-│   └── docs/             # Documentation content
-│
-├── en/pulse/             # VitePress documentation (EN)
-│   ├── .vitepress/       # VitePress configuration
-│   └── docs/             # Documentation content
+├── pulse/                # VitePress documentation
+│   ├── en/               # (EN)
+│   └── ru/               # (RU)
 │
 ├── dist/                 # Production build output
 ├── public/               # Public static files
@@ -78,9 +74,7 @@ Flectone Web is a modern, fast, and responsive web solution built for **Flectone
 
 2. Install dependencies:
 ```bash
-   bun install
-   cd pulse && npm install
-   cd en/pulse && npm install
+   bun install && bun install:pulse-ru && bun install:pulse-en
 ```
 ### Development
 
@@ -91,12 +85,12 @@ Flectone Web is a modern, fast, and responsive web solution built for **Flectone
 
 - **Start VitePress development server (RU docs)**:
 ```bash
-  bun run dev:pulse
+  bun run dev:pulse-ru
 ```
 
 - **Start VitePress development server (EN docs)**:
 ```bash
-  bun run dev:en-pulse
+  bun run dev:pulse-en
 ```
 
 ### Build
@@ -108,12 +102,12 @@ Flectone Web is a modern, fast, and responsive web solution built for **Flectone
 
 - **Build VitePress docs (RU)**:
 ```bash
-  bun run build:pulse
+  bun run build:pulse-ru
 ```
 
 - **Build VitePress docs (EN)**:
 ```bash
-  bun run build:en-pulse
+  bun run build:pulse-en
 ```
 
 - **Copy built docs to Astro dist folder**:
@@ -135,27 +129,30 @@ Flectone Web is a modern, fast, and responsive web solution built for **Flectone
 
 - **Preview VitePress docs (RU)**:
 ```bash
-  cd pulse && npm run docs:preview
+  bun run preview:pulse-ru
 ```
 
 - **Preview VitePress docs (EN)**:
 ```bash
-  cd en/pulse && npm run docs:preview
+  bun run preview:pulse-en
 ```
 
 ## 📜 Scripts Reference
 
-| Script              | Description                                      |
-|---------------------|--------------------------------------------------|
-| `dev`               | Start Astro development server                  |
-| `dev:pulse`         | Start VitePress dev server for RU docs          |
-| `dev:en-pulse`      | Start VitePress dev server for EN docs          |
-| `build`             | Build Astro project                             |
-| `build:pulse`       | Build RU VitePress docs                         |
-| `build:en-pulse`    | Build EN VitePress docs                         |
-| `copy:pulse`        | Copy built VitePress docs to Astro dist folder  |
-| `build:all`         | Build everything (Astro + VitePress docs)       |
-| `preview`           | Preview Astro build                             |
+| Script             | Description                                    |
+|--------------------|------------------------------------------------|
+| `dev`              | Start Astro development server                 |
+| `dev:pulse-ru`     | Start VitePress dev server for RU docs         |
+| `dev:pulse-en`     | Start VitePress dev server for EN docs         |
+| `build`            | Build Astro project                            |
+| `build:pulse-ru`   | Build RU VitePress docs                        |
+| `build:pulse-en`   | Build EN VitePress docs                        |
+| `build:all`        | Build everything (Astro + VitePress docs)      |
+| `copy:pulse`       | Copy built VitePress docs to Astro dist folder |
+| `preview`          | Preview Astro build                            |
+| `preview:pulse-ru` | Preview RU VitePress docs                      |
+| `preview:pulse-en` | Preview EN VitePress docs                      |
+
 
 ## 🤝 Contributing
 
