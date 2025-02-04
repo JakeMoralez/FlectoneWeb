@@ -1,6 +1,7 @@
 ---
 import "@/styles/globals.css";
 import logo from "../assets/logo.png";
+import favicon from "../assets/favicons/favicon.ico";
 ---
 
 <!doctype html>
@@ -41,7 +42,7 @@ import logo from "../assets/logo.png";
     <meta property="og:image" content={logo.src} />
     <meta property="og:url" content="https://flectone.net" />
     <meta property="og:type" content="website" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href={favicon} />
     <meta name="generator" content={Astro.generator} />
     <title>Flectone - Главная</title>
   </head>
