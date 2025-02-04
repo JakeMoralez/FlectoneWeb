@@ -18,9 +18,10 @@
   "things": "Все эти вещи доступны в",
   "team-header": "Команда Flectone",
   "team-description": "Все эти люди внесли вклад в проект",
-  "first-person": "Инициатор проектов Flectone, по совместительству ютубер и разработчик",
+  "first-person": "Инициатор проектов Flectone, ютубер и разработчик",
   "second-person": "Разработчик нового сайта на Astro",
   "third-person": "Разработчик первых прототипов сайтов Flectone",
   "fourth-person": "Контрибьютор всех проектов и создатель плагина CookieClicker",
-  "fifth-person": "Создатель плагина FlectoneChat и главный помощник"
+  "fifth-person": "Создатель плагина FlectoneChat и главный помощник",
+  "nav-header": "Навигация"
 }
