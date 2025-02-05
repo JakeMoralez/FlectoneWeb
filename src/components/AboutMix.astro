@@ -9,8 +9,8 @@ const { t } = useTranslations(currentLocale as "en" | "ru");
 ---
 
 <div class="max-w-screen-xl mx-auto pt-32">
-  <div class="flex justify-between">
-    <div class="w-1/2">
+  <div class="flex flex-col lg:flex-row justify-between">
+    <div class="lg:w-1/2 flex flex-col lg:items-start items-center">
       <header>
         <h1>FlectoneMix</h1>
         <p class="w-96">
@@ -36,7 +36,7 @@ const { t } = useTranslations(currentLocale as "en" | "ru");
       >
       <Button>ale</Button> -->
     </div>
-    <div class="w-1/2">
+    <div class="lg:w-1/2 mt-10 lg:mt-0">
       <h2 class="text-center rounded-b-3xl">{t("mix-header")}</h2>
       <Image src={flectoneMix} alt="flectone mix showcase" />
     </div>
