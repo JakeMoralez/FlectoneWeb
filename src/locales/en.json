@@ -22,5 +22,6 @@
   "second-person": "Developer of the new website on Astro",
   "third-person": "Developer of the first prototypes of Flectone websites",
   "fourth-person": "Contributor to all projects and creator of the CookieClicker plugin",
-  "fifth-person": "Creator of the FlectoneChat plugin and main helper"
+  "fifth-person": "Creator of the FlectoneChat plugin and main helper",
+  "nav-header": "Navigation"
 }
