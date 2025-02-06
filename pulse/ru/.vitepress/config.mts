@@ -8,7 +8,7 @@ export default defineConfig({
 
   base: '/pulse/',
   title: "FlectonePulse",
-  description: "Это серверный менеджер сообщений, нацеленный на упрощение настройки сервера",
+  description: "Каждое сообщение под вашим контролем!",
   lastUpdated: true,
   ignoreDeadLinks: true,
 
@@ -18,6 +18,11 @@ export default defineConfig({
     ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/favicons/favicon-16x16.png"}],
     ['link', { rel: "manifest", href: "/assets/favicons/site.webmanifest"}],
     ['link', { rel: "shortcut icon", href: "/assets/favicons/favicon.ico"}],
+    ['meta', { property: 'og:title', content: 'FlectonePulse' }],
+    ['meta', { property: 'og:description', content: 'Каждое сообщение под вашим контролем!' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:url', content: 'https://flectone.net/pulse/' }],
+    ['meta', { property: 'og:image', content: '/assets/favicons/favicon.ico' }]
   ],
 
   themeConfig: {
