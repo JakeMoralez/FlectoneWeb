@@ -1,15 +1,14 @@
 ---
-import Image from "astro/components/Image.astro";
-import flectoneLogo from "../assets/logo.png";
 import { useTranslations } from "@/utils/i18n";
+import Image from "astro/components/Image.astro";
 import { getRelativeLocaleUrl } from "astro:i18n";
+import flectoneLogo from "../assets/logo.png";
+import LangSwitcher from "./LangSwitcher.astro";
+import { ModeToggle } from "./shared/ModeToggle";
 const currentLocale = Astro.currentLocale || "en";
 const homePage = getRelativeLocaleUrl(currentLocale, "");
 const { t } = useTranslations(currentLocale as "en" | "ru");
 const aboutPage = getRelativeLocaleUrl(currentLocale, "about");
-import { Menu } from "lucide-react";
-import LangSwitcher from "./LangSwitcher.astro";
-import { ModeToggle } from "./shared/ModeToggle";
 ---
 
 <nav

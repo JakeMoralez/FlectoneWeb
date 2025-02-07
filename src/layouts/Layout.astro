@@ -2,6 +2,7 @@
 import "@/styles/globals.css";
 import logo from "../assets/logo.png";
 import favicon from "../assets/favicons/favicon.ico";
+import Navbar from "@/components/Navbar.astro";
 ---
 
 <!doctype html>
@@ -47,14 +48,15 @@ import favicon from "../assets/favicons/favicon.ico";
     <title>Flectone - Главная</title>
   </head>
   <body class="dark:bg-[#1b1b1b] px-4">
+    <Navbar />
     <slot />
   </body>
-</html>
 
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-  }
-</style>
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+    }
+  </style>
+</html>

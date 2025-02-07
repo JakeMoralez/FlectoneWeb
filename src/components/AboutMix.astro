@@ -1,9 +1,9 @@
 ---
-import { Button } from "./ui/button";
-import { Download, Github, GithubIcon, LucideGithub } from "lucide-react";
-import Image from "astro/components/Image.astro";
-import flectoneMix from "../assets/flectonemix.png";
+import flectoneMix from "@/assets/mix/flectonemix.png";
 import { useTranslations } from "@/utils/i18n";
+import Image from "astro/components/Image.astro";
+import { Download, Github } from "lucide-react";
+import { Button } from "./ui/button";
 const currentLocale = Astro.currentLocale || "en";
 const { t } = useTranslations(currentLocale as "en" | "ru");
 ---
@@ -31,10 +31,6 @@ const { t } = useTranslations(currentLocale as "en" | "ru");
           ><Button variant="ghost"><Github /><span>Github</span></Button></a
         >
       </div>
-      <!-- <Button className="bg-sky-500 hover:bg-sky-600"
-        ><Download />Available on Boosty</Button
-      >
-      <Button>ale</Button> -->
     </div>
     <div class="lg:w-1/2 mt-10 lg:mt-0">
       <h2 class="text-center rounded-b-3xl">{t("mix-header")}</h2>
