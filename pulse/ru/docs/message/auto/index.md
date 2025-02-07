@@ -14,9 +14,9 @@
 <<< @/files/localizations/en_us.yml#auto
 :::
 
-### `values`
+### `types`
 
-Список автоматических сообщений
+Виды автоматических сообщений со списком
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -26,10 +26,30 @@
 <<< @/files/message.yml#auto
 
 <!--@include: @/parts/enable.md-->
-<!--@include: @/parts/random.md-->
-<!--@include: @/parts/destination.md-->
-<!--@include: @/parts/ticker.md-->
-<!--@include: @/parts/sound.md-->
+
+### `types`
+
+Виды автоматических сообщений
+
+::: tip МОЖНО СОЗДАВАТЬ СВОИ
+```yaml
+  types:
+    newauto:
+      random: true
+      destination:
+        type: CHAT
+      ticker:
+        enable: true
+        period: 9000
+      sound:
+        enable: false
+```
+:::
+
+- <!--@include: @/parts/random.md-->
+- <!--@include: @/parts/destination.md-->
+- <!--@include: @/parts/ticker.md-->
+- <!--@include: @/parts/sound.md-->
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
@@ -39,4 +59,9 @@
 <<< @/files/permission.yml#auto
 
 <!--@include: @/parts/permission/permissionTier3.md-->
-<!--@include: @/parts/permission/sound.md-->
+
+### `types`
+
+Виды автоматических сообщений и их прав на звуки
+
+- <!--@include: @/parts/permission/sound.md-->

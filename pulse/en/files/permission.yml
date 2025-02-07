@@ -695,9 +695,10 @@ message:
   auto:
     name: "flectonepulse.module.message.auto"
     type: TRUE
-    sound:
-      name: "flectonepulse.module.message.auto.sound"
-      type: TRUE
+    types:
+      announcement:
+        name: "flectonepulse.module.message.auto.sound"
+        type: TRUE
 #endregion auto
 #region book
   book:

@@ -29,14 +29,16 @@ anvil:
 #region auto
 auto:
   enable: false
-  random: true
-  destination:
-    type: CHAT
-  ticker:
-    enable: true
-    period: 9000
-  sound:
-    enable: false
+  types:
+    announcement:
+      random: true
+      destination:
+        type: CHAT
+      ticker:
+        enable: true
+        period: 9000
+      sound:
+        enable: false
 #endregion auto
 #region book
 book:
