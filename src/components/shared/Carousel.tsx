@@ -1,19 +1,17 @@
-import * as React from "react";
-import Autoplay from "embla-carousel-autoplay";
+import firstImg from "@/assets/chat/1.gif";
+import secondImg from "@/assets/chat/2.gif";
+import thirdImg from "@/assets/chat/3.gif";
+import fourthImg from "@/assets/chat/4.gif";
+import fifthImg from "@/assets/chat/5.gif";
+import sixthImg from "@/assets/chat/6.gif";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
-import firstImg from "../../assets/1.gif";
-import secondImg from "../../assets/2.gif";
-import thirdImg from "../../assets/3.gif";
-import fourthImg from "../../assets/4.gif";
-import fifthImg from "../../assets/5.gif";
-import sixthImg from "../../assets/6.gif";
+import Autoplay from "embla-carousel-autoplay";
+import * as React from "react";
 
 export function CarouselPlugin() {
   const carouselItems = [
@@ -54,8 +52,6 @@ export function CarouselPlugin() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="dark:bg-neutral-800/50" />
-      <CarouselNext className="dark:bg-neutral-800/50" />
     </Carousel>
   );
 }
