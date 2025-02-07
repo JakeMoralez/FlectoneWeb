@@ -600,6 +600,11 @@ integration:
   name: "flectonepulse.module.integration"
   type: TRUE
 #endregion integration
+#region deepl
+  deepl:
+    name: "flectonepulse.module.integration.deepl"
+    type: TRUE
+#endregion deepl
 #region discord
   discord:
     name: "flectonepulse.module.integration.discord"
@@ -648,6 +653,11 @@ integration:
     name: "flectonepulse.module.integration.telegram"
     type: TRUE
 #endregion telegram
+#region triton
+  triton:
+    name: "flectonepulse.module.integration.triton"
+    type: TRUE
+#endregion triton
 #region twitch
   twitch:
     name: "flectonepulse.module.integration.twitch"
@@ -658,6 +668,11 @@ integration:
     name: "flectonepulse.module.integration.vault"
     type: TRUE
 #endregion vault
+#region yandex
+  yandex:
+    name: "flectonepulse.module.integration.yandex"
+    type: TRUE
+#endregion yandex
 #region message
 message:
   name: "flectonepulse.module.message"
@@ -1041,6 +1056,11 @@ message:
       name: "flectonepulse.module.format.spoiler"
       type: TRUE
 #endregion spoiler
+#region translate
+    translate:
+      name: "flectonepulse.module.format.translate"
+      type: TRUE
+#endregion translate
 #region world
     world:
       name: "flectonepulse.module.format.world"

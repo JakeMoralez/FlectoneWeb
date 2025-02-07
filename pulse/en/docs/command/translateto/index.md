@@ -31,7 +31,21 @@
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/range.md-->
+
+### `service`
+
+Вид АПИ (`DEEPL`, `GOOGLE`, `YANDEX`), который будет использоваться при переводе
+
+::: danger ВНИМАТЕЛЬНО
+`DEEPL` и `YANDEX` требуют **токен** и отдельную настройку в `integration.yml`
+:::
+
 <!--@include: @/parts/aliases.md-->
+
+### `languages`
+
+Список языков, который используется только для подсказки при использовании комманды
+
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->

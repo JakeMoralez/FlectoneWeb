@@ -64,10 +64,6 @@
 
 Последний номер созданного голосования
 
-### `max-time`
-
-Максимальное время голосования в секундах
-
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->

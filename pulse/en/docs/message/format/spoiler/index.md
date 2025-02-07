@@ -46,6 +46,8 @@
 <!--@include: @/parts/words.md#default-->
 <<< @/files/message.yml#spoiler
 
+<!--@include: @/parts/enable.md-->
+
 ### `symbol`
 
 Символ, на который заменяется каждая буква

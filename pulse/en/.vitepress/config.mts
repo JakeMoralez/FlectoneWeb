@@ -166,6 +166,7 @@ export default defineConfig({
         link: '/docs/integration/',
         collapsed: true,
         items: [
+          { text: 'Deepl', link: '/docs/integration/deepl/' },
           { text: 'Дискорд', link: '/docs/integration/discord/' },
           { text: 'LuckPerms', link: '/docs/integration/luckperms/' },
           { text: 'PlaceholderAPI', link: '/docs/integration/placeholderapi/' },
@@ -174,8 +175,10 @@ export default defineConfig({
           { text: 'SkinsRestorer', link: '/docs/integration/skinsrestorer/' },
           { text: 'SuperVanish', link: '/docs/integration/supervanish/' },
           { text: 'Телеграм', link: '/docs/integration/telegram/' },
+          { text: 'Triton', link: '/docs/integration/triton/' },
           { text: 'Твич', link: '/docs/integration/twitch/' },
           { text: 'Vault', link: '/docs/integration/vault/' },
+          { text: 'Яндекс', link: '/docs/integration/yandex/' },
         ]
       },
       {
@@ -229,6 +232,7 @@ export default defineConfig({
               { text: 'Имя', link: '/docs/message/format/name_/' },
               { text: 'Вопрос-Ответ', link: '/docs/message/format/questionanswer/' },
               { text: 'Спойлер', link: '/docs/message/format/spoiler/' },
+              { text: 'Перевод', link: '/docs/message/format/translate/' },
               { text: 'Измерение', link: '/docs/message/format/world/' },
             ]
           },

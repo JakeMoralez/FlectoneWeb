@@ -26,6 +26,7 @@ command:
     category: "category"
     id: "id"
     time: "time"
+    repeat-time: "repeat time"
     multiple-vote: "multiple vote"
     player: "player"
     number: "number"
@@ -203,10 +204,10 @@ command:
           - "<color:#98FB98>Display enabled"
         - - "<fcolor:2>Command /kick"
           - "<color:#ff7171>Display disabled"
-      TRANSLATETO:
-        - - "<fcolor:2>Command /translateto"
+      local:
+        - - "<fcolor:2>Command /local"
           - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /translateto"
+        - - "<fcolor:2>Command /local"
           - "<color:#ff7171>Display disabled"
       BROADCAST:
         - - "<fcolor:2>Command /broadcast"
@@ -500,7 +501,7 @@ command:
 #region translateto
   translateto:
     null-or-error: "<color:#ff7171><b>⁉</b> Error, you may have specified an unsupported language"
-    format: "<fcolor:1>📖 [<language>] <display_name> translated → <fcolor:2><message>"
+    format: "<fcolor:1>📖 Translation to [<language>] → <fcolor:2><message>"
 #endregion translateto
 #region try
   try:
@@ -636,8 +637,8 @@ message:
     null-chat: "<color:#ff7171><b>⁉</b> Chat is disabled on this server"
     null-recipient: "<color:#ff7171><b>⁉</b> Nobody heard you"
     types:
-      global: "<display_name> <world_prefix>»<fcolor:4> <message>"
-      local: "<display_name><fcolor:3>: <message>"
+      global: "<display_name> <world_prefix>»<fcolor:4> <message> <translateto:\"<message_to_translate>\">"
+      local: "<display_name><fcolor:3>: <message> <translateto:\"<message_to_translate>\">"
 #endregion chat
 #region clear
   clear:
@@ -826,6 +827,10 @@ message:
       symbol: "█"
       hover: "<fcolor:2><message>"
 #endregion spoiler
+#region translate
+    translate:
+      action: "<click:run_command:\"/translateto <language> <language> <message>\"><hover:show_text:\"<fcolor:2>Translate message\"><fcolor:1>[📖]"
+#endregion translate
 #region gamemode
   gamemode:
     self:

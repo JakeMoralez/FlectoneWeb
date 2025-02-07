@@ -506,7 +506,6 @@ poll:
   enable: true
   range: -2
   last-id: 1
-  max-time: 60000
   aliases:
     - "poll"
   cooldown:
@@ -653,9 +652,13 @@ tictactoe:
 #region translateto
 translateto:
   enable: true
-  range: -2
+  range: 0
+  service: GOOGLE
   aliases:
     - "translateto"
+  languages:
+    - "en_us"
+    - "ru_ru"
   destination:
     type: CHAT
   cooldown:

@@ -26,6 +26,7 @@ command:
     category: "категория"
     id: "айди"
     time: "время"
+    repeat-time: "время повторения"
     multiple-vote: "мульти голосование"
     player: "игрок"
     number: "число"
@@ -499,8 +500,8 @@ command:
 #endregion tictactoe
 #region translateto
   translateto:
-    null-or-error: "<color:#ff7171><b>⁉</b> Ошибка, возможно ты указал неправильный язык"
-    format: "<fcolor:1>📖 [<language>] <display_name> перевёл → <fcolor:2><message>"
+    null-or-error: "<color:#ff7171><b>⁉</b> Ошибка, возможно указан неправильный язык"
+    format: "<fcolor:1>📖 Перевод на [<language>] → <fcolor:2><message>"
 #endregion translateto
 #region try
   try:
@@ -636,8 +637,8 @@ message:
     null-chat: "<color:#ff7171><b>⁉</b> На сервер выключен чат"
     null-recipient: "<color:#ff7171><b>⁉</b> Тебя никто не услышал"
     types:
-      local: "<display_name><fcolor:3>: <message>"
-      global: "<display_name> <world_prefix>»<fcolor:4> <message>"
+      local: "<display_name><fcolor:3>: <message> <translateto:\"<message_to_translate>\">"
+      global: "<display_name> <world_prefix>»<fcolor:4> <message> <translateto:\"<message_to_translate>\">"
 #endregion chat
 #region clear
   clear:
@@ -826,6 +827,10 @@ message:
       symbol: "█"
       hover: "<fcolor:2><message>"
 #endregion spoiler
+#region translate
+    translate:
+      action: "<click:run_command:\"/translateto <language> <language> <message>\"><hover:show_text:\"<fcolor:2>Перевести сообщение\"><fcolor:1>[📖]"
+#endregion translate
 #region gamemode
   gamemode:
     self:

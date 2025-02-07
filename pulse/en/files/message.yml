@@ -443,6 +443,10 @@ format:
     enable: true
     color: "<fcolor:2>"
 #endregion spoiler
+#region translate
+  translate:
+    enable: true
+#endregion translate
 #region world
   world:
     enable: true
