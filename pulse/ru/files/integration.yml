@@ -11,6 +11,11 @@
 #region integration
 enable: true
 #endregion integration
+#region deepl
+deepl:
+  enable: false
+  auth-key: ""
+#endregion deepl
 #region discord
 discord:
   enable: false
@@ -73,6 +78,10 @@ telegram:
   destination:
     type: CHAT
 #endregion telegram
+#region triton
+triton:
+  enable: true
+#endregion triton
 #region twitch
 twitch:
   enable: false
@@ -91,3 +100,9 @@ twitch:
 vault:
   enable: true
 #endregion vault
+#region yandex
+yandex:
+  enable: false
+  token: ""
+  folder-id: ""
+#endregion yandex
