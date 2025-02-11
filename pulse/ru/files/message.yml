@@ -164,6 +164,8 @@ contact:
     enable: true
     destination:
       type: ACTION_BAR
+      times:
+        stay: 60
     cooldown:
       enable: false
     sound:
@@ -186,6 +188,8 @@ contact:
     item: "WHITE_DYE"
     destination:
       type: ACTION_BAR
+      times:
+        stay: 60
     cooldown:
       enable: true
       duration: 60
