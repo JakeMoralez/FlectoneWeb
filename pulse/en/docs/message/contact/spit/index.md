@@ -1,14 +1,14 @@
-# Плевок
+# Spit 
 
-Чтобы плюнуть, нужно держать в руке **белый краситель** и нажать **ПКМ**
+To spit, hold **white dye** in your hand and right-click.
 ![spit](/spit.gif)
 
-Если плевок попал в игрока, ему напишется об этом
+If the spit hits a player, they will receive a message about it.
 ![spit message](/spit.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.contact.spit`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.contact.spit`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -19,7 +19,7 @@
 
 ### `format`
 
-Сообщение игроку, которого обплевали
+The message sent to the player who was spat on.
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -32,11 +32,11 @@
 
 ### `message`
 
-Включает сообщение попадания плевка в игрока
+Enables the message when the spit hits a player.
 
 ### `item`
 
-Предмет, который используется для создания плевка
+The item used to create the spit.
 
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
