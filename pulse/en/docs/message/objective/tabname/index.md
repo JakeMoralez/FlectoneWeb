@@ -1,6 +1,6 @@
-# В табе
+# In Tab
 
-[ScoreBoard значение](https://ru.minecraft.wiki/w/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%81%D1%87%D1%91%D1%82%D0%B0_%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D1%85_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9) игрока в ТАБе
+[ScoreBoard value](https://ru.minecraft.wiki/w/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%81%D1%87%D1%91%D1%82%D0%B0_%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D1%85_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9) displayed in the TAB list  
 ![player list](/playerlist.png)
 
 [//]: # (message.yml)
@@ -14,12 +14,12 @@
 
 ### `mode`
 
-Режим цифрового отображения значения из доступных
+Mode for displaying the value, with available options
 
 <!--@include: @/parts/objective.md-->
 
-::: tip НАПРИМЕР РЕЖИМ `PING`
-Значит будет возвращаться пинг игрока
+::: tip EXAMPLE MODE `PING`  
+This will return the player's ping  
 ![player list](/playerlist.png)
 :::
 
