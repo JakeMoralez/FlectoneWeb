@@ -1,6 +1,6 @@
 # Death 
 
-A message from the server when a player dies.
+A message from the server when a player dies
 ![death server](/deathserver.png)  
 ![death player](/deathplayer.png)
 
@@ -17,7 +17,7 @@ A message from the server when a player dies.
 
 ### `types`
 
-A complete list of death types, where the key is the name of the death and the value is the message that will be used.
+A complete list of death types, where the key is the name of the death and the value is the message that will be used
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
