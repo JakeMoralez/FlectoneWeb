@@ -1,11 +1,11 @@
-# Отключение
+# Quit
 
-Сообщение от сервера, когда игрок отключился
+Message from the server when a player disconnects
 ![quit](/quit.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.quit`
+<!--@include: @/parts/words.md#path--> localizations → language.yml → message.quit
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -14,13 +14,13 @@
 <<< @/files/localizations/en_us.yml#quit
 :::
 
-### `format`
+### format
 
-Сообщение при отключении с сервера
+Message upon disconnecting from the server
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → quit`
+<!--@include: @/parts/words.md#path--> message.yml → quit
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/message.yml#quit
@@ -32,7 +32,7 @@
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.quit`
+<!--@include: @/parts/words.md#path--> permission.yml → message.quit
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/permission.yml#quit
