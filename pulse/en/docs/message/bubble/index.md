@@ -74,7 +74,7 @@ How high above the player the message will be
 
 #### `scale`  
 
-How large the message will be  
+What size will the message be
 
 #### `background`  
 
