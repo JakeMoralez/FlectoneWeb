@@ -1,6 +1,6 @@
 # Deop 
 
-A message from the server when using `/deop`.
+A message from the server when using `/deop`
 ![deop](/deop.png)
 
 [//]: # (localization)
@@ -16,7 +16,7 @@ A message from the server when using `/deop`.
 
 ### `format`
 
-The message that will be sent.
+The message that will be sent
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
