@@ -1,6 +1,6 @@
-# Ругательство
+# Swear
 
-Это форматирование скрывает ругательство игрока
+This formatting hides the player's profanity  
 ![swear](/swear.png)
 
 [//]: # (localization)
@@ -16,7 +16,7 @@
 
 ### `symbol`
 
-Символ, которым заменяется каждая буква ругательства
+Symbol that replaces each letter of the profanity
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -29,7 +29,7 @@
 
 ### `trigger`
 
-Список [регулярных выражений](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java) для того, чтобы определять ругательство
+List of [regular expressions](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java) to identify profanity
 
 <!--@include: @/parts/sound.md-->
 
@@ -44,10 +44,10 @@
 
 ### `bypass`
 
-Право для игнорирования форматирования
+Permission to ignore formatting
 
 ### `see`
 
-Право для просмотра содержимого в запрещённом слове
+Permission to view the content of the forbidden word
 
 <!--@include: @/parts/permission/sound.md-->
