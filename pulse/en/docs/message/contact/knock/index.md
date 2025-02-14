@@ -1,6 +1,6 @@
-# Стуки
+# Knocks
 
-Стуки создаются с помощью **ШИФТ** и **ЛКМ** по конкретному блоку
+Knocks are created using **SHIFT** + **LMB** on specific blocks  
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -14,12 +14,12 @@
 
 ### `variants`
 
-Список стуков с их звуком
+List of knocks with their sounds  
 
-Можно создавать свои стуки и название блока может быть неполным, а лишь содержать ключевое слово
+Block names can be partial (only need to contain a keyword)
 
-::::: tip ПРИМЕР СТУКА ДЛЯ ВСЕХ ВИДОВ СТЕКЛА
-Я напишу название `GLASS`, потому что оно встречается во всех названиях стёкл
+::::: tip EXAMPLE FOR ALL GLASS TYPES  
+Using `GLASS` as it exists in all glass-related block names:  
 
 ```yaml
 - type: "GLASS"
@@ -45,6 +45,6 @@
 
 ### `variants`
 
-Список стуков и их права
+Knock variants and their permissions  
 
 <!--@include: @/parts/permission/cooldown.md-->
