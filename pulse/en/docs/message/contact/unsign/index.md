@@ -1,10 +1,10 @@
 # Removing Signature
 
-The signature is removed by **Left Click** on a grindstone if the player holds an item with a signature in the **main hand**.
+The signature is removed by **Left Click** on a grindstone if the player holds an item with a signature in the **main hand**
 ![unsign](/unsign.gif)
 
 ::: info NOTE
-A player can only remove their own signature.
+A player can only remove their own signature
 :::
 
 [//]: # (message.yml)
@@ -18,12 +18,12 @@ A player can only remove their own signature.
 
 ### `drop-dye`
 
-Enables dropping the dye that was used in the signature.
+Enables dropping the dye that was used in the signature
 ![unsign](/unsign.gif)
 
 ### `block`
 
-The block that must be clicked to remove the signature.
+The block that must be clicked to remove the signature
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
