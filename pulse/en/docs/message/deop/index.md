@@ -16,7 +16,7 @@ A message from the server when using `/deop`
 
 ### `format`
 
-The message that will be sent
+Format of the message to be sent
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
