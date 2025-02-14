@@ -1,54 +1,54 @@
-# Чат
+ # Chat   
 
-Модуль, отвечающий за отправленные сообщения игроком в чат
+A module responsible for messages sent by players in chat  
 
-[//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.chat`
+[//]: # (localization)  
+<!--@include: @/parts/words.md#localization-->  
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.chat`  
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->  
 
-::: code-group
-<<< @/files/localizations/ru_ru.yml#chat
-<<< @/files/localizations/en_us.yml#chat
-:::
+::: code-group  
+<<< @/files/localizations/ru_ru.yml#chat  
+<<< @/files/localizations/en_us.yml#chat  
+:::  
 
-### `null-chat`
+### `null-chat`  
 
-Сообщение, если в чат ничего не удалось отправить
+Message if nothing was sent to chat  
 
-### `null-recipient`
+### `null-recipient`  
 
-Сообщение, если никто не увидел сообщение игрока
+Message if no one saw the player's message  
 
-### `types`
+### `types`  
 
-Список чатов и их формат
+List of chats and their formats  
 
-[//]: # (message.yml)
-<!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → chat`
+[//]: # (message.yml)  
+<!--@include: @/parts/words.md#setting-->  
+<!--@include: @/parts/words.md#path--> `message.yml → chat`  
 
-<!--@include: @/parts/words.md#default-->
-<<< @/files/message.yml#chat
+<!--@include: @/parts/words.md#default-->  
+<<< @/files/message.yml#chat  
 
-<!--@include: @/parts/enable.md-->
+<!--@include: @/parts/enable.md-->  
 
-### `types`
+### `types`  
 
-Список всех чатов с их [настройкой](#настройка-чата), можно добавлять свои
+List of all chats with their [configuration](#chat-configuration), you can add your own  
 
-## Настройка чата
+## Chat Configuration  
 
-Любой чат по умолчанию выглядит так
+By default, any chat looks like this  
 
 ```yaml
-название_чата:
+chat_name:
   enable: true
   null-recipient: true
   cancel: true
-  range: число
-  priority: число
+  range: number
+  priority: number
   trigger: ""
   destination:
     type: CHAT
@@ -56,31 +56,31 @@
     enable: false
   sound:
     enable: false
-```
+```  
 
-### `enable`
+### `enable`  
 
-Включает работоспособность чата
+Enables chat functionality  
 
-### `null-recipient`
+### `null-recipient`  
 
-Включает сообщение о том, что отправленное сообщение никто не увидел
-![null recipient](/nullrecipient.png)
+Enables a message indicating that no one saw the sent message  
+![null recipient](/nullrecipient.png)  
 
-### `cancel`
+### `cancel`  
 
-- Если `true`, то ивент сообщения чата отменяется для других плагинов
-- Если необходимо, чтобы другой плагин, связанный с чатом (DiscordSRV например) - работал, то нужно ставить `false`
-- Если `false`, то это также вызывает дублирование в консоль
-  ![chat console](/chatconsole.png)
+- If `true`, the chat event is canceled for other plugins  
+- If you need another chat-related plugin (e.g., DiscordSRV) to work, set this to `false`  
+- If `false`, this also causes duplication in the console  
+  ![chat console](/chatconsole.png)  
 
-<!--@include: @/parts/range.md-->
+<!--@include: @/parts/range.md-->  
 
-### `priority`
+### `priority`  
 
-Приоритет чата, который используется для выбора, когда у нескольких чатов одинаковый `trigger`. Выбирается тот, у кого приоритет больше
+Chat priority, used for selection when multiple chats have the same `trigger`. The chat with the higher priority is chosen  
 
-::: tip НАПРИМЕР ЕСТЬ ЧАТЫ
+::: tip EXAMPLE CHATS  
 ```yaml
 admin:
   priority: 20
@@ -88,38 +88,38 @@ admin:
 helper:
   priority: 10
   trigger: "!" // [!code highlight]
-```
+```  
 
-Если игрок имеет право на оба чата, то плагином выбран будет `admin` т.к. у него больше `priority`
-:::
+If a player has permission for both chats, the plugin will select `admin` because it has a higher `priority`  
+:::  
 
-### `trigger`
+### `trigger`  
 
-Сообщение, с которого должно начинаться отправленное сообщение для чата
+The prefix that a message must start with to be sent to a specific chat  
 
-::: tip ЗНАЧЕНИЕ `trigger` МОЖЕТ БЫТЬ ЛЮБЫМ:
-- `!`, `admin`, `.f` и т.д.
-- пустым т.е. `trigger: ""`, тогда для этого чата подходит любое сообщение
-  :::
+::: tip `trigger` VALUE CAN BE ANYTHING:  
+- `!`, `admin`, `.f`, etc.  
+- Empty, i.e., `trigger: ""`, meaning any message fits this chat  
+  :::  
 
-В итоговом сообщении `trigger` удаляется, т.е. если игрок отправил `!привет`, в итоге будет `привет` без `!`
+In the final message, `trigger` is removed. For example, if a player sends `!hello`, the result will be `hello` without `!`  
 
-<!--@include: @/parts/destination.md-->
-<!--@include: @/parts/cooldown.md-->
-<!--@include: @/parts/sound.md-->
+<!--@include: @/parts/destination.md-->  
+<!--@include: @/parts/cooldown.md-->  
+<!--@include: @/parts/sound.md-->  
 
-[//]: # (permission.yml)
-<!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.chat`
+[//]: # (permission.yml)  
+<!--@include: @/parts/words.md#permission-->  
+<!--@include: @/parts/words.md#path--> `permission.yml → message.chat`  
 
-<!--@include: @/parts/words.md#default-->
-<<< @/files/permission.yml#chat
+<!--@include: @/parts/words.md#default-->  
+<<< @/files/permission.yml#chat  
 
-<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/permissionTier3.md-->  
 
-### `types`
+### `types`  
 
-Список чатов и их прав
+List of chats and their permissions  
 
-- <!--@include: @/parts/permission/cooldown.md-->
-- <!--@include: @/parts/permission/sound.md-->
+- <!--@include: @/parts/permission/cooldown.md-->  
+- <!--@include: @/parts/permission/sound.md-->  
