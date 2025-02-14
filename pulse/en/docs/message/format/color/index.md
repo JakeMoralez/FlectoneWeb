@@ -1,6 +1,6 @@
 # Colors
 
-The tag `fcolor` is used for individual color settings for each player.
+The tag `fcolor` is used for individual color settings for each player
 
 Usage: `<fcolor:number>`
 
@@ -18,15 +18,15 @@ Usage: `<fcolor:number>`
 
 ### `use-recipient-colors`
 
-If enabled, any message containing `<fcolor:number>` will be formatted relative to the recipient's colors.
+If enabled, any message containing `<fcolor:number>` will be formatted relative to the recipient's colors
 ![color true](/colortrue.gif)
 
-Otherwise, the color will depend on the sender's colors.
+Otherwise, the color will depend on the sender's colors
 ![color false](/colorfalse.gif)
 
 ### `values`
 
-A list of all used colors, where the number is the key for the default color.
+A list of all used colors, where the number is the key for the default color
 
 ::: tip For example, there is a color
 ```yaml
