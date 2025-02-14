@@ -1,6 +1,6 @@
 # Contacting 
 
-A module responsible for messages during interactions.
+A module responsible for messages during interactions
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
