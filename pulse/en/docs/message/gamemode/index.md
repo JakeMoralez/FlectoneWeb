@@ -1,13 +1,13 @@
-# Режим игры
+# Game Mode
 
-Сообщение от сервера, когда игрок изменил режим игры
+Message from the server when a player changes their game mode  
 ![gamemode](/gamemode.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.gamemode`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#gamemode
@@ -16,11 +16,11 @@
 
 ### `self`
 
-Сообщение при смене режима игры самому себе или получателю, когда его режим изменён
+Message when changing your own game mode or the recipient’s game mode has been changed
 
 ### `multiple`
 
-Сообщение при смене режима игры другому игроку
+Message when changing the game mode of another player
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
