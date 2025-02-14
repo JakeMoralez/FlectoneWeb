@@ -1,10 +1,10 @@
-# Снятие подписи
+# Removing Signature
 
-Снятие подписи происходит с помощью **ЛКМ** на точиле, если игрок держит в **главной** руке предмет с подписью
+The signature is removed by **Left Click** on a grindstone if the player holds an item with a signature in the **main hand**.
 ![unsign](/unsign.gif)
 
-::: info ПРИМЕЧАНИЕ
-Игрок может снять только свою подпись
+::: info NOTE
+A player can only remove their own signature.
 :::
 
 [//]: # (message.yml)
@@ -18,12 +18,12 @@
 
 ### `drop-dye`
 
-Включает выкидывание красителя, который использовался при подписи
+Enables dropping the dye that was used in the signature.
 ![unsign](/unsign.gif)
 
 ### `block`
 
-Блок, на который нужно нажать, для снятия подписи
+The block that must be clicked to remove the signature.
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
