@@ -1,6 +1,6 @@
-# Имя
+# Name
 
-Модуль, отвечающий за имя игрока
+Module responsible for the player's name
 ![name tab](/nametab.png)  
 ![name display](/namedisplay.png)  
 
@@ -17,24 +17,24 @@
 
 ### `display`
 
-Отвечает за имя игрока
+Responsible for the player's name
 ![name display](/namedisplay.png)
 
 ### `entity`
 
-Отвечает за имя сущности
+Responsible for the entity's name
 
 ### `unknown`
 
-Отвечает за неизвестное имя
+Responsible for unknown name
 
 ### `prefix`
 
-Префикс, которой отображается у команды, если включен ник
+Prefix displayed with the name if the nickname is enabled
 
 ### `suffix`
 
-Суффикс, которой отображается у команды, если включен ник
+Suffix displayed with the name if the nickname is enabled
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -47,15 +47,15 @@
 
 ### `team`
 
-Включает или выключает работу `scoreboard` команд
+Enables or disables the use of `scoreboard` commands
 
 ### `visible`
 
-Включает или выключает ник над игроком
+Enables or disables the name tag above the player
 
 ### `color`
 
-Цвет команды игрока из доступных
+Player's team color from the available options
 
 <!--@include: @/parts/color.md-->
 
