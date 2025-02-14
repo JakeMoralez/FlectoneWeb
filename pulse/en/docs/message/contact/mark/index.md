@@ -1,10 +1,10 @@
-# Метка
+# Mark
 
-Марка создаётся c помощью **ПКМ** и деревянного меча в главной руке
+Mark is created using **RMB** with a wooden sword in the main hand  
 ![mark](/mark.gif)
 
-::: info ПРИМЕЧАНИЕ
-Меч можно переименовать в наковальне на [доступный цвет](#доступные-цвета), например `RED` и метка будет красной
+::: info NOTE  
+The sword can be renamed in an anvil to an [available color](#available-colors) (e.g., `RED`) to make the mark colored  
 :::
 
 [//]: # (message.yml)
@@ -18,28 +18,28 @@
 
 ### `limit`
 
-Не позволяет сделать больше одной метки, пока она существует
+Prevents placing new marks while an existing one remains
 
 ### `color`
 
-Включает возможность цветных меток. Для этого меч нужно переименовать в один из
+Enables colored marks. Rename the sword to one of:  
 <!--@include: @/parts/color.md-->
 
 ### `range`
 
-Расстояние в блоках, насколько далеко можно разместить метку
+Maximum placement distance in blocks
 
 ### `duration`
 
-Сколько времени в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) будет [лимит](#limit)
+Time in [ticks](https://minecraft.wiki/t/Tick) for the [limit](#limit)
 
 ### `item`
 
-Предмет, с помощью которого ставится метка
+Item required to create marks
 
 ### `entity`
 
-Хитбокс моба, который используется для создания метки
+Mob hitbox used for mark creation
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
