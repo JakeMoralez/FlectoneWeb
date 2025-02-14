@@ -1,6 +1,6 @@
 # Signature
 
-The signature is created on the item by **Left Click** on the anvil, if the player holds dye in the **offhand** and an item in the **main hand**.
+The signature is created on the item by **Left Click** on the anvil, if the player holds dye in the **offhand** and an item in the **main hand**
 ![sign](/sign.gif)
 
 [//]: # (localization)
@@ -16,7 +16,7 @@ The signature is created on the item by **Left Click** on the anvil, if the play
 
 ### `format`
 
-The message that will be entered into the item’s description as a signature.
+The message that will be entered into the item’s description as a signature
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -29,12 +29,12 @@ The message that will be entered into the item’s description as a signature.
 
 ### `drop-dye`
 
-Enables dropping the dye of the previous signature when the signature is changed.
+Enables dropping the dye of the previous signature when the signature is changed
 ![resign](/resign.gif)
 
 ### `block`
 
-The block that must be clicked for the signature.
+The block that must be clicked for the signature
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
