@@ -1,6 +1,6 @@
-# Таб
+# Tab
 
-Категория, отвечающая за сообщения в ТАБе
+Category responsible for messages in the TAB
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

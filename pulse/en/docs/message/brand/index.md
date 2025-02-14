@@ -1,13 +1,13 @@
-# Бренд
+# Brand
 
-Модуль, отвечающий за сообщение бренда в F3
+Module responsible for the brand message in F3 debug screen  
 ![brand](/brand.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.brand`
+<!--@include: @/parts/words.md#localization-->
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.brand`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#brand
@@ -16,9 +16,9 @@
 
 ### `values`
 
-Список сообщений для бренда
+List of brand messages
 
-::: warning МОЖНО ИСПОЛЬЗОВАТЬ ТОЛЬКО ОБЫЧНЫЕ ЦВЕТА
+::: warning ONLY BASIC COLORS CAN BE USED
 <!--@include: @/parts/color.md-->
 :::
 

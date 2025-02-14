@@ -1,13 +1,13 @@
-# Подключение
+# Join
 
-Сообщение от сервера, когда игрок подключился
+Message from the server when a player connects  
 ![join](/join.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.join`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#join
@@ -16,11 +16,11 @@
 
 ### `format`
 
-Сообщение при подключении на сервер
+Message when connecting to the server
 
 ### `format-first-time`
 
-Сообщение при первом подключении на сервер
+Message when connecting to the server for the first time
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -33,7 +33,7 @@
 
 ### `first`
 
-Включает сообщение о самом первом подключении игрока на сервер
+Enables the message for a player's very first connection to the server
 
 <!--@include: @/parts/range.md-->
 <!--@include: @/parts/destination.md-->

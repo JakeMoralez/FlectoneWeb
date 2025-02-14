@@ -1,6 +1,6 @@
-# Версия
+# Version
 
-Модуль отвечающий за версию сервера
+Module responsible for the server version  
 ![version](/version.png)
 
 [//]: # (localization)
@@ -16,7 +16,7 @@
 
 ### `name`
 
-Название версии сервера
+Server version name
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -29,11 +29,11 @@
 
 ### `protocol`
 
-[Протокол](https://minecraft.wiki/w/Protocol_version) сервера
+[Protocol](https://minecraft.wiki/w/Protocol_version) version of the server
 
-::: info ИНФОРМАЦИЯ
+::: info INFORMATION
 
-Число может быть любым, но `-1` указывает на текущий протокол
+The number can be any, but `-1` refers to the current protocol
 
 :::
 

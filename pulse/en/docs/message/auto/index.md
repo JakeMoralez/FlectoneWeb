@@ -1,13 +1,13 @@
-# Автоматическое
+# Auto
 
-Сообщение от сервера раз в какой-то промежуток времени
+Server message sent at regular intervals  
 ![auto](/auto.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.auto`
+<!--@include: @/parts/words.md#localization-->
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.auto`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#auto
@@ -16,7 +16,7 @@
 
 ### `types`
 
-Виды автоматических сообщений со списком
+Types of automatic messages with a list
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -29,9 +29,9 @@
 
 ### `types`
 
-Виды автоматических сообщений
+Types of automatic messages
 
-::: tip МОЖНО СОЗДАВАТЬ СВОИ
+::: tip YOU CAN CREATE YOUR OWN
 ```yaml
   types:
     newauto:
@@ -62,6 +62,6 @@
 
 ### `types`
 
-Виды автоматических сообщений и их прав на звуки
+Types of automatic messages and their sound permissions
 
 - <!--@include: @/parts/permission/sound.md-->

@@ -1,11 +1,11 @@
-# Деоп
+# Deop 
 
-Сообщение от сервера при использовании `/deop`
+A message from the server when using `/deop`
 ![deop](/deop.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.deop`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.deop`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Сообщение, которое будет отправлено
+Format of the message to be sent
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

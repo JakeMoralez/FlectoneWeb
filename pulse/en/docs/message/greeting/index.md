@@ -1,13 +1,13 @@
-# Приветствие
+# Greeting
 
-Сообщение от сервера лично игроку, когда он подключился
+Message from the server to the player when they connect  
 ![greeting](/greeting.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.greeting`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#greeting
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Личное сообщение игроку при подключении
+Personalized message to the player upon connection
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

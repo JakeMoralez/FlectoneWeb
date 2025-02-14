@@ -1,73 +1,73 @@
-# Афк
+# AFK  
 
-Игрок становится АФК, если ничего не делает какой-то промежуток времени
-![afk global message](/afkglobalmessage.png)
+A player goes AFK if they do nothing for a certain period of time  
+![afk global message](/afkglobalmessage.png)  
 
-Если человек АФК, то ему выдаётся определённый суффикс
-![afk suffix](/afksuffix.png)
+If a player is AFK, they receive a specific suffix  
+![afk suffix](/afksuffix.png)  
 
-[//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.contact.afk`
+[//]: # (localization)  
+<!--@include: @/parts/words.md#localization-->  
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.contact.afk`  
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->  
 
-::: code-group
-<<< @/files/localizations/ru_ru.yml#afk
-<<< @/files/localizations/en_us.yml#afk
-:::
+::: code-group  
+<<< @/files/localizations/ru_ru.yml#afk  
+<<< @/files/localizations/en_us.yml#afk  
+:::  
 
-### `suffix`
+### `suffix`  
 
-Суффикс, который выдаётся игроку, если он встал в АФК
-![afksuffix](/afksuffix.png)
+The suffix assigned to a player when they go AFK  
+![afksuffix](/afksuffix.png)  
 
-### `format-true`
+### `format-true`  
 
-Сообщение, если игрок отошёл
+Message when a player goes AFK  
 
-### `format-false`
+### `format-false`  
 
-Сообщение, если игрок вернулся
+Message when a player returns  
 
-[//]: # (message.yml)
-<!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → contact.afk`
+[//]: # (message.yml)  
+<!--@include: @/parts/words.md#setting-->  
+<!--@include: @/parts/words.md#path--> `message.yml → contact.afk`  
 
-<!--@include: @/parts/words.md#default-->
-<<< @/files/message.yml#afk
+<!--@include: @/parts/words.md#default-->  
+<<< @/files/message.yml#afk  
 
-<!--@include: @/parts/enable.md-->
-<!--@include: @/parts/range.md-->
+<!--@include: @/parts/enable.md-->  
+<!--@include: @/parts/range.md-->  
 
-### `delay`
+### `delay`  
 
-Сколько времени в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) игрок ничего не должен делать, чтобы встать в АФК
+How long (in [ticks](https://minecraft.wiki/w/Tick)) a player must be inactive to go AFK  
 
-### `ignore`
+### `ignore`  
 
-Список действий, которые игнорируются и не влияют на режим АФК
+List of actions that are ignored and do not affect AFK status  
 
-| Действия, которые можно игнорировать |
-|--------------------------------------|
-| Любые названия комманд               |
-| `chat` - когда игрок пишет в чат     |
-| `quit` - когда игрок выходит         |
+| Actions that can be ignored |  
+|----------------------------|  
+| Any command names          |  
+| `chat` - when a player types in chat |  
+| `quit` - when a player logs out |  
 
-::: tip НАПРИМЕР
-Если я впишу в список комманду `tell` и игрок будет в режиме АФК, то он сможет использовать комманду `tell` и его не выкинет с режима АФК
-:::
+::: tip EXAMPLE  
+If I add the command `tell` to the list and a player is AFK, they can use the `tell` command without leaving AFK mode  
+:::  
 
-<!--@include: @/parts/destination.md-->
-<!--@include: @/parts/ticker.md-->
+<!--@include: @/parts/destination.md-->  
+<!--@include: @/parts/ticker.md-->  
 
-[//]: # (permission.yml)
-<!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.afk`
+[//]: # (permission.yml)  
+<!--@include: @/parts/words.md#permission-->  
+<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.afk`  
 
-<!--@include: @/parts/words.md#default-->
-<<< @/files/permission.yml#afk
+<!--@include: @/parts/words.md#default-->  
+<<< @/files/permission.yml#afk  
 
-<!--@include: @/parts/permission/permissionTier3.md-->
-<!--@include: @/parts/permission/cooldown.md-->
+<!--@include: @/parts/permission/permissionTier3.md-->  
+<!--@include: @/parts/permission/cooldown.md-->  
 <!--@include: @/parts/permission/sound.md-->

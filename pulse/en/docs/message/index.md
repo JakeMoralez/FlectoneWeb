@@ -1,6 +1,6 @@
-# Сообщения
+# Messages
 
-Настройка сообщений `FlectonePulse` (из-за чего появляются и как)
+Configuration of messages in `FlectonePulse` (why they appear and how)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
@@ -15,23 +15,23 @@
 
 ### `cooldown`
 
-Сообщение, которое показывается при слишком частом использовании, если включен `cooldown`
+Message displayed when used too frequently, if `cooldown` is enabled
 
 ### `time`
 
-Сообщения времени
+Time messages
 
 - #### `format`
 
-Форматирование времени ([Apache DurationFormatUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/time/DurationFormatUtils.html))
+Time formatting ([Apache DurationFormatUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/time/DurationFormatUtils.html))
 
 - #### `permanent`
 
-Форматирование времени, если оно `-1` т.е. навсегда
+Time formatting if it is `-1`, i.e., forever
 
 - #### `zero`
 
-Форматирование времени, если оно равно нулю
+Time formatting if it equals zero
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

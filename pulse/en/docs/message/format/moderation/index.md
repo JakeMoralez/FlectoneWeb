@@ -1,6 +1,6 @@
-# Модерация
+# Moderation
 
-Модуль, отвечающий за модерацию сообщений
+Module responsible for message moderation
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

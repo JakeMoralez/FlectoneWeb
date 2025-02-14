@@ -1,12 +1,12 @@
-# Смерть
+# Death 
 
-Сообщение от сервера, когда игрок умирает
+A message from the server when a player dies
 ![death server](/deathserver.png)  
 ![death player](/deathplayer.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.death`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.death`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -17,7 +17,7 @@
 
 ### `types`
 
-Весь список смертей, где ключом является название смерти, а значением сообщение, которое будет использоваться
+A complete list of death types, where the key is the name of the death and the value is the message that will be used
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

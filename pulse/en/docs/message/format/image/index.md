@@ -1,11 +1,11 @@
-# Изображение
+# Image
 
-Тег `image` используется для отображения изображений
+The `image` tag is used to display images.
 
-Использование: `<image:ссылка> сообщение </image>`
+Usage: `<image:url> message </image>`
 
 ![image message](/imagemessage.png)  
-![image minecraft](/imageminecraft.png)  
+![image minecraft](/imageminecraft.png)
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -18,12 +18,12 @@
 
 ### `color`
 
-Определяет цвет сообщения, содержащее ссылку
+Defines the color of the message containing the link.
 
-::: tip ПРИМЕР
-`<image:ссылка> дом </image>`
+::: tip EXAMPLE
+`<image:url> house </image>`
 
-Здесь `дом` будет иметь цвет `<fcolor:2>`
+Here, `house` will have the color `<fcolor:2>`
 
 :::
 

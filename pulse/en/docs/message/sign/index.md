@@ -1,6 +1,6 @@
-# Табличка
+# Sign
 
-Модуль, отвечающий за сообщения на табличке
+Module responsible for messages on the sign
 ![sign](/signoak.gif)
 
 [//]: # (message.yml)

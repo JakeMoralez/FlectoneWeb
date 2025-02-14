@@ -1,6 +1,6 @@
-# Статус
+# Status
 
-Модуль, который отвечает за всё, что происходит при просмотре сервера перед подключением
+Module responsible for everything that happens when viewing the server before connecting
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

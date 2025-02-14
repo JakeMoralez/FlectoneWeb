@@ -1,6 +1,6 @@
-# Перевод
+# Translate
 
-Тег `translate` используется для перевода сообщения на другой язык
+The `translate` tag is used for translating a message into another language
 
 ![translate](/translate.png)
 
@@ -17,7 +17,7 @@
 
 ### `action`
 
-Сообщение для перевода, в котором прописано выполнение комманды при нажатии
+Message for translation, which specifies the execution of a command when clicked
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

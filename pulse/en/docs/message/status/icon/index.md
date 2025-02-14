@@ -1,6 +1,6 @@
-# Иконка
+# Icon
 
-Модуль отвечающий за изображение сервера
+Module responsible for the server image
 ![server icon](/servericon.png)
 
 [//]: # (message.yml)
@@ -14,7 +14,7 @@
 
 ### `random`
 
-Если включено, то изображение будет выбираться случайным образом, иначе по порядку
+If enabled, the image will be selected randomly, otherwise in order
 
 ### `values`
 
@@ -23,11 +23,11 @@
 
 `server-icon-2.png` ![server icon 2](/server-icon-2.png)
 
-Список названий изображений, которые должны отображаться
+List of image names to be displayed
 
-::: danger ИЗОБРАЖЕНИЕ ДОЛЖНО
-1. Находиться внутри папки `/FlectonePulse/images/`
-2. Иметь размер **ТОЛЬКО** `64x64`
+::: danger IMAGE MUST
+1. Be located inside the `/FlectonePulse/images/` folder
+2. Have the size **ONLY** `64x64`
    :::
 
 [//]: # (permission.yml)

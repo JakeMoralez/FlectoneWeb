@@ -1,6 +1,6 @@
-# Фиксация
+# Fixation
 
-Модуль форматирует сообщение игрока так, что первая буква - заглавная, а в конце есть точка
+The module formats the player's message so that the first letter is capitalized, and there is a period at the end
 
 ![fixation](/fixation.png)
 
@@ -15,15 +15,15 @@
 
 ### `end-dot`
 
-Будет ли в конце сообщения добавлена точка, если её нет
+Determines whether a period will be added at the end of the message if there isn't one
 
 ### `first-letter-uppercase`
 
-Будет ли первая буква в сообщении всегда заглавной
+Determines whether the first letter of the message will always be uppercase
 
 ### `non-dot-symbols`
 
-Список символов (могут быть и слова), после которых не нужно ставить точку
+A list of symbols (can also be words) after which a period should not be added
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->

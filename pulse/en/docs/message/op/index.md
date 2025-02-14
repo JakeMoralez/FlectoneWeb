@@ -1,11 +1,11 @@
-# Оп
+# Op
 
-Сообщение от сервера при использовании `/op`
+Message from the server when using `/op`
 ![op](/op.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.op`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.op`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Сообщение, которое будет отправлено
+Message that will be sent
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

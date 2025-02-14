@@ -1,6 +1,6 @@
-# Нижнее
+# Footer
 
-Модуль, отвечающий за текст в нижней части ТАБа
+Module responsible for the text at the bottom of the TAB
 ![footer](/footer.png)
 
 [//]: # (localization)
@@ -16,7 +16,7 @@
 
 ### `lists`
 
-Список сообщений, где `- -` разделяет разные форматы
+List of messages, where `- -` separates different formats
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

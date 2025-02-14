@@ -1,11 +1,11 @@
-# Сетблок
+# Setblock
 
-Сообщение от сервера при использовании `/setblock`
+Message from the server when using `/setblock`
 ![setblock](/setblock.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.setblock`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.setblock`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Сообщение, которое будет отправлено
+Message that will be sent
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

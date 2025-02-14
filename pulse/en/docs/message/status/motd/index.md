@@ -1,11 +1,11 @@
-# Описание
+# MOTD
 
-Модуль отвечающий за приветственное сообщение сервера
+Module responsible for the server's welcome message
 ![motd](/motd.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.status.motd`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.status.motd`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `values`
 
-Список сообщений, которые будут показываться
+List of messages to be displayed
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

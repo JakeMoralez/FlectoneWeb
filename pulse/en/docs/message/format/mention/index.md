@@ -1,6 +1,6 @@
-# Упоминание
+# Mention
 
-Это форматирование позволяет упоминать (пинговать) человека в сообщении
+This formatting allows mentioning (pinging) someone in a message  
 ![mention](/mention.png)
 
 [//]: # (localization)
@@ -16,11 +16,11 @@
 
 ### `person`
 
-Сообщение игроку при упоминании
+Message to the player when mentioned
 
 ### `format`
 
-Сообщение, если это упоминание игрока
+Message when it is a mention of a player
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -33,9 +33,9 @@
 
 ### `trigger`
 
-Символ, с которого должно начинаться сообщение упоминания
-::: tip НАПРИМЕР
-Если я хочу упомянуть `Flectone`, то я должен написать `@Flectone`
+Symbol with which the mention message should start  
+::: tip EXAMPLE  
+If I want to mention `Flectone`, I should write `@Flectone`  
 ![mention](/mention.png)
 :::
 
@@ -53,10 +53,10 @@
 
 ### `group`
 
-Право для упоминания донатной группы, например `@default`
+Permission for mentioning a donation group, for example `@default`
 
 ### `bypass`
 
-Право для игнорирования упоминания
+Permission to ignore mentions
 
 <!--@include: @/parts/permission/sound.md-->

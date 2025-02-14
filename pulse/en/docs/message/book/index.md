@@ -1,6 +1,6 @@
-# Книга
+# Book
 
-Модуль, отвечающий за сообщения в книге и названии этой книги
+Module responsible for messages in books and their titles  
 ![book](/book.gif)
 
 [//]: # (message.yml)

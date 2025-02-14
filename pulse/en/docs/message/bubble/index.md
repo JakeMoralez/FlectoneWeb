@@ -1,91 +1,91 @@
-# Над головой
+ # Overhead Messages 
 
-Модуль, отвечающий за сообщения над головой
-![bubble](/bubble.gif)
+A module responsible for messages above the head  
+![bubble](/bubble.gif)  
 
-Идея взята из [LightChatBubbles](https://github.com/atesin/LightChatBubbles)
+The idea is taken from [LightChatBubbles](https://github.com/atesin/LightChatBubbles)  
 
-### Формула длительности
+### Duration Formula  
 
 ```java
 long duration = (countWords + handicapChars) / readSpeed * 1200;
-```
+```  
 
-[//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.bubble`
+[//]: # (localization)  
+<!--@include: @/parts/words.md#localization-->  
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.bubble`  
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->  
 
-::: code-group
-<<< @/files/localizations/ru_ru.yml#bubble
-<<< @/files/localizations/en_us.yml#bubble
-:::
+::: code-group  
+<<< @/files/localizations/ru_ru.yml#bubble  
+<<< @/files/localizations/en_us.yml#bubble  
+:::  
 
-### `format`
+### `format`  
 
-Формат сообщения над головой
+Format of the overhead message  
 
-[//]: # (message.yml)
-<!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → bubble`
+[//]: # (message.yml)  
+<!--@include: @/parts/words.md#setting-->  
+<!--@include: @/parts/words.md#path--> `message.yml → bubble`  
 
-<!--@include: @/parts/words.md#default-->
-<<< @/files/message.yml#bubble
+<!--@include: @/parts/words.md#default-->  
+<<< @/files/message.yml#bubble  
 
-<!--@include: @/parts/enable.md-->
+<!--@include: @/parts/enable.md-->  
 
-### `distance`
+### `distance`  
 
-Дальность отображения сообщений над головой от отправителя
+The display distance of overhead messages from the sender  
 
-### `line-width`
+### `line-width`  
 
-Максимальное количество символов на одной строчке
+The maximum number of characters per line  
 
-### `read-speed`
+### `read-speed`  
 
-Скорость чтения символов сообщения
+Reading speed of message characters  
 
-### `handicap-chars`
+### `handicap-chars`  
 
-Дополнительное время для коротких сообщений
+Additional time for short messages  
 
-### `modern`
+### `modern`  
 
-Сообщения над головой через Text Display
+Overhead messages using Text Display  
 
-::: warning ПРЕДУПРЕЖДЕНИЕ
-Это работает только на серверах 1.19.4 и выше
-:::
+::: warning WARNING  
+This only works on servers 1.19.4 and above  
+:::  
 
-::: details НАСТРОЙКА
-#### `enable`
+::: details SETTINGS  
+#### `enable`  
 
-Включает работоспособность
+Enables functionality  
 
-#### `has-shadow`
+#### `has-shadow`  
 
-Включает тень у текста
+Enables text shadow  
 
-#### `height`
+#### `height`  
 
-Насколько высоко над игроком будет сообщение
+How high above the player the message will be  
 
-#### `scale`
+#### `scale`  
 
-Насколько большим будет сообщение
+What size will the message be
 
-#### `background`
+#### `background`  
 
-Цвет фона сообщения, он имеет прозрачность т.е. альфа-канал. [Сайт для выбора цвета](https://rgbacolorpicker.com/color-wheel-picker)
-:::
+The background color of the message, including transparency (alpha channel). [Color selection site](https://rgbacolorpicker.com/color-wheel-picker)  
+:::  
 
-[//]: # (permission.yml)
-<!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.bubble`
+[//]: # (permission.yml)  
+<!--@include: @/parts/words.md#permission-->  
+<!--@include: @/parts/words.md#path--> `permission.yml → message.bubble`  
 
-<!--@include: @/parts/words.md#default-->
-<<< @/files/permission.yml#bubble
+<!--@include: @/parts/words.md#default-->  
+<<< @/files/permission.yml#bubble  
 
-<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/permissionTier3.md-->  
