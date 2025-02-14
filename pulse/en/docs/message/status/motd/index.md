@@ -1,4 +1,4 @@
-# Description
+# MOTD
 
 Module responsible for the server's welcome message
 ![motd](/motd.png)
