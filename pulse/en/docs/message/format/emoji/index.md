@@ -1,13 +1,13 @@
-# Смайлики
+# Emojis
 
-Тег `emoji` используется для замены текстовых смайликов в юникод смайлики
+The `emoji` tag is used to replace text-based emojis with Unicode emojis.
 
-Использование: `смайлик`
+Usage: `emoji`
 
 ![emoji message](/emojimessage.png)  
-![emoji minecraft](/emojiminecraft.png)  
+![emoji minecraft](/emojiminecraft.png)
 
-При нажатии на такой смайлик, он скопируется в чат
+When clicking on such an emoji, it will be copied to the chat.
 ![emoji gif](/emoji.gif)
 
 [//]: # (message.yml)
@@ -21,14 +21,14 @@
 
 ### `values`
 
-Список всех доступных смайликов, где ключ - какой текст нужно заменить, а значение - на какой текст нужно заменить
+A list of all available emojis, where the key is the text to be replaced, and the value is the text to replace it with.
 
-::: tip НАПРИМЕР ЕСТЬ СМАЙЛИК
+::: tip FOR EXAMPLE, THERE IS AN EMOJI
 ```yaml
 :): "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
 ```
 
-Сообщение `:)` заменится на `☺`
+The message `:)` will be replaced with `☺`
 ![emoji minecraft](/emojiminecraft.png)
 :::
 
