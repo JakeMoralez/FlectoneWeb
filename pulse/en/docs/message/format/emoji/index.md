@@ -1,13 +1,13 @@
 # Emojis
 
-The `emoji` tag is used to replace text-based emojis with Unicode emojis.
+The `emoji` tag is used to replace text-based emojis with Unicode emojis
 
 Usage: `emoji`
 
 ![emoji message](/emojimessage.png)  
 ![emoji minecraft](/emojiminecraft.png)
 
-When clicking on such an emoji, it will be copied to the chat.
+When clicking on such an emoji, it will be copied to the chat
 ![emoji gif](/emoji.gif)
 
 [//]: # (message.yml)
@@ -21,7 +21,7 @@ When clicking on such an emoji, it will be copied to the chat.
 
 ### `values`
 
-A list of all available emojis, where the key is the text to be replaced, and the value is the text to replace it with.
+A list of all available emojis, where the key is the text to be replaced, and the value is the text to replace it with
 
 ::: tip FOR EXAMPLE, THERE IS AN EMOJI
 ```yaml
