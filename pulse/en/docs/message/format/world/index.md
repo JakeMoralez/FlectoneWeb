@@ -1,6 +1,6 @@
-# Измерение
+# Measurement
 
-Модуль, отвечающий за тег `<world_prefix>` т.е. за цвет измерения
+The module responsible for the `<world_prefix>` tag, i.e., for the world dimension color  
 ![world tab](/worldtab.png)  
 ![world chat](/worldchat.png)
 
@@ -15,16 +15,16 @@
 
 ### `mode`
 
-Режим определения мира из доступных
+The mode for determining the world from the available options
 
-| Режим    | Описание                                                                 |
-|----------|--------------------------------------------------------------------------|
-| `TYPE`   | Мир определяется по названию его типа, например обычный мир это `normal` |
-| `NAME`   | Мир определяется по названию его папки                                   |
+| Mode     | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| `TYPE`   | The world is determined by its type name, for example, the normal world is `normal` |
+| `NAME`   | The world is determined by the name of its folder                            |
 
 ### `values`
 
-Список миров и их `<world_prefix>`
+List of worlds and their `<world_prefix>`
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
