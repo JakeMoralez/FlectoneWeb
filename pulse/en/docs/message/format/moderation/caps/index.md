@@ -1,6 +1,6 @@
-# Капс
+# Caps
 
-Это форматирование убирает капс в сообщении
+This formatting removes caps from a message  
 ![caps](/caps.png)
 
 [//]: # (message.yml)
@@ -14,10 +14,10 @@
 
 ### `trigger`
 
-Процент букв, которые должны быть в верхнем регистре, чтобы сообщение было изменено
+Percentage of letters that should be uppercase for the message to be modified
 
-::: tip КАК ПРАВИЛЬНО НАПИСАТЬ ПРОЦЕНТ
-`0.7` это `70%`, а `1.0` это `100%` т.е всё сообщение
+::: tip HOW TO PROPERLY WRITE PERCENTAGE  
+`0.7` is `70%`, and `1.0` is `100%`, i.e. the whole message
 :::
 
 <!--@include: @/parts/sound.md-->
@@ -33,6 +33,6 @@
 
 ### `bypass`
 
-Право для игнорирования форматирования
+Permission to ignore formatting
 
 <!--@include: @/parts/permission/sound.md-->
