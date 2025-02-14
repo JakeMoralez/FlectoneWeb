@@ -1,11 +1,11 @@
-# Игроки
+# Players
 
-Модуль отвечающий за количество игроков на сервере
+Module responsible for the number of players on the server
 ![player count](/playercount.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.status.players`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.status.players`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,21 +16,21 @@
 
 ### `samples`
 
-Список игроков сервера. Плейсхолдер `<players>` добавляет всех игроков сервера к списку
+List of server players. The placeholder `<players>` adds all players on the server to the list
 
-::: info ПРИМЕРЫ ИСПОЛЬЗОВАНИЯ
+::: info EXAMPLES OF USAGE
 
-Можно добавлять любые сообщения
+You can add any messages
 ```yaml
 samples:
-  - name: "<red>Это сервер в майнкрафте!"
+  - name: "<red>This is a Minecraft server!"
     id: null
   - name: "<players>"
     id: null
 ```
 ![sample1](/sample1.png)
 
-или создавать фейковых игроков
+or create fake players
 ```yaml
 samples:
   - name: "Notch"
@@ -41,15 +41,15 @@ samples:
 ![sample2](/sample2.png)
 :::
 
-::: warning ПРЕДУПРЕЖДЕНИЕ
+::: warning WARNING
 
-Можно использовать только доступные цвета
+Only available colors can be used
 <!--@include: @/parts/color.md-->
 :::
 
 ### `full`
 
-Сообщение при подключении на полный сервер
+Message when the server is full
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -62,19 +62,19 @@ samples:
 
 ### `control`
 
-Если включено, то игрока не будет впускать на сервер при большем количестве игроков, чем [указано](#max)
+If enabled, the player will not be allowed to join the server if the number of players exceeds the [specified](#max) amount
 
 ### `max`
 
-Максимальное количество игроков на сервере
+Maximum number of players on the server
 
 ### `online`
 
-Число, которое позволяет указать любой онлайн на сервере
+Number that allows you to specify any number of online players
 
-::: info ИНФОРМАЦИЯ
+::: info INFORMATION
 
-Число может быть любым, но `-69` указывает на текущий онлайн
+The number can be anything, but `-69` indicates the current online count
 
 :::
 
@@ -89,4 +89,4 @@ samples:
 
 ### `bypass`
 
-Право для подключения на полный сервер
+Permission to connect to a full server
