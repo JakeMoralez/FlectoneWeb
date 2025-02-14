@@ -1,3 +1,3 @@
 ### `sound`
 
-Право для использования звука
+Permission to use sound

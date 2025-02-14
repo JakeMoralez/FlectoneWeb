@@ -1,11 +1,11 @@
-# Комманда `/geolocate`
+# Command `/geolocate`
 
-Комманда для отслеживания IP-адреса и получения информации об игроке
+Command for tracking IP addresses and obtaining player information
 ![command geolocate](/commandgeolocate.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.geolocate`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.geolocate`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,15 +16,15 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message displayed if the entered player is not found
 
 ### `null-or-error`
 
-Сообщение, если произошла ошибка при получении информации
+Message displayed if an error occurs when retrieving information
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Message format that will be sent
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

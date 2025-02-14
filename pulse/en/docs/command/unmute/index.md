@@ -1,6 +1,6 @@
-# Комманда `/unmute`
+# Command `/unmute`
 
-Комманда для того, чтобы размутить игрока
+Command to unmute a player
 ![command unmute](/commandunmute.png)
 
 [//]: # (localization)
@@ -16,15 +16,15 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the player cannot be found
 
 ### `not-muted`
 
-Сообщение, если введённый игрок не замучен
+Message when the player is not muted
 
 ### `format`
 
-Сообщение при размуте
+Message when the player is unmuted
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -50,4 +50,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

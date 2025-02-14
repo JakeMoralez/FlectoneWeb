@@ -1,24 +1,24 @@
 ### `destination`
 
-Куда будет отправлено сообщение
+Where the message will be sent
 
-::: tip КАК ПОМЕНЯТЬ НАЗНАЧЕНИЕ?
-Замени значение `type: сюды` и перезапусти `FlectonePulse` с помощью комманды `/flectonepulse reload`, дополнительные настройки появятся сами
+::: tip HOW TO CHANGE THE DESTINATION?
+Replace the value `type: here` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional settings will appear automatically.
 :::
 
-| Тип          | Пояснение                                    | Требует дополнительной настройки? |
-|--------------|----------------------------------------------|-----------------------------------|
-| `ACTION_BAR` | Сообщение над инвентарём игрока              | Да                                |
-| `BOSS_BAR`   | Сообщение в верхней части экрана             | Да                                |
-| `BRAND`      | Сообщение в F3                               | Нет                               |
-| `CHAT`       | Сообщение в чат                              | Нет                               |
-| `TITLE`      | Сообщение на весь экран                      | Да                                |
-| `SUBTITLE`   | Сообщение на весь экран (нижняя строчка)     | Да                                |
-| `TAB_HEADER` | Сообщение в ТАБ (сверху)                     | Нет                               |
-| `TAB_FOOTER` | Сообщение в ТАБ (снизу)                      | Нет                               |
-| `TOAST`      | Сообщение в правом верхнем углу (достижение) | Да                                |
+| Type          | Explanation                                    | Requires additional configuration? |
+|---------------|------------------------------------------------|-------------------------------------|
+| `ACTION_BAR`  | Message above the player's inventory           | Yes                                 |
+| `BOSS_BAR`    | Message at the top of the screen               | Yes                                 |
+| `BRAND`       | Message in F3                                  | No                                  |
+| `CHAT`        | Message in the chat                            | No                                  |
+| `TITLE`       | Full-screen message                            | Yes                                 |
+| `SUBTITLE`    | Full-screen message (bottom line)              | Yes                                 |
+| `TAB_HEADER`  | Message in TAB (top)                           | No                                  |
+| `TAB_FOOTER`  | Message in TAB (bottom)                        | No                                  |
+| `TOAST`       | Message in the top-right corner (achievement)  | Yes                                 |
 
-::: details Настройка `ACTION_BAR`
+::: details Configuration for `ACTION_BAR`
 ```yaml
 destination:
   type: ACTION_BAR
@@ -28,12 +28,12 @@ destination:
 
 #### `times`
 
-| Поле       | Пояснение                            |
-|------------|--------------------------------------|
-| `stay`     | Время в тиках на удержание сообщения |
+| Field       | Explanation                            |
+|-------------|----------------------------------------|
+| `stay`      | Time in ticks to hold the message      |
 :::
 
-::: details Настройка `BOSS_BAR`
+::: details Configuration for `BOSS_BAR`
 
 ```yaml
 destination:
@@ -49,53 +49,53 @@ destination:
 
 #### `duration`
 
-Длительность отображения сообщения
+Duration of the message display
 
 #### `health`
 
-Насколько будет заполнена шкала босс бара
+How full the boss bar will be
 
 #### `overlay`
 
-| Тип          | Пояснение                |
-|--------------|--------------------------|
-| `PROGRESS`   | Одной линией             |
-| `NOTCHED_6`  | Разделённое на 6 частей  |
-| `NOTCHED_10` | Разделённое на 10 частей |
-| `NOTCHED_12` | Разделённое на 12 частей |
-| `NOTCHED_20` | Разделённое на 20 частей |
+| Type          | Explanation                |
+|---------------|----------------------------|
+| `PROGRESS`    | Single line                |
+| `NOTCHED_6`   | Divided into 6 parts       |
+| `NOTCHED_10`  | Divided into 10 parts      |
+| `NOTCHED_12`  | Divided into 12 parts      |
+| `NOTCHED_20`  | Divided into 20 parts      |
 
 #### `color`
 
-Цвет отображения
+Display color
 
-| Тип      |
-|----------|
-| `PINK`   |
-| `BLUE`   |
-| `RED`    |
-| `GREEN`  |
-| `YELLOW` |
-| `PURPLE` |
-| `WHITE`  |
+| Type      |
+|-----------|
+| `PINK`    |
+| `BLUE`    |
+| `RED`     |
+| `GREEN`   |
+| `YELLOW`  |
+| `PURPLE`  |
+| `WHITE`   |
 
 #### `play-boos-music`
 
-Будет ли музыка при сообщении
+Whether music will play with the message
 
 #### `create-world-fog`
 
-Будет ли туман при сообщении
+Whether fog will appear with the message
 
 #### `darken-screen`
 
-Будет ли затемнён экран при сообщении
+Whether the screen will darken with the message
 :::
 
-::: details Настройка `TITLE` (или `SUBTITLE`)
+::: details Configuration for `TITLE` (or `SUBTITLE`)
 ```yaml
 destination:
-  type: TITLE (или SUBTITLE)
+  type: TITLE (or SUBTITLE)
   subtext: ""
   times:
     fade-in: 20
@@ -105,18 +105,18 @@ destination:
 
 #### `subtext`
 
-Сообщение для второй части отображения. Например, если выбран `TITLE`, то `subtext` будет показываться под ним и наоборот
+Message for the second part of the display. For example, if `TITLE` is selected, `subtext` will be displayed below it, and vice versa.
 
 #### `times`
 
-| Поле       | Пояснение                            |
-|------------|--------------------------------------|
-| `fade-in`  | Время в тиках на появление сообщения |
-| `stay`     | Время в тиках на удержание сообщения |
-| `fade-out` | Время в тиках на удаления сообщения  |
+| Field       | Explanation                            |
+|-------------|----------------------------------------|
+| `fade-in`   | Time in ticks for the message to appear |
+| `stay`      | Time in ticks to hold the message      |
+| `fade-out`  | Time in ticks for the message to disappear |
 :::
 
-::::: details Настройка `TOAST`
+::::: details Configuration for `TOAST`
 ```yaml
 destination:
   type: TOAST
@@ -126,15 +126,15 @@ destination:
 
 #### `icon`
 
-Аватарка достижения, которая может быть любым предметом из майнкрафта (нужно обязательно указывать полный путь)
+Achievement icon, which can be any Minecraft item (must specify the full path)
 
 #### `style`
 
-Вид достижения (`TASK` обычное, `GOAL` цель, `CHALLENGE` челлендж)
+Achievement type (`TASK` regular, `GOAL` goal, `CHALLENGE` challenge)
 
-::: warning ПРЕДУПРЕЖДЕНИЕ
+::: warning WARNING
 
-Не рекомендуется ставить для глобальных сообщений
+Not recommended for global messages
 
 :::
 

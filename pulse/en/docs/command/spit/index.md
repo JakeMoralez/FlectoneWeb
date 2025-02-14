@@ -1,10 +1,10 @@
-# Комманда `/spit`
+# Command `/spit`
 
-Комманда для создания плевков
+Command to create spits
 ![command spit](/commandspit.gif)
 
-::: danger ВНИМАТЕЛЬНО
-Комманда не будет работать, если модуль [`Spit`](/docs/message/contact/spit/) выключен
+::: danger BE CAREFUL
+This command will not work if the [`Spit`](/docs/message/contact/spit/) module is disabled
 :::
 
 [//]: # (command.yml)
@@ -29,4 +29,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

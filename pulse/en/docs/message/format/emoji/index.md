@@ -1,4 +1,4 @@
-# Emojis
+# Emoji
 
 The `emoji` tag is used to replace text-based emojis with Unicode emojis
 

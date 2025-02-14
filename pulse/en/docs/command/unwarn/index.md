@@ -1,6 +1,6 @@
-# Комманда `/unwarn`
+# Command `/unwarn`
 
-Комманда для того, чтобы снять предупреждение с игрока
+Command to remove a warning from a player
 ![command unwarn](/commandunwarn.png)
 
 [//]: # (localization)
@@ -16,15 +16,15 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the player cannot be found
 
 ### `not-warned`
 
-Сообщение, если введённый игрок не имеет предупреждения
+Message when the player does not have a warning
 
 ### `format`
 
-Сообщение при снятии предупреждения
+Message when the warning is removed
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -50,4 +50,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

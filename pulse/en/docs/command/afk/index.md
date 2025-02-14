@@ -1,10 +1,10 @@
-# Комманда `/afk`
+# Command `/afk`
 
-Комманда для смены режима AFK
+Command to toggle AFK mode
 ![afk](/afkglobalmessage.png)
 
-::: danger ВНИМАТЕЛЬНО
-Комманда не будет работать, если модуль [`AFK`](/docs/message/contact/afk/) выключен
+::: danger ATTENTION
+The command will not work if the [`AFK`](/docs/message/contact/afk/) module is disabled
 :::
 
 [//]: # (command.yml)

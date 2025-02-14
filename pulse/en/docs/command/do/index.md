@@ -1,11 +1,11 @@
-# Комманда `/do`
+# Command `/do`
 
-Комманда для РП выполнения действия
+Command for RP action execution
 ![command do](/commanddo.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.do`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.do`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message to be sent
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

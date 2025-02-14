@@ -1,6 +1,6 @@
 # Deepl
 
-Интеграция с Deepl позволяет переводить сообщения с одного языка на другой
+Integration with Deepl allows translating messages from one language to another.
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -13,7 +13,7 @@
 
 ### `auth-key`
 
-Токен авторизации для Deepl
+Authorization token for Deepl
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->

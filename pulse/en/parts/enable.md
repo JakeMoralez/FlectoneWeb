@@ -1,3 +1,3 @@
 ### `enable`
 
-Включает или выключает работоспособность модуля
+Enables or disables the functionality of the module

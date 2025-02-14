@@ -1,11 +1,11 @@
-# Комманда `/kick`
+# Command `/kick`
 
-Комманда для исключения игрока с сервера
+Command to kick a player from the server
 ![command kick](/commandkick.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.kick`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.kick`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,29 +16,29 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message displayed if the entered player is not found
 
 ### `reasons`
 
-Список с ключами и значениями, где ключом является слово, а значением конкретная причина
+A list with keys and values, where the key is the word and the value is the specific reason
 
-::: tip Можно вписывать свои причины, например
+::: tip You can add your own reasons, for example:
 ```yaml
 random_kek: "Random reason"
 ```
-Тогда если я напишу `/kick player random_kek`, то причиной будет `Random reason`
+Then, if you type `/kick player random_kek`, the reason will be "Random reason"
 
-Если причина не указана, будет использоваться `default`
+If no reason is specified, the `default` will be used.
 
 :::
 
 ### `server`
 
-Сообщение для всех
+Message displayed to everyone
 
 ### `person`
 
-Сообщение для игрока
+Message displayed to the player
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

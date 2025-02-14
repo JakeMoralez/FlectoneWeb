@@ -1,4 +1,4 @@
-# Knocks
+# Knock
 
 Knocks are created using **SHIFT** + **LMB** on specific blocks  
 

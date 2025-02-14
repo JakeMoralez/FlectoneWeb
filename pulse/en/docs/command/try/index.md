@@ -1,6 +1,6 @@
-# Комманда `/try`
+# Command `/try`
 
-Комманда для отображения выполнения действия с шансом
+Command to attempt an action with a random chance of success
 ![command try](/commandtry.png)
 
 [//]: # (localization)
@@ -16,11 +16,11 @@
 
 ### `format-true`
 
-Формат сообщения, которое будет отправлено, если действие выполнено успешно
+Format for the message that will be sent if the action succeeds
 
 ### `format-false`
 
-Формат сообщения, которое будет отправлено, если действие выполнено неуспешно
+Format for the message that will be sent if the action fails
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -34,15 +34,15 @@
 
 ### `min`
 
-Минимальный шанс выполнения действия
+Minimum chance for the action to succeed
 
 ### `max`
 
-Максимальный шанс выполнения действия
+Maximum chance for the action to succeed
 
 ### `good`
 
-Шанс выполнения действия, с которого считается, что оно выполнено успешно
+Chance threshold above which the action is considered successful
 
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/destination.md-->
@@ -59,4 +59,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

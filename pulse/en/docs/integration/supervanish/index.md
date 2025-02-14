@@ -1,6 +1,6 @@
 # SuperVanish
 
-Интеграция с SuperVanish (и PremiumVanish) скрывает действия игроков в ванише
+Integration with SuperVanish (and PremiumVanish) hides player actions in vanish mode
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->

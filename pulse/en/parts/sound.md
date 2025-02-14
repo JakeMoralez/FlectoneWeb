@@ -1,20 +1,20 @@
 ### `sound`
-Проигрывание звука
+Sound playback
 
-| Поле       | Тип       | Пояснение                                                                                                        |
-|------------|-----------|------------------------------------------------------------------------------------------------------------------|
-| `enable`   | `boolean` | Включает работу звука                                                                                            |
-| `volume`   | `float`   | Громкость звука от `0` до `1.0`                                                                                  |
-| `pitch`    | `float`   | Тональность звука от `0` до `1.0`                                                                                |
-| `category` | `String`  | Категория из `MASTER`, `MUSIC`, `RECORD`, `WEATHER`, `BLOCK`, `HOSTILE`, `NEUTRAL`, `PLAYER`, `AMBIENT`, `VOICE` |
-| `name`     | `String`  | Название звука, например `minecraft:entity.llama.spit`                                                           |
+| Field       | Type       | Explanation                                                                                                        |
+|-------------|------------|--------------------------------------------------------------------------------------------------------------------|
+| `enable`    | `boolean`  | Enables sound functionality                                                                                        |
+| `volume`    | `float`    | Sound volume from `0` to `1.0`                                                                                     |
+| `pitch`     | `float`    | Sound pitch from `0` to `1.0`                                                                                      |
+| `category`  | `String`   | Category from `MASTER`, `MUSIC`, `RECORD`, `WEATHER`, `BLOCK`, `HOSTILE`, `NEUTRAL`, `PLAYER`, `AMBIENT`, `VOICE`  |
+| `name`      | `String`   | Sound name, for example `minecraft:entity.llama.spit`                                                              |
 
 
-::: tip КАК ИСПОЛЬЗОВАТЬ ЗВУК?
-Замени `false` на `true` и перезапусти `FlectonePulse` с помощью комманды `/flectonepulse reload`, дополнительные параметры для настройки звука появятся ПОСЛЕ ПЕРЕЗАГРУЗКИ
+::: tip HOW TO USE SOUND?
+Replace `false` with `true` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional sound settings will appear AFTER RELOADING.
 :::
 
-В итоге настройка звука выглядит так
+The sound configuration will look like this:
 ```yaml
 sound:
   enable: true

@@ -1,6 +1,6 @@
-# Яндекс
+# Yandex
 
-Интеграция с Яндексом позволяет переводить сообщения с одного языка на другой
+Integration with Yandex allows translating messages from one language to another
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -13,11 +13,11 @@
 
 ### `token`
 
-Токен авторизации для Яндекса [`iam-token`](https://yandex.cloud/ru/docs/translate/api-ref/authentication)
+Authorization token for Yandex [`iam-token`](https://yandex.cloud/ru/docs/translate/api-ref/authentication)
 
 ### `folder-id`
 
-Идентификатор папки, к которой есть доступ
+Folder ID with access
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->

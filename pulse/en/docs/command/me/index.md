@@ -1,13 +1,13 @@
-# Комманда `/me`
+# Command `/me`
 
-Комманда для отображения действия
+Command to display an action
 ![command me](/commandme.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.me`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#me
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+The format of the message that will be sent
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

@@ -1,11 +1,11 @@
-# Комманда `/chatsetting`
+# Command `/chatsetting`
 
-Комманда для настройки чата
+Command for configuring chat
 ![command chatsetting](/commandchatsetting.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.chatsetting`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.chatsetting`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,45 +16,45 @@
 
 ### `no-permission`
 
-Сообщение, если для изменения настройки требуется определённое право
+Message if a specific permission is required to change the setting
 
 ### `disable`
 
-::: details Сообщения об отключении
+::: details Disable messages
 #### `you`
 
-Сообщение, если отправитель отключил комманду в `/chatsetting`
+Message if the sender disabled the command in `/chatsetting`
 
 #### `he`
 
-Сообщение, если получатель отключил комманду в `/chatsetting`
+Message if the recipient disabled the command in `/chatsetting`
 
 #### `server`
 
-Сообщение, если сервер отключил комманду для `/chatsetting`
+Message if the server disabled the command for `/chatsetting`
 
 :::
 
 ### `header`
 
-Название для GUI
+Title for the GUI
 
 ### `settings`
 
-Список настроек и их сообщений, где:
-- Первая строчка - название предмета, если включено
-- Остальные строчки - описание предмета, если включено
-- Вторая строчка - название предмета, если выключено
-- Остальные строчки - описание предмета, если выключено
+List of settings and their messages, where:
+- The first line is the item name when enabled
+- The remaining lines describe the item when enabled
+- The second line is the item name when disabled
+- The remaining lines describe the item when disabled
 
-::: tip Например возьмём `REPLY`
+::: tip For example, let's take `REPLY`
 ```yaml
-# включено
-- - "<fcolor:2>Команда /reply" # название предмета
-  - "<color:#98FB98>Показывается" # описание
-# выключено
-- - "<fcolor:2>Команда /reply" # название предмета
-  - "<color:#ff7171>Скрыта" # описание
+# enabled
+- - "<fcolor:2>Command /reply" # item name
+  - "<color:#98FB98>Displayed" # description
+# disabled
+- - "<fcolor:2>Command /reply" # item name
+  - "<color:#ff7171>Hidden" # description
 ```
 :::
 
@@ -70,19 +70,19 @@
 
 ### `settings`
 
-Список настроек, которые могут быть изменены
+List of settings that can be changed
 
-::: tip Пример настройки на `TELL`
+::: tip Example setting for `TELL`
 #### `slot`
 
-Слот инвентаря, в котором будет настройка
+Inventory slot where the setting will be
 
 #### `materials`
 
-Список материалов, которые будут использованы для отображения состояния настройки
+List of materials used to display the setting state
 
-`LIME_CONCRETE` первый материал, отображается когда настройка включена <br>
-`RED_CONCRETE` второй материал, отображается когда настройка выключена
+`LIME_CONCRETE` is the first material, shown when the setting is enabled <br>
+`RED_CONCRETE` is the second material, shown when the setting is disabled
 
 :::
 
@@ -100,7 +100,7 @@
 
 ### `settings`
 
-Список настроек и их прав
+List of settings and their permissions
 
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->

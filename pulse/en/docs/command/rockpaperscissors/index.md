@@ -1,17 +1,17 @@
-# Комманда `/rockpaperscissors`
+# Command `/rockpaperscissors`
 
-Комманда для того, чтобы предложить поиграть в камень-ножницы-бумага
+Command to offer to play rock-paper-scissors
 ![command rockpaperscissors](/commandrockpaperscissors.png)
 
-::: danger ВНИМАТЕЛЬНО
-Комманда не будет работать, если модуль [`Tell`](/docs/command/tell/) выключен
+::: danger BE CAREFUL
+This command will not work if the [`Tell`](/docs/command/tell/) module is disabled
 :::
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.rockpaperscissors`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#rockpaperscissors
@@ -20,47 +20,47 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the entered player is not found
 
 ### `null-game`
 
-Сообщение, если игры не существует
+Message when the game does not exist
 
 ### `wrong-move`
 
-Сообщение при невозможном ходе
+Message when the move is impossible
 
 ### `already`
 
-Сообщение, если игрок уже сделал ход
+Message when the player has already made a move
 
 ### `myself`
 
-Сообщение, если игрок решил поиграть с самим собой
+Message when the player decides to play with themselves
 
 ### `sender`
 
-Сообщение для отправителя
+Message for the sender
 
 ### `receiver`
 
-Сообщение для получателя
+Message for the receiver
 
 ### `format-move`
 
-Сообщение при ходе
+Message during a move
 
 ### `format-win`
 
-Сообщение при победе
+Message when the player wins
 
 ### `forma-draw`
 
-Сообщение при ничье
+Message for a draw
 
 ### `strategies`
 
-Список стратегий и их названий
+List of strategies and their names
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -74,23 +74,22 @@
 
 ### `strategy`
 
-Стратегии, где `ключом` является тот, кто побеждает `значение`
+Strategies where `key` is the winning item and `value` is the defeated item
 
-::: tip Например я хочу, чтобы `ножницы` побеждали `paper`
-Значит я должен написать
+::: tip For example, if you want `scissors` to defeat `paper`, you should write:
 ```yaml
 scissors:
   - "paper"
 ```
 
-Значений может быть несколько т.е.
+Multiple values can be added, like:
 ```yaml
 scissors:
   - "paper"
   - "newitem"
 ```
 
-Можно сделать свои ключи и значения
+You can define your own keys and values:
 ```yaml
 customvalue:
   - "customobject"
@@ -110,4 +109,3 @@ customvalue:
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

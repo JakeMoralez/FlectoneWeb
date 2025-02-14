@@ -1,13 +1,13 @@
-# Комманда `/mutelist`
+# Command `/mutelist`
 
-Комманда для того, чтобы посмотреть список мутов
+Command to view the list of muted players
 ![command mutelist](/commandmutelist.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.mutelist`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#mutelist
@@ -16,48 +16,48 @@
 
 ### `empty`
 
-Сообщение, если список игроков с мутами пуст
+Message when the list of muted players is empty
 
 ### `null-page`
 
-Сообщение, если введённая страница не существует
+Message when the specified page does not exist
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the specified player is not found
 
 ### `global`
 
-::: details Сообщения для глобальных мутов
+::: details Messages for global mutes
 
 #### `header`
 
-Верхняя часть сообщения списка
+Header part of the mute list message
 
 #### `line`
 
-Формат каждого мута из списка
+Format for each mute in the list
 
 #### `footer`
 
-Нижняя часть сообщения списка
+Footer part of the mute list message
 :::
 
 ### `player`
 
-::: details Сообщения для мутов игрока
+::: details Messages for player-specific mutes
 
 #### `header`
 
-Верхняя часть сообщения списка
+Header part of the mute list message
 
 #### `line`
 
-Формат каждого мута из списка
+Format for each mute in the list
 
 #### `footer`
 
-Нижняя часть сообщения списка
+Footer part of the mute list message
 :::
 
 [//]: # (command.yml)
@@ -83,4 +83,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

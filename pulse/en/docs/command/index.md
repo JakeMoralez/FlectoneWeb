@@ -1,6 +1,6 @@
-# Комманды
+# Commands
 
-Категория, отвечающая за настройку всех комманд
+Category responsible for configuring all commands
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
@@ -15,71 +15,71 @@
 
 ### `prompt`
 
-Форматирование подсказок
+Formatting of prompts
 
 - #### `message`
 
-Подсказка для комманд, в которых вводится сообщение
+Prompt for commands where a message is entered
 
 - #### `hard`
 
-Подсказка для комманд, в которых спрашивается про сложность
+Prompt for commands where the difficulty is asked
 
 - #### `accept`
 
-Подсказка для комманд, в которых что-то принимается или отклоняется
+Prompt for commands where something is accepted or declined
 
 - #### `turn`
 
-Подсказка для комманд, в которых что-то включается или выключается
+Prompt for commands where something is turned on or off
 
 - #### `reason`
 
-Подсказка для комманд, в которых вводится причина
+Prompt for commands where a reason is entered
 
 - #### `category`
 
-Подсказка для комманд, в которых выбирается категория
+Prompt for commands where a category is selected
 
 - #### `id`
 
-Подсказка для комманд, в которых вводится айди
+Prompt for commands where an ID is entered
 
 - #### `time`
 
-Подсказка для комманд, в которых вводится время
+Prompt for commands where time is entered
 
 - #### `repeat-time`
 
-Подсказка для комманд, в которых вводится время для повторения
+Prompt for commands where repeat time is entered
 
 - #### `multiple-vote`
 
-Подсказка для комманд, в которых спрашивается про мульти голосование
+Prompt for commands where multiple voting is asked
 
 - #### `player`
 
-Подсказка для комманд, в которых вводится игрок
+Prompt for commands where a player is entered
 
 - #### `number`
 
-Подсказка для комманд, в которых вводится число
+Prompt for commands where a number is entered
 
 - #### `color`
 
-Подсказка для комманд, в которых вводится цвет
+Prompt for commands where a color is entered
 
 - #### `language`
 
-Подсказка для комманд, в которых вводится язык
+Prompt for commands where a language is entered
 
 - #### `url`
 
-Подсказка для комманд, в которых вводится ссылка
+Prompt for commands where a URL is entered
 
 - #### `move`
 
-Подсказка для комманд, в которых выбирается ход
+Prompt for commands where a move is selected
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -98,4 +98,3 @@
 <<< @/files/permission.yml#command
 
 <!--@include: @/parts/permission/permissionTier3.md-->
-

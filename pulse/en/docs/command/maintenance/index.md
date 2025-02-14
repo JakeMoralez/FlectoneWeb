@@ -1,12 +1,12 @@
-# Комманда `/maintenance`
+# Command `/maintenance`
 
-Комманда для включения технических работ
+Command to enable maintenance mode
 ![command maintenance](/commandmaintenance.png)
 ![command maintenance server](/commandmaintenanceserver.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.maintenance`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.maintenance`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -17,31 +17,31 @@
 
 ### `not`
 
-Сообщение при попытке отключения технических работ, если они не включены
+Message when trying to disable maintenance mode if it is not enabled
 
 ### `already`
 
-Сообщение при попытке включения технических работ, если они включены
+Message when trying to enable maintenance mode if it is already enabled
 
 ### `server-description`
 
-Сообщения при просмотре сервера, если включены технические работы
+Message when viewing the server while maintenance is enabled
 
 ### `server-version`
 
-Название версии сервера, если включены технические работы
+Server version name when maintenance is enabled
 
 ### `kick`
 
-Причина исключения с сервера при включении технических работ
+Reason for kicking players when maintenance mode is enabled
 
 ### `format-true`
 
-Сообщение при включении технических работ
+Message when enabling maintenance mode
 
 ### `format-false`
 
-Сообщение при отключении технических работ
+Message when disabling maintenance mode
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -66,7 +66,7 @@
 
 ### `join`
 
-Право для подключения к серверу во время технических работ
+Permission to join the server during maintenance
 
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->

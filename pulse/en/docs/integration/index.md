@@ -1,6 +1,6 @@
-# Интеграции
+# Integrations
 
-Категория, отвечающая за настройку всех интеграций
+Category responsible for configuring all integrations
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -19,4 +19,3 @@
 <<< @/files/permission.yml#integration
 
 <!--@include: @/parts/permission/permissionTier3.md-->
-

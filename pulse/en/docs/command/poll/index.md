@@ -1,13 +1,13 @@
-# Комманда `/poll`
+# Command `/poll`
 
-Комманда для проведения голосований
+Command for creating and managing polls
 ![command poll](/commandpoll.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.poll`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#poll
@@ -16,39 +16,39 @@
 
 ### `null-poll`
 
-Сообщение, если голосование не найдено
+Message when the poll is not found
 
 ### `expired`
 
-Сообщение, если игрок пытается проголосовать в голосовании, которое закончилось
+Message when the player attempts to vote in an expired poll
 
 ### `already`
 
-Сообщение, если игрок пытается проголосовать в голосовании ещё один раз
+Message when the player attempts to vote again in the same poll
 
 ### `vote-true`
 
-Сообщение, если игрок проголосовал за какой-то вариант
+Message when the player has voted for a particular option
 
 ### `vote-false`
 
-Сообщение, если игрок убрал свой голос
+Message when the player removes their vote
 
 ### `count-answers`
 
-Формат сообщения для подсчёта голосов
+Format for counting votes
 
 ### `vote-button`
 
-Формат сообщения для голоса за какой-то вариант
+Format for the vote button message
 
 ### `format-start`
 
-Форма сообщения для начала голосования
+Format for the start of the poll
 
 ### `format-over`
 
-Формат сообщения для конца голосования
+Format for the end of the poll
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -62,7 +62,7 @@
 
 ### `last-id`
 
-Последний номер созданного голосования
+Last poll ID created
 
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/cooldown.md-->
@@ -79,8 +79,7 @@
 
 ### `create`
 
-Право для создания голосований
+Permission for creating polls
 
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

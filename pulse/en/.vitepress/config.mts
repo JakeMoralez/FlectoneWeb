@@ -8,7 +8,7 @@ export default defineConfig({
 
   base: '/en/pulse/',
   title: "FlectonePulse",
-  description: "Каждое сообщение под вашим контролем!",
+  description: "Every message under your control!",
   lastUpdated: true,
   ignoreDeadLinks: true,
 
@@ -19,7 +19,7 @@ export default defineConfig({
     ['link', { rel: "manifest", href: "/assets/favicons/site.webmanifest"}],
     ['link', { rel: "shortcut icon", href: "/assets/favicons/favicon.ico"}],
     ['meta', { property: 'og:title', content: 'FlectonePulse' }],
-    ['meta', { property: 'og:description', content: 'Каждое сообщение под вашим контролем!' }],
+    ['meta', { property: 'og:description', content: 'Every message under your control!' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:url', content: 'https://flectone.net/pulse/' }],
     ['meta', { property: 'og:image', content: '/assets/favicons/favicon.ico' }]
@@ -43,10 +43,10 @@ export default defineConfig({
     ],
 
     nav: [
-      { text: 'Начало', link: '/' },
-      { text: 'Документация', link: '/docs/' },
+      { text: 'Home', link: '/' },
+      { text: 'Documentation', link: '/docs/' },
       {
-        text: 'Языки',
+        text: '🌐 Languages',
         items: [
           { text: "Русский", link: 'https://flectone.net/pulse/'},
           { text: "English", link: 'https://flectone.net/en/pulse/'}
@@ -54,66 +54,27 @@ export default defineConfig({
       },
     ],
 
-    lastUpdated: {
-      text: 'Обновлено'
-    },
     outline: {
-      label: "Содержание страницы",
       level: [2, 3]
     },
 
-    docFooter: {
-      prev: 'Предыдущая страница',
-      next: 'Следующая страница'
-    },
-
-    darkModeSwitchLabel: 'Оформление',
-    darkModeSwitchTitle: "Переключить на тёмную тему",
-    lightModeSwitchTitle: "Переключить на светлую тему",
-    sidebarMenuLabel: 'Меню',
-    returnToTopLabel: 'Вернуться к началу',
-    langMenuLabel: 'Изменить язык',
     editLink: {
-      pattern: 'https://github.com/Flectone/FlectonePulseWeb/edit/master/:path',
-      text: 'Редактировать эту страницу на GitHub'
+      pattern: 'https://github.com/Flectone/FlectonePulseWeb/edit/master/pulse/en/:path',
     },
 
     search: {
       provider: 'local',
-      options: {
-        translations: {
-          button: {
-            buttonText: 'Поиск',
-            buttonAriaLabel: 'Поиск'
-          },
-          modal: {
-            displayDetails: 'Отобразить подробный список',
-            resetButtonTitle: 'Сбросить поиск',
-            backButtonTitle: 'Закрыть поиск',
-            noResultsText: 'Нет результатов по запросу',
-            footer: {
-              selectText: 'выбрать',
-              selectKeyAriaLabel: 'выбрать',
-              navigateText: 'перейти',
-              navigateUpKeyAriaLabel: 'стрелка вверх',
-              navigateDownKeyAriaLabel: 'стрелка вниз',
-              closeText: 'закрыть',
-              closeKeyAriaLabel: 'esc'
-            }
-          }
-        }
-      },
     },
 
     sidebar: [
       {
-        text: '📁 Конфигурация',
+        text: '📁 Configuration',
         link: '/docs/config/',
         collapsed: true,
         items: []
       },
       {
-        text: '🛠️Комманды',
+        text: '🛠️Commands',
         link: '/docs/command/',
         collapsed: true,
         items: [
@@ -162,119 +123,119 @@ export default defineConfig({
         ]
       },
       {
-        text: '🔗 Интеграции',
+        text: '🔗 Integrations',
         link: '/docs/integration/',
         collapsed: true,
         items: [
           { text: 'Deepl', link: '/docs/integration/deepl/' },
-          { text: 'Дискорд', link: '/docs/integration/discord/' },
+          { text: 'Discord', link: '/docs/integration/discord/' },
           { text: 'LuckPerms', link: '/docs/integration/luckperms/' },
           { text: 'PlaceholderAPI', link: '/docs/integration/placeholderapi/' },
           { text: 'PlasmoVoice', link: '/docs/integration/plasmovoice/' },
           { text: 'SimpleVoice', link: '/docs/integration/simplevoice/' },
           { text: 'SkinsRestorer', link: '/docs/integration/skinsrestorer/' },
           { text: 'SuperVanish', link: '/docs/integration/supervanish/' },
-          { text: 'Телеграм', link: '/docs/integration/telegram/' },
+          { text: 'Telegram', link: '/docs/integration/telegram/' },
           { text: 'Triton', link: '/docs/integration/triton/' },
-          { text: 'Твич', link: '/docs/integration/twitch/' },
+          { text: 'Twitch', link: '/docs/integration/twitch/' },
           { text: 'Vault', link: '/docs/integration/vault/' },
-          { text: 'Яндекс', link: '/docs/integration/yandex/' },
+          { text: 'Yandex', link: '/docs/integration/yandex/' },
         ]
       },
       {
-        text: '💬 Сообщения',
+        text: '💬 Messages',
         link: '/docs/message/',
         collapsed: true,
         items: [
-          { text: 'Достижение', link: '/docs/message/advancement/' },
-          { text: 'Наковальня', link: '/docs/message/anvil/' },
-          { text: 'Автоматическое', link: '/docs/message/auto/' },
-          { text: 'Книга', link: '/docs/message/book/' },
-          { text: 'Бренд', link: '/docs/message/brand/' },
-          { text: 'Над головой', link: '/docs/message/bubble/' },
-          { text: 'Чат', link: '/docs/message/chat/' },
-          { text: 'Очищение', link: '/docs/message/clear/' },
+          { text: 'Advancement', link: '/docs/message/advancement/' },
+          { text: 'Anvil', link: '/docs/message/anvil/' },
+          { text: 'Auto', link: '/docs/message/auto/' },
+          { text: 'Book', link: '/docs/message/book/' },
+          { text: 'Brand', link: '/docs/message/brand/' },
+          { text: 'Bubble', link: '/docs/message/bubble/' },
+          { text: 'Chat', link: '/docs/message/chat/' },
+          { text: 'Clear', link: '/docs/message/clear/' },
           {
-            text: 'Контактирование',
+            text: 'Contact',
             link: '/docs/message/contact/',
             collapsed: true,
             items: [
-              { text: 'Афк', link: '/docs/message/contact/afk/' },
-              { text: 'Стуки', link: '/docs/message/contact/knock/' },
-              { text: 'Метка', link: '/docs/message/contact/mark/' },
-              { text: 'Правое нажатие', link: '/docs/message/contact/rightclick/' },
-              { text: 'Подпись', link: '/docs/message/contact/sign/' },
-              { text: 'Плевок', link: '/docs/message/contact/spit/' },
-              { text: 'Снятие подписи', link: '/docs/message/contact/unsign/' },
+              { text: 'Afk', link: '/docs/message/contact/afk/' },
+              { text: 'Knock', link: '/docs/message/contact/knock/' },
+              { text: 'Mark', link: '/docs/message/contact/mark/' },
+              { text: 'Right Click', link: '/docs/message/contact/rightclick/' },
+              { text: 'Sign', link: '/docs/message/contact/sign/' },
+              { text: 'Spit', link: '/docs/message/contact/spit/' },
+              { text: 'Unsign', link: '/docs/message/contact/unsign/' },
             ]
           },
-          { text: 'Смерть', link: '/docs/message/death/' },
-          { text: 'Деоп', link: '/docs/message/deop/' },
-          { text: 'Зачарование', link: '/docs/message/enchant/' },
+          { text: 'Death', link: '/docs/message/death/' },
+          { text: 'Deop', link: '/docs/message/deop/' },
+          { text: 'Enchant', link: '/docs/message/enchant/' },
           {
-            text: 'Форматирование',
+            text: 'Format',
             link: '/docs/message/format/',
             collapsed: true,
             items: [
-              { text: 'Цвета', link: '/docs/message/format/color/' },
-              { text: 'Смайлики', link: '/docs/message/format/emoji/' },
+              { text: 'Color', link: '/docs/message/format/color/' },
+              { text: 'Emoji', link: '/docs/message/format/emoji/' },
               { text: 'Fixation', link: '/docs/message/format/fixation/' },
-              { text: 'Изображение', link: '/docs/message/format/image/' },
-              { text: 'Упоминание', link: '/docs/message/format/mention/' },
+              { text: 'Image', link: '/docs/message/format/image/' },
+              { text: 'Mention', link: '/docs/message/format/mention/' },
               {
-                text: 'Модерация',
+                text: 'Moderation',
                 link: '/docs/message/format/moderation/',
                 collapsed: true,
                 items: [
-                  { text: 'Капс', link: '/docs/message/format/moderation/caps/' },
-                  { text: 'Ругательство', link: '/docs/message/format/moderation/swear/' },
+                  { text: 'Caps', link: '/docs/message/format/moderation/caps/' },
+                  { text: 'Swear', link: '/docs/message/format/moderation/swear/' },
                 ]
               },
-              { text: 'Имя', link: '/docs/message/format/name_/' },
-              { text: 'Вопрос-Ответ', link: '/docs/message/format/questionanswer/' },
-              { text: 'Спойлер', link: '/docs/message/format/spoiler/' },
-              { text: 'Перевод', link: '/docs/message/format/translate/' },
-              { text: 'Измерение', link: '/docs/message/format/world/' },
+              { text: 'Name', link: '/docs/message/format/name_/' },
+              { text: 'Q&A', link: '/docs/message/format/questionanswer/' },
+              { text: 'Spoiler', link: '/docs/message/format/spoiler/' },
+              { text: 'Translate', link: '/docs/message/format/translate/' },
+              { text: 'World', link: '/docs/message/format/world/' },
             ]
           },
-          { text: 'Режим игры', link: '/docs/message/gamemode/' },
-          { text: 'Приветствие', link: '/docs/message/greeting/' },
-          { text: 'Подключение', link: '/docs/message/join/' },
+          { text: 'Gamemode', link: '/docs/message/gamemode/' },
+          { text: 'Greeting', link: '/docs/message/greeting/' },
+          { text: 'Join', link: '/docs/message/join/' },
           {
-            text: 'Значения',
+            text: 'Objective',
             link: '/docs/message/objective/',
             collapsed: true,
             items: [
-              { text: 'Под ником', link: '/docs/message/objective/belowname/' },
-              { text: 'В табе', link: '/docs/message/objective/tabname/' },
+              { text: 'Belowname', link: '/docs/message/objective/belowname/' },
+              { text: 'Tabname', link: '/docs/message/objective/tabname/' },
             ]
           },
-          { text: 'Оп', link: '/docs/message/op/' },
-          { text: 'Отключение', link: '/docs/message/quit/' },
-          { text: 'Скорборд', link: '/docs/message/scoreboard/' },
-          { text: 'Сид', link: '/docs/message/seed/' },
-          { text: 'Сетблок', link: '/docs/message/setblock/' },
-          { text: 'Табличка', link: '/docs/message/sign/' },
-          { text: 'Спавнпоинт', link: '/docs/message/spawnpoint/' },
+          { text: 'Op', link: '/docs/message/op/' },
+          { text: 'Quit', link: '/docs/message/quit/' },
+          { text: 'Scoreboard', link: '/docs/message/scoreboard/' },
+          { text: 'Seed', link: '/docs/message/seed/' },
+          { text: 'Setblock', link: '/docs/message/setblock/' },
+          { text: 'Sign', link: '/docs/message/sign/' },
+          { text: 'Spawnpoint', link: '/docs/message/spawnpoint/' },
           {
-            text: 'Статус',
+            text: 'Status',
             link: '/docs/message/status/',
             collapsed: true,
             items: [
-              { text: 'Иконка', link: '/docs/message/status/icon/' },
-              { text: 'Описание', link: '/docs/message/status/motd/' },
-              { text: 'Игроки', link: '/docs/message/status/players/' },
-              { text: 'Версия', link: '/docs/message/status/version/' },
+              { text: 'Icon', link: '/docs/message/status/icon/' },
+              { text: 'MOTD', link: '/docs/message/status/motd/' },
+              { text: 'Players', link: '/docs/message/status/players/' },
+              { text: 'Version', link: '/docs/message/status/version/' },
             ]
           },
           {
-            text: 'Таб',
+            text: 'Tab',
             link: '/docs/message/tab/',
             collapsed: true,
             items: [
-              { text: 'Верхнее', link: '/docs/message/tab/header/' },
-              { text: 'Нижнее', link: '/docs/message/tab/footer/' },
-              { text: 'Имя в списке', link: '/docs/message/tab/playerlistname/' },
+              { text: 'Header', link: '/docs/message/tab/header/' },
+              { text: 'Footer', link: '/docs/message/tab/footer/' },
+              { text: 'Playerlistname', link: '/docs/message/tab/playerlistname/' },
             ]
           },
         ]

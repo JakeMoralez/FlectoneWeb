@@ -1,8 +1,8 @@
-# Дискорд
+# Discord
 
-Интеграция с Discord позволяет отправлять сообщения:
-- из Minecraft в Discord
-- из Discord в Minecraft
+Integration with Discord allows sending messages:
+- From Minecraft to Discord
+- From Discord to Minecraft
 
 ![discord message](/discordmessage.png)
 ![minecraft message](/discordminecraftmessage.png)
@@ -20,145 +20,144 @@
 <<< @/files/localizations/en_us.yml#discord
 :::
 
-### `Плейсхолдеры`
+### `Placeholders`
 
-Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
-::: tip НАПРИМЕР ДЛЯ СООБЩЕНИЯ О БЛОКИРОВКЕ
-Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри дискорд сообщений
+You can use all the placeholders that are used in the initial Minecraft message
+::: tip FOR EXAMPLE, FOR A BAN MESSAGE
+If there’s a placeholder `<reason>`, you can use `<reason>` in Discord messages as well
 :::
 
-Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
-- `<final_message>` сообщение, отправленное в майнкрафт
-- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
-- `<player>` ник игрока, который отправил сообщение
+There are also placeholders that will ALWAYS be replaced in any message:
+- `<final_message>` The message sent to Minecraft
+- `<final_clear_message>` The message sent to Minecraft without Unicode emojis
+- `<player>` The nickname of the player who sent the message
 
-Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
+Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work.
 
 ### `for-minecraft`
 
-Формат сообщения, которое будет отправлено из Дискорда в Майнкрафт
+Message format that will be sent from Discord to Minecraft.
 
 ### `info-channel`
 
-Список айди каналов и их названий
+List of channel IDs and their names.
 
 ### `message-channel`
 
-Список сообщений с их настройкой
+List of messages and their configurations.
 
-::: details Настройка сообщения
+::: details Message Configuration
 
 ![discord](https://docs.discord4j.com/img/embed-preview.png)
 
-Если параметр пустой, то он не будет использован в итоговом сообщении
+If the parameter is empty, it will not be used in the final message.
 
 #### `content`
 
-Содержание обычного сообщения от лица бота дискорда
+Content of a regular message from the Discord bot.
 ![discord content](/discordcontent.png)
 
 #### `webhook`
 
-Дискорд вебхук
+Discord webhook configuration.
 ![discord webhook](/discordwebhook.png)
-
 
 ##### `enable`
 
-Если включено, то сообщение будет являться вебхуком
+If enabled, the message will be a webhook.
 
 ##### `avatar`
 
-Ссылка для создания аватарки игрока. Если будешь менять на свою, то ссылка должна содержать `<skin>`
+Link to create the player’s avatar. If you change it, the link should contain `<skin>`.
 
 ##### `content`
 
-Содержание сообщения вебхука
+Content of the webhook message.
 
 #### `embed`
 
-Дискорд эмбед сообщение
+Discord embed message configuration.
 ![discord embed](/discordembed.png)
 
 ##### `enable`
 
-Если включено, то сообщение будет содержать `embed`
+If enabled, the message will include an embed.
 
 ##### `color`
 
-Цвет `embed` сообщения
+Color of the embed message.
 
 ##### `title`
 
-Название `embed` сообщения
+Title of the embed message.
 
 ##### `url`
 
-Ссылка для `embed` сообщения
+URL for the embed message.
 
 ##### `author`
 
-Автор `embed` сообщения
+Author of the embed message.
 
 ###### `name`
 
-Название автора `embed` сообщения
+Name of the embed message author.
 
 ###### `url`
 
-Ссылка на автора `embed` сообщения
+URL of the embed message author.
 
 ###### `icon-url`
 
-Ссылка на аватарку автора `embed` сообщения. Если будешь менять на свою, то ссылка должна содержать `<skin>`
+Link to the avatar of the embed message author. If you change it, the link should contain `<skin>`.
 
 ##### `description`
 
-Описание `embed` сообщения
+Description of the embed message.
 
 ##### `thumbnail`
 
-Маленькое изображение внутри `embed` сообщения
+Small image inside the embed message.
 
 ###### `name`
 
-Название поля внутри `embed` сообщения
+Field name inside the embed message.
 
 ###### `value`
 
-Значение поля внутри `embed` сообщения
+Field value inside the embed message.
 
 ###### `inline`
 
-Если включено, то поле будет расположен в столбик с другими полями
+If enabled, the field will be arranged vertically with other fields.
 
 ##### `image`
 
-Главное изображение `embed` сообщения
+Main image inside the embed message.
 
 ##### `timestamp`
 
-Если включено, то `embed` сообщение будет включать время создания
+If enabled, the embed message will include the timestamp.
 
 ##### `footer`
 
-Нижняя часть `embed` сообщения
+Footer of the embed message.
 
 ###### `text`
 
-Текст в нижней части `embed` сообщения
+Text in the footer of the embed message.
 
 ###### `icon-url`
 
-Изображение в нижней части `embed` сообщения
+Image in the footer of the embed message.
 
 :::
 
-::: tip ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
-1. Возьми название из списка `типы сообщений`
-2. Вставь в `message-channel`
+::: tip IF YOU WANT TO ADD ANOTHER MESSAGE:
+1. Take the name from the "Message Types" list.
+2. Add it to `message-channel`.
 ```yaml
-название_сообщения:
+message_name:
   content: ""
   webhook:
     enable: false
@@ -196,61 +195,61 @@
 
 <!--@include: @/parts/enable.md-->
 
-::: warning ПРЕДУПРЕЖДЕНИЕ
-- Перед включением, вставь **токен** бота Discord
-- После включения, **ЖЕЛАТЕЛЬНО** перезагрузить сервер, иначе плагин может вызвать зависание
-:::
+::: warning WARNING
+- Before enabling, insert the **Discord bot token**.
+- After enabling, **IT IS RECOMMENDED** to restart the server to avoid potential plugin issues.
+  :::
 
 ### `token`
 
-[Токен](https://discordgsm.com/guide/how-to-get-a-discord-bot-token) дискорд бота для подключения. Можно использовать environment variables, например `${VALUE}`
+[Discord bot token](https://discordgsm.com/guide/how-to-get-a-discord-bot-token) for connection. You can use environment variables, for example `${VALUE}`.
 
 ### `presence`
 
 ![discord presence](/discordpresence.png)
 
-::: details Настройка статуса бота
+::: details Bot Status Configuration
 #### `enable`
 
-Включает или выключает кастомный статус бота
+Enables or disables the custom bot status.
 
 #### `status`
 
-| Режим            | Пояснение                       |
-|------------------|---------------------------------|
-| `UNKNOWN`        | -                               |
-| `ONLINE`         | В сети                          |
-| `DO_NOT_DISTURB` | В сети, с режимом не беспокоить |
-| `IDLE`           | В сети, но отошёл               |
-| `INVISIBLE`      | Невидимый                       |
-| `OFFLINE`        | Не в сети                       |
+| Mode            | Explanation                    |
+|-----------------|--------------------------------|
+| `UNKNOWN`       | -                              |
+| `ONLINE`        | Online                         |
+| `DO_NOT_DISTURB`| Do not disturb (Online)        |
+| `IDLE`          | Online but idle                |
+| `INVISIBLE`     | Invisible                      |
+| `OFFLINE`       | Offline                        |
 
 #### `activity`
 
-Активность бота в дискорде
+Bot activity in Discord.
 
 ##### `enable`
 
-Включает или выключает активность
+Enables or disables activity.
 
 ##### `type`
 
-| Тип         | Пояснение   |
-|-------------|-------------|
-| `UNKNOWN`   | -           |
-| `STREAMING` | Стримит     |
-| `LISTENING` | Слушает     |
-| `WATCHING`  | Смотрит     |
-| `CUSTOM`    | -           |
-| `COMPETING` | Соревнуется |
+| Type       | Explanation   |
+|------------|---------------|
+| `UNKNOWN`  | -             |
+| `STREAMING`| Streaming     |
+| `LISTENING`| Listening     |
+| `WATCHING` | Watching      |
+| `CUSTOM`   | -             |
+| `COMPETING`| Competing     |
 
 ##### `name`
 
-Название активности
+Name of the activity.
 
 ##### `url`
 
-Ссылка на активности
+Link for the activity.
 
 :::
 
@@ -258,10 +257,10 @@
 
 ![discord channel info](/discordchannelinfo.png)
 
-::: details Настройка каналов с информацией
+::: details Channel Information Configuration
 #### `enable`
 
-Нужен ли канал информации
+Whether channel information is needed.
 
 <!--@include: @/parts/ticker.md-->
 
@@ -269,11 +268,11 @@
 
 ### `message-channel`
 
-Список типов сообщений и [ID каналов](https://support.discord.com/hc/ru/articles/206346498-%D0%93%D0%B4%D0%B5-%D0%BC%D0%BD%D0%B5-%D0%BD%D0%B0%D0%B9%D1%82%D0%B8-ID-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F) в Discord
+List of message types and [channel IDs](https://support.discord.com/hc/ru/articles/206346498-%D0%93%D0%94%D0%95-%D0%9C%D0%9D%D0%95-%D0%9D%D0%90%D0%99%D0%A2%D0%98-ID-%D0%9F%D0%9E%D0%9B%D0%AC%D0%97%D0%9E%D0%92%D0%90%D0%A2%D0%95%D0%9B%D0%AF-%D0%A1%D0%95%D0%A0%D0%92%D0%95%D0%A0%D0%90-%D0%A1%D0%9E%D0%9E%D0%91%D0%9A%D0%9E%D0%92) in Discord.
 
-::: tip Например я хочу, чтобы из Minecraft отправлялось сообщение комманды `/ban` в Discord
-1. Копирую ID канала в дискорде `1286666844358316083`
-2. Прописываю `CHAT: "1286666844358316083"`
+::: tip For example, if I want a `/ban` command message from Minecraft to be sent to Discord:
+1. Copy the channel ID in Discord `1286666844358316083`.
+2. Add `CHAT: "1286666844358316083"`.
 
 ```yaml
 message-channel:

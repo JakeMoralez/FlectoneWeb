@@ -1,4 +1,4 @@
-# Enchantment
+# Enchant
 
 A message from the server when using `/enchant`
 ![enchant](/enchant.png)

@@ -1,6 +1,6 @@
 # PlasmoVoice
 
-Интеграция с PlasmoVoice позволяет мутить игроков, которые были замучены с помощью `/mute`
+Integration with PlasmoVoice allows muting players who have been muted using `/mute`
 ![mute](/mute.png)
 
 [//]: # (integration.yml)

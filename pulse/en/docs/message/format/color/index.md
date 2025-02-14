@@ -1,4 +1,4 @@
-# Colors
+# Color
 
 The tag `fcolor` is used for individual color settings for each player
 

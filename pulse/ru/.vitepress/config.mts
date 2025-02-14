@@ -46,7 +46,7 @@ export default defineConfig({
       { text: 'Начало', link: '/' },
       { text: 'Документация', link: '/docs/' },
       {
-        text: 'Языки',
+        text: '🌐 Языки',
         items: [
           { text: "Русский", link: 'https://flectone.net/pulse/'},
           { text: "English", link: 'https://flectone.net/en/pulse/'}

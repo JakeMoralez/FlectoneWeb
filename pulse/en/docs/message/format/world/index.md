@@ -1,4 +1,4 @@
-# Measurement
+# World
 
 The module responsible for the `<world_prefix>` tag, i.e., for the world dimension color  
 ![world tab](/worldtab.png)  

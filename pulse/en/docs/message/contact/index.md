@@ -1,4 +1,4 @@
-# Contacting 
+# Contact
 
 A module responsible for messages during interactions
 

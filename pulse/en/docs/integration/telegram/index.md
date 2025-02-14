@@ -1,8 +1,8 @@
-# Телеграм
+# Telegram
 
-Интеграция с Telegram позволяет отправлять сообщения:
-- из Minecraft в Telegram
-- из Telegram в Minecraft
+Integration with Telegram allows sending messages:
+- From Minecraft to Telegram
+- From Telegram to Minecraft
 
 ![telegram message 1](/telegrammessage1.png)
 ![telegram message 2](/telegrammessage2.png)
@@ -12,7 +12,7 @@
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → integration.telegram`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → integration.telegram`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -21,33 +21,33 @@
 <<< @/files/localizations/en_us.yml#telegram
 :::
 
-### `Плейсхолдеры`
+### `Placeholders`
 
-Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
-::: tip НАПРИМЕР ДЛЯ СООБЩЕНИЯ О БЛОКИРОВКЕ
-Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри телеграм сообщений
+You can use all placeholders that are used in the initial message for Minecraft
+::: tip EXAMPLE FOR A BAN MESSAGE
+There is a placeholder `<reason>`, so I can use `<reason>` inside Telegram messages
 :::
 
-Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
-- `<final_message>` сообщение, отправленное в майнкрафт
-- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
-- `<player>` ник игрока, который отправил сообщение
+There are also placeholders that WILL DEFINITELY be replaced in any message:
+- `<final_message>`: The message sent to Minecraft
+- `<final_clear_message>`: The message sent to Minecraft without unicode emojis
+- `<player>`: The nickname of the player who sent the message
 
-Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
+Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work.
 
 ### `for-minecraft`
 
-Формат сообщения, которое будет отправлено из Телеграма в Майнкрафт
+The format of the message that will be sent from Telegram to Minecraft.
 
 ### `message-channel`
 
-Список сообщений с форматом итогового сообщения
+A list of messages with the format of the final message.
 
-::: tip ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
-1. Возьми название из списка `типы сообщений`
-2. Вставь в `message-channel`
+::: tip IF YOU WANT TO ADD ANOTHER MESSAGE:
+1. Take the name from the list of `message types`.
+2. Insert it into `message-channel`:
 ```yaml
-название_сообщения: "<final_message>"
+message_name: "<final_message>"
 ```
 :::
 
@@ -60,42 +60,42 @@
 
 <!--@include: @/parts/enable.md-->
 
-::: warning ПРЕДУПРЕЖДЕНИЕ
-- Перед включением, вставь **токен** бота Telegram
-- После включения, **ЖЕЛАТЕЛЬНО** перезагрузить сервер
-:::
+::: warning WARNING
+- Before enabling, insert the **token** of the Telegram bot.
+- After enabling, it is **HIGHLY RECOMMENDED** to restart the server.
+  :::
 
 ### `token`
 
-[Токен](https://core.telegram.org/bots/faq#how-do-i-create-a-bot) бота для подключения. Можно использовать environment variables, например `${VALUE}`
+The [token](https://core.telegram.org/bots/faq#how-do-i-create-a-bot) of the bot for connection. You can use environment variables, for example `${VALUE}`.
 
 ### `message-channel`
 
-Список типов сообщений и айди чатов в Telegram
+A list of message types and chat IDs in Telegram.
 
-::: tip Например я хочу, чтобы из Minecraft отправлялось сообщение комманды `/ban` в Telegram
-1. Копирую айди чата, в которое нужно отправить сообщение (`-1002341720267_49`)
+::: tip For example, I want messages from the `/ban` command in Minecraft to be sent to Telegram:
+1. Copy the chat ID where the message should be sent (`-1002341720267_49`).
 
-Если бот подключён и добавлен в канал, то можно использовать команду `/id` в телеграме, чтобы узнать айди канала
+If the bot is connected and added to the channel, you can use the `/id` command in Telegram to find out the channel ID.
 
-2. Прописываю:
+2. Write:
 ```yaml
 message-channel:
   COMMAND_BAN:
     - "-1002341720267_49" // [!code highlight]
 ```
 
-Чатов может быть сколько угодно, главное, чтобы к ним был доступ у бота из [секреты](/docs/secrets/telegram/)
+There can be as many chats as you want, as long as the bot has access to them from [secrets](/docs/secrets/telegram/).
 :::
 
-::: danger ВАЖНО
+::: danger IMPORTANT
 
-Если ваш канал является Форумом (Топиком), то айди **ГЛАВНОГО** канала нужно указывать без `_`
+If your channel is a Forum (Topic), the ID of the **MAIN** channel should be specified without `_`.
 
-1. Айди моего главного канала (он всегда заканчивается на `_1`) это `-1002341720267_1`
-2. Значит вписывать нужно **ТОЛЬКО** `-1002341720267`
+1. The ID of my main channel (it always ends with `_1`) is `-1002341720267_1`.
+2. Therefore, you need to enter **ONLY** `-1002341720267`.
 
-Для других чатов из форума это правило не действует и нужно вписывать **ПОЛНЫЙ** айди
+For other chats in the forum, this rule does not apply, and you need to enter the **FULL** ID.
 
 :::
 

@@ -1,30 +1,30 @@
-#### Типы сообщений
+#### Message Types
 
-| Тип                           | Пояснение                                    |
+| Type                           | Explanation                                    |
 |-------------------------------|----------------------------------------------|
-| `CHAT`                        | Глобальное сообщение чата                    |
-| `AFK`                         | Глобальное сообщение от действия `afk`       |
-| `ADVANCEMENT `                | Сообщение от достижения                      |
-| `DEATH`                       | Сообщение от смерти                          |
-| `JOIN`                        | Сообщение, когда игрок зашёл на сервер       |
-| `QUIT`                        | Сообщение, когда игрок вышел с сервера       |
-| `FROM_DISCORD_TO_MINECRAFT`   | Сообщение из Discord в Minecraft             |
-| `FROM_TWITCH_TO_MINECRAFT`    | Сообщение из Twitch в Minecraft              |
-| `FROM_TELEGRAM_TO_MINECRAFT`  | Сообщение из Telegram в Minecraft            |
-| `COMMAND_ME`                  | Глобальное сообщение комманды `/me`          |
-| `COMMAND_BALL`                | Глобальное сообщение комманды `/ball`        |
-| `COMMAND_BAN`                 | Глобальное сообщение комманды `/ban`         |
-| `COMMAND_BROADCAST`           | Глобальное сообщение комманды `/broadcast`   |
-| `COMMAND_COIN`                | Глобальное сообщение комманды `/coin`        |
-| `COMMAND_DICE`                | Глобальное сообщение комманды `/dice`        |
-| `COMMAND_DO`                  | Глобальное сообщение комманды `/do`          |
-| `COMMAND_HELPER`              | Глобальное сообщение комманды `/helper`      |
-| `COMMAND_MUTE`                | Глобальное сообщение комманды `/mute`        |
-| `COMMAND_POLL_CREATE_MESSAGE` | Глобальное сообщение комманды `/poll`        |
-| `COMMAND_SPY`                 | Слежка за игроками для комманды `/spy`       |
-| `COMMAND_STREAM`              | Глобальное сообщение комманды `/stream`      |
-| `COMMAND_TRANSLATETO`         | Глобальное сообщение комманды `/translateto` |
-| `COMMAND_TRY`                 | Глобальное сообщение комманды `/try`         |
-| `COMMAND_WARN`                | Глобальное сообщение комманды `/warn`        |
-| `COMMAND_KICK`                | Глобальное сообщение комманды `/kick`        |
+| `CHAT`                        | Global chat message                          |
+| `AFK`                         | Global message from the `afk` action         |
+| `ADVANCEMENT`                 | Achievement message                          |
+| `DEATH`                       | Death message                                |
+| `JOIN`                        | Message when a player joins the server       |
+| `QUIT`                        | Message when a player leaves the server      |
+| `FROM_DISCORD_TO_MINECRAFT`   | Message from Discord to Minecraft            |
+| `FROM_TWITCH_TO_MINECRAFT`    | Message from Twitch to Minecraft             |
+| `FROM_TELEGRAM_TO_MINECRAFT`  | Message from Telegram to Minecraft           |
+| `COMMAND_ME`                  | Global message from the `/me` command        |
+| `COMMAND_BALL`                | Global message from the `/ball` command      |
+| `COMMAND_BAN`                 | Global message from the `/ban` command       |
+| `COMMAND_BROADCAST`           | Global message from the `/broadcast` command |
+| `COMMAND_COIN`                | Global message from the `/coin` command      |
+| `COMMAND_DICE`                | Global message from the `/dice` command      |
+| `COMMAND_DO`                  | Global message from the `/do` command        |
+| `COMMAND_HELPER`              | Global message from the `/helper` command    |
+| `COMMAND_MUTE`                | Global message from the `/mute` command      |
+| `COMMAND_POLL_CREATE_MESSAGE` | Global message from the `/poll` command      |
+| `COMMAND_SPY`                 | Player tracking for the `/spy` command       |
+| `COMMAND_STREAM`              | Global message from the `/stream` command    |
+| `COMMAND_TRANSLATETO`         | Global message from the `/translateto` command |
+| `COMMAND_TRY`                 | Global message from the `/try` command       |
+| `COMMAND_WARN`                | Global message from the `/warn` command      |
+| `COMMAND_KICK`                | Global message from the `/kick` command      |
 |                               |                                              |

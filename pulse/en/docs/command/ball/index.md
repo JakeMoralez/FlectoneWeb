@@ -1,11 +1,11 @@
-# Комманда `/ball`
+# Command `/ball`
 
-Комманда для того, чтобы задать вопрос Магическому Шару
+Command to ask the Magic 8-Ball a question
 ![command ball](/commandball.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.ball`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.ball`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,11 +16,11 @@
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message that will be sent
 
 ### `answers`
 
-Список возможных ответов
+List of possible answers
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

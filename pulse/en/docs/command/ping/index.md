@@ -1,13 +1,13 @@
-# Комманда `/ping`
+# Command `/ping`
 
-Комманда для того, чтобы узнать информацию об задержке игрока
+Command to check player latency
 ![command ping](/commandping.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.ping`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#ping
@@ -16,11 +16,11 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the specified player is not found
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message to be sent
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -45,4 +45,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

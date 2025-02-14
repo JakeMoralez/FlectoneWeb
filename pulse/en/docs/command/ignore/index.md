@@ -1,14 +1,14 @@
-# Комманда `/ignore`
+# Command `/ignore`
 
-Комманда для игнорирования всех сообщений от игрока
+Command to ignore all messages from a player
 ![command ignore](/commandignore.png)
 
-Убирается игнорирование с помощью повторного использования
+The ignore can be removed by using the command again
 ![command unignore](/commandunignore.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.ignore`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.ignore`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -19,27 +19,27 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message displayed if the entered player is not found
 
 ### `myself`
 
-Сообщение, если игрок пытается игнорировать самого себя
+Message displayed if the player tries to ignore themselves
 
 ### `he`
 
-Сообщение, если получатель игнорирует отправителя
+Message displayed if the recipient is ignoring the sender
 
 ### `you`
 
-Сообщение, если отправитель игнорирует получателя
+Message displayed if the sender is ignoring the recipient
 
 ### `format-true`
 
-Сообщение при успешном игнорировании
+Message displayed when the player successfully ignores another player
 
 ### `format-false`
 
-Сообщение при снятии игнорирования
+Message displayed when the player removes the ignore
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

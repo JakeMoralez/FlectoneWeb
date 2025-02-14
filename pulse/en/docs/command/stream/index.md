@@ -1,9 +1,9 @@
-# Комманда `/stream`
+# Command `/stream`
 
-Комманда для оповещения о запуске трансляции
+Command to notify about the start of a stream
 ![command stream](/commandstream.png)
 
-Если игрок имеет право на комманду, то ему выдаётся префикс при включении/выключении
+If the player has permission for the command, they will receive a prefix when enabling/disabling the stream
 ![command stream prefix](/commandstreamprefix.png)
 
 [//]: # (localization)
@@ -19,31 +19,31 @@
 
 ### `already`
 
-Сообщение, если игрок, который ведёт трансляцию, пытается запустить ещё одну трансляцию
+Message if a player who is already streaming tries to start another stream
 
 ### `not`
 
-Сообщение, если игрок, который не ведёт трансляцию, пытается закончить трансляцию
+Message if a player who is not streaming tries to end the stream
 
 ### `prefix-true`
 
-Префикс игрока, который в данный момент ведёт трансляцию
+Prefix for a player who is currently streaming
 
 ### `prefix-false`
 
-Префикс игрока, который имеет право вести трансляцию, но в данный момент не ведёт её
+Prefix for a player who has permission to stream but is not streaming at the moment
 
 ### `url-tag`
 
-Формат каждой ссылки в оповещении
+Format for each link in the notification
 
 ### `format-start`
 
-Оповещение о начале трансляции
+Notification when a stream starts
 
 ### `format-end`
 
-Сообщение, если игрок закончил трансляцию
+Message when a player ends their stream
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -69,4 +69,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

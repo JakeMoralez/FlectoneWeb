@@ -1,25 +1,25 @@
 # PlaceholderAPI
 
-Интеграция с PlaceholderAPI:
-- Позволяет использовать любые [плейсхолдеры](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders)
+Integration with PlaceholderAPI:
+- Allows using any [placeholders](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders)
 
-::: tip НАПРИМЕР
-`%server_tps%`, `%server_online%` и т.д., если установлен соответствующий модуль с помощью `/papi ecloud download модуль`
+::: tip EXAMPLE
+`%server_tps%`, `%server_online%`, etc., if the corresponding module is installed via `/papi ecloud download module`
 :::
 
-- Добавляет свои плейсхолдеры
+- Adds its own placeholders
 
-| Плейсхолдер                     | Что возращает                                                      |
+| Placeholder                     | What it returns                                                      |
 |---------------------------------|--------------------------------------------------------------------|
-| `%flectonepulse_fcolor_номер%`  | Возвращает [индивидуальный](/docs/message/format/color/) цвет игрока |
-| `%flectonepulse_world_prefix%`  | Префикс измерения у игрока                                         |
-| `%flectonepulse_stream_prefix%` | Префикс стрима у игрока                                            |
-| `%flectonepulse_afk_suffix%`    | Суффикс афк у игрока                                               |
-| `%flectonepulse_player%`        | Обычное имя игрока                                                 |
-| `%flectonepulse_ip%`            | Айпи адрес игрока                                                  |
-| `%flectonepulse_ping%`          | Пинг игрока                                                        |
-| `%flectonepulse_online%`        | Количество игроков на сервере                                      |
-| `%flectonepulse_tps%%`          | ТПС сервера                                                        |
+| `%flectonepulse_fcolor_номер%`  | Returns a [custom](/docs/message/format/color/) player color        |
+| `%flectonepulse_world_prefix%`  | Player's dimension prefix                                           |
+| `%flectonepulse_stream_prefix%` | Player's stream prefix                                              |
+| `%flectonepulse_afk_suffix%`    | Player's AFK suffix                                                 |
+| `%flectonepulse_player%`        | Player's regular name                                               |
+| `%flectonepulse_ip%`            | Player's IP address                                                 |
+| `%flectonepulse_ping%`          | Player's ping                                                       |
+| `%flectonepulse_online%`        | Number of players on the server                                     |
+| `%flectonepulse_tps%%`          | Server TPS                                                          |
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -41,4 +41,4 @@
 
 ### `use`
 
-Право для использования плейсхолдеров из PlaceholderAPI в сообщении
+Permission to use PlaceholderAPI placeholders in messages

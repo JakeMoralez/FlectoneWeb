@@ -1,4 +1,4 @@
-# Signature
+# Sign
 
 The signature is created on the item by **Left Click** on the anvil, if the player holds dye in the **offhand** and an item in the **main hand**
 ![sign](/sign.gif)

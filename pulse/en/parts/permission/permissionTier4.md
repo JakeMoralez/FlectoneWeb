@@ -1,14 +1,14 @@
 #### `name`
 
-Название права
+Permission name
 
 #### `type`
 
-Вид права
+Permission type
 
-| Вид      | Объяснение                                                   |
-|----------|--------------------------------------------------------------|
-| `TRUE`   | Доступно для любого игрока                                   |
-| `FALSE`  | Доступно если выдано отдельно (например с помощью LuckPerms) |
-| `OP`     | Доступно для операторов сервера                              |
-| `NOT_OP` | Доступно если выдано отдельно (например с помощью LuckPerms) |
+| Type      | Explanation                                                   |
+|-----------|--------------------------------------------------------------|
+| `TRUE`    | Available for any player                                     |
+| `FALSE`   | Available if granted separately (e.g., via LuckPerms)        |
+| `OP`      | Available for server operators                               |
+| `NOT_OP`  | Available if granted separately (e.g., via LuckPerms)        |

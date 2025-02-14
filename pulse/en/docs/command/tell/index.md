@@ -1,9 +1,9 @@
-# Комманда `/tell`
+# Command `/tell`
 
-Комманда для того, чтобы написать личное сообщение игроку
+Command for sending a private message to a player
 ![command tell](/commandtell.png)
 
-Можно использовать для заметок, если вписать свой же ник
+Can be used for notes if you type your own username
 ![command tell myself](/commandtellmyself.png)
 
 [//]: # (localization)
@@ -19,19 +19,19 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message if the entered player is not found
 
 ### `sender`
 
-Сообщение для отправителя
+Message for the sender
 
 ### `receiver`
 
-Сообщение для получателя
+Message for the recipient
 
 ### `myself`
 
-Сообщение для отправителя, если он и есть получатель т.е. для себя
+Message for the sender if they are also the recipient (i.e., for themselves)
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -57,4 +57,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

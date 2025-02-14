@@ -1,6 +1,6 @@
 # SkinsRestorer
 
-Интеграция с SkinsRestorer позволяет получать скины **оффлайн игроков**
+Integration with SkinsRestorer allows retrieving skins of **offline players**
 ![skinsrestorer](/skinsrestorer.png)
 
 [//]: # (integration.yml)

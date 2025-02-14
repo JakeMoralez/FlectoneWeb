@@ -1,11 +1,11 @@
-# Комманда `/clearmail`
+# Command `/clearmail`
 
-Комманда для удаления отправленных [писем](/docs/command/mail/)
+Command to delete sent [mails](/docs/command/mail/)
 ![command clearmail](/commandclearmail.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.clearmail`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.clearmail`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,11 +16,11 @@
 
 ### `null-mail`
 
-Сообщение, если введённое письмо не найдено
+Message if the entered mail is not found
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message that will be sent
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

@@ -1,9 +1,9 @@
-# Твич
+# Twitch
 
-Интеграция с Twitch позволяет:
-- отправлять сообщения из Minecraft в Twitch
-- отправлять сообщения из Twitch в Minecraft
-- подписываться на начало трансляции Twitch
+Integration with Twitch allows:
+- sending messages from Minecraft to Twitch
+- sending messages from Twitch to Minecraft
+- subscribing to Twitch stream starts
 
 ![twitch message](/twitchmessage.png)
 ![minecraft message](/twitchminecraftmessage.png)
@@ -21,34 +21,34 @@
 <<< @/files/localizations/en_us.yml#twitch
 :::
 
-### `Плейсхолдеры`
+### `Placeholders`
 
-Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
-::: tip НАПРИМЕР ДЛЯ СООБЩЕНИЯ О БЛОКИРОВКЕ
-Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри твич сообщений
+You can use all the placeholders that are used in the initial Minecraft message
+::: tip EXAMPLE FOR A BLOCK MESSAGE
+There is a placeholder `<reason>`, so I can use `<reason>` inside Twitch messages
 :::
 
-Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
-- `<final_message>` сообщение, отправленное в майнкрафт
-- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
-- `<player>` ник игрока, который отправил сообщение
+There are also placeholders that WILL DEFINITELY be replaced in any message
+- `<final_message>` the message sent to Minecraft
+- `<final_clear_message>` the message sent to Minecraft without Unicode emojis
+- `<player>` the player’s nickname who sent the message
 
-Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
+Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work
 
 ### `for-minecraft`
-- По умолчанию `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
+- By default `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
 
-Формат сообщения, которое будет отправлено из Твича в Майнкрафт
+The format of the message that will be sent from Twitch to Minecraft
 
 ### `message-channel`
 
-Список сообщений с форматом итогового сообщения
+A list of messages with the format of the final message
 
-::: tip ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
-1. Возьми название из списка `типы сообщений`
-2. Вставь в `message-channel`
+::: tip IF YOU WANT TO ADD ANOTHER MESSAGE:
+1. Take the name from the list of `message types`
+2. Insert into `message-channel`
 ```yaml
-название_сообщения: "<final_message>"
+message_name: "<final_message>"
 ```
 :::
 
@@ -61,53 +61,53 @@
 
 <!--@include: @/parts/enable.md-->
 
-::: warning ПРЕДУПРЕЖДЕНИЕ
-- Перед включением, вставь **токен** и **ID клиента** Twitch
-- После включения, **ЖЕЛАТЕЛЬНО** перезагрузить сервер, иначе плагин может вызвать зависание
-:::
+::: warning WARNING
+- Before enabling, insert the **token** and **client ID** for Twitch
+- After enabling, it is **RECOMMENDED** to restart the server, otherwise, the plugin might cause freezing
+  :::
 
 ### `client-id`
 
-[Идентификатор](https://twitchtokengenerator.com/) пользователя. Можно использовать environment variables, например `${VALUE}`
+[User identifier](https://twitchtokengenerator.com/). You can use environment variables, for example `${VALUE}`
 ![client id](/twitchclientid.png)
 
 ### `token`
 
-[Токен](https://twitchtokengenerator.com/) пользователя для подключения. Можно использовать environment variables, например `${VALUE}`
+[User token](https://twitchtokengenerator.com/) for connecting. You can use environment variables, for example `${VALUE}`
 ![token](/twitchtoken.png)
 
 ### `message-channel`
 
-Список типов сообщений и названий каналов на Twitch
+A list of message types and Twitch channel names
 
-::: tip Например я хочу, чтобы из Minecraft отправлялось сообщение комманды `/ban` в Twitch
-1. Копирую названия каналов Twitch, в которые нужно отправить сообщение (`faseri4ka`)
-2. Прописываю:
+::: tip For example, I want to send a `/ban` command message from Minecraft to Twitch
+1. Copy the names of the Twitch channels to send the message to (`faseri4ka`)
+2. Write:
 ```yaml
 message-channel:
   COMMAND_BAN:
     - "faseri4ka" // [!code highlight]
 ```
 
-Каналов может быть сколько угодно, главное, чтобы к ним был доступ у подключенного аккаунта
+There can be any number of channels, as long as the connected account has access to them
 :::
 
 ### `follow-channel`
 
-Список, где ключом является имя канала, а значением список комманд, которые выполняться при старте трансляции
+A list where the key is the channel name, and the value is a list of commands to be executed when the stream starts
 
-::: tip Например я хочу отслеживать начало стрима у `faseri4ka` и писать `stream start https://twitch.tv/faseri4ka`
-1. Копирую названия канала `faseri4ka`
-2. Прописываю:
+::: tip For example, I want to track the stream start for `faseri4ka` and write `stream start https://twitch.tv/faseri4ka`
+1. Copy the channel name `faseri4ka`
+2. Write:
 ```yaml
 follow-channel:
   faseri4ka:
     - "stream start https://twitch.tv/faseri4ka"
 ```
 
-- Каналов может быть до 10 одновременно, главное, чтобы к ним был доступ у подключенного аккаунта
-- Комманд, при начале трансляции, может быть сколько угодно и какие угодно
-:::
+- Up to 10 channels can be tracked at once, as long as the connected account has access to them
+- There can be any number of commands to be executed when the stream starts
+  :::
 
 <!--@include: @/parts/destination.md-->
 

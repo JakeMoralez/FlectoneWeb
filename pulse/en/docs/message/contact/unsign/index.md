@@ -1,4 +1,4 @@
-# Removing Signature
+# Unsign
 
 The signature is removed by **Left Click** on a grindstone if the player holds an item with a signature in the **main hand**
 ![unsign](/unsign.gif)

@@ -1,6 +1,6 @@
-# Комманда `/unban`
+# Command `/unban`
 
-Комманда для того, чтобы разблокировать игрока
+Command to unban a player
 ![command unban](/commandunban.png)
 
 [//]: # (localization)
@@ -16,15 +16,15 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the player cannot be found
 
 ### `not-banned`
 
-Сообщение, если введённый игрок не заблокирован
+Message when the player is not banned
 
 ### `format`
 
-Сообщение при разблокировке
+Message when the player is unbanned
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -50,4 +50,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

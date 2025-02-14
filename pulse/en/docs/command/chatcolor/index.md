@@ -1,11 +1,11 @@
-# Комманда `/chatcolor`
+# Command `/chatcolor`
 
-Комманда для смены [цветов](/docs/message/format/color/)
+Command for changing [colors](/docs/message/format/color/)
 ![command chatcolor](/commandchatcolor.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.chatcolor`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.chatcolor`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,15 +16,15 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message if the entered player is not found
 
 ### `null-color`
 
-Сообщение, если неправильно введены цвета
+Message if the colors are entered incorrectly
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message that will be sent
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

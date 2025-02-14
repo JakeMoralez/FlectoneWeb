@@ -1,10 +1,10 @@
-# Комманда `/mark`
+# Command `/mark`
 
-Комманда для создания меток
+Command to create markers
 ![command mark](/commandmark.gif)
 
-::: danger ВНИМАТЕЛЬНО
-Комманда не будет работать, если модуль [`Mark`](/docs/message/contact/mark/) выключен
+::: danger WARNING
+The command will not work if the [`Mark`](docs/message/contact/mark/) module is disabled
 :::
 
 [//]: # (command.yml)

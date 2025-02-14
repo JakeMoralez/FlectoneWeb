@@ -1,11 +1,11 @@
-# Комманда `/flectonepulse`
+# Command `/flectonepulse`
 
-Главная комманда плагина `FlectonePulse`
+Main command of the `FlectonePulse` plugin
 ![command flectonepulse](/commandflectonepulse.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.flectonepulse`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.flectonepulse`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,15 +16,15 @@
 
 ### `format-false`
 
-Сообщение при возникновении ошибки
+Message displayed when an error occurs
 
 ### `format-true`
 
-Формат сообщения, которое будет отправлено при перезагрузке всего `FlectonePulse`
+Message format sent when `FlectonePulse` is fully reloaded
 
 ### `format-true-text`
 
-Форма сообщения, которое будет отправлено при перезагрузке текста
+Message format sent when only text is reloaded
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

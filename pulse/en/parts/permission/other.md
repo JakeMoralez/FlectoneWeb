@@ -1,3 +1,3 @@
 ### `other`
 
-Право для использования на другого игрока
+Permission to use on another player

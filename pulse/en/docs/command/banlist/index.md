@@ -1,11 +1,11 @@
-# Комманда `/banlist`
+# Command `/banlist`
 
-Комманда для того, чтобы посмотреть список блокировок
+Command to view the list of bans
 ![command banlist](/commandbanlist.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.banlist`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.banlist`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,48 +16,48 @@
 
 ### `empty`
 
-Сообщение, если список заблокированных игроков пуст
+Message if the list of banned players is empty
 
 ### `null-page`
 
-Сообщение, если введённая страница не существует
+Message if the entered page does not exist
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message if the entered player is not found
 
 ### `global`
 
-::: details Сообщения для глобальных блокировок
+::: details Messages for global bans
 
 #### `header`
 
-Верхняя часть сообщения списка
+Top part of the list message
 
 #### `line`
 
-Формат каждого бана из списка
+Format of each ban in the list
 
 #### `footer`
 
-Нижняя часть сообщения списка
+Bottom part of the list message
 :::
 
 ### `player`
 
-::: details Сообщения для блокировок игрока
+::: details Messages for player bans
 
 #### `header`
 
-Верхняя часть сообщения списка
+Top part of the list message
 
 #### `line`
 
-Формат каждого бана из списка
+Format of each ban in the list
 
 #### `footer`
 
-Нижняя часть сообщения списка
+Bottom part of the list message
 :::
 
 [//]: # (command.yml)

@@ -1,19 +1,19 @@
 <!-- #region path -->
-📂 Путь
+📂 Path
 <!-- #endregion path -->
 
 <!-- #region localization -->
-## 🌍 Локализация
+## 🌍 Localization
 <!-- #endregion localization -->
 
 <!-- #region setting -->
-## ⚙️ Настройка
+## ⚙️ Setting
 <!-- #endregion setting -->
 
 <!-- #region permission -->
-## 🔐 Права
+## 🔐 Permissions
 <!-- #endregion permission -->
 
 <!-- #region default -->
-### ⚖️ `По умолчанию`
+### ⚖️ `Default`
 <!-- #endregion default -->

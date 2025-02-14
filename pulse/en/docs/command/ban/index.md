@@ -1,11 +1,11 @@
-# Комманда `/ban`
+# Command `/ban`
 
-Комманда для того, чтобы заблокировать игрока
+Command to ban a player
 ![command ban](/commandban.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.ban`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.ban`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,36 +16,36 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message if the entered player is not found
 
 ### `null-time`
 
-Сообщение, если введено невозможное время
+Message if an invalid time is entered
 
 ### `reasons`
 
-Список с ключами и значениями, где ключом является слово, а значением конкретная причина
+A list with keys and values, where the key is a word and the value is a specific reason
 
-::: tip Можно вписывать свои причины, например
+::: tip You can add your own reasons, for example:
 ```yaml
 random_kek: "Random reason"
 ```
-Тогда если я напишу `/ban player 1d random_kek`, то причиной будет `Random reason`
+Then if I type `/ban player 1d random_kek`, the reason will be `Random reason`
 
-Если причина не указана, будет использоваться `default`
+If no reason is specified, `default` will be used
 :::
 
 ### `server`
 
-Сообщение для всех
+Message for everyone
 
 ### `person`
 
-Сообщение для игрока
+Message for the player
 
 ### `connection-attempt`
 
-Сообщение, если заблокированный игрок пытался подключиться
+Message if a banned player tries to connect
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -58,7 +58,7 @@ random_kek: "Random reason"
 
 ### `show-connection-attempts`
 
-Если включено, то будет показывать сообщение, что заблокированный игрок пытался подключиться
+If enabled, it will show a message when a banned player tries to connect
 ![command ban connect](/commandbanconnect.png)
 
 <!--@include: @/parts/range.md-->

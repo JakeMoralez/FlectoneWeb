@@ -1,17 +1,17 @@
-# Комманда `/reply`
+# Command `/reply`
 
-Комманда для того, чтобы написать личное сообщение последнему написавшему игроку
+Command to send a private message to the last player who sent a message
 ![command reply](/commandreply.png)
 
-::: danger ВНИМАТЕЛЬНО
-Комманда не будет работать, если модуль [`Tell`](/docs/command/tell/) выключен
+::: danger BE CAREFUL
+This command will not work if the [`Tell`](/docs/command/tell/) module is disabled
 :::
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.reply`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#reply
@@ -20,7 +20,7 @@
 
 ### `null-receiver`
 
-Сообщение, если получатель не найден
+Message when the recipient is not found
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -44,4 +44,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

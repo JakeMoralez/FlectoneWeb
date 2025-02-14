@@ -1,11 +1,11 @@
-# Комманда `/clearchat`
+# Command `/clearchat`
 
-Комманда для очищения чата
+Command for clearing chat
 ![command clearchat](/commandclearchat.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.clearchat`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.clearchat`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,11 +16,11 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message if the specified player is not found
 
 ### `format`
 
-Сообщение после очищения чата
+Message after clearing the chat
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

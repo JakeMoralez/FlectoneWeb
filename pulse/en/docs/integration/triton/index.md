@@ -1,6 +1,6 @@
 # Triton
 
-Интеграция с Triton позволяет использовать кастомную локализацию **игроков**
+Integration with Triton allows using custom localization for **players**.
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->

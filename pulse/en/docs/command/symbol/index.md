@@ -1,9 +1,9 @@
-# Комманда `/symbol`
+# Command `/symbol`
 
-Комманда для поиска unicode символа
+Command for searching Unicode emoji
 ![symbol](/commandsymbol.png)
 
-Огромное спасибо @replaceitem за право использования [списками](https://github.com/replaceitem/symbol-chat) символов
+Huge thanks to @replaceitem for allowing the use of [symbol lists](https://github.com/replaceitem/symbol-chat)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
@@ -18,11 +18,11 @@
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message that will be sent
 
 ### `categories`
 
-Список категорий и их названий для подсказок
+List of categories and their names for suggestions
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -36,12 +36,12 @@
 
 ### `categories`
 
-Список категорий и символов разделённых пробелами
+List of categories and symbols separated by spaces
 
-::: tip ЧТО МОЖНО С ЭТИМ ДЕЛАТЬ?
-1. Добавлять свои символы к уже текущим через пробел
-2. Переименовывать категории или добавлять свои
-:::
+::: tip WHAT CAN YOU DO WITH THIS?
+1. Add your own symbols to the current ones, separated by spaces
+2. Rename categories or add your own
+   :::
 
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
@@ -57,4 +57,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

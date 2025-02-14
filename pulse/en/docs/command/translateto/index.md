@@ -1,6 +1,6 @@
-# Комманда `/translateto`
+# Command `/translateto`
 
-Комманда для перевода сообщения с одного языка на другой
+Command to translate a message from one language to another
 ![command translateto](/commandtranslateto.png)
 
 [//]: # (localization)
@@ -16,11 +16,11 @@
 
 ### `null-or-error`
 
-Сообщение, если произошла ошибка при переводе
+Message if there was an error during translation
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format for the message to be sent after translation
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -34,17 +34,17 @@
 
 ### `service`
 
-Вид АПИ (`DEEPL`, `GOOGLE`, `YANDEX`), который будет использоваться при переводе
+Translation API to be used (`DEEPL`, `GOOGLE`, `YANDEX`)
 
-::: danger ВНИМАТЕЛЬНО
-`DEEPL` и `YANDEX` требуют **токен** и отдельную настройку в `integration.yml`
+::: danger Attention
+`DEEPL` and `YANDEX` require **tokens** and additional setup in `integration.yml`
 :::
 
 <!--@include: @/parts/aliases.md-->
 
 ### `languages`
 
-Список языков, который используется только для подсказки при использовании комманды
+List of supported languages used for suggestions during the command
 
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
@@ -60,4 +60,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

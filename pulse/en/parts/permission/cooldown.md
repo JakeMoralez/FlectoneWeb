@@ -1,3 +1,3 @@
 ### `cooldown-bypass`
 
-Право для игнорирования задержки между использованиями
+Permission to bypass the cooldown between uses

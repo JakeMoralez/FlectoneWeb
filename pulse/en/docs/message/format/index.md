@@ -1,4 +1,4 @@
-# Formatting
+# Format
 
 The module responsible for formatting sent messages
 

@@ -1,11 +1,11 @@
 ### `ticker`
 
-Обновление каждый раз в какой-то промежуток времени
+Updates every certain interval of time
 
 - #### `enable`
 
-Нужно ли обновлять
+Whether to update or not
 
 - #### `period`
 
-Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно обновлять
+How often in [ticks](https://minecraft.fandom.com/wiki/Tick) it should update

@@ -1,14 +1,14 @@
-# Комманда `/helper`
+# Command `/helper`
 
-Комманда для того, чтобы попросить помощь
+Command to request assistance
 ![command helper](/commandhelper.png)
 
-От лица помощника
+From the assistant's perspective
 ![command helper player](/commandhelperadmin.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.helper`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.helper`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -19,15 +19,15 @@
 
 ### `null-helper`
 
-Сообщение, если на сервере нет людей, которые смогут помочь
+Message displayed if no one on the server is available to help
 
 ### `global`
 
-Сообщение для тех, кто должен помочь
+Message for those who are supposed to help
 
 ### `player`
 
-Сообщение для игрока
+Message for the player
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -54,7 +54,7 @@
 
 ### `see`
 
-Право для просмотра запросов о помощи
+Permission to view help requests
 
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->

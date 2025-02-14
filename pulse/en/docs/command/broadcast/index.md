@@ -1,11 +1,11 @@
-# Комманда `/broadcast`
+# Command `/broadcast`
 
-Комманда для глобального оповещения
+Command for global announcements
 ![command broadcast](/commandbroadcast.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.broadcast`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.broadcast`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message that will be sent
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

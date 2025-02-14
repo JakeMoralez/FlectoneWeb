@@ -1,6 +1,6 @@
-# Конфигурация
+# Configuration
 
-Основная конфигурация `FlectonePulse`, без которой невозможна работа
+Main configuration for `FlectonePulse`, without which the plugin cannot function
 
 [//]: # (config.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -11,42 +11,42 @@
 
 ### `console`
 
-Используется для отображения имени, когда сообщения создано консолью
+Used to display the name when the message is created by the console
 ![console](/console.gif)
 
 ### `version`
 
-Текущая версия плагина, используемая для корректного перехода между версиями плагина
+The current version of the plugin, used for proper transitions between plugin versions
 
-::: warning ПРЕДУПРЕЖДЕНИЕ
-Не изменяй версию плагина, если не знаешь, что делаешь!
+::: warning WARNING
+Do not change the plugin version unless you know what you're doing!
 :::
 
 ### `language`
 
-Локализация, используемая для всех сообщений плагина
+Localization used for all plugin messages
 
-::: warning ПРЕДУПРЕЖДЕНИЕ
-Выбираемая локализация должна быть из папки `localizations`
+::: warning WARNING
+The selected localization must be from the `localizations` folder
 :::
 
 <!--@include: @/parts/locale.md-->
 
 ### `language-player`
 
-Если включено, то у каждого игрока будет проверяться его локализация майнкрафта и взависимости от этого будет показываться [сообщение](/docs/localizations/)
+When enabled, each player's Minecraft localization will be checked, and based on that, the message from [localizations](/docs/localizations/) will be shown.
 
 ![locale](/locale.gif)
 
-Если такой локализации нет, то будет использована из [конфигурации](#language)
+If the localization does not exist, the one from [configuration](#language) will be used.
 
-::: danger ОЧЕНЬ ВАЖНО ПОНИМАТЬ
-Если ты изменяешь списки сообщений с включенным `language-player`, то это нужно делать во всех локализациях, иначе возможны визуальные ошибки
+::: danger VERY IMPORTANT TO UNDERSTAND
+If you modify the message lists with `language-player` enabled, you need to do this in all localizations, otherwise visual errors may occur.
 :::
 
 ### `metrics`
 
-Позволяет плагину собирать [статистику](https://bstats.org/plugin/bukkit/FlectonePulse/21076) сервера и параметров плагина
+Allows the plugin to collect [statistics](https://bstats.org/plugin/bukkit/FlectonePulse/21076) about the server and plugin parameters
 <div class="w-80" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <article class="bstats">
         <a href="https://bstats.org/plugin/bukkit/FlectonePulse" rel="noopener nofollow ugc" target="_blank">
@@ -56,105 +56,105 @@
 
 ### `bungeecord`
 
-::: tip ЧТОБЫ ПЛАГИН РАБОТАЛ НА BUNGEECORD:
-1. Включи его здесь
-2. Для **BungeeCord** сервера закинь файл `FlectonePulse-bungee.jar` в папку `plugins`
-3. Перезапусти **BungeeCord** и сервера, где стоит **FlectonePulse**
+::: tip TO MAKE THE PLUGIN WORK WITH BUNGEECORD:
+1. Enable it here
+2. For **BungeeCord** server, place the `FlectonePulse-bungee.jar` file in the `plugins` folder
+3. Restart **BungeeCord** and the servers where **FlectonePulse** is installed
    :::
 
 ### `velocity`
 
-::: tip ЧТОБЫ ПЛАГИН РАБОТАЛ НА VELOCITY:
-1. Включи его здесь
-2. Для **Velocity** сервера закинь файл `FlectonePulse-velocity.jar` в папку `plugins`
-3. Перезапусти **Velocity** и сервера, где стоит **FlectonePulse**
+::: tip TO MAKE THE PLUGIN WORK WITH VELOCITY:
+1. Enable it here
+2. For **Velocity** server, place the `FlectonePulse-velocity.jar` file in the `plugins` folder
+3. Restart **Velocity** and the servers where **FlectonePulse** is installed
    :::
 
 ### `clusters`
 
-Список кластеров, к которым должен быть подключён сервер. Используется только тогда, когда включен режим прокси.
-Если список пустой, то сервер получает все сообщения с других серверов
+A list of clusters to which the server should be connected. Only used when proxy mode is enabled.
+If the list is empty, the server will receive messages from all other servers.
 
-::: tip КАК ИСПОЛЬЗОВАТЬ?
-Нужно вписать название кластера на серверах, где сообщение будет получено и отправлено
+::: tip HOW TO USE?
+You need to enter the cluster name on the servers where the message will be received and sent
 ```yaml
 clusters: 
    - "test_cluster"
 ```
 
-Так сервера связываются между собой и сообщения будут только между этими кластерами
+This connects the servers together, and messages will only be exchanged between these clusters.
 :::
 
 ### `log-filter`
 
-Идея взята [отсюда](https://github.com/Whitescan/ConsoleFilter/blob/master/src/main/java/dev/whitescan/consolefilter/share/LogFilter.java), спасибо @Whitescan
+The idea is borrowed from [here](https://github.com/Whitescan/ConsoleFilter/blob/master/src/main/java/dev/whitescan/consolefilter/share/LogFilter.java), thanks to @Whitescan
 
-Списком указываются сообщения, которые нужно не показывать, используя ключевые слова, встречающиеся в сообщении
+A list is specified with messages that should not be shown, using keywords found in the message.
 
-::: tip НАПРИМЕР Я ХОЧУ ОТФИЛЬТРОВАТЬ
+::: tip EXAMPLE I WANT TO FILTER
 ![filter](/filter.png)
 
-Значит нужно вписать:
-`Unknown or incomplete command` или `command` или `Unknown`
+Then you should add:
+`Unknown or incomplete command` or `command` or `Unknown`
 :::
 
 ### `database`
 
-Можно использовать environment variables, например `${VALUE}`
+You can use environment variables, for example `${VALUE}`
 
-::: details Настройка датабазы
+::: details Database Setup
 
 #### `type`
 
-В данный момент поддерживаются:
-- `SQLite` - локальная
-- `MYSQL` - серверная
+Currently supported:
+- `SQLite` - local
+- `MYSQL` - server-side
 
 #### `name`
 
-Название базы данных
+Database name
 
-#### `host` (для MySQL)
+#### `host` (for MySQL)
 
-Адрес сервера, на котором расположена база данных
+The address of the server hosting the database
 
-#### `port` (для MySQL)
+#### `port` (for MySQL)
 
-Порт подключения к базе данных на сервере
+The port for connecting to the database server
 
-#### `user` (для MySQL)
+#### `user` (for MySQL)
 
-Название пользователя, который будет использован для подключения к базе данных
+The username to be used for database connection
 
-#### `password` (для MySQL)
+#### `password` (for MySQL)
 
-Пароль для подключения к базе данных
+The password for the database connection
 
-#### `parameters` (для MySQL)
+#### `parameters` (for MySQL)
 
-Параметры подключения к базе данных
+Connection parameters for the database
 
 :::
 
 ### module
 
-Включает или выключает работу всех модулей
+Enables or disables all modules
 
-- Каждый модуль имеет родителя (тот, кто выше находится)
+- Each module has a parent (the one above it)
 
-::: tip НАПРИМЕР
+::: tip EXAMPLE
 ```yaml
 house:
   door:
   chair:
 ```
 
-`house` является родителем для `door` и `chair`
+`house` is the parent for `door` and `chair`
 :::
 
-- Каждый модуль зависит от `enable` родителя
+- Each module depends on the `enable` status of its parent
 
-::: tip НАПРИМЕР
+::: tip EXAMPLE
 ```yaml
 house:
   enable: false // [!code highlight]
@@ -164,5 +164,5 @@ house:
     enable: true
 ```
 
-`house` выключен, значит внезависимости от того, включены ли `door` и `chair` - они тоже будут выключены
+Since `house` is disabled, regardless of whether `door` and `chair` are enabled, they will also be disabled.
 :::

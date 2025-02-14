@@ -1,11 +1,11 @@
-# Комманда `/coin`
+# Command `/coin`
 
-Комманда для подбрасывания монетки
+Command for flipping a coin
 ![command coin](/commandcoin.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.coin`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.coin`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,19 +16,19 @@
 
 ### `head`
 
-Название стороны монетки
+Name of one side of the coin
 
 ### `tail`
 
-Название другой стороны монетки
+Name of the other side of the coin
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message to be sent
 
 ### `format-draw`
 
-Сообщение, если монетка упала на ребро
+Message if the coin lands on its edge
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -41,7 +41,7 @@
 
 ### `draw`
 
-Включает шанс (`1%`) выпадения монетки на ребро
+Enables the chance (`1%`) for the coin to land on its edge
 
 <!--@include: @/parts/range.md-->
 <!--@include: @/parts/aliases.md-->

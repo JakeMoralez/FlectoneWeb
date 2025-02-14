@@ -1,11 +1,11 @@
-# Комманда `/ignorelist`
+# Command `/ignorelist`
 
-Комманда для того, чтобы посмотреть список своих игнорирований
+Command to view the list of players you have ignored
 ![command ignorelist](/commandignorelist.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.ignorelist`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.ignorelist`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,23 +16,23 @@
 
 ### `empty`
 
-Сообщение, если список игнорируемых игроков пуст
+Message displayed if the ignore list is empty
 
 ### `null-page`
 
-Сообщение, если введённая страница не существует
+Message displayed if the entered page does not exist
 
 ### `header`
 
-Верхняя часть сообщения списка
+The top part of the ignore list message
 
 ### `line`
 
-Формат каждого игнорирования из списка
+Format for each ignored player in the list
 
 ### `footer`
 
-Нижняя часть сообщения списка
+The bottom part of the ignore list message
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

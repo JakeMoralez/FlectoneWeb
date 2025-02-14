@@ -1,13 +1,13 @@
-# Комманда `/mute`
+# Command `/mute`
 
-Комманда для того, чтобы замутить игрока
+Command to mute a player
 ![command mute](/commandmute.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.mute`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#mute
@@ -16,32 +16,32 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the specified player is not found
 
 ### `null-time`
 
-Сообщение, если введено невозможное время
+Message when the time provided is invalid
 
 ### `reasons`
 
-Список с ключами и значениями, где ключом является слово, а значением конкретная причина
+A list with keys and values, where the key is the word and the value is the specific reason
 
-::: tip МОЖНО ВПИСЫВАТЬ СВОИ ПРИЧИНЫ
+::: tip YOU CAN ADD YOUR OWN REASONS
 ```yaml
 random_kek: "Random reason"
 ```
-Тогда если я напишу `/mute player 1d random_kek`, то причиной будет `Random reason`
+Then, if you type `/mute player 1d random_kek`, the reason will be `Random reason`.
 
-Если причина не указана, будет использоваться `default`
+If no reason is specified, `default` will be used.
 :::
 
 ### `server`
 
-Сообщение для всех
+Message to everyone
 
 ### `person`
 
-Сообщение для игрока
+Message to the muted player
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -68,4 +68,3 @@ random_kek: "Random reason"
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

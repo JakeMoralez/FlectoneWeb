@@ -1,4 +1,4 @@
-# Clearing
+# Clear
 
 Server message when using `/clear`  
 ![clear](/clear.png)  

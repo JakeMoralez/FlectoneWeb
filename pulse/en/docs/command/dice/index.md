@@ -1,11 +1,11 @@
-# Комманда `/dice`
+# Command `/dice`
 
-Комманда для броска кубиков на удачу
+Command for rolling dice for luck
 ![command dice](/commanddice.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.dice`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.dice`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,11 +16,11 @@
 
 ### `symbols`
 
-Список индексов (выпавшее число) и символов (кубики)
+A list of indices (rolled number) and symbols (dice)
 
 ### `format`
 
-Формат сообщения, которое будет отправлено
+Format of the message to be sent
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -34,11 +34,11 @@
 
 ### `min`
 
-Минимальное количество кубиков
+Minimum number of dice
 
 ### `max`
 
-Максимальное количество кубиков
+Maximum number of dice
 
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/destination.md-->

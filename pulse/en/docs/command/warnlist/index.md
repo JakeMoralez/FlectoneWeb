@@ -1,6 +1,6 @@
-# Комманда `/warnlist`
+# Command `/warnlist`
 
-Комманда для того, чтобы посмотреть список предупреждений
+Command to view the list of warnings
 ![command warnlist](/commandwarnlist.png)
 
 [//]: # (localization)
@@ -16,48 +16,48 @@
 
 ### `empty`
 
-Сообщение, если список игроков предупреждений пуст
+Message when the list of player warnings is empty
 
 ### `null-page`
 
-Сообщение, если введённая страница не существует
+Message when the entered page does not exist
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the entered player cannot be found
 
 ### `global`
 
-::: details Сообщения для глобальных предупреждений
+::: details Global warning messages
 
 #### `header`
 
-Верхняя часть сообщения списка
+Header part of the warning list message
 
 #### `line`
 
-Формат каждого предупреждения из списка
+Format for each warning in the list
 
 #### `footer`
 
-Нижняя часть сообщения списка
+Footer part of the warning list message
 :::
 
 ### `player`
 
-::: details Сообщения для предупреждений игрока
+::: details Player-specific warning messages
 
 #### `header`
 
-Верхняя часть сообщения списка
+Header part of the warning list message for the player
 
 #### `line`
 
-Формат каждого предупреждения из списка
+Format for each warning in the player's list
 
 #### `footer`
 
-Нижняя часть сообщения списка
+Footer part of the warning list message for the player
 :::
 
 [//]: # (command.yml)
@@ -83,4 +83,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

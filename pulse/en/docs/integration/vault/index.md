@@ -1,6 +1,6 @@
 # Vault
 
-Интеграция с Vault позволяет проверять права у **оффлайн игроков**
+Integration with Vault allows checking permissions for **offline players**
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->

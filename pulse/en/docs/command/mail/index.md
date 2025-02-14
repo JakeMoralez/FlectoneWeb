@@ -1,17 +1,17 @@
-# Комманда `/mail`
+# Command `/mail`
 
-Комманда для того, чтобы написать оффлайн игроку письмо
+Command to send a message to an offline player
 ![command mail](/commandmail.png)
 
-Когда игрок, которому написали письмо, зайдёт на сервер, он увидит это
+When the player logs in, they will see the message
 ![command mail player](/commandmailplayer.png)
 
-Если игрок уже на сервере и модуль [Tell](/docs/command/tell/) включен, то он будет использован
+If the player is already on the server and the [Tell](/docs/command/tell/) module is enabled, it will be used
 ![command tell](/commandtell.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.mail`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → command.mail`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -22,15 +22,15 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message displayed if the entered player is not found
 
 ### `sender`
 
-Сообщение для отправителя
+Message displayed to the sender
 
 ### `receiver`
 
-Сообщение для получателя
+Message displayed to the receiver
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

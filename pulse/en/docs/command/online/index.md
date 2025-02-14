@@ -1,13 +1,13 @@
-# Комманда `/online`
+# Command `/online`
 
-Комманда для того, чтобы узнать информацию об онлайне игрока
+Command to check player online status
 ![command online](/commandonline.png)
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.online`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#online
@@ -16,23 +16,23 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the specified player is not found
 
 ### `format-current`
 
-Сообщение, если введённый игрок на сервере
+Message when the specified player is currently online
 
 ### `format-first`
 
-Формат сообщения `/online first`, которое будет отправлено
+Format of the message for `/online first` command
 
 ### `format-last`
 
-Формат сообщения `/online last`, которое будет отправлено
+Format of the message for `/online last` command
 
 ### `format-total`
 
-Формат сообщения `/online total`, которое будет отправлено
+Format of the message for `/online total` command
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -59,4 +59,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

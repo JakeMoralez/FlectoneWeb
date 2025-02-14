@@ -1,6 +1,6 @@
-# Комманда `/warn`
+# Command `/warn`
 
-Комманда для того, чтобы дать предупреждение игроку
+Command to give a warning to a player
 ![command warn](/commandwarn.png)
 
 [//]: # (localization)
@@ -16,32 +16,32 @@
 
 ### `null-player`
 
-Сообщение, если введённый игрок не найден
+Message when the player cannot be found
 
 ### `null-time`
 
-Сообщение, если введено невозможное время
+Message when an invalid time is entered
 
 ### `reasons`
 
-Список с ключами и значениями, где ключом является слово, а значением конкретная причина
+A list with keys and values, where the key is a word and the value is a specific reason
 
-::: tip Можно вписывать свои причины, например
+::: tip You can write your own reasons, for example:
 ```yaml
 random_kek: "Random reason"
 ```
-Тогда если я напишу `/warn player 1d random_kek`, то причиной будет `Random reason`
+So if you write `/warn player 1d random_kek`, the reason will be `Random reason`.
 
-Если причина не указана, будет использоваться `default`
+If no reason is specified, the `default` reason will be used.
 :::
 
 ### `server`
 
-Сообщение для всех
+Message for everyone
 
 ### `person`
 
-Сообщение для игрока
+Message for the player
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -57,10 +57,10 @@ random_kek: "Random reason"
 
 ### `actions`
 
-Список, где ключом является `количество` предупреждений и значением `действие`, которое должно выполниться
+A list where the key is the `number` of warnings, and the value is the `action` to be performed
 
-::: tip Например я хочу, чтобы при `10` варнов игрока банило
-Тогда я должен вписать `10: ban <target> ohh`. Действие выполнится если у игрока будет `10` активных предупреждений
+::: tip For example, if you want to ban the player at `10` warnings:
+You should write `10: ban <target> ohh`. This action will be performed if the player has `10` active warnings.
 :::
 
 <!--@include: @/parts/destination.md-->
@@ -77,4 +77,3 @@ random_kek: "Random reason"
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-

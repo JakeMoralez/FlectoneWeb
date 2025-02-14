@@ -1,6 +1,6 @@
-# Комманда `/spy`
+# Command `/spy`
 
-Комманда для отслеживания за действиями игроков
+Command to track player actions
 ![command spy](/commandspy.gif)
 
 [//]: # (localization)
@@ -16,15 +16,15 @@
 
 ### `format-true`
 
-Сообщение при включении слежки
+Message when spying is enabled
 
 ### `format-false`
 
-Сообщение при выключении слежки
+Message when spying is disabled
 
 ### `format-log`
 
-Формат сообщения, которое будет отправлено при слежке за действием
+Message format that will be sent during the tracking of an action
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -40,7 +40,7 @@
 
 ### `categories`
 
-Список категорий с действиями, за которыми происходит слежка
+List of categories with actions that will be tracked
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
@@ -55,4 +55,3 @@
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
-
