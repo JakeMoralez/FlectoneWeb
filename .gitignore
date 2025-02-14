@@ -28,14 +28,9 @@ pnpm-debug.log*
 
 FlectonePulseDocs.iml
 .vitepress/dist/*
-/docs/.vitepress/cache/
-/docs/.vitepress/dist/
-/pulse/node_modules/
 /.idea/*
-/ru/pulse/.vitepress/dist/
-/ru/pulse/.vitepress/cache/
-/en/pulse/.vitepress/dist/
-/en/pulse/.vitepress/cache/
-/pulse/.vitepress/dist/
-/pulse/.vitepress/cache/
+/pulse/ru/.vitepress/dist/
+/pulse/ru/.vitepress/cache/
+/pulse/en/.vitepress/dist/
+/pulse/en/.vitepress/cache/
 /.vscode/*
