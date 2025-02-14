@@ -1,12 +1,12 @@
-# Форматирование
+# Formatting
 
-Модуль, форматирующий отправленные сообщения
+The module responsible for formatting sent messages
 
 [//]: # (localization)
-<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format`
 
-<!--@include: @/parts/words.md#default--> 
+<!--@include: @/parts/words.md#default-->
 
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#format
@@ -15,47 +15,47 @@
 
 ### `url`
 
-Сообщение, если это ссылка
+Message if it's a link  
 ![url](/url.png)
 
 ### `IMAGE`
 
-Сообщение, если это изображение
+Message if it's an image  
 ![image](/image.png)
 
 ### `PING`
 
-Сообщение, если это пинг
+Message if it's a ping  
 ![ping](/ping.png)
 
 ### `TPS`
 
-Сообщение, если это ТПС
+Message if it's TPS  
 ![tps](/tps.png)
 
 ### `ONLINE`
 
-Сообщение, если это онлайн
+Message if it's online  
 ![online](/online.png)
 
 ### `COORDS`
 
-Сообщение, если это координаты
+Message if it's coordinates  
 ![coords](/coords.png)
 
 ### `STATS`
 
-Сообщение, если это статистика
+Message if it's statistics  
 ![stats](/stats.png)
 
 ### `SKIN`
 
-Сообщение, если это скин
+Message if it's a skin  
 ![skin](/skin.png)
 
 ### `ITEM`
 
-Сообщение, если это предмет
+Message if it's an item  
 ![item](/item.png)
 
 [//]: # (message.yml)
@@ -67,72 +67,72 @@
 
 <!--@include: @/parts/enable.md-->
 
-### `PING`
+### `PING`  
 ![ping](/ping.png)
 
-### `TPS`
+### `TPS`  
 ![tps](/tps.png)
 
-### `ONLINE`
+### `ONLINE`  
 ![online](/online.png)
 
-### `COORDS`
+### `COORDS`  
 ![coords](/coords.png)
 
-### `STATS`
+### `STATS`  
 ![stats](/stats.png)
 
-### `SKIN`
+### `SKIN`  
 ![skin](/skin.png)
 
-### `ITEM`
+### `ITEM`  
 ![item](/item.png)
 
-### `URL`
+### `URL`  
 ![url](/url.png)
 
-### `IMAGE`
+### `IMAGE`  
 ![image](/image.png)
 
-### `SPOILER`
+### `SPOILER`  
 ![spoiler](/spoiler.png)
 
-### `BOLD`
+### `BOLD`  
 ![bold](/bold.png)
 
-### `ITALIC`
+### `ITALIC`  
 ![italic](/italic.png)
 
-### `UNDERLINE`
+### `UNDERLINE`  
 ![underline](/underline.png)
 
-### `OBFUSCATED`
+### `OBFUSCATED`  
 ![obfuscated](/obfuscated.png)
 
-### `STRIKETHROUGH`
+### `STRIKETHROUGH`  
 ![strikethrough](/strikethrough.png)
 
-### [Остальные это Kyori теги](https://docs.advntr.dev/minimessage/format.html#standard-tags)
+### [Other Kyori tags](https://docs.advntr.dev/minimessage/format.html#standard-tags)
 
-| Тег                       | Использование                                                                | Описание                                                                                       |
-|---------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| `<hover>`                 | [Hover](https://docs.advntr.dev/minimessage/format.html#hover)               | Текст при наведении                                                                            |
-| `<click>`                 | [Click](https://docs.advntr.dev/minimessage/format.html#click)               | Действие при нажатии                                                                           |
-| `<color>`                 | [Color](https://docs.advntr.dev/minimessage/format.html#color)               | Цвет                                                                                           |
-| `<keybind>`               | [Keybind](https://docs.advntr.dev/minimessage/format.html#keybind)           | Настройка клавиш для сообщения                                                                 |
-| `<translatable>`          | [Translatable](https://docs.advntr.dev/minimessage/format.html#translatable) | Сообщение с использованием локали игрока                                                       |
-| `<translatable_fallback>` | [Translatable](https://docs.advntr.dev/minimessage/format.html#translatable) | Сообщение с использованием локали игрока                                                       |
-| `<insertion>`             | [Insertion](https://docs.advntr.dev/minimessage/format.html#insertion)       | Вставка текста в чат с помощью ШИФТ                                                            |
-| `<font>`                  | [Font](https://docs.advntr.dev/minimessage/format.html#font)                 | Изменение шрифта текста                                                                        |
-| `<decoration>`            | [Decoration](https://docs.advntr.dev/minimessage/format.html#decoration)     | Стандартные украшения майнкрафта `bold`, `italic`, `underlined`, `strikethrough`, `obfuscated` |
-| `<gradient>`              | [Gradient](https://docs.advntr.dev/minimessage/format.html#gradient)         | Градиентный цвет текста                                                                        |
-| `<rainbow>`               | [Rainbow](https://docs.advntr.dev/minimessage/format.html#rainbow)           | Радужный цвет текста                                                                           |
-| `<reset>`                 | [Reset](https://docs.advntr.dev/minimessage/format.html#reset)               | Сброс всех тегов и декораций                                                                   |
-| `<newline>`               | [Newline](https://docs.advntr.dev/minimessage/format.html#newline)           | Переход на новую строку, замена `\n`                                                           |
-| `<transition>`            | [Transition](https://docs.advntr.dev/minimessage/format.html#transition)     | Переход между двумя цветами                                                                    |
-| `<selector>`              | [Selector](https://docs.advntr.dev/minimessage/format.html#selector)         | Селектор мобов                                                                                 |
-| `<score>`                 | [Score](https://docs.advntr.dev/minimessage/format.html#score)               | Значение у команды (scoreboard)                                                                |
-| `<nbt>`                   | [NBT](https://docs.advntr.dev/minimessage/format.html#nbt)                   | Вставка NBT компонента                                                                         |
+| Tag                      | Usage                                                                    | Description                                                                                      |
+|--------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `<hover>`                 | [Hover](https://docs.advntr.dev/minimessage/format.html#hover)           | Text displayed when hovering over                                                                 |
+| `<click>`                 | [Click](https://docs.advntr.dev/minimessage/format.html#click)           | Action triggered when clicked                                                                     |
+| `<color>`                 | [Color](https://docs.advntr.dev/minimessage/format.html#color)           | Color                                                                                           |
+| `<keybind>`               | [Keybind](https://docs.advntr.dev/minimessage/format.html#keybind)       | Key setup for the message                                                                         |
+| `<translatable>`          | [Translatable](https://docs.advntr.dev/minimessage/format.html#translatable) | Message using the player's locale                                                                |
+| `<translatable_fallback>` | [Translatable](https://docs.advntr.dev/minimessage/format.html#translatable) | Message with fallback translation using the player's locale                                       |
+| `<insertion>`             | [Insertion](https://docs.advntr.dev/minimessage/format.html#insertion)   | Text insertion in chat with SHIFT                                                                  |
+| `<font>`                  | [Font](https://docs.advntr.dev/minimessage/format.html#font)             | Change font for text                                                                               |
+| `<decoration>`            | [Decoration](https://docs.advntr.dev/minimessage/format.html#decoration) | Standard Minecraft decorations `bold`, `italic`, `underlined`, `strikethrough`, `obfuscated`     |
+| `<gradient>`              | [Gradient](https://docs.advntr.dev/minimessage/format.html#gradient)     | Gradient text color                                                                                |
+| `<rainbow>`               | [Rainbow](https://docs.advntr.dev/minimessage/format.html#rainbow)       | Rainbow-colored text                                                                               |
+| `<reset>`                 | [Reset](https://docs.advntr.dev/minimessage/format.html#reset)           | Reset all tags and decorations                                                                   |
+| `<newline>`               | [Newline](https://docs.advntr.dev/minimessage/format.html#newline)       | Newline, replaces `\n`                                                                            |
+| `<transition>`            | [Transition](https://docs.advntr.dev/minimessage/format.html#transition) | Transition between two colors                                                                     |
+| `<selector>`              | [Selector](https://docs.advntr.dev/minimessage/format.html#selector)     | Mob selector                                                                                     |
+| `<score>`                 | [Score](https://docs.advntr.dev/minimessage/format.html#score)           | Team score (scoreboard)                                                                           |
+| `<nbt>`                   | [NBT](https://docs.advntr.dev/minimessage/format.html#nbt)               | Insertion of NBT component                                                                        |
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
@@ -145,8 +145,8 @@
 
 ### `all`
 
-Право для использования всех возможных форматирований
+Permission to use all possible formatting options
 
 ### `tags`
 
-Список тегов и их прав для использования
+List of tags and their respective permissions
