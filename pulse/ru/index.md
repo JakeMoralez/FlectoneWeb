@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "FlectonePulse"
-  tagline: <white>Это серверный менеджер сообщений, нацеленный на упрощение настройки сервера
+  tagline: <white>Каждое сообщение под вашим контролем!
   image:
     src: /platforms.svg
   actions:
