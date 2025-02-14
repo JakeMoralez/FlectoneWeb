@@ -1,4 +1,4 @@
-# Name in the List
+# Playerlistname
 
 Module responsible for the player's name in the TAB
 ![player list name](/playerlistname.png)
