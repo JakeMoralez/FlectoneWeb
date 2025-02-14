@@ -1,11 +1,11 @@
-# Зачарование
+# Enchantment
 
-Сообщение от сервера при использовании `/enchant`
+A message from the server when using `/enchant`
 ![enchant](/enchant.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.enchant`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.enchant`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,11 +16,11 @@
 
 ### `single`
 
-Сообщение, если команда применяется для конкретного игрока
+Message if the command is applied to a specific player.
 
 ### `multiple`
 
-Сообщение, если команда применяется для многих сущностей
+Message if the command is applied to multiple entities.
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
