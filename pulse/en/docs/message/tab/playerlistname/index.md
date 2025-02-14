@@ -1,6 +1,6 @@
-# Имя в списке
+# Name in the List
 
-Модуль, отвечающий за имя игрока в ТАБе
+Module responsible for the player's name in the TAB
 ![player list name](/playerlistname.png)
 
 [//]: # (localization)
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Сообщение в списке ТАБа
+Message in the TAB list
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
