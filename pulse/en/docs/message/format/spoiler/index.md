@@ -1,8 +1,8 @@
-# Спойлер
+# Spoiler
 
-Тег `spoiler` используется для скрытия сообщения, до наведения на него
+The `spoiler` tag is used to hide a message until the mouse hovers over it
 
-Использование: `<spoiler:сообщение>`
+Usage: `<spoiler:message>`
 
 ![spoiler message](/spoilermessage.png)  
 ![spoiler minecraft](/spoilerminecraft.png)  
@@ -20,24 +20,24 @@
 
 ### `display`
 
-Отвечает за имя игрока
+Responsible for the player's name
 ![name display](/namedisplay.png)
 
 ### `entity`
 
-Отвечает за имя сущности
+Responsible for the entity's name
 
 ### `unknown`
 
-Отвечает за неизвестное имя
+Responsible for the unknown name
 
 ### `prefix`
 
-Префикс, которой отображается у команды, если включен ник
+Prefix displayed with the team name if the nickname is enabled
 
 ### `suffix`
 
-Суффикс, которой отображается у команды, если включен ник
+Suffix displayed with the team name if the nickname is enabled
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -50,11 +50,11 @@
 
 ### `symbol`
 
-Символ, на который заменяется каждая буква
+Symbol replacing each letter
 
 ### `hover`
 
-Сообщение, которое показывается при наведении
+Message that is shown when hovering over the spoiler
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
