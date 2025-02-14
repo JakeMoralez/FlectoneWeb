@@ -32,6 +32,8 @@ FlectonePulseDocs.iml
 /docs/.vitepress/dist/
 /pulse/node_modules/
 /.idea/*
+/ru/pulse/.vitepress/dist/
+/ru/pulse/.vitepress/cache/
 /en/pulse/.vitepress/dist/
 /en/pulse/.vitepress/cache/
 /pulse/.vitepress/dist/
