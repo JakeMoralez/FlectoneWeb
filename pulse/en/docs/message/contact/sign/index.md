@@ -1,11 +1,11 @@
-# Подпись
+# Signature
 
-Подпись создаётся на предмете с помощью **ЛКМ** по наковальне, если игрок держит в **дополнительной** руке краситель и в **главной** предмет
+The signature is created on the item by **Left Click** on the anvil, if the player holds dye in the **offhand** and an item in the **main hand**.
 ![sign](/sign.gif)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.contact.sign`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.contact.sign`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Сообщение, которое будет занесено в описание предмета, как подпись
+The message that will be entered into the item’s description as a signature.
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -29,12 +29,12 @@
 
 ### `drop-dye`
 
-Включает выкидывание красителя прошлой подписи, если подпись переделывается
+Enables dropping the dye of the previous signature when the signature is changed.
 ![resign](/resign.gif)
 
 ### `block`
 
-Блок, на который нужно нажать, для подписи
+The block that must be clicked for the signature.
 
 <!--@include: @/parts/cooldown.md-->
 <!--@include: @/parts/sound.md-->
