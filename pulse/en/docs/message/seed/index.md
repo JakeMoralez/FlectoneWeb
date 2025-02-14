@@ -1,11 +1,11 @@
-# Сид
+# Seed
 
-Сообщение от сервера при использовании `/seed`
+Message from the server when using `/seed`
 ![seed](/seed.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.seed`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.seed`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `format`
 
-Сообщение, которое будет отправлено
+Message that will be sent
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
