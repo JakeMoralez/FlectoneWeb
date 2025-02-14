@@ -1,6 +1,6 @@
 # Right Click 
 
-A module where **Right Click** on a player creates a message above the player's inventory.
+A module where **Right Click** on a player creates a message above the player's inventory
 ![right click](/rightclick.png)
 
 [//]: # (localization)
@@ -16,7 +16,7 @@ A module where **Right Click** on a player creates a message above the player's 
 
 ### `format`
 
-The message that will be sent to the player who right-clicked on another player.
+The message that will be sent to the player who right-clicked on another player
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
