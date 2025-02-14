@@ -1,9 +1,9 @@
 # Spit 
 
-To spit, hold **white dye** in your hand and right-click.
+To spit, hold **white dye** in your hand and right-click
 ![spit](/spit.gif)
 
-If the spit hits a player, they will receive a message about it.
+If the spit hits a player, they will receive a message about it
 ![spit message](/spit.png)
 
 [//]: # (localization)
@@ -19,7 +19,7 @@ If the spit hits a player, they will receive a message about it.
 
 ### `format`
 
-The message sent to the player who was spat on.
+The message sent to the player who was spat on
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -32,11 +32,11 @@ The message sent to the player who was spat on.
 
 ### `message`
 
-Enables the message when the spit hits a player.
+Enables the message when the spit hits a player
 
 ### `item`
 
-The item used to create the spit.
+The item used to create the spit
 
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->
