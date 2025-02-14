@@ -1,6 +1,6 @@
-# Контактирование
+# Contacting 
 
-Модуль, отвечающий за сообщения при взаимодействии
+A module responsible for messages during interactions.
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
