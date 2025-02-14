@@ -1,11 +1,11 @@
-# Цвета
+# Colors
 
-Тег `fcolor` используется для индивидуальных настроек цвета у каждого игрока
+The tag `fcolor` is used for individual color settings for each player.
 
-Использование: `<fcolor:номер>`
+Usage: `<fcolor:number>`
 
 ![color message](/colormessage.png)  
-![color](/color.gif)  
+![color](/color.gif)
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -18,22 +18,22 @@
 
 ### `use-recipient-colors`
 
-Если включено, то любое сообщение, которое содержит `<fcolor:номер>`, будет отформатировано относительно получателя
+If enabled, any message containing `<fcolor:number>` will be formatted relative to the recipient's colors.
 ![color true](/colortrue.gif)
 
-Иначе цвет будет зависеть от цветов отправителя
+Otherwise, the color will depend on the sender's colors.
 ![color false](/colorfalse.gif)
 
 ### `values`
 
-Список всех используемых цветов, где номер является ключом к цвету по умолчанию
+A list of all used colors, where the number is the key for the default color.
 
-::: tip Например есть цвет
+::: tip For example, there is a color
 ```yaml
 1: "#ADD8E6"
 ```
-`1` - номер для цвета `#ADD8E6` <br><br>
-Чтобы такой тег использовать, нужно писать `<fcolor:1>`
+`1` - the number for the color `#ADD8E6` <br><br>
+To use this tag, write `<fcolor:1>`
 :::
 
 [//]: # (permission.yml)
