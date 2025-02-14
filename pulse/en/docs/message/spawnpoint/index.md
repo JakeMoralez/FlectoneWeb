@@ -1,11 +1,11 @@
-# Спавнпоинт
+# Spawnpoint
 
-Сообщение от сервера при использовании `/spawnpoint`
+Message from the server when using `/spawnpoint`
 ![spawnpoint](/spawnpoint.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.spawnpoint`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.spawnpoint`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,11 +16,11 @@
 
 ### `single`
 
-Сообщение, если команда применяется для конкретного игрока
+Message when the command is applied to a specific player
 
 ### `multiple`
 
-Сообщение, если команда применяется для многих игроков
+Message when the command is applied to multiple players
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
