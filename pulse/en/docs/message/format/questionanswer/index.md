@@ -1,6 +1,6 @@
-# Вопрос-Ответ
+# Question-Answer
 
-Модуль, отвечающий за ответ на вопрос игрока
+Module responsible for answering a player's question
 ![question](/questionanswer.png)
 
 [//]: # (localization)
@@ -16,7 +16,7 @@
 
 ### `questions`
 
-Список вопросов и ответов на эти вопросы
+List of questions and their corresponding answers
 
 
 [//]: # (message.yml)
@@ -30,7 +30,7 @@
 
 ### `questions`
 
-Список вопросов с их настройкой
+List of questions with their settings
 
 - <!--@include: @/parts/range.md-->
 - <!--@include: @/parts/destination.md-->
@@ -38,7 +38,7 @@
 - <!--@include: @/parts/sound.md-->
 - ### `target`
 
-[Регулярное выражение](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java) для поиска вопроса
+[Regular expression](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java) to match the question
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
@@ -51,11 +51,11 @@
 
 ### `questions`
 
-Список вопросов с правами
+List of questions with permissions
 
 - ### `ask`
 
-Право на этот вопрос
+Permission to ask this question
 
 - <!--@include: @/parts/permission/sound.md-->
 - <!--@include: @/parts/permission/cooldown.md-->
