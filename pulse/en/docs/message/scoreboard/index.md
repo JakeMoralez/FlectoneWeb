@@ -1,11 +1,11 @@
-# Скорборд
+# Scoreboard
 
-Сообщения в правой части экрана
+Messages on the right side of the screen
 ![scoreboard](/scoreboard.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.scoreboard`
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.scoreboard`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,7 +16,7 @@
 
 ### `values`
 
-Список сообщений, где `- -` разделяет разные форматы
+List of messages where `- -` separates different formats
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
