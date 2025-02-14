@@ -1,4 +1,4 @@
-# Automatic
+# Auto
 
 Server message sent at regular intervals  
 ![auto](/auto.png)
