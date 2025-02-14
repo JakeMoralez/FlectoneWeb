@@ -16,11 +16,11 @@ A message from the server when using `/enchant`
 
 ### `single`
 
-Message if the command is applied to a specific player.
+Message if the command is applied to a specific player
 
 ### `multiple`
 
-Message if the command is applied to multiple entities.
+Message if the command is applied to multiple entities
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
