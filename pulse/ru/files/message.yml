@@ -374,6 +374,21 @@ format:
       :angry:: "<click:suggest_command:\":angry:\"><hover:show_text:\":angry:\">(╯°□°)╯︵ ┻━┻</hover></click>"
       :happy:: "<click:suggest_command:\":happy:\"><hover:show_text:\":happy:\">＼(＾O＾)／</hover></click>"
 #endregion emoji
+#region fixation
+  fixation:
+    enable: false
+    end-dot: false
+    first-letter-uppercase: false
+    non-dot-symbols:
+      - ";"
+      - ":"
+      - "'"
+      - "\""
+      - ","
+      - "?"
+      - "!"
+      - "."
+#endregion fixation
 #region image
   image:
     enable: true

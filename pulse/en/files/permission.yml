@@ -972,6 +972,11 @@ message:
       name: "flectonepulse.module.message.format.emoji"
       type: TRUE
 #endregion emoji
+#region fixation
+    fixation:
+      name: "flectonepulse.module.message.format.fixation"
+      type: TRUE
+#endregion fixation
 #region image
     image:
       name: "flectonepulse.module.message.format.image"

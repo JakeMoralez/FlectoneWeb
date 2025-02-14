@@ -218,6 +218,7 @@ export default defineConfig({
             items: [
               { text: 'Цвета', link: '/docs/message/format/color/' },
               { text: 'Смайлики', link: '/docs/message/format/emoji/' },
+              { text: 'Фиксация', link: '/docs/message/format/fixation/' },
               { text: 'Изображение', link: '/docs/message/format/image/' },
               { text: 'Упоминание', link: '/docs/message/format/mention/' },
               {
