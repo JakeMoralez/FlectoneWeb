@@ -8,7 +8,7 @@ If a player is AFK, they receive a specific suffix
 
 [//]: # (localization)  
 <!--@include: @/parts/words.md#localization-->  
-<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.contact.afk`  
+<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.afk`  
 
 <!--@include: @/parts/words.md#default-->  
 
@@ -32,7 +32,7 @@ Message when a player returns
 
 [//]: # (message.yml)  
 <!--@include: @/parts/words.md#setting-->  
-<!--@include: @/parts/words.md#path--> `message.yml → contact.afk`  
+<!--@include: @/parts/words.md#path--> `message.yml → afk`  
 
 <!--@include: @/parts/words.md#default-->  
 <<< @/files/message.yml#afk  
@@ -63,7 +63,7 @@ If I add the command `tell` to the list and a player is AFK, they can use the `t
 
 [//]: # (permission.yml)  
 <!--@include: @/parts/words.md#permission-->  
-<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.afk`  
+<!--@include: @/parts/words.md#path--> `permission.yml → message.afk`  
 
 <!--@include: @/parts/words.md#default-->  
 <<< @/files/permission.yml#afk  

@@ -20,8 +20,6 @@
 `0.7` это `70%`, а `1.0` это `100%` т.е всё сообщение
 :::
 
-<!--@include: @/parts/sound.md-->
-
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
 <!--@include: @/parts/words.md#path--> `permission.yml → message.format.moderation.caps`
@@ -34,5 +32,3 @@
 ### `bypass`
 
 Право для игнорирования форматирования
-
-<!--@include: @/parts/permission/sound.md-->

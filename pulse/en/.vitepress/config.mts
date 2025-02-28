@@ -148,6 +148,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Advancement', link: '/docs/message/advancement/' },
+          { text: 'Afk', link: '/docs/message/afk/' },
           { text: 'Anvil', link: '/docs/message/anvil/' },
           { text: 'Auto', link: '/docs/message/auto/' },
           { text: 'Book', link: '/docs/message/book/' },
@@ -155,20 +156,6 @@ export default defineConfig({
           { text: 'Bubble', link: '/docs/message/bubble/' },
           { text: 'Chat', link: '/docs/message/chat/' },
           { text: 'Clear', link: '/docs/message/clear/' },
-          {
-            text: 'Contact',
-            link: '/docs/message/contact/',
-            collapsed: true,
-            items: [
-              { text: 'Afk', link: '/docs/message/contact/afk/' },
-              { text: 'Knock', link: '/docs/message/contact/knock/' },
-              { text: 'Mark', link: '/docs/message/contact/mark/' },
-              { text: 'Right Click', link: '/docs/message/contact/rightclick/' },
-              { text: 'Sign', link: '/docs/message/contact/sign/' },
-              { text: 'Spit', link: '/docs/message/contact/spit/' },
-              { text: 'Unsign', link: '/docs/message/contact/unsign/' },
-            ]
-          },
           { text: 'Death', link: '/docs/message/death/' },
           { text: 'Deop', link: '/docs/message/deop/' },
           { text: 'Enchant', link: '/docs/message/enchant/' },
@@ -188,6 +175,7 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   { text: 'Caps', link: '/docs/message/format/moderation/caps/' },
+                  { text: 'Flood', link: '/docs/message/format/moderation/flood/' },
                   { text: 'Swear', link: '/docs/message/format/moderation/swear/' },
                 ]
               },
@@ -201,6 +189,7 @@ export default defineConfig({
           { text: 'Gamemode', link: '/docs/message/gamemode/' },
           { text: 'Greeting', link: '/docs/message/greeting/' },
           { text: 'Join', link: '/docs/message/join/' },
+          { text: 'Mark', link: '/docs/message/mark/' },
           {
             text: 'Objective',
             link: '/docs/message/objective/',
@@ -212,6 +201,7 @@ export default defineConfig({
           },
           { text: 'Op', link: '/docs/message/op/' },
           { text: 'Quit', link: '/docs/message/quit/' },
+          { text: 'Right Click', link: '/docs/message/rightclick/' },
           { text: 'Scoreboard', link: '/docs/message/scoreboard/' },
           { text: 'Seed', link: '/docs/message/seed/' },
           { text: 'Setblock', link: '/docs/message/setblock/' },

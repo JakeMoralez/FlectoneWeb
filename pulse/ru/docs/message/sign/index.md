@@ -8,7 +8,7 @@
 <!--@include: @/parts/words.md#path--> `message.yml → sign`
 
 <!--@include: @/parts/words.md#default-->
-<<< @/files/message.yml#blocksign
+<<< @/files/message.yml#sign
 
 <!--@include: @/parts/enable.md-->
 
@@ -17,6 +17,6 @@
 <!--@include: @/parts/words.md#path--> `permission.yml → message.sign`
 
 <!--@include: @/parts/words.md#default-->
-<<< @/files/permission.yml#blocksign
+<<< @/files/permission.yml#sign
 
 <!--@include: @/parts/permission/permissionTier3.md-->

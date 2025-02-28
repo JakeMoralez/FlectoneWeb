@@ -2,6 +2,10 @@
 
 Category responsible for messages in the TAB
 
+::: warning IMPORTANT
+To ensure the TAB list is sorted based on the donor group, enable [`tab-sort`](/docs/integration/luckperms#tab-sort)
+:::
+
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
 <!--@include: @/parts/words.md#path--> `message.yml → tab`

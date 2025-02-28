@@ -9,7 +9,7 @@ The sword can be renamed in an anvil to an [available color](#available-colors) 
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → contact.mark`
+<!--@include: @/parts/words.md#path--> `message.yml → mark`
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/message.yml#mark
@@ -46,7 +46,7 @@ Mob hitbox used for mark creation
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.mark`
+<!--@include: @/parts/words.md#path--> `permission.yml → message.mark`
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/permission.yml#mark

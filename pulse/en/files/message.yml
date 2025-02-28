@@ -22,9 +22,22 @@ advancement:
   sound:
     enable: false
 #endregion advancement
+#region afk
+afk:
+  enable: true
+  range: -1
+  delay: 3000
+  ignore:
+    - "afk"
+  destination:
+    type: CHAT
+  ticker:
+    enable: true
+    period: 20
+#endregion afk
 #region anvil
 anvil:
-  enable: true
+  enable: false
 #endregion anvil
 #region auto
 auto:
@@ -42,7 +55,7 @@ auto:
 #endregion auto
 #region book
 book:
-  enable: true
+  enable: false
 #endregion book
 #region brand
 brand:
@@ -107,109 +120,6 @@ clear:
   destination:
     type: CHAT
 #endregion clear
-#region contact
-contact:
-  enable: true
-#endregion contact
-#region afk
-  afk:
-    enable: true
-    range: -1
-    delay: 3000
-    ignore:
-      - "afk"
-    destination:
-      type: CHAT
-    ticker:
-      enable: true
-      period: 20
-#endregion afk
-#region knock
-  knock:
-    enable: false
-    cooldown:
-      enable: false
-    variants:
-      - type: "DOOR"
-        sound:
-          enable: true
-          volume: 1.0
-          pitch: 1.0
-          category: "BLOCK"
-          name: "minecraft:block.wood.place"
-      - type: "GLASS"
-        sound:
-          enable: true
-          volume: 1.0
-          pitch: 1.0
-          category: "BLOCK"
-          name: "minecraft:block.glass.place"
-#endregion knock
-#region mark
-  mark:
-    enable: false
-    limit: true
-    color: true
-    range: 100
-    duration: 60
-    item: "WOODEN_SWORD"
-    entity: "MAGMA_CUBE"
-    cooldown:
-      enable: false
-    sound:
-      enable: false
-#endregion mark
-#region rightclick
-  rightclick:
-    enable: true
-    destination:
-      type: ACTION_BAR
-      times:
-        stay: 60
-    cooldown:
-      enable: false
-    sound:
-      enable: false
-#endregion rightclick
-#region sign
-  sign:
-    enable: false
-    drop-dye: true
-    block: "ANVIL"
-    cooldown:
-      enable: false
-    sound:
-      enable: false
-#endregion sign
-#region spit
-  spit:
-    enable: false
-    message: true
-    item: "WHITE_DYE"
-    destination:
-      type: ACTION_BAR
-      times:
-        stay: 60
-    cooldown:
-      enable: true
-      duration: 60
-    sound:
-      enable: true
-      volume: 0.3
-      pitch: 1.0
-      category: "HOSTILE"
-      name: "minecraft:entity.llama.spit"
-#endregion spit
-#region unsign
-  unsign:
-    enable: false
-    drop-dye: true
-    block: "GRINDSTONE"
-    cooldown:
-      enable: false
-    sound:
-      enable: false
-#endregion unsign
 #region death
 death:
   enable: true
@@ -274,7 +184,7 @@ format:
       trigger: "\\Q**\\E"
     ITALIC:
       enable: true
-      trigger: "\\Q##\\E"
+      trigger: "\\Q*\\E"
     UNDERLINE:
       enable: true
       trigger: "\\Q__\\E"
@@ -417,17 +327,20 @@ format:
     caps:
       enable: false
       trigger: 0.7
-      sound:
-        enable: false
 #endregion caps
+#region flood
+    flood:
+      enable: false
+      trim-to-single: false
+      max-repeated-symbols: 10
+      max-repeated-words: 2
+#endregion flood
 #region swear
     swear:
       enable: false
       trigger:
         - "((у|[нз]а|(хитро|не)?вз?[ыьъ]|с[ьъ]|(и|ра)[зс]ъ?|(о[тб]|под)[ьъ]?|(.\\B)+?[оаеи])?-?([её]б(?!о[рй])|и[пб][ае][тц]).*?|(н[иеа]|([дп]|верт)о|ра[зс]|з?а|с(ме)?|о(т|дно)?|апч)?-?ху([яйиеёю]|ли(?!ган)).*?|(в[зы]|(три|два|четыре)жды|(н|сук)а)?-?бл(я(?!(х|ш[кн]|мб)[ауеыио]).*?|[еэ][дт]ь?)|(ра[сз]|[зн]а|[со]|вы?|п(ере|р[оие]|од)|и[зс]ъ?|[ао]т)?п[иеё]зд.*?|(за)?п[ие]д[аое]?р([оа]м|(ас)?(ну.*?|и(ли)?[нщктл]ь?)?|(о(ч[еи])?|ас)?к(ой)|юг)[ауеы]?|манд([ауеыи](л(и[сзщ])?[ауеиы])?|ой|[ао]вошь?(е?к[ауе])?|юк(ов|[ауи])?)|муд([яаио].*?|е?н([ьюия]|ей))|мля([тд]ь)?|лять|([нз]а|по|пи)х|м[ао]л[ао]фь([яию]|[еёо]й))(?=[\\s,.:;\"']|$)"
         - "(([уyu]|[нзnz3][аa]|(хитро|не)?[вvwb][зz3]?[ыьъi]|[сsc][ьъ']|(и|[рpr][аa4])[зсzs]ъ?|([оo0][тбtb6]|[пp][оo0][дd9])[ьъ']?|(.\\B)+?[оаеиeo])?-?([еёe][бb6](?!о[рй])|и[пб][ае][тц]).*?|([нn][иеаaie]|([дпdp]|[вv][еe3][рpr][тt])[оo0]|[рpr][аa][зсzc3]|[з3z]?[аa]|с(ме)?|[оo0]([тt]|дно)?|апч)?-?[хxh][уuy]([яйиеёюuie]|ли(?!ган)).*?|([вvw][зы3z]|(три|два|четыре)жды|(н|[сc][уuy][кk])[аa])?-?[бb6][лl]([яy](?!(х|ш[кн]|мб)[ауеыио]).*?|[еэe][дтdt][ь']?)|([рp][аa][сзc3z]|[знzn][аa]|[соsc]|[вv][ыi]?|[пp]([еe][рpr][еe]|[рrp][оиioеe]|[оo0][дd])|и[зс]ъ?|[аоao][тt])?[пpn][иеёieu][зz3][дd9].*?|([зz3][аa])?[пp][иеieu][дd][аоеaoe]?[рrp](ну.*?|[оаoa][мm]|([аa][сcs])?([иiu]([лl][иiu])?[нщктлtlsn]ь?)?|([оo](ч[еиei])?|[аa][сcs])?[кk]([оo]й)?|[юu][гg])[ауеыauyei]?|[мm][аa][нnh][дd]([ауеыayueiи]([лl]([иi][сзc3щ])?[ауеыauyei])?|[оo][йi]|[аоao][вvwb][оo](ш|sh)[ь']?([e]?[кk][ауеayue])?|юк(ов|[ауи])?)|[мm][уuy][дd6]([яyаиоaiuo0].*?|[еe]?[нhn]([ьюия'uiya]|ей))|мля([тд]ь)?|лять|([нз]а|по|пи)х|м[ао]л[ао]фь([яию]|[её]й))(?=[\\s,.:;\"']|$)"
-      sound:
-        enable: false
 #endregion swear
 #region name_
   name-:
@@ -507,6 +420,27 @@ join:
   sound:
     enable: false
 #endregion join
+#region mark
+mark:
+  enable: false
+  limit: true
+  color: true
+  range: 100
+  duration: 60
+  item: "WOODEN_SWORD"
+  legacy:
+    enable: true
+    size: 1
+    entity: "MAGMA_CUBE"
+  modern:
+    enable: false
+    scale: 1.0
+    block: "BEACON"
+  cooldown:
+    enable: false
+  sound:
+    enable: false
+#endregion mark
 #region objective
 objective:
   enable: true
@@ -544,6 +478,18 @@ quit:
   sound:
     enable: false
 #endregion quit
+#region rightclick
+rightclick:
+  enable: true
+  destination:
+    type: ACTION_BAR
+    times:
+      stay: 60
+  cooldown:
+    enable: false
+  sound:
+    enable: false
+#endregion rightclick
 #region scoreboard
 scoreboard:
   enable: false
@@ -568,12 +514,10 @@ setblock:
   sound:
     enable: false
 #endregion setblock
-#region blocksign
+#region sign
 sign:
-  enable: true
-  destination:
-    type: CHAT
-#endregion blocksign
+  enable: false
+#endregion sign
 #region spawnpoint
 spawnpoint:
   enable: true

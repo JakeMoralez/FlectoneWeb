@@ -31,8 +31,6 @@
 
 Список [регулярных выражений](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java) для того, чтобы определять ругательство
 
-<!--@include: @/parts/sound.md-->
-
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
 <!--@include: @/parts/words.md#path--> `permission.yml → message.format.moderation.swear`
@@ -49,5 +47,3 @@
 ### `see`
 
 Право для просмотра содержимого в запрещённом слове
-
-<!--@include: @/parts/permission/sound.md-->

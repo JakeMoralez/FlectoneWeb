@@ -187,6 +187,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Достижение', link: '/docs/message/advancement/' },
+          { text: 'Афк', link: '/docs/message/afk/' },
           { text: 'Наковальня', link: '/docs/message/anvil/' },
           { text: 'Автоматическое', link: '/docs/message/auto/' },
           { text: 'Книга', link: '/docs/message/book/' },
@@ -194,20 +195,6 @@ export default defineConfig({
           { text: 'Над головой', link: '/docs/message/bubble/' },
           { text: 'Чат', link: '/docs/message/chat/' },
           { text: 'Очищение', link: '/docs/message/clear/' },
-          {
-            text: 'Контактирование',
-            link: '/docs/message/contact/',
-            collapsed: true,
-            items: [
-              { text: 'Афк', link: '/docs/message/contact/afk/' },
-              { text: 'Стуки', link: '/docs/message/contact/knock/' },
-              { text: 'Метка', link: '/docs/message/contact/mark/' },
-              { text: 'Правое нажатие', link: '/docs/message/contact/rightclick/' },
-              { text: 'Подпись', link: '/docs/message/contact/sign/' },
-              { text: 'Плевок', link: '/docs/message/contact/spit/' },
-              { text: 'Снятие подписи', link: '/docs/message/contact/unsign/' },
-            ]
-          },
           { text: 'Смерть', link: '/docs/message/death/' },
           { text: 'Деоп', link: '/docs/message/deop/' },
           { text: 'Зачарование', link: '/docs/message/enchant/' },
@@ -227,6 +214,7 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   { text: 'Капс', link: '/docs/message/format/moderation/caps/' },
+                  { text: 'Флуд', link: '/docs/message/format/moderation/flood/' },
                   { text: 'Ругательство', link: '/docs/message/format/moderation/swear/' },
                 ]
               },
@@ -240,6 +228,7 @@ export default defineConfig({
           { text: 'Режим игры', link: '/docs/message/gamemode/' },
           { text: 'Приветствие', link: '/docs/message/greeting/' },
           { text: 'Подключение', link: '/docs/message/join/' },
+          { text: 'Метка', link: '/docs/message/mark/' },
           {
             text: 'Значения',
             link: '/docs/message/objective/',
@@ -251,6 +240,7 @@ export default defineConfig({
           },
           { text: 'Оп', link: '/docs/message/op/' },
           { text: 'Отключение', link: '/docs/message/quit/' },
+          { text: 'Правое нажатие', link: '/docs/message/rightclick/' },
           { text: 'Скорборд', link: '/docs/message/scoreboard/' },
           { text: 'Сид', link: '/docs/message/seed/' },
           { text: 'Сетблок', link: '/docs/message/setblock/' },

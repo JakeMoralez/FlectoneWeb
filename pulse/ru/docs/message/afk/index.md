@@ -8,7 +8,7 @@
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.contact.afk`
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.afk`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -32,7 +32,7 @@
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → contact.afk`
+<!--@include: @/parts/words.md#path--> `message.yml → afk`
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/message.yml#afk
@@ -63,7 +63,7 @@
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.afk`
+<!--@include: @/parts/words.md#path--> `permission.yml → message.afk`
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/permission.yml#afk

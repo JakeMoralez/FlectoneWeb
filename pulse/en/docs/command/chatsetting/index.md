@@ -39,7 +39,7 @@ Message if the server disabled the command for `/chatsetting`
 
 Title for the GUI
 
-### `settings`
+### `items`
 
 List of settings and their messages, where:
 - The first line is the item name when enabled
@@ -68,7 +68,7 @@ List of settings and their messages, where:
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/aliases.md-->
 
-### `settings`
+### `items`
 
 List of settings that can be changed
 
@@ -98,7 +98,7 @@ List of materials used to display the setting state
 
 <!--@include: @/parts/permission/permissionTier3.md-->
 
-### `settings`
+### `items`
 
 List of settings and their permissions
 

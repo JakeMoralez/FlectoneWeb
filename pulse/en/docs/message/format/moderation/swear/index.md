@@ -31,8 +31,6 @@ Symbol that replaces each letter of the profanity
 
 List of [regular expressions](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java) to identify profanity
 
-<!--@include: @/parts/sound.md-->
-
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
 <!--@include: @/parts/words.md#path--> `permission.yml → message.format.moderation.swear`
@@ -49,5 +47,3 @@ Permission to ignore formatting
 ### `see`
 
 Permission to view the content of the forbidden word
-
-<!--@include: @/parts/permission/sound.md-->

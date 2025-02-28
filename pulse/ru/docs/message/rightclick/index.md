@@ -1,11 +1,11 @@
-# Right Click 
+# Правое нажатие
 
-A module where **Right Click** on a player creates a message above the player's inventory
+Модуль, при котором **ПКМ** по игроку создаёт сообщение над инвентарём игрока
 ![right click](/rightclick.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → language.yml → message.contact.rightclick`
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.rightclick`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -16,11 +16,11 @@ A module where **Right Click** on a player creates a message above the player's 
 
 ### `format`
 
-The message that will be sent to the player who right-clicked on another player
+Сообщение, которое будет отправлено игроку, нажавшему на другого игрока
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → contact.rightclick`
+<!--@include: @/parts/words.md#path--> `message.yml → rightclick`
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/message.yml#rightclick
@@ -32,11 +32,11 @@ The message that will be sent to the player who right-clicked on another player
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.contact.rightclick`
+<!--@include: @/parts/words.md#path--> `permission.yml → message.rightclick`
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/permission.yml#rightclick
 
 <!--@include: @/parts/permission/permissionTier3.md-->
 <!--@include: @/parts/permission/cooldown.md-->
-<!--@include: @/parts/permission/sound.md--> 
+<!--@include: @/parts/permission/sound.md-->

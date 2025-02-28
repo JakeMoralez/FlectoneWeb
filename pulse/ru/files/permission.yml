@@ -91,105 +91,102 @@ command:
   chatsetting:
     name: "flectonepulse.module.command.chatsetting"
     type: TRUE
-    settings:
-      CHAT:
-        name: "flectonepulse.module.command.chatsetting.chat"
-        type: TRUE
-      COLOR:
-        name: "flectonepulse.module.command.chatsetting.color"
-        type: TRUE
-      STREAM:
-        name: "flectonepulse.module.command.chatsetting.stream"
-        type: OP
-      SPY:
-        name: "flectonepulse.module.command.chatsetting.spy"
-        type: OP
+    items:
       ADVANCEMENT:
         name: "flectonepulse.module.command.chatsetting.advancement"
-        type: TRUE
-      DEATH:
-        name: "flectonepulse.module.command.chatsetting.death"
-        type: TRUE
-      JOIN:
-        name: "flectonepulse.module.command.chatsetting.join"
-        type: TRUE
-      QUIT:
-        name: "flectonepulse.module.command.chatsetting.quit"
-        type: TRUE
-      AUTO:
-        name: "flectonepulse.module.command.chatsetting.auto"
-        type: TRUE
-      ME:
-        name: "flectonepulse.module.command.chatsetting.me"
-        type: TRUE
-      TRY:
-        name: "flectonepulse.module.command.chatsetting.try"
-        type: TRUE
-      DICE:
-        name: "flectonepulse.module.command.chatsetting.dice"
-        type: TRUE
-      BALL:
-        name: "flectonepulse.module.command.chatsetting.ball"
-        type: TRUE
-      MUTE:
-        name: "flectonepulse.module.command.chatsetting.mute"
-        type: TRUE
-      BAN:
-        name: "flectonepulse.module.command.chatsetting.ban"
-        type: TRUE
-      WARN:
-        name: "flectonepulse.module.command.chatsetting.warn"
-        type: TRUE
-      TELL:
-        name: "flectonepulse.module.command.chatsetting.tell"
-        type: TRUE
-      REPLY:
-        name: "flectonepulse.module.command.chatsetting.reply"
-        type: TRUE
-      MAIL:
-        name: "flectonepulse.module.command.chatsetting.mail"
-        type: TRUE
-      TICTACTOE:
-        name: "flectonepulse.module.command.chatsetting.tictactoe"
-        type: TRUE
-      KICK:
-        name: "flectonepulse.module.command.chatsetting.kick"
-        type: TRUE
-      TRANSLATETO:
-        name: "flectonepulse.module.command.chatsetting.translateto"
-        type: TRUE
-      BROADCAST:
-        name: "flectonepulse.module.command.chatsetting.broadcast"
-        type: TRUE
-      DO:
-        name: "flectonepulse.module.command.chatsetting.do"
-        type: TRUE
-      COIN:
-        name: "flectonepulse.module.command.chatsetting.coin"
         type: TRUE
       AFK:
         name: "flectonepulse.module.command.chatsetting.afk"
         type: TRUE
-      POLL:
-        name: "flectonepulse.module.command.chatsetting.poll"
+      AUTO:
+        name: "flectonepulse.module.command.chatsetting.auto"
         type: TRUE
-      SPIT:
-        name: "flectonepulse.module.command.chatsetting.spit"
+      BALL:
+        name: "flectonepulse.module.command.chatsetting.ball"
         type: TRUE
-      GREETING:
-        name: "flectonepulse.module.command.chatsetting.greeting"
+      BAN:
+        name: "flectonepulse.module.command.chatsetting.ban"
         type: TRUE
-      ROCKPAPERSCISSORS:
-        name: "flectonepulse.module.command.chatsetting.rockpaperscissors"
+      BROADCAST:
+        name: "flectonepulse.module.command.chatsetting.broadcast"
+        type: TRUE
+      CHAT:
+        name: "flectonepulse.module.command.chatsetting.chat"
+        type: TRUE
+      COIN:
+        name: "flectonepulse.module.command.chatsetting.coin"
+        type: TRUE
+      COLOR:
+        name: "flectonepulse.module.command.chatsetting.color"
+        type: TRUE
+      DEATH:
+        name: "flectonepulse.module.command.chatsetting.death"
+        type: TRUE
+      DICE:
+        name: "flectonepulse.module.command.chatsetting.dice"
         type: TRUE
       DISCORD:
         name: "flectonepulse.module.command.chatsetting.discord"
         type: TRUE
+      DO:
+        name: "flectonepulse.module.command.chatsetting.do"
+        type: TRUE
+      GREETING:
+        name: "flectonepulse.module.command.chatsetting.greeting"
+        type: TRUE
+      JOIN:
+        name: "flectonepulse.module.command.chatsetting.join"
+        type: TRUE
+      KICK:
+        name: "flectonepulse.module.command.chatsetting.kick"
+        type: TRUE
+      MAIL:
+        name: "flectonepulse.module.command.chatsetting.mail"
+        type: TRUE
+      ME:
+        name: "flectonepulse.module.command.chatsetting.me"
+        type: TRUE
+      MUTE:
+        name: "flectonepulse.module.command.chatsetting.mute"
+        type: TRUE
+      POLL:
+        name: "flectonepulse.module.command.chatsetting.poll"
+        type: TRUE
+      QUIT:
+        name: "flectonepulse.module.command.chatsetting.quit"
+        type: TRUE
+      REPLY:
+        name: "flectonepulse.module.command.chatsetting.reply"
+        type: TRUE
+      ROCKPAPERSCISSORS:
+        name: "flectonepulse.module.command.chatsetting.rockpaperscissors"
+        type: TRUE
+      SPY:
+        name: "flectonepulse.module.command.chatsetting.spy"
+        type: OP
+      STREAM:
+        name: "flectonepulse.module.command.chatsetting.stream"
+        type: OP
       TELEGRAM:
         name: "flectonepulse.module.command.chatsetting.telegram"
         type: TRUE
+      TELL:
+        name: "flectonepulse.module.command.chatsetting.tell"
+        type: TRUE
+      TICTACTOE:
+        name: "flectonepulse.module.command.chatsetting.tictactoe"
+        type: TRUE
+      TRANSLATETO:
+        name: "flectonepulse.module.command.chatsetting.translateto"
+        type: TRUE
+      TRY:
+        name: "flectonepulse.module.command.chatsetting.try"
+        type: TRUE
       TWITCH:
         name: "flectonepulse.module.command.chatsetting.twitch"
+        type: TRUE
+      WARN:
+        name: "flectonepulse.module.command.chatsetting.warn"
         type: TRUE
     cooldown-bypass:
       name: "flectonepulse.module.command.chatsetting.cooldown.bypass"
@@ -452,17 +449,6 @@ command:
       name: "flectonepulse.module.command.rockpaperscissors.sound"
       type: TRUE
 #endregion rockpaperscissors
-#region spit
-  spit:
-    name: "flectonepulse.module.command.spit"
-    type: TRUE
-    cooldown-bypass:
-      name: "flectonepulse.module.command.spit.cooldown.bypass"
-      type: OP
-    sound:
-      name: "flectonepulse.module.command.spit.sound"
-      type: TRUE
-#endregion spit
 #region spy
   spy:
     name: "flectonepulse.module.command.spy"
@@ -686,6 +672,11 @@ message:
       name: "flectonepulse.module.message.advancement.sound"
       type: TRUE
 #endregion advancement
+#region afk
+  afk:
+    name: "flectonepulse.module.message.afk"
+    type: TRUE
+#endregion afk
 #region anvil
   anvil:
     name: "flectonepulse.module.message.anvil"
@@ -747,86 +738,6 @@ message:
       name: "flectonepulse.module.message.clear.sound"
       type: TRUE
 #endregion clear
-#region contact
-  contact:
-    name: "flectonepulse.module.message.contact"
-    type: TRUE
-#endregion contact
-#region afk
-    afk:
-      name: "flectonepulse.module.message.contact.afk"
-      type: TRUE
-#endregion afk
-#region knock
-    knock:
-      name: "flectonepulse.module.message.contact.knock"
-      type: TRUE
-      variants:
-        GLASS:
-          name: "flectonepulse.module.message.contact.knock.glass.sound"
-          type: TRUE
-        DOOR:
-          name: "flectonepulse.module.message.contact.knock.door.sound"
-          type: TRUE
-      cooldown-bypass:
-        name: "flectonepulse.module.message.contact.knock.cooldown.bypass"
-        type: OP
-#endregion knock
-#region mark
-    mark:
-      name: "flectonepulse.module.message.contact.mark"
-      type: TRUE
-      cooldown-bypass:
-        name: "flectonepulse.module.message.contact.mark.cooldown.bypass"
-        type: OP
-      sound:
-        name: "flectonepulse.module.message.contact.mark.sound"
-        type: TRUE
-#endregion mark
-#region rightclick
-    rightclick:
-      name: "flectonepulse.module.message.contact.rightclick"
-      type: TRUE
-      cooldown-bypass:
-        name: "flectonepulse.module.message.contact.rightclick.cooldown.bypass"
-        type: OP
-      sound:
-        name: "flectonepulse.module.message.contact.rightclick.sound"
-        type: TRUE
-#endregion rightclick
-#region sign
-    sign:
-      name: "flectonepulse.module.message.contact.sign"
-      type: TRUE
-      cooldown-bypass:
-        name: "flectonepulse.module.message.contact.sign.cooldown.bypass"
-        type: OP
-      sound:
-        name: "flectonepulse.module.message.contact.sign.sound"
-        type: TRUE
-#endregion sign
-#region spit
-    spit:
-      name: "flectonepulse.module.message.contact.spit"
-      type: TRUE
-      cooldown-bypass:
-        name: "flectonepulse.module.message.contact.spit.cooldown.bypass"
-        type: OP
-      sound:
-        name: "flectonepulse.module.message.contact.spit.sound"
-        type: TRUE
-#endregion spit
-#region unsign
-    unsign:
-      name: "flectonepulse.module.message.contact.unsign"
-      type: TRUE
-      cooldown-bypass:
-        name: "flectonepulse.module.message.contact.unsign.cooldown.bypass"
-        type: OP
-      sound:
-        name: "flectonepulse.module.message.contact.unsign.sound"
-        type: TRUE
-#endregion unsign
 #region death
   death:
     name: "flectonepulse.module.message.death"
@@ -1008,10 +919,15 @@ message:
         bypass:
           name: "flectonepulse.module.message.format.moderation.caps.bypass"
           type: OP
-        sound:
-          name: "flectonepulse.module.message.format.moderation.caps.sound"
-          type: TRUE
 #endregion caps
+#region flood
+      flood:
+        name: "flectonepulse.module.message.format.moderation.flood"
+        type: TRUE
+        bypass:
+          name: "flectonepulse.module.message.format.moderation.flood.bypass"
+          type: OP
+#endregion flood
 #region swear
       swear:
         name: "flectonepulse.module.message.format.moderation.swear"
@@ -1022,9 +938,6 @@ message:
         see:
           name: "flectonepulse.module.message.format.moderation.swear.see"
           type: OP
-        sound:
-          name: "flectonepulse.module.message.format.moderation.swear.sound"
-          type: TRUE
 #endregion swear
 #region name_
     name-:
@@ -1096,6 +1009,17 @@ message:
       name: "flectonepulse.module.message.join.sound"
       type: TRUE
 #endregion join
+#region mark
+  mark:
+    name: "flectonepulse.module.message.mark"
+    type: TRUE
+    cooldown-bypass:
+      name: "flectonepulse.module.message.mark.cooldown.bypass"
+      type: OP
+    sound:
+      name: "flectonepulse.module.message.mark.sound"
+      type: TRUE
+#endregion mark
 #region objective
   objective:
     name: "flectonepulse.module.message.objective"
@@ -1127,6 +1051,17 @@ message:
       name: "flectonepulse.module.message.quit.sound"
       type: TRUE
 #endregion quit
+#region rightclick
+  rightclick:
+    name: "flectonepulse.module.message.rightclick"
+    type: TRUE
+    cooldown-bypass:
+      name: "flectonepulse.module.message.rightclick.cooldown.bypass"
+      type: OP
+    sound:
+      name: "flectonepulse.module.message.rightclick.sound"
+      type: TRUE
+#endregion rightclick
 #region scoreboard
   scoreboard:
     name: "flectonepulse.module.message.scoreboard"
@@ -1148,11 +1083,11 @@ message:
       name: "flectonepulse.module.message.setblock.sound"
       type: TRUE
 #endregion setblock
-#region blocksign
+#region sign
   sign:
     name: "flectonepulse.module.message.sign"
     type: TRUE
-#endregion blocksign
+#endregion sign
 #region spawnpoint
   spawnpoint:
     name: "flectonepulse.module.message.spawnpoint"
