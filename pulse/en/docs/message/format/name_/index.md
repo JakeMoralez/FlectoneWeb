@@ -47,6 +47,14 @@ Suffix displayed with the name if the nickname is enabled
 
 ### `team`
 
+::: warning WARNING  
+If there are issues with `TAB` (e.g., sorting in TAB) or another plugin that uses the `scoreboard`, this parameter needs to be turned off  
+:::
+
+::: warning WARNING  
+If the parameter is turned off, player names will be visible, and the `mark` module will not work correctly  
+:::
+
 Enables or disables the use of `scoreboard` commands
 
 ### `visible`

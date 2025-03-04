@@ -341,7 +341,7 @@ command:
     sender: "<fcolor:2>✉ Письмо #<id> для <display_name> » <fcolor:1><message>"
     receiver: "<fcolor:2>✉ Письмо от <display_name> » <fcolor:1><message>"
 #endregion mail
-#region maintenace
+#region maintenance
   maintenance:
     not: "<color:#ff7171><b>⁉</b> Технические работы не идут"
     already: "<color:#ff7171><b>⁉</b> Технические работы уже идут"
@@ -350,7 +350,7 @@ command:
     kick: "<color:#ff7171>★ На сервере ведутся технические работы"
     format-true: "<fcolor:1>★ Ты <fcolor:2>включил</fcolor:2> технические работы на сервере"
     format-false: "<fcolor:1>★ Ты <fcolor:2>выключил</fcolor:2> технические работы на сервере"
-#endregion maintenace
+#endregion maintenance
 #region me
   me:
     format: "<fcolor:1>✎ <display_name> <message>"

@@ -6,9 +6,8 @@ Permission name
 
 Permission type
 
-| Type      | Explanation                                                   |
-|-----------|--------------------------------------------------------------|
-| `TRUE`    | Available for any player                                     |
-| `FALSE`   | Available if granted separately (e.g., via LuckPerms)        |
-| `OP`      | Available for server operators                               |
-| `NOT_OP`  | Available if granted separately (e.g., via LuckPerms)        |
+| Type      | Explanation                                                                 |
+|-----------|-----------------------------------------------------------------------------|
+| `TRUE`    | Available to any player                                                     |
+| `OP`      | Available to server operators                                               |
+| `NOT_OP`  | Not available to anyone, must be granted separately (e.g., using LuckPerms) |
