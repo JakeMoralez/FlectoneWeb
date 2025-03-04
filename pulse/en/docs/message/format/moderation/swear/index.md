@@ -31,6 +31,11 @@ Symbol that replaces each letter of the profanity
 
 List of [regular expressions](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java) to identify profanity
 
+::: info EXAMPLE
+- For ip `\\b((?:\\d{1,3}\\.){3}\\d{1,3})\\b`
+- For url `(?i)\\b((https?:\\/\\/)?([\\w\\.а-яА-Я-]+\\.([a-z]{2,4}|[рР][фФ]|[уУ][кК][рР]))\\b(:\\d{2,7})?(\\/\\S+)?)`
+:::
+
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
 <!--@include: @/parts/words.md#path--> `permission.yml → message.format.moderation.swear`
