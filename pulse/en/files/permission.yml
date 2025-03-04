@@ -902,7 +902,7 @@ message:
         type: OP
       bypass:
         name: "flectonepulse.module.message.format.mention.bypass"
-        type: NOT_OP
+        type: FALSE
       sound:
         name: "flectonepulse.module.message.format.mention.sound"
         type: TRUE
