@@ -134,7 +134,7 @@ Achievement type (`TASK` regular, `GOAL` goal, `CHALLENGE` challenge)
 
 ::: warning WARNING
 
-Not recommended for global messages
+May cause delays, so not recommended for use
 
 :::
 
