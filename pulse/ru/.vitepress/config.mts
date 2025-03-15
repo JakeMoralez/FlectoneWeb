@@ -190,6 +190,7 @@ export default defineConfig({
           { text: 'Афк', link: '/docs/message/afk/' },
           { text: 'Наковальня', link: '/docs/message/anvil/' },
           { text: 'Автоматическое', link: '/docs/message/auto/' },
+          { text: 'Кровать', link: '/docs/message/bed/' },
           { text: 'Книга', link: '/docs/message/book/' },
           { text: 'Бренд', link: '/docs/message/brand/' },
           { text: 'Над головой', link: '/docs/message/bubble/' },
@@ -245,7 +246,8 @@ export default defineConfig({
           { text: 'Сид', link: '/docs/message/seed/' },
           { text: 'Сетблок', link: '/docs/message/setblock/' },
           { text: 'Табличка', link: '/docs/message/sign/' },
-          { text: 'Спавнпоинт', link: '/docs/message/spawnpoint/' },
+          { text: 'Сон', link: '/docs/message/sleep/' },
+          { text: 'Спавн', link: '/docs/message/spawn/' },
           {
             text: 'Статус',
             link: '/docs/message/status/',

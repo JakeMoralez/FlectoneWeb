@@ -628,6 +628,14 @@ message:
         - "<br><fcolor:1>      ❝ Join our discord ❠ <br><fcolor:2>   <u><click:open_url:\"https://discord.flectone.net\"><hover:show_text:\"<fcolor:2>https://discord.flectone.net\">https://discord.flectone.net</hover></click></u><br>"
         - "<br><fcolor:1>◇ This server uses <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
 #endregion auto
+#region bed
+  bed:
+    no-sleep: "<fcolor:1>🛌 You can sleep only at night or during thunderstorms"
+    not-safe: "<fcolor:1>🛌 You may not rest now; there are monsters nearby"
+    obstructed: "<fcolor:1>🛌 This bed is obstructed"
+    occupied: "<fcolor:1>🛌 This bed is occupied"
+    too-far-away: "<fcolor:1>🛌 You may not rest now; the bed is too far away"
+#endregion bed
 #region brand
   brand:
     values:
@@ -866,11 +874,19 @@ message:
   setblock:
     format: "<fcolor:1>⏹ Changed the block at <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2>"
 #endregion setblock
-#region spawnpoint
-  spawnpoint:
+#region sleep
+  sleep:
+    not-possible: "<fcolor:1>🛌 No amount of rest can pass this night"
+    players-sleeping: "<fcolor:1>🛌 <fcolor:2><sleep_count></fcolor:2>/<fcolor:2><all_count></fcolor:2> players sleeping"
+    skipping-night: "<fcolor:1>🛌 Sleeping through this night"
+#endregion sleep
+#region spawn
+  spawn:
+    not-valid: "<fcolor:1>🛌 You have no home bed or charged respawn anchor, or it was obstructed"
+    set: "<fcolor:1>🛌 Respawn point set"
     single: "<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <display_name>"
     multiple: "<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <fcolor:2><count></fcolor:2> players"
-#endregion spawnpoint
+#endregion spawn
 #region status
   status:
 #endregion status

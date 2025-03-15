@@ -151,6 +151,7 @@ export default defineConfig({
           { text: 'Afk', link: '/docs/message/afk/' },
           { text: 'Anvil', link: '/docs/message/anvil/' },
           { text: 'Auto', link: '/docs/message/auto/' },
+          { text: 'Bed', link: '/docs/message/bed/' },
           { text: 'Book', link: '/docs/message/book/' },
           { text: 'Brand', link: '/docs/message/brand/' },
           { text: 'Bubble', link: '/docs/message/bubble/' },
@@ -206,7 +207,8 @@ export default defineConfig({
           { text: 'Seed', link: '/docs/message/seed/' },
           { text: 'Setblock', link: '/docs/message/setblock/' },
           { text: 'Sign', link: '/docs/message/sign/' },
-          { text: 'Spawnpoint', link: '/docs/message/spawnpoint/' },
+          { text: 'Sleep', link: '/docs/message/sleep/' },
+          { text: 'Spawn', link: '/docs/message/spawn/' },
           {
             text: 'Status',
             link: '/docs/message/status/',

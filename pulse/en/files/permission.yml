@@ -691,6 +691,14 @@ message:
         name: "flectonepulse.module.message.auto.sound"
         type: TRUE
 #endregion auto
+#region bed
+  bed:
+    name: "flectonepulse.module.message.bed"
+    type: TRUE
+    sound:
+      name: "flectonepulse.module.message.bed.sound"
+      type: TRUE
+#endregion bed
 #region book
   book:
     name: "flectonepulse.module.message.book"
@@ -1088,14 +1096,22 @@ message:
     name: "flectonepulse.module.message.sign"
     type: TRUE
 #endregion sign
-#region spawnpoint
-  spawnpoint:
-    name: "flectonepulse.module.message.spawnpoint"
+#region sleep
+  sleep:
+    name: "flectonepulse.module.message.sleep"
     type: TRUE
     sound:
-      name: "flectonepulse.module.message.spawnpoint.sound"
+      name: "flectonepulse.module.message.sleep.sound"
       type: TRUE
-#endregion spawnpoint
+#endregion sleep
+#region spawn
+  spawn:
+    name: "flectonepulse.module.message.spawn"
+    type: TRUE
+    sound:
+      name: "flectonepulse.module.message.spawn.sound"
+      type: TRUE
+#endregion spawn
 #region status
   status:
     name: "flectonepulse.module.message.status"

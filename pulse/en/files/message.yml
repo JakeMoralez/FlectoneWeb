@@ -53,6 +53,16 @@ auto:
       sound:
         enable: false
 #endregion auto
+#region bed
+bed:
+  enable: true
+  destination:
+    type: ACTION_BAR
+    times:
+      stay: 60
+  sound:
+    enable: false
+#endregion bed
 #region book
 book:
   enable: false
@@ -518,14 +528,24 @@ setblock:
 sign:
   enable: false
 #endregion sign
-#region spawnpoint
-spawnpoint:
+#region sleep
+sleep:
+  enable: true
+  destination:
+    type: ACTION_BAR
+    times:
+      stay: 60
+  sound:
+    enable: false
+#endregion sleep
+#region spawn
+spawn:
   enable: true
   destination:
     type: CHAT
   sound:
     enable: false
-#endregion spawnpoint
+#endregion spawn
 #region status
 status:
   enable: true
