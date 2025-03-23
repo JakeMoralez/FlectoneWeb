@@ -57,6 +57,10 @@ If the parameter is turned off, player names will be visible, and the `mark` mod
 
 Enables or disables the use of `scoreboard` commands
 
+### `disable-team-on-other-scoreboard`
+
+Automatically disables the `team` feature if another `Scoreboard` plugin (e.g., `TAB`) is installed on the server
+
 ### `visible`
 
 Enables or disables the name tag above the player

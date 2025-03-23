@@ -417,7 +417,7 @@ command:
     sender: "<fcolor:2>✂ <fcolor:1>Теперь ходит <display_name>"
     receiver: "<fcolor:2>✂ <display_name> <fcolor:1>предложил сыграть в камень-ножницы-бумага"
     format-move: "<fcolor:2>✂ <fcolor:1>Выбери свой ход <fcolor:2><click:run_command:\"/rps <target> rock <uuid>\">[🪨 камень]</click> <click:run_command:\"/rps <target> scissors <uuid>\">[✂ ножницы]</click> <click:run_command:\"/rps <target> paper <uuid>\">[🧻 бумага]</click>"
-    format-win: "<color:#98FB98>✂ Выйграл <display_name>! <b><sender_move></b> на <b><receiver_move></b>"
+    format-win: "<color:#98FB98>✂ Выиграл <display_name>! <b><sender_move></b> на <b><receiver_move></b>"
     format-draw: "<color:#98FB98>✂ Ничья! Вы оба выбрали <b><move>"
     strategies:
       scissors: "ножницы"
@@ -488,7 +488,7 @@ command:
     current-move: "<fcolor:2>☐ → <symbol></fcolor:2>"
     last-move: "<fcolor:2>Последний ход (<move>)</fcolor:2>"
     format-move: "<fcolor:2>Ход <player> </fcolor:2>"
-    format-win: "<color:#98FB98><player> выйграл</color:#98FB98>"
+    format-win: "<color:#98FB98><player> выиграл</color:#98FB98>"
     format-draw: "<color:#98FB98>Ничья 👬</color:#98FB98>"
     sender: "<fcolor:1>☐ Предложение сыграть в крестики-нолики отправлено для <display_name>"
     format-create: "<click:run_command:\"/tictactoe %d create\"><fcolor:1>☐ Есть предложение сыграть в крестики-нолики от <display_name>, принять? [+]"

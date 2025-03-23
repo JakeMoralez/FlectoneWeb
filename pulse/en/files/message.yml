@@ -355,8 +355,9 @@ format:
 #region name_
   name-:
     enable: true
-    team: true
-    visible: false
+    team: false
+    disable-team-on-other-scoreboard: true
+    visible: true
     color: "<white>"
 #endregion name_
 #region questionanswer
@@ -582,6 +583,7 @@ tab:
 #region header
   header:
     enable: true
+    disable-on-other-tab: true
     random: true
     destination:
       type: TAB_HEADER
@@ -592,6 +594,7 @@ tab:
 #region footer
   footer:
     enable: true
+    disable-on-other-tab: true
     random: true
     destination:
       type: TAB_FOOTER
@@ -602,6 +605,7 @@ tab:
 #region playerlistname
   playerlistname:
     enable: true
+    disable-on-other-tab: false
     ticker:
       enable: true
       period: 100

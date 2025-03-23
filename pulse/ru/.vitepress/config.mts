@@ -174,6 +174,7 @@ export default defineConfig({
           { text: 'SimpleVoice', link: '/docs/integration/simplevoice/' },
           { text: 'SkinsRestorer', link: '/docs/integration/skinsrestorer/' },
           { text: 'SuperVanish', link: '/docs/integration/supervanish/' },
+          { text: 'TAB', link: '/docs/integration/tab/' },
           { text: 'Телеграм', link: '/docs/integration/telegram/' },
           { text: 'Triton', link: '/docs/integration/triton/' },
           { text: 'Твич', link: '/docs/integration/twitch/' },

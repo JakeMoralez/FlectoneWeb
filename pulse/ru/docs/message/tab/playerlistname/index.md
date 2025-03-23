@@ -26,6 +26,7 @@
 <<< @/files/message.yml#playerlistname
 
 <!--@include: @/parts/enable.md-->
+<!--@include: @/parts/disableOnOtherTab.md-->
 <!--@include: @/parts/ticker.md-->
 
 [//]: # (permission.yml)

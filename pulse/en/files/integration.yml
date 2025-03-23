@@ -46,7 +46,7 @@ interactivechat:
 #region luckperms
 luckperms:
   enable: true
-  tab-sort: false
+  tab-sort: true
 #endregion luckperms
 #region placeholderapi
 placeholderapi:
@@ -68,6 +68,10 @@ skinsrestorer:
 supervanish:
   enable: true
 #endregion supervanish
+#region integrationtab
+tab:
+  enable: true
+#endregion integrationtab
 #region telegram
 telegram:
   enable: false

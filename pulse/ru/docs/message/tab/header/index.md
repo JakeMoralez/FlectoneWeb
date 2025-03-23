@@ -26,6 +26,7 @@
 <<< @/files/message.yml#header
 
 <!--@include: @/parts/enable.md-->
+<!--@include: @/parts/disableOnOtherTab.md-->
 <!--@include: @/parts/random.md-->
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/ticker.md-->

@@ -634,6 +634,11 @@ integration:
     name: "flectonepulse.module.integration.supervanish"
     type: TRUE
 #endregion supervanish
+#region integrationtab
+  tab:
+    name: "flectonepulse.module.integration.tab"
+    type: TRUE
+#endregion integrationtab
 #region telegram
   telegram:
     name: "flectonepulse.module.integration.telegram"
