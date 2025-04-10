@@ -8,20 +8,29 @@
 # __/\___  ____/\_____  ___/    \______
 #        \/           \/  
 # 
-#region en_us
+#region message
 cooldown: "<color:#ff7171><b>⁉</b> Too fast, you'll be able to use it in <time>"
 time:
   format: "dd'd' HH'h' mm'm' ss.SSS's'"
   permanent: "PERMANENT"
   zero: "0s"
-#endregion en_us
+#endregion message
 #region command
 command:
+  exception:
+    execution: "<color:#ff7171><b>⁉</b> An error occurred while executing the command <br><color:#ff7171><b>⁉</b> <exception>"
+    parse-unknown: "<color:#ff7171><b>⁉</b> Unknown argument error while parsing <br><input>"
+    parse-boolean: "<color:#ff7171><b>⁉</b> A boolean argument was expected, but you entered <br><input>"
+    parse-number: "<color:#ff7171><b>⁉</b> A number argument was expected, but you entered <br><input>"
+    parse-string: "<color:#ff7171><b>⁉</b> A string argument was expected, but you entered <br><input>"
+    permission: "<color:#ff7171><b>⁉</b> You don't have permission to use this command"
+    syntax: "<hover:show_text:\"<fcolor:2>Use <br><fcolor:1>/<correct_syntax>\"><click:suggest_command:\"/<command> \"><fcolor:2>┌<br>│ Usage →<br>│ <fcolor:1>/<correct_syntax><br><fcolor:2>└"
   prompt:
     message: "message"
     hard: "hard"
     accept: "accept"
     turn: "turn on"
+    type: "type"
     reason: "reason"
     category: "category"
     id: "id"
@@ -343,8 +352,6 @@ command:
 #endregion mail
 #region maintenance
   maintenance:
-    not: "<color:#ff7171><b>⁉</b> You have not maintenance"
-    already: "<color:#ff7171><b>⁉</b> You have already maintenance"
     server-description: "<color:#ff7171>The server is under maintenance"
     server-version: "Maintenance"
     kick: "<color:#ff7171>★ The server is under maintenance"
@@ -393,15 +400,17 @@ command:
 #endregion ping
 #region poll
   poll:
-    null-poll: "<color:#ff7171><b>⁉</b> This poll does not exist"
-    expired: "<color:#ff7171><b>⁉</b> This poll has already ended"
-    already: "<color:#ff7171><b>⁉</b> You've already voted in this poll"
+    null-poll: "<color:#ff7171><b>⁉</b> Poll not found"
+    expired: "<color:#ff7171><b>⁉</b> The poll has ended"
+    already: "<color:#ff7171><b>⁉</b> You have already voted in this poll"
     vote-true: "<color:#4eff52>👍 You voted for <answer_id> in poll #<id>. There are <count> of you"
     vote-false: "<color:#ff4e4e>🖓 You rejected <answer_id> in poll #<id>. There are <count> without you"
-    count-answers: "<color:#4eff52><bold><count></bold> for [<answer_key>] - <answer_value> <br>"
-    vote-button: "<color:#4eff52><hover:show_text:\"<color:#4eff52>Vote for <bold><answer_key>\"><click:run_command:\"/poll vote <id> <number>\">[<answer_key>] - <answer_value> <br>"
-    format-start: "<br><color:#fce303>🗐 There's a poll #<id> going on right now <br>❓ <message> <br><answers>"
-    format-over: "<br><color:#fce303>🗐 Poll #<id> is over <br>❓ <message> <br>Votes: <br><answers>"
+    format: "<br><color:#fce303>│ <status> <br>│ <message> <br>├─────────────<br><answers>"
+    answer-template: "<color:#fce303>│ <count> → <color:#4eff52><hover:show_text:\"<color:#4eff52>Vote for <bold><answer>\"><click:run_command:\"/pollvote <id> <number>\"><answer> [👍]<br>"
+    status:
+      start: "New poll #<b><id></b> has been created"
+      run: "Poll #<b><id></b> is in progress"
+      end: "Poll #<b><id></b> has ended"
 #endregion poll
 #region reply
   reply:
@@ -436,8 +445,8 @@ command:
     not: "<color:#ff7171><b>⁉</b> You don't stream"
     prefix-true: "<color:#ff4e4e>⏻</color:#ff4e4e> "
     prefix-false: ""
-    url-tag: "<fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url></hover></click>"
-    format-start: "<br><color:#ff4e4e>🔔 <fcolor:1>Announcement <color:#ff4e4e>🔔 <br><br><fcolor:1><display_name> started stream <br><br><urls>"
+    url-template: "<color:#ff4e4e>│ <fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url></hover></click>"
+    format-start: "<br><color:#ff4e4e>│ 🔔 <fcolor:1>Announcement <br><color:#ff4e4e>│<br><color:#ff4e4e>│ <fcolor:1><display_name> started streaming<br><color:#ff4e4e>│<br><urls><br>"
     format-end: "<fcolor:2>★ Thanks for streaming on our server!"
 #endregion stream
 #region symbol
@@ -477,7 +486,7 @@ command:
     wrong-move: "<color:#ff7171><b>⁉</b> This step is not possible"
     wrong-by-player: "<color:#ff7171><b>⁉</b> This game ended because player quit"
     symbol:
-      empty: "<hover:show_text:\"<fcolor:1>Move <move>\"><click:run_command:\"/tictactoe %d <move>\">☐</click></hover>"
+      blank: "<hover:show_text:\"<fcolor:1>Move <move>\"><click:run_command:\"/tictactoemove %d <move>\">☐</click></hover>"
       first: "<fcolor:2>☑</fcolor:2>"
       first-remove: "<color:#ff7171>☑</color:#ff7171>"
       first-win: "<color:#98FB98>☑</color:#98FB98>"
@@ -491,7 +500,7 @@ command:
     format-win: "<color:#98FB98><player> won this game</color:#98FB98>"
     format-draw: "<color:#98FB98>The game ended in a draw 👬</color:#98FB98>"
     sender: "<fcolor:1>☐ An offer to play was sent to <display_name>"
-    format-create: "<click:run_command:\"/tictactoe %d create\"><fcolor:1>☐ Received an invite to play tic-tac-toe with <display_name>, accept? [+]"
+    receiver: "<click:run_command:\"/tictactoemove %d create\"><fcolor:1>☐ Received an invite to play tic-tac-toe with <display_name>, accept? [+]"
 #endregion tictactoe
 #region translateto
   translateto:
@@ -793,17 +802,20 @@ message:
 #region moderation
     moderation:
 #endregion moderation
+#region newbie
+      newbie:
+        reason: "You're still too new"
+#endregion newbie
 #region swear
       swear:
         symbol: "❤"
 #endregion swear
 #region name_
     name-:
+      constant: ""
       display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Write to <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
       entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:<name>> <br><fcolor:1>Type <fcolor:2><lang:<type>> <br><fcolor:1>ID <fcolor:2><uuid>\"><lang:<name>></hover></fcolor:2>"
       unknown: "<fcolor:2><name></fcolor:2>"
-      prefix: "<vault_prefix><stream_prefix>"
-      suffix: "<afk_suffix><vault_suffix>"
 #endregion name_
 #region questionanswer
     question-answer:
@@ -846,18 +858,6 @@ message:
   op:
     format: "<fcolor:1>🤖 Made <display_name> a server operator"
 #endregion op
-#region scoreboard
-  scoreboard:
-    values:
-      - - "<fcolor:2>FlectonePulse"
-        - " "
-        - "<fcolor:2>TPS <tps>"
-        - " "
-      - - "<fcolor:1>FlectonePulse"
-        - " "
-        - "<fcolor:1>Ping <ping>"
-        - " "
-#endregion scoreboard
 #region quit
   quit:
     format: "<color:#ff4e4e>← <display_name>"
@@ -874,6 +874,18 @@ message:
   setblock:
     format: "<fcolor:1>⏹ Changed the block at <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2>"
 #endregion setblock
+#region sidebar
+  sidebar:
+    values:
+      - - "<fcolor:2>FlectonePulse"
+        - " "
+        - "<fcolor:2>TPS <tps>"
+        - " "
+      - - "<fcolor:1>FlectonePulse"
+        - " "
+        - "<fcolor:1>Ping <ping>"
+        - " "
+#endregion sidebar
 #region sleep
   sleep:
     not-possible: "<fcolor:1>🛌 No amount of rest can pass this night"

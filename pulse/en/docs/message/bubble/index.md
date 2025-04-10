@@ -68,6 +68,10 @@ Enables functionality
 
 Enables text shadow  
 
+#### `interaction-riding`
+
+Allows using `double` values in `height`, otherwise only whole numbers will be accepted **(only for 1.21.3 and above)**
+
 #### `height`  
 
 How high above the player the message will be  

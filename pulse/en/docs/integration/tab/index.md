@@ -1,7 +1,7 @@
 # TAB
 
 Integration with `TAB` resolves compatibility issues by disabling certain features in `FlectonePulse`:
-- [Name](/docs/message/format/name_/)
+- [Scoreboard](/docs/message/format/scoreboard/)
 - [Header](/docs/message/tab/header/)
 - [Footer](/docs/message/tab/footer/)
 - [Player List Name](/docs/message/tab/playerlistname/)
@@ -11,9 +11,25 @@ Integration with `TAB` resolves compatibility issues by disabling certain featur
 <!--@include: @/parts/words.md#path--> `integration.yml → tab`
 
 <!--@include: @/parts/words.md#default-->
-<<< @/files/integration.yml#integrationtab
+<<< @/files/integration.yml#tab
 
 <!--@include: @/parts/enable.md-->
+
+### `disable-flectonepulse-scoreboard`
+
+Disables the [Scoreboard](/docs/message/format/scoreboard/) module
+
+### `disable-flectonepulse-header`
+
+Disables the [Header](/docs/message/tab/header/) module
+
+### `disable-flectonepulse-footer`
+
+Disables the [Footer](/docs/message/tab/footer/) module
+
+### `disable-flectonepulse-playerlistname`
+
+Disables the [Player List Name](/docs/message/tab/playerlistname/) module
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->

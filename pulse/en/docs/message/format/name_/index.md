@@ -15,6 +15,19 @@ Module responsible for the player's name
 <<< @/files/localizations/en_us.yml#name_
 :::
 
+### `constant`
+
+A message that will be formatted from the sender on the server where it was sent. It can be used in any message via `<constant>`
+
+::: tip NOTE  
+If you're experiencing issues with messages on `Velocity` or `BungeeCord`, this is the solution to your problem:
+
+```yaml
+constant: "%player_name%"
+display: "<constant>"
+```  
+:::
+
 ### `display`
 
 Responsible for the player's name
@@ -26,15 +39,7 @@ Responsible for the entity's name
 
 ### `unknown`
 
-Responsible for unknown name
-
-### `prefix`
-
-Prefix displayed with the name if the nickname is enabled
-
-### `suffix`
-
-Suffix displayed with the name if the nickname is enabled
+Responsible for unknown entity name
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

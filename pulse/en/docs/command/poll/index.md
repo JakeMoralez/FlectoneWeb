@@ -34,21 +34,25 @@ Message when the player has voted for a particular option
 
 Message when the player removes their vote
 
-### `count-answers`
+### `format`
+The format of the message that will be sent
 
-Format for counting votes
+### `answer-template`
+Template for each answer
 
-### `vote-button`
+### `status`
 
-Format for the vote button message
+::: details Headers for each voting status
 
-### `format-start`
+#### `start`
+Header when the voting starts
 
-Format for the start of the poll
+#### `run`
+Header when the voting is reposted
 
-### `format-over`
-
-Format for the end of the poll
+#### `end`
+Header when the voting ends
+:::
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

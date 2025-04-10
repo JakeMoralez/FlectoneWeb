@@ -8,20 +8,29 @@
 # __/\___  ____/\_____  ___/    \______
 #        \/           \/  
 # 
-#region en_us
+#region message
 cooldown: "<color:#ff7171><b>⁉</b> Слишком быстро, попробуй через <time>"
 time:
   format: "dd'д' HH'ч' mm'м' ss.SSS'с'"
   permanent: "НАВСЕГДА"
   zero: "0с"
-#endregion en_us
+#endregion message
 #region command
 command:
+  exception:
+    execution: "<color:#ff7171><b>⁉</b> Произошла ошибка при выполнении команды <br><color:#ff7171><b>⁉</b> <exception>"
+    parse-unknown: "<color:#ff7171><b>⁉</b> Неизвестная ошибка аргумента в <br><input>"
+    parse-boolean: "<color:#ff7171><b>⁉</b> Ожидался boolean аргумент, но ты ввёл <br><input>"
+    parse-number: "<color:#ff7171><b>⁉</b> Ожидался числовой аргумент, но ты ввёл <br><input>"
+    parse-string: "<color:#ff7171><b>⁉</b> Ожидался строковый аргумент, но ты ввёл <br><input>"
+    permission: "<color:#ff7171><b>⁉</b> У тебя нет прав на использование этой команды"
+    syntax: "<hover:show_text:\"<fcolor:2>Использовать <br><fcolor:1>/<correct_syntax>\"><click:suggest_command:\"/<command> \"><fcolor:2>┌<br>│ Использование →<br>│ <fcolor:1>/<correct_syntax><br><fcolor:2>└"
   prompt:
     message: "сообщение"
     hard: "сложно?"
     accept: "принять"
     turn: "включить"
+    type: "type"
     reason: "причина"
     category: "категория"
     id: "айди"
@@ -343,8 +352,6 @@ command:
 #endregion mail
 #region maintenance
   maintenance:
-    not: "<color:#ff7171><b>⁉</b> Технические работы не идут"
-    already: "<color:#ff7171><b>⁉</b> Технические работы уже идут"
     server-description: "<color:#ff7171>В настоящее время проводятся технические работы"
     server-version: "Технические работы"
     kick: "<color:#ff7171>★ На сервере ведутся технические работы"
@@ -398,10 +405,12 @@ command:
     already: "<color:#ff7171><b>⁉</b> Ты уже проголосовал в этом голосовании"
     vote-true: "<color:#4eff52>👍 Ты выбрал <answer_id> в голосовании #<id>. Всего таких голосов <count>"
     vote-false: "<color:#ff4e4e>🖓 Ты передумал об <answer_id> в голосовании #<id>. Всего таких голосов <count> без тебя"
-    count-answers: "<color:#4eff52><bold><count></bold> за [<answer_key>] - <answer_value> <br>"
-    vote-button: "<color:#4eff52><hover:show_text:\"<color:#4eff52>Проголосовать за <bold><answer_key>\"><click:run_command:\"/poll vote <id> <number>\">[<answer_key>] - <answer_value> <br>"
-    format-start: "<br><color:#fce303>🗐 Создано голосование #<id> <br>❓ <message> <br><answers>"
-    format-over: "<br><color:#fce303>🗐 Голосование #<id> завершено <br>❓ <message> <br>Результат: <br><answers>"
+    format: "<br><color:#fce303>│ <status> <br>│ <message> <br>├─────────────<br><answers>"
+    answer-template: "<color:#fce303>│ <count> → <color:#4eff52><hover:show_text:\"<color:#4eff52>Проголосовать за <bold><answer>\"><click:run_command:\"/pollvote <id> <number>\"><answer> [👍]<br>"
+    status:
+      start: "Создано новое голосование #<b><id></b>"
+      run: "Идёт голосование #<b><id></b>"
+      end: "Голосование #<b><id></b> завершено"
 #endregion poll
 #region reply
   reply:
@@ -420,9 +429,9 @@ command:
     format-win: "<color:#98FB98>✂ Выиграл <display_name>! <b><sender_move></b> на <b><receiver_move></b>"
     format-draw: "<color:#98FB98>✂ Ничья! Вы оба выбрали <b><move>"
     strategies:
+      paper: "бумага"
       scissors: "ножницы"
       rock: "камень"
-      paper: "бумага"
 #endregion rockpaperscissors
 #region spy
   spy:
@@ -436,8 +445,8 @@ command:
     not: "<color:#ff7171><b>⁉</b> Ты не включил трансляцию"
     prefix-true: "<color:#ff4e4e>⏻</color:#ff4e4e> "
     prefix-false: ""
-    url-tag: "<fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url></hover></click>"
-    format-start: "<br><color:#ff4e4e>🔔 <fcolor:1>Объявление <color:#ff4e4e>🔔<br><br><fcolor:1><display_name> начал трансляцию<br><br><urls><br>"
+    url-template: "<color:#ff4e4e>│ <fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url></hover></click>"
+    format-start: "<br><color:#ff4e4e>│ 🔔 <fcolor:1>Объявление <br><color:#ff4e4e>│<br><color:#ff4e4e>│ <fcolor:1><display_name> начал трансляцию<br><color:#ff4e4e>│<br><urls><br>"
     format-end: "<fcolor:2>★ Спасибо за трансляцию на нашем сервере!"
 #endregion stream
 #region symbol
@@ -477,7 +486,7 @@ command:
     wrong-move: "<color:#ff7171><b>⁉</b> Такой ход невозможен"
     wrong-by-player: "<color:#ff7171><b>⁉</b> Игра закончена, потому что один из игроков не в сети"
     symbol:
-      empty: "<hover:show_text:\"<fcolor:1>Ход <move>\"><click:run_command:\"/tictactoe %d <move>\">☐</click></hover>"
+      blank: "<hover:show_text:\"<fcolor:1>Ход <move>\"><click:run_command:\"/tictactoemove %d <move>\">☐</click></hover>"
       first: "<fcolor:2>☑</fcolor:2>"
       first-remove: "<color:#ff7171>☑</color:#ff7171>"
       first-win: "<color:#98FB98>☑</color:#98FB98>"
@@ -491,7 +500,7 @@ command:
     format-win: "<color:#98FB98><player> выиграл</color:#98FB98>"
     format-draw: "<color:#98FB98>Ничья 👬</color:#98FB98>"
     sender: "<fcolor:1>☐ Предложение сыграть в крестики-нолики отправлено для <display_name>"
-    format-create: "<click:run_command:\"/tictactoe %d create\"><fcolor:1>☐ Есть предложение сыграть в крестики-нолики от <display_name>, принять? [+]"
+    receiver: "<click:run_command:\"/tictactoemove %d create\"><fcolor:1>☐ Есть предложение сыграть в крестики-нолики от <display_name>, принять? [+]"
 #endregion tictactoe
 #region translateto
   translateto:
@@ -793,17 +802,20 @@ message:
 #region moderation
     moderation:
 #endregion moderation
+#region newbie
+      newbie:
+        reason: "Ты ещё слишком новичок"
+#endregion newbie
 #region swear
       swear:
         symbol: "❤"
 #endregion swear
 #region name_
     name-:
+      constant: ""
       display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Написать <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
       entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:<name>> <br><fcolor:1>Тип <fcolor:2><lang:<type>> <br><fcolor:1>Айди <fcolor:2><uuid>\"><lang:<name>></hover></fcolor:2>"
       unknown: "<fcolor:2><name></fcolor:2>"
-      prefix: "<vault_prefix><stream_prefix>"
-      suffix: "<afk_suffix><vault_suffix>"
 #endregion name_
 #region questionanswer
     question-answer:
@@ -846,18 +858,6 @@ message:
   op:
     format: "<fcolor:1>🤖 <display_name> назначен оператором сервера"
 #endregion op
-#region scoreboard
-  scoreboard:
-    values:
-      - - "<fcolor:2>FlectonePulse"
-        - " "
-        - "<fcolor:2>ТПС <tps>"
-        - " "
-      - - "<fcolor:1>FlectonePulse"
-        - " "
-        - "<fcolor:1>Пинг <ping>"
-        - " "
-#endregion scoreboard
 #region quit
   quit:
     format: "<color:#ff4e4e>← <display_name>"
@@ -874,6 +874,18 @@ message:
   setblock:
     format: "<fcolor:1>⏹ Изменён блок в точке <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2>"
 #endregion setblock
+#region sidebar
+  sidebar:
+    values:
+      - - "<fcolor:2>FlectonePulse"
+        - " "
+        - "<fcolor:2>ТПС <tps>"
+        - " "
+      - - "<fcolor:1>FlectonePulse"
+        - " "
+        - "<fcolor:1>Пинг <ping>"
+        - " "
+#endregion sidebar
 #region sleep
   sleep:
     not-possible: "<fcolor:1>🛌 Никакой отдых не поможет пропустить эту ночь"

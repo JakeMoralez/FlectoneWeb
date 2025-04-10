@@ -1,17 +1,17 @@
-# Скорборд
+# Сайдбар
 
 Сообщения в правой части экрана
 ![scoreboard](/scoreboard.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.scoreboard`
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.sidebar`
 
 <!--@include: @/parts/words.md#default--> 
 
 ::: code-group
-<<< @/files/localizations/ru_ru.yml#scoreboard
-<<< @/files/localizations/en_us.yml#scoreboard
+<<< @/files/localizations/ru_ru.yml#sidebar
+<<< @/files/localizations/en_us.yml#sidebar
 :::
 
 ### `values`
@@ -20,10 +20,10 @@
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → scoreboard`
+<!--@include: @/parts/words.md#path--> `message.yml → sidebar`
 
 <!--@include: @/parts/words.md#default-->
-<<< @/files/message.yml#scoreboard
+<<< @/files/message.yml#sidebar
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/random.md-->
@@ -31,9 +31,9 @@
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.scoreboard`
+<!--@include: @/parts/words.md#path--> `permission.yml → message.sidebar`
 
 <!--@include: @/parts/words.md#default-->
-<<< @/files/permission.yml#scoreboard
+<<< @/files/permission.yml#sidebar
 
 <!--@include: @/parts/permission/permissionTier3.md-->

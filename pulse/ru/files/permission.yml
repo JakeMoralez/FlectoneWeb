@@ -8,11 +8,10 @@
 # __/\___  ____/\_____  ___/    \______
 #        \/           \/  
 # 
-#region permission
+# https://flectone.net/pulse/docs/message
 module:
   name: "flectonepulse.module"
   type: TRUE
-#endregion permission
 #region command
 command:
   name: "flectonepulse.module.command"
@@ -586,6 +585,11 @@ integration:
   name: "flectonepulse.module.integration"
   type: TRUE
 #endregion integration
+#region advancedban
+  advancedban:
+    name: "flectonepulse.module.integration.advancedban"
+    type: TRUE
+#endregion advancedban
 #region deepl
   deepl:
     name: "flectonepulse.module.integration.deepl"
@@ -601,11 +605,26 @@ integration:
     name: "flectonepulse.module.integration.interactivechat"
     type: TRUE
 #endregion interactivechat
+#region litebans
+  litebans:
+    name: "flectonepulse.module.integration.litebans"
+    type: TRUE
+#endregion litebans
 #region luckperms
   luckperms:
     name: "flectonepulse.module.integration.luckperms"
     type: TRUE
 #endregion luckperms
+#region minimotd
+  minimotd:
+    name: "flectonepulse.module.integration.minimotd"
+    type: TRUE
+#endregion minimotd
+#region motd
+  motd:
+    name: "flectonepulse.module.integration.motd"
+    type: TRUE
+#endregion motd
 #region placeholderapi
   placeholderapi:
     name: "flectonepulse.module.integration.placeholderapi"
@@ -933,6 +952,14 @@ message:
           name: "flectonepulse.module.message.format.moderation.caps.bypass"
           type: OP
 #endregion caps
+#region newbie
+      newbie:
+        name: "flectonepulse.module.message.format.moderation.newbie"
+        type: TRUE
+        bypass:
+          name: "flectonepulse.module.message.format.moderation.newbie.bypass"
+          type: OP
+#endregion newbie
 #region flood
       flood:
         name: "flectonepulse.module.message.format.moderation.flood"
@@ -983,6 +1010,11 @@ message:
             name: "flectonepulse.module.format.questionanswer.cooldown.bypass.flectone"
             type: TRUE
 #endregion questionanswer
+#region scoreboard
+    scoreboard:
+      name: "flectonepulse.module.format.scoreboard"
+      type: TRUE
+#endregion scoreboard
 #region spoiler
     spoiler:
       name: "flectonepulse.module.format.spoiler"
@@ -1075,11 +1107,6 @@ message:
       name: "flectonepulse.module.message.rightclick.sound"
       type: TRUE
 #endregion rightclick
-#region scoreboard
-  scoreboard:
-    name: "flectonepulse.module.message.scoreboard"
-    type: TRUE
-#endregion scoreboard
 #region seed
   seed:
     name: "flectonepulse.module.message.seed"
@@ -1096,6 +1123,11 @@ message:
       name: "flectonepulse.module.message.setblock.sound"
       type: TRUE
 #endregion setblock
+#region sidebar
+  sidebar:
+    name: "flectonepulse.module.message.sidebar"
+    type: TRUE
+#endregion sidebar
 #region sign
   sign:
     name: "flectonepulse.module.message.sign"

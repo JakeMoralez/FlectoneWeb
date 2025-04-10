@@ -1,6 +1,7 @@
 # Чат
 
 Модуль, отвечающий за отправленные сообщения игроком в чат
+![chat](/chat.png)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 

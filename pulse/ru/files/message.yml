@@ -87,6 +87,7 @@ bubble:
   modern:
     enable: true
     has-shadow: false
+    interaction-riding: true
     height: 0.2
     scale: 1.0
     background: "#00000040"
@@ -319,9 +320,9 @@ format:
     enable: true
     trigger: "@"
     destination:
-      type: TOAST
-      icon: "minecraft:bell"
-      style: TASK
+      type: ACTION_BAR
+      times:
+        stay: 60
     sound:
       enable: true
       volume: 0.1
@@ -338,6 +339,11 @@ format:
       enable: false
       trigger: 0.7
 #endregion caps
+#region newbie
+    newbie:
+      enable: false
+      timeout: 3600
+#endregion newbie
 #region flood
     flood:
       enable: false
@@ -355,10 +361,6 @@ format:
 #region name_
   name-:
     enable: true
-    team: false
-    disable-team-on-other-scoreboard: true
-    visible: true
-    color: "<white>"
 #endregion name_
 #region questionanswer
   question-answer:
@@ -383,6 +385,14 @@ format:
           enable: false
         target: "(?i)\\b(flectone|flectonepulse|flecton)\\b"
 #endregion questionanswer
+#region scoreboard
+  scoreboard:
+    enable: true
+    name-visible: false
+    color: "<white>"
+    prefix: "<vault_prefix><stream_prefix>"
+    suffix: "<afk_suffix><vault_suffix>"
+#endregion scoreboard
 #region spoiler
   spoiler:
     enable: true
@@ -501,14 +511,6 @@ rightclick:
   sound:
     enable: false
 #endregion rightclick
-#region scoreboard
-scoreboard:
-  enable: false
-  random: true
-  ticker:
-    enable: true
-    period: 100
-#endregion scoreboard
 #region seed
 seed:
   enable: true
@@ -525,6 +527,14 @@ setblock:
   sound:
     enable: false
 #endregion setblock
+#region sidebar
+sidebar:
+  enable: false
+  random: true
+  ticker:
+    enable: true
+    period: 100
+#endregion sidebar
 #region sign
 sign:
   enable: false
@@ -583,7 +593,6 @@ tab:
 #region header
   header:
     enable: true
-    disable-on-other-tab: true
     random: true
     destination:
       type: TAB_HEADER
@@ -594,7 +603,6 @@ tab:
 #region footer
   footer:
     enable: true
-    disable-on-other-tab: true
     random: true
     destination:
       type: TAB_FOOTER
@@ -605,7 +613,6 @@ tab:
 #region playerlistname
   playerlistname:
     enable: true
-    disable-on-other-tab: false
     ticker:
       enable: true
       period: 100

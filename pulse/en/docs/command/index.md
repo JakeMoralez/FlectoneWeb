@@ -13,73 +13,113 @@ Category responsible for configuring all commands
 <<< @/files/localizations/en_us.yml#command
 :::
 
+### `exception`
+
+::: details Messages for incorrect command usage
+
+#### `execution`
+
+Message if an error occurs during command execution
+
+#### `parse-unknown`
+
+Message if an unknown argument is entered
+
+#### `parse-boolean`
+
+Message if a `boolean` argument is expected
+
+#### `parse-number`
+
+Message if a `number` argument is expected
+
+#### `parse-string`
+
+Message if a `string` argument is expected
+
+#### `permission`
+
+Message if the player doesn't have permission for this command
+
+#### `syntax`
+
+Message if an incomplete command is entered
+![command syntax](/commandsyntax.png)
+
+:::
+
 ### `prompt`
 
-Formatting of prompts
+::: details Prompt formatting
 
-- #### `message`
+#### `message`
 
 Prompt for commands where a message is entered
 
-- #### `hard`
+#### `hard`
 
-Prompt for commands where the difficulty is asked
+Prompt for commands where difficulty is asked
 
-- #### `accept`
+#### `accept`
 
-Prompt for commands where something is accepted or declined
+Prompt for commands where something is accepted or rejected
 
-- #### `turn`
+#### `turn`
 
-Prompt for commands where something is turned on or off
+Prompt for commands where something is toggled on or off
 
-- #### `reason`
+#### `type`
+
+Prompt for commands where a type is entered
+
+#### `reason`
 
 Prompt for commands where a reason is entered
 
-- #### `category`
+#### `category`
 
 Prompt for commands where a category is selected
 
-- #### `id`
+#### `id`
 
 Prompt for commands where an ID is entered
 
-- #### `time`
+#### `time`
 
 Prompt for commands where time is entered
 
-- #### `repeat-time`
+#### `repeat-time`
 
 Prompt for commands where repeat time is entered
 
-- #### `multiple-vote`
+#### `multiple-vote`
 
 Prompt for commands where multiple voting is asked
 
-- #### `player`
+#### `player`
 
 Prompt for commands where a player is entered
 
-- #### `number`
+#### `number`
 
 Prompt for commands where a number is entered
 
-- #### `color`
+#### `color`
 
 Prompt for commands where a color is entered
 
-- #### `language`
+#### `language`
 
 Prompt for commands where a language is entered
 
-- #### `url`
+#### `url`
 
 Prompt for commands where a URL is entered
 
-- #### `move`
+#### `move`
 
 Prompt for commands where a move is selected
+:::
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

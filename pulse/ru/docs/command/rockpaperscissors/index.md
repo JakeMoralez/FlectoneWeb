@@ -3,10 +3,6 @@
 Комманда для того, чтобы предложить поиграть в камень-ножницы-бумага
 ![command rockpaperscissors](/commandrockpaperscissors.png)
 
-::: danger ВНИМАТЕЛЬНО
-Комманда не будет работать, если модуль [`Tell`](/docs/command/tell/) выключен
-:::
-
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.rockpaperscissors`

@@ -26,7 +26,6 @@ List of messages, where `- -` separates different formats
 <<< @/files/message.yml#footer
 
 <!--@include: @/parts/enable.md-->
-<!--@include: @/parts/disableOnOtherTab.md-->
 <!--@include: @/parts/random.md-->
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/ticker.md-->

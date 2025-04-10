@@ -1,6 +1,7 @@
  # Chat   
 
 A module responsible for messages sent by players in chat  
+![chat](/chat.png)
 
 [//]: # (localization)  
 <!--@include: @/parts/words.md#localization-->  

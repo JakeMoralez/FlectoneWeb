@@ -550,7 +550,7 @@ spy:
       - "anvil"
       - "book"
       - "sign"
-      - "chat"
+      - "local"
   destination:
     type: CHAT
   cooldown:

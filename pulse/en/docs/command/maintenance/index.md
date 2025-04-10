@@ -15,14 +15,6 @@ Command to enable maintenance mode
 <<< @/files/localizations/en_us.yml#maintenance
 :::
 
-### `not`
-
-Message when trying to disable maintenance mode if it is not enabled
-
-### `already`
-
-Message when trying to enable maintenance mode if it is already enabled
-
 ### `server-description`
 
 Message when viewing the server while maintenance is enabled
