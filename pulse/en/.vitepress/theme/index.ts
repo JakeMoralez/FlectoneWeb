@@ -112,14 +112,14 @@ export default {
         app.use(NolebaseEnhancedReadabilitiesPlugin, {
             layoutSwitch: {
                 disableHelp: false,
-                defaultMode: 1,
+                defaultMode: 3,
                 contentLayoutMaxWidth: {
                     disableHelp: false,
-                    defaultMaxWidth: 100
+                    defaultMaxWidth: 90
                 },
                 pageLayoutMaxWidth: {
                     disableHelp: false,
-                    defaultMaxWidth: 80
+                    defaultMaxWidth: 100
                 }
             },
             spotlight: {
