@@ -3,6 +3,13 @@ import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import './style.css';
 
+import {
+    NolebaseEnhancedReadabilitiesMenu,
+    NolebaseEnhancedReadabilitiesScreenMenu,
+    NolebaseEnhancedReadabilitiesPlugin,
+} from '@nolebase/vitepress-plugin-enhanced-readabilities'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+
 const EMOJI_MAP = {
     tip: '💡',
     info: 'ℹ️',
@@ -95,10 +102,34 @@ export default {
     extends: DefaultTheme,
 
     Layout: () => h(DefaultTheme.Layout, null, {
-            'page-after': () => scheduleTask(postRenderTasks),
+        'page-after': () => scheduleTask(postRenderTasks),
+        'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
+        'nav-screen-content-after': () =>
+            h(NolebaseEnhancedReadabilitiesScreenMenu),
     }),
 
     enhanceApp({ app, router }) {
+        app.use(NolebaseEnhancedReadabilitiesPlugin, {
+            layoutSwitch: {
+                disableHelp: false,
+                defaultMode: 1,
+                contentLayoutMaxWidth: {
+                    disableHelp: false,
+                    defaultMaxWidth: 100
+                },
+                pageLayoutMaxWidth: {
+                    disableHelp: false,
+                    defaultMaxWidth: 80
+                }
+            },
+            spotlight: {
+                disableHelp: false,
+                hoverBlockColor: 'rgb(240 197 52 / 10%)',
+                defaultToggle: false,
+                defaultStyle: 2
+            }
+        });
+
         app.provide('post-render', postRenderTasks);
 
         router.onAfterRouteChanged = () => {

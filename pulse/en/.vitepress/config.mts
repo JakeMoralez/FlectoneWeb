@@ -5,6 +5,21 @@ const boosty = '<svg width="250" height="250" viewBox="-5 60 215.6 150" xmlns="h
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities > @nolebase/ui > @rive-app/canvas',
+      ],
+      exclude: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+      ],
+    },
+    ssr: {
+      noExternal: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities',
+      ],
+    },
+  },
 
   base: '/en/pulse/',
   title: "FlectonePulse",

@@ -33,6 +33,10 @@ section {
     --vp-c-bg-soft: #222222;
 
     --bstats-filter: invert(89.5%);
+
+    .VPNolebaseEnhancedReadabilitiesMenu {
+        --vp-nolebase-enhanced-readabilities-menu-background-color: #222222;
+    }
 }
 
 :root {

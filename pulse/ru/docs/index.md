@@ -1,5 +1,6 @@
-![pulse](https://flectone.net/pulse/flectonepulse.png)
 <div class="center-row" align="center">
+    <a href="https://flectone.net/pulse/"><img src="https://flectone.net/pulse/flectonepulse.png" alt="flectone" class="hover-brightness"></a>
+    <br>
     <h1> FlectonePulse — документация </h1>
     <p>Полное руководство по настройке и использованию плагина FlectonePulse.</p>
 </div>
