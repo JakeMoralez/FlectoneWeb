@@ -31,12 +31,10 @@ section {
     --vp-c-bg-alt: #222222;
     --vp-c-bg-elv: #1b1b1b;
     --vp-c-bg-soft: #222222;
+    --vp-c-gutter: #2e2e32;
 
     --bstats-filter: invert(89.5%);
 
-    .VPNolebaseEnhancedReadabilitiesMenu {
-        --vp-nolebase-enhanced-readabilities-menu-background-color: #222222;
-    }
 }
 
 :root {
