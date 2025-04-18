@@ -1,17 +1,17 @@
- # Bubble
+# Bubble
 
-A module responsible for messages above the head  
-![bubble](/bubble.gif)  
+Module responsible for overhead messages  
+![bubble](/bubble.gif)
 
-The idea is taken from [LightChatBubbles](https://github.com/atesin/LightChatBubbles)  
+Idea taken from [LightChatBubbles](https://github.com/atesin/LightChatBubbles)
 
-### Duration Formula  
+### Duration Formula
 
 ```java
-long duration = (countWords + handicapChars) / readSpeed * 1200;
-```  
+long duration = (countWords + handicapChars) / readSpeed * 60;
+```
 
-[//]: # (localization)  
+[//]: # (localization)
 <!--@include: @/parts/words.md#localization-->  
 <!--@include: @/parts/words.md#path--> `localizations → language.yml → message.bubble`  
 
@@ -20,76 +20,84 @@ long duration = (countWords + handicapChars) / readSpeed * 1200;
 ::: code-group  
 <<< @/files/localizations/ru_ru.yml#bubble  
 <<< @/files/localizations/en_us.yml#bubble  
-:::  
+:::
 
-### `format`  
+### `format`
 
-Format of the overhead message  
+Format of the overhead message
 
-[//]: # (message.yml)  
+[//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->  
 <!--@include: @/parts/words.md#path--> `message.yml → bubble`  
 
 <!--@include: @/parts/words.md#default-->  
-<<< @/files/message.yml#bubble  
+<<< @/files/message.yml#bubble
 
 <!--@include: @/parts/enable.md-->  
 
-### `distance`  
+### `use-interaction`
 
-The display distance of overhead messages from the sender  
-
-### `line-width`  
-
-The maximum number of characters per line  
-
-### `read-speed`  
-
-Reading speed of message characters  
-
-### `handicap-chars`  
-
-Additional time for short messages  
-
-### `modern`  
-
-Overhead messages using Text Display  
+Enables the use of `interaction` for spacing between messages. If disabled, the old method via `area effect cloud` is used
 
 ::: warning WARNING  
-This only works on servers 1.19.4 and above  
-:::  
+This will only be used for servers running version `1.21.3` or higher
+:::
 
-::: details SETTINGS  
-#### `enable`  
+### `max-count`
 
-Enables functionality  
+Maximum number of overhead messages displayed simultaneously
 
-#### `has-shadow`  
+### `max-length`
 
-Enables text shadow  
+Maximum length of a single overhead message. If the text is longer, it will be split into multiple parts
 
-#### `interaction-riding`
+### `height`
 
-Allows using `double` values in `height`, otherwise only whole numbers will be accepted **(only for 1.21.3 and above)**
+Distance between each overhead message. If `use-interaction` is active, fractional values like `0.44444` can be configured; otherwise, **only whole numbers** will add space
 
-#### `height`  
+### `distance`
 
-How high above the player the message will be  
+How far away a player's overhead message can be seen
 
-#### `scale`  
+### `read-speed`
 
-What size will the message be
+Reading speed in words per minute
 
-#### `background`  
+### `handicap-chars`
 
-The background color of the message, including transparency (alpha channel). [Color selection site](https://rgbacolorpicker.com/color-wheel-picker)  
-:::  
+Additional time for short messages
 
-[//]: # (permission.yml)  
+### `modern`
+
+Overhead messages via Text Display
+
+::: warning WARNING  
+This will only be used for servers running version `1.19.4` or higher
+:::
+
+::: details CONFIGURATION
+#### `enable`
+
+Enables functionality
+
+#### `has-shadow`
+
+Enables text shadow
+
+#### `scale`
+
+Scales the size of the message
+
+#### `background`
+
+Background color of the message, including transparency (alpha channel) [Color picker website](https://rgbacolorpicker.com/color-wheel-picker)  
+:::
+
+[//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->  
 <!--@include: @/parts/words.md#path--> `permission.yml → message.bubble`  
 
 <!--@include: @/parts/words.md#default-->  
-<<< @/files/permission.yml#bubble  
+<<< @/files/permission.yml#bubble
 
-<!--@include: @/parts/permission/permissionTier3.md-->  
+<!--@include: @/parts/permission/permissionTier3.md-->

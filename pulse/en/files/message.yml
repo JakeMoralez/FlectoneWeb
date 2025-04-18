@@ -80,15 +80,16 @@ brand:
 #region bubble
 bubble:
   enable: true
+  use-interaction: true
+  max-count: 3
+  max-length: 20
+  height: 0.4
   distance: 30.0
-  line-width: 200
-  read-speed: 100.0
+  read-speed: 90.0
   handicap-chars: 10.0
   modern:
     enable: true
     has-shadow: false
-    interaction-riding: true
-    height: 0.2
     scale: 1.0
     background: "#00000040"
 #endregion bubble
@@ -441,27 +442,6 @@ join:
   sound:
     enable: false
 #endregion join
-#region mark
-mark:
-  enable: false
-  limit: true
-  color: true
-  range: 100
-  duration: 60
-  item: "WOODEN_SWORD"
-  legacy:
-    enable: true
-    size: 1
-    entity: "MAGMA_CUBE"
-  modern:
-    enable: false
-    scale: 1.0
-    block: "BEACON"
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-#endregion mark
 #region objective
 objective:
   enable: true

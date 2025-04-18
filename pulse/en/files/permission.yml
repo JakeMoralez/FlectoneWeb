@@ -346,17 +346,6 @@ command:
       name: "flectonepulse.module.command.maintenance.sound"
       type: TRUE
 #endregion maintenance
-#region mark
-  mark:
-    name: "flectonepulse.module.command.mark"
-    type: TRUE
-    cooldown-bypass:
-      name: "flectonepulse.module.command.mark.cooldown.bypass"
-      type: OP
-    sound:
-      name: "flectonepulse.module.command.mark.sound"
-      type: TRUE
-#endregion mark
 #region me
   me:
     name: "flectonepulse.module.command.me"
@@ -1054,17 +1043,6 @@ message:
       name: "flectonepulse.module.message.join.sound"
       type: TRUE
 #endregion join
-#region mark
-  mark:
-    name: "flectonepulse.module.message.mark"
-    type: TRUE
-    cooldown-bypass:
-      name: "flectonepulse.module.message.mark.cooldown.bypass"
-      type: OP
-    sound:
-      name: "flectonepulse.module.message.mark.sound"
-      type: TRUE
-#endregion mark
 #region objective
   objective:
     name: "flectonepulse.module.message.objective"

@@ -11,6 +11,11 @@ export default defineConfig({
   description: "Каждое сообщение под вашим контролем!",
   lastUpdated: true,
   ignoreDeadLinks: true,
+  capitalizeFirst: true,
+  useTitleFromFileHeading: true,
+  useTitleFromFrontmatter: true,
+  useFolderTitleFromIndexFile: true,
+  sortMenusByFrontmatterOrder: true,
 
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/assets/favicons/apple-touch-icon.png"}],
@@ -137,7 +142,6 @@ export default defineConfig({
           { text: 'Kick', link: '/docs/command/kick/' },
           { text: 'Mail', link: '/docs/command/mail/' },
           { text: 'Maintenance', link: '/docs/command/maintenance/' },
-          { text: 'Mark', link: '/docs/command/mark/' },
           { text: 'Me', link: '/docs/command/me/' },
           { text: 'Mute', link: '/docs/command/mute/' },
           { text: 'Mutelist', link: '/docs/command/mutelist/' },
@@ -235,7 +239,6 @@ export default defineConfig({
           { text: 'Режим игры', link: '/docs/message/gamemode/' },
           { text: 'Приветствие', link: '/docs/message/greeting/' },
           { text: 'Подключение', link: '/docs/message/join/' },
-          { text: 'Метка', link: '/docs/message/mark/' },
           {
             text: 'Значения',
             link: '/docs/message/objective/',

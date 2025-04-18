@@ -98,7 +98,6 @@ export default defineConfig({
           { text: 'Kick', link: '/docs/command/kick/' },
           { text: 'Mail', link: '/docs/command/mail/' },
           { text: 'Maintenance', link: '/docs/command/maintenance/' },
-          { text: 'Mark', link: '/docs/command/mark/' },
           { text: 'Me', link: '/docs/command/me/' },
           { text: 'Mute', link: '/docs/command/mute/' },
           { text: 'Mutelist', link: '/docs/command/mutelist/' },
@@ -196,7 +195,6 @@ export default defineConfig({
           { text: 'Gamemode', link: '/docs/message/gamemode/' },
           { text: 'Greeting', link: '/docs/message/greeting/' },
           { text: 'Join', link: '/docs/message/join/' },
-          { text: 'Mark', link: '/docs/message/mark/' },
           {
             text: 'Objective',
             link: '/docs/message/objective/',

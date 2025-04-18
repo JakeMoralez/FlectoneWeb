@@ -422,16 +422,6 @@ maintenance:
   sound:
     enable: false
 #endregion maintenance
-#region mark
-mark:
-  enable: false
-  aliases:
-    - "mark"
-  cooldown:
-    enable: false
-  sound:
-    enable: false
-#endregion mark
 #region me
 me:
   enable: true
