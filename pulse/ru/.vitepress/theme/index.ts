@@ -1,14 +1,16 @@
-import { h } from 'vue';
-import type { Theme } from 'vitepress';
+import {h} from 'vue';
+import type {Theme} from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import './style.css';
 
 import {
+    LayoutMode,
     NolebaseEnhancedReadabilitiesMenu,
-    NolebaseEnhancedReadabilitiesScreenMenu,
     NolebaseEnhancedReadabilitiesPlugin,
+    NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+import AuthorsComponent from "./author/PageAuthors.vue"
 
 const EMOJI_MAP = {
     tip: '💡',
@@ -104,8 +106,8 @@ export default {
     Layout: () => h(DefaultTheme.Layout, null, {
         'page-after': () => scheduleTask(postRenderTasks),
         'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
-        'nav-screen-content-after': () =>
-            h(NolebaseEnhancedReadabilitiesScreenMenu),
+        'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
+        "aside-outline-after": () => h(AuthorsComponent),
     }),
 
     enhanceApp({ app, router }) {
@@ -191,7 +193,7 @@ export default {
             },
             layoutSwitch: {
                 disableHelp: false,
-                defaultMode: 3,
+                defaultMode: LayoutMode.BothWidthAdjustable,
                 contentLayoutMaxWidth: {
                     disableHelp: false,
                     defaultMaxWidth: 90

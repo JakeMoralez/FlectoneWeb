@@ -6,7 +6,7 @@ import './style.css';
 import {
     NolebaseEnhancedReadabilitiesMenu,
     NolebaseEnhancedReadabilitiesScreenMenu,
-    NolebaseEnhancedReadabilitiesPlugin,
+    NolebaseEnhancedReadabilitiesPlugin, LayoutMode,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
 
@@ -112,7 +112,7 @@ export default {
         app.use(NolebaseEnhancedReadabilitiesPlugin, {
             layoutSwitch: {
                 disableHelp: false,
-                defaultMode: 3,
+                defaultMode: LayoutMode.BothWidthAdjustable,
                 contentLayoutMaxWidth: {
                     disableHelp: false,
                     defaultMaxWidth: 90
