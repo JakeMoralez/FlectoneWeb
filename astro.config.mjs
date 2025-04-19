@@ -5,6 +5,8 @@ import react from "@astrojs/react";
 
 import tailwindcss from "@astrojs/tailwind";
 
+import { viteStaticCopy } from "vite-plugin-static-copy";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -18,7 +20,24 @@ export default defineConfig({
     defaultLocale: "ru",
   },
 
-  vite: {
-    plugins: [],
+  build: {
+    assets: '_astro',
   },
+
+  vite: {
+    plugins: [
+      viteStaticCopy({
+        targets: [
+          {
+            src: [
+              'src/assets/**/*',
+              '!src/assets/chat/**',
+              '!src/assets/mix/**',
+            ],
+            dest: 'assets',
+          }
+        ]
+      })
+    ]
+  }
 });
