@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/clearchat`
 
 Command for clearing chat

@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/reply`
 
 Command to send a private message to the last player who sent a message

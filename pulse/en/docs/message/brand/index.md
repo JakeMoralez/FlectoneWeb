@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Brand
 
 Module responsible for the brand message in F3 debug screen  

@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/poll`
 
 Command for creating and managing polls

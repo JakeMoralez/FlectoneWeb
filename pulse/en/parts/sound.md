@@ -10,7 +10,7 @@ Sound playback
 | `name`      | `String`   | Sound name, for example `minecraft:entity.llama.spit`                                                              |
 
 
-::: tip HOW TO USE SOUND?
+::: info HOW TO USE SOUND?
 Replace `false` with `true` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional sound settings will appear AFTER RELOADING.
 :::
 

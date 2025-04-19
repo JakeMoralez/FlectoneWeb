@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Greeting
 
 Message from the server to the player when they connect  

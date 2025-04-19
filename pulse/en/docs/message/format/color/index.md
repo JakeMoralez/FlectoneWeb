@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Color
 
 The tag `fcolor` is used for individual color settings for each player
@@ -28,7 +34,7 @@ Otherwise, the color will depend on the sender's colors
 
 A list of all used colors, where the number is the key for the default color
 
-::: tip For example, there is a color
+::: info For example, there is a color
 ```yaml
 1: "#ADD8E6"
 ```

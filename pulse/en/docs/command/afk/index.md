@@ -1,10 +1,16 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/afk`
 
 Command to toggle AFK mode
 ![afk](/afkglobalmessage.png)
 
 ::: danger ATTENTION
-The command will not work if the [`AFK`](/docs/message/contact/afk/) module is disabled
+The command will not work if the [`AFK`](/docs/message/afk/) module is disabled
 :::
 
 [//]: # (command.yml)

@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # TAB
 
 Integration with `TAB` resolves compatibility issues by disabling certain features in `FlectonePulse`:

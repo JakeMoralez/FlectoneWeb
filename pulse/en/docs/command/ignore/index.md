@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/ignore`
 
 Command to ignore all messages from a player

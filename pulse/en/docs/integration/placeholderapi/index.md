@@ -1,9 +1,15 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # PlaceholderAPI
 
 Integration with PlaceholderAPI:
 - Allows using any [placeholders](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders)
 
-::: tip EXAMPLE
+::: info EXAMPLE
 `%server_tps%`, `%server_online%`, etc., if the corresponding module is installed via `/papi ecloud download module`
 :::
 

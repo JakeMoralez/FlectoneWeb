@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/kick`
 
 Command to kick a player from the server
@@ -22,7 +28,7 @@ Message displayed if the entered player is not found
 
 A list with keys and values, where the key is the word and the value is the specific reason
 
-::: tip You can add your own reasons, for example:
+::: info You can add your own reasons, for example:
 ```yaml
 random_kek: "Random reason"
 ```

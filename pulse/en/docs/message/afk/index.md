@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # AFK  
 
 A player goes AFK if they do nothing for a certain period of time  
@@ -54,7 +60,7 @@ List of actions that are ignored and do not affect AFK status
 | `chat` - when a player types in chat |  
 | `quit` - when a player logs out |  
 
-::: tip EXAMPLE  
+::: info EXAMPLE  
 If I add the command `tell` to the list and a player is AFK, they can use the `tell` command without leaving AFK mode  
 :::  
 

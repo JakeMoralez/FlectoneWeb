@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # Комманда `/clearmail`
 
 Комманда для удаления отправленных [писем](/docs/command/mail/)

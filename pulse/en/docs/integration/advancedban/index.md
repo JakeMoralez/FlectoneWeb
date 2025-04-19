@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # AdvancedBan
 
 Integration with `AdvancedBan` checks if a player is muted and prevents them from sending messages, as well as disables moderation commands in `FlectonePulse`

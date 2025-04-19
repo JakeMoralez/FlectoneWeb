@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 <div class="center-row" align="center">
     <a href="https://flectone.net/pulse/"><img src="https://flectone.net/pulse/flectonepulse.png" alt="flectone" class="hover-brightness"></a>
     <br>

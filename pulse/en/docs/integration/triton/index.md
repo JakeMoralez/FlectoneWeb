@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Triton
 
 Integration with Triton allows using custom localization for **players**.

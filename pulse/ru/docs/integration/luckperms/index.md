@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # LuckPerms
 
 Интеграция с LuckPerms позволяет:

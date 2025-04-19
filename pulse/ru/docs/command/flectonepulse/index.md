@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # Комманда `/flectonepulse`
 
 Главная комманда плагина `FlectonePulse`

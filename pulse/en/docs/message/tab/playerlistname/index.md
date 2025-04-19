@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Playerlistname
 
 Module responsible for the player's name in the TAB

@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # SimpleVoice
 
 Интеграция с SimpleVoice позволяет мутить игроков, которые были замучены с помощью `/mute`

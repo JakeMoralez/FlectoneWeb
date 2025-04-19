@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # Комманда `/chatcolor`
 
 Комманда для смены [цветов](/docs/message/format/color/)

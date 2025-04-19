@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/mute`
 
 Command to mute a player
@@ -26,7 +32,7 @@ Message when the time provided is invalid
 
 A list with keys and values, where the key is the word and the value is the specific reason
 
-::: tip YOU CAN ADD YOUR OWN REASONS
+::: info YOU CAN ADD YOUR OWN REASONS
 ```yaml
 random_kek: "Random reason"
 ```

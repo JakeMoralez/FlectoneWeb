@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Gamemode
 
 Message from the server when a player changes their game mode  

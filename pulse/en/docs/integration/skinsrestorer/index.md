@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # SkinsRestorer
 
 Integration with SkinsRestorer allows retrieving skins of **offline players**

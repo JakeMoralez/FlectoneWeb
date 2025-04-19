@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # SkinsRestorer
 
 Интеграция с SkinsRestorer позволяет получать скины **оффлайн игроков**

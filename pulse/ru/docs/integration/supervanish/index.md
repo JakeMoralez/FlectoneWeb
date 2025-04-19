@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # SuperVanish
 
 Интеграция с SuperVanish (и PremiumVanish) скрывает действия игроков в ванише

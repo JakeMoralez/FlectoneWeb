@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/tictactoe`
 
 Command to challenge someone to play Tic-Tac-Toe

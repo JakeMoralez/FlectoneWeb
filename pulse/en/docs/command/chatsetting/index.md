@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/chatsetting`
 
 Command for configuring chat
@@ -47,7 +53,7 @@ List of settings and their messages, where:
 - The second line is the item name when disabled
 - The remaining lines describe the item when disabled
 
-::: tip For example, let's take `REPLY`
+::: info For example, let's take `REPLY`
 ```yaml
 # enabled
 - - "<fcolor:2>Command /reply" # item name
@@ -72,7 +78,7 @@ List of settings and their messages, where:
 
 List of settings that can be changed
 
-::: tip Example setting for `TELL`
+::: info Example setting for `TELL`
 #### `slot`
 
 Inventory slot where the setting will be

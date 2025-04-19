@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/ban`
 
 Command to ban a player
@@ -26,7 +32,7 @@ Message if an invalid time is entered
 
 A list with keys and values, where the key is a word and the value is a specific reason
 
-::: tip You can add your own reasons, for example:
+::: info You can add your own reasons, for example:
 ```yaml
 random_kek: "Random reason"
 ```

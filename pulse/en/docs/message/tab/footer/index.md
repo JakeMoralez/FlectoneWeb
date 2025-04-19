@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Footer
 
 Module responsible for the text at the bottom of the TAB

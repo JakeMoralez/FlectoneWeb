@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Vault
 
 Integration with Vault allows checking permissions for **offline players**

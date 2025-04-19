@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # MiniMOTD
 
 Интеграция с `MiniMOTD` отключает модуль [Статус](/docs/message/status/) в `FlectonePulse`

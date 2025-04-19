@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/flectonepulse`
 
 Main command of the `FlectonePulse` plugin

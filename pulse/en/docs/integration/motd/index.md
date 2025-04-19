@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # MOTD
 
 Integration with `MOTD` disables the [Status](/docs/message/status/) module in `FlectonePulse`

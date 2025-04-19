@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/chatcolor`
 
 Command for changing [colors](/docs/message/format/color/)

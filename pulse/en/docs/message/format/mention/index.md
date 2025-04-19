@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Mention
 
 This formatting allows mentioning (pinging) someone in a message  
@@ -34,7 +40,7 @@ Message when it is a mention of a player
 ### `trigger`
 
 Symbol with which the mention message should start  
-::: tip EXAMPLE  
+::: info EXAMPLE  
 If I want to mention `Flectone`, I should write `@Flectone`  
 ![mention](/mention.png)
 :::

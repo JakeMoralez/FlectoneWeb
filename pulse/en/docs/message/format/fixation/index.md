@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Fixation
 
 The module formats the player's message so that the first letter is capitalized, and there is a period at the end

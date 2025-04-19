@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Status
 
 Module responsible for everything that happens when viewing the server before connecting

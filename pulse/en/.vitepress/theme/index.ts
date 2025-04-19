@@ -7,8 +7,16 @@ import {
     NolebaseEnhancedReadabilitiesMenu,
     NolebaseEnhancedReadabilitiesScreenMenu,
     NolebaseEnhancedReadabilitiesPlugin, LayoutMode,
-} from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+    SpotlightStyle,
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+
+import {NolebaseInlineLinkPreviewPlugin,} from '@nolebase/vitepress-plugin-inline-link-preview/client'
+
+import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
+
+import AuthorsComponent from "./author/PageAuthors.vue"
 
 const EMOJI_MAP = {
     tip: '💡',
@@ -104,8 +112,8 @@ export default {
     Layout: () => h(DefaultTheme.Layout, null, {
         'page-after': () => scheduleTask(postRenderTasks),
         'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
-        'nav-screen-content-after': () =>
-            h(NolebaseEnhancedReadabilitiesScreenMenu),
+        'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
+        "aside-outline-after": () => h(AuthorsComponent),
     }),
 
     enhanceApp({ app, router }) {
@@ -125,9 +133,14 @@ export default {
             spotlight: {
                 disableHelp: false,
                 hoverBlockColor: 'rgb(240 197 52 / 10%)',
-                defaultToggle: false,
-                defaultStyle: 2
+                defaultToggle: true,
+                defaultStyle: SpotlightStyle.Aside,
             }
+        });
+
+        app.use(NolebaseInlineLinkPreviewPlugin, {
+            popupWidth: 800,
+            popupHeight: 400,
         });
 
         app.provide('post-render', postRenderTasks);

@@ -1,38 +1,42 @@
-# Flood
+---
+authors:
+  - TheFaser
+---
 
-This formatting removes flood in the message
+# Флуд
+
+Это форматирование удаляет флуд в сообщении  
 ![caps](/caps.png)
 
 [//]: # (message.yml)
-<!--@include: @/parts/words.md#setting-->
-<!--@include: @/parts/words.md#path--> `message.yml → format.moderation.flood`
+<!--@include: @/parts/words.md#setting-->  
+<!--@include: @/parts/words.md#path--> `message.yml → format.moderation.flood`  
 
-<!--@include: @/parts/words.md#default-->
+<!--@include: @/parts/words.md#default-->  
 <<< @/files/message.yml#flood
 
-<!--@include: @/parts/enable.md-->
+<!--@include: @/parts/enable.md-->  
 
 ### `trim-to-single`
 
-Whether to replace ALL flood with a single letter or word, otherwise the flood will be reduced to the limit of `max-repeated-symbols` or `max-repeated-words`
+Заменять ли ВЕСЬ флуд на одну букву/слово или просто сокращать до лимита `max-repeated-symbols`/`max-repeated-words`
 
 ### `max-repeated-symbols`
 
-Maximum number of identical letters
+Максимальное количество одинаковых букв подряд
 
 ### `max-repeated-words`
 
-Maximum number of identical words
+Максимальное количество одинаковых слов подряд
 
 [//]: # (permission.yml)
-<!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.format.moderation.flood`
+<!--@include: @/parts/words.md#permission-->  
+<!--@include: @/parts/words.md#path--> `permission.yml → message.format.moderation.flood`  
 
-<!--@include: @/parts/words.md#default-->
+<!--@include: @/parts/words.md#default-->  
 <<< @/files/permission.yml#flood
 
-<!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/permissionTier3.md-->  
 
 ### `bypass`
-
-Permission to bypass the formatting
+Право на обход данного форматирования

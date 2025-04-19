@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/rockpaperscissors`
 
 Command to offer to play rock-paper-scissors
@@ -72,7 +78,7 @@ List of strategies and their names
 
 Strategies where `key` is the winning item and `value` is the defeated item
 
-::: tip For example, if you want `scissors` to defeat `paper`, you should write:
+::: info For example, if you want `scissors` to defeat `paper`, you should write:
 ```yaml
 scissors:
   - "paper"

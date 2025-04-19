@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Newbie
 
 This module prevents new players from sending messages for a certain period of time

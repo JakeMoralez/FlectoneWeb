@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # SimpleVoice
 
 Integration with SimpleVoice allows muting players who have been muted using `/mute`

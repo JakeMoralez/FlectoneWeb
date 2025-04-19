@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # SuperVanish
 
 Integration with SuperVanish (and PremiumVanish) hides player actions in vanish mode

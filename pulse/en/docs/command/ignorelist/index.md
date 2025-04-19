@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/ignorelist`
 
 Command to view the list of players you have ignored

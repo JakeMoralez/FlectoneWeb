@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Spoiler
 
 The `spoiler` tag is used to hide a message until the mouse hovers over it

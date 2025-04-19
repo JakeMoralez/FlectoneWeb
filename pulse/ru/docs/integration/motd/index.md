@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # MOTD
 
 Интеграция с `MOTD` отключает модуль [Статус](/docs/message/status/) в `FlectonePulse`

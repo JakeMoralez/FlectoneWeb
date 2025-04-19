@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Translate
 
 The `translate` tag is used for translating a message into another language

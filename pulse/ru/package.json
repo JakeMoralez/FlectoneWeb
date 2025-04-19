@@ -8,7 +8,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@nolebase/vitepress-plugin-enhanced-mark": "2.0.0-rc2",
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "1.28.0"
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.16.0",
+    "@nolebase/vitepress-plugin-inline-link-preview": "^2.16.0"
   }
 }

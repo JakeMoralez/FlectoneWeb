@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # PlasmoVoice
 
 Integration with PlasmoVoice allows muting players who have been muted using `/mute`

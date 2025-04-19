@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Deepl
 
 Integration with Deepl allows translating messages from one language to another.

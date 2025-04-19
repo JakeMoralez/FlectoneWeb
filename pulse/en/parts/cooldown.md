@@ -8,7 +8,7 @@ Usage cooldown
 | `duration`  | `long`     | How many [ticks](https://minecraft.fandom.com/wiki/Tick) must pass between uses                           |
 
 
-::: tip HOW TO USE COOLDOWN?
+::: info HOW TO USE COOLDOWN?
 Replace `false` with `true` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional cooldown settings will appear AFTER RELOADING.
 :::
 

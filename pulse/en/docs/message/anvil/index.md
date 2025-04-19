@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Anvil
 
 Module responsible for messages in the anvil when renaming items  

@@ -11,6 +11,6 @@ How far in blocks the message will be displayed
 | `0`                | The message will only be sent to the sender                                                                  |
 | any number ` > 0`  | The message will be sent to players whose distance from the sender is **less** than this number              |
 
-::: tip NOTE
+::: info NOTE
 If a range greater than `0` is specified, for example `100`, the recipients must also be in the same dimension as the sender
 :::

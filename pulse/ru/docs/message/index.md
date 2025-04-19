@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # Сообщения
 
 Настройка сообщений `FlectonePulse` (из-за чего появляются и как)
@@ -9,8 +14,8 @@
 <!--@include: @/parts/words.md#default--> 
 
 ::: code-group
-<<< @/files/localizations/ru_ru.yml#en_us
-<<< @/files/localizations/en_us.yml#en_us
+<<< @/files/localizations/ru_ru.yml#message
+<<< @/files/localizations/en_us.yml#message
 :::
 
 ### `cooldown`

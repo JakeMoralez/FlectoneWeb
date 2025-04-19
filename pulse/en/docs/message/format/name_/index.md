@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Name
 
 Module responsible for the player's name
@@ -19,7 +25,7 @@ Module responsible for the player's name
 
 A message that will be formatted from the sender on the server where it was sent. It can be used in any message via `<constant>`
 
-::: tip NOTE  
+::: info NOTE  
 If you're experiencing issues with messages on `Velocity` or `BungeeCord`, this is the solution to your problem:
 
 ```yaml

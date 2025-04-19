@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Image
 
 The `image` tag is used to display images.
@@ -20,7 +26,7 @@ Usage: `<image:url> message </image>`
 
 Defines the color of the message containing the link.
 
-::: tip EXAMPLE
+::: info EXAMPLE
 `<image:url> house </image>`
 
 Here, `house` will have the color `<fcolor:2>`

@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Scoreboard
 
 Module responsible for proper `team` functionality and integration with:

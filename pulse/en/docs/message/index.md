@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Messages
 
 Configuration of messages in `FlectonePulse` (why they appear and how)
@@ -9,8 +15,8 @@ Configuration of messages in `FlectonePulse` (why they appear and how)
 <!--@include: @/parts/words.md#default--> 
 
 ::: code-group
-<<< @/files/localizations/ru_ru.yml#en_us
-<<< @/files/localizations/en_us.yml#en_us
+<<< @/files/localizations/ru_ru.yml#message
+<<< @/files/localizations/en_us.yml#message
 :::
 
 ### `cooldown`

@@ -2,7 +2,7 @@
 
 Where the message will be sent
 
-::: tip HOW TO CHANGE THE DESTINATION?
+::: info HOW TO CHANGE THE DESTINATION?
 Replace the value `type: here` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional settings will appear automatically.
 :::
 

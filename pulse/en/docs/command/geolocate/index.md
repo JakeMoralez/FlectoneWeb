@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/geolocate`
 
 Command for tracking IP addresses and obtaining player information

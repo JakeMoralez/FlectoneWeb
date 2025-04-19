@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Emoji
 
 The `emoji` tag is used to replace text-based emojis with Unicode emojis
@@ -23,12 +29,10 @@ When clicking on such an emoji, it will be copied to the chat
 
 A list of all available emojis, where the key is the text to be replaced, and the value is the text to replace it with
 
-::: tip FOR EXAMPLE, THERE IS AN EMOJI
+::: info FOR EXAMPLE, THERE IS AN EMOJI
 ```yaml
 :): "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
 ```
-
-The message `:)` will be replaced with `☺`
 ![emoji minecraft](/emojiminecraft.png)
 :::
 

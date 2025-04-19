@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/clearmail`
 
 Command to delete sent [mails](/docs/command/mail/)

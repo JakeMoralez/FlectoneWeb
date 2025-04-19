@@ -1,9 +1,14 @@
+---
+authors:
+  - TheFaser
+---
+
 # PlaceholderAPI
 
 Интеграция с PlaceholderAPI:
 - Позволяет использовать любые [плейсхолдеры](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders)
 
-::: tip НАПРИМЕР
+::: info НАПРИМЕР
 `%server_tps%`, `%server_online%` и т.д., если установлен соответствующий модуль с помощью `/papi ecloud download модуль`
 :::
 

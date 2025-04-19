@@ -1,3 +1,8 @@
+---
+authors:
+  - TheFaser
+---
+
 # PlasmoVoice
 
 Интеграция с PlasmoVoice позволяет мутить игроков, которые были замучены с помощью `/mute`

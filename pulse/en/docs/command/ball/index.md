@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/ball`
 
 Command to ask the Magic 8-Ball a question

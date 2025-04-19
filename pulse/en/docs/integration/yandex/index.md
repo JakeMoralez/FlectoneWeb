@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Yandex
 
 Integration with Yandex allows translating messages from one language to another

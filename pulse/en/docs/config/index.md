@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Configuration
 
 Main configuration for `FlectonePulse`, without which the plugin cannot function
@@ -30,18 +36,29 @@ Localization used for all plugin messages
 The selected localization must be from the `localizations` folder
 :::
 
-<!--@include: @/parts/locale.md-->
+You can create and use your own localizations. To do this:
+1. Copy one of the localization (`en_us.yml`)
+2. Rename it, preferably as in the [game](https://minecraft.wiki/w/Language)
+3. Now you can modify any messages inside this file
+
+::: info Example
+I want to translate the plugin into Belarusian
+1. I copy the file `en_us.yml`
+2. Rename it to `be_by.yml`
+   ![locale](/locale.png)
+3. Done!
+:::
 
 ### `language-player`
 
-When enabled, each player's Minecraft localization will be checked, and based on that, the message from [localizations](/docs/localizations/) will be shown.
+When enabled, each player's Minecraft localization will be checked, and based on that, the message from [localizations](/docs/message/) will be shown
 
 ![locale](/locale.gif)
 
 If the localization does not exist, the one from [configuration](#language) will be used.
 
 ::: danger VERY IMPORTANT TO UNDERSTAND
-If you modify the message lists with `language-player` enabled, you need to do this in all localizations, otherwise visual errors may occur.
+If you modify the message lists with `language-player` enabled, you need to do this in all localizations, otherwise visual errors may occur
 :::
 
 ### `metrics`
@@ -56,26 +73,26 @@ Allows the plugin to collect [statistics](https://bstats.org/plugin/bukkit/Flect
 
 ### `bungeecord`
 
-::: tip TO MAKE THE PLUGIN WORK WITH BUNGEECORD:
-1. Enable it here
-2. For **BungeeCord** server, place the `FlectonePulse-bungee.jar` file in the `plugins` folder
-3. Restart **BungeeCord** and the servers where **FlectonePulse** is installed
-   :::
+Integration with `BungeeCord`
+
+::: info NOTE 
+For the plugin to work with `BungeeCord`, `FlectonePulse.jar` file also needs to be placed in the plugins folder on `BungeeCord` server
+:::
 
 ### `velocity`
 
-::: tip TO MAKE THE PLUGIN WORK WITH VELOCITY:
-1. Enable it here
-2. For **Velocity** server, place the `FlectonePulse-velocity.jar` file in the `plugins` folder
-3. Restart **Velocity** and the servers where **FlectonePulse** is installed
-   :::
+Integration with `Velocity`
+
+::: info NOTE
+For the plugin to work with `Velocity`, `FlectonePulse.jar` file also needs to be placed in the plugins folder on `Velocity` server
+:::
 
 ### `clusters`
 
 A list of clusters to which the server should be connected. Only used when proxy mode is enabled.
 If the list is empty, the server will receive messages from all other servers.
 
-::: tip HOW TO USE?
+::: info HOW TO USE?
 You need to enter the cluster name on the servers where the message will be received and sent
 ```yaml
 clusters: 
@@ -91,7 +108,7 @@ The idea is borrowed from [here](https://github.com/Whitescan/ConsoleFilter/blob
 
 A list is specified with messages that should not be shown, using keywords found in the message.
 
-::: tip EXAMPLE I WANT TO FILTER
+::: info EXAMPLE I WANT TO FILTER
 ![filter](/filter.png)
 
 Then you should add:
@@ -142,7 +159,7 @@ Enables or disables all modules
 
 - Each module has a parent (the one above it)
 
-::: tip EXAMPLE
+::: info EXAMPLE
 ```yaml
 house:
   door:
@@ -154,7 +171,7 @@ house:
 
 - Each module depends on the `enable` status of its parent
 
-::: tip EXAMPLE
+::: info EXAMPLE
 ```yaml
 house:
   enable: false // [!code highlight]

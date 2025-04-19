@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # MOTD
 
 Module responsible for the server's welcome message

@@ -8,8 +8,15 @@ import {
     NolebaseEnhancedReadabilitiesMenu,
     NolebaseEnhancedReadabilitiesPlugin,
     NolebaseEnhancedReadabilitiesScreenMenu,
-} from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+    SpotlightStyle,
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+
+import {NolebaseInlineLinkPreviewPlugin,} from '@nolebase/vitepress-plugin-inline-link-preview/client'
+
+import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
+
 import AuthorsComponent from "./author/PageAuthors.vue"
 
 const EMOJI_MAP = {
@@ -104,9 +111,9 @@ export default {
     extends: DefaultTheme,
 
     Layout: () => h(DefaultTheme.Layout, null, {
-        'page-after': () => scheduleTask(postRenderTasks),
         'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
         'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
+        'page-after': () => scheduleTask(postRenderTasks),
         "aside-outline-after": () => h(AuthorsComponent),
     }),
 
@@ -188,7 +195,7 @@ export default {
                             optionAsideAriaLabel: 'Подсветка в виде боковой полосы',
                             optionAsideHelpMessage: 'Подсвечивает текст боковой полосой'
                         }
-                    }
+                    },
                 }
             },
             layoutSwitch: {
@@ -206,8 +213,24 @@ export default {
             spotlight: {
                 disableHelp: false,
                 hoverBlockColor: 'rgb(240 197 52 / 10%)',
-                defaultToggle: false,
-                defaultStyle: 2
+                defaultToggle: true,
+                defaultStyle: SpotlightStyle.Aside,
+            }
+        });
+
+        app.use(NolebaseInlineLinkPreviewPlugin, {
+            popupWidth: 800,
+            popupHeight: 400,
+            locales: {
+                'ru-RU': {
+                    popup: {
+                        loading: 'Загружаем превью...',
+                        loadingAriaLabel: 'Превью страницы загружается',
+                        openInCurrentPage: 'Нажмите, чтобы перейти на страницу',
+                        openInCurrentPageAriaLabel: 'Открыть оригинал страницы',
+                        iframeAriaLabel: 'Предпросмотр связанной страницы'
+                    }
+                },
             }
         });
 

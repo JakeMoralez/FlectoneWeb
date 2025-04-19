@@ -1,4 +1,10 @@
- # Chat   
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
+# Chat   
 
 A module responsible for messages sent by players in chat  
 ![chat](/chat.png)
@@ -79,9 +85,9 @@ Enables a message indicating that no one saw the sent message
 
 ### `priority`  
 
-Chat priority, used for selection when multiple chats have the same `trigger`. The chat with the higher priority is chosen  
+Chat priority, used for selection when mulinfole chats have the same `trigger`. The chat with the higher priority is chosen  
 
-::: tip EXAMPLE CHATS  
+::: info EXAMPLE CHATS  
 ```yaml
 admin:
   priority: 20
@@ -98,7 +104,7 @@ If a player has permission for both chats, the plugin will select `admin` becaus
 
 The prefix that a message must start with to be sent to a specific chat  
 
-::: tip `trigger` VALUE CAN BE ANYTHING:  
+::: info `trigger` VALUE CAN BE ANYTHING:  
 - `!`, `admin`, `.f`, etc.  
 - Empty, i.e., `trigger: ""`, meaning any message fits this chat  
   :::  

@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Command `/warn`
 
 Command to give a warning to a player
@@ -26,7 +32,7 @@ Message when an invalid time is entered
 
 A list with keys and values, where the key is a word and the value is a specific reason
 
-::: tip You can write your own reasons, for example:
+::: info You can write your own reasons, for example:
 ```yaml
 random_kek: "Random reason"
 ```
@@ -59,7 +65,7 @@ Message for the player
 
 A list where the key is the `number` of warnings, and the value is the `action` to be performed
 
-::: tip For example, if you want to ban the player at `10` warnings:
+::: info For example, if you want to ban the player at `10` warnings:
 You should write `10: ban <target> ohh`. This action will be performed if the player has `10` active warnings.
 :::
 

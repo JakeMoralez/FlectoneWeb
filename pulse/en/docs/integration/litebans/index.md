@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # LiteBans
 
 Integration with `LiteBans` checks if a player is muted and prevents them from sending messages, as well as disables moderation commands in `FlectonePulse`

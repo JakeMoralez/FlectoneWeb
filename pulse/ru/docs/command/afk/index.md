@@ -1,10 +1,15 @@
+---
+authors:
+  - TheFaser
+---
+
 # Комманда `/afk`
 
 Комманда для смены режима AFK
 ![afk](/afkglobalmessage.png)
 
 ::: danger ВНИМАТЕЛЬНО
-Комманда не будет работать, если модуль [`AFK`](/docs/message/contact/afk/) выключен
+Комманда не будет работать, если модуль [`AFK`](/docs/message/afk/) выключен
 :::
 
 [//]: # (command.yml)

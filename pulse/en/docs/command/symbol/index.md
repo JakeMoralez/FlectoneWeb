@@ -1,3 +1,9 @@
+---
+authors:
+   - TheFaser
+   - Stokmenn
+---
+
 # Command `/symbol`
 
 Command for searching Unicode emoji
@@ -38,7 +44,7 @@ List of categories and their names for suggestions
 
 List of categories and symbols separated by spaces
 
-::: tip WHAT CAN YOU DO WITH THIS?
+::: info WHAT CAN YOU DO WITH THIS?
 1. Add your own symbols to the current ones, separated by spaces
 2. Rename categories or add your own
    :::

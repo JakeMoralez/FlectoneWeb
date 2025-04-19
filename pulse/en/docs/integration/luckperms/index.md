@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # LuckPerms
 
 Integration with LuckPerms allows:

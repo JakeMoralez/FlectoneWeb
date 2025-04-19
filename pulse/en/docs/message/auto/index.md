@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Auto
 
 Server message sent at regular intervals  
@@ -31,7 +37,7 @@ Types of automatic messages with a list
 
 Types of automatic messages
 
-::: tip YOU CAN CREATE YOUR OWN
+::: info YOU CAN CREATE YOUR OWN
 ```yaml
   types:
     newauto:

@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Right Click 
 
 A module where **Right Click** on a player creates a message above the player's inventory

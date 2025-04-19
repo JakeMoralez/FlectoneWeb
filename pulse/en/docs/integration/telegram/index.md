@@ -1,3 +1,9 @@
+---
+authors:
+  - TheFaser
+  - Stokmenn
+---
+
 # Telegram
 
 Integration with Telegram allows sending messages:
@@ -24,7 +30,7 @@ Integration with Telegram allows sending messages:
 ### `Placeholders`
 
 You can use all placeholders that are used in the initial message for Minecraft
-::: tip EXAMPLE FOR A BAN MESSAGE
+::: info EXAMPLE FOR A BAN MESSAGE
 There is a placeholder `<reason>`, so I can use `<reason>` inside Telegram messages
 :::
 
@@ -43,7 +49,7 @@ The format of the message that will be sent from Telegram to Minecraft.
 
 A list of messages with the format of the final message.
 
-::: tip IF YOU WANT TO ADD ANOTHER MESSAGE:
+::: info IF YOU WANT TO ADD ANOTHER MESSAGE:
 1. Take the name from the list of `message types`.
 2. Insert it into `message-channel`:
 ```yaml
@@ -73,7 +79,7 @@ The [token](https://core.telegram.org/bots/faq#how-do-i-create-a-bot) of the bot
 
 A list of message types and chat IDs in Telegram.
 
-::: tip For example, I want messages from the `/ban` command in Minecraft to be sent to Telegram:
+::: info For example, I want messages from the `/ban` command in Minecraft to be sent to Telegram:
 1. Copy the chat ID where the message should be sent (`-1002341720267_49`).
 
 If the bot is connected and added to the channel, you can use the `/id` command in Telegram to find out the channel ID.
