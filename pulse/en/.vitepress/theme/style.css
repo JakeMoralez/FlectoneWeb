@@ -5,7 +5,6 @@
     --vp-c-indigo-2: #0b94ee;
     --vp-c-indigo-3: #0076c7;
     --vp-c-indigo-soft: rgba(0, 118, 199, 0.18);
-    --bstats-filter: invert(0);
     --vp-custom-block-tip-bg: rgba(0, 140, 227, 0.27);
     --vp-custom-block-tip-code-bg: rgba(1, 137, 210, 0.19);
 }
@@ -23,7 +22,6 @@
     --vp-c-bg-soft: #222222;
     --vp-c-gutter: #2e2e32;
     --vp-custom-block-info-bg: #222222;
-    --bstats-filter: invert(89.5%);
 
     [bg~="\$vp-nolebase-enhanced-readabilities-menu-background-color"] {
         background-color: #222222;
@@ -109,14 +107,6 @@
 
 .custom-block.details code, .vp-doc td > code {
     background-color: var(--vp-c-gutter);
-}
-
-section {
-    --bstats-filter: invert(0%);
-}
-
-.bstats {
-    filter: var(--bstats-filter);
 }
 
 img {

@@ -50,7 +50,7 @@ features:
 <br>
 <div class="w-80" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <article class="bstats">
-        <a href="https://bstats.org/plugin/bukkit/FlectonePulse" rel="noopener nofollow ugc" target="_blank">
-        <img src="https://bstats.org/signatures/bukkit/FlectonePulse.svg" alt=""></a>
+        <a href="https://flectone.net/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
+        <img src="https://flectone.net/api/pulse/metrics/svg" alt=""></a>
     </article>
 </div>

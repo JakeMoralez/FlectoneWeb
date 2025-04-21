@@ -62,11 +62,11 @@ authors:
 
 ### `metrics`
 
-Позволяет плагину собирать [статистику](https://bstats.org/plugin/bukkit/FlectonePulse/21076) сервера и параметров плагина
+Позволяет плагину собирать [статистику](/metrics/) сервера и параметров плагина
 <div class="w-80" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <article class="bstats">
-        <a href="https://bstats.org/plugin/bukkit/FlectonePulse" rel="noopener nofollow ugc" target="_blank">
-        <img src="https://bstats.org/signatures/bukkit/FlectonePulse.svg" alt=""></a>
+        <a href="https://flectone.net/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
+        <img src="https://flectone.net/api/pulse/metrics/svg" alt=""></a>
     </article>
 </div>
 

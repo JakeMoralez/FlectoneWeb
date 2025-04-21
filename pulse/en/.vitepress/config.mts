@@ -62,10 +62,10 @@ export default defineConfig({
     ],
 
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/docs/' },
+      { text: 'Documentation', link: '/docs/config/' },
+      { text: 'Metrics', link: '/metrics/' },
       {
-        text: '🌐 Languages',
+        text: 'Languages',
         items: [
           { text: "Русский", link: 'https://flectone.net/pulse/'},
           { text: "English", link: 'https://flectone.net/en/pulse/'}
