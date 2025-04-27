@@ -1,4 +1,5 @@
 ---
+order: -1
 authors:
   - TheFaser
   - Stokmenn
@@ -65,10 +66,8 @@ If you modify the message lists with `language-player` enabled, you need to do t
 
 Allows the plugin to collect [statistics](/metrics/) about the server and plugin parameters
 <div class="w-80" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <article class="bstats">
-        <a href="https://flectone.net/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
-        <img src="https://flectone.net/api/pulse/metrics/svg" alt=""></a>
-    </article>
+   <a href="https://flectone.net/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
+   <img src="https://flectone.net/api/pulse/metrics/svg" alt=""></a>
 </div>
 
 ### `bungeecord`

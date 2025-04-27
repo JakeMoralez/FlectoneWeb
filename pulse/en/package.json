@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.16.0",
-    "@nolebase/vitepress-plugin-inline-link-preview": "^2.16.0"
+    "@nolebase/vitepress-plugin-inline-link-preview": "^2.16.0",
+    "vitepress-sidebar": "^1.31.1"
   }
 }

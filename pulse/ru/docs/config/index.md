@@ -1,4 +1,5 @@
 ---
+order: -1
 authors:
   - TheFaser
 ---
@@ -64,10 +65,8 @@ authors:
 
 Позволяет плагину собирать [статистику](/metrics/) сервера и параметров плагина
 <div class="w-80" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <article class="bstats">
-        <a href="https://flectone.net/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
-        <img src="https://flectone.net/api/pulse/metrics/svg" alt=""></a>
-    </article>
+   <a href="/api/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
+   <img src="/api/pulse/metrics/svg" alt=""></a>
 </div>
 
 ### `bungeecord`

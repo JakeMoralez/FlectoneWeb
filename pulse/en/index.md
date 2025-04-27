@@ -49,8 +49,6 @@ features:
 <br>
 <br>
 <div class="w-80" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <article class="bstats">
-        <a href="https://flectone.net/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
-        <img src="https://flectone.net/api/pulse/metrics/svg" alt=""></a>
-    </article>
+    <a href="api/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
+    <img src="/api/pulse/metrics/svg" alt=""></a>
 </div>
