@@ -69,6 +69,10 @@ minimotd:
   enable: true
   disable-flectonepulse-status: true
 #endregion minimotd
+#region miniplaceholders
+miniplaceholders:
+  enable: true
+#endregion miniplaceholders
 #region motd
 motd:
   enable: true

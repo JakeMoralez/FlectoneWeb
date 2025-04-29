@@ -609,6 +609,14 @@ integration:
     name: "flectonepulse.module.integration.minimotd"
     type: TRUE
 #endregion minimotd
+#region miniplaceholders
+  miniplaceholders:
+    name: "flectonepulse.module.integration.miniplaceholders"
+    type: TRUE
+    use:
+      name: "flectonepulse.module.integration.miniplaceholders.use"
+      type: OP
+#endregion miniplaceholders
 #region motd
   motd:
     name: "flectonepulse.module.integration.motd"
