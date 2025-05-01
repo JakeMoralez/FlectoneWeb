@@ -113,78 +113,78 @@ You can disable this data collection for your server at any time [here](/docs/co
 
 <div class="metrics-grid">
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg', 'Player and server activity')">
-    <img src="api/pulse/metrics/svg" alt="Main Time Series">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg', 'Player and server activity')">
+    <img src="/api/pulse/metrics/svg" alt="Main Time Series">
     <h3>Activity (7 days)</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/server-versions', 'Server versions')">
-    <img src="api/pulse/metrics/svg/server-versions" alt="Server Versions">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/server-versions', 'Server versions')">
+    <img src="/api/pulse/metrics/svg/server-versions" alt="Server Versions">
     <h3>Server versions</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/core-counts', 'CPU core count')">
-    <img src="api/pulse/metrics/svg/core-counts" alt="Core Counts">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/core-counts', 'CPU core count')">
+    <img src="/api/pulse/metrics/svg/core-counts" alt="Core Counts">
     <h3>CPU core count</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/ram-usage', 'RAM usage')">
-    <img src="api/pulse/metrics/svg/ram-usage" alt="RAM Usage">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/ram-usage', 'RAM usage')">
+    <img src="/api/pulse/metrics/svg/ram-usage" alt="RAM Usage">
     <h3>RAM usage</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/modules-status', 'Module status')">
-    <img src="api/pulse/metrics/svg/modules-status" alt="Modules Status">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/modules-status', 'Module status')">
+    <img src="/api/pulse/metrics/svg/modules-status" alt="Modules Status">
     <h3>Module status</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/project-versions', 'FlectonePulse versions')">
-    <img src="api/pulse/metrics/svg/project-versions" alt="Project Versions">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/project-versions', 'FlectonePulse versions')">
+    <img src="/api/pulse/metrics/svg/project-versions" alt="Project Versions">
     <h3>FlectonePulse versions</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/project-languages', 'Project languages')">
-    <img src="api/pulse/metrics/svg/project-languages" alt="Project Languages">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/project-languages', 'Project languages')">
+    <img src="/api/pulse/metrics/svg/project-languages" alt="Project Languages">
     <h3>FlectonePulse languages</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/server-types', 'Server types')">
-    <img src="api/pulse/metrics/svg/server-types" alt="Server Types">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/server-types', 'Server types')">
+    <img src="/api/pulse/metrics/svg/server-types" alt="Server Types">
     <h3>Server types</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/system-archs', 'System architecture')">
-    <img src="api/pulse/metrics/svg/system-archs" alt="System Architectures">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/system-archs', 'System architecture')">
+    <img src="/api/pulse/metrics/svg/system-archs" alt="System Architectures">
     <h3>System architecture</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/operation-systems', 'Operating systems')">
-    <img src="api/pulse/metrics/svg/operation-systems" alt="Operating Systems">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/operation-systems', 'Operating systems')">
+    <img src="/api/pulse/metrics/svg/operation-systems" alt="Operating Systems">
     <h3>Operating systems</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/java-versions', 'Java versions')">
-    <img src="api/pulse/metrics/svg/java-versions" alt="Java Versions">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/java-versions', 'Java versions')">
+    <img src="/api/pulse/metrics/svg/java-versions" alt="Java Versions">
     <h3>Java versions</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/proxy-modes', 'Proxy modes')">
-    <img src="api/pulse/metrics/svg/proxy-modes" alt="Proxy Modes">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/proxy-modes', 'Proxy modes')">
+    <img src="/api/pulse/metrics/svg/proxy-modes" alt="Proxy Modes">
     <h3>Proxy modes</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/online-mode', 'Online and offline modes')">
-    <img src="api/pulse/metrics/svg/online-mode" alt="Online Mode">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/online-mode', 'Online and offline modes')">
+    <img src="/api/pulse/metrics/svg/online-mode" alt="Online Mode">
     <h3>Online / offline</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/server-locations', 'Server geography')">
-    <img src="api/pulse/metrics/svg/server-locations" alt="Server Locations">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/server-locations', 'Server geography')">
+    <img src="/api/pulse/metrics/svg/server-locations" alt="Server Locations">
     <h3>Server geography</h3>
   </div>
 
-  <div class="metrics-item" @click="showOverlay('api/pulse/metrics/svg/database-modes', 'Database modes')">
-    <img src="api/pulse/metrics/svg/database-modes" alt="Database Modes">
+  <div class="metrics-item" @click="showOverlay('/api/pulse/metrics/svg/database-modes', 'Database modes')">
+    <img src="/api/pulse/metrics/svg/database-modes" alt="Database Modes">
     <h3>Database modes</h3>
   </div>
 

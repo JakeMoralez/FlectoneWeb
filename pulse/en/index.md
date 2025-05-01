@@ -49,6 +49,6 @@ features:
 <br>
 <br>
 <div class="w-80" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <a href="api/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
+    <a href="/api/pulse/metrics" rel="noopener nofollow ugc" target="_blank">
     <img src="/api/pulse/metrics/svg" alt=""></a>
 </div>
