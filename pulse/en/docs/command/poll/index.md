@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/poll`
+# `/poll`
 
 Command for creating and managing polls
 ![command poll](/commandpoll.png)

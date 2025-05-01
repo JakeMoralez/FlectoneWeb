@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/mute`
+# `/mute`
 
 Комманда для того, чтобы замутить игрока
 ![command mute](/commandmute.png)

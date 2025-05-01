@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/maintenance`
+# `/maintenance`
 
 Комманда для включения технических работ
 ![command maintenance](/commandmaintenance.png)

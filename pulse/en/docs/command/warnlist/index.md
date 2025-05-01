@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/warnlist`
+# `/warnlist`
 
 Command to view the list of warnings
 ![command warnlist](/commandwarnlist.png)

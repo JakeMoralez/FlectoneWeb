@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/try`
+# `/try`
 
 Комманда для отображения выполнения действия с шансом
 ![command try](/commandtry.png)

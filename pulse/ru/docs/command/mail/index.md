@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/mail`
+# `/mail`
 
 Комманда для того, чтобы написать оффлайн игроку письмо
 ![command mail](/commandmail.png)

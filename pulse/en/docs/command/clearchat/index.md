@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/clearchat`
+# `/clearchat`
 
 Command for clearing chat
 ![command clearchat](/commandclearchat.png)

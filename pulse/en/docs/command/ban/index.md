@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/ban`
+# `/ban`
 
 Command to ban a player
 ![command ban](/commandban.png)

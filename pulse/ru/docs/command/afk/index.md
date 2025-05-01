@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/afk`
+# `/afk`
 
 Комманда для смены режима AFK
 ![afk](/afkglobalmessage.png)

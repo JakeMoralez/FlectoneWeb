@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/geolocate`
+# `/geolocate`
 
 Command for tracking IP addresses and obtaining player information
 ![command geolocate](/commandgeolocate.png)

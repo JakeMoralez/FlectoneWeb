@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/banlist`
+# `/banlist`
 
 Command to view the list of bans
 ![command banlist](/commandbanlist.png)

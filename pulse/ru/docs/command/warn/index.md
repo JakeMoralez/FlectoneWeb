@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/warn`
+# `/warn`
 
 Комманда для того, чтобы дать предупреждение игроку
 ![command warn](/commandwarn.png)

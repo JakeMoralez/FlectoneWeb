@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/tell`
+# `/tell`
 
 Комманда для того, чтобы написать личное сообщение игроку
 ![command tell](/commandtell.png)

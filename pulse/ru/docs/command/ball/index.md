@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/ball`
+# `/ball`
 
 Комманда для того, чтобы задать вопрос Магическому Шару
 ![command ball](/commandball.png)

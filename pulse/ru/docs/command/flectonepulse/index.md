@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/flectonepulse`
+# `/flectonepulse`
 
 Главная комманда плагина `FlectonePulse`
 ![command flectonepulse](/commandflectonepulse.png)

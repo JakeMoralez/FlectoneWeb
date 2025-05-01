@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/spy`
+# `/spy`
 
 Комманда для отслеживания за действиями игроков
 ![command spy](/commandspy.gif)

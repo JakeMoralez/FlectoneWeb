@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/translateto`
+# `/translateto`
 
 Комманда для перевода сообщения с одного языка на другой
 ![command translateto](/commandtranslateto.png)

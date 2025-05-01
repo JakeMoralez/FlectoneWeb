@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/unwarn`
+# `/unwarn`
 
 Комманда для того, чтобы снять предупреждение с игрока
 ![command unwarn](/commandunwarn.png)

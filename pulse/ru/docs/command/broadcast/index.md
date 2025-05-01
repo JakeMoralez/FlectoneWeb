@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/broadcast`
+# `/broadcast`
 
 Комманда для глобального оповещения
 ![command broadcast](/commandbroadcast.png)

@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/clearchat`
+# `/clearchat`
 
 Комманда для очищения чата
 ![command clearchat](/commandclearchat.png)

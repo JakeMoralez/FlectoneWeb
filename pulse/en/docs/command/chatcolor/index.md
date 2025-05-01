@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/chatcolor`
+# `/chatcolor`
 
 Command for changing [colors](/docs/message/format/color/)
 ![command chatcolor](/commandchatcolor.png)

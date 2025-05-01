@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/ignorelist`
+# `/ignorelist`
 
 Комманда для того, чтобы посмотреть список своих игнорирований
 ![command ignorelist](/commandignorelist.png)

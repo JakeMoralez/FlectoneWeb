@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/unmute`
+# `/unmute`
 
 Command to unmute a player
 ![command unmute](/commandunmute.png)

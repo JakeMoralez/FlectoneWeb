@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/mail`
+# `/mail`
 
 Command to send a message to an offline player
 ![command mail](/commandmail.png)

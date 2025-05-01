@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/do`
+# `/do`
 
 Комманда для РП выполнения действия
 ![command do](/commanddo.png)

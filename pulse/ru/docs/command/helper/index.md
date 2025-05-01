@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/helper`
+# `/helper`
 
 Комманда для того, чтобы попросить помощь
 ![command helper](/commandhelper.png)

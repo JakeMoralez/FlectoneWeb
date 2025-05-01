@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/me`
+# `/me`
 
 Комманда для отображения действия
 ![command me](/commandme.png)

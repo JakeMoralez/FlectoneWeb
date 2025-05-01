@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/kick`
+# `/kick`
 
 Комманда для исключения игрока с сервера
 ![command kick](/commandkick.png)

@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/stream`
+# `/stream`
 
 Комманда для оповещения о запуске трансляции
 ![command stream](/commandstream.png)

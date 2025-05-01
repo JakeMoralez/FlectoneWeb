@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/coin`
+# `/coin`
 
 Комманда для подбрасывания монетки
 ![command coin](/commandcoin.png)

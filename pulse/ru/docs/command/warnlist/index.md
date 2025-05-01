@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/warnlist`
+# `/warnlist`
 
 Комманда для того, чтобы посмотреть список предупреждений
 ![command warnlist](/commandwarnlist.png)

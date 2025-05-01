@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/broadcast`
+# `/broadcast`
 
 Command for global announcements
 ![command broadcast](/commandbroadcast.png)

@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/me`
+# `/me`
 
 Command to display an action
 ![command me](/commandme.png)

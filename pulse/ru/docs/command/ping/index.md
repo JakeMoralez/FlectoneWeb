@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/ping`
+# `/ping`
 
 Комманда для того, чтобы узнать информацию об задержке игрока
 ![command ping](/commandping.png)

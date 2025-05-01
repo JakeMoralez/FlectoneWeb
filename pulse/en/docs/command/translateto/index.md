@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/translateto`
+# `/translateto`
 
 Command to translate a message from one language to another
 ![command translateto](/commandtranslateto.png)

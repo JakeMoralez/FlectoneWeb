@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/kick`
+# `/kick`
 
 Command to kick a player from the server
 ![command kick](/commandkick.png)

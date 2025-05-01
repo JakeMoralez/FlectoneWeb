@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/poll`
+# `/poll`
 
 Комманда для проведения голосований
 ![command poll](/commandpoll.png)

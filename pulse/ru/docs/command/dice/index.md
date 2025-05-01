@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/dice`
+# `/dice`
 
 Комманда для броска кубиков на удачу
 ![command dice](/commanddice.png)

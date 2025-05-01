@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/online`
+# `/online`
 
 Command to check player online status
 ![command online](/commandonline.png)

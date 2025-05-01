@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/unban`
+# `/unban`
 
 Комманда для того, чтобы разблокировать игрока
 ![command unban](/commandunban.png)

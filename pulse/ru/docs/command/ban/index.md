@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/ban`
+# `/ban`
 
 Комманда для того, чтобы заблокировать игрока
 ![command ban](/commandban.png)

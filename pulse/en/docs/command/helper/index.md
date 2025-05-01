@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/helper`
+# `/helper`
 
 Command to request assistance
 ![command helper](/commandhelper.png)

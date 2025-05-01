@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/ignorelist`
+# `/ignorelist`
 
 Command to view the list of players you have ignored
 ![command ignorelist](/commandignorelist.png)

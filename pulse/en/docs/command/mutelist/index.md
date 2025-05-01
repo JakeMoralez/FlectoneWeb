@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/mutelist`
+# `/mutelist`
 
 Command to view the list of muted players
 ![command mutelist](/commandmutelist.png)

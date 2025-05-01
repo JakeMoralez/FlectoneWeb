@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/mute`
+# `/mute`
 
 Command to mute a player
 ![command mute](/commandmute.png)

@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/do`
+# `/do`
 
 Command for RP action execution
 ![command do](/commanddo.png)

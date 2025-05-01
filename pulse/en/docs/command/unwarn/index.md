@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/unwarn`
+# `/unwarn`
 
 Command to remove a warning from a player
 ![command unwarn](/commandunwarn.png)

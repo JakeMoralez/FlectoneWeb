@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/spy`
+# `/spy`
 
 Command to track player actions
 ![command spy](/commandspy.gif)

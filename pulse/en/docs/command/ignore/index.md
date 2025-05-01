@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/ignore`
+# `/ignore`
 
 Command to ignore all messages from a player
 ![command ignore](/commandignore.png)

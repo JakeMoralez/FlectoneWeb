@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/clearmail`
+# `/clearmail`
 
 Комманда для удаления отправленных [писем](/docs/command/mail/)
 ![command clearmail](/commandclearmail.png)

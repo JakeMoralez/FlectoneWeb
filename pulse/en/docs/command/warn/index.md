@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/warn`
+# `/warn`
 
 Command to give a warning to a player
 ![command warn](/commandwarn.png)

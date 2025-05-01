@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/tictactoe`
+# `/tictactoe`
 
 Command to challenge someone to play Tic-Tac-Toe
 ![command tictactoe](/commandtictactoe.png)

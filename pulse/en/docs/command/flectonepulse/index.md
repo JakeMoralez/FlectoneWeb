@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/flectonepulse`
+# `/flectonepulse`
 
 Main command of the `FlectonePulse` plugin
 ![command flectonepulse](/commandflectonepulse.png)

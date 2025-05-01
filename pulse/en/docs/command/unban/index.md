@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/unban`
+# `/unban`
 
 Command to unban a player
 ![command unban](/commandunban.png)

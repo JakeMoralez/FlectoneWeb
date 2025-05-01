@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/ping`
+# `/ping`
 
 Command to check player latency
 ![command ping](/commandping.png)

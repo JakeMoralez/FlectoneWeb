@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/chatsetting`
+# `/chatsetting`
 
 Command for configuring chat
 ![command chatsetting](/commandchatsetting.png)

@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/mutelist`
+# `/mutelist`
 
 Комманда для того, чтобы посмотреть список мутов
 ![command mutelist](/commandmutelist.png)

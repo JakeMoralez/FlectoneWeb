@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/try`
+# `/try`
 
 Command to attempt an action with a random chance of success
 ![command try](/commandtry.png)

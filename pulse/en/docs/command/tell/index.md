@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/tell`
+# `/tell`
 
 Command for sending a private message to a player
 ![command tell](/commandtell.png)

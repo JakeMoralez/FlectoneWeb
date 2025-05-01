@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/symbol`
+# `/symbol`
 
 Комманда для поиска unicode символа
 ![symbol](/commandsymbol.png)

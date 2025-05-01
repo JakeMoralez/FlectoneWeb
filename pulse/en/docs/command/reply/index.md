@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/reply`
+# `/reply`
 
 Command to send a private message to the last player who sent a message
 ![command reply](/commandreply.png)

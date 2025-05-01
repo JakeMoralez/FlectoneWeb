@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/banlist`
+# `/banlist`
 
 Комманда для того, чтобы посмотреть список блокировок
 ![command banlist](/commandbanlist.png)

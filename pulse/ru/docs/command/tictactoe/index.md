@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/tictactoe`
+# `/tictactoe`
 
 Комманда для того, чтобы предложить поиграть в крестики-нолики
 ![command tictactoe](/commandtictactoe.png)

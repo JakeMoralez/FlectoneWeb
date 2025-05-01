@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/dice`
+# `/dice`
 
 Command for rolling dice for luck
 ![command dice](/commanddice.png)

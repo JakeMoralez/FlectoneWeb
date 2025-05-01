@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/chatsetting`
+# `/chatsetting`
 
 Комманда для настройки чата
 ![command chatsetting](/commandchatsetting.png)

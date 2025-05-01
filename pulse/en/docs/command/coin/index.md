@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/coin`
+# `/coin`
 
 Command for flipping a coin
 ![command coin](/commandcoin.png)

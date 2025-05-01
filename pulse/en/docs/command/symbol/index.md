@@ -4,7 +4,7 @@ authors:
    - Stokmenn
 ---
 
-# Command `/symbol`
+# `/symbol`
 
 Command for searching Unicode emoji
 ![symbol](/commandsymbol.png)

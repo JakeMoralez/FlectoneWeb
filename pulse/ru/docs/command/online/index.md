@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/online`
+# `/online`
 
 Комманда для того, чтобы узнать информацию об онлайне игрока
 ![command online](/commandonline.png)

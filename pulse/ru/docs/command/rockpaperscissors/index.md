@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/rockpaperscissors`
+# `/rockpaperscissors`
 
 Комманда для того, чтобы предложить поиграть в камень-ножницы-бумага
 ![command rockpaperscissors](/commandrockpaperscissors.png)

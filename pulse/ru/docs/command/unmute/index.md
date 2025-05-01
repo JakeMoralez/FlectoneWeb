@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/unmute`
+# `/unmute`
 
 Комманда для того, чтобы размутить игрока
 ![command unmute](/commandunmute.png)

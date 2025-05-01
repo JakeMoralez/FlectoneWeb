@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/rockpaperscissors`
+# `/rockpaperscissors`
 
 Command to offer to play rock-paper-scissors
 ![command rockpaperscissors](/commandrockpaperscissors.png)

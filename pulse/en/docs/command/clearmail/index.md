@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/clearmail`
+# `/clearmail`
 
 Command to delete sent [mails](/docs/command/mail/)
 ![command clearmail](/commandclearmail.png)

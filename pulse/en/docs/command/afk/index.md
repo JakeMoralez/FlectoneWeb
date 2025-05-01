@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/afk`
+# `/afk`
 
 Command to toggle AFK mode
 ![afk](/afkglobalmessage.png)

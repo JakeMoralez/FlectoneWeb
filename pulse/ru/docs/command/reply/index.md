@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/reply`
+# `/reply`
 
 Комманда для того, чтобы написать личное сообщение последнему написавшему игроку
 ![command reply](/commandreply.png)

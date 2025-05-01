@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/chatcolor`
+# `/chatcolor`
 
 Комманда для смены [цветов](/docs/message/format/color/)
 ![command chatcolor](/commandchatcolor.png)

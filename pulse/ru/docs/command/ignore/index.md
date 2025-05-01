@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/ignore`
+# `/ignore`
 
 Комманда для игнорирования всех сообщений от игрока
 ![command ignore](/commandignore.png)

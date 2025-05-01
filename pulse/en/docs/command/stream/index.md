@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/stream`
+# `/stream`
 
 Command to notify about the start of a stream
 ![command stream](/commandstream.png)

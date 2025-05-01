@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/ball`
+# `/ball`
 
 Command to ask the Magic 8-Ball a question
 ![command ball](/commandball.png)

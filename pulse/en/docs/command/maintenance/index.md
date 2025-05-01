@@ -4,7 +4,7 @@ authors:
   - Stokmenn
 ---
 
-# Command `/maintenance`
+# `/maintenance`
 
 Command to enable maintenance mode
 ![command maintenance](/commandmaintenance.png)

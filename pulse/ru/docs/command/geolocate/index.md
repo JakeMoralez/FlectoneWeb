@@ -3,7 +3,7 @@ authors:
   - TheFaser
 ---
 
-# Комманда `/geolocate`
+# `/geolocate`
 
 Комманда для отслеживания IP-адреса и получения информации об игроке
 ![command geolocate](/commandgeolocate.png)
