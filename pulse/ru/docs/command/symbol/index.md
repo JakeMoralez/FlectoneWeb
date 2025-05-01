@@ -25,10 +25,6 @@ authors:
 
 Формат сообщения, которое будет отправлено
 
-### `categories`
-
-Список категорий и их названий для подсказок
-
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
 <!--@include: @/parts/words.md#path--> `command.yml → symbol`

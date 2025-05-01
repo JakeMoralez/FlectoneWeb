@@ -26,10 +26,6 @@ Huge thanks to @replaceitem for allowing the use of [symbol lists](https://githu
 
 Format of the message that will be sent
 
-### `categories`
-
-List of categories and their names for suggestions
-
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->
 <!--@include: @/parts/words.md#path--> `command.yml → symbol`

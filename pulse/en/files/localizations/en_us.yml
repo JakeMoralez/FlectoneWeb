@@ -452,24 +452,6 @@ command:
 #region symbol
   symbol:
     format: "<click:suggest_command:\"<message>\"><fcolor:2>🖥 Click for using: <fcolor:1><message>"
-    categories:
-      activities: "activities"
-      animals: "animals"
-      arrows: "arrows"
-      body: "body"
-      clothes: "clothes"
-      environment: "environment"
-      faces: "faces"
-      food: "food"
-      greenery: "greenery"
-      hands: "hands"
-      misc: "misc"
-      numbers: "numbers"
-      people: "people"
-      shapes: "shapes"
-      symbols: "symbols"
-      things: "things"
-      transport: "transport"
 #endregion symbol
 #region tell
   tell:
