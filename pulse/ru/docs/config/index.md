@@ -74,7 +74,9 @@ authors:
 Включает связь с `BungeeCord`
 
 ::: info ПРИМЕЧАНИЕ
-Чтобы плагин работал на `BungeeCord`, файл `FlectonePulse.jar` также нужно закинуть в папку `plugins` на сервере `BungeeCord`
+Чтобы плагин работал на `BungeeCord`
+1. Файл `FlectonePulse.jar` должен быть на КАЖДОМ сервере, включая `BungeeCord`, папка `plugins`
+2. Выбранная датабаза должна быть `MYSQL` (т.е. серверная)
 :::
 
 ### `velocity`
@@ -82,7 +84,9 @@ authors:
 Включает связь с `Velocity`
 
 ::: info ПРИМЕЧАНИЕ
-Чтобы плагин работал на `Velocity`, файл `FlectonePulse.jar` также нужно закинуть в папку `plugins` на сервере `Velocity`
+Чтобы плагин работал на `Velocity`
+1. Файл `FlectonePulse.jar` должен быть на КАЖДОМ сервере, включая `Velocity`, папка `plugins`
+2. Выбранная датабаза должна быть `MYSQL` (т.е. серверная)
 :::
 
 ### `clusters`

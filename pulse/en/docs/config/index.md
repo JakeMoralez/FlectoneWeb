@@ -75,7 +75,9 @@ Allows the plugin to collect [statistics](/metrics/) about the server and plugin
 Integration with `BungeeCord`
 
 ::: info NOTE 
-For the plugin to work with `BungeeCord`, `FlectonePulse.jar` file also needs to be placed in the plugins folder on `BungeeCord` server
+For the plugin to work with `BungeeCord`
+1. File `FlectonePulse.jar` must be on EVERY server, including `BungeeCord` in `plugins` folder
+2. Selected database must be `MYSQL`
 :::
 
 ### `velocity`
@@ -83,7 +85,8 @@ For the plugin to work with `BungeeCord`, `FlectonePulse.jar` file also needs to
 Integration with `Velocity`
 
 ::: info NOTE
-For the plugin to work with `Velocity`, `FlectonePulse.jar` file also needs to be placed in the plugins folder on `Velocity` server
+1. File `FlectonePulse.jar` must be on EVERY server, including `Velocity` in `plugins` folder
+2. Selected database must be `MYSQL`
 :::
 
 ### `clusters`
