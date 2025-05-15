@@ -343,6 +343,7 @@ format:
 #region newbie
     newbie:
       enable: false
+      mode: PLAYED_TIME
       timeout: 3600
 #endregion newbie
 #region flood

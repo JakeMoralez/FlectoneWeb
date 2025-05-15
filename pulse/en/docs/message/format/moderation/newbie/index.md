@@ -38,6 +38,13 @@ The reason that will be used for the mute message
 
 <!--@include: @/parts/enable.md-->  
 
+### `mode`
+
+| Mode           | Explanation                                                       |
+|----------------|-------------------------------------------------------------------|
+| `PLAYED_TIME`  | How much time has been played on the server                       |
+| `SINCE_JOIN`   | How much time has passed since the first connection to the server |
+
 ### `timeout`
 
 Duration in seconds during which new players cannot send messages
