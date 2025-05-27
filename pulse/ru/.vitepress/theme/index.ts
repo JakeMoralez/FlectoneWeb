@@ -203,7 +203,7 @@ export default {
                 defaultMode: LayoutMode.BothWidthAdjustable,
                 contentLayoutMaxWidth: {
                     disableHelp: false,
-                    defaultMaxWidth: 90
+                    defaultMaxWidth: 100
                 },
                 pageLayoutMaxWidth: {
                     disableHelp: false,
