@@ -56,32 +56,6 @@ Responsible for unknown entity name
 
 <!--@include: @/parts/enable.md-->
 
-### `team`
-
-::: warning WARNING  
-If there are issues with `TAB` (e.g., sorting in TAB) or another plugin that uses the `scoreboard`, this parameter needs to be turned off  
-:::
-
-::: warning WARNING  
-If the parameter is turned off, player names will be visible, and the `mark` module will not work correctly  
-:::
-
-Enables or disables the use of `scoreboard` commands
-
-### `disable-team-on-other-scoreboard`
-
-Automatically disables the `team` feature if another `Scoreboard` plugin (e.g., `TAB`) is installed on the server
-
-### `visible`
-
-Enables or disables the name tag above the player
-
-### `color`
-
-Player's team color from the available options
-
-<!--@include: @/parts/color.md-->
-
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
 <!--@include: @/parts/words.md#path--> `permission.yml → message.format.name_`

@@ -57,32 +57,6 @@ display: "<constant>"
 
 <!--@include: @/parts/enable.md-->
 
-### `team`
-
-::: warning ПРЕДУПРЕЖДЕНИЕ
-Если возникают проблемы с `TAB` (например сортировка в ТАБе) или другим плагином, использующим `scoreboard`, нужно выключить этот параметр 
-:::
-
-::: warning ПРЕДУПРЕЖДЕНИЕ
-Если параметр будет выключен, имена игроков будут видны и модуль `mark` будет работать некорректно
-:::
-
-Включает или выключает работу `scoreboard` команд
-
-### `disable-team-on-other-scoreboard`
-
-Автоматически выключает работу `team`, если на сервере установлен другой плагин на `Scoreboard` (например `TAB`)
-
-### `visible`
-
-Включает или выключает ник над игроком
-
-### `color`
-
-Цвет команды игрока из доступных
-
-<!--@include: @/parts/color.md-->
-
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
 <!--@include: @/parts/words.md#path--> `permission.yml → message.format.name_`
