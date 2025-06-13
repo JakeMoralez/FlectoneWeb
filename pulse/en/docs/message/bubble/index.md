@@ -39,15 +39,7 @@ Format of the overhead message
 <!--@include: @/parts/words.md#default-->  
 <<< @/files/message.yml#bubble
 
-<!--@include: @/parts/enable.md-->  
-
-### `use-interaction`
-
-Enables the use of `interaction` for spacing between messages. If disabled, the old method via `area effect cloud` is used
-
-::: warning WARNING  
-This will only be used for servers running version `1.21.3` or higher
-:::
+<!--@include: @/parts/enable.md-->
 
 ### `max-count`
 
@@ -59,7 +51,7 @@ Maximum length of a single overhead message. If the text is longer, it will be s
 
 ### `height`
 
-Distance between each overhead message. If `use-interaction` is active, fractional values like `0.44444` can be configured; otherwise, **only whole numbers** will add space
+How high overhead will the message be
 
 ### `distance`
 
@@ -72,6 +64,28 @@ Reading speed in words per minute
 ### `handicap-chars`
 
 Additional time for short messages
+
+### `word-break-hint`
+
+A hint symbol placed when a word breaks across two lines
+
+### `interaction`
+
+Allows adjusting the spacing between messages or legacy `area effect cloud` is used
+
+::: warning WARNING
+This will only be used for servers running version `1.21.3` or higher.
+:::
+
+::: details SETTING
+#### `enable`
+
+Enables functionality
+
+#### `height`
+
+The spacing between each message
+:::
 
 ### `modern`
 
@@ -97,6 +111,15 @@ Scales the size of the message
 #### `background`
 
 Background color of the message, including transparency (alpha channel) [Color picker website](https://rgbacolorpicker.com/color-wheel-picker)  
+
+#### `billboard`
+
+| Type           | Explanation                                                    |
+|----------------|----------------------------------------------------------------|
+| `FIXED`        | Position remains unchanged                                     |
+| `VERTICAL`     | Position adjusts relative to the vertical axis                 |
+| `HORIZONTAL`   | Position adjusts relative to the horizontal axis               |
+| `CENTER`       | Position adjusts relative to both horizontal and vertical axes |
 :::
 
 [//]: # (permission.yml)

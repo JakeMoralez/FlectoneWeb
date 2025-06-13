@@ -10,7 +10,7 @@
 #
 #region config
 console: "Console"
-version: "0.8.2"
+version: "0.8.3"
 language: "en_us"
 language-player: true
 metrics: true

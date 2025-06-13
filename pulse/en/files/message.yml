@@ -80,18 +80,23 @@ brand:
 #region bubble
 bubble:
   enable: true
-  use-interaction: true
   max-count: 3
-  max-length: 20
-  height: 0.4
+  max-length: 30
+  height: 1
   distance: 30.0
   read-speed: 90.0
   handicap-chars: 10.0
+  word-break-hint: "‑"
+  interaction:
+    enable: true
+    height: 0.4
   modern:
     enable: true
     has-shadow: false
+    animation-time: 5
     scale: 1.0
     background: "#00000040"
+    billboard: CENTER
 #endregion bubble
 #region chat
 chat:
