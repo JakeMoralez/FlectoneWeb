@@ -5,7 +5,7 @@ authors:
 
 # MiniMOTD
 
-Интеграция с `MiniMOTD` отключает модуль [Статус](/docs/message/status/) в `FlectonePulse`
+Интеграция с плагином `MiniMOTD` отключает модуль [Статус](/docs/message/status/) в `FlectonePulse`
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->

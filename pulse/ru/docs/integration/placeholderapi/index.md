@@ -5,7 +5,7 @@ authors:
 
 # PlaceholderAPI
 
-Интеграция с PlaceholderAPI:
+Интеграция с плагином PlaceholderAPI:
 - Позволяет использовать любые [плейсхолдеры](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders)
 
 ::: info НАПРИМЕР

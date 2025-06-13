@@ -5,7 +5,7 @@ authors:
 
 # MiniPlaceholders
 
-Интеграция с MiniPlaceholders позволяет использовать любые [мини-плейсхолдеры](https://github.com/MiniPlaceholders/MiniPlaceholders/wiki/Placeholders)
+Интеграция с плагином MiniPlaceholders позволяет использовать любые [мини-плейсхолдеры](https://github.com/MiniPlaceholders/MiniPlaceholders/wiki/Placeholders)
 
 ::: warning ПРЕДУПРЕЖДЕНИЕ
 Чтобы использовать мини-плейсхолдер, его обязательно нужно обернуть в `{}` 

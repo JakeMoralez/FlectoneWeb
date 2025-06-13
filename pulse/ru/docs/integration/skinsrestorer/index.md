@@ -5,7 +5,7 @@ authors:
 
 # SkinsRestorer
 
-Интеграция с SkinsRestorer позволяет получать скины **оффлайн игроков**
+Интеграция с плагином SkinsRestorer позволяет получать скины **оффлайн игроков**
 ![skinsrestorer](/skinsrestorer.png)
 
 [//]: # (integration.yml)

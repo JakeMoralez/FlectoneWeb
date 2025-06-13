@@ -6,6 +6,10 @@ authors:
 
 # MOTD
 
+::: warning ATTENTION  
+This is an integration with another plugin `MOTD`. You can configure `MOTD` itself [here](/docs/message/status/motd/)  
+:::
+
 Integration with `MOTD` disables the [Status](/docs/message/status/) module in `FlectonePulse`
 
 [//]: # (integration.yml)

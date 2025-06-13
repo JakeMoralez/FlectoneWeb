@@ -5,7 +5,11 @@ authors:
 
 # MOTD
 
-Интеграция с `MOTD` отключает модуль [Статус](/docs/message/status/) в `FlectonePulse`
+::: warning ВНИМАТЕЛЬНО
+Это интеграция с другим плагином на `MOTD`, настроить сам `MOTD` можно [тут](/docs/message/status/motd/)
+:::
+
+Интеграция с плагином `MOTD` отключает модуль [Статус](/docs/message/status/) в `FlectonePulse`
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->

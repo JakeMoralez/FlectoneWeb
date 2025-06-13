@@ -5,7 +5,7 @@ authors:
 
 # SuperVanish
 
-Интеграция с SuperVanish (и PremiumVanish) скрывает действия игроков в ванише
+Интеграция с плагином SuperVanish (и PremiumVanish) скрывает действия игроков в ванише
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->

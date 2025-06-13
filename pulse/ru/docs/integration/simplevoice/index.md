@@ -5,7 +5,7 @@ authors:
 
 # SimpleVoice
 
-Интеграция с SimpleVoice позволяет мутить игроков, которые были замучены с помощью `/mute`
+Интеграция с плагином SimpleVoice позволяет мутить игроков, которые были замучены с помощью `/mute`
 ![mute](/mute.png)
 
 [//]: # (integration.yml)

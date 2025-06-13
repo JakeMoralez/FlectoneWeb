@@ -5,7 +5,11 @@ authors:
 
 # TAB
 
-Интеграция с `TAB` устраняет проблемы совместимости, выключая работу некоторых модулей в `FlectonePulse`:
+::: warning ВНИМАТЕЛЬНО
+Это интеграция с другим плагином на `TAB`, настроить сам `TAB` можно [тут](/docs/message/tab/)
+:::
+
+Интеграция с плагином `TAB` устраняет проблемы совместимости, выключая работу некоторых модулей в `FlectonePulse`:
 - [Скорборд](/docs/message/format/scoreboard/)
 - [Верхнее](/docs/message/tab/header/)
 - [Нижнее](/docs/message/tab/footer/)

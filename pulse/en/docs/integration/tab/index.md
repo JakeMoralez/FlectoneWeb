@@ -6,6 +6,10 @@ authors:
 
 # TAB
 
+::: warning IMPORTANT  
+This is an integration with another plugin `TAB`. You can configure `TAB` itself [here](/docs/message/tab/)  
+:::
+
 Integration with `TAB` resolves compatibility issues by disabling certain features in `FlectonePulse`:
 - [Scoreboard](/docs/message/format/scoreboard/)
 - [Header](/docs/message/tab/header/)
