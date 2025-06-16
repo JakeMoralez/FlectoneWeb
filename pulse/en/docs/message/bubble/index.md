@@ -49,7 +49,7 @@ Maximum number of overhead messages displayed simultaneously
 
 Maximum length of a single overhead message. If the text is longer, it will be split into multiple parts
 
-### `height`
+### `elevation`
 
 How high overhead will the message be
 

@@ -82,7 +82,7 @@ bubble:
   enable: true
   max-count: 3
   max-length: 30
-  height: 1
+  elevation: 1
   distance: 30.0
   read-speed: 90.0
   handicap-chars: 10.0
