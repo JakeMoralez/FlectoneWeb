@@ -1,6 +1,7 @@
 ---
 authors:
   - TheFaser
+  - Bakinu
 ---
 
 # Чат
