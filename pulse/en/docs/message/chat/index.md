@@ -52,11 +52,16 @@ By default, any chat looks like this
 ```yaml
 chat_name:
   enable: true
-  null-recipient: true
   cancel: true
   range: number
   priority: number
   trigger: ""
+  null-recipient:
+    enable: true
+    destination:
+      type: ACTION_BAR
+      times:
+        stay: 60
   destination:
     type: CHAT
   cooldown:
@@ -69,10 +74,23 @@ chat_name:
 
 Enables chat functionality  
 
-### `null-recipient`  
+### `null-recipient`
 
-Enables a message indicating that no one saw the sent message  
-![null recipient](/nullrecipient.png)  
+![null recipient](/nullrecipient.png)
+
+Message if no one saw the player's message
+
+::: details SETTINGS
+
+#### `enable`
+
+Enables the functionality
+
+#### `destination`
+
+Where the message will be sent
+
+:::  
 
 ### `cancel`  
 

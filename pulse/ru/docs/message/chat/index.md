@@ -51,11 +51,16 @@ authors:
 ```yaml
 название_чата:
   enable: true
-  null-recipient: true
   cancel: true
   range: число
   priority: число
   trigger: ""
+  null-recipient:
+    enable: true
+    destination:
+      type: ACTION_BAR
+      times:
+        stay: 60
   destination:
     type: CHAT
   cooldown:
@@ -70,8 +75,22 @@ authors:
 
 ### `null-recipient`
 
-Включает сообщение о том, что отправленное сообщение никто не увидел
 ![null recipient](/nullrecipient.png)
+
+Включает сообщение о том, что отправленное сообщение никто не увидел
+
+::: details НАСТРОЙКА
+
+#### `enable`
+
+Включает работоспособность
+
+#### `destination`
+
+Куда отправится сообщение
+
+:::
+
 
 ### `cancel`
 

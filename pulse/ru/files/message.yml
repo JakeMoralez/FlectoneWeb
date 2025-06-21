@@ -104,11 +104,16 @@ chat:
   types:
     local:
       enable: true
-      null-recipient: true
       cancel: true
       range: 100
       priority: 0
       trigger: ""
+      null-recipient:
+        enable: true
+        destination:
+          type: ACTION_BAR
+          times:
+            stay: 60
       destination:
         type: CHAT
       cooldown:
@@ -117,11 +122,16 @@ chat:
         enable: false
     global:
       enable: true
-      null-recipient: true
       cancel: false
       range: -2
       priority: 5
       trigger: "!"
+      null-recipient:
+        enable: true
+        destination:
+          type: ACTION_BAR
+          times:
+            stay: 60
       destination:
         type: CHAT
       cooldown:
