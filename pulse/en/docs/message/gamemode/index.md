@@ -20,11 +20,11 @@ Message from the server when a player changes their game mode
 <<< @/files/localizations/en_us.yml#gamemode
 :::
 
-### `self`
+### `format-self`
 
 Message when changing your own game mode or the recipient’s game mode has been changed
 
-### `multiple`
+### `format-multiple`
 
 Message when changing the game mode of another player
 

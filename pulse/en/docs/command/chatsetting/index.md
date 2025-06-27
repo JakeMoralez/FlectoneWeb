@@ -7,7 +7,7 @@ authors:
 # `/chatsetting`
 
 Command for configuring chat
-![command chatsetting](/commandchatsetting.png)
+![command chatsetting](/commandchatsetting.gif)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
@@ -18,6 +18,12 @@ Command for configuring chat
 ::: code-group
 <<< @/files/localizations/ru_ru.yml#chatsetting
 <<< @/files/localizations/en_us.yml#chatsetting
+:::
+
+::: tip NOTE
+
+The item name and description are displayed in a single line, with line breaks added using `<br>`
+
 :::
 
 ### `no-permission`
@@ -41,27 +47,46 @@ Message if the server disabled the command for `/chatsetting`
 
 :::
 
-### `header`
+### `inventory`
 
-Title for the GUI
+Name for the main GUI
 
-### `items`
+### `checkbox`
 
-List of settings and their messages, where:
-- The first line is the item name when enabled
-- The remaining lines describe the item when enabled
-- The second line is the item name when disabled
-- The remaining lines describe the item when disabled
+::: details Checkbox settings
 
-::: info For example, let's take `REPLY`
-```yaml
-# enabled
-- - "<fcolor:2>Command /reply" # item name
-  - "<color:#98FB98>Displayed" # description
-# disabled
-- - "<fcolor:2>Command /reply" # item name
-  - "<color:#ff7171>Hidden" # description
-```
+#### `format-enable`
+
+Message if the setting is enabled
+
+#### `format-disable`
+
+Message if the setting is disabled
+
+#### `types`
+
+List of setting types and their names
+
+:::
+
+### `menu`
+
+Each additional menu has:
+
+::: details Additional menu settings
+
+#### `item`
+
+Name and description of the item in the main menu
+
+#### `inventory`
+
+GUI name in the additional menu
+
+#### `types`
+
+List of items with their names and descriptions
+
 :::
 
 [//]: # (command.yml)
@@ -74,21 +99,47 @@ List of settings and their messages, where:
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/aliases.md-->
 
-### `items`
+### `checkbox`
 
-List of settings that can be changed
+::: details Checkbox settings
 
-::: info Example setting for `TELL`
+#### `disabled-material`
+
+Material if the setting is disabled
+
+#### `enabled-material`
+
+Material if the setting is enabled
+
+#### `types`
+
+List of setting types and their inventory slots
+
+:::
+
+### `menu`
+
+Additional menus
+
+#### `material`
+
+Item that redirects to additional menus
+
+::: details Additional menu settings
+
 #### `slot`
 
-Inventory slot where the setting will be
+Slot position in the main inventory
 
-#### `materials`
+#### `types`
 
-List of materials used to display the setting state
+List of setting types with their parameters
 
-`LIME_CONCRETE` is the first material, shown when the setting is enabled <br>
-`RED_CONCRETE` is the second material, shown when the setting is disabled
+| Type    | Description                                                                                                                                                                                       |
+|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `CHAT`  | The `name` field is the display name, and `material` is the item type that will appear in the inventory for this chat                                                                             |
+| `COLOR` | The `name` field is the display name, and `material` is the item type that will appear in the inventory for this chat. Also includes `colors`, where the key is a number and the value is a color |
+| `STYLE` | The `name` field is the display name, and `material` is the item type that will appear in the inventory for this chat. Also includes `value` – the style setting value                            |  
 
 :::
 
@@ -104,7 +155,7 @@ List of materials used to display the setting state
 
 <!--@include: @/parts/permission/permissionTier3.md-->
 
-### `items`
+### `settings`
 
 List of settings and their permissions
 

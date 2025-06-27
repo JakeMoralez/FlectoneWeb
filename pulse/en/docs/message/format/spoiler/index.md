@@ -24,26 +24,13 @@ Usage: `<spoiler:message>`
 <<< @/files/localizations/en_us.yml#spoiler
 :::
 
-### `display`
+### `symbol`
 
-Responsible for the player's name
-![name display](/namedisplay.png)
+Symbol replacing each letter
 
-### `entity`
+### `hover`
 
-Responsible for the entity's name
-
-### `unknown`
-
-Responsible for the unknown name
-
-### `prefix`
-
-Prefix displayed with the team name if the nickname is enabled
-
-### `suffix`
-
-Suffix displayed with the team name if the nickname is enabled
+Message that is shown when hovering over the spoiler
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -54,13 +41,9 @@ Suffix displayed with the team name if the nickname is enabled
 
 <!--@include: @/parts/enable.md-->
 
-### `symbol`
+### `color`
 
-Symbol replacing each letter
-
-### `hover`
-
-Message that is shown when hovering over the spoiler
+Color of the final spoiler in message
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->

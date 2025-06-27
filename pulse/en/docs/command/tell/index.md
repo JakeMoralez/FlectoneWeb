@@ -48,6 +48,7 @@ Message for the sender if they are also the recipient (i.e., for themselves)
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/suggestOfflinePlayers.md-->
+<!--@include: @/parts/range.md-->
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/cooldown.md-->

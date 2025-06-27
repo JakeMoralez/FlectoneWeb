@@ -43,6 +43,8 @@ authors:
 
 Сообщение после имени над головой
 
+<!--@include: @/parts/ticker.md-->
+
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
 <!--@include: @/parts/words.md#path--> `permission.yml → message.format.scoreboard`

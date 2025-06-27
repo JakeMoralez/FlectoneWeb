@@ -131,11 +131,4 @@ Achievement icon, which can be any Minecraft item (must specify the full path)
 #### `style`
 
 Achievement type (`TASK` regular, `GOAL` goal, `CHALLENGE` challenge)
-
-::: warning WARNING
-
-May cause delays, so not recommended for use
-
-:::
-
 :::::

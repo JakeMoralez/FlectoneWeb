@@ -108,12 +108,12 @@ chat:
       range: 100
       priority: 0
       trigger: ""
-      null-recipient:
+      null-receiver:
         enable: true
         destination:
           type: ACTION_BAR
           times:
-            stay: 60
+            stay: 20
       destination:
         type: CHAT
       cooldown:
@@ -126,12 +126,12 @@ chat:
       range: -2
       priority: 5
       trigger: "!"
-      null-recipient:
+      null-receiver:
         enable: true
         destination:
           type: ACTION_BAR
           times:
-            stay: 60
+            stay: 20
       destination:
         type: CHAT
       cooldown:
@@ -336,9 +336,9 @@ format:
     enable: true
     trigger: "@"
     destination:
-      type: ACTION_BAR
-      times:
-        stay: 60
+      type: TOAST
+      icon: "minecraft:bell"
+      style: TASK
     sound:
       enable: true
       volume: 0.1
@@ -409,12 +409,18 @@ format:
     color: "<white>"
     prefix: "<vault_prefix><stream_prefix>"
     suffix: "<afk_suffix><vault_suffix>"
+    ticker:
+      enable: false
 #endregion scoreboard
 #region spoiler
   spoiler:
     enable: true
     color: "<fcolor:2>"
 #endregion spoiler
+#region style
+  style:
+    enable: true
+#endregion style
 #region translate
   translate:
     enable: true

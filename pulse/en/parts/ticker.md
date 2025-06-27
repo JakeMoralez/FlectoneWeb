@@ -2,10 +2,12 @@
 
 Updates every certain interval of time
 
-- #### `enable`
+::: details Setting ticker
+#### `enable`
 
 Whether to update or not
 
-- #### `period`
+#### `period`
 
 How often in [ticks](https://minecraft.fandom.com/wiki/Tick) it should update
+:::

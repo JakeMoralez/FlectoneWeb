@@ -19,11 +19,11 @@ authors:
 <<< @/files/localizations/en_us.yml#gamemode
 :::
 
-### `self`
+### `format-self`
 
 Сообщение при смене режима игры самому себе или получателю, когда его режим изменён
 
-### `multiple`
+### `format-multiple`
 
 Сообщение при смене режима игры другому игроку
 

@@ -51,6 +51,10 @@ discord:
 interactivechat:
   enable: true
 #endregion interactivechat
+#region itemsadder
+itemsadder:
+  enable: true
+#endregion itemsadder
 #region litebans
 litebans:
   enable: true

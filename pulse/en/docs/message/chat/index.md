@@ -25,7 +25,7 @@ A module responsible for messages sent by players in chat
 
 Message if nothing was sent to chat  
 
-### `null-recipient`  
+### `null-receiver`  
 
 Message if no one saw the player's message  
 

@@ -7,10 +7,10 @@
 #                           /  \
 # __/\___  ____/\_____  ___/    \______
 #        \/           \/  
-#
+# 
 #region config
 console: "Console"
-version: "0.8.4"
+version: "0.9.0"
 language: "en_us"
 language-player: true
 metrics: true
@@ -22,6 +22,7 @@ log-filter:
   - "Caught previously unhandled exception :"
   - "Error received from Telegram GetUpdates Request"
   - "OkHttp TaskRunner"
+  - "Exception in thread \"ForkJoinPool"
 database:
   type: SQLITE
   name: "flectonepulse"

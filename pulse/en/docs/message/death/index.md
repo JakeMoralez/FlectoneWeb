@@ -21,6 +21,14 @@ A message from the server when a player dies
 <<< @/files/localizations/en_us.yml#death
 :::
 
+### `killer-player`
+
+Message that replaces the `<killer>` tag when the killer is a player
+
+### `killer-entity`
+
+Message that replaces the `<killer>` tag when the killer is a mob/entity
+
 ### `types`
 
 A complete list of death types, where the key is the name of the death and the value is the message that will be used

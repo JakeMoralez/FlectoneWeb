@@ -44,6 +44,8 @@ Text displayed before player names
 
 Text displayed after player names
 
+<!--@include: @/parts/ticker.md-->
+
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
 <!--@include: @/parts/words.md#path--> `permission.yml → message.format.scoreboard`

@@ -75,7 +75,7 @@ command:
 #region chatcolor
   chatcolor:
     name: "flectonepulse.module.command.chatcolor"
-    type: TRUE
+    type: OP
     other:
       name: "flectonepulse.module.command.chatcolor.other"
       type: OP
@@ -90,7 +90,22 @@ command:
   chatsetting:
     name: "flectonepulse.module.command.chatsetting"
     type: TRUE
-    items:
+    settings:
+      CHAT:
+        name: "flectonepulse.module.command.chatsetting.chat"
+        type: TRUE
+      COLOR:
+        name: "flectonepulse.module.command.chatsetting.color"
+        type: TRUE
+      STYLE:
+        name: "flectonepulse.module.command.chatsetting.style"
+        type: OP
+      SPY:
+        name: "flectonepulse.module.command.chatsetting.spy"
+        type: OP
+      STREAM:
+        name: "flectonepulse.module.command.chatsetting.stream"
+        type: OP
       ADVANCEMENT:
         name: "flectonepulse.module.command.chatsetting.advancement"
         type: TRUE
@@ -109,14 +124,8 @@ command:
       BROADCAST:
         name: "flectonepulse.module.command.chatsetting.broadcast"
         type: TRUE
-      CHAT:
-        name: "flectonepulse.module.command.chatsetting.chat"
-        type: TRUE
       COIN:
         name: "flectonepulse.module.command.chatsetting.coin"
-        type: TRUE
-      COLOR:
-        name: "flectonepulse.module.command.chatsetting.color"
         type: TRUE
       DEATH:
         name: "flectonepulse.module.command.chatsetting.death"
@@ -160,12 +169,6 @@ command:
       ROCKPAPERSCISSORS:
         name: "flectonepulse.module.command.chatsetting.rockpaperscissors"
         type: TRUE
-      SPY:
-        name: "flectonepulse.module.command.chatsetting.spy"
-        type: OP
-      STREAM:
-        name: "flectonepulse.module.command.chatsetting.stream"
-        type: OP
       TELEGRAM:
         name: "flectonepulse.module.command.chatsetting.telegram"
         type: TRUE
@@ -194,6 +197,20 @@ command:
       name: "flectonepulse.module.command.chatsetting.sound"
       type: TRUE
 #endregion chatsetting
+#region chatstyle
+  chatstyle:
+    name: "flectonepulse.module.command.chatstyle"
+    type: OP
+    other:
+      name: "flectonepulse.module.command.chatstyle.other"
+      type: OP
+    cooldown-bypass:
+      name: "flectonepulse.module.command.chatstyle.cooldown.bypass"
+      type: OP
+    sound:
+      name: "flectonepulse.module.command.chatstyle.sound"
+      type: TRUE
+#endregion chatstyle
 #region clearchat
   clearchat:
     name: "flectonepulse.module.command.clearchat"
@@ -594,6 +611,11 @@ integration:
     name: "flectonepulse.module.integration.interactivechat"
     type: TRUE
 #endregion interactivechat
+#region itemsadder
+  itemsadder:
+    name: "flectonepulse.module.integration.itemsadder"
+    type: TRUE
+#endregion itemsadder
 #region litebans
   litebans:
     name: "flectonepulse.module.integration.litebans"
@@ -1017,6 +1039,11 @@ message:
       name: "flectonepulse.module.format.spoiler"
       type: TRUE
 #endregion spoiler
+#region style
+    style:
+      name: "flectonepulse.module.format.style"
+      type: TRUE
+#endregion style
 #region translate
     translate:
       name: "flectonepulse.module.format.translate"

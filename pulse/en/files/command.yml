@@ -91,170 +91,244 @@ chatsetting:
   enable: true
   aliases:
     - "chatsetting"
-  items:
-    ADVANCEMENT:
-      slot: 4
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    AFK:
-      slot: 25
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    AUTO:
-      slot: 8
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    BALL:
-      slot: 12
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    BAN:
-      slot: 14
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    BROADCAST:
-      slot: 22
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    CHAT:
+  checkbox:
+    disabled-material: "RED_DYE"
+    enabled-material: "LIME_DYE"
+    types:
+      SPY: 9
+      STREAM: 10
+      ADVANCEMENT: 18
+      AFK: 19
+      AUTO: 20
+      BALL: 21
+      BAN: 22
+      BROADCAST: 23
+      COIN: 24
+      DEATH: 25
+      DICE: 26
+      DISCORD: 27
+      DO: 28
+      GREETING: 29
+      JOIN: 30
+      KICK: 31
+      MAIL: 32
+      ME: 33
+      MUTE: 34
+      POLL: 35
+      QUIT: 36
+      REPLY: 37
+      ROCKPAPERSCISSORS: 38
+      TELL: 39
+      TELEGRAM: 40
+      TICTACTOE: 41
+      TRANSLATETO: 42
+      TRY: 43
+      TWITCH: 44
+      WARN: 45
+  menu:
+    material: "LIGHT_BLUE_DYE"
+    chat:
       slot: 0
-      materials:
-        - "YELLOW_CONCRETE"
-    COIN:
-      slot: 24
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    COLOR:
+      types:
+        - name: "default"
+          material: "ARROW"
+        - name: "local"
+          material: "WHITE_DYE"
+        - name: "global"
+          material: "BLACK_DYE"
+    color:
       slot: 1
-      materials:
-        - "YELLOW_CONCRETE"
-    DEATH:
-      slot: 5
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    DICE:
-      slot: 11
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    DISCORD:
-      slot: 29
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    DO:
-      slot: 23
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    GREETING:
-      slot: 27
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    JOIN:
-      slot: 6
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    KICK:
-      slot: 20
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    MAIL:
-      slot: 18
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    ME:
-      slot: 9
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    MUTE:
-      slot: 13
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    POLL:
-      slot: 26
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    QUIT:
-      slot: 7
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    REPLY:
-      slot: 17
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    ROCKPAPERSCISSORS:
-      slot: 28
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    SPY:
-      slot: 3
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    STREAM:
+      types:
+        - name: "default"
+          material: "ARROW"
+          colors:
+            1: "#ADD8E6"
+            2: "#87CEFA"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "white"
+          material: "WHITE_DYE"
+          colors:
+            1: "#F9FFFE"
+            2: "#E4E4E4"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "light_gray"
+          material: "LIGHT_GRAY_DYE"
+          colors:
+            1: "#9D9D97"
+            2: "#7A7A76"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "gray"
+          material: "GRAY_DYE"
+          colors:
+            1: "#474F52"
+            2: "#353A3C"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "black"
+          material: "BLACK_DYE"
+          colors:
+            1: "#1D1D21"
+            2: "#0E0E10"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "brown"
+          material: "BROWN_DYE"
+          colors:
+            1: "#835432"
+            2: "#5E3A1F"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "red"
+          material: "RED_DYE"
+          colors:
+            1: "#B02E26"
+            2: "#8C1A12"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "orange"
+          material: "ORANGE_DYE"
+          colors:
+            1: "#F9801D"
+            2: "#E35E1A"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "yellow"
+          material: "YELLOW_DYE"
+          colors:
+            1: "#FED83D"
+            2: "#F5C71A"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "lime"
+          material: "LIME_DYE"
+          colors:
+            1: "#80C71F"
+            2: "#6AAD17"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "green"
+          material: "GREEN_DYE"
+          colors:
+            1: "#5E7C16"
+            2: "#3B5A14"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "cyan"
+          material: "CYAN_DYE"
+          colors:
+            1: "#169C9C"
+            2: "#0E7D7D"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "light_blue"
+          material: "LIGHT_BLUE_DYE"
+          colors:
+            1: "#ADD8E6"
+            2: "#87CEFA"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "blue"
+          material: "BLUE_DYE"
+          colors:
+            1: "#3C44AA"
+            2: "#2A2F8A"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "purple"
+          material: "PURPLE_DYE"
+          colors:
+            1: "#8932B8"
+            2: "#6A1F9C"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "magenta"
+          material: "MAGENTA_DYE"
+          colors:
+            1: "#C74EBD"
+            2: "#B03AB0"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+        - name: "pink"
+          material: "PINK_DYE"
+          colors:
+            1: "#F38BAA"
+            2: "#E57FA0"
+            3: "#A9A9A9"
+            4: "#FFFAFA"
+    style:
       slot: 2
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    TELEGRAM:
-      slot: 30
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    TELL:
-      slot: 16
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    TICTACTOE:
-      slot: 19
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    TRANSLATETO:
-      slot: 21
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    TRY:
-      slot: 10
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    TWITCH:
-      slot: 31
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
-    WARN:
-      slot: 15
-      materials:
-        - "LIME_CONCRETE"
-        - "RED_CONCRETE"
+      types:
+        - name: "default"
+          material: "ARROW"
+          value: ""
+        - name: "white"
+          material: "WHITE_DYE"
+          value: "<gradient:#F9FFFE:#E4E4E4>"
+        - name: "light_gray"
+          material: "LIGHT_GRAY_DYE"
+          value: "<gradient:#9D9D97:#7A7A76>"
+        - name: "gray"
+          material: "GRAY_DYE"
+          value: "<gradient:#474F52:#353A3C>"
+        - name: "black"
+          material: "BLACK_DYE"
+          value: "<gradient:#1D1D21:#0E0E10>"
+        - name: "brown"
+          material: "BROWN_DYE"
+          value: "<gradient:#835432:#5E3A1F>"
+        - name: "red"
+          material: "RED_DYE"
+          value: "<gradient:#B02E26:#8C1A12>"
+        - name: "orange"
+          material: "ORANGE_DYE"
+          value: "<gradient:#F9801D:#E35E1A>"
+        - name: "yellow"
+          material: "YELLOW_DYE"
+          value: "<gradient:#FED83D:#F5C71A>"
+        - name: "lime"
+          material: "LIME_DYE"
+          value: "<gradient:#80C71F:#6AAD17>"
+        - name: "green"
+          material: "GREEN_DYE"
+          value: "<gradient:#5E7C16:#3B5A14>"
+        - name: "cyan"
+          material: "CYAN_DYE"
+          value: "<gradient:#169C9C:#0E7D7D>"
+        - name: "light_blue"
+          material: "LIGHT_BLUE_DYE"
+          value: "<gradient:#ADD8E6:#87CEFA>"
+        - name: "blue"
+          material: "BLUE_DYE"
+          value: "<gradient:#3C44AA:#2A2F8A>"
+        - name: "purple"
+          material: "PURPLE_DYE"
+          value: "<gradient:#8932B8:#6A1F9C>"
+        - name: "magenta"
+          material: "MAGENTA_DYE"
+          value: "<gradient:#C74EBD:#B03AB0>"
+        - name: "pink"
+          material: "PINK_DYE"
+          value: "<gradient:#F38BAA:#E57FA0>"
   cooldown:
     enable: false
   sound:
     enable: false
 #endregion chatsetting
+#region chatstyle
+chatstyle:
+  enable: true
+  aliases:
+    - "chatstyle"
+  destination:
+    type: CHAT
+  cooldown:
+    enable: false
+  sound:
+    enable: false
+#endregion chatstyle
 #region clearchat
 clearchat:
   enable: true
@@ -599,6 +673,7 @@ symbol:
 tell:
   enable: true
   suggest-offline-players: false
+  range: -2
   aliases:
     - "tell"
     - "msg"

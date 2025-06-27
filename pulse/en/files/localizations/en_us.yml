@@ -46,7 +46,7 @@ command:
 #endregion command
 #region ball
   ball:
-    format: "<color:#9370DB>❓ <display_name> asked: <message> <br>🔮 Ball answered: <u><answer></u>"
+    format: "<color:#9370DB>❓ <display_name> asked: <style><message><reset> <color:#9370DB><br>🔮 Ball answered: <u><answer></u>"
     answers:
       - "Very doubtful"
       - "The prospects are not good"
@@ -92,7 +92,7 @@ command:
 #endregion banlist
 #region broadcast
   broadcast:
-    format: "<color:#fce303>🕫 Message for all from <display_name> <br>❝ <message> ❠"
+    format: "<br><color:#ffd500>│ 🕫 Message for everyone <br>│<br>│ Author <display_name> <br>│<br>│ <fcolor:1><style><message> <br>"
 #endregion broadcast
 #region chatcolor
   chatcolor:
@@ -107,168 +107,97 @@ command:
       you: "<color:#ff7171><b>⁉</b> Display of this command is disabled, check /chatsetting"
       he: "<color:#ff7171><b>⁉</b> He disabled this option via /chatsetting"
       server: "<color:#ff7171><b>⁉</b> This command disabled on server"
-    header: "            Chat Settings"
-    items:
-      ADVANCEMENT:
-        - - "<fcolor:2>Advancement"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Advancement"
-          - "<color:#ff7171>Display disabled"
-      AFK:
-        - - "<fcolor:2>Command /afk"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /afk"
-          - "<color:#ff7171>Display disabled"
-      AUTO:
-        - - "<fcolor:2>Auto Message"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Auto Message"
-          - "<color:#ff7171>Display disabled"
-      BALL:
-        - - "<fcolor:2>Command /ball"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /ball"
-          - "<color:#ff7171>Display disabled"
-      BAN:
-        - - "<fcolor:2>Command /ban"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /ban"
-          - "<color:#ff7171>Display disabled"
-      BROADCAST:
-        - - "<fcolor:2>Command /broadcast"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /broadcast"
-          - "<color:#ff7171>Display disabled"
-      CHAT:
-        - - "<fcolor:2>Chat"
-          - "<fcolor:1>Your chat <bold><chat>"
-      COIN:
-        - - "<fcolor:2>Command /coin"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /coin"
-          - "<color:#ff7171>Display disabled"
-      COLOR:
-        - - "<fcolor:2>Colors"
-          - "<fcolor:1>message"
-          - "<fcolor:2>message"
-          - "<fcolor:3>message"
-          - "<fcolor:4>message"
-      DEATH:
-        - - "<fcolor:2>Death"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Death"
-          - "<color:#ff7171>Display disabled"
-      DICE:
-        - - "<fcolor:2>Command /dice"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /dice"
-          - "<color:#ff7171>Display disabled"
-      DISCORD:
-        - - "<fcolor:2>Messages for/from Discord"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Messages for/from Discord"
-          - "<color:#ff7171>Display disabled"
-      DO:
-        - - "<fcolor:2>Command /do"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /do"
-          - "<color:#ff7171>Display disabled"
-      GREETING:
-        - - "<fcolor:2>Greeting message"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Greeting message"
-          - "<color:#ff7171>Display disabled"
-      JOIN:
-        - - "<fcolor:2>Join"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Join"
-          - "<color:#ff7171>Display disabled"
-      KICK:
-        - - "<fcolor:2>Command /kick"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /kick"
-          - "<color:#ff7171>Display disabled"
-      MAIL:
-        - - "<fcolor:2>Command /mail"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /mail"
-          - "<color:#ff7171>Display disabled"
-      ME:
-        - - "<fcolor:2>Command /me"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /me"
-          - "<color:#ff7171>Display disabled"
-      MUTE:
-        - - "<fcolor:2>Command /mute"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /mute"
-          - "<color:#ff7171>Display disabled"
-      POLL:
-        - - "<fcolor:2>Command /poll"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /poll"
-          - "<color:#ff7171>Display disabled"
-      QUIT:
-        - - "<fcolor:2>Quit"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Quit"
-          - "<color:#ff7171>Display disabled"
-      REPLY:
-        - - "<fcolor:2>Command /reply"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /reply"
-          - "<color:#ff7171>Display disabled"
-      ROCKPAPERSCISSORS:
-        - - "<fcolor:2>Command /rockpaperscissors"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /rockpaperscissors"
-          - "<color:#ff7171>Display disabled"
-      SPY:
-        - - "<fcolor:2>Spy"
-          - "<color:#98FB98>You're spying"
-        - - "<fcolor:2>Spy"
-          - "<color:#ff7171>You're not spying"
-      STREAM:
-        - - "<fcolor:2>Stream"
-          - "<color:#98FB98>You're streaming"
-        - - "<fcolor:2>Stream"
-          - "<color:#ff7171>You don't stream"
-      TELL:
-        - - "<fcolor:2>Command /tell"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /tell"
-          - "<color:#ff7171>Display disabled"
-      TELEGRAM:
-        - - "<fcolor:2>Messages for/from Telegram"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Messages for/from Telegram"
-          - "<color:#ff7171>Display disabled"
-      TICTACTOE:
-        - - "<fcolor:2>Command /tictactoe"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /tictactoe"
-          - "<color:#ff7171>Display disabled"
-      TRANSLATETO:
-        - - "<fcolor:2>Command /translateto"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /translateto"
-          - "<color:#ff7171>Display disabled"
-      TRY:
-        - - "<fcolor:2>Command /try"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /try"
-          - "<color:#ff7171>Display disabled"
-      TWITCH:
-        - - "<fcolor:2>Messages for/from Twitch"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Messages for/from Twitch"
-          - "<color:#ff7171>Display disabled"
-      WARN:
-        - - "<fcolor:2>Command /warn"
-          - "<color:#98FB98>Display enabled"
-        - - "<fcolor:2>Command /warn"
-          - "<color:#ff7171>Display disabled"
+    inventory: "<reset>            Chat Settings"
+    checkbox:
+      format-enable: "<color:#98FB98>Display enabled"
+      format-disable: "<color:#ff7171>Display disabled"
+      types:
+        ADVANCEMENT: "<fcolor:2>Advancement"
+        AFK: "<fcolor:2>Command /afk"
+        AUTO: "<fcolor:2>Auto Message"
+        BALL: "<fcolor:2>Command /ball"
+        BAN: "<fcolor:2>Command /ban"
+        BROADCAST: "<fcolor:2>Command /broadcast"
+        COIN: "<fcolor:2>Command /coin"
+        DEATH: "<fcolor:2>Death"
+        DICE: "<fcolor:2>Command /dice"
+        DISCORD: "<fcolor:2>Messages for/from Discord"
+        DO: "<fcolor:2>Command /do"
+        GREETING: "<fcolor:2>Greeting message"
+        JOIN: "<fcolor:2>Join"
+        KICK: "<fcolor:2>Command /kick"
+        MAIL: "<fcolor:2>Command /mail"
+        ME: "<fcolor:2>Command /me"
+        MUTE: "<fcolor:2>Command /mute"
+        POLL: "<fcolor:2>Command /poll"
+        QUIT: "<fcolor:2>Quit"
+        REPLY: "<fcolor:2>Command /reply"
+        ROCKPAPERSCISSORS: "<fcolor:2>Command /rockpaperscissors"
+        SPY: "<fcolor:2>Spy"
+        STREAM: "<fcolor:2>Stream"
+        TELL: "<fcolor:2>Command /tell"
+        TELEGRAM: "<fcolor:2>Messages for/from Telegram"
+        TICTACTOE: "<fcolor:2>Command /tictactoe"
+        TRANSLATETO: "<fcolor:2>Command /translateto"
+        TRY: "<fcolor:2>Command /try"
+        TWITCH: "<fcolor:2>Messages for/from Twitch"
+        WARN: "<fcolor:2>Command /warn"
+    menu:
+      chat:
+        item: "<fcolor:2>Chat type <br><fcolor:1>Chat for viewing and sending messages <br><br><fcolor:1>Your chat is <fcolor:2><chat>"
+        inventory: "<reset>                 Chats"
+        types:
+          default: "<fcolor:2>Default chat<br><fcolor:1>You can see <fcolor:2>all</fcolor:2> chats and write to any chat"
+          local: "<fcolor:2>Local chat<br><fcolor:1>You can only write to <fcolor:2>local</fcolor:2> chat and see it"
+          global: "<fcolor:2>Global chat<br><fcolor:1>You can only write to <fcolor:2>global</fcolor:2> chat and see it"
+      color:
+        item: "<fcolor:2>Colors <br><fcolor:1>Main colors of FlectonePulse <br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world! <br><br><u><color:#ff7171>Only you see it"
+        inventory: "<reset>                Colors"
+        types:
+          default: "<fcolor:2>Default colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          white: "<fcolor:2>White colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          light_gray: "<fcolor:2>Light gray colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          gray: "<fcolor:2>Gray colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          black: "<fcolor:2>Black colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          brown: "<fcolor:2>Brown colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          red: "<fcolor:2>Red colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          orange: "<fcolor:2>Orange colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          yellow: "<fcolor:2>Yellow colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          lime: "<fcolor:2>Lime colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          green: "<fcolor:2>Green colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          cyan: "<fcolor:2>Cyan colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          light_blue: "<fcolor:2>Light blue colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          blue: "<fcolor:2>Blue colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          purple: "<fcolor:2>Purple colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          magenta: "<fcolor:2>Magenta colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+          pink: "<fcolor:2>Pink colors<br><br><fcolor:2><player><fcolor:3>: hello world! <br><fcolor:2><player><fcolor:4>: hello world! <br><fcolor:2><player><fcolor:1>: hello world!"
+      style:
+        item: "<fcolor:2>Style <br><fcolor:1>Style of the messages you sent <br><br><fcolor:1>Your style is <gray><style>hello world! <br><br><u><color:#ff7171>Everyone sees it"
+        inventory: "<reset>                Styles"
+        types:
+          default: "<style>Default style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          white: "<style>White style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          light_gray: "<style>Light gray style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          gray: "<style>Gray style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          black: "<style>Black style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          brown: "<style>Brown style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          red: "<style>Red style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          orange: "<style>Orange style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          yellow: "<style>Yellow style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          lime: "<style>Lime style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          green: "<style>Green style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          cyan: "<style>Cyan style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          light_blue: "<style>Light blue style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          blue: "<style>Blue style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          purple: "<style>Purple style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          magenta: "<style>Magenta style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
+          pink: "<style>Pink style<br><br><fcolor:2><player><fcolor:3>: <style>hello world!"
 #endregion chatsetting
+#region chatstyle
+  chatstyle:
+    null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
+    format: "<fcolor:1>💬 Now your <style>style is like this"
+#endregion chatstyle
 #region clearchat
   clearchat:
     null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
@@ -283,7 +212,7 @@ command:
   coin:
     head: "heads"
     tail: "tails"
-    format: "<fcolor:1>✎ <display_name> player got <result>"
+    format: "<fcolor:1>✎ <display_name> player got <style><result>"
     format-draw: "<fcolor:1>✎ <display_name> player got edge :)"
 #endregion coin
 #region dice
@@ -295,11 +224,11 @@ command:
       4: "⚃"
       5: "⚄"
       6: "⚅"
-    format: "<fcolor:1>✎ <display_name> roll <message> (<sum>)"
+    format: "<fcolor:1>✎ <display_name> roll <style><message><reset> <fcolor:1>(<sum>)"
 #endregion dice
 #region do
   do:
-    format: "<fcolor:1>✎ <message> (<i><display_name></i>)"
+    format: "<fcolor:1>✎ <style><message><reset> <fcolor:1>(<i><display_name></i>)"
 #endregion do
 #region flectonepulse
   flectonepulse:
@@ -316,7 +245,7 @@ command:
 #region helper
   helper:
     null-helper: "<color:#ff7171><b>⁉</b> There are no people who can help you"
-    global: "<fcolor:2>👤 <display_name> needs help ⏩ <fcolor:1><message>"
+    global: "<fcolor:2>👤 <display_name> needs help ⏩ <fcolor:1><style><message>"
     player: "<fcolor:2>👤 Request sent, awaiting reply"
 #endregion helper
 #region ignore
@@ -347,8 +276,8 @@ command:
 #region mail
   mail:
     null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
-    sender: "<fcolor:2>✉ Mail #<id> for <display_name> » <fcolor:1><message>"
-    receiver: "<fcolor:2>✉ Mail from <display_name> » <fcolor:1><message>"
+    sender: "<fcolor:2>✉ Mail #<id> for <display_name> » <fcolor:1><style><message>"
+    receiver: "<fcolor:2>✉ Mail from <display_name> » <fcolor:1><style><message>"
 #endregion mail
 #region maintenance
   maintenance:
@@ -360,7 +289,7 @@ command:
 #endregion maintenance
 #region me
   me:
-    format: "<fcolor:1>✎ <display_name> <message>"
+    format: "<fcolor:1>✎ <display_name> <fcolor:1><style><message>"
 #endregion me
 #region mute
   mute:
@@ -405,7 +334,7 @@ command:
     already: "<color:#ff7171><b>⁉</b> You have already voted in this poll"
     vote-true: "<color:#4eff52>👍 You voted for <answer_id> in poll #<id>. There are <count> of you"
     vote-false: "<color:#ff4e4e>🖓 You rejected <answer_id> in poll #<id>. There are <count> without you"
-    format: "<br><color:#fce303>│ <status> <br>│ <message> <br>├─────────────<br><answers>"
+    format: "<br><color:#fce303>│ <status> <br>│ <style><message><reset> <color:#fce303><br>├─────────────<br><answers>"
     answer-template: "<color:#fce303>│ <count> → <color:#4eff52><hover:show_text:\"<color:#4eff52>Vote for <bold><answer>\"><click:run_command:\"/pollvote <id> <number>\"><answer> [👍]<br>"
     status:
       start: "New poll #<b><id></b> has been created"
@@ -451,14 +380,14 @@ command:
 #endregion stream
 #region symbol
   symbol:
-    format: "<click:suggest_command:\"<message>\"><fcolor:2>🖥 Click for using: <fcolor:1><message>"
+    format: "<click:suggest_command:\"<message>\"><fcolor:2>🖥 Click for using: <fcolor:1><style><message>"
 #endregion symbol
 #region tell
   tell:
     null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
     sender: "<fcolor:2>✉ You → <display_name> » <fcolor:1><message>"
     receiver: "<fcolor:2>✉ <display_name> → You » <fcolor:1><message>"
-    myself: "<fcolor:2>✉ [Note] <fcolor:1><message>"
+    myself: "<fcolor:2>✉ [Note] <fcolor:1><style><message>"
 #endregion tell
 #region tictactoe
   tictactoe:
@@ -487,12 +416,12 @@ command:
 #region translateto
   translateto:
     null-or-error: "<color:#ff7171><b>⁉</b> Error, you may have specified an unsupported language"
-    format: "<fcolor:1>📖 Translation to [<language>] → <fcolor:2><message>"
+    format: "<fcolor:1>📖 Translation to [<language>] → <fcolor:2><style><message>"
 #endregion translateto
 #region try
   try:
-    format-true: "<color:#98FB98>☺ <display_name> <message> <percent>%"
-    format-false: "<color:#F08080>☹ <display_name> <message> <percent>%"
+    format-true: "<color:#98FB98>☺ <display_name> <style><message><reset> <color:#98FB98><percent>%"
+    format-false: "<color:#F08080>☹ <display_name> <style><message><reset> <color:#98FB98><percent>%"
 #endregion try
 #region unban
   unban:
@@ -586,13 +515,13 @@ message:
   advancement:
     task:
       format: "<color:#4eff52>🌠 <fcolor:2><display_name> <fcolor:1>has completed the task <advancement>"
-      tag: "<color:#4eff52>[<hover:show_text:\"<color:#4eff52><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
+      tag: "<color:#4eff52>[<hover:show_text:\"<color:#4eff52><lang:'<title>'> <br><lang:'<description>'>\"><lang:'<title>'></hover>]"
     goal:
       format: "<color:#FFFF00>🌠 <fcolor:2><display_name> <fcolor:1>has completed the goal <advancement>"
-      tag: "<color:#FFFF00>[<hover:show_text:\"<color:#FFFF00><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
+      tag: "<color:#FFFF00>[<hover:show_text:\"<color:#FFFF00><lang:'<title>'> <br><lang:'<description>'>\"><lang:'<title>'></hover>]"
     challenge:
       format: "<color:#834eff>🌠 <fcolor:2><display_name> <fcolor:1>has completed the challenge <color:#834eff><advancement>"
-      tag: "<color:#834eff>[<hover:show_text:\"<color:#834eff><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
+      tag: "<color:#834eff>[<hover:show_text:\"<color:#834eff><lang:'<title>'> <br><lang:'<description>'>\"><lang:'<title>'></hover>]"
     revoke:
       many-to-one: "<fcolor:1>🌠 Revoked <fcolor:2><number></fcolor:2> advancements from <display_name>"
       one-to-one: "<fcolor:1>🌠 Revoked the advancement <fcolor:2><advancement></fcolor:2> from <display_name>"
@@ -635,15 +564,15 @@ message:
 #endregion brand
 #region bubble
   bubble:
-    format: "<fcolor:3><message>"
+    format: "<fcolor:3><style><message>"
 #endregion bubble
 #region chat
   chat:
     null-chat: "<color:#ff7171><b>⁉</b> Chat is disabled on this server"
-    null-recipient: "<color:#ff7171><b>⁉</b> Nobody heard you"
+    null-receiver: "<color:#ff7171><b>⁉</b> Nobody heard you"
     types:
-      global: "<display_name> <world_prefix>»<fcolor:4> <message> <translateto:\"<message_to_translate>\">"
-      local: "<display_name><fcolor:3>: <message> <translateto:\"<message_to_translate>\">"
+      global: "<display_name> <world_prefix>»<fcolor:4> <style><message> <translate>"
+      local: "<display_name><fcolor:3>: <style><message> <translate>"
 #endregion chat
 #region clear
   clear:
@@ -652,6 +581,8 @@ message:
 #endregion clear
 #region death
   death:
+    killer-player: "<display_name>"
+    killer-entity: "<display_name>"
     types:
       death.attack.anvil: "<color:#778899>🪦 <fcolor:1><display_name> was squashed by a falling anvil"
       death.attack.anvil.player: "<color:#778899>🪦 <fcolor:1><color:#778899>🪦 <fcolor:1> <display_name> was squashed by a falling anvil while fighting <killer>"
@@ -760,8 +691,8 @@ message:
 #endregion deop
 #region enchant
   enchant:
-    single: "<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» to <display_name>'s item"
-    multiple: "<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» to <fcolor:2><count></fcolor:2> entities"
+    single: "<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:'<enchant>'> <lang:'<level>'></fcolor:2>» to <display_name>'s item"
+    multiple: "<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:'<enchant>'> <lang:'<level>'></fcolor:2>» to <fcolor:2><count></fcolor:2> entities"
 #endregion enchant
 #region format
   format:
@@ -796,7 +727,7 @@ message:
     name-:
       constant: ""
       display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Write to <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
-      entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:<name>> <br><fcolor:1>Type <fcolor:2><lang:<type>> <br><fcolor:1>ID <fcolor:2><uuid>\"><lang:<name>></hover></fcolor:2>"
+      entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:'<name>'> <br><fcolor:1>Type <fcolor:2><lang:'<type>'> <br><fcolor:1>ID <fcolor:2><uuid>\"><lang:'<name>'></hover></fcolor:2>"
       unknown: "<fcolor:2><name></fcolor:2>"
 #endregion name_
 #region questionanswer
@@ -812,20 +743,12 @@ message:
 #endregion spoiler
 #region translate
     translate:
-      action: "<click:run_command:\"/translateto <language> <language> <message>\"><hover:show_text:\"<fcolor:2>Translate message\"><fcolor:1>[📖]"
+      action: "<click:run_command:\"/translateto <language> <language> <message>\"><hover:show_text:\"<fcolor:2>Translate message\"><fcolor:1>⇄"
 #endregion translate
 #region gamemode
   gamemode:
-    self:
-      creative: "<fcolor:1>🗘 Set own game mode to <fcolor:2>Creative Mode"
-      survival: "<fcolor:1>🗘 Set own game mode to <fcolor:2>Survival Mode"
-      adventure: "<fcolor:1>🗘 Set own game mode to <fcolor:2>Adventure Mode"
-      spectator: "<fcolor:1>🗘 Set own game mode to <fcolor:2>Spectator Mode"
-    other:
-      creative: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Creative Mode"
-      survival: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Survival Mode"
-      adventure: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Adventure Mode"
-      spectator: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Spectator Mode"
+    format-self: "<fcolor:1>🗘 Set own game mode to <fcolor:2><lang:gameMode.<gamemode>>"
+    format-other: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2><lang:gameMode.<gamemode>>"
 #endregion gamemode
 #region greeting
   greeting:
