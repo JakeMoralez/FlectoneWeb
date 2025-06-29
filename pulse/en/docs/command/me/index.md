@@ -11,7 +11,7 @@ Command to display an action
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.me`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.me`
 
 <!--@include: @/parts/words.md#default-->
 

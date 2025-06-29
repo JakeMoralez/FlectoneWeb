@@ -766,6 +766,11 @@ message:
     format: "<color:#4eff52>→ <display_name>"
     format-first-time: "<color:#4eff52>→ <display_name> <fcolor:1>впервые тут!"
 #endregion join
+#region kill
+  kill:
+    single: "<color:#778899>🪦 <fcolor:1><display_name> убит"
+    multiple: "<color:#778899>🪦 <fcolor:1>Уничтожено <fcolor:2><count></fcolor:2> сущностей"
+#endregion kill
 #region op
   op:
     format: "<fcolor:1>🤖 <display_name> назначен оператором сервера"

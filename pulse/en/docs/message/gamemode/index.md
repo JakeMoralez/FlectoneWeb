@@ -11,7 +11,7 @@ Message from the server when a player changes their game mode
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.gamemode`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.gamemode`
 
 <!--@include: @/parts/words.md#default-->
 

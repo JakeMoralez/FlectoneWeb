@@ -11,7 +11,7 @@ Command to attempt an action with a random chance of success
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.try`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.try`
 
 <!--@include: @/parts/words.md#default--> 
 

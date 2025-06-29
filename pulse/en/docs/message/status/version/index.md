@@ -11,7 +11,7 @@ Module responsible for the server version
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.status.version`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.status.version`
 
 <!--@include: @/parts/words.md#default--> 
 

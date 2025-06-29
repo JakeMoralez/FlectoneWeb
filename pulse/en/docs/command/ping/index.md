@@ -11,7 +11,7 @@ Command to check player latency
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.ping`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.ping`
 
 <!--@include: @/parts/words.md#default-->
 

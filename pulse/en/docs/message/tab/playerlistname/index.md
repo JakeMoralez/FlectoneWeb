@@ -11,7 +11,7 @@ Module responsible for the player's name in the TAB
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.tab.playerlistname`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.tab.playerlistname`
 
 <!--@include: @/parts/words.md#default--> 
 

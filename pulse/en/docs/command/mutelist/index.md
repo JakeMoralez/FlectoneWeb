@@ -11,7 +11,7 @@ Command to view the list of muted players
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.mutelist`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.mutelist`
 
 <!--@include: @/parts/words.md#default-->
 

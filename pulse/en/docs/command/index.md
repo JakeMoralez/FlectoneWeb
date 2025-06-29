@@ -10,7 +10,7 @@ Category responsible for configuring all commands
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command`
 
 <!--@include: @/parts/words.md#default--> 
 

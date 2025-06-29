@@ -11,7 +11,7 @@ Command to unban a player
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.unban`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.unban`
 
 <!--@include: @/parts/words.md#default--> 
 

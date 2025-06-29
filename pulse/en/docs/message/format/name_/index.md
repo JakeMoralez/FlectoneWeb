@@ -12,7 +12,7 @@ Module responsible for the player's name
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.name_`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.format.name_`
 
 <!--@include: @/parts/words.md#default--> 
 

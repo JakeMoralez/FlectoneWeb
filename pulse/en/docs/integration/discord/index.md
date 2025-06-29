@@ -17,7 +17,7 @@ Integration with Discord allows sending messages:
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → integration.discord`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → integration.discord`
 
 <!--@include: @/parts/words.md#default--> 
 

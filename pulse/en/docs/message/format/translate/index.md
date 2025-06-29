@@ -12,7 +12,7 @@ The `translate` tag is used for translating a message into another language
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.translate`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.format.translate`
 
 <!--@include: @/parts/words.md#default--> 
 

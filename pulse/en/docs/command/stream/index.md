@@ -14,7 +14,7 @@ If the player has permission for the command, they will receive a prefix when en
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.stream`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.stream`
 
 <!--@include: @/parts/words.md#default--> 
 

@@ -10,7 +10,7 @@ Configuration of messages in `FlectonePulse` (why they appear and how)
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml`
 
 <!--@include: @/parts/words.md#default--> 
 

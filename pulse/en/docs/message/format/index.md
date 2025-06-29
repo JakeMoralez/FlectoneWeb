@@ -10,7 +10,7 @@ The module responsible for formatting sent messages
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.format`
 
 <!--@include: @/parts/words.md#default-->
 

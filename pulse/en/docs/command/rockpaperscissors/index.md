@@ -11,7 +11,7 @@ Command to offer to play rock-paper-scissors
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.rockpaperscissors`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.rockpaperscissors`
 
 <!--@include: @/parts/words.md#default-->
 

@@ -11,7 +11,7 @@ Message from the server to the player when they connect
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.greeting`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.greeting`
 
 <!--@include: @/parts/words.md#default-->
 

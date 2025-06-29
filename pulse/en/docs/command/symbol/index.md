@@ -13,7 +13,7 @@ Huge thanks to @replaceitem for allowing the use of [symbol lists](https://githu
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.symbol`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.symbol`
 
 <!--@include: @/parts/words.md#default--> 
 

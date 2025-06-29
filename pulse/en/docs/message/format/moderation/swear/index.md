@@ -11,7 +11,7 @@ This formatting hides the player's profanity
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.moderation.swear`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.format.moderation.swear`
 
 <!--@include: @/parts/words.md#default--> 
 

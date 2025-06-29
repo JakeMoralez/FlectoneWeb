@@ -11,7 +11,7 @@ Command to view the list of warnings
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.warnlist`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.warnlist`
 
 <!--@include: @/parts/words.md#default--> 
 

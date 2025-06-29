@@ -11,7 +11,7 @@ Command to track player actions
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.spy`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.spy`
 
 <!--@include: @/parts/words.md#default--> 
 

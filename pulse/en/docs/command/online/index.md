@@ -11,7 +11,7 @@ Command to check player online status
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.online`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.online`
 
 <!--@include: @/parts/words.md#default-->
 

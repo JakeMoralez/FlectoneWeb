@@ -11,7 +11,7 @@ Module responsible for the text at the top of the TAB
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.tab.header`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.tab.header`
 
 <!--@include: @/parts/words.md#default--> 
 

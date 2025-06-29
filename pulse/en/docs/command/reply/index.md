@@ -15,7 +15,7 @@ This command will not work if the [`Tell`](/docs/command/tell/) module is disabl
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.reply`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.reply`
 
 <!--@include: @/parts/words.md#default-->
 

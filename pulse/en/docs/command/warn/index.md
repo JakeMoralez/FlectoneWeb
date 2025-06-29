@@ -11,7 +11,7 @@ Command to give a warning to a player
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.warn`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.warn`
 
 <!--@include: @/parts/words.md#default--> 
 

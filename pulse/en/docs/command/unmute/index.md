@@ -11,7 +11,7 @@ Command to unmute a player
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.unmute`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.unmute`
 
 <!--@include: @/parts/words.md#default--> 
 

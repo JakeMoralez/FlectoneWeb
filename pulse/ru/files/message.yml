@@ -464,6 +464,14 @@ join:
   sound:
     enable: false
 #endregion join
+#region kill
+kill:
+  enable: true
+  sound:
+    enable: false
+  destination:
+    type: CHAT
+#endregion kill
 #region objective
 objective:
   enable: true

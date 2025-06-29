@@ -11,7 +11,7 @@ Command to translate a message from one language to another
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.translateto`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.translateto`
 
 <!--@include: @/parts/words.md#default--> 
 

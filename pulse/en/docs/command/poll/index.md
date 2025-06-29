@@ -11,7 +11,7 @@ Command for creating and managing polls
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.poll`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.poll`
 
 <!--@include: @/parts/words.md#default-->
 

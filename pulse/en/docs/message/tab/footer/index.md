@@ -11,7 +11,7 @@ Module responsible for the text at the bottom of the TAB
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.tab.footer`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.tab.footer`
 
 <!--@include: @/parts/words.md#default--> 
 

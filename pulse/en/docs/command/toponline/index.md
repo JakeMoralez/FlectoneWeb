@@ -10,7 +10,7 @@ Command to view the top players by playing time
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.toponline`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.toponline`
 
 <!--@include: @/parts/words.md#default--> 
 

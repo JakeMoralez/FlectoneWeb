@@ -22,7 +22,7 @@ This makes the game more challenging and strategic!
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.tictactoe`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.tictactoe`
 
 <!--@include: @/parts/words.md#default--> 
 

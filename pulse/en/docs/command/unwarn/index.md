@@ -11,7 +11,7 @@ Command to remove a warning from a player
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.unwarn`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.unwarn`
 
 <!--@include: @/parts/words.md#default--> 
 

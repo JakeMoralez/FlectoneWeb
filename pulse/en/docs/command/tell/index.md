@@ -14,7 +14,7 @@ Can be used for notes if you type your own username
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.tell`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → command.tell`
 
 <!--@include: @/parts/words.md#default--> 
 

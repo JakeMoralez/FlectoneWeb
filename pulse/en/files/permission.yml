@@ -1089,6 +1089,14 @@ message:
       name: "flectonepulse.module.message.join.sound"
       type: TRUE
 #endregion join
+#region kill
+  kill:
+    name: "flectonepulse.module.message.kill"
+    type: TRUE
+    sound:
+      name: "flectonepulse.module.message.kill.sound"
+      type: TRUE
+#endregion kill
 #region objective
   objective:
     name: "flectonepulse.module.message.objective"

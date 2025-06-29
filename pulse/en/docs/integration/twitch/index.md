@@ -18,7 +18,7 @@ Integration with Twitch allows:
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → integration.twitch`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → integration.twitch`
 
 <!--@include: @/parts/words.md#default--> 
 

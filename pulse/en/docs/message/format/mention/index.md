@@ -11,7 +11,7 @@ This formatting allows mentioning (pinging) someone in a message
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.mention`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.format.mention`
 
 <!--@include: @/parts/words.md#default--> 
 

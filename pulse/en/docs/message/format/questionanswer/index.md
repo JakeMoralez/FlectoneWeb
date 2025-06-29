@@ -11,7 +11,7 @@ Module responsible for answering a player's question
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.question-answer`
+<!--@include: @/parts/words.md#path--> `localizations → locale.yml → message.format.question-answer`
 
 <!--@include: @/parts/words.md#default--> 
 
