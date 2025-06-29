@@ -509,6 +509,17 @@ command:
       name: "flectonepulse.module.command.tictactoe.sound"
       type: TRUE
 #endregion tictactoe
+#region toponline
+  toponline:
+    name: "flectonepulse.module.command.toponline"
+    type: TRUE
+    cooldown-bypass:
+      name: "flectonepulse.module.command.toponline.cooldown.bypass"
+      type: OP
+    sound:
+      name: "flectonepulse.module.command.toponline.sound"
+      type: TRUE
+#endregion toponline
 #region translateto
   translateto:
     name: "flectonepulse.module.command.translateto"

@@ -413,6 +413,13 @@ command:
     sender: "<fcolor:1>☐ Предложение сыграть в крестики-нолики отправлено для <display_name>"
     receiver: "<click:run_command:\"/tictactoemove %d create\"><fcolor:1>☐ Есть предложение сыграть в крестики-нолики от <display_name>, принять? [+]"
 #endregion tictactoe
+#region toponline
+  toponline:
+    null-page: "<color:#ff7171><b>⁉</b> Страница не найдена"
+    header: "<fcolor:2>▋ Игроков: <count> <br>"
+    line: "<fcolor:2><time_player> <fcolor:1>наиграл <fcolor:2><time>"
+    footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+#endregion toponline
 #region translateto
   translateto:
     null-or-error: "<color:#ff7171><b>⁉</b> Ошибка, возможно указан неправильный язык"

@@ -699,6 +699,17 @@ tictactoe:
   sound:
     enable: false
 #endregion tictactoe
+#region toponline
+toponline:
+  enable: true
+  per-page: 10
+  aliases:
+    - "toponline"
+  cooldown:
+    enable: false
+  sound:
+    enable: false
+#endregion toponline
 #region translateto
 translateto:
   enable: true

@@ -7,16 +7,11 @@ authors:
 # Scoreboard
 
 Module responsible for proper `team` functionality and integration with:
-- [Mark](/docs/command/mark/)
 - [Objectives](/docs/message/objective/)
 - [Tab](/docs/message/tab/)
 
 ::: warning WARNING
 If you experience issues with `TAB` (such as sorting problems) or other plugins using `scoreboard`, you should disable this module
-:::
-
-::: warning WARNING
-If disabled, player names will be visible, the `mark` module will malfunction, and `FlectonePulse` tab sorting won't work
 :::
 
 [//]: # (message.yml)

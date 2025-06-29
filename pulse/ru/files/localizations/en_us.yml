@@ -413,6 +413,13 @@ command:
     sender: "<fcolor:1>☐ An offer to play was sent to <display_name>"
     receiver: "<click:run_command:\"/tictactoemove %d create\"><fcolor:1>☐ Received an invite to play tic-tac-toe with <display_name>, accept? [+]"
 #endregion tictactoe
+#region toponline
+  toponline:
+    null-page: "<color:#ff7171><b>⁉</b> This page doesn't exist"
+    header: "<fcolor:2>▋ Players: <count> <br>"
+    line: "<fcolor:2><time_player> <fcolor:1>played for <fcolor:2><time>"
+    footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+#endregion toponline
 #region translateto
   translateto:
     null-or-error: "<color:#ff7171><b>⁉</b> Error, you may have specified an unsupported language"

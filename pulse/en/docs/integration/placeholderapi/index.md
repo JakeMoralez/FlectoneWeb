@@ -15,17 +15,51 @@ Integration with PlaceholderAPI:
 
 - Adds its own placeholders
 
-| Placeholder                     | What it returns                                                      |
-|---------------------------------|--------------------------------------------------------------------|
-| `%flectonepulse_fcolor_номер%`  | Returns a [custom](/docs/message/format/color/) player color        |
-| `%flectonepulse_world_prefix%`  | Player's dimension prefix                                           |
-| `%flectonepulse_stream_prefix%` | Player's stream prefix                                              |
-| `%flectonepulse_afk_suffix%`    | Player's AFK suffix                                                 |
-| `%flectonepulse_player%`        | Player's regular name                                               |
-| `%flectonepulse_ip%`            | Player's IP address                                                 |
-| `%flectonepulse_ping%`          | Player's ping                                                       |
-| `%flectonepulse_online%`        | Number of players on the server                                     |
-| `%flectonepulse_tps%%`          | Server TPS                                                          |
+| Placeholder                         | Returns                                                                     |
+|-------------------------------------|-----------------------------------------------------------------------------|
+| `%flectonepulse_advancement%`       | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_afk%`               | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_afk_suffix%`        | Returns [AFK suffix](/docs/command/afk/)                                    |
+| `%flectonepulse_auto%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_ball%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_ban%`               | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_broadcast%`         | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_chat%`              | Returns the type of selected chat, default is `default`                     |
+| `%flectonepulse_coin%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_color%`             | Always empty, created for config                                            |
+| `%flectonepulse_death%`             | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_dice%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_discord%`           | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_do%`                | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_greeting%`          | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_join%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_kick%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_locale%`            | Returns the player's current locale                                         |
+| `%flectonepulse_mail%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_me%`                | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_mute%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_poll%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_quit%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_reply%`             | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_rockpaperscissors%` | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_spy%`               | Returns `true` if spy mode is enabled, otherwise empty                      |
+| `%flectonepulse_stream%`            | Returns `true` if streamer mode is enabled, otherwise empty                 |
+| `%flectonepulse_stream_prefix%`     | Returns the [stream](/docs/message/command/stream/) prefix of the player    |
+| `%flectonepulse_telegram%`          | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_tell%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_tictactoe%`         | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_translateto%`       | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_try%`               | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_twitch%`            | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_warn%`              | Returns `true` if display is enabled, otherwise empty                       |
+| `%flectonepulse_world_prefix%`      | Returns the [world prefix](/docs/message/format/world/) of the player       |
+| `%flectonepulse_style%`             | Returns the [current style](/docs/message/format/style/), default is empty  |
+| `%flectonepulse_tps%%`              | Returns the server's TPS                                                    |
+| `%flectonepulse_player%`            | Returns the player's regular name                                           |
+| `%flectonepulse_ip%`                | Returns the player's IP address                                             |
+| `%flectonepulse_ping%`              | Returns the player's ping                                                   |
+| `%flectonepulse_online%`            | Returns the number of players on the server                                 |
+| `%flectonepulse_fcolor_number%`     | Returns the player's [custom](/docs/message/format/color/) color            |
 
 [//]: # (integration.yml)
 <!--@include: @/parts/words.md#setting-->
