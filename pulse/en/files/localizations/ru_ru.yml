@@ -44,6 +44,10 @@ command:
     url: "ссылка"
     move: "ход"
 #endregion command
+#region anon
+  anon:
+    format: "<fcolor:1>👻 <fcolor:2>Анон</fcolor:2> <fcolor:1><message>"
+#endregion anon
 #region ball
   ball:
     format: "<color:#9370DB>❓ <display_name> спросил: <style><message><reset> <color:#9370DB><br>🔮 Магический шар: <u><answer></u>"
@@ -114,6 +118,7 @@ command:
       types:
         ADVANCEMENT: "<fcolor:2>Достижения"
         AFK: "<fcolor:2>Команда /afk"
+        ANON: "<fcolor:2>Команда /anon"
         AUTO: "<fcolor:2>Авто-сообщения"
         BALL: "<fcolor:2>Команда /ball"
         BAN: "<fcolor:2>Команда /ban"

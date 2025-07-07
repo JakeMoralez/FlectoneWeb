@@ -176,7 +176,7 @@ house:
 ::: info НАПРИМЕР
 ```yaml
 house:
-  enable: false // [!code highlight]
+  enable: false
   door:
     enable: true
   chair:

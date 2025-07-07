@@ -44,6 +44,10 @@ command:
     url: "url"
     move: "move"
 #endregion command
+#region anon
+  anon:
+    format: "<fcolor:1>👻 <fcolor:2>Anon</fcolor:2> <fcolor:1><message>"
+#endregion anon
 #region ball
   ball:
     format: "<color:#9370DB>❓ <display_name> asked: <style><message><reset> <color:#9370DB><br>🔮 Ball answered: <u><answer></u>"
@@ -114,6 +118,7 @@ command:
       types:
         ADVANCEMENT: "<fcolor:2>Advancement"
         AFK: "<fcolor:2>Command /afk"
+        ANON: "<fcolor:2>Command /anon"
         AUTO: "<fcolor:2>Auto Message"
         BALL: "<fcolor:2>Command /ball"
         BAN: "<fcolor:2>Command /ban"

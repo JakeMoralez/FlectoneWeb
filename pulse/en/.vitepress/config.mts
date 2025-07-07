@@ -84,7 +84,7 @@ export default defineConfig({
     ],
 
     nav: [
-      { text: 'Documentation', link: '/docs/config/' },
+      { text: 'Documentation', link: '/docs/' },
       { text: 'Metrics', link: '/metrics/' },
       {
         text: 'Languages',

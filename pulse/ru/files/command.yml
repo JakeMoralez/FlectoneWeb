@@ -21,6 +21,19 @@ afk:
   sound:
     enable: false
 #endregion afk
+#region anon
+anon:
+  enable: true
+  range: -2
+  aliases:
+    - "anon"
+  destination:
+    type: CHAT
+  cooldown:
+    enable: false
+  sound:
+    enable: false
+#endregion anon
 #region ball
 ball:
   enable: true
@@ -99,32 +112,33 @@ chatsetting:
       STREAM: 10
       ADVANCEMENT: 18
       AFK: 19
-      AUTO: 20
-      BALL: 21
-      BAN: 22
-      BROADCAST: 23
-      COIN: 24
-      DEATH: 25
-      DICE: 26
-      DISCORD: 27
-      DO: 28
-      GREETING: 29
-      JOIN: 30
-      KICK: 31
-      MAIL: 32
-      ME: 33
-      MUTE: 34
-      POLL: 35
-      QUIT: 36
-      REPLY: 37
-      ROCKPAPERSCISSORS: 38
-      TELL: 39
-      TELEGRAM: 40
-      TICTACTOE: 41
-      TRANSLATETO: 42
-      TRY: 43
-      TWITCH: 44
-      WARN: 45
+      ANON: 20
+      AUTO: 21
+      BALL: 22
+      BAN: 23
+      BROADCAST: 24
+      COIN: 25
+      DEATH: 26
+      DICE: 27
+      DISCORD: 28
+      DO: 29
+      GREETING: 30
+      JOIN: 31
+      KICK: 32
+      MAIL: 33
+      ME: 34
+      MUTE: 35
+      POLL: 36
+      QUIT: 37
+      REPLY: 38
+      ROCKPAPERSCISSORS: 39
+      TELL: 40
+      TELEGRAM: 41
+      TICTACTOE: 42
+      TRANSLATETO: 43
+      TRY: 44
+      TWITCH: 45
+      WARN: 46
   menu:
     material: "LIGHT_BLUE_DYE"
     chat:

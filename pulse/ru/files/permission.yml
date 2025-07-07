@@ -28,6 +28,17 @@ command:
       name: "flectonepulse.module.command.afk.sound"
       type: TRUE
 #endregion afk
+#region anon
+  anon:
+    name: "flectonepulse.module.command.anon"
+    type: TRUE
+    cooldown-bypass:
+      name: "flectonepulse.module.command.anon.cooldown.bypass"
+      type: OP
+    sound:
+      name: "flectonepulse.module.command.anon.sound"
+      type: TRUE
+#endregion anon
 #region ball
   ball:
     name: "flectonepulse.module.command.ball"
@@ -111,6 +122,9 @@ command:
         type: TRUE
       AFK:
         name: "flectonepulse.module.command.chatsetting.afk"
+        type: TRUE
+      ANON:
+        name: "flectonepulse.module.command.chatsetting.anon"
         type: TRUE
       AUTO:
         name: "flectonepulse.module.command.chatsetting.auto"
