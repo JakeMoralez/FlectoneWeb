@@ -101,6 +101,7 @@ bubble:
 #region chat
 chat:
   enable: true
+  event-priority: NORMAL
   types:
     local:
       enable: true

@@ -624,6 +624,7 @@ spy:
   categories:
     command:
       - "tell"
+      - "anon"
     action:
       - "anvil"
       - "book"

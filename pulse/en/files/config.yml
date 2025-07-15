@@ -10,7 +10,7 @@
 # 
 #region config
 console: "Console"
-version: "0.9.0"
+version: "1.0.0"
 language: "en_us"
 language-player: true
 metrics: true
@@ -23,14 +23,26 @@ log-filter:
   - "Error received from Telegram GetUpdates Request"
   - "OkHttp TaskRunner"
   - "Exception in thread \"ForkJoinPool"
+# https://flectone.net/pulse/docs/config/#database
 database:
   type: SQLITE
   name: "flectonepulse"
-  host: "localhost"
+  host: "127.0.0.1"
   port: "3306"
   user: "root"
   password: "1234"
   parameters: "?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8"
 module:
   enable: true
+redis:
+  enable: false
+  host: "127.0.0.1"
+  port: 6379
+  ssl: false
+  user: ""
+  password: ""
+editor:
+  host: ""
+  https: false
+  port: 25566
 #endregion config

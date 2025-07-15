@@ -185,3 +185,57 @@ house:
 
 Since `house` is disabled, regardless of whether `door` and `chair` are enabled, they will also be disabled.
 :::
+
+### `redis`
+
+Used for communication between different servers. For `user` and `password`, you can use environment variables, such as `${VALUE}`
+
+::: details CONFIGURATION
+
+#### `enable`
+
+Enables `Redis` functionality
+
+#### `host`
+
+The host (IP address) of the server where `Redis` is running
+
+#### `port`
+
+The port of the server where `Redis` is running
+
+#### `ssl`
+
+Enables the use of `SSL`
+
+#### `user`
+
+The username for `Redis`. Leave empty if not required
+
+#### `password`
+
+The password for `Redis`. Leave empty if not required
+
+:::
+
+### `editor`
+
+Web-based editing for FlectonePulse. The backend server runs on the same machine where FlectonePulse is installed
+
+![editor](/flectonepulseeditor.png)
+
+::: details CONFIGURATION
+
+#### `host`
+
+The host (IP address or domain) of the current server
+
+#### `https`
+
+Enables `https` instead of `http`
+
+#### `port`
+
+An available port on the current server
+
+:::

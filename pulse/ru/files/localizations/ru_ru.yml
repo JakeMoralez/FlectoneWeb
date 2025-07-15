@@ -237,9 +237,10 @@ command:
 #endregion do
 #region flectonepulse
   flectonepulse:
-    format-false: "<color:#ff7171>★ Возникла проблема при перезагрузке"
+    null-host-editor: "<color:#ff7171><b>⁉</b> Параметр host должен быть настроен в <u>config.yml"
+    format-false: "<color:#ff7171>★ Возникла проблема при перезагрузке <br>Ошибка: <message>"
     format-true: "<fcolor:2>★ <u>FlectonePulse</u> успешно перезагружен! (<i><time></i>)"
-    format-true-text: "<fcolor:2>★ ВАЖНО! Перезагружен только текст, для ПОЛНОЙ перезагрузки нужно использовать: <br><fcolor:1>/flectonepulse reload"
+    format-editor: "<fcolor:2>★ Ссылка для веб-редактирования <u><fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url>"
 #endregion flectonepulse
 #region geolocate
   geolocate:
@@ -281,6 +282,7 @@ command:
 #region mail
   mail:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    online-player: "<color:#ff7171><b>⁉</b> Игрок в сети"
     sender: "<fcolor:2>✉ Письмо #<id> для <display_name> » <fcolor:1><style><message>"
     receiver: "<fcolor:2>✉ Письмо от <display_name> » <fcolor:1><style><message>"
 #endregion mail
@@ -363,9 +365,9 @@ command:
     format-win: "<color:#98FB98>✂ Выиграл <display_name>! <b><sender_move></b> на <b><receiver_move></b>"
     format-draw: "<color:#98FB98>✂ Ничья! Вы оба выбрали <b><move>"
     strategies:
+      paper: "бумага"
       rock: "камень"
       scissors: "ножницы"
-      paper: "бумага"
 #endregion rockpaperscissors
 #region spy
   spy:
@@ -776,6 +778,13 @@ message:
     single: "<color:#778899>🪦 <fcolor:1><display_name> убит"
     multiple: "<color:#778899>🪦 <fcolor:1>Уничтожено <fcolor:2><count></fcolor:2> сущностей"
 #endregion kill
+#region objective
+  objective:
+#endregion objective
+#region belowname
+    belowname:
+      format: "<fcolor:1>мс"
+#endregion belowname
 #region op
   op:
     format: "<fcolor:1>🤖 <display_name> назначен оператором сервера"

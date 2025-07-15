@@ -40,7 +40,20 @@ List of chats and their formats
 <!--@include: @/parts/words.md#default-->  
 <<< @/files/message.yml#chat  
 
-<!--@include: @/parts/enable.md-->  
+<!--@include: @/parts/enable.md-->
+
+### `event-priority`
+
+The priority of a chat message event. Change this value if there is a conflict with other plugins that also use the chat
+
+| Type      | Explanation                                                               |  
+|-----------|---------------------------------------------------------------------------|  
+| `LOWEST`  | The chat message will be processed before all other plugins               |  
+| `LOW`     | The chat message will be processed after plugins with `LOWEST` priority   |  
+| `NORMAL`  | The chat message will be processed after plugins with `LOW` priority      |  
+| `HIGH`    | The chat message will be processed after plugins with `NORMAL` priority   |  
+| `HIGHEST` | The chat message will be processed after plugins with `HIGH` priority     |  
+| `MONITOR` | The chat message will only be observed (no modifications allowed)         |
 
 ### `types`  
 
