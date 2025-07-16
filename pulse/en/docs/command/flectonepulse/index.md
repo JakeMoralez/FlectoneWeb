@@ -28,9 +28,13 @@ Message displayed when an error occurs
 
 Message format sent when `FlectonePulse` is fully reloaded
 
-### `format-true-text`
+### `format-web-starting`
 
-Message format sent when only text is reloaded
+Message format sent when the web server starts
+
+### `format-editor`
+
+Message format sent when the web server has successfully started
 
 [//]: # (command.yml)
 <!--@include: @/parts/words.md#setting-->

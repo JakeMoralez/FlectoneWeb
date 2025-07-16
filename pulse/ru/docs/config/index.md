@@ -223,7 +223,7 @@ house:
 
 Веб-редактирование для FlectonePulse. Backend сервер запускается тамже, где установлен FlectonePulse
 
-![editor](/flectonepulseeditor.png)
+![editor](/flectonepulseeditor.gif)
 
 ::: details НАСТРОЙКА
 

@@ -47,6 +47,10 @@ Responsible for the entity's name
 
 Responsible for unknown entity name
 
+### `invisible`
+
+Responsible for the player name when under invisibility
+
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
 <!--@include: @/parts/words.md#path--> `message.yml → format.name_`
@@ -55,6 +59,10 @@ Responsible for unknown entity name
 <<< @/files/message.yml#name_
 
 <!--@include: @/parts/enable.md-->
+
+### `should-check-invisibility`
+
+Whether to check if the player is under an invisibility potion effect. If enabled, the name `invisible` will be used
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->

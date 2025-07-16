@@ -240,6 +240,7 @@ command:
     null-host-editor: "<color:#ff7171><b>⁉</b> The host parameter cannot be empty and must be configured in <u>config.yml"
     format-false: "<color:#ff7171>★ An has error occurred while reloading <br>Error: <message>"
     format-true: "<fcolor:2>★ <u>FlectonePulse</u> successfully reloaded! (<i><time></i>)"
+    format-web-starting: "<fcolor:2>★ Web server starting, please wait..."
     format-editor: "<fcolor:2>★ Link for web editing <u><fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url>"
 #endregion flectonepulse
 #region geolocate
@@ -743,6 +744,7 @@ message:
       display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Write to <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
       entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:'<name>'> <br><fcolor:1>Type <fcolor:2><lang:'<type>'> <br><fcolor:1>ID <fcolor:2><uuid>\"><lang:'<name>'></hover></fcolor:2>"
       unknown: "<fcolor:2><name></fcolor:2>"
+      invisible: "<fcolor:2>👻 Invisible"
 #endregion name_
 #region questionanswer
     question-answer:

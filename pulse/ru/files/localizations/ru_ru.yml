@@ -240,6 +240,7 @@ command:
     null-host-editor: "<color:#ff7171><b>⁉</b> Параметр host должен быть настроен в <u>config.yml"
     format-false: "<color:#ff7171>★ Возникла проблема при перезагрузке <br>Ошибка: <message>"
     format-true: "<fcolor:2>★ <u>FlectonePulse</u> успешно перезагружен! (<i><time></i>)"
+    format-web-starting: "<fcolor:2>★ Запуск веб-сервера, подождите..."
     format-editor: "<fcolor:2>★ Ссылка для веб-редактирования <u><fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url>"
 #endregion flectonepulse
 #region geolocate
@@ -743,6 +744,7 @@ message:
       display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Написать <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
       entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:'<name>'> <br><fcolor:1>Тип <fcolor:2><lang:'<type>'> <br><fcolor:1>Айди <fcolor:2><uuid>\"><lang:'<name>'></hover></fcolor:2>"
       unknown: "<fcolor:2><name></fcolor:2>"
+      invisible: "<fcolor:2>👻 Невидимка"
 #endregion name_
 #region questionanswer
     question-answer:

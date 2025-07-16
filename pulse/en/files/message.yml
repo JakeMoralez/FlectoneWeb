@@ -379,6 +379,7 @@ format:
 #region name_
   name-:
     enable: true
+    should-check-invisibility: false
 #endregion name_
 #region questionanswer
   question-answer:

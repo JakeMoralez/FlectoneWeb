@@ -48,6 +48,10 @@ display: "<constant>"
 
 Отвечает за имя сущности, если его не удалось узнать
 
+### `invisible`
+
+Отвечает за имя игрока, если он под зельем невидимости
+
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
 <!--@include: @/parts/words.md#path--> `message.yml → format.name_`
@@ -56,6 +60,10 @@ display: "<constant>"
 <<< @/files/message.yml#name_
 
 <!--@include: @/parts/enable.md-->
+
+### `should-check-invisibility`
+
+Нужно ли проверять, что игрок под зельем невидимости. Если да, то будет использовано имя `invisible`
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->

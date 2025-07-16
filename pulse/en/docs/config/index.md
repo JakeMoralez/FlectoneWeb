@@ -222,7 +222,7 @@ The password for `Redis`. Leave empty if not required
 
 Web-based editing for FlectonePulse. The backend server runs on the same machine where FlectonePulse is installed
 
-![editor](/flectonepulseeditor.png)
+![editor](/flectonepulseeditor.gif)
 
 ::: details CONFIGURATION
 
