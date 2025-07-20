@@ -79,7 +79,7 @@
     @apply scroll-m-20 text-xl font-semibold tracking-tight;
   }
   p {
-    font-family: "Inter";
+    font-family: "Montserrat";
     @apply leading-7 [&:not(:first-child)]:mt-6;
   }
   body {
