@@ -22,14 +22,18 @@ const { t } = useTranslations(currentLocale as "en" | "ru");
         <p>{t("why-use")}</p>
       </header>
       <div class="flex gap-3 mt-6">
-        <a href="https://modrinth.com/plugin/flectonepulse"
-          ><Button className="bg-green-400 hover:bg-green-500"
-            ><Heart /><span>{t("modrinth-button")}</span></Button
-          ></a
-        >
-        <a href="https://github.com/Flectone/"
-          ><Button variant="ghost"><Github /><span>Github</span></Button></a
-        >
+        <a href="https://modrinth.com/plugin/flectonepulse">
+          <Button className="bg-green-400 hover:bg-green-500">
+            <Heart />
+            <span>{t("modrinth-button")}</span>
+          </Button>
+        </a>
+        <a href="https://github.com/Flectone/">
+          <Button variant="ghost">
+            <Github />
+            <span>Github</span>
+          </Button>
+        </a>
       </div>
     </div>
     <div class="lg:w-1/2 lg:mt-0 mt-10 flex flex-col items-center">
