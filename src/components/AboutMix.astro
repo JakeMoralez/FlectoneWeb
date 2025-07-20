@@ -9,7 +9,7 @@ const { t } = useTranslations(currentLocale as "en" | "ru");
 ---
 
 <div class="max-w-screen-xl mx-auto pt-32">
-  <div class="flex flex-col lg:flex-row justify-between">
+  <div class="flex flex-col items-center lg:flex-row justify-between">
     <div class="lg:w-1/2 flex flex-col lg:items-start items-center">
       <header>
         <h1>FlectoneMix</h1>
@@ -21,20 +21,22 @@ const { t } = useTranslations(currentLocale as "en" | "ru");
           {t("download-count")}
         </h3>
       </header>
-      <div class="flex gap-3 mt-6">
-        <a href="https://boosty.to/thefaser/"
-          ><Button className="bg-orange-300 hover:bg-orange-400"
-            ><Download /><span>{t("boosty-button")}</span></Button
-          ></a
-        >
-        <a href="https://github.com/Flectone/"
-          ><Button variant="ghost"><Github /><span>Github</span></Button></a
-        >
+      <div class="flex max-lg:w-full justify-between gap-3 mt-6">
+        <a href="https://boosty.to/thefaser/">
+          <Button className="bg-orange-300 hover:bg-orange-400">
+            <Download /><span>{t("boosty-button")}</span>
+          </Button>
+        </a>
+        <a href="https://github.com/Flectone/">
+          <Button variant="ghost"><Github />
+            <span>Github</span>
+          </Button>
+        </a>
       </div>
     </div>
     <div class="lg:w-1/2 mt-10 lg:mt-0">
-      <h2 class="text-center rounded-b-3xl">{t("mix-header")}</h2>
-      <Image src={flectoneMix} alt="flectone mix showcase" />
+      <!-- <h2 class="text-center rounded-b-3xl">{t("mix-header")}</h2> -->
+      <Image src={flectoneMix} alt="flectone mix showcase" class={"rounded-xl"}/>
     </div>
   </div>
 </div>
