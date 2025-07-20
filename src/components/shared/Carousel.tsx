@@ -34,7 +34,7 @@ export function CarouselPlugin() {
         {carouselItems.map((item, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <Card className="dark:bg-neutral-800/50 rounded-3xl">
+              <Card className="dark:bg-neutral-800/50 rounded-2xl">
                 <CardContent className="flex flex-col h-80 items-center justify-center p-6 gap-4 ">
                   <h3 className="text-center font-medium">{item.caption}</h3>
                   <img
