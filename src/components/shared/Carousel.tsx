@@ -33,14 +33,14 @@ export function CarouselPlugin() {
       <CarouselContent>
         {carouselItems.map((item, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
+            <div className="p-1 max-lg:p-0">
               <Card className="dark:bg-neutral-800/50 rounded-2xl">
-                <CardContent className="flex flex-col h-80 items-center justify-center p-6 gap-4 ">
+                <CardContent className="flex flex-col h-96 items-center justify-center p-6 gap-4 ">
                   <h3 className="text-center font-medium">{item.caption}</h3>
                   <img
                     src={item.image.src}
                     alt={item.caption}
-                    className="object-contain max-h-40 rounded-lg"
+                    className="object-contain max-h-56 rounded-lg"
                   />
                 </CardContent>
               </Card>
