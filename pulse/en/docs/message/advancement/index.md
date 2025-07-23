@@ -25,6 +25,10 @@ Server message when a player earns an advancement
 Message when obtaining a regular advancement  
 ![task](/task.png)
 
+### `taken`
+
+Message shown when an achievement is lost (only used in older Minecraft versions)
+
 ### `goal`
 
 Message when achieving a goal  

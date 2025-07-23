@@ -9,6 +9,12 @@ authors:
 Main command of the `FlectonePulse` plugin
 ![command flectonepulse](/commandflectonepulse.png)
 
+::: warning WARNING
+
+On older versions (1.9 and 1.10 for sure) it was noticed that players might get kicked from the server during a reload but this does not affect the plugin
+
+:::
+
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
 <!--@include: @/parts/words.md#path--> `localizations → language.yml → command.flectonepulse`

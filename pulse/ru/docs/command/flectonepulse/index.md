@@ -8,6 +8,12 @@ authors:
 Главная комманда плагина `FlectonePulse`
 ![command flectonepulse](/commandflectonepulse.png)
 
+::: warning ПРЕДУПРЕЖДЕНИЕ
+
+На старых версиях (1.9 и 1.10 точно) было замечено, что игроков при перезагрузки может кикать с сервера, но на работу плагина это не влияет
+
+:::
+
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.flectonepulse`

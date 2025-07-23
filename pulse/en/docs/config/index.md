@@ -62,6 +62,16 @@ If the localization does not exist, the one from [configuration](#language) will
 If you modify the message lists with `language-player` enabled, you need to do this in all localizations, otherwise visual errors may occur
 :::
 
+### `unregister-own-commands`
+
+If enabled, `FlectonePulse` will remove and re-add its own commands during `/flectonepulse reload`. This may cause `tps` and `mspt` drops due to the large number of packets, so it's better to disable this setting if you encounter such an issue.
+
+If disabled, you will need to restart the server to properly disable commands from `FlectonePulse` (in `commands.yml`).
+
+::: warning WARNING
+Not recommended to enable on older Minecraft versions, as it may cause errors/warnings in the server console, but they do not affect the plugin
+:::
+
 ### `metrics`
 
 Allows the plugin to collect [statistics](/metrics/) about the server and plugin parameters
@@ -88,6 +98,10 @@ Integration with `Velocity`
 1. File `FlectonePulse.jar` must be on EVERY server, including `Velocity` in `plugins` folder
 2. Selected database must be `MYSQL`
 :::
+
+### `fabric-disabled-commands`
+
+A list of non-`FlectonePulse` commands that should be disabled when the `Fabric` server starts. This allows replacing already taken commands in `Fabric`, such as `/me` or `/ban`
 
 ### `clusters`
 
@@ -126,30 +140,35 @@ You can use environment variables, for example `${VALUE}`
 #### `type`
 
 Currently supported:
-- `SQLite` - local
-- `MYSQL` - server-side
+
+| Type         | Explanation                       |
+|--------------|-----------------------------------|
+| `SQLite`     | Local, file-based                 |
+| `MySQL`      | Server-based, requires connection |
+| `H2`         | Local, file-based                 |
+| `PostgreSQL` | Server-based, requires connection |
 
 #### `name`
 
 Database name
 
-#### `host` (for MySQL)
+#### `host`
 
 The address of the server hosting the database
 
-#### `port` (for MySQL)
+#### `port`
 
 The port for connecting to the database server
 
-#### `user` (for MySQL)
+#### `user`
 
 The username to be used for database connection
 
-#### `password` (for MySQL)
+#### `password`
 
 The password for the database connection
 
-#### `parameters` (for MySQL)
+#### `parameters`
 
 Connection parameters for the database
 

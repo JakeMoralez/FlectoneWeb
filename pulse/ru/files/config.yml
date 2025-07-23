@@ -10,22 +10,31 @@
 # 
 #region config
 console: "Console"
-version: "1.0.0"
+version: "1.1.0"
 language: "en_us"
 language-player: true
+unregister-own-commands: false
 metrics: true
 bungeecord: false
 velocity: false
 clusters: []
+fabric-disabled-commands:
+  - "msg"
+  - "kick"
+  - "banlist"
+  - "tell"
+  - "w"
+  - "me"
+  - "pardon"
+  - "ban"
 log-filter:
   - "Paper Async Command Builder"
   - "Caught previously unhandled exception :"
   - "Error received from Telegram GetUpdates Request"
   - "OkHttp TaskRunner"
   - "Exception in thread \"ForkJoinPool"
-# https://flectone.net/pulse/docs/config/#database
 database:
-  type: SQLITE
+  type: "SQLITE"
   name: "flectonepulse"
   host: "127.0.0.1"
   port: "3306"

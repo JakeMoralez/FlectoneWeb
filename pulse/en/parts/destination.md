@@ -2,10 +2,6 @@
 
 Where the message will be sent
 
-::: info HOW TO CHANGE THE DESTINATION?
-Replace the value `type: here` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional settings will appear automatically.
-:::
-
 | Type          | Explanation                                    | Requires additional configuration? |
 |---------------|------------------------------------------------|-------------------------------------|
 | `ACTION_BAR`  | Message above the player's inventory           | Yes                                 |
@@ -18,7 +14,13 @@ Replace the value `type: here` and restart `FlectonePulse` using the `/flectonep
 | `TAB_FOOTER`  | Message in TAB (bottom)                        | No                                  |
 | `TOAST`       | Message in the top-right corner (achievement)  | Yes                                 |
 
-::: details Configuration for `ACTION_BAR`
+::: info HOW TO CHANGE THE DESTINATION?
+Replace the value `type: here` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional settings will appear AUTOMATICALLY
+
+<hr>
+
+#### If type is <b>`ACTION_BAR`</b>
+
 ```yaml
 destination:
   type: ACTION_BAR
@@ -31,9 +33,10 @@ destination:
 | Field       | Explanation                            |
 |-------------|----------------------------------------|
 | `stay`      | Time in ticks to hold the message      |
-:::
 
-::: details Configuration for `BOSS_BAR`
+<br>
+
+#### If type is <b>`BOSS_BAR`</b>
 
 ```yaml
 destination:
@@ -90,9 +93,11 @@ Whether fog will appear with the message
 #### `darken-screen`
 
 Whether the screen will darken with the message
-:::
 
-::: details Configuration for `TITLE` (or `SUBTITLE`)
+<br>
+
+#### If type is <b>`TITLE`</b> (or <b>`SUBTITLE`</b>)
+
 ```yaml
 destination:
   type: TITLE (or SUBTITLE)
@@ -114,9 +119,11 @@ Message for the second part of the display. For example, if `TITLE` is selected,
 | `fade-in`   | Time in ticks for the message to appear |
 | `stay`      | Time in ticks to hold the message      |
 | `fade-out`  | Time in ticks for the message to disappear |
-:::
 
-::::: details Configuration for `TOAST`
+<br>
+
+#### If type is <b>`TOAST`</b>
+
 ```yaml
 destination:
   type: TOAST
@@ -131,4 +138,5 @@ Achievement icon, which can be any Minecraft item (must specify the full path)
 #### `style`
 
 Achievement type (`TASK` regular, `GOAL` goal, `CHALLENGE` challenge)
-:::::
+
+:::

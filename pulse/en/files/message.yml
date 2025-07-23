@@ -16,7 +16,7 @@ advancement:
   enable: true
   grant: true
   revoke: true
-  range: -1
+  range: SERVER
   destination:
     type: CHAT
   sound:
@@ -25,7 +25,7 @@ advancement:
 #region afk
 afk:
   enable: true
-  range: -1
+  range: SERVER
   delay: 3000
   ignore:
     - "afk"
@@ -101,6 +101,7 @@ bubble:
 #region chat
 chat:
   enable: true
+  packet-based: false
   event-priority: NORMAL
   types:
     local:
@@ -124,7 +125,7 @@ chat:
     global:
       enable: true
       cancel: false
-      range: -2
+      range: PROXY
       priority: 5
       trigger: "!"
       null-receiver:
@@ -151,7 +152,7 @@ clear:
 #region death
 death:
   enable: true
-  range: -1
+  range: SERVER
   destination:
     type: CHAT
   sound:
@@ -386,7 +387,7 @@ format:
     enable: false
     questions:
       server:
-        range: 0
+        range: PLAYER
         destination:
           type: CHAT
         cooldown:
@@ -395,7 +396,7 @@ format:
           enable: false
         target: "(?i)\\b(what\\s+is\\s+this\\s+server|what\\'?s\\s+this\\s+server|what\\s+server\\s+is\\s+this)\\b"
       flectone:
-        range: 0
+        range: PLAYER
         destination:
           type: CHAT
         cooldown:
@@ -433,11 +434,13 @@ format:
     mode: TYPE
     values:
       normal: "<color:#98FB98>"
-      nether: "<color:#F08080>"
-      the_end: "<color:#9370DB>"
-      custom: "<color:#98FB98>"
       world: "<color:#98FB98>"
+      overworld: "<color:#98FB98>"
+      custom: "<color:#98FB98>"
+      nether: "<color:#F08080>"
+      the_nether: "<color:#F08080>"
       world_nether: "<color:#F08080>"
+      the_end: "<color:#9370DB>"
       world_the_end: "<color:#9370DB>"
 #endregion world
 #region gamemode
@@ -460,7 +463,7 @@ greeting:
 join:
   enable: true
   first: true
-  range: -1
+  range: SERVER
   destination:
     type: CHAT
   sound:
@@ -505,7 +508,7 @@ op:
 #region quit
 quit:
   enable: true
-  range: -1
+  range: SERVER
   destination:
     type: CHAT
   sound:

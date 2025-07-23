@@ -6,7 +6,7 @@ authors:
 
 # Mention
 
-This formatting allows mentioning (pinging) someone in a message  
+This formatting allows mentioning (pinging) a user in a message. Donation groups can also be mentioned, for example `@default`
 ![mention](/mention.png)
 
 [//]: # (localization)
