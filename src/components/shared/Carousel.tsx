@@ -40,7 +40,7 @@ export function CarouselPlugin() {
                   <img
                     src={item.image.src}
                     alt={item.caption}
-                    className="object-contain max-h-40"
+                    className="object-contain max-h-40 rounded-lg"
                   />
                 </CardContent>
               </Card>
