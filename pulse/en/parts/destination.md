@@ -23,7 +23,7 @@ Replace the value `type: here` and restart `FlectonePulse` using the `/flectonep
 
 ```yaml
 destination:
-  type: ACTION_BAR
+  type: "ACTION_BAR"
   times:
     stay: 60
 ```
@@ -40,11 +40,11 @@ destination:
 
 ```yaml
 destination:
-  type: BOSS_BAR
+  type: "BOSS_BAR"
   duration: 100
   health: 1.0
-  overlay: PROGRESS
-  color: BLUE
+  overlay: "PROGRESS"
+  color: "BLUE"
   play-boos-music: false
   create-world-fog: false
   darken-screen: false
@@ -100,7 +100,7 @@ Whether the screen will darken with the message
 
 ```yaml
 destination:
-  type: TITLE (or SUBTITLE)
+  type: "TITLE" (or "SUBTITLE")
   subtext: ""
   times:
     fade-in: 20
@@ -126,9 +126,9 @@ Message for the second part of the display. For example, if `TITLE` is selected,
 
 ```yaml
 destination:
-  type: TOAST
+  type: "TOAST"
   icon: "minecraft:diamond"
-  style: TASK
+  style: "TASK"
 ```
 
 #### `icon`

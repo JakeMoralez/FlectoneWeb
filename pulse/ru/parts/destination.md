@@ -22,7 +22,7 @@
 #### Если тип <b>`ACTION_BAR`</b>
 ```yaml
 destination:
-  type: ACTION_BAR
+  type: "ACTION_BAR"
   times:
     stay: 60
 ```
@@ -39,11 +39,11 @@ destination:
 
 ```yaml
 destination:
-  type: BOSS_BAR
+  type: "BOSS_BAR"
   duration: 100
   health: 1.0
-  overlay: PROGRESS
-  color: BLUE
+  overlay: "PROGRESS"
+  color: "BLUE"
   play-boos-music: false
   create-world-fog: false
   darken-screen: false
@@ -98,7 +98,7 @@ destination:
 #### Если тип <b>`TITLE`</b> (или <b>`SUBTITLE`</b>)
 ```yaml
 destination:
-  type: TITLE (или SUBTITLE)
+  type: "TITLE" (или "SUBTITLE")
   subtext: ""
   times:
     fade-in: 20
@@ -123,9 +123,9 @@ destination:
 #### Если тип <b>`TOAST`</b>
 ```yaml
 destination:
-  type: TOAST
+  type: "TOAST"
   icon: "minecraft:diamond"
-  style: TASK
+  style: "TASK"
 ```
 
 #### - `icon`

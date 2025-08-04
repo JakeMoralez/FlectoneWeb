@@ -14,13 +14,21 @@ authors:
 ## Frequently Asked Questions (FAQ)
 
 ### 1. What is FlectonePulse and what is it used for?
-FlectonePulse is a plugin for Minecraft servers that allows full customization of messages, chat, commands, and integrations. It supports all popular platforms (Bukkit, Spigot, Paper, Purpur, Folia, BungeeCord, Velocity) and provides a flexible text formatting system, automatic player language detection, and integrations with Discord, Telegram, and Twitch.
+FlectonePulse is a plugin for Minecraft servers that allows full customization of messages, chat, commands, and integrations. It supports all popular platforms (Bukkit, Spigot, Paper, Purpur, Folia, BungeeCord, Velocity) and provides a flexible text formatting system, automatic player language detection, and integrations with Discord, Telegram, and Twitch. FlectonePulse works on all versions from 1.8.8 up to the latest
 
 ### 2. How to install FlectonePulse?
-1. Download the plugin from [Modrinth](https://modrinth.com/plugin/flectonepulse).
-2. Place the plugin file in the `plugins` folder of your server.
-3. Restart the server.
-4. Configure the settings in the configuration files.
+
+- #### Bukkit
+1. Download the plugin from [Modrinth](https://modrinth.com/plugin/flectonepulse)
+2. Place the plugin file in your server's `plugins` folder
+3. Restart the server
+4. Configure the settings in the files
+
+- #### Fabric
+1. Download the mod from [Modrinth](https://modrinth.com/plugin/flectonepulse)
+2. Place the mod file in your server's `mods` folder, and also install `PacketEvents` and `Fabric-API`
+3. Restart the server
+4. Configure the settings in the files
 
 | File                | Documentation Link                                                         | Explanation                                                                                                                                                                                    |
 |---------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -192,8 +200,15 @@ Use test versions at your own risk. These versions are often not intended for pr
 ### 19. Does FlectonePulse work with proxies, and how to configure it?
 FlectonePulse supports proxy servers, including BungeeCord and Velocity. The same plugin file must be installed on both the proxy and the server. Configuration files are not created on the proxy—it acts as a bridge. All settings are configured in the server files. A MySQL database connection must be set up in the `config.yml` file on the servers. Additionally, enable either the `velocity` or `bungeecord` mode. Details in the [configuration documentation](/docs/config/#bungeecord).
 
-### 20. Does FlectonePulse support cores that run mods and plugins simultaneously, like Arclight or Mohist, and will it be available for Fabric?
-FlectonePulse has not been tested on cores that support both mods and plugins (e.g., Arclight or Mohist), and support is not planned. The main issue is the Libby library used for dependency loading, which does not work on such cores. Theoretically, FlectonePulse could be built with all necessary dependencies for these cores, but there’s no guarantee of proper PacketEvents functionality. Support for Fabric is planned in the future, but only for the latest versions.
+### 20. Does FlectonePulse support servers that run mods and plugins simultaneously, like Arclight or Mohist, and does it work on Fabric?
+
+FlectonePulse has not been tested on hybrid servers supporting both mods and plugins (e.g., Arclight or Mohist), and no support is planned. The main issue lies with the Libby library used for dependency loading. Theoretically, it's possible to build FlectonePulse with all required dependencies to run on these servers, but there's no guarantee PacketEvents will function correctly. FlectonePulse does work on Fabric, but only on the latest Minecraft version due to the complexity of multi-version support.
+
+::: info NOTE
+
+The main issue has been fixed in recent Mohist versions, so FlectonePulse works there without major problems
+
+:::
 
 <div align="center">
   <h3>🚀 Start using FlectonePulse today!</h3>

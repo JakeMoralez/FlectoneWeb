@@ -45,7 +45,7 @@ discord:
     FROM_DISCORD_TO_MINECRAFT: ""
     CHAT: ""
   destination:
-    type: CHAT
+    type: "CHAT"
 #endregion discord
 #region interactivechat
 interactivechat:
@@ -118,7 +118,7 @@ telegram:
     FROM_TELEGRAM_TO_MINECRAFT: []
     CHAT: []
   destination:
-    type: CHAT
+    type: "CHAT"
 #endregion telegram
 #region triton
 triton:
@@ -136,7 +136,7 @@ twitch:
     faseri4ka:
       - "stream start https://twitch.tv/faseri4ka"
   destination:
-    type: CHAT
+    type: "CHAT"
 #endregion twitch
 #region vault
 vault:

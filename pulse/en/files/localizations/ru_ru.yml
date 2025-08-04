@@ -220,6 +220,11 @@ command:
     format: "<fcolor:1>✎ <display_name> подбросил монетку - <style><result>"
     format-draw: "<fcolor:1>✎ <display_name> неудачно подбросил монетку ребром :)"
 #endregion coin
+#region deletemessage
+  deletemessage:
+    null-message: "<color:#ff7171><b>⁉</b> Сообщение не существует"
+    format: "<color:#98FB98>☒ Сообщение успешно удалено"
+#endregion deletemessage
 #region dice
   dice:
     symbols:
@@ -589,8 +594,8 @@ message:
     null-chat: "<color:#ff7171><b>⁉</b> На сервер выключен чат"
     null-receiver: "<color:#ff7171><b>⁉</b> Тебя никто не услышал"
     types:
-      local: "<display_name><fcolor:3>: <style><message> <translate>"
-      global: "<display_name> <world_prefix>»<fcolor:4> <style><message> <translate>"
+      local: "<delete><display_name><fcolor:3>: <style><message> <translate>"
+      global: "<delete><display_name> <world_prefix>»<fcolor:4> <style><message> <translate>"
 #endregion chat
 #region clear
   clear:
@@ -733,6 +738,11 @@ message:
 #region moderation
     moderation:
 #endregion moderation
+#region delete
+      delete:
+        placeholder: "<color:#ff7171><hover:show_text:\"<color:#ff7171>Нажми, чтобы удалить\"><click:run_command:\"/delete <uuid>\">[x] "
+        format: "<fcolor:3><i>Сообщение удалено</i>"
+#endregion delete
 #region newbie
       newbie:
         reason: "Ты ещё слишком новичок"
@@ -884,3 +894,8 @@ message:
     playerlistname:
       format: "<world_prefix>▋ <reset><vault_prefix><stream_prefix><fcolor:2><player><afk_suffix><vault_suffix>"
 #endregion playerlistname
+#region update
+  update:
+    format-player: "<fcolor:1><fcolor:2>(FlectonePulse)</fcolor:2> Твоя версия <fcolor:2><current_version></fcolor:2> устарела! Обновись до <fcolor:2><latest_version></fcolor:2> с помощью <url:https://modrinth.com/plugin/flectonepulse>, чтобы получить новые возможности!"
+    format-console: "<fcolor:1>Твоя версия <fcolor:2><current_version></fcolor:2> устарела! Обновись до <fcolor:2><latest_version></fcolor:2> с помощью <click:open_url:https://modrinth.com/plugin/flectonepulse>https://modrinth.com/plugin/flectonepulse"
+#endregion update

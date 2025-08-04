@@ -18,7 +18,7 @@ advancement:
   revoke: true
   range: SERVER
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion advancement
@@ -30,7 +30,7 @@ afk:
   ignore:
     - "afk"
   destination:
-    type: CHAT
+    type: "CHAT"
   ticker:
     enable: true
     period: 20
@@ -46,7 +46,7 @@ auto:
     announcement:
       random: true
       destination:
-        type: CHAT
+        type: "CHAT"
       ticker:
         enable: true
         period: 9000
@@ -57,7 +57,7 @@ auto:
 bed:
   enable: true
   destination:
-    type: ACTION_BAR
+    type: "ACTION_BAR"
     times:
       stay: 60
   sound:
@@ -72,7 +72,7 @@ brand:
   enable: true
   random: true
   destination:
-    type: BRAND
+    type: "BRAND"
   ticker:
     enable: true
     period: 100
@@ -96,13 +96,13 @@ bubble:
     animation-time: 5
     scale: 1.0
     background: "#00000040"
-    billboard: CENTER
+    billboard: "CENTER"
 #endregion bubble
 #region chat
 chat:
   enable: true
   packet-based: false
-  event-priority: NORMAL
+  priority: "NORMAL"
   types:
     local:
       enable: true
@@ -113,11 +113,11 @@ chat:
       null-receiver:
         enable: true
         destination:
-          type: ACTION_BAR
+          type: "ACTION_BAR"
           times:
             stay: 20
       destination:
-        type: CHAT
+        type: "CHAT"
       cooldown:
         enable: false
       sound:
@@ -131,11 +131,11 @@ chat:
       null-receiver:
         enable: true
         destination:
-          type: ACTION_BAR
+          type: "ACTION_BAR"
           times:
             stay: 20
       destination:
-        type: CHAT
+        type: "CHAT"
       cooldown:
         enable: false
       sound:
@@ -147,14 +147,14 @@ clear:
   sound:
     enable: false
   destination:
-    type: CHAT
+    type: "CHAT"
 #endregion clear
 #region death
 death:
   enable: true
   range: SERVER
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion death
@@ -162,7 +162,7 @@ death:
 deop:
   enable: true
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion deop
@@ -170,7 +170,7 @@ deop:
 enchant:
   enable: true
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion enchant
@@ -201,10 +201,10 @@ format:
       trigger: "%item%"
     URL:
       enable: true
-      trigger: "(?<!:\")((https?|ftp|gopher|telnet|file):((//)|(\\\\))+[\\w:#@%/;$()~_?+-=\\\\.&]*)"
+      trigger: "(?<!\\\\)(?<!:\")((https?|ftp|gopher|telnet|file)://[\\w.-]+\\.[a-zA-Z]{2,}(?::\\d+)?(?:/[\\w:#@%/;$()~_?+\\-=.&]*)?(?:#[\\w\\-=/&%]*)?)"
     IMAGE:
       enable: true
-      trigger: "(?<!:\")((https?|ftp|gopher|telnet|file):\\/\\/(?:i\\.imgur\\.com|media\\.discordapp\\.net)\\/[\\w:#@%/;$()~_?+-=\\\\.&]*)"
+      trigger: "(?<!:\")((https?|ftp|gopher|telnet|file)://(?:i\\.imgur\\.com|media\\.discordapp\\.net)/[\\w:#@%/;$()~_?+\\-=.&]*[^\\\\\\s])"
     SPOILER:
       enable: true
       trigger: "\\Q||\\E"
@@ -338,9 +338,9 @@ format:
     enable: true
     trigger: "@"
     destination:
-      type: TOAST
+      type: "TOAST"
       icon: "minecraft:bell"
-      style: TASK
+      style: "TASK"
     sound:
       enable: true
       volume: 0.1
@@ -357,6 +357,11 @@ format:
       enable: false
       trigger: 0.7
 #endregion caps
+#region delete
+    delete:
+      enable: false
+      history-length: 100
+#endregion delete
 #region newbie
     newbie:
       enable: false
@@ -373,6 +378,9 @@ format:
 #region swear
     swear:
       enable: false
+      ignore:
+        - "тебя"
+        - "тебе"
       trigger:
         - "((у|[нз]а|(хитро|не)?вз?[ыьъ]|с[ьъ]|(и|ра)[зс]ъ?|(о[тб]|под)[ьъ]?|(.\\B)+?[оаеи])?-?([её]б(?!о[рй])|и[пб][ае][тц]).*?|(н[иеа]|([дп]|верт)о|ра[зс]|з?а|с(ме)?|о(т|дно)?|апч)?-?ху([яйиеёю]|ли(?!ган)).*?|(в[зы]|(три|два|четыре)жды|(н|сук)а)?-?бл(я(?!(х|ш[кн]|мб)[ауеыио]).*?|[еэ][дт]ь?)|(ра[сз]|[зн]а|[со]|вы?|п(ере|р[оие]|од)|и[зс]ъ?|[ао]т)?п[иеё]зд.*?|(за)?п[ие]д[аое]?р([оа]м|(ас)?(ну.*?|и(ли)?[нщктл]ь?)?|(о(ч[еи])?|ас)?к(ой)|юг)[ауеы]?|манд([ауеыи](л(и[сзщ])?[ауеиы])?|ой|[ао]вошь?(е?к[ауе])?|юк(ов|[ауи])?)|муд([яаио].*?|е?н([ьюия]|ей))|мля([тд]ь)?|лять|([нз]а|по|пи)х|м[ао]л[ао]фь([яию]|[еёо]й))(?=[\\s,.:;\"']|$)"
         - "(([уyu]|[нзnz3][аa]|(хитро|не)?[вvwb][зz3]?[ыьъi]|[сsc][ьъ']|(и|[рpr][аa4])[зсzs]ъ?|([оo0][тбtb6]|[пp][оo0][дd9])[ьъ']?|(.\\B)+?[оаеиeo])?-?([еёe][бb6](?!о[рй])|и[пб][ае][тц]).*?|([нn][иеаaie]|([дпdp]|[вv][еe3][рpr][тt])[оo0]|[рpr][аa][зсzc3]|[з3z]?[аa]|с(ме)?|[оo0]([тt]|дно)?|апч)?-?[хxh][уuy]([яйиеёюuie]|ли(?!ган)).*?|([вvw][зы3z]|(три|два|четыре)жды|(н|[сc][уuy][кk])[аa])?-?[бb6][лl]([яy](?!(х|ш[кн]|мб)[ауеыио]).*?|[еэe][дтdt][ь']?)|([рp][аa][сзc3z]|[знzn][аa]|[соsc]|[вv][ыi]?|[пp]([еe][рpr][еe]|[рrp][оиioеe]|[оo0][дd])|и[зс]ъ?|[аоao][тt])?[пpn][иеёieu][зz3][дd9].*?|([зz3][аa])?[пp][иеieu][дd][аоеaoe]?[рrp](ну.*?|[оаoa][мm]|([аa][сcs])?([иiu]([лl][иiu])?[нщктлtlsn]ь?)?|([оo](ч[еиei])?|[аa][сcs])?[кk]([оo]й)?|[юu][гg])[ауеыauyei]?|[мm][аa][нnh][дd]([ауеыayueiи]([лl]([иi][сзc3щ])?[ауеыauyei])?|[оo][йi]|[аоao][вvwb][оo](ш|sh)[ь']?([e]?[кk][ауеayue])?|юк(ов|[ауи])?)|[мm][уuy][дd6]([яyаиоaiuo0].*?|[еe]?[нhn]([ьюия'uiya]|ей))|мля([тд]ь)?|лять|([нз]а|по|пи)х|м[ао]л[ао]фь([яию]|[её]й))(?=[\\s,.:;\"']|$)"
@@ -389,7 +397,7 @@ format:
       server:
         range: PLAYER
         destination:
-          type: CHAT
+          type: "CHAT"
         cooldown:
           enable: false
         sound:
@@ -398,7 +406,7 @@ format:
       flectone:
         range: PLAYER
         destination:
-          type: CHAT
+          type: "CHAT"
         cooldown:
           enable: false
         sound:
@@ -431,7 +439,9 @@ format:
 #region world
   world:
     enable: true
-    mode: TYPE
+    mode: "TYPE"
+    ticker:
+      enable: false
     values:
       normal: "<color:#98FB98>"
       world: "<color:#98FB98>"
@@ -447,7 +457,7 @@ format:
 gamemode:
   enable: true
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion gamemode
@@ -455,7 +465,7 @@ gamemode:
 greeting:
   enable: false
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion greeting
@@ -465,7 +475,7 @@ join:
   first: true
   range: SERVER
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion join
@@ -475,7 +485,7 @@ kill:
   sound:
     enable: false
   destination:
-    type: CHAT
+    type: "CHAT"
 #endregion kill
 #region objective
 objective:
@@ -484,7 +494,7 @@ objective:
 #region belowname
   belowname:
     enable: false
-    mode: PING
+    mode: "PING"
     ticker:
       enable: true
       period: 100
@@ -492,7 +502,7 @@ objective:
 #region tabname
   tabname:
     enable: false
-    mode: PING
+    mode: "PING"
     ticker:
       enable: true
       period: 100
@@ -501,7 +511,7 @@ objective:
 op:
   enable: true
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion op
@@ -510,7 +520,7 @@ quit:
   enable: true
   range: SERVER
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion quit
@@ -518,7 +528,7 @@ quit:
 rightclick:
   enable: true
   destination:
-    type: ACTION_BAR
+    type: "ACTION_BAR"
     times:
       stay: 60
   cooldown:
@@ -530,7 +540,7 @@ rightclick:
 seed:
   enable: true
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion seed
@@ -538,7 +548,7 @@ seed:
 setblock:
   enable: true
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion setblock
@@ -558,7 +568,7 @@ sign:
 sleep:
   enable: true
   destination:
-    type: ACTION_BAR
+    type: "ACTION_BAR"
     times:
       stay: 60
   sound:
@@ -568,7 +578,7 @@ sleep:
 spawn:
   enable: true
   destination:
-    type: CHAT
+    type: "CHAT"
   sound:
     enable: false
 #endregion spawn
@@ -610,7 +620,7 @@ tab:
     enable: true
     random: true
     destination:
-      type: TAB_HEADER
+      type: "TAB_HEADER"
     ticker:
       enable: true
       period: 100
@@ -620,7 +630,7 @@ tab:
     enable: true
     random: true
     destination:
-      type: TAB_FOOTER
+      type: "TAB_FOOTER"
     ticker:
       enable: true
       period: 100
@@ -632,3 +642,11 @@ tab:
       enable: true
       period: 100
 #endregion playerlistname
+#region update
+update:
+  enable: true
+  destination:
+    type: "CHAT"
+  sound:
+    enable: false
+#endregion update

@@ -10,7 +10,7 @@
 # 
 #region config
 console: "Console"
-version: "1.1.0"
+version: "1.2.0"
 language: "en_us"
 language-player: true
 unregister-own-commands: false

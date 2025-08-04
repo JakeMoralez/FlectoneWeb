@@ -28,7 +28,7 @@ anon:
   aliases:
     - "anon"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -41,7 +41,7 @@ ball:
   aliases:
     - "ball"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -57,7 +57,7 @@ ban:
     - "ban"
     - "tempban"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -81,7 +81,7 @@ broadcast:
   aliases:
     - "broadcast"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -93,7 +93,7 @@ chatcolor:
   aliases:
     - "chatcolor"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -337,7 +337,7 @@ chatstyle:
   aliases:
     - "chatstyle"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -349,7 +349,7 @@ clearchat:
   aliases:
     - "clearchat"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -361,7 +361,7 @@ clearmail:
   aliases:
     - "clearmail"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -375,12 +375,26 @@ coin:
   aliases:
     - "coin"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
     enable: false
 #endregion coin
+#region deletemessage
+deletemessage:
+  enable: true
+  aliases:
+    - "deletemessage"
+  destination:
+    type: "ACTION_BAR"
+    times:
+      stay: 60
+  cooldown:
+    enable: false
+  sound:
+    enable: false
+#endregion deletemessage
 #region dice
 dice:
   enable: true
@@ -390,7 +404,7 @@ dice:
   aliases:
     - "dice"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -403,7 +417,7 @@ do:
   aliases:
     - "do"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -416,7 +430,7 @@ flectonepulse:
     - "flectonepulse"
     - "fp"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -429,7 +443,7 @@ geolocate:
   aliases:
     - "geolocate"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -442,7 +456,7 @@ helper:
   aliases:
     - "helper"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -455,7 +469,7 @@ ignore:
   aliases:
     - "ignore"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -479,7 +493,7 @@ kick:
   aliases:
     - "kick"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -491,7 +505,7 @@ mail:
   aliases:
     - "mail"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -504,7 +518,7 @@ maintenance:
   aliases:
     - "maintenance"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -517,7 +531,7 @@ me:
   aliases:
     - "me"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -531,7 +545,7 @@ mute:
   aliases:
     - "mute"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -556,7 +570,7 @@ online:
   aliases:
     - "online"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -568,7 +582,7 @@ ping:
   aliases:
     - "ping"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -631,7 +645,7 @@ spy:
       - "sign"
       - "local"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -644,7 +658,7 @@ stream:
   aliases:
     - "stream"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -678,7 +692,7 @@ symbol:
     things: "⛏ 🪓 🪏 ⚒ ⚓ ⚔ 🎣 🗡 🔱 ⚗ ⛓ 🛠 🛡 🪚 🪛 ✀ ✁ ✂ ✃ ✄ ✎ ✏ ✐ ✑ ✒ 🖉 🖊 🖋 🖌 🖍 🌡 🏷 🎒 🎓 🎕 💐 🎖 🎗 🏅 🥇 🥈 🥉 🏆 🎚 🎛 🎷 🎸 🎹 🎺 🎻 🪇 🪈 🪕 🪗 🪘 🪉 🏺 💄 💅 🪨 🪵 🪶 🪽 💈 💉 💊 🧪 🧫 🩸 🩹 🩺 🩻 🩼 🧬 🧭 🧮 🧯 🧰 🧱 🧲 🧳 🧴 🧵 🧶 🧷 🧸 🧹 🧺 🧻 🧼 🧽 🧾 🧿 💍 💎 💡 💣 🧨 🥁 🥂 🥃 🥄 🥅 🥆 🧩 🪠 🪡 🪢 🪣 🪤 🪥 🪦 🪧 💩 💰 💺 💻 💼 💽 🖭 🖴 💾 🖪 🖫 🖬 💿 📀 🖸 📁 📂 🖿 🗀 🗁 🗂 🗃 🗄 📃 📄 📅 📆 📇 🖹 🖺 🖻 🖼 🖽 🖾 📋 📌 📍 🖈 📎 🖇 📏 📐 📑 📒 📓 📔 📕 📖 📗 📘 📙 📚 📛 📜 📝 🗅 🗆 🗇 🗈 🗉 🗊 🗋 🗌 🗍 🗎 🗏 🗐 🗑 🗒 🗓 📞 📟 📠 📡 📢 📣 📤 📥 📦 📪 📫 📬 📭 📮 📯 📰 📱 📲 📳 📴 📵 📶 🕻 🕼 🕽 🕾 🕿 🖀 🖁 📷 📸 📹 📺 📻 📼 📽 📾 📿 🖥 🖦 🖧 🖨 🖩 🖮 🖯 🖰 🖱 🖲 🖳 🖵 🖶 🖷 🔏 🔐 🔑 🔒 🔓 🔔 🔕 🔖 🔗 🔘 🔦 🔧 🔨 🔩 🔪 🔫 🔬 🔭 🔮 🪒 🪔 🕮 🕯 🕰 🗳 🛍 🛎 🛢 🗜 🗝 🗞 🗟 🕳"
     transport: "⛟ ⛴ ⛵ ✈ ⛩ ⛪ ⛫ ⛰ ⛱ ⛲ ⛳ ⛽ 🗻 🗼 🗽 🗾 🗿 🚀 🚁 🚂 🚃 🚄 🚅 🚆 🚇 🚈 🚉 🚊 🛲 🚋 🚌 🚍 🚎 🚏 🚐 🚑 🚒 🛱 🚓 🚔 🚕 🚖 🚗 🛻 🚘 🚙 🚚 🚛 🚜 🚝 🚞 🚟 🚠 🚡 🚢 🛳 🚣 🚤 🛶 🛥 🛦 🛧 🛨 🛩 🛪 🛫 🛬 🛰 🛴 🛵 🛹 🛼 🛺 🛷 🦼 🦽 🛸 🛒 🚥 🚦 🚧 🚨 🏗 🏘 🏙 🏚 🏛 🏟 🏠 🏡 🏢 🏣 🏤 🏥 🏦 🏧 🏨 🏩 🏪 🏫 🏬 🏭 🏮 🏯 🏰 🕋 🕌 🕍 🛐 🛓 🛔 🛕 🛖 🚲 🚳 🚴 🚵 🚶 🚷 🚸 🚪 🪑 🪟 🪜 🪝 🪞 🚻 🚽 🚾 🚿 🛀 🛁 🛂 🛃 🛄 🛅 🛋 🛌 🛏 🛗 🛝 🛞 🛟 🛣 🛤"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -697,7 +711,7 @@ tell:
     - "send"
     - "m"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -736,7 +750,7 @@ translateto:
     - "en_us"
     - "ru_ru"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -752,7 +766,7 @@ try:
   aliases:
     - "try"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -766,7 +780,7 @@ unban:
     - "unban"
     - "pardon"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -779,7 +793,7 @@ unmute:
   aliases:
     - "unmute"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -792,7 +806,7 @@ unwarn:
   aliases:
     - "unwarn"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
@@ -810,7 +824,7 @@ warn:
     3: "ban <target> 1h"
     5: "ban <target>"
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
