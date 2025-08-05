@@ -642,11 +642,6 @@ integration:
     name: "flectonepulse.module.integration.discord"
     type: "TRUE"
 #endregion discord
-#region interactivechat
-  interactivechat:
-    name: "flectonepulse.module.integration.interactivechat"
-    type: "TRUE"
-#endregion interactivechat
 #region itemsadder
   itemsadder:
     name: "flectonepulse.module.integration.itemsadder"

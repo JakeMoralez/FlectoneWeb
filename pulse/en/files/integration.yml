@@ -47,10 +47,6 @@ discord:
   destination:
     type: "CHAT"
 #endregion discord
-#region interactivechat
-interactivechat:
-  enable: true
-#endregion interactivechat
 #region itemsadder
 itemsadder:
   enable: true
