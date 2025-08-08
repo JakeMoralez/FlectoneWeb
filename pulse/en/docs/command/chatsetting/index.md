@@ -9,6 +9,55 @@ authors:
 Command for configuring chat
 ![command chatsetting](/commandchatsetting.gif)
 
+::: info NOTE
+
+You can open another player's settings using `/chatsetting TheFaser`.
+
+If you want to create your own menu through another plugin, you can modify values using `/chatsetting TheFaser ADVANCEMENT`. This will toggle the display of advancements depending on the current state. You can check the state using the placeholder `%flectonepulse_advancement%`.
+
+Some settings can be assigned values, for example, `/chatsetting TheFaser STREAM_PREFIX kek` will set the player's streamer prefix to `kek`.
+
+| Setting              |
+|----------------------|
+| `ADVANCEMENT`        |
+| `AFK`                |
+| `AFK_SUFFIX`         |
+| `AUTO`               |
+| `BALL`               |
+| `BAN`                |
+| `BROADCAST`          |
+| `CHAT`               |
+| `COIN`               |
+| `DEATH`              |
+| `DICE`               |
+| `DISCORD`            |
+| `DO`                 |
+| `GREETING`           |
+| `JOIN`               |
+| `KICK`               |
+| `LOCALE`             |
+| `MAIL`               |
+| `ME`                 |
+| `MUTE`               |
+| `POLL`               |
+| `QUIT`               |
+| `REPLY`              |
+| `ROCKPAPERSCISSORS`  |
+| `SPY`                |
+| `STREAM`             |
+| `STREAM_PREFIX`      |
+| `TELEGRAM`           |
+| `TELL`               |
+| `TICTACTOE`          |
+| `TRANSLATETO`        |
+| `TRY`                |
+| `TWITCH`             |
+| `WARN`               |
+| `WORLD_PREFIX`       |
+| `ANON`               |
+
+:::
+
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
 <!--@include: @/parts/words.md#path--> `localizations → language.yml → command.chatsetting`
@@ -135,11 +184,10 @@ Slot position in the main inventory
 
 List of setting types with their parameters
 
-| Type    | Description                                                                                                                                                                                       |
-|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `CHAT`  | The `name` field is the display name, and `material` is the item type that will appear in the inventory for this chat                                                                             |
-| `COLOR` | The `name` field is the display name, and `material` is the item type that will appear in the inventory for this chat. Also includes `colors`, where the key is a number and the value is a color |
-| `STYLE` | The `name` field is the display name, and `material` is the item type that will appear in the inventory for this chat. Also includes `value` – the style setting value                            |  
+| Type           | Description                                                                                                                                                                                                                              |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `CHAT`         | The `name` field is the display name, and `material` is the item type that will appear in the inventory for this chat                                                                                                                    |
+| `SEE` and `OUT` | The `name` field is the display name, and `material` is the item type that will appear in the inventory for this chat. Also includes `colors`, where the key is a number and the value is a color. Use `""` to keep the color unchanged  |
 
 :::
 

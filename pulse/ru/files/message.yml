@@ -281,38 +281,15 @@ format:
       enable: true
       trigger: null
 #endregion format
-#region color
-  color:
+#region fcolor
+  fcolor:
     enable: true
-    use-recipient-colors: true
-    values:
-      1: "#ADD8E6"
-      2: "#87CEFA"
+    default-colors:
+      1: "<gradient:#A6D8FF:#8CC8FF>"
+      2: "<gradient:#6BB6FF:#4DA6FF>"
       3: "#A9A9A9"
       4: "#FFFAFA"
-#endregion color
-#region emoji
-  emoji:
-    enable: true
-    values:
-      :): "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
-      :D: "<click:suggest_command:\":D\"><hover:show_text:\":D\">☻</hover></click>"
-      :(: "<click:suggest_command:\":(\"><hover:show_text:\":(\">☹</hover></click>"
-      :ok:: "<click:suggest_command:\":ok:\"><hover:show_text:\":ok:\">🖒</hover></click>"
-      :+1:: "<click:suggest_command:\":+1:\"><hover:show_text:\":+1:\">🖒</hover></click>"
-      :-1:: "<click:suggest_command:\":-1:\"><hover:show_text:\":-1:\">🖓</hover></click>"
-      :cool:: "<click:suggest_command:\":cool:\"><hover:show_text:\":cool:\">😎</hover></click>"
-      B): "<click:suggest_command:\"B)\"><hover:show_text:\"B)\">😎</hover></click>"
-      :clown:: "<click:suggest_command:\":clown:\"><hover:show_text:\":clown:\">🤡</hover></click>"
-      <3: "<click:suggest_command:\"<3\"><hover:show_text:\"<3\">❤</hover></click>"
-      XD: "<click:suggest_command:\"XD\"><hover:show_text:\"XD\">😆</hover></click>"
-      %): "<click:suggest_command:\"%)\"><hover:show_text:\"%)\">😵</hover></click>"
-      =D: "<click:suggest_command:\"=D\"><hover:show_text:\"=D\">😃</hover></click>"
-      >:(: "<click:suggest_command:\">:(\"><hover:show_text:\">:(\">😡</hover></click>"
-      :idk:: "<click:suggest_command:\":idk:\"><hover:show_text:\":idk:\">¯\\_(ツ)_/¯</hover></click>"
-      :angry:: "<click:suggest_command:\":angry:\"><hover:show_text:\":angry:\">(╯°□°)╯︵ ┻━┻</hover></click>"
-      :happy:: "<click:suggest_command:\":happy:\"><hover:show_text:\":happy:\">＼(＾O＾)／</hover></click>"
-#endregion emoji
+#endregion fcolor
 #region fixation
   fixation:
     enable: false
@@ -413,6 +390,47 @@ format:
           enable: false
         target: "(?i)\\b(flectone|flectonepulse|flecton)\\b"
 #endregion questionanswer
+#region replacement
+  replacement:
+    enable: true
+    values:
+      - trigger: ":happy:"
+        replace: "<click:suggest_command:\":happy:\"><hover:show_text:\":happy:\">＼(＾O＾)／</hover></click>"
+      - trigger: ":angry:"
+        replace: "<click:suggest_command:\":angry:\"><hover:show_text:\":angry:\">(╯°□°)╯︵ ┻━┻</hover></click>"
+      - trigger: ":idk:"
+        replace: "<click:suggest_command:\":idk:\"><hover:show_text:\":idk:\">¯\\_(ツ)_/¯</hover></click>"
+      - trigger: ">:("
+        replace: "<click:suggest_command:\">:(\"><hover:show_text:\">:(\">😡</hover></click>"
+      - trigger: "=D"
+        replace: "<click:suggest_command:\"=D\"><hover:show_text:\"=D\">😃</hover></click>"
+      - trigger: "%)"
+        replace: "<click:suggest_command:\"%)\"><hover:show_text:\"%)\">😵</hover></click>"
+      - trigger: "XD"
+        replace: "<click:suggest_command:\"XD\"><hover:show_text:\"XD\">😆</hover></click>"
+      - trigger: "<3"
+        replace: "<click:suggest_command:\"<3\"><hover:show_text:\"<3\">❤</hover></click>"
+      - trigger: ":clown:"
+        replace: "<click:suggest_command:\":clown:\"><hover:show_text:\":clown:\">🤡</hover></click>"
+      - trigger: "B)"
+        replace: "<click:suggest_command:\"B)\"><hover:show_text:\"B)\">😎</hover></click>"
+      - trigger: ":cool:"
+        replace: "<click:suggest_command:\":cool:\"><hover:show_text:\":cool:\">😎</hover></click>"
+      - trigger: ":-1:"
+        replace: "<click:suggest_command:\":-1:\"><hover:show_text:\":-1:\">🖓</hover></click>"
+      - trigger: ":+1:"
+        replace: "<click:suggest_command:\":+1:\"><hover:show_text:\":+1:\">🖒</hover></click>"
+      - trigger: ":ok:"
+        replace: "<click:suggest_command:\":ok:\"><hover:show_text:\":ok:\">🖒</hover></click>"
+      - trigger: ":("
+        replace: "<click:suggest_command:\":(\"><hover:show_text:\":(\">☹</hover></click>"
+      - trigger: ":D"
+        replace: "<click:suggest_command:\":D\"><hover:show_text:\":D\">☻</hover></click>"
+      - trigger: ":)"
+        replace: "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
+      - trigger: "%flectonepulse%"
+        replace: "<fcolor:2>FlectonePulse"
+#endregion replacement
 #region scoreboard
   scoreboard:
     enable: true
@@ -428,10 +446,6 @@ format:
     enable: true
     color: "<fcolor:2>"
 #endregion spoiler
-#region style
-  style:
-    enable: true
-#endregion style
 #region translate
   translate:
     enable: true

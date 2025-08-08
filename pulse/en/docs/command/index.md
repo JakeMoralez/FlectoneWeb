@@ -125,6 +125,11 @@ Prompt for commands where a URL is entered
 #### `move`
 
 Prompt for commands where a move is selected
+
+#### `value`
+
+Prompt for commands where a VALUE is entered
+
 :::
 
 [//]: # (command.yml)

@@ -47,6 +47,10 @@ discord:
   destination:
     type: "CHAT"
 #endregion discord
+#region interactivechat
+interactivechat:
+  enable: true
+#endregion interactivechat
 #region itemsadder
 itemsadder:
   enable: true
@@ -111,8 +115,10 @@ telegram:
   enable: false
   token: ""
   message-channel:
-    FROM_TELEGRAM_TO_MINECRAFT: []
-    CHAT: []
+    FROM_TELEGRAM_TO_MINECRAFT:
+      - "123456"
+    CHAT:
+      - "123456"
   destination:
     type: "CHAT"
 #endregion telegram
@@ -126,8 +132,10 @@ twitch:
   client-id: ""
   token: ""
   message-channel:
-    FROM_TWITCH_TO_MINECRAFT: []
-    CHAT: []
+    FROM_TWITCH_TO_MINECRAFT:
+      - "faseri4ka"
+    CHAT:
+      - "faseri4ka"
   follow-channel:
     faseri4ka:
       - "stream start https://twitch.tv/faseri4ka"

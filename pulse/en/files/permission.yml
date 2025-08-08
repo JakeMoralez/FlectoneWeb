@@ -105,12 +105,6 @@ command:
       CHAT:
         name: "flectonepulse.module.command.chatsetting.chat"
         type: "TRUE"
-      COLOR:
-        name: "flectonepulse.module.command.chatsetting.color"
-        type: "TRUE"
-      STYLE:
-        name: "flectonepulse.module.command.chatsetting.style"
-        type: "OP"
       SPY:
         name: "flectonepulse.module.command.chatsetting.spy"
         type: "OP"
@@ -204,6 +198,16 @@ command:
       WARN:
         name: "flectonepulse.module.command.chatsetting.warn"
         type: "TRUE"
+    fcolors:
+      SEE:
+        name: "flectonepulse.module.command.chatsetting.see"
+        type: "TRUE"
+      OUT:
+        name: "flectonepulse.module.command.chatsetting.out"
+        type: "OP"
+    other:
+      name: "flectonepulse.module.command.chatsetting.other"
+      type: "OP"
     cooldown-bypass:
       name: "flectonepulse.module.command.chatsetting.cooldown.bypass"
       type: "OP"
@@ -211,20 +215,6 @@ command:
       name: "flectonepulse.module.command.chatsetting.sound"
       type: "TRUE"
 #endregion chatsetting
-#region chatstyle
-  chatstyle:
-    name: "flectonepulse.module.command.chatstyle"
-    type: "OP"
-    other:
-      name: "flectonepulse.module.command.chatstyle.other"
-      type: "OP"
-    cooldown-bypass:
-      name: "flectonepulse.module.command.chatstyle.cooldown.bypass"
-      type: "OP"
-    sound:
-      name: "flectonepulse.module.command.chatstyle.sound"
-      type: "TRUE"
-#endregion chatstyle
 #region clearchat
   clearchat:
     name: "flectonepulse.module.command.clearchat"
@@ -642,6 +632,11 @@ integration:
     name: "flectonepulse.module.integration.discord"
     type: "TRUE"
 #endregion discord
+#region interactivechat
+  interactivechat:
+    name: "flectonepulse.module.integration.interactivechat"
+    type: "TRUE"
+#endregion interactivechat
 #region itemsadder
   itemsadder:
     name: "flectonepulse.module.integration.itemsadder"
@@ -955,16 +950,18 @@ message:
         name: "flectonepulse.module.message.format.shadow_color"
         type: "OP"
 #endregion format
-#region color
-    color:
+#region fcolor
+    fcolor:
       name: "flectonepulse.module.message.format.fcolor"
       type: "TRUE"
-#endregion color
-#region emoji
-    emoji:
-      name: "flectonepulse.module.message.format.emoji"
-      type: "TRUE"
-#endregion emoji
+      types:
+        OUT:
+          name: "flectonepulse.module.message.format.fcolor.out"
+          type: "OP"
+        SEE:
+          name: "flectonepulse.module.message.format.fcolor.see"
+          type: "TRUE"
+#endregion fcolor
 #region fixation
     fixation:
       name: "flectonepulse.module.message.format.fixation"
@@ -1065,6 +1062,11 @@ message:
             name: "flectonepulse.module.format.questionanswer.cooldown.bypass.flectone"
             type: "TRUE"
 #endregion questionanswer
+#region replacement
+    replacement:
+      name: "flectonepulse.module.message.format.replacement"
+      type: "TRUE"
+#endregion replacement
 #region scoreboard
     scoreboard:
       name: "flectonepulse.module.format.scoreboard"
@@ -1075,11 +1077,6 @@ message:
       name: "flectonepulse.module.format.spoiler"
       type: "TRUE"
 #endregion spoiler
-#region style
-    style:
-      name: "flectonepulse.module.format.style"
-      type: "TRUE"
-#endregion style
 #region translate
     translate:
       name: "flectonepulse.module.format.translate"

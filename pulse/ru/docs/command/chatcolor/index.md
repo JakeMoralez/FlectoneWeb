@@ -5,8 +5,10 @@ authors:
 
 # `/chatcolor`
 
-Комманда для смены [цветов](/docs/message/format/color/)
+Комманда для смены [цветов](/docs/message/format/fcolor/)
 ![command chatcolor](/commandchatcolor.png)
+
+<!--@include: @/parts/fcolor.md--> 
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
@@ -26,6 +28,10 @@ authors:
 ### `null-color`
 
 Сообщение, если неправильно введены цвета
+
+### `null-type`
+
+Сообщение, если неправильно введён тип
 
 ### `format`
 

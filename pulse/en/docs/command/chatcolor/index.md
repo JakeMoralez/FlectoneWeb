@@ -6,8 +6,10 @@ authors:
 
 # `/chatcolor`
 
-Command for changing [colors](/docs/message/format/color/)
+Command for changing [colors](/docs/message/format/fcolor/)
 ![command chatcolor](/commandchatcolor.png)
+
+<!--@include: @/parts/fcolor.md-->
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
@@ -27,6 +29,10 @@ Message if the entered player is not found
 ### `null-color`
 
 Message if the colors are entered incorrectly
+
+### `null-type`
+
+Message if the type is entered incorrectly
 
 ### `format`
 

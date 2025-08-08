@@ -8,6 +8,12 @@ authors:
 Модуль, отвечающий за сообщение бренда в F3
 ![brand](/brand.png)
 
+::: warning ПРЕДУПРЕЖДЕНИЕ
+
+Если используется прокси (Velocity или BungeeCord), то изменение brand полностью невозможно
+
+:::
+
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.brand`

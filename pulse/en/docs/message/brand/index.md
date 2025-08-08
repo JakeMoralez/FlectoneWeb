@@ -9,6 +9,12 @@ authors:
 Module responsible for the brand message in F3 debug screen  
 ![brand](/brand.png)
 
+::: warning WARNING
+
+If a proxy (Velocity or BungeeCord) is being used, changing the brand is completely impossible
+
+:::
+
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization-->
 <!--@include: @/parts/words.md#path--> `localizations → language.yml → message.brand`

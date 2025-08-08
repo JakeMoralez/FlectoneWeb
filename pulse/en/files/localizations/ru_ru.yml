@@ -43,14 +43,15 @@ command:
     language: "язык"
     url: "ссылка"
     move: "ход"
+    value: "значение"
 #endregion command
 #region anon
   anon:
-    format: "<fcolor:1>👻 <fcolor:2>Анон</fcolor:2> <fcolor:1><message>"
+    format: "<fcolor:1>👻 <fcolor:2>Анон <fcolor:1><message>"
 #endregion anon
 #region ball
   ball:
-    format: "<color:#9370DB>❓ <display_name> спросил: <style><message><reset> <color:#9370DB><br>🔮 Магический шар: <u><answer></u>"
+    format: "<color:#9370DB>❓ <display_name> спросил: <message><reset> <color:#9370DB><br>🔮 Магический шар: <u><answer></u>"
     answers:
       - "Бесспорно"
       - "Никаких сомнений"
@@ -76,9 +77,9 @@ command:
     null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
     reasons:
       default: "Ты заблокирован на этом сервере"
-    server: "<color:#ff7171>🔒 <fcolor:2><moderator></fcolor> заблокировал игрока <fcolor:2><player></fcolor> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
+    server: "<color:#ff7171>🔒 <fcolor:2><moderator><fcolor:1> заблокировал игрока <fcolor:2><player> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
     person: "<color:#ff7171>🔒 БАН 🔒 <fcolor:1><br><br>Дата: <date><br><br>Время: <time><br><br>Осталось: <time_left><br><br>Модератор: <moderator><br><br>Причина: <reason>"
-    connection-attempt: "<color:#ff7171>🔒 Заблокированный <fcolor:2><player></fcolor> попытался подключиться <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
+    connection-attempt: "<color:#ff7171>🔒 Заблокированный <fcolor:2><player><fcolor:1> попытался подключиться <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
 #endregion ban
 #region banlist
   banlist:
@@ -96,13 +97,14 @@ command:
 #endregion banlist
 #region broadcast
   broadcast:
-    format: "<br><color:#ffd500>│ 🕫 Сообщение для всех <br>│<br>│ Автор <display_name> <br>│<br>│ <fcolor:1><style><message> <br>"
+    format: "<br><color:#ffd500>│ 🕫 Сообщение для всех <br>│<br>│ Автор <display_name> <br>│<br>│ <fcolor:1><message> <br>"
 #endregion broadcast
 #region chatcolor
   chatcolor:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null-type: "<color:#ff7171><b>⁉</b> Тип введён неверно"
     null-color: "<color:#ff7171><b>⁉</b> Цвета введены неверно"
-    format: "<color:#98FB98>★ Теперь цвета <fcolor:1>сообщение</fcolor> <fcolor:2>сообщение</fcolor> <fcolor:3>сообщение <fcolor:4>сообщение"
+    format: "<br><color:#98FB98>│ Твои цвета выглядят так: <br><color:#98FB98>│ <br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><color:#98FB98>│ <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир! <br>"
 #endregion chatcolor
 #region chatsetting
   chatsetting:
@@ -152,57 +154,52 @@ command:
         item: "<fcolor:2>Тип чата <br><fcolor:1>Чат для просмотра и отправки сообщений <br><br><fcolor:1>Выбранный чат <fcolor:2><chat>"
         inventory: "<reset>                 Чаты"
         types:
-          default: "<fcolor:2>Стандартный чат<br><fcolor:1>Ты можешь видеть <fcolor:2>все</fcolor:2> чаты и писать в любой чат"
-          local: "<fcolor:2>Локальный чат<br><fcolor:1>Ты можешь писать только в <fcolor:2>локальный</fcolor:2> чат и видишь только его"
-          global: "<fcolor:2>Глобальный чат<br><fcolor:1>Ты можешь писать только в <fcolor:2>глобальный</fcolor:2> чат и видишь только его"
-      color:
-        item: "<fcolor:2>Цвета <br><fcolor:1>Главные цвета FlectonePulse <br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир! <br><br><u><color:#ff7171>Только ты это видишь"
+          default: "<fcolor:2>Стандартный чат<br><fcolor:1>Ты можешь видеть <fcolor:2>все<fcolor:1> чаты и писать в любой чат"
+          local: "<fcolor:2>Локальный чат<br><fcolor:1>Ты можешь писать только в <fcolor:2>локальный<fcolor:1> чат и видишь только его"
+          global: "<fcolor:2>Глобальный чат<br><fcolor:1>Ты можешь писать только в <fcolor:2>глобальный<fcolor:1> чат и видишь только его"
+      see:
+        item: "<fcolor:2>Цвета \"see\" <br><fcolor:1>Цвета для /chatcolor see <br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир! <br><br><u><color:#ff7171>Это видишь только ТЫ в любых сообщений"
         inventory: "<reset>                Цвета"
         types:
-          default: "<fcolor:2>Стандартные цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          white: "<fcolor:2>Белые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          light_gray: "<fcolor:2>Светло-серые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          gray: "<fcolor:2>Серые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          black: "<fcolor:2>Черные цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          brown: "<fcolor:2>Коричневые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          red: "<fcolor:2>Красные цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          orange: "<fcolor:2>Оранжевые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          yellow: "<fcolor:2>Желтые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          lime: "<fcolor:2>Лаймовые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          green: "<fcolor:2>Зеленые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          cyan: "<fcolor:2>Бирюзовые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          light_blue: "<fcolor:2>Голубые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          blue: "<fcolor:2>Синие цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          purple: "<fcolor:2>Фиолетовые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          magenta: "<fcolor:2>Пурпурные цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-          pink: "<fcolor:2>Розовые цвета<br><br><fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:2><player><fcolor:4>: привет мир! <br><fcolor:2><player><fcolor:1>: привет мир!"
-      style:
-        item: "<fcolor:2>Стиль <br><fcolor:1>Стиль сообщений, который ты отправил <br><br><fcolor:1>Твой стиль <gray><style>привет мир! <br><br><u><color:#ff7171>Это видят все"
-        inventory: "<reset>                Стили"
+          default: "<fcolor:2>Стандартные цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          white: "<fcolor:2>Белые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          light_gray: "<fcolor:2>Светло-серые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          gray: "<fcolor:2>Серые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          black: "<fcolor:2>Черные цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          brown: "<fcolor:2>Коричневые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          red: "<fcolor:2>Красные цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          orange: "<fcolor:2>Оранжевые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          yellow: "<fcolor:2>Желтые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          lime: "<fcolor:2>Лаймовые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          green: "<fcolor:2>Зеленые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          cyan: "<fcolor:2>Бирюзовые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          light_blue: "<fcolor:2>Голубые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          blue: "<fcolor:2>Синие цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          purple: "<fcolor:2>Фиолетовые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          magenta: "<fcolor:2>Пурпурные цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          pink: "<fcolor:2>Розовые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+      out:
+        item: "<fcolor:2>Цвета \"out\" <br><fcolor:1>Цвета для /chatcolor out <br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир! <br><br><u><color:#ff7171>Это видят ВСЕ у твоих сообщений"
+        inventory: "<reset>                Цвета"
         types:
-          default: "<style>Стандартный стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          white: "<style>Белый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          light_gray: "<style>Светло-серый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          gray: "<style>Серый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          black: "<style>Чёрный стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          brown: "<style>Коричневый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          red: "<style>Красный стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          orange: "<style>Оранжевый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          yellow: "<style>Жёлтый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          lime: "<style>Лаймовый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          green: "<style>Зелёный стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          cyan: "<style>Бирюзовый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          light_blue: "<style>Голубой стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          blue: "<style>Синий стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          purple: "<style>Фиолетовый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          magenta: "<style>Пурпурный стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
-          pink: "<style>Розовый стиль<br><br><fcolor:2><player><fcolor:3>: <style>привет мир!"
+          default: "<fcolor:2>Стандартные цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          white: "<fcolor:2>Белые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          light_gray: "<fcolor:2>Светло-серые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          gray: "<fcolor:2>Серые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          black: "<fcolor:2>Черные цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          brown: "<fcolor:2>Коричневые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          red: "<fcolor:2>Красные цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          orange: "<fcolor:2>Оранжевые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          yellow: "<fcolor:2>Желтые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          lime: "<fcolor:2>Лаймовые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          green: "<fcolor:2>Зеленые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          cyan: "<fcolor:2>Бирюзовые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          light_blue: "<fcolor:2>Голубые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          blue: "<fcolor:2>Синие цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          purple: "<fcolor:2>Фиолетовые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          magenta: "<fcolor:2>Пурпурные цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
+          pink: "<fcolor:2>Розовые цвета<br><br><fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир!"
 #endregion chatsetting
-#region chatstyle
-  chatstyle:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    format: "<fcolor:1>💬 Теперь твой <style>стиль выглядит так"
-#endregion chatstyle
 #region clearchat
   clearchat:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
@@ -217,7 +214,7 @@ command:
   coin:
     head: "орёл"
     tail: "решка"
-    format: "<fcolor:1>✎ <display_name> подбросил монетку - <style><result>"
+    format: "<fcolor:1>✎ <display_name> подбросил монетку - <result>"
     format-draw: "<fcolor:1>✎ <display_name> неудачно подбросил монетку ребром :)"
 #endregion coin
 #region deletemessage
@@ -234,11 +231,11 @@ command:
       4: "⚃"
       5: "⚄"
       6: "⚅"
-    format: "<fcolor:1>✎ <display_name> кинул кубики <style><message><reset> <fcolor:1>(<sum>)"
+    format: "<fcolor:1>✎ <display_name> кинул кубики <message><reset> <fcolor:1>(<sum>)"
 #endregion dice
 #region do
   do:
-    format: "<fcolor:1>✎ <style><message><reset> <fcolor:1>(<i><display_name></i>)"
+    format: "<fcolor:1>✎ <message><reset> <fcolor:1>(<i><display_name></i>)"
 #endregion do
 #region flectonepulse
   flectonepulse:
@@ -257,7 +254,7 @@ command:
 #region helper
   helper:
     null-helper: "<color:#ff7171><b>⁉</b> Сейчас нет людей, кто бы смог помочь"
-    global: "<fcolor:2>👤 <display_name> просит помощи ⏩ <fcolor:1><style><message>"
+    global: "<fcolor:2>👤 <display_name> просит помощи ⏩ <fcolor:1><message>"
     player: "<fcolor:2>👤 Запрос отправлен, ожидай ответа"
 #endregion helper
 #region ignore
@@ -282,27 +279,27 @@ command:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     reasons:
       default: "Исключён модератором"
-    server: "<color:#ff7171>🔒 <fcolor:2><moderator></fcolor> исключил <fcolor:2><player></fcolor> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
+    server: "<color:#ff7171>🔒 <fcolor:2><moderator><fcolor:1> исключил <fcolor:2><player><fcolor:1> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
     person: "<color:#ff7171>🔒 КИК 🔒 <fcolor:1><br><br>Айди: <id><br><br>Дата: <date><br><br>Модератор: <moderator><br><br>Причина: <reason>"
 #endregion kick
 #region mail
   mail:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     online-player: "<color:#ff7171><b>⁉</b> Игрок в сети"
-    sender: "<fcolor:2>✉ Письмо #<id> для <display_name> » <fcolor:1><style><message>"
-    receiver: "<fcolor:2>✉ Письмо от <display_name> » <fcolor:1><style><message>"
+    sender: "<fcolor:2>✉ Письмо #<id> для <display_name> » <fcolor:1><message>"
+    receiver: "<fcolor:2>✉ Письмо от <display_name> » <fcolor:1><message>"
 #endregion mail
 #region maintenance
   maintenance:
     server-description: "<color:#ff7171>В настоящее время проводятся технические работы"
     server-version: "Технические работы"
     kick: "<color:#ff7171>★ На сервере ведутся технические работы"
-    format-true: "<fcolor:1>★ Ты <fcolor:2>включил</fcolor:2> технические работы на сервере"
-    format-false: "<fcolor:1>★ Ты <fcolor:2>выключил</fcolor:2> технические работы на сервере"
+    format-true: "<fcolor:1>★ Ты <fcolor:2>включил <fcolor:1>технические работы на сервере"
+    format-false: "<fcolor:1>★ Ты <fcolor:2>выключил <fcolor:1>технические работы на сервере"
 #endregion maintenance
 #region me
   me:
-    format: "<fcolor:1>✎ <display_name> <fcolor:1><style><message>"
+    format: "<fcolor:1>✎ <display_name> <fcolor:1><message>"
 #endregion me
 #region mute
   mute:
@@ -310,7 +307,7 @@ command:
     null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
     reasons:
       default: "Ты был замучен на сервере"
-    server: "<color:#ff7171>🔒 <fcolor:2><moderator></fcolor> выдал мут игроку <fcolor:2><player></fcolor> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
+    server: "<color:#ff7171>🔒 <fcolor:2><moderator><fcolor:1> выдал мут игроку <fcolor:2><player> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
     person: "<color:#ff7171>🔒 Ты замучен, осталось <time_left>"
 #endregion mute
 #region mutelist
@@ -338,7 +335,7 @@ command:
 #region ping
   ping:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    format: "<fcolor:1>🖧 Пинг игрока <fcolor:2><player></fcolor:2> равен <ping>"
+    format: "<fcolor:1>🖧 Пинг игрока <fcolor:2><player><fcolor:1> равен <ping>"
 #endregion ping
 #region poll
   poll:
@@ -347,7 +344,7 @@ command:
     already: "<color:#ff7171><b>⁉</b> Ты уже проголосовал в этом голосовании"
     vote-true: "<color:#4eff52>👍 Ты выбрал <answer_id> в голосовании #<id>. Всего таких голосов <count>"
     vote-false: "<color:#ff4e4e>🖓 Ты передумал об <answer_id> в голосовании #<id>. Всего таких голосов <count> без тебя"
-    format: "<br><color:#fce303>│ <status> <br>│ <style><message><reset> <color:#fce303><br>├─────────────<br><answers>"
+    format: "<br><color:#fce303>│ <status> <br>│ <message><reset> <color:#fce303><br>├─────────────<br><answers>"
     answer-template: "<color:#fce303>│ <count> → <color:#4eff52><hover:show_text:\"<color:#4eff52>Проголосовать за <bold><answer>\"><click:run_command:\"/pollvote <id> <number>\"><answer> [👍]<br>"
     status:
       start: "Создано новое голосование #<b><id></b>"
@@ -393,14 +390,14 @@ command:
 #endregion stream
 #region symbol
   symbol:
-    format: "<click:suggest_command:\"<message>\"><fcolor:2>🖥 Нажми, чтобы использовать: <fcolor:1><style><message>"
+    format: "<click:suggest_command:\"<message>\"><fcolor:2>🖥 Нажми, чтобы использовать: <fcolor:1><message>"
 #endregion symbol
 #region tell
   tell:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     sender: "<fcolor:2>✉ Ты → <display_name> » <fcolor:1><message>"
     receiver: "<fcolor:2>✉ <display_name> → Тебе » <fcolor:1><message>"
-    myself: "<fcolor:2>✉ [Заметка] <fcolor:1><style><message>"
+    myself: "<fcolor:2>✉ [Заметка] <fcolor:1><message>"
 #endregion tell
 #region tictactoe
   tictactoe:
@@ -411,16 +408,16 @@ command:
     wrong-by-player: "<color:#ff7171><b>⁉</b> Игра закончена, потому что один из игроков не в сети"
     symbol:
       blank: "<hover:show_text:\"<fcolor:1>Ход <move>\"><click:run_command:\"/tictactoemove %d <move>\">☐</click></hover>"
-      first: "<fcolor:2>☑</fcolor:2>"
+      first: "<fcolor:2>☑"
       first-remove: "<color:#ff7171>☑</color:#ff7171>"
       first-win: "<color:#98FB98>☑</color:#98FB98>"
-      second: "<fcolor:2>☒</fcolor:2>"
+      second: "<fcolor:2>☒"
       second-remove: "<color:#ff7171>☒</color:#ff7171>"
       second-win: "<color:#98FB98>☒</color:#98FB98>"
-    field: "<fcolor:1><br>|[#][#][#]| <title> <current_move> <br>|[#][#][#]| <br>|[#][#][#]| <last_move><br>"
-    current-move: "<fcolor:2>☐ → <symbol></fcolor:2>"
-    last-move: "<fcolor:2>Последний ход (<move>)</fcolor:2>"
-    format-move: "<fcolor:2>Ход <player> </fcolor:2>"
+    field: "<fcolor:1><br>|[#][#][#]| <title> <current_move> <br><fcolor:1>|[#][#][#]| <br>|[#][#][#]| <last_move><br>"
+    current-move: "<fcolor:2>☐ → <symbol>"
+    last-move: "<fcolor:2>Последний ход (<move>)"
+    format-move: "<fcolor:2>Ход <player> "
     format-win: "<color:#98FB98><player> выиграл</color:#98FB98>"
     format-draw: "<color:#98FB98>Ничья 👬</color:#98FB98>"
     sender: "<fcolor:1>☐ Предложение сыграть в крестики-нолики отправлено для <display_name>"
@@ -436,30 +433,30 @@ command:
 #region translateto
   translateto:
     null-or-error: "<color:#ff7171><b>⁉</b> Ошибка, возможно указан неправильный язык"
-    format: "<fcolor:1>📖 Перевод на [<language>] → <fcolor:2><style><message>"
+    format: "<fcolor:1>📖 Перевод на [<language>] → <fcolor:2><message>"
 #endregion translateto
 #region try
   try:
-    format-true: "<color:#98FB98>☺ <display_name> <style><message><reset> <color:#98FB98><percent>%"
-    format-false: "<color:#F08080>☹ <display_name> <style><message><reset> <color:#98FB98><percent>%"
+    format-true: "<color:#98FB98>☺ <display_name> <message><reset> <color:#98FB98><percent>%"
+    format-false: "<color:#F08080>☹ <display_name> <message><reset> <color:#F08080><percent>%"
 #endregion try
 #region unban
   unban:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     not-banned: "<color:#ff7171><b>⁉</b> Игрок не заблокирован"
-    format: "<color:#98FB98>🔓 <fcolor:2><moderator></fcolor> разблокировал игрока <fcolor:2><player></fcolor>"
+    format: "<color:#98FB98>🔓 <fcolor:2><moderator><color:#98FB98> разблокировал игрока <fcolor:2><player>"
 #endregion unban
 #region unmute
   unmute:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     not-muted: "<color:#ff7171><b>⁉</b> Игрок не замучен"
-    format: "<color:#98FB98>🔓 <fcolor:2><moderator></fcolor> размутил игрока <fcolor:2><player></fcolor>"
+    format: "<color:#98FB98>🔓 <fcolor:2><moderator><color:#98FB98> размутил игрока <fcolor:2><player>"
 #endregion unmute
 #region unwarn
   unwarn:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     not-warned: "<color:#ff7171><b>⁉</b> Игрок не имеет предупреждений"
-    format: "<color:#98FB98>🔓 <fcolor:2><moderator></fcolor> снял предупреждение с игрока <fcolor:2><player></fcolor>"
+    format: "<color:#98FB98>🔓 <fcolor:2><moderator><color:#98FB98> снял предупреждение с игрока <fcolor:2><player>"
 #endregion unwarn
 #region warn
   warn:
@@ -467,7 +464,7 @@ command:
     null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
     reasons:
       default: "Ты получил предупреждение"
-    server: "<color:#ff7171>🔒 <fcolor:2><moderator></fcolor> выдал предупреждение игроку <fcolor:2><player></fcolor> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
+    server: "<color:#ff7171>🔒 <fcolor:2><moderator><fcolor:1> выдал предупреждение игроку <fcolor:2><player> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
     person: "<color:#ff7171>🔒 Ты получил предупреждение на <time>"
 #endregion warn
 #region warnlist
@@ -546,11 +543,11 @@ message:
       format: "<color:#834eff>🌠 <fcolor:2><display_name> <fcolor:1>завершил испытание <advancement>"
       tag: "<color:#834eff>[<hover:show_text:\"<color:#834eff><lang:'<title>'> <br><lang:'<description>'>\"><lang:'<title>'></hover>]"
     revoke:
-      many-to-one: "<fcolor:1>🌠 Отозвано <fcolor:2><number></fcolor:2> достижений у игрока <display_name>"
-      one-to-one: "<fcolor:1>🌠 Отозвано достижение <fcolor:2><advancement></fcolor:2> у игрока <display_name>"
+      many-to-one: "<fcolor:1>🌠 Отозвано <fcolor:2><number> <fcolor:1>достижений у игрока <display_name>"
+      one-to-one: "<fcolor:1>🌠 Отозвано достижение <fcolor:2><advancement> <fcolor:1>у игрока <display_name>"
     grant:
-      many-to-one: "<fcolor:1>🌠 Выдано <fcolor:2><number></fcolor:2> достижений игроку <display_name>"
-      one-to-one: "<fcolor:1>🌠 Достижение <fcolor:2><advancement></fcolor:2> выдано игроку <display_name>"
+      many-to-one: "<fcolor:1>🌠 Выдано <fcolor:2><number> <fcolor:1>достижений игроку <display_name>"
+      one-to-one: "<fcolor:1>🌠 Достижение <fcolor:2><advancement> <fcolor:1>выдано игроку <display_name>"
 #endregion advancement
 #region afk
   afk:
@@ -567,7 +564,7 @@ message:
     types:
       announcement:
         - "<br><fcolor:1>   ✉ Заходи в телеграм ✉ <br><fcolor:2>    <u><click:open_url:\"https://t.me/flectone\"><hover:show_text:\"<fcolor:2>https://t.me/flectone\">https://t.me/flectone</hover></click></u><br>"
-        - "<br><fcolor:1>⚡ Поддержи <fcolor:2>FlectonePulse</fcolor:2> на Boosty <br><fcolor:1>⚡ <u><click:open_url:\"https://boosty.to/thefaser/\"><hover:show_text:\"<fcolor:2>https://boosty.to/thefaser/\">https://boosty.to/thefaser/</hover></click></u><br>"
+        - "<br><fcolor:1>⚡ Поддержи <fcolor:2>FlectonePulse <fcolor:1>на Boosty <br><fcolor:1>⚡ <u><click:open_url:\"https://boosty.to/thefaser/\"><hover:show_text:\"<fcolor:2>https://boosty.to/thefaser/\">https://boosty.to/thefaser/</hover></click></u><br>"
         - "<br><fcolor:1>      ❝ Заходи в дискорд ❠<br><fcolor:2>    <u><click:open_url:\"https://discord.flectone.net\"><hover:show_text:\"<fcolor:2>https://discord.flectone.net\">https://discord.flectone.net</hover></click></u><br>"
         - "<br><fcolor:1>◇ Сервер использует <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
 #endregion auto
@@ -587,20 +584,20 @@ message:
 #endregion brand
 #region bubble
   bubble:
-    format: "<fcolor:3><style><message>"
+    format: "<fcolor:3><message>"
 #endregion bubble
 #region chat
   chat:
     null-chat: "<color:#ff7171><b>⁉</b> На сервер выключен чат"
     null-receiver: "<color:#ff7171><b>⁉</b> Тебя никто не услышал"
     types:
-      local: "<delete><display_name><fcolor:3>: <style><message> <translate>"
-      global: "<delete><display_name> <world_prefix>»<fcolor:4> <style><message> <translate>"
+      local: "<delete><display_name><fcolor:3>: <message> <translate>"
+      global: "<delete><display_name> <world_prefix>»<fcolor:4> <message> <translate>"
 #endregion chat
 #region clear
   clear:
-    single: "<fcolor:1>🌊 Удалено <fcolor:2><number></fcolor:2> предметов у игрока <display_name>"
-    multiple: "<fcolor:1>🌊 Удалено <fcolor:2><number></fcolor:2> предметов у <fcolor:2><count></fcolor:2> игроков"
+    single: "<fcolor:1>🌊 Удалено <fcolor:2><number> <fcolor:1>предметов у игрока <display_name>"
+    multiple: "<fcolor:1>🌊 Удалено <fcolor:2><number> <fcolor:1>предметов у <fcolor:2><count> <fcolor:1>игроков"
 #endregion clear
 #region death
   death:
@@ -686,7 +683,7 @@ message:
       death.attack.sweetBerryBush: "<color:#778899>🪦 <fcolor:1><display_name> искололся до смерти в кустах сладких ягод"
       death.attack.sweetBerryBush.player: "<color:#778899>🪦 <fcolor:1><display_name> искололся до смерти в кустах сладких ягод, спасаясь от <killer>"
       death.attack.thorns: "<color:#778899>🪦 <fcolor:1><display_name> был убит, пытаясь навредить <killer>"
-      death.attack.thorns.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <fcolor:2>[<i><by_item></i>]</fcolor:2>, пытаясь навредить <killer>"
+      death.attack.thorns.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <fcolor:2>[<i><by_item></i>]<fcolor:1>, пытаясь навредить <killer>"
       death.attack.thrown: "<color:#778899>🪦 <fcolor:1><display_name> был избит <killer>"
       death.attack.thrown.item: "<color:#778899>🪦 <fcolor:1><display_name> был избит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
       death.attack.trident: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён <killer>"
@@ -714,33 +711,33 @@ message:
 #endregion deop
 #region enchant
   enchant:
-    single: "<fcolor:1>📖 Наложены чары «<fcolor:2><lang:'<enchant>'> <lang:'<level>'></fcolor:2>» на предмет <display_name>"
-    multiple: "<fcolor:1>📖 Наложены чары «<fcolor:2><lang:'<enchant>'> <lang:'<level>'></fcolor:2>» на предмет <fcolor:2><count></fcolor:2> сущностей"
+    single: "<fcolor:1>📖 Наложены чары «<fcolor:2><lang:'<enchant>'> <lang:'<level>'><fcolor:1>» на предмет <display_name>"
+    multiple: "<fcolor:1>📖 Наложены чары «<fcolor:2><lang:'<enchant>'> <lang:'<level>'><fcolor:1>» на предмет <fcolor:2><count><fcolor:1> сущностей"
 #endregion enchant
 #region format
   format:
     tags:
-      PING: "<fcolor:2><ping></fcolor>"
-      TPS: "<fcolor:2><tps></fcolor>"
-      ONLINE: "<fcolor:2><online></fcolor>"
-      COORDS: "<fcolor:2><x> <y> <z></fcolor>"
+      PING: "<fcolor:2><ping>"
+      TPS: "<fcolor:2><tps>"
+      ONLINE: "<fcolor:2><online>"
+      COORDS: "<fcolor:2><x> <y> <z>"
       STATS: "<color:#ff7171><hp>♥</color> <color:#3de0d8><armor>🛡 <color:#e33059><attack>🗡 <color:#4eff52><exp>⏺ <color:#f0a01f><food>🍖"
       SKIN: "<image:\"<message>\"><u>👨 Скин</u></image>"
-      ITEM: "<fcolor:2>[<message>]</fcolor>"
-      URL: "<click:open_url:\"<message>\"><hover:show_text:\"<fcolor:2>Открыть ссылку <br><u><message>\"><fcolor:2><u>🗗 Ссылка</u></fcolor:2></hover></click>"
+      ITEM: "<fcolor:2>[<message>]"
+      URL: "<click:open_url:\"<message>\"><hover:show_text:\"<fcolor:2>Открыть ссылку <br><u><message>\"><fcolor:2><u>🗗 Ссылка</u></hover></click>"
       IMAGE: "<image:\"<message>\"><u>🖃 Картинка</u></image>"
 #endregion format
 #region mention
     mention:
       person: "<fcolor:2>Тебя упомянули!"
-      format: "<fcolor:2>@<target></fcolor>"
+      format: "<fcolor:2>@<target>"
 #endregion mention
 #region moderation
     moderation:
 #endregion moderation
 #region delete
       delete:
-        placeholder: "<color:#ff7171><hover:show_text:\"<color:#ff7171>Нажми, чтобы удалить\"><click:run_command:\"/delete <uuid>\">[x] "
+        placeholder: "<color:#ff7171><hover:show_text:\"<color:#ff7171>Нажми, чтобы удалить\"><click:run_command:\"/deletemessage <uuid>\">[x] "
         format: "<fcolor:3><i>Сообщение удалено</i>"
 #endregion delete
 #region newbie
@@ -754,9 +751,9 @@ message:
 #region name_
     name-:
       constant: ""
-      display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Написать <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
-      entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:'<name>'> <br><fcolor:1>Тип <fcolor:2><lang:'<type>'> <br><fcolor:1>Айди <fcolor:2><uuid>\"><lang:'<name>'></hover></fcolor:2>"
-      unknown: "<fcolor:2><name></fcolor:2>"
+      display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Написать <player>\"><vault_prefix><stream_prefix><fcolor:2><player><afk_suffix><vault_suffix></hover></click>"
+      entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:'<name>'> <br><fcolor:1>Тип <fcolor:2><lang:'<type>'> <br><fcolor:1>Айди <fcolor:2><uuid>\"><lang:'<name>'></hover>"
+      unknown: "<fcolor:2><name>"
       invisible: "<fcolor:2>👻 Невидимка"
 #endregion name_
 #region questionanswer
@@ -791,7 +788,7 @@ message:
 #region kill
   kill:
     single: "<color:#778899>🪦 <fcolor:1><display_name> убит"
-    multiple: "<color:#778899>🪦 <fcolor:1>Уничтожено <fcolor:2><count></fcolor:2> сущностей"
+    multiple: "<color:#778899>🪦 <fcolor:1>Уничтожено <fcolor:2><count> <fcolor:1>сущностей"
 #endregion kill
 #region objective
   objective:
@@ -814,11 +811,11 @@ message:
 #endregion rightclick
 #region seed
   seed:
-    format: "<fcolor:1>🌐 Ключ генератора: [<fcolor:2><hover:show_text:'<fcolor:2>Нажми, чтобы скопировать в буфер обмена'><click:copy_to_clipboard:<seed>><seed></click></fcolor:2>]"
+    format: "<fcolor:1>🌐 Ключ генератора: [<fcolor:2><hover:show_text:'<fcolor:2>Нажми, чтобы скопировать в буфер обмена'><click:copy_to_clipboard:<seed>><seed></click>]"
 #endregion seed
 #region setblock
   setblock:
-    format: "<fcolor:1>⏹ Изменён блок в точке <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2>"
+    format: "<fcolor:1>⏹ Изменён блок в точке <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1>"
 #endregion setblock
 #region sidebar
   sidebar:
@@ -835,15 +832,15 @@ message:
 #region sleep
   sleep:
     not-possible: "<fcolor:1>🛌 Никакой отдых не поможет пропустить эту ночь"
-    players-sleeping: "<fcolor:1>🛌 <fcolor:2><sleep_count></fcolor:2> из <fcolor:2><all_count></fcolor:2> игроков спят"
+    players-sleeping: "<fcolor:1>🛌 <fcolor:2><sleep_count> <fcolor:1>из <fcolor:2><all_count> <fcolor:1>игроков спят"
     skipping-night: "<fcolor:1>🛌 Вы проспите всю ночь"
 #endregion sleep
 #region spawn
   spawn:
     not-valid: "<fcolor:1>🛌 У вас нет кровати или заряженного якоря возрождения, либо доступ к ним затруднён"
     set: "<fcolor:1>🛌 Точка возрождения установлена"
-    single: "<fcolor:1>🛌 Установлена точка возрождения <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] в <fcolor:2><world></fcolor:2> для <display_name>"
-    multiple: "<fcolor:1>🛌 Установлена точка возрождения <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] в <fcolor:2><world></fcolor:2> для <fcolor:2><count></fcolor:2> игроков"
+    single: "<fcolor:1>🛌 Установлена точка возрождения <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1> [<fcolor:2><angle><fcolor:1>] в <fcolor:2><world> <fcolor:1>для <display_name>"
+    multiple: "<fcolor:1>🛌 Установлена точка возрождения <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1> [<fcolor:2><angle><fcolor:1>] в <fcolor:2><world> <fcolor:1>для <fcolor:2><count><fcolor:1> игроков"
 #endregion spawn
 #region status
   status:
@@ -887,7 +884,7 @@ message:
           - "<fcolor:1>ТПС <tps>, Онлайн <online>"
           - " "
         - - " "
-          - "<fcolor:1>Привет <fcolor:2><player></fcolor:2>!"
+          - "<fcolor:1>Привет <fcolor:2><player><fcolor:1>!"
           - " "
 #endregion footer
 #region playerlistname
@@ -896,6 +893,6 @@ message:
 #endregion playerlistname
 #region update
   update:
-    format-player: "<fcolor:1><fcolor:2>(FlectonePulse)</fcolor:2> Твоя версия <fcolor:2><current_version></fcolor:2> устарела! Обновись до <fcolor:2><latest_version></fcolor:2> с помощью <url:https://modrinth.com/plugin/flectonepulse>, чтобы получить новые возможности!"
-    format-console: "<fcolor:1>Твоя версия <fcolor:2><current_version></fcolor:2> устарела! Обновись до <fcolor:2><latest_version></fcolor:2> с помощью <click:open_url:https://modrinth.com/plugin/flectonepulse>https://modrinth.com/plugin/flectonepulse"
+    format-player: "<fcolor:1><fcolor:2>(FlectonePulse) <fcolor:1>Твоя версия <fcolor:2><current_version> <fcolor:1>устарела! Обновись до <fcolor:2><latest_version> <fcolor:1>с помощью <url:https://modrinth.com/plugin/flectonepulse>, чтобы получить новые возможности!"
+    format-console: "<fcolor:1>Твоя версия <fcolor:2><current_version> <fcolor:1>устарела! Обновись до <fcolor:2><latest_version> <fcolor:1>с помощью <click:open_url:https://modrinth.com/plugin/flectonepulse>https://modrinth.com/plugin/flectonepulse"
 #endregion update
