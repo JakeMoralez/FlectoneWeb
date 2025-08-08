@@ -92,50 +92,29 @@ FlectonePulse is a new project, not an improved version of FlectoneChat. Flecton
 ### 12. How to enable displaying the player's name above their head?
 Enable the `name-visible` setting in the `message.yml` file:
 
-```yaml
-scoreboard:
-  enable: true
-  name-visible: true
-  color: "<white>"
-  prefix: "<vault_prefix><stream_prefix>"
-  suffix: "<afk_suffix><vault_suffix>"
-  ticker:
-    enable: false
-```
+<<< @/files/message.yml#scoreboard
 
 After making changes, run the `/flectonepulse reload` command. Details in the [configuration documentation](/docs/message/format/scoreboard/).
 
 ### 13. How to configure the player's name display?
-Player name configuration is done in the `localizations/...` files:
+Player name (`display`) configuration is done in the `localizations/...` files:
 
-```yaml
-name-:
-  constant: ""
-  display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Write to <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
-  entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:'<name>'> <br><fcolor:1>Type <fcolor:2><lang:'<type>'> <br><fcolor:1>ID <fcolor:2><uuid>\"><lang:'<name>'></hover></fcolor:2>"
-  unknown: "<fcolor:2><name></fcolor:2>"
-```
+::: code-group
+<<< @/files/localizations/ru_ru.yml#name_
+<<< @/files/localizations/en_us.yml#name_
+:::
 
 After changes, run `/flectonepulse reload`. Details in the [localization documentation](/docs/message/format/name_/).
 
 ### 14. How to configure colors in messages and the interface?
-Color configuration is done in the `message.yml` file using the `color` module:
+Color configuration is done in the `message.yml` file using the `fcolor` module:
 
-```yaml
-color:
-  enable: true
-  use-recipient-colors: true
-  values:
-    1: "#ADD8E6"
-    2: "#87CEFA"
-    3: "#A9A9A9"
-    4: "#FFFAFA"
-```
+<<< @/files/message.yml#fcolor
 
 This sets default colors if the player hasn’t chosen their own in `/chatsetting` or `/chatcolor`. You can disable color changes in the respective commands. Details in the [formatting guide](/docs/message/format/color/).
 
 ::: tip TIP
-It’s easier to change the 4 colors here than to replace `<fcolor:>` in all plugin settings.
+It’s easier to change the 4 colors here than to replace `<fcolor:...>` in all plugin settings.
 :::
 
 ### 15. How to configure the TAB (player list)?
