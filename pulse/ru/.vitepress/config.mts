@@ -88,6 +88,7 @@ export default defineConfig({
     nav: [
       { text: 'Документация', link: '/docs/' },
       { text: 'Аналитика', link: '/metrics/' },
+      { text: 'API', link: '/yapi/' },
       {
         text: 'Языки',
         items: [
