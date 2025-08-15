@@ -104,6 +104,10 @@ chatsetting:
   enable: true
   aliases:
     - "chatsetting"
+  modern:
+    enable: true
+    button-width: 100
+    columns: 5
   checkbox:
     disabled-material: "RED_DYE"
     enabled-material: "LIME_DYE"

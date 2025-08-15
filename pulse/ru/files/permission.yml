@@ -86,7 +86,7 @@ command:
 #region chatcolor
   chatcolor:
     name: "flectonepulse.module.command.chatcolor"
-    type: "OP"
+    type: "TRUE"
     other:
       name: "flectonepulse.module.command.chatcolor.other"
       type: "OP"
@@ -96,6 +96,13 @@ command:
     sound:
       name: "flectonepulse.module.command.chatcolor.sound"
       type: "TRUE"
+    colors:
+      OUT:
+        name: "flectonepulse.module.command.chatcolor.out"
+        type: "OP"
+      SEE:
+        name: "flectonepulse.module.command.chatcolor.see"
+        type: "TRUE"
 #endregion chatcolor
 #region chatsetting
   chatsetting:
@@ -652,6 +659,11 @@ integration:
     name: "flectonepulse.module.integration.luckperms"
     type: "TRUE"
 #endregion luckperms
+#region integrationmaintenance
+  maintenance:
+    name: "flectonepulse.module.integration.maintenance"
+    type: "TRUE"
+#endregion integrationmaintenance
 #region minimotd
   minimotd:
     name: "flectonepulse.module.integration.minimotd"
@@ -846,52 +858,7 @@ message:
     all:
       name: "flectonepulse.module.message.format.all"
       type: "OP"
-    tags:
-      PING:
-        name: "flectonepulse.module.message.format.ping"
-        type: "TRUE"
-      TPS:
-        name: "flectonepulse.module.message.format.tps"
-        type: "TRUE"
-      ONLINE:
-        name: "flectonepulse.module.message.format.online"
-        type: "TRUE"
-      COORDS:
-        name: "flectonepulse.module.message.format.coords"
-        type: "TRUE"
-      STATS:
-        name: "flectonepulse.module.message.format.stats"
-        type: "TRUE"
-      SKIN:
-        name: "flectonepulse.module.message.format.skin"
-        type: "TRUE"
-      ITEM:
-        name: "flectonepulse.module.message.format.item"
-        type: "TRUE"
-      URL:
-        name: "flectonepulse.module.message.format.url"
-        type: "TRUE"
-      IMAGE:
-        name: "flectonepulse.module.message.format.image"
-        type: "TRUE"
-      SPOILER:
-        name: "flectonepulse.module.message.format.spoiler"
-        type: "TRUE"
-      BOLD:
-        name: "flectonepulse.module.message.format.bold"
-        type: "TRUE"
-      ITALIC:
-        name: "flectonepulse.module.message.format.italic"
-        type: "TRUE"
-      UNDERLINE:
-        name: "flectonepulse.module.message.format.underline"
-        type: "TRUE"
-      OBFUSCATED:
-        name: "flectonepulse.module.message.format.obfuscated"
-        type: "TRUE"
-      STRIKETHROUGH:
-        name: "flectonepulse.module.message.format.strikethrough"
-        type: "TRUE"
+    adventure-tags:
       HOVER:
         name: "flectonepulse.module.message.format.hover"
         type: "OP"
@@ -954,10 +921,10 @@ message:
     fcolor:
       name: "flectonepulse.module.message.format.fcolor"
       type: "TRUE"
-      types:
+      colors:
         OUT:
           name: "flectonepulse.module.message.format.fcolor.out"
-          type: "OP"
+          type: "TRUE"
         SEE:
           name: "flectonepulse.module.message.format.fcolor.see"
           type: "TRUE"
@@ -1066,6 +1033,103 @@ message:
     replacement:
       name: "flectonepulse.module.message.format.replacement"
       type: "TRUE"
+      values:
+        smile:
+          name: "flectonepulse.module.message.format.replacement.smile"
+          type: "TRUE"
+        big_smile:
+          name: "flectonepulse.module.message.format.replacement.big_smile"
+          type: "TRUE"
+        sad:
+          name: "flectonepulse.module.message.format.replacement.sad"
+          type: "TRUE"
+        ok_hand:
+          name: "flectonepulse.module.message.format.replacement.ok_hand"
+          type: "TRUE"
+        thumbs_up:
+          name: "flectonepulse.module.message.format.replacement.thumbs_up"
+          type: "TRUE"
+        thumbs_down:
+          name: "flectonepulse.module.message.format.replacement.thumbs_down"
+          type: "TRUE"
+        cool_smile:
+          name: "flectonepulse.module.message.format.replacement.cool_smile"
+          type: "TRUE"
+        cool_glasses:
+          name: "flectonepulse.module.message.format.replacement.cool_glasses"
+          type: "TRUE"
+        clown:
+          name: "flectonepulse.module.message.format.replacement.clown"
+          type: "TRUE"
+        heart:
+          name: "flectonepulse.module.message.format.replacement.heart"
+          type: "TRUE"
+        laughing:
+          name: "flectonepulse.module.message.format.replacement.laughing"
+          type: "TRUE"
+        confused:
+          name: "flectonepulse.module.message.format.replacement.confused"
+          type: "TRUE"
+        happy:
+          name: "flectonepulse.module.message.format.replacement.happy"
+          type: "TRUE"
+        angry:
+          name: "flectonepulse.module.message.format.replacement.angry"
+          type: "TRUE"
+        ascii_idk:
+          name: "flectonepulse.module.message.format.replacement.ascii_idk"
+          type: "TRUE"
+        ascii_angry:
+          name: "flectonepulse.module.message.format.replacement.ascii_angry"
+          type: "TRUE"
+        ascii_happy:
+          name: "flectonepulse.module.message.format.replacement.ascii_happy"
+          type: "TRUE"
+        ping:
+          name: "flectonepulse.module.message.format.replacement.ping"
+          type: "TRUE"
+        tps:
+          name: "flectonepulse.module.message.format.replacement.tps"
+          type: "TRUE"
+        online:
+          name: "flectonepulse.module.message.format.replacement.online"
+          type: "TRUE"
+        coords:
+          name: "flectonepulse.module.message.format.replacement.coords"
+          type: "TRUE"
+        stats:
+          name: "flectonepulse.module.message.format.replacement.stats"
+          type: "TRUE"
+        skin:
+          name: "flectonepulse.module.message.format.replacement.skin"
+          type: "TRUE"
+        item:
+          name: "flectonepulse.module.message.format.replacement.item"
+          type: "TRUE"
+        url:
+          name: "flectonepulse.module.message.format.replacement.url"
+          type: "TRUE"
+        image:
+          name: "flectonepulse.module.message.format.replacement.image"
+          type: "TRUE"
+        spoiler:
+          name: "flectonepulse.module.message.format.replacement.spoiler"
+          type: "TRUE"
+        bold:
+          name: "flectonepulse.module.message.format.replacement.bold"
+          type: "TRUE"
+        italic:
+          name: "flectonepulse.module.message.format.replacement.italic"
+          type: "TRUE"
+        underline:
+          name: "flectonepulse.module.message.format.replacement.underline"
+          type: "TRUE"
+        obfuscated:
+          name: "flectonepulse.module.message.format.replacement.obfuscated"
+          type: "TRUE"
+        strikethrough:
+          name: "flectonepulse.module.message.format.replacement.strikethrough"
+          type: "TRUE"
 #endregion replacement
 #region scoreboard
     scoreboard:
@@ -1253,9 +1317,9 @@ message:
 #endregion playerlistname
 #region update
   update:
-    name: "flectonepulse.module.message.op"
+    name: "flectonepulse.module.message.update"
     type: "OP"
     sound:
-      name: "flectonepulse.module.message.op.sound"
+      name: "flectonepulse.module.message.update.sound"
       type: "TRUE"
 #endregion update

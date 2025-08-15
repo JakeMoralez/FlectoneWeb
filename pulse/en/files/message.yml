@@ -101,7 +101,7 @@ bubble:
 #region chat
 chat:
   enable: true
-  packet-based: false
+  mode: "PACKET"
   priority: "NORMAL"
   types:
     local:
@@ -177,109 +177,26 @@ enchant:
 #region format
 format:
   enable: true
-  tags:
-    PING:
-      enable: true
-      trigger: "%ping%"
-    TPS:
-      enable: true
-      trigger: "%tps%"
-    ONLINE:
-      enable: true
-      trigger: "%online%"
-    COORDS:
-      enable: true
-      trigger: "%coords%"
-    STATS:
-      enable: true
-      trigger: "%stats%"
-    SKIN:
-      enable: true
-      trigger: "%skin%"
-    ITEM:
-      enable: true
-      trigger: "%item%"
-    URL:
-      enable: true
-      trigger: "(?<!\\\\)(?<!:\")((https?|ftp|gopher|telnet|file)://[\\w.-]+\\.[a-zA-Z]{2,}(?::\\d+)?(?:/[\\w:#@%/;$()~_?+\\-=.&]*)?(?:#[\\w\\-=/&%]*)?)"
-    IMAGE:
-      enable: true
-      trigger: "(?<!:\")((https?|ftp|gopher|telnet|file)://(?:i\\.imgur\\.com|media\\.discordapp\\.net)/[\\w:#@%/;$()~_?+\\-=.&]*[^\\\\\\s])"
-    SPOILER:
-      enable: true
-      trigger: "\\Q||\\E"
-    BOLD:
-      enable: true
-      trigger: "\\Q**\\E"
-    ITALIC:
-      enable: true
-      trigger: "\\Q*\\E"
-    UNDERLINE:
-      enable: true
-      trigger: "\\Q__\\E"
-    OBFUSCATED:
-      enable: true
-      trigger: "\\Q??\\E"
-    STRIKETHROUGH:
-      enable: true
-      trigger: "\\Q~~\\E"
-    HOVER:
-      enable: true
-      trigger: null
-    CLICK:
-      enable: true
-      trigger: null
-    COLOR:
-      enable: true
-      trigger: null
-    KEYBIND:
-      enable: true
-      trigger: null
-    TRANSLATABLE:
-      enable: true
-      trigger: null
-    TRANSLATABLE_FALLBACK:
-      enable: true
-      trigger: null
-    INSERTION:
-      enable: true
-      trigger: null
-    FONT:
-      enable: true
-      trigger: null
-    DECORATION:
-      enable: true
-      trigger: null
-    GRADIENT:
-      enable: true
-      trigger: null
-    RAINBOW:
-      enable: true
-      trigger: null
-    RESET:
-      enable: true
-      trigger: null
-    NEWLINE:
-      enable: true
-      trigger: null
-    TRANSITION:
-      enable: true
-      trigger: null
-    SELECTOR:
-      enable: true
-      trigger: null
-    SCORE:
-      enable: true
-      trigger: null
-    NBT:
-      enable: true
-      trigger: null
-    PRIDE:
-      enable: true
-      trigger: null
-    SHADOW_COLOR:
-      enable: true
-      trigger: null
+  adventure-tags:
+    - "HOVER"
+    - "CLICK"
+    - "COLOR"
+    - "KEYBIND"
+    - "TRANSLATABLE"
+    - "TRANSLATABLE_FALLBACK"
+    - "INSERTION"
+    - "FONT"
+    - "DECORATION"
+    - "GRADIENT"
+    - "RAINBOW"
+    - "RESET"
+    - "NEWLINE"
+    - "TRANSITION"
+    - "SELECTOR"
+    - "SCORE"
+    - "NBT"
+    - "PRIDE"
+    - "SHADOW_COLOR"
 #endregion format
 #region fcolor
   fcolor:
@@ -289,6 +206,7 @@ format:
       2: "<gradient:#6BB6FF:#4DA6FF>"
       3: "#A9A9A9"
       4: "#FFFAFA"
+  emoji: ""
 #endregion fcolor
 #region fixation
   fixation:
@@ -305,11 +223,6 @@ format:
       - "!"
       - "."
 #endregion fixation
-#region image
-  image:
-    enable: true
-    color: "<fcolor:2>"
-#endregion image
 #region mention
   mention:
     enable: true
@@ -393,43 +306,39 @@ format:
 #region replacement
   replacement:
     enable: true
-    values:
-      - trigger: ":happy:"
-        replace: "<click:suggest_command:\":happy:\"><hover:show_text:\":happy:\">＼(＾O＾)／</hover></click>"
-      - trigger: ":angry:"
-        replace: "<click:suggest_command:\":angry:\"><hover:show_text:\":angry:\">(╯°□°)╯︵ ┻━┻</hover></click>"
-      - trigger: ":idk:"
-        replace: "<click:suggest_command:\":idk:\"><hover:show_text:\":idk:\">¯\\_(ツ)_/¯</hover></click>"
-      - trigger: ">:("
-        replace: "<click:suggest_command:\">:(\"><hover:show_text:\">:(\">😡</hover></click>"
-      - trigger: "=D"
-        replace: "<click:suggest_command:\"=D\"><hover:show_text:\"=D\">😃</hover></click>"
-      - trigger: "%)"
-        replace: "<click:suggest_command:\"%)\"><hover:show_text:\"%)\">😵</hover></click>"
-      - trigger: "XD"
-        replace: "<click:suggest_command:\"XD\"><hover:show_text:\"XD\">😆</hover></click>"
-      - trigger: "<3"
-        replace: "<click:suggest_command:\"<3\"><hover:show_text:\"<3\">❤</hover></click>"
-      - trigger: ":clown:"
-        replace: "<click:suggest_command:\":clown:\"><hover:show_text:\":clown:\">🤡</hover></click>"
-      - trigger: "B)"
-        replace: "<click:suggest_command:\"B)\"><hover:show_text:\"B)\">😎</hover></click>"
-      - trigger: ":cool:"
-        replace: "<click:suggest_command:\":cool:\"><hover:show_text:\":cool:\">😎</hover></click>"
-      - trigger: ":-1:"
-        replace: "<click:suggest_command:\":-1:\"><hover:show_text:\":-1:\">🖓</hover></click>"
-      - trigger: ":+1:"
-        replace: "<click:suggest_command:\":+1:\"><hover:show_text:\":+1:\">🖒</hover></click>"
-      - trigger: ":ok:"
-        replace: "<click:suggest_command:\":ok:\"><hover:show_text:\":ok:\">🖒</hover></click>"
-      - trigger: ":("
-        replace: "<click:suggest_command:\":(\"><hover:show_text:\":(\">☹</hover></click>"
-      - trigger: ":D"
-        replace: "<click:suggest_command:\":D\"><hover:show_text:\":D\">☻</hover></click>"
-      - trigger: ":)"
-        replace: "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
-      - trigger: "%flectonepulse%"
-        replace: "<fcolor:2>FlectonePulse"
+    triggers:
+      smile: "(?<!\\\\{2,})(?<=\\s|^)(:-?\\))(?=\\s|$|\\p{Punct})"
+      big_smile: "(?<!\\\\{2,})(?<=\\s|^)(:-?D)(?=\\s|$|\\p{Punct})"
+      sad: "(?<!\\\\{2,})(?<=\\s|^)(:-?\\()(?=\\s|$|\\p{Punct})"
+      ok_hand: "(?<!\\\\{2,})(?<=\\s|^)((?i):ok:)(?=\\s|$|\\p{Punct})"
+      thumbs_up: "(?<!\\\\{2,})(?<=\\s|^)(:\\+1:)(?=\\s|$|\\p{Punct})"
+      thumbs_down: "(?<!\\\\{2,})(?<=\\s|^)(:-1:)(?=\\s|$|\\p{Punct})"
+      cool_smile: "(?<!\\\\{2,})(?<=\\s|^)((?i):cool:)(?=\\s|$|\\p{Punct})"
+      cool_glasses: "(?<!\\\\{2,})(?<=\\s|^)(B-?\\))(?=\\s|$|\\p{Punct})"
+      clown: "(?<!\\\\{2,})(?<=\\s|^)((?i):clown:)(?=\\s|$|\\p{Punct})"
+      heart: "(?<!\\\\{2,})(?<=\\s|^)(<3)(?=\\s|$|\\p{Punct})"
+      laughing: "(?<!\\\\{2,})(?<=\\s|^)((?i)xd)(?=\\s|$|\\p{Punct})"
+      confused: "(?<!\\\\{2,})(?<=\\s|^)(%-?\\))(?=\\s|$|\\p{Punct})"
+      happy: "(?<!\\\\{2,})(?<=\\s|^)(=D)(?=\\s|$|\\p{Punct})"
+      angry: "(?<!\\\\{2,})(?<=\\s|^)(>:-?\\()(?=\\s|$|\\p{Punct})"
+      ascii_idk: "(?<!\\\\{2,})(?<=\\s|^)((?i):idk:)(?=\\s|$|\\p{Punct})"
+      ascii_angry: "(?<!\\\\{2,})(?<=\\s|^)((?i):angry:)(?=\\s|$|\\p{Punct})"
+      ascii_happy: "(?<!\\\\{2,})(?<=\\s|^)((?i):happy:)(?=\\s|$|\\p{Punct})"
+      ping: "(?<!\\\\{2,})(?<=\\s|^)(%ping%)(?=\\s|$|\\p{Punct})"
+      tps: "(?<!\\\\{2,})(?<=\\s|^)(%tps%)(?=\\s|$|\\p{Punct})"
+      online: "(?<!\\\\{2,})(?<=\\s|^)(%online%)(?=\\s|$|\\p{Punct})"
+      coords: "(?<!\\\\{2,})(?<=\\s|^)(%coords%)(?=\\s|$|\\p{Punct})"
+      stats: "(?<!\\\\{2,})(?<=\\s|^)(%stats%)(?=\\s|$|\\p{Punct})"
+      skin: "(?<!\\\\{2,})(?<=\\s|^)(%skin%)(?=\\s|$|\\p{Punct})"
+      item: "(?<!\\\\{2,})(?<=\\s|^)(%item%)(?=\\s|$|\\p{Punct})"
+      image: "(?<!\\\\{2,})(?<=\\s|^)((?:https?)://(?:[a-zA-Z0-9-]{1,63}\\.)*(?:imgur\\.com|discordapp\\.net|cdn\\.discordapp\\.com)/[\\w\\-./?=&%]*\\.(?:jpg|jpeg|png|gif|webp|bmp))(?!\\S)"
+      url: "(?<!\\\\{2,})(?<=\\s|^)((?:https?|ftp)://(?:[\\p{L}a-zA-Z0-9-]{1,63}\\.)+[\\p{L}a-zA-Z]{2,6}(?::\\d{1,5})?(?:/[\\w\\-./?=&%]*)?)(?!\\S)"
+      spoiler: "(?<!\\\\{2,})(?<=\\s|^)\\|\\|([^\\n]*?)\\|\\|(?=\\s|$|\\p{Punct})"
+      bold: "(?<!\\\\{2,})(?<=\\s|^)\\*\\*([^\\n]*?)\\*\\*(?=\\s|$|\\p{Punct})"
+      italic: "(?<!\\\\{2,})(?<=\\s|^)\\*([^\\n]*?)\\*(?=\\s|$|\\p{Punct})"
+      underline: "(?<!\\\\{2,})(?<=\\s|^)__([^\\n]*?)__(?=\\s|$|\\p{Punct})"
+      obfuscated: "(?<!\\\\{2,})(?<=\\s|^)\\?\\?([^\\n]*?)\\?\\?(?=\\s|$|\\p{Punct})"
+      strikethrough: "(?<!\\\\{2,})(?<=\\s|^)~~([^\\n]*?)~~(?=\\s|$|\\p{Punct})"
 #endregion replacement
 #region scoreboard
   scoreboard:
@@ -441,11 +350,6 @@ format:
     ticker:
       enable: false
 #endregion scoreboard
-#region spoiler
-  spoiler:
-    enable: true
-    color: "<fcolor:2>"
-#endregion spoiler
 #region translate
   translate:
     enable: true

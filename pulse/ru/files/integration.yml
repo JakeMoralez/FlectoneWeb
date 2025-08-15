@@ -68,6 +68,11 @@ luckperms:
   enable: true
   tab-sort: true
 #endregion luckperms
+#region maintenance
+maintenance:
+  enable: true
+  disable-flectonepulse-maintenance: true
+#endregion maintenance
 #region minimotd
 minimotd:
   enable: true

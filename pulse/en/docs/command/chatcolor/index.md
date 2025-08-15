@@ -11,6 +11,14 @@ Command for changing [colors](/docs/message/format/fcolor/)
 
 <!--@include: @/parts/fcolor.md-->
 
+::: info INFORMATION
+
+You can skip colors using `null` to leave them unchanged. For example, `/chatcolor see null null <red> <red>` will only replace `<fcolor:3>` and `<fcolor:4>`, leaving the first two as they are
+
+If you have the `other` permission, you can change other players' colors by adding their nickname at the end of the command, for example `/chatcolor see null <red> <red> <blue> TheFaser`. You must specify all colors and only then the player's nickname, but you can skip colors as mentioned above
+
+:::
+
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
 <!--@include: @/parts/words.md#path--> `localizations → language.yml → command.chatcolor`
@@ -59,5 +67,10 @@ Format of the message that will be sent
 <<< @/files/permission.yml#chatcolor
 
 <!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/other.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
+
+### `colors`
+
+List of permissions for changing specific types of colors: `SEE` or `OUT`

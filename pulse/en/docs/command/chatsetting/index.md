@@ -104,11 +104,19 @@ Name for the main GUI
 
 ::: details Checkbox settings
 
-#### `format-enable`
+#### `enabled-color`
+
+Color when the setting is enabled. Replaces `<status_color>`
+
+#### `enabled-hover`
 
 Message if the setting is enabled
 
-#### `format-disable`
+#### `disabled-color`
+
+Color when the setting is disabled. Replaces `<status_color>`
+
+#### `disabled-hover`
 
 Message if the setting is disabled
 
@@ -147,6 +155,30 @@ List of items with their names and descriptions
 
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/aliases.md-->
+
+### `modern`
+
+::: warning WARNING
+
+Only works for versions `1.21.6` and newer. Older versions will use the inventory system.
+
+:::
+
+::: details New Menu Settings
+
+#### `enable`
+
+Enables the use of dialogs instead of inventories
+
+#### `button-width`
+
+Width of each button
+
+#### `columns`
+
+Number of buttons per row
+
+:::
 
 ### `checkbox`
 

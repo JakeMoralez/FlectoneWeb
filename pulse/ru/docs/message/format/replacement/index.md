@@ -7,8 +7,68 @@ authors:
 
 Используется для замены триггеров на определённые значения
 
-![emoji message](/emojimessage.png)  
-![emoji minecraft](/emojiminecraft.png)
+![ping](/ping.png)
+
+
+![tps](/tps.png)
+
+
+![online](/online.png)
+
+
+![coords](/coords.png)
+
+
+![stats](/stats.png)
+
+
+![skin](/skin.png)
+
+
+![item](/item.png)
+
+
+![url](/url.png)
+
+
+![image](/image.png)
+
+
+![spoiler](/spoiler.png)
+
+
+![bold](/bold.png)
+
+
+![italic](/italic.png)
+
+
+![underline](/underline.png)
+
+
+![obfuscated](/obfuscated.png)
+
+
+![strikethrough](/strikethrough.png)
+
+[//]: # (localization)
+<!--@include: @/parts/words.md#localization--> 
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.replacement`
+
+<!--@include: @/parts/words.md#default--> 
+
+::: code-group
+<<< @/files/localizations/ru_ru.yml#replacement
+<<< @/files/localizations/en_us.yml#replacement
+:::
+
+### `spoiler-symbol`
+
+Символ, который будет заменять каждую букву слов у `spoiler`
+
+### `values`
+
+Список сообщений, где ключом является название, а значением, что будет показано вместо триггера
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -19,17 +79,14 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `values`
+### `triggers`
 
-Список всех доступных замен, где `trigger` - какой текст нужно заменить, а `replace` - на какой текст нужно заменить
+Список всех доступных триггеров, где ключом является название, а значением сам `trigger` в формате регулярного выражения
 
-::: info НАПРИМЕР ЕСТЬ СМАЙЛИК
-```yaml
-- trigger: ":)"
-  replace: "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
-```
+::: warning ПРЕДУПРЕЖДЕНИЕ
 
-![emoji minecraft](/emojiminecraft.png)
+Если ты добавляшеь новый триггер, то обязательно добавь его также и в файл локализации, т.е. на что он будет заменяться
+
 :::
 
 [//]: # (permission.yml)

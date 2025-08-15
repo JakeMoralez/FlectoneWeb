@@ -43,6 +43,6 @@ authors:
 
 <!--@include: @/parts/permission/permissionTier3.md-->
 
-### types
+### `colors`
 
 Варианты `<fcolor:...>` и их права

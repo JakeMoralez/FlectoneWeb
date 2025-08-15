@@ -42,6 +42,22 @@ List of chats and their formats
 
 <!--@include: @/parts/enable.md-->
 
+### `mode`
+
+Chat processing mode
+
+| Type      | Explanation                                                                               |
+|-----------|------------------------------------------------------------------------------------------|
+| `PACKET`  | Chat messages are processed via packets (fully asynchronous)                              |
+| `BUKKIT`  | Chat messages are processed via `Bukkit` (asynchronous, but only in a single chat thread) |
+| `PAPER`   | Chat messages are processed via `Paper` (asynchronous, but only in a single chat thread)  |
+
+::: warning WARNING
+
+If you need another plugin to see chat messages, set `mode: "BUKKIT"`. In rare cases where a plugin relies on `Paper` listeners, use `mode: "PAPER"`
+
+:::
+
 ### `event-priority`
 
 The priority of a chat message event. Change this value if there is a conflict with other plugins that also use the chat
@@ -57,32 +73,28 @@ The priority of a chat message event. Change this value if there is a conflict w
 
 ### `types`  
 
-List of all chats with their [configuration](#chat-configuration), you can add your own  
-
-## Chat Configuration  
-
-By default, any chat looks like this  
+List of all chats with their configuration, you can add your own. By default, any chat looks like this  
 
 ```yaml
 chat_name:
   enable: true
   cancel: true
-  range: number
+  range: PROXY
   priority: number
-  trigger: ""
-  null-recipient:
+  trigger: "trigger"
+  null-receiver:
     enable: true
     destination:
-      type: ACTION_BAR
+      type: "ACTION_BAR"
       times:
-        stay: 60
+        stay: 20
   destination:
-    type: CHAT
+    type: "CHAT"
   cooldown:
     enable: false
   sound:
     enable: false
-```  
+```
 
 ### `enable`  
 

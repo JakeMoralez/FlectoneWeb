@@ -10,6 +10,14 @@ authors:
 
 <!--@include: @/parts/fcolor.md--> 
 
+::: info ИНФОРМАЦИЯ
+
+Можно пропускать цвета с помощью `null`, чтобы их не заменять. Например `/chatcolor see null null <red> <red>` заменит только `<fcolor:3>` и `<fcolor:4>`, а первые два нет
+
+Если есть пермишен `other`, то можно изменять цвета других игроков, дописывая их ник в конце команды, например `/chatcolor see null <red> <red> <blue> TheFaser`. Нужно указывать все цвета и только после этого ник игрока, но вы можете пропускать цвета, как об этом написано выше
+
+:::
+
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
 <!--@include: @/parts/words.md#path--> `localizations → язык.yml → command.chatcolor`
@@ -58,5 +66,10 @@ authors:
 <<< @/files/permission.yml#chatcolor
 
 <!--@include: @/parts/permission/permissionTier3.md-->
+<!--@include: @/parts/permission/other.md-->
 <!--@include: @/parts/permission/cooldown.md-->
 <!--@include: @/parts/permission/sound.md-->
+
+### `colors`
+
+Список прав для изменения конкретных видов цветов: `SEE` или `OUT`

@@ -48,6 +48,6 @@ To use this tag, write `<fcolor:1>`
 
 <!--@include: @/parts/permission/permissionTier3.md-->
 
-### `types`
+### `colors`
 
 Available `<fcolor:...>` variants and their required permissions
