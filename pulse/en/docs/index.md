@@ -42,12 +42,7 @@ FlectonePulse is a plugin for Minecraft servers that allows full customization o
 ### 3. How to configure message formatting?
 FlectonePulse has a versatile text formatting system supporting various color formats, from classic codes to modern gradients.
 
-| **Input Color**                                      | **Converted to**                                         |  
-|-------------------------------------------------------|-------------------------------------------------------------|  
-| `&0`-`&9`, `&a`-`&f`                                  | `<black>`, `<dark_blue>` ... `<white>`                      |  
-| `&l`/`&m`/`&n`/`&o`/`&k`/`&r`                         | `<b>` / `<st>` / `<u>` / `<i>` / `<obf>` / `<reset>`        |  
-| `&#rrggbb`, `#rrggbb`, `&x&r&r&g&g&b&b`, `<##rrggbb>` | `<#rrggbb>`                                                |
-| MiniMessage Tags                                      | `<color:#rrggbb>`, `<rainbow>`, `<click:...>`, `<font>`, etc. |
+<!--@include: @/parts/legacyColors.md-->
 
 *For flexibility, you can use `&` or `§` as interchangeable symbols.*
 
@@ -186,6 +181,16 @@ FlectonePulse has not been tested on hybrid servers supporting both mods and plu
 ::: info NOTE
 
 The main issue has been fixed in recent Mohist versions, so FlectonePulse works there without major problems
+
+:::
+
+### 21. Is your chat plugin incompatible with FlectonePulse?
+
+By default, `FlectonePulse` has the `mode: "PACKET"` setting for [chats](/docs/message/chat/#mode). This prevents your plugin from working correctly
+
+::: info INFO
+
+You can change this to `mode: "BUKKIT"` to allow other plugins to interact with chat. In rare cases, you may use `mode: "PAPER"` if your plugin uses `Paper` listeners
 
 :::
 

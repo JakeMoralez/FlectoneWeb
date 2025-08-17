@@ -337,7 +337,7 @@ command:
 #region ping
   ping:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    format: "<fcolor:1>🖧 Пинг игрока <fcolor:2><player><fcolor:1> равен <ping>"
+    format: "<fcolor:1>🖧 Пинг игрока <display_name>< равен <ping>"
 #endregion ping
 #region poll
   poll:
@@ -419,8 +419,8 @@ command:
     field: "<fcolor:1><br>|[#][#][#]| <title> <current_move> <br><fcolor:1>|[#][#][#]| <br>|[#][#][#]| <last_move><br>"
     current-move: "<fcolor:2>☐ → <symbol>"
     last-move: "<fcolor:2>Последний ход (<move>)"
-    format-move: "<fcolor:2>Ход <player> "
-    format-win: "<color:#98FB98><player> выиграл</color:#98FB98>"
+    format-move: "<fcolor:2>Ход <display_name> "
+    format-win: "<color:#98FB98><display_name> выиграл</color:#98FB98>"
     format-draw: "<color:#98FB98>Ничья 👬</color:#98FB98>"
     sender: "<fcolor:1>☐ Предложение сыграть в крестики-нолики отправлено для <display_name>"
     receiver: "<click:run_command:\"/tictactoemove %d create\"><fcolor:1>☐ Есть предложение сыграть в крестики-нолики от <display_name>, принять? [+]"

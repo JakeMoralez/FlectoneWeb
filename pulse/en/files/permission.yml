@@ -855,8 +855,8 @@ message:
   format:
     name: "flectonepulse.module.message.format"
     type: "TRUE"
-    all:
-      name: "flectonepulse.module.message.format.all"
+    legacy-colors:
+      name: "flectonepulse.module.message.format.legacy_color"
       type: "OP"
     adventure-tags:
       HOVER:
@@ -1005,28 +1005,28 @@ message:
 #endregion name_
 #region questionanswer
     question-answer:
-      name: "flectonepulse.module.format.questionanswer"
+      name: "flectonepulse.module.message.format.questionanswer"
       type: "TRUE"
       questions:
         server:
           ask:
-            name: "flectonepulse.module.format.questionanswer.server"
+            name: "flectonepulse.module.message.format.questionanswer.server"
             type: "TRUE"
           sound:
-            name: "flectonepulse.module.format.questionanswer.sound.server"
+            name: "flectonepulse.module.message.format.questionanswer.sound.server"
             type: "TRUE"
           cooldown-bypass:
-            name: "flectonepulse.module.format.questionanswer.cooldown.bypass.server"
+            name: "flectonepulse.module.message.format.questionanswer.cooldown.bypass.server"
             type: "TRUE"
         flectone:
           ask:
-            name: "flectonepulse.module.format.questionanswer.flectone"
+            name: "flectonepulse.module.message.format.questionanswer.flectone"
             type: "TRUE"
           sound:
-            name: "flectonepulse.module.format.questionanswer.sound.flectone"
+            name: "flectonepulse.module.message.format.questionanswer.sound.flectone"
             type: "TRUE"
           cooldown-bypass:
-            name: "flectonepulse.module.format.questionanswer.cooldown.bypass.flectone"
+            name: "flectonepulse.module.message.format.questionanswer.cooldown.bypass.flectone"
             type: "TRUE"
 #endregion questionanswer
 #region replacement
@@ -1133,22 +1133,22 @@ message:
 #endregion replacement
 #region scoreboard
     scoreboard:
-      name: "flectonepulse.module.format.scoreboard"
+      name: "flectonepulse.module.message.format.scoreboard"
       type: "TRUE"
 #endregion scoreboard
 #region spoiler
     spoiler:
-      name: "flectonepulse.module.format.spoiler"
+      name: "flectonepulse.module.message.format.spoiler"
       type: "TRUE"
 #endregion spoiler
 #region translate
     translate:
-      name: "flectonepulse.module.format.translate"
+      name: "flectonepulse.module.message.format.translate"
       type: "TRUE"
 #endregion translate
 #region world
     world:
-      name: "flectonepulse.module.format.world"
+      name: "flectonepulse.module.message.format.world"
       type: "TRUE"
 #endregion world
 #region gamemode

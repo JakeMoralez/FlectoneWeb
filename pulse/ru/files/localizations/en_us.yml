@@ -337,7 +337,7 @@ command:
 #region ping
   ping:
     null-player: "<color:#ff7171><b>⁉</b> This player does not exist"
-    format: "<fcolor:1>🖧 <fcolor:2><player>'s <fcolor:1>ping is <ping>"
+    format: "<fcolor:1>🖧 <display_name>'s ping is <ping>"
 #endregion ping
 #region poll
   poll:
@@ -367,7 +367,7 @@ command:
     sender: "<fcolor:1>Now goes <display_name>"
     receiver: "<fcolor:2>✂ <display_name> <fcolor:1>suggested a game of rock-paper-scissors"
     format-move: "<fcolor:2>✂ <fcolor:1>Choose your move <fcolor:2><click:run_command:\"/rps <target> rock <uuid>\">[🪨 rock]</click> <click:run_command:\"/rps <target> scissors <uuid>\">[✂ scissors]</click> <click:run_command:\"/rps <target> paper <uuid>\">[🧻 paper]</click>"
-    format-win: "<color:#98FB98>✂ Winning <player>! <b><sender_move></b> on <b><receiver_move></b>"
+    format-win: "<color:#98FB98>✂ Winning <display_name>! <b><sender_move></b> on <b><receiver_move></b>"
     format-draw: "<color:#98FB98>✂ It's a draw! You both chose <b><move>"
     strategies:
       paper: "paper"
@@ -419,8 +419,8 @@ command:
     field: "<fcolor:1><br>|[#][#][#]| <title> <current_move> <br><fcolor:1>|[#][#][#]| <br>|[#][#][#]| <last_move><br>"
     current-move: "<fcolor:2>☐ → <symbol>"
     last-move: "<fcolor:2>Last move (<move>)"
-    format-move: "<fcolor:2><player>'s move"
-    format-win: "<color:#98FB98><player> won this game</color:#98FB98>"
+    format-move: "<fcolor:2><display_name>'s move"
+    format-win: "<color:#98FB98><display_name> won this game</color:#98FB98>"
     format-draw: "<color:#98FB98>The game ended in a draw 👬</color:#98FB98>"
     sender: "<fcolor:1>☐ An offer to play was sent to <display_name>"
     receiver: "<click:run_command:\"/tictactoemove %d create\"><fcolor:1>☐ Received an invite to play tic-tac-toe with <display_name>, accept? [+]"

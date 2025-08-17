@@ -16,6 +16,11 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
+### `convert-legacy-color`
+
+Включает форматирование устаревших цветов
+
+<!--@include: @/parts/legacyColors.md-->
 
 ### `adventure-tags`
 
@@ -51,13 +56,15 @@ authors:
 
 <!--@include: @/parts/permission/permissionTier3.md-->
 
-### `all`
+### `legacy-colors`
 
-Право для использования всех возможных форматирований, т.е. всех модулей внутри `format`
+Это позволит игроку использовать устаревшие цвета в своих сообщениях
 
-::: info НАПРИМЕР
+<!--@include: @/parts/legacyColors.md-->
 
-Это позволит игроку использовать `&c` в своих сообщениях и оно будет форматироваться, как цвет
+::: tip ПРИМЕЧАНИЕ
+
+Если тебе нужно, чтобы цвета игрока в чате форматировались, используй ``flectonepulse.module.message.format.color``
 
 :::
 

@@ -16,7 +16,7 @@ advancement:
   enable: true
   grant: true
   revoke: true
-  range: SERVER
+  range: "SERVER"
   destination:
     type: "CHAT"
   sound:
@@ -25,7 +25,7 @@ advancement:
 #region afk
 afk:
   enable: true
-  range: SERVER
+  range: "SERVER"
   delay: 3000
   ignore:
     - "afk"
@@ -125,7 +125,7 @@ chat:
     global:
       enable: true
       cancel: false
-      range: PROXY
+      range: "PROXY"
       priority: 5
       trigger: "!"
       null-receiver:
@@ -152,7 +152,7 @@ clear:
 #region death
 death:
   enable: true
-  range: SERVER
+  range: "SERVER"
   destination:
     type: "CHAT"
   sound:
@@ -177,6 +177,7 @@ enchant:
 #region format
 format:
   enable: true
+  convert-legacy-color: true
   adventure-tags:
     - "HOVER"
     - "CLICK"
@@ -285,7 +286,7 @@ format:
     enable: false
     questions:
       server:
-        range: PLAYER
+        range: "PLAYER"
         destination:
           type: "CHAT"
         cooldown:
@@ -294,7 +295,7 @@ format:
           enable: false
         target: "(?i)\\b(what\\s+is\\s+this\\s+server|what\\'?s\\s+this\\s+server|what\\s+server\\s+is\\s+this)\\b"
       flectone:
-        range: PLAYER
+        range: "PLAYER"
         destination:
           type: "CHAT"
         cooldown:
@@ -391,7 +392,7 @@ greeting:
 join:
   enable: true
   first: true
-  range: SERVER
+  range: "SERVER"
   destination:
     type: "CHAT"
   sound:
@@ -436,7 +437,7 @@ op:
 #region quit
 quit:
   enable: true
-  range: SERVER
+  range: "SERVER"
   destination:
     type: "CHAT"
   sound:

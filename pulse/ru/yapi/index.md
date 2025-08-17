@@ -1,4 +1,4 @@
-# FlectonePulse API
+# API
 
 FlectonePulse — это мощный плагин для Minecraft, позволяющий настраивать сообщения сервера, чат, команды и интеграции. Поддерживает платформы Bukkit, Spigot, Paper, Purpur, Folia, BungeeCord, Velocity и Fabric. Использует Google Guice для внедрения зависимостей, при этом большинство классов (кроме моделей) помечены аннотацией `@Singleton`
 
@@ -12,7 +12,7 @@ FlectonePulse доступен в Maven Central. Ниже приведены к�
 <dependency>
     <groupId>net.flectone.pulse</groupId>
     <artifactId>core</artifactId>
-    <version>1.4.0</version> <!-- Замените на актуальную версию -->
+    <version>1.4.2</version> <!-- Замените на актуальную версию -->
     <scope>provided</scope>
 </dependency>
 ```
@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'net.flectone.pulse:core:1.4.0' // Замените на актуальную версию
+    compileOnly 'net.flectone.pulse:core:1.4.2' // Замените на актуальную версию
 }
 ```
 
@@ -33,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.flectone.pulse:core:1.4.0") // Замените на актуальную версию
+    compileOnly("net.flectone.pulse:core:1.4.2") // Замените на актуальную версию
 }
 ```
 
@@ -47,7 +47,7 @@ dependencies {
 <dependency>
     <groupId>net.flectone.pulse</groupId>
     <artifactId>core</artifactId>
-    <version>1.4.1-SNAPSHOT</version>
+    <version>1.4.3-SNAPSHOT</version> <!-- Замените на актуальную версию -->
     <scope>provided</scope>
 </dependency>
 ```
@@ -58,7 +58,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'net.flectone.pulse:core:1.4.1-SNAPSHOT' // Замените на актуальную версию
+    compileOnly 'net.flectone.pulse:core:1.4.3-SNAPSHOT' // Замените на актуальную версию
 }
 ```
 
@@ -68,7 +68,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.flectone.pulse:core:1.4.1-SNAPSHOT") // Замените на актуальную версию
+    compileOnly("net.flectone.pulse:core:1.4.3-SNAPSHOT") // Замените на актуальную версию
 }
 ```
 
@@ -123,14 +123,13 @@ FlectonePulse flectonePulse = FlectonePulseAPI.getInstance();
 FLogger fLogger = flectonePulse.get(FLogger.class);
 
 // Проверка, готов ли инжектор к работе
-flectonePulse.isInitialized();
+flectonePulse.isReady();
 
 // Перезагружает плагин, выбрасывая `ReloadException` при ошибках
 flectonePulse.reload();
 ```
 
-
 ## Примечания
 
 - Убедитесь, что FlectonePulse установлен на сервере и указан как softdepend в `plugin.yml`
-- Используйте `isInitialized()`, чтобы проверить готовность инжектора перед вызовом `get()`
+- Используйте `isReady()`, чтобы проверить готовность инжектора перед вызовом `get()`

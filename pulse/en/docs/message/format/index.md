@@ -28,6 +28,12 @@ The module responsible for formatting sent messages
 
 <!--@include: @/parts/enable.md-->
 
+### `convert-legacy-color`
+
+Enables formatting of legacy colors
+
+<!--@include: @/parts/legacyColors.md-->
+
 ### `adventure-tags`
 
 These are [Kyori tags](https://docs.advntr.dev/minimessage/format.html#standard-tags) that may appear in messages.
@@ -62,13 +68,15 @@ These are [Kyori tags](https://docs.advntr.dev/minimessage/format.html#standard-
 
 <!--@include: @/parts/permission/permissionTier3.md-->
 
-### `all`
+### `legacy-colors`
 
-Permission to use all available formatting options (all modules inside `format`)
+This allows player to use legacy colors in their messages
 
-::: info EXAMPLE
+<!--@include: @/parts/legacyColors.md-->  
 
-This will allow players to use `&c` in their messages, and it will be formatted as a color code
+::: tip NOTE
+
+If you need player's chat colors to be formatted, use `flectonepulse.module.message.format.color`
 
 :::
 

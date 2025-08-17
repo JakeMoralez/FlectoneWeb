@@ -24,7 +24,7 @@ afk:
 #region anon
 anon:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "anon"
   destination:
@@ -37,7 +37,7 @@ anon:
 #region ball
 ball:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "ball"
   destination:
@@ -52,7 +52,7 @@ ban:
   enable: true
   suggest-offline-players: true
   show-connection-attempts: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "ban"
     - "tempban"
@@ -77,7 +77,7 @@ banlist:
 #region broadcast
 broadcast:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "broadcast"
   destination:
@@ -431,7 +431,7 @@ clearmail:
 coin:
   enable: true
   draw: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "coin"
   destination:
@@ -458,7 +458,7 @@ deletemessage:
 #region dice
 dice:
   enable: true
-  range: PROXY
+  range: "PROXY"
   min: 1
   max: 6
   aliases:
@@ -473,7 +473,7 @@ dice:
 #region do
 do:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "do"
   destination:
@@ -512,7 +512,7 @@ geolocate:
 #region helper
 helper:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "helper"
   destination:
@@ -549,7 +549,7 @@ ignorelist:
 #region kick
 kick:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "kick"
   destination:
@@ -587,7 +587,7 @@ maintenance:
 #region me
 me:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "me"
   destination:
@@ -601,7 +601,7 @@ me:
 mute:
   enable: true
   suggest-offline-players: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "mute"
   destination:
@@ -626,7 +626,7 @@ mutelist:
 online:
   enable: true
   suggest-offline-players: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "online"
   destination:
@@ -651,7 +651,7 @@ ping:
 #region poll
 poll:
   enable: true
-  range: PROXY
+  range: "PROXY"
   last-id: 1
   aliases:
     - "poll"
@@ -692,7 +692,7 @@ rockpaperscissors:
 #region spy
 spy:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "spy"
   categories:
@@ -714,7 +714,7 @@ spy:
 #region stream
 stream:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "stream"
   destination:
@@ -762,7 +762,7 @@ symbol:
 tell:
   enable: true
   suggest-offline-players: false
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "tell"
     - "msg"
@@ -802,7 +802,7 @@ toponline:
 #region translateto
 translateto:
   enable: true
-  range: PLAYER
+  range: "PLAYER"
   service: GOOGLE
   aliases:
     - "translateto"
@@ -819,7 +819,7 @@ translateto:
 #region try
 try:
   enable: true
-  range: PROXY
+  range: "PROXY"
   min: 0
   max: 100
   good: 50
@@ -835,7 +835,7 @@ try:
 #region unban
 unban:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "unban"
     - "pardon"
@@ -849,7 +849,7 @@ unban:
 #region unmute
 unmute:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "unmute"
   destination:
@@ -862,7 +862,7 @@ unmute:
 #region unwarn
 unwarn:
   enable: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "unwarn"
   destination:
@@ -876,7 +876,7 @@ unwarn:
 warn:
   enable: true
   suggest-offline-players: true
-  range: PROXY
+  range: "PROXY"
   aliases:
     - "warn"
   actions:
