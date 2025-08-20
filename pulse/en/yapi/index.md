@@ -12,7 +12,7 @@ FlectonePulse is available on Maven Central. Below are configurations for includ
 <dependency>
     <groupId>net.flectone.pulse</groupId>
     <artifactId>core</artifactId>
-    <version>1.4.2</version> <!-- Replace with latest version -->
+    <version>1.4.3</version> <!-- Replace with latest version -->
     <scope>provided</scope>
 </dependency>
 ```
@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'net.flectone.pulse:core:1.4.2' // Replace with latest version
+    compileOnly 'net.flectone.pulse:core:1.4.3' // Replace with latest version
 }
 ```
 
@@ -33,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.flectone.pulse:core:1.4.2") // Replace with latest version
+    compileOnly("net.flectone.pulse:core:1.4.3") // Replace with latest version
 }
 ```
 
@@ -47,7 +47,7 @@ For snapshot versions:
 <dependency>
     <groupId>net.flectone.pulse</groupId>
     <artifactId>core</artifactId>
-    <version>1.4.3-SNAPSHOT</version> <!-- Replace with latest version -->
+    <version>1.4.4-SNAPSHOT</version> <!-- Replace with latest version -->
     <scope>provided</scope>
 </dependency>
 ```
@@ -58,7 +58,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'net.flectone.pulse:core:1.4.3-SNAPSHOT' // Replace with latest version
+    compileOnly 'net.flectone.pulse:core:1.4.4-SNAPSHOT' // Replace with latest version
 }
 ```
 
@@ -68,7 +68,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.flectone.pulse:core:1.4.3-SNAPSHOT") // Replace with latest version
+    compileOnly("net.flectone.pulse:core:1.4.4-SNAPSHOT") // Replace with latest version
 }
 ```
 
