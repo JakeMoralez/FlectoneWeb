@@ -89,11 +89,11 @@ command:
     global:
       header: "<fcolor:2>▋ Bans: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Click to unban <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>ID: <id><br>Date: <date><br>Time: <time><br>Moderator: <moderator><br>Reason: <reason>\">[INFO]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
     player:
       header: "<fcolor:2>▋ All bans: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Click to unban <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>ID: <id><br>Date: <date><br>Time: <time><br>Moderator: <moderator><br>Reason: <reason>\">[INFO]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 #endregion banlist
 #region broadcast
   broadcast:
@@ -320,11 +320,11 @@ command:
     global:
       header: "<fcolor:2>▋ Mutes: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Click to unmute <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>ID: <id><br>Date: <date><br>Time: <time><br>Moderator: <moderator><br>Reason: <reason>\">[MORE]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
     player:
       header: "<fcolor:2>▋ All mutes: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Click to unmute <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>ID: <id><br>Date: <date><br>Time: <time><br>Moderator: <moderator><br>Reason: <reason>\">[MORE]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 #endregion mutelist
 #region online
   online:
@@ -344,8 +344,8 @@ command:
     null-poll: "<color:#ff7171><b>⁉</b> Poll not found"
     expired: "<color:#ff7171><b>⁉</b> The poll has ended"
     already: "<color:#ff7171><b>⁉</b> You have already voted in this poll"
-    vote-true: "<color:#4eff52>👍 You voted for <answer_id> in poll #<id>. There are <count> of you"
-    vote-false: "<color:#ff4e4e>🖓 You rejected <answer_id> in poll #<id>. There are <count> without you"
+    vote-true: "<color:#4eff52>👍 You voted for option <answer_id> in poll #<id>. There are <count> of you"
+    vote-false: "<color:#ff4e4e>🖓 You rejected option <answer_id> in poll #<id>. There are <count> without you"
     format: "<br><color:#fce303>│ <status> <br>│ <message><reset> <color:#fce303><br>├─────────────<br><answers>"
     answer-template: "<color:#fce303>│ <count> → <color:#4eff52><hover:show_text:\"<color:#4eff52>Vote for <bold><answer>\"><click:run_command:\"/pollvote <id> <number>\"><answer> [👍]<br>"
     status:
@@ -416,7 +416,7 @@ command:
       second: "<fcolor:2>☒"
       second-remove: "<color:#ff7171>☒</color:#ff7171>"
       second-win: "<color:#98FB98>☒</color:#98FB98>"
-    field: "<fcolor:1><br>|[#][#][#]| <title> <current_move> <br><fcolor:1>|[#][#][#]| <br>|[#][#][#]| <last_move><br>"
+    field: "<fcolor:1><br>|[#][#][#]<fcolor:1>| <title> <current_move> <br><fcolor:1>|[#][#][#]<fcolor:1>| <br>|[#][#][#]<fcolor:1>| <last_move><br>"
     current-move: "<fcolor:2>☐ → <symbol>"
     last-move: "<fcolor:2>Last move (<move>)"
     format-move: "<fcolor:2><display_name>'s move"
@@ -477,11 +477,11 @@ command:
     global:
       header: "<fcolor:2>▋ Warns: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Click to unwarn <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>ID: <id><br>Date: <date><br>Time: <time><br>Moderator: <moderator><br>Reason: <reason>\">[INFO]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
     player:
       header: "<fcolor:2>▋ All warns: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Click to unwarn <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>ID: <id><br>Date: <date><br>Time: <time><br>Moderator: <moderator><br>Reason: <reason>\">[INFO]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 #endregion warnlist
 #region integration
 integration:
@@ -492,7 +492,7 @@ integration:
     info-channel:
       id: "TPS <tps>"
     message-channel:
-      CHAT:
+      CHAT_GLOBAL:
         content: "<final_message>"
         webhook:
           enable: false
@@ -519,13 +519,13 @@ integration:
   telegram:
     for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
     message-channel:
-      CHAT: "<final_message>"
+      CHAT_GLOBAL: "<final_message>"
 #endregion telegram
 #region twitch
   twitch:
     for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
     message-channel:
-      CHAT: "<final_message>"
+      CHAT_GLOBAL: "<final_message>"
 #endregion twitch
 #region message
 message:
@@ -745,7 +745,7 @@ message:
         online: "<fcolor:2><online>"
         coords: "<fcolor:2><x> <y> <z>"
         stats: "<color:#ff7171><hp>♥</color> <color:#3de0d8><armor>🛡 <color:#e33059><attack>🗡 <color:#4eff52><exp>⏺ <color:#f0a01f><food>🍖"
-        skin: "<image:\"<message_1>\"><u>👨 Skin</u></image>"
+        skin: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2><pixels>\"><fcolor:2><u>👨 Skin</u></hover></click>"
         item: "<fcolor:2>[<message_1>]"
         url: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2>Open url <br><u><message_1>\"><fcolor:2><u>🗗 Url</u></hover></click>"
         image: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2><pixels>\"><fcolor:2><u>🖃 Image</u></hover></click>"

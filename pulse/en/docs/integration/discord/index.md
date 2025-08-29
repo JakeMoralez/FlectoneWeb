@@ -270,15 +270,13 @@ Whether channel information is needed.
 
 <!--@include: @/parts/ticker.md-->
 
-:::
-
 ### `message-channel`
 
 List of message types and [channel IDs](https://support.discord.com/hc/ru/articles/206346498-%D0%93%D0%94%D0%95-%D0%9C%D0%9D%D0%95-%D0%9D%D0%90%D0%99%D0%A2%D0%98-ID-%D0%9F%D0%9E%D0%9B%D0%AC%D0%97%D0%9E%D0%92%D0%90%D0%A2%D0%95%D0%9B%D0%AF-%D0%A1%D0%95%D0%A0%D0%92%D0%95%D0%A0%D0%90-%D0%A1%D0%9E%D0%9E%D0%91%D0%9A%D0%9E%D0%92) in Discord.
 
 ::: info For example, if I want a `/ban` command message from Minecraft to be sent to Discord:
 1. Copy the channel ID in Discord `1286666844358316083`.
-2. Add `CHAT: "1286666844358316083"`.
+2. Add `COMMAND_BAN: "1286666844358316083"`.
 
 ```yaml
 message-channel:

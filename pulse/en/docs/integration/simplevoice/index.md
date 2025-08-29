@@ -6,7 +6,7 @@ authors:
 
 # SimpleVoice
 
-Integration with SimpleVoice allows muting players who have been muted using `/mute`
+Integration with SimpleVoice allows muting players who have been muted using `/mute`. Also, if player has ignored another using `/ignore`, they will not hear them
 ![mute](/mute.png)
 
 [//]: # (integration.yml)

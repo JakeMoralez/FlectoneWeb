@@ -10,6 +10,8 @@
 # 
 #region integration
 enable: true
+avatar-api-url: "https://mc-heads.net/avatar/<skin>/8.png"
+body-api-url: "https://mc-heads.net/player/<skin>/16.png"
 #endregion integration
 #region advancedban
 advancedban:
@@ -43,7 +45,7 @@ discord:
       period: 1200
   message-channel:
     FROM_DISCORD_TO_MINECRAFT: ""
-    CHAT: ""
+    CHAT_GLOBAL: ""
   destination:
     type: "CHAT"
 #endregion discord
@@ -122,7 +124,7 @@ telegram:
   message-channel:
     FROM_TELEGRAM_TO_MINECRAFT:
       - "123456"
-    CHAT:
+    CHAT_GLOBAL:
       - "123456"
   destination:
     type: "CHAT"
@@ -139,7 +141,7 @@ twitch:
   message-channel:
     FROM_TWITCH_TO_MINECRAFT:
       - "faseri4ka"
-    CHAT:
+    CHAT_GLOBAL:
       - "faseri4ka"
   follow-channel:
     faseri4ka:

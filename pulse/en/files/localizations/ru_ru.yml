@@ -89,11 +89,11 @@ command:
     global:
       header: "<fcolor:2>▋ Блокировки: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Разблокировать <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
     player:
       header: "<fcolor:2>▋ Все блокировки: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Разблокировать <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 #endregion banlist
 #region broadcast
   broadcast:
@@ -320,11 +320,11 @@ command:
     global:
       header: "<fcolor:2>▋ Муты: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Размутить <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
     player:
       header: "<fcolor:2>▋ Все муты: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Размутить <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 #endregion mutelist
 #region online
   online:
@@ -337,15 +337,15 @@ command:
 #region ping
   ping:
     null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    format: "<fcolor:1>🖧 Пинг игрока <display_name>< равен <ping>"
+    format: "<fcolor:1>🖧 Пинг игрока <display_name> равен <ping>"
 #endregion ping
 #region poll
   poll:
     null-poll: "<color:#ff7171><b>⁉</b> Голосование не найдено"
     expired: "<color:#ff7171><b>⁉</b> Голосование завершено"
     already: "<color:#ff7171><b>⁉</b> Ты уже проголосовал в этом голосовании"
-    vote-true: "<color:#4eff52>👍 Ты выбрал <answer_id> в голосовании #<id>. Всего таких голосов <count>"
-    vote-false: "<color:#ff4e4e>🖓 Ты передумал об <answer_id> в голосовании #<id>. Всего таких голосов <count> без тебя"
+    vote-true: "<color:#4eff52>👍 Ты выбрал <answer_id> вариант в голосовании #<id>. Всего таких голосов <count>"
+    vote-false: "<color:#ff4e4e>🖓 Ты передумал об <answer_id> варианте в голосовании #<id>. Всего таких голосов <count> без тебя"
     format: "<br><color:#fce303>│ <status> <br>│ <message><reset> <color:#fce303><br>├─────────────<br><answers>"
     answer-template: "<color:#fce303>│ <count> → <color:#4eff52><hover:show_text:\"<color:#4eff52>Проголосовать за <bold><answer>\"><click:run_command:\"/pollvote <id> <number>\"><answer> [👍]<br>"
     status:
@@ -416,7 +416,7 @@ command:
       second: "<fcolor:2>☒"
       second-remove: "<color:#ff7171>☒</color:#ff7171>"
       second-win: "<color:#98FB98>☒</color:#98FB98>"
-    field: "<fcolor:1><br>|[#][#][#]| <title> <current_move> <br><fcolor:1>|[#][#][#]| <br>|[#][#][#]| <last_move><br>"
+    field: "<fcolor:1><br>|[#][#][#]<fcolor:1>| <title> <current_move> <br><fcolor:1>|[#][#][#]<fcolor:1>| <br>|[#][#][#]<fcolor:1>| <last_move><br>"
     current-move: "<fcolor:2>☐ → <symbol>"
     last-move: "<fcolor:2>Последний ход (<move>)"
     format-move: "<fcolor:2>Ход <display_name> "
@@ -477,11 +477,11 @@ command:
     global:
       header: "<fcolor:2>▋ Предупреждения: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Снять предупреждение <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
     player:
       header: "<fcolor:2>▋ Все предупреждения: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Снять предупреждение <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
-      footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+      footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 #endregion warnlist
 #region integration
 integration:
@@ -492,7 +492,7 @@ integration:
     info-channel:
       айди: "ТПС <tps>"
     message-channel:
-      CHAT:
+      CHAT_GLOBAL:
         content: "<final_message>"
         webhook:
           enable: false
@@ -519,13 +519,13 @@ integration:
   telegram:
     for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
     message-channel:
-      CHAT: "<final_message>"
+      CHAT_GLOBAL: "<final_message>"
 #endregion telegram
 #region twitch
   twitch:
     for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
     message-channel:
-      CHAT: "<final_message>"
+      CHAT_GLOBAL: "<final_message>"
 #endregion twitch
 #region message
 message:
@@ -745,7 +745,7 @@ message:
         online: "<fcolor:2><online>"
         coords: "<fcolor:2><x> <y> <z>"
         stats: "<color:#ff7171><hp>♥</color> <color:#3de0d8><armor>🛡 <color:#e33059><attack>🗡 <color:#4eff52><exp>⏺ <color:#f0a01f><food>🍖"
-        skin: "<image:\"<message_1>\"><u>👨 Скин</u></image>"
+        skin: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2><pixels>\"><fcolor:2><u>👨 Скин</u></hover></click>"
         item: "<fcolor:2>[<message_1>]"
         url: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2>Открыть ссылку <br><u><message_1>\"><fcolor:2><u>🗗 Ссылка</u></hover></click>"
         image: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2><pixels>\"><fcolor:2><u>🖃 Картинка</u></hover></click>"

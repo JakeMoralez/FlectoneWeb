@@ -10,7 +10,7 @@
 # 
 #region config
 console: "Console"
-version: "1.4.3"
+version: "1.5.0"
 language: "en_us"
 language-player: true
 unregister-own-commands: false
@@ -33,6 +33,7 @@ log-filter:
   - "Error received from Telegram GetUpdates Request"
   - "OkHttp TaskRunner"
   - "Exception in thread \"ForkJoinPool"
+  - "FlectonePulseDatabase - "
 database:
   type: "SQLITE"
   name: "flectonepulse"
