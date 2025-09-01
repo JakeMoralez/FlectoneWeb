@@ -43,6 +43,11 @@ Message for the player
 <<< @/files/command.yml#helper
 
 <!--@include: @/parts/enable.md-->
+
+### `null-helper`
+
+Will it be checked that there are no people on server who can respond to request
+
 <!--@include: @/parts/range.md-->
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/destination.md-->

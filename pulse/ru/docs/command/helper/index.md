@@ -42,6 +42,11 @@ authors:
 <<< @/files/command.yml#helper
 
 <!--@include: @/parts/enable.md-->
+
+### `null-helper`
+
+Будет ли проверяться, что на сервере нет людей, способные ответить на запрос
+
 <!--@include: @/parts/range.md-->
 <!--@include: @/parts/aliases.md-->
 <!--@include: @/parts/destination.md-->

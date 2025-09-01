@@ -352,6 +352,18 @@ command:
       start: "Создано новое голосование #<b><id></b>"
       run: "Идёт голосование #<b><id></b>"
       end: "Голосование #<b><id></b> завершено"
+    modern:
+      header: "Создание голосования"
+      input-name: "Название"
+      input-initial: ""
+      multiple-name: "Разрешить несколько ответов"
+      end-time-name: "Длительность (в минутах)"
+      repeat-time-name: "Интервал (в минутах)"
+      new-answer-button-name: "Добавить ответ"
+      remove-answer-button-name: "Удалить ответ"
+      input-answer-name: "Ответ <number>"
+      input-answers-initial: ""
+      create-button-name: "Создать голосование"
 #endregion poll
 #region reply
   reply:

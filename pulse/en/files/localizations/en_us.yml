@@ -352,6 +352,18 @@ command:
       start: "New poll #<b><id></b> has been created"
       run: "Poll #<b><id></b> is in progress"
       end: "Poll #<b><id></b> has ended"
+    modern:
+      header: "Poll"
+      input-name: "Name"
+      input-initial: ""
+      multiple-name: "Allow multiple answers"
+      end-time-name: "Duration (min)"
+      repeat-time-name: "Interval (min)"
+      new-answer-button-name: "Add answer"
+      remove-answer-button-name: "Remove answer"
+      input-answer-name: "Answer <number>"
+      input-answers-initial: ""
+      create-button-name: "Create poll"
 #endregion poll
 #region reply
   reply:

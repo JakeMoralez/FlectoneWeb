@@ -12,7 +12,7 @@ FlectonePulse доступен в Maven Central. Ниже приведены к�
 <dependency>
     <groupId>net.flectone.pulse</groupId>
     <artifactId>core</artifactId>
-    <version>1.4.3</version> <!-- Замените на актуальную версию -->
+    <version>1.5.1</version> <!-- Замените на актуальную версию -->
     <scope>provided</scope>
 </dependency>
 ```
@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'net.flectone.pulse:core:1.4.3' // Замените на актуальную версию
+    compileOnly 'net.flectone.pulse:core:1.5.1' // Замените на актуальную версию
 }
 ```
 
@@ -33,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.flectone.pulse:core:1.4.3") // Замените на актуальную версию
+    compileOnly("net.flectone.pulse:core:1.5.1") // Замените на актуальную версию
 }
 ```
 
@@ -47,7 +47,7 @@ dependencies {
 <dependency>
     <groupId>net.flectone.pulse</groupId>
     <artifactId>core</artifactId>
-    <version>1.4.4-SNAPSHOT</version> <!-- Замените на актуальную версию -->
+    <version>1.5.2-SNAPSHOT</version> <!-- Замените на актуальную версию -->
     <scope>provided</scope>
 </dependency>
 ```
@@ -58,7 +58,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'net.flectone.pulse:core:1.4.4-SNAPSHOT' // Замените на актуальную версию
+    compileOnly 'net.flectone.pulse:core:1.5.2-SNAPSHOT' // Замените на актуальную версию
 }
 ```
 
@@ -68,7 +68,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.flectone.pulse:core:1.4.4-SNAPSHOT") // Замените на актуальную версию
+    compileOnly("net.flectone.pulse:core:1.5.2-SNAPSHOT") // Замените на актуальную версию
 }
 ```
 

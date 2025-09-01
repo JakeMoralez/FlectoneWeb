@@ -512,6 +512,7 @@ geolocate:
 #region helper
 helper:
   enable: true
+  null-helper: true
   range: "PROXY"
   aliases:
     - "helper"

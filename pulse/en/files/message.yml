@@ -101,7 +101,7 @@ bubble:
 #region chat
 chat:
   enable: true
-  mode: "PACKET"
+  mode: "BUKKIT"
   priority: "NORMAL"
   types:
     local:
@@ -256,7 +256,7 @@ format:
 #region newbie
     newbie:
       enable: false
-      mode: PLAYED_TIME
+      mode: "PLAYED_TIME"
       timeout: 3600
 #endregion newbie
 #region flood
@@ -332,8 +332,8 @@ format:
       stats: "(?<!\\\\{2,})(?<=\\s|^)(%stats%)(?=\\s|$|\\p{Punct})"
       skin: "(?<!\\\\{2,})(?<=\\s|^)(%skin%)(?=\\s|$|\\p{Punct})"
       item: "(?<!\\\\{2,})(?<=\\s|^)(%item%)(?=\\s|$|\\p{Punct})"
-      image: "(?<!\\\\{2,})(?<=\\s|^)((?:https?)://(?:[a-zA-Z0-9-]{1,63}\\.)*(?:imgur\\.com|discordapp\\.net|cdn\\.discordapp\\.com)/[\\w\\-./?=&%]*\\.(?:jpg|jpeg|png|gif|webp|bmp))(?!\\S)"
-      url: "(?<!\\\\{2,})(?<=\\s|^)((?:https?|ftp)://(?:[\\p{L}a-zA-Z0-9-]{1,63}\\.)+[\\p{L}a-zA-Z]{2,6}(?::\\d{1,5})?(?:/[\\w\\-./?=&%]*)?)(?!\\S)"
+      image: "(?<!\\\\{2,})(?<=\\s|^)((?:https?|HTTPS?)://(?:[a-zA-Z0-9-]{1,63}\\.)*(?:imgur\\.com|discordapp\\.net|cdn\\.discordapp\\.com)/[\\w\\-./?=&%]*\\.(?:jpg|jpeg|png|gif|webp|bmp))(?!\\S)"
+      url: "(?<!\\\\{2,})(?<=\\s|^)((?:https?|ftp|HTTPS?)://(?:[\\p{L}a-zA-Z0-9-]{1,63}\\.)+[\\p{L}a-zA-Z]{2,6}(?::\\d{1,5})?(?:/[\\w\\-./?=&%]*)?)(?!\\S)"
       spoiler: "(?<!\\\\{2,})(?<=\\s|^)\\|\\|([^\\n]*?)\\|\\|(?=\\s|$|\\p{Punct})"
       bold: "(?<!\\\\{2,})(?<=\\s|^)\\*\\*([^\\n]*?)\\*\\*(?=\\s|$|\\p{Punct})"
       italic: "(?<!\\\\{2,})(?<=\\s|^)\\*([^\\n]*?)\\*(?=\\s|$|\\p{Punct})"
