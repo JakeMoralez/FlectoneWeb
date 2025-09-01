@@ -35,9 +35,11 @@ There is a placeholder `<reason>`, so I can use `<reason>` inside Telegram messa
 :::
 
 There are also placeholders that WILL DEFINITELY be replaced in any message:
-- `<final_message>`: The message sent to Minecraft
-- `<final_clear_message>`: The message sent to Minecraft without unicode emojis
-- `<player>`: The nickname of the player who sent the message
+- `<final_message>` message sent to Minecraft
+- `<final_clear_message>` The message sent to Minecraft without unicode emojis
+- `<player>` nickname of player who sent message
+- `<message>` raw message written by player
+- `<plain_message>` formatted message written by player
 
 Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work.
 

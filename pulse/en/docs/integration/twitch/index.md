@@ -35,9 +35,11 @@ There is a placeholder `<reason>`, so I can use `<reason>` inside Twitch message
 :::
 
 There are also placeholders that WILL DEFINITELY be replaced in any message
-- `<final_message>` the message sent to Minecraft
-- `<final_clear_message>` the message sent to Minecraft without Unicode emojis
-- `<player>` the player’s nickname who sent the message
+- `<final_message>` message sent to Minecraft
+- `<final_clear_message>` message sent to Minecraft without Unicode emojis
+- `<player>` player’s nickname who sent message
+- `<message>` raw message written by player
+- `<plain_message>` formatted message written by player
 
 Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work
 

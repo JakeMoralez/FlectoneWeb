@@ -34,9 +34,12 @@ If there’s a placeholder `<reason>`, you can use `<reason>` in Discord message
 :::
 
 There are also placeholders that will ALWAYS be replaced in any message:
-- `<final_message>` The message sent to Minecraft
-- `<final_clear_message>` The message sent to Minecraft without Unicode emojis
-- `<player>` The nickname of the player who sent the message
+- `<plain_message>`
+- `<final_message>` message sent to Minecraft
+- `<final_clear_message>` message sent to Minecraft without Unicode emojis
+- `<player>` nickname of player who sent message
+- `<message>` raw message written by player
+- `<plain_message>` formatted message written by player
 
 Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work.
 
