@@ -1,7 +1,9 @@
 ### `sound`
-Sound playback
 
-::: info HOW TO USE SOUND?
+::: details Sound playback
+
+How to use?
+
 Replace `false` with `true` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional sound settings will appear AUTOMATICALLY
 
 ```yaml
@@ -20,4 +22,5 @@ sound:
 | `pitch`     | `float`    | Sound pitch from `0` to `1.0`                                                                                      |
 | `category`  | `String`   | Category from `MASTER`, `MUSIC`, `RECORD`, `WEATHER`, `BLOCK`, `HOSTILE`, `NEUTRAL`, `PLAYER`, `AMBIENT`, `VOICE`  |
 | `name`      | `String`   | Sound name, for example `minecraft:entity.llama.spit`                                                              |
+
 :::

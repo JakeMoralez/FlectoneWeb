@@ -40,11 +40,11 @@ long duration = (countWords + handicapChars) / readSpeed * 60;
 
 <!--@include: @/parts/enable.md-->
 
-### `max-count`
+### `max_count`
 
 Максимальное количество сообщений над головой одновременно
 
-### `max-length`
+### `max_length`
 
 Максимальная длинна одного сообщения над головой. Если текст длиннее, то он будет разделён на несколько
 
@@ -56,15 +56,15 @@ long duration = (countWords + handicapChars) / readSpeed * 60;
 
 Насколько далеко можно увидеть сообщение над головой у игрока
 
-### `read-speed`
+### `read_speed`
 
 Скорость чтения слов в минуту
 
-### `handicap-chars`
+### `handicap_chars`
 
 Дополнительное время для коротких сообщений
 
-### `word-break-hint`
+### `word_break_hint`
 
 Символ-подсказка, который ставится когда слово разрывается на две строки
 
@@ -99,7 +99,7 @@ long duration = (countWords + handicapChars) / readSpeed * 60;
 
 Включает работоспособность
 
-#### `has-shadow`
+#### `has_shadow`
 
 Включает тень у текста
 

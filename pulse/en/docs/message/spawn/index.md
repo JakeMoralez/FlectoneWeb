@@ -6,6 +6,8 @@ authors:
 
 # Spawn
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Messages related to the player's respawn point
 ![spawnpoint](/spawnpoint.png)
 
@@ -20,7 +22,7 @@ Messages related to the player's respawn point
 <<< @/files/localizations/en_us.yml#spawn
 :::
 
-### `not-valid`
+### `not_valid`
 
 Message displayed upon respawn when the previous respawn point is unavailable
 

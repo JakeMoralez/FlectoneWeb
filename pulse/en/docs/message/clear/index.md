@@ -6,6 +6,8 @@ authors:
 
 # Clear
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Server message when using `/clear`  
 ![clear](/clear.png)  
 

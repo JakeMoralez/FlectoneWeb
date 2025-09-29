@@ -17,7 +17,7 @@ Integration with Deepl allows translating messages from one language to another.
 
 <!--@include: @/parts/enable.md-->
 
-### `auth-key`
+### `auth_key`
 
 Authorization token for Deepl
 

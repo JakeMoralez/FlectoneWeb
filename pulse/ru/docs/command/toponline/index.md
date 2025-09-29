@@ -19,7 +19,7 @@ authors:
 <<< @/files/localizations/en_us.yml#toponline
 :::
 
-### `null-page`
+### `null_page`
 
 Сообщение, если введённая страница не существует
 

@@ -19,32 +19,36 @@ authors:
 <<< @/files/localizations/en_us.yml#advancement
 :::
 
-### `task`
+### `format_task`
 
 Сообщение при получении обычного достижения
 ![task](/task.png)
 
-### `taken`
-
-Сообщение при потере достижения (используется только в старых версиях майнкрафта)
-
-### `goal`
+### `format_goal`
 
 Сообщение при достижении цели
 ![goal](/goal.png)
 
-### `challenge`
+### `format_challenge`
 
 Сообщение при завершении испытания
 ![challenge](/challenge.png)
 
+### `tag`
+
+Формат отображения достижения по его типу, доступны только `task` и `challenge`, потому что в ванильном Майнкрафте нет отдельного стиля для `goal`
+
+### `format_taken`
+
+Сообщение при потере достижения (используется только в старых версиях майнкрафта)
+
 ### `revoke`
 
-Сообщение при использовании `/advancement revoke`
+Сообщения при использовании `/advancement revoke`
 
 ### `grant`
 
-Сообщение при использовании `/advancement grant`
+Сообщения при использовании `/advancement grant`
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->
@@ -55,17 +59,15 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `revoke`
-
-Включает изменение сообщения у комманды `/advancement revoke`
-
-### `grant`
-
-Включает изменение сообщения у комманды `/advancement grant`
-
 <!--@include: @/parts/range.md-->
 <!--@include: @/parts/destination.md-->
 <!--@include: @/parts/sound.md-->
+
+### `command`
+
+<!--@include: @/parts/vanillaWarn.md#command-->
+
+Настройки команды `/advancement`
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->

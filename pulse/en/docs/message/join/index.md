@@ -24,7 +24,7 @@ Message from the server when a player connects
 
 Message when connecting to the server
 
-### `format-first-time`
+### `format_first_time`
 
 Message when connecting to the server for the first time
 

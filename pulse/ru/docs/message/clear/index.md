@@ -5,6 +5,8 @@ authors:
 
 # Очищение
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Сообщение от сервера при использовании `/clear`
 ![clear](/clear.png)
 

@@ -16,13 +16,13 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `convert-legacy-color`
+### `convert_legacy_color`
 
 Включает форматирование устаревших цветов
 
 <!--@include: @/parts/legacyColors.md-->
 
-### `adventure-tags`
+### `adventure_tags`
 
 Это [Kyori теги](https://docs.advntr.dev/minimessage/format.html#standard-tags), которые могут быть в сообщениях
 
@@ -56,7 +56,7 @@ authors:
 
 <!--@include: @/parts/permission/permissionTier3.md-->
 
-### `legacy-colors`
+### `legacy_colors`
 
 Это позволит игроку использовать устаревшие цвета в своих сообщениях
 
@@ -68,6 +68,6 @@ authors:
 
 :::
 
-### `adventure-tags`
+### `adventure_tags`
 
 Список тегов и их прав для использования

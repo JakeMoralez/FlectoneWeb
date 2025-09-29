@@ -20,32 +20,36 @@ Server message when a player earns an advancement
 <<< @/files/localizations/en_us.yml#advancement
 :::
 
-### `task`
+### `format_task`
 
-Message when obtaining a regular advancement  
+Message when receiving a regular advancement
 ![task](/task.png)
 
-### `taken`
+### `format_goal`
 
-Message shown when an achievement is lost (only used in older Minecraft versions)
-
-### `goal`
-
-Message when achieving a goal  
+Message when achieving a goal
 ![goal](/goal.png)
 
-### `challenge`
+### `format_challenge`
 
-Message when completing a challenge  
+Message when completing a challenge
 ![challenge](/challenge.png)
+
+### `tag`
+
+The display format of an advancement by its type, only `task` and `challenge` are available because vanilla Minecraft does not have a separate style for `goal`
+
+### `format_taken`
+
+Message when an advancement is lost (used only in older versions of Minecraft)
 
 ### `revoke`
 
-Message when using `/advancement revoke`
+Messages when using `/advancement revoke`
 
 ### `grant`
 
-Message when using `/advancement grant`
+Messages when using `/advancement grant`
 
 [//]: # (message.yml)
 <!--@include: @/parts/words.md#setting-->

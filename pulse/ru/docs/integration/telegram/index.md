@@ -42,17 +42,17 @@ authors:
 
 Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
 
-### `for-minecraft`
+### `for_minecraft`
 
 Формат сообщения, которое будет отправлено из Телеграма в Майнкрафт
 
-### `message-channel`
+### `message_channel`
 
 Список сообщений с форматом итогового сообщения
 
 ::: info ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
 1. Возьми название из списка `типы сообщений`
-2. Вставь в `message-channel`
+2. Вставь в `message_channel`
 ```yaml
 название_сообщения: "<final_message>"
 ```
@@ -76,7 +76,7 @@ authors:
 
 [Токен](https://core.telegram.org/bots/faq#how-do-i-create-a-bot) бота для подключения. Можно использовать environment variables, например `${VALUE}`
 
-### `message-channel`
+### `message_channel`
 
 Список типов сообщений и айди чатов в Telegram
 

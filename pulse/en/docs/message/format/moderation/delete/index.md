@@ -42,7 +42,7 @@ Message format that will be sent upon deletion
 
 <!--@include: @/parts/enable.md-->
 
-### `history-length`
+### `history_length`
 
 The maximum number of messages stored in each player's chat history
 

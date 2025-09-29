@@ -6,6 +6,8 @@ authors:
 
 # Deop 
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 A message from the server when using `/deop`
 ![deop](/deop.png)
 

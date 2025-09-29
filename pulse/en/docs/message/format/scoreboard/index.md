@@ -23,13 +23,13 @@ If you experience issues with `TAB` (such as sorting problems) or other plugins 
 
 <!--@include: @/parts/enable.md-->
 
-### `name-visible`
+### `name_visible`
 
 Enables player name display above heads
 
 ### `color`
 
-Team color (if `name-visible` is enabled, names will use this color)
+Team color (if `name_visible` is enabled, names will use this color)
 
 ### `prefix`
 

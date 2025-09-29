@@ -42,7 +42,7 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `history-length`
+### `history_length`
 
 Сколько максимально сообщений будет храниться в истории у каждого игрока
 

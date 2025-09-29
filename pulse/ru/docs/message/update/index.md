@@ -19,11 +19,11 @@ authors:
 <<< @/files/localizations/en_us.yml#update
 :::
 
-### `format-player`
+### `format_player`
 
 Сообщение для игрока админа
 
-### `format-console`
+### `format_console`
 
 Сообщение для консоли
 

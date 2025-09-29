@@ -25,19 +25,19 @@ authors:
 <<< @/files/localizations/en_us.yml#flectonepulse
 :::
 
-### `format-false`
+### `format_false`
 
 Сообщение при возникновении ошибки
 
-### `format-true`
+### `format_true`
 
 Формат сообщения, которое будет отправлено при перезагрузке всего `FlectonePulse`
 
-### `format-web-starting`
+### `format_web_starting`
 
 Формат сообщения, которое будет отправлено при старте веб-сервера
 
-### `format-editor`
+### `format_editor`
 
 Формат сообщения, которое будет отправлено при успешном запуске веб-сервера
 

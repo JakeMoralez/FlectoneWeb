@@ -17,7 +17,7 @@ Integration with `MiniMOTD` disables the [Status](/docs/message/status/) module 
 
 <!--@include: @/parts/enable.md-->  
 
-### `disable-flectonepulse-status`
+### `disable_flectonepulse_status`
 Disables the [Status](/docs/message/status/) module
 
 [//]: # (permission.yml)

@@ -20,11 +20,11 @@ Command to remove a warning from a player
 <<< @/files/localizations/en_us.yml#unwarn
 :::
 
-### `null-player`
+### `null_player`
 
 Message when the player cannot be found
 
-### `not-warned`
+### `not_warned`
 
 Message when the player does not have a warning
 

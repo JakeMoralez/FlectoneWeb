@@ -1,9 +1,9 @@
 ### `cooldown`
 
-Usage cooldown
+::: details Usage cooldown
 
+How to use?
 
-::: info HOW TO USE COOLDOWN?
 Replace `false` with `true` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional cooldown settings will appear AUTOMATICALLY
 
 The cooldown configuration will look like this:

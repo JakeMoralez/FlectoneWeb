@@ -16,11 +16,11 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `avatar-api-url`
+### `avatar_api_url`
 
 Ссылка на API для отображения головы игрока. Итоговая ссылка будет выглядеть так https://mc-heads.net/avatar/59c987a2-4ef3-48e5-a291-00abe9ca8f12/8.png
 
-### `body-api-url`
+### `body_api_url`
 
 Ссылка на API для отображения всего скина игрока. Итоговая ссылка будет выглядеть так https://mc-heads.net/player/59c987a2-4ef3-48e5-a291-00abe9ca8f12/8.png
 

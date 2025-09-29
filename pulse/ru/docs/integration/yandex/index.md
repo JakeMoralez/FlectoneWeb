@@ -18,9 +18,9 @@ authors:
 
 ### `token`
 
-Токен авторизации для Яндекса [`iam-token`](https://yandex.cloud/ru/docs/translate/api-ref/authentication)
+Токен авторизации для Яндекса [`iam_token`](https://yandex.cloud/ru/docs/translate/api-ref/authentication)
 
-### `folder-id`
+### `folder_id`
 
 Идентификатор папки, к которой есть доступ
 

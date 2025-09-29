@@ -20,11 +20,11 @@ authors:
 <<< @/files/localizations/en_us.yml#chat
 :::
 
-### `null-chat`
+### `null_chat`
 
 Сообщение, если в чат ничего не удалось отправить
 
-### `null-receiver`
+### `null_receiver`
 
 Сообщение, если никто не увидел сообщение игрока
 
@@ -57,7 +57,7 @@ authors:
 
 :::
 
-### `event-priority`
+### `event_priority`
 
 Приоритет ивента сообщения в чате. Измените это значение, если есть конфликт с другими плагинами, использующие чат
 
@@ -99,7 +99,7 @@ authors:
 
 Включает работоспособность чата
 
-### `null-recipient`
+### `null_recipient`
 
 ![null recipient](/nullrecipient.png)
 

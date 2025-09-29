@@ -20,7 +20,7 @@ Command for clearing chat
 <<< @/files/localizations/en_us.yml#clearchat
 :::
 
-### `null-player`
+### `null_player`
 
 Message if the specified player is not found
 

@@ -5,6 +5,8 @@ authors:
 
 # Сон
 
+<!--@include: @/parts/vanillaWarn.md#message-->
+
 Сообщения при сне
 ![sleep](/sleep.png)
 
@@ -19,15 +21,15 @@ authors:
 <<< @/files/localizations/en_us.yml#sleep
 :::
 
-### `not-possible`
+### `not_possible`
 
 Сообщение, когда нельзя пропустить ночь
 
-### `players-sleeping`
+### `players_sleeping`
 
 Сообщение при недостаточном количестве игроков для пропуска ночи
 
-### `skipping-night`
+### `skipping_night`
 
 Сообщение при пропуске ночи
 

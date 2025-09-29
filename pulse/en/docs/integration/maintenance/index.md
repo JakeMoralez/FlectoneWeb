@@ -16,7 +16,7 @@ Integration with the Maintenance plugin allows disabling `MOTD` in `FlectonePuls
 
 <!--@include: @/parts/enable.md-->
 
-### `disable-flectonepulse-maintenance`
+### `disable_flectonepulse_maintenance`
 
 Disables the `/maintenance` command in `FlectonePulse`
 

@@ -31,7 +31,7 @@ This makes the game more challenging and strategic!
 <<< @/files/localizations/en_us.yml#tictactoe
 :::
 
-### `null-player`
+### `null_player`
 
 Message if the entered player is not found
 
@@ -39,15 +39,15 @@ Message if the entered player is not found
 
 Message if the entered player tries to play with themselves
 
-### `wrong-game`
+### `wrong_game`
 
 Message if the specified game does not exist
 
-### `wrong-move`
+### `wrong_move`
 
 Message if the move is not possible
 
-### `wrong-by-player`
+### `wrong_by_player`
 
 Message if one of the players has left the game
 
@@ -59,19 +59,19 @@ Format message for an empty cell
 #### `first`
 Format message for the first player's cell
 
-#### `first-remove`
+#### `first_remove`
 Format message for removing the first player's cell
 
-#### `first-win`
+#### `first_win`
 Format message for the winning cell of the first player
 
 #### `second`
 Format message for the second player's cell
 
-#### `second-remove`
+#### `second_remove`
 Format message for removing the second player's cell
 
-#### `second-win`
+#### `second_win`
 Format message for the winning cell of the second player
 :::
 
@@ -79,23 +79,23 @@ Format message for the winning cell of the second player
 
 Format message for the game field
 
-### `current-move`
+### `current_move`
 
 Format message for the current move information
 
-### `last-move`
+### `last_move`
 
 Format message for the last move information
 
-### `format-move`
+### `format_move`
 
 Format message for announcing the move
 
-### `format-win`
+### `format_win`
 
 Message upon winning
 
-### `format-draw`
+### `format_draw`
 
 Message for a draw
 
@@ -103,7 +103,7 @@ Message for a draw
 
 Message for the sender when sending a request
 
-### `format-create`
+### `format_create`
 
 Message for the recipient when receiving a request
 

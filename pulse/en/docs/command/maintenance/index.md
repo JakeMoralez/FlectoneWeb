@@ -21,11 +21,11 @@ Command to enable maintenance mode
 <<< @/files/localizations/en_us.yml#maintenance
 :::
 
-### `server-description`
+### `server_description`
 
 Message when viewing the server while maintenance is enabled
 
-### `server-version`
+### `server_version`
 
 Server version name when maintenance is enabled
 
@@ -33,11 +33,11 @@ Server version name when maintenance is enabled
 
 Reason for kicking players when maintenance mode is enabled
 
-### `format-true`
+### `format_true`
 
 Message when enabling maintenance mode
 
-### `format-false`
+### `format_false`
 
 Message when disabling maintenance mode
 

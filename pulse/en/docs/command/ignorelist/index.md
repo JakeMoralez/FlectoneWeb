@@ -24,7 +24,7 @@ Command to view the list of players you have ignored
 
 Message displayed if the ignore list is empty
 
-### `null-page`
+### `null_page`
 
 Message displayed if the entered page does not exist
 

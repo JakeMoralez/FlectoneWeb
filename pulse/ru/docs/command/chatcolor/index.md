@@ -29,15 +29,15 @@ authors:
 <<< @/files/localizations/en_us.yml#chatcolor
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `null-color`
+### `null_color`
 
 Сообщение, если неправильно введены цвета
 
-### `null-type`
+### `null_type`
 
 Сообщение, если неправильно введён тип
 

@@ -1,39 +1,40 @@
-#  ___       ___  __  ___  __        ___ 
+#  ___       ___  __  ___  __        ___
 # |__  |    |__  /  `  |  /  \ |\ | |__
 # |    |___ |___ \__,  |  \__/ | \| |___
-#  __             __   ___ 
-# |__) |  | |    /__` |__  
+#  __             __   ___
+# |__) |  | |    /__` |__
 # |    \__/ |___ .__/ |___   /\
 #                           /  \
 # __/\___  ____/\_____  ___/    \______
-#        \/           \/  
-# 
+#        \/           \/
+#
 #region config
 console: "Console"
-version: "1.5.1"
+version: "1.6.0-SNAPSHOT"
 language: "en_us"
-language-player: true
-unregister-own-commands: false
+language_player: true
+unregister_own_commands: false
 metrics: true
 bungeecord: false
 velocity: false
 clusters: []
-fabric-disabled-commands:
-  - "msg"
-  - "kick"
-  - "banlist"
-  - "tell"
-  - "w"
-  - "me"
-  - "pardon"
-  - "ban"
-log-filter:
-  - "Paper Async Command Builder"
-  - "Caught previously unhandled exception :"
-  - "Error received from Telegram GetUpdates Request"
-  - "OkHttp TaskRunner"
-  - "Exception in thread \"ForkJoinPool"
-  - "FlectonePulseDatabase - "
+fabric_disabled_commands:
+- "msg"
+- "kick"
+- "banlist"
+- "tell"
+- "w"
+- "me"
+- "pardon"
+- "ban"
+log_filter:
+- "Paper Async Command Builder"
+- "Caught previously unhandled exception :"
+- "Error received from Telegram GetUpdates Request"
+- "OkHttp TaskRunner"
+- "Exception in thread \"ForkJoinPool"
+- "FlectonePulseDatabase - "
+# https://flectone.net/pulse/docs/config/#database
 database:
   type: "SQLITE"
   name: "flectonepulse"

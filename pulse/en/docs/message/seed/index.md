@@ -6,6 +6,8 @@ authors:
 
 # Seed
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Message from the server when using `/seed`
 ![seed](/seed.png)
 

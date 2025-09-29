@@ -29,7 +29,7 @@ The interval is specified to resend message about an existing poll to chat
 <<< @/files/localizations/en_us.yml#poll
 :::
 
-### `null-poll`
+### `null_poll`
 
 Message when the poll is not found
 
@@ -41,18 +41,18 @@ Message when the player attempts to vote in an expired poll
 
 Message when the player attempts to vote again in the same poll
 
-### `vote-true`
+### `vote_true`
 
 Message when the player has voted for a particular option
 
-### `vote-false`
+### `vote_false`
 
 Message when the player removes their vote
 
 ### `format`
 The format of the message that will be sent
 
-### `answer-template`
+### `answer_template`
 Template for each answer
 
 ### `status`
@@ -77,43 +77,43 @@ Header when the voting ends
 
 Dialog name
 
-#### `input-name`
+#### `input_name`
 
 Name for "name" field
 
-#### `input-initial`
+#### `input_initial`
 
 Default text for "name" field
 
-#### `multiple-name`
+#### `multiple_name`
 
 Name for "allow multiple answers" toggle field
 
-#### `end-time-name`
+#### `end_time_name`
 
 Name for duration field
 
-#### `repeat-time-name`
+#### `repeat_time_name`
 
 Name for interval field
 
-#### `new-answer-button-name`
+#### `new_answer-button-name`
 
 Name for button that creates a new answer
 
-#### `remove-answer-button-name`
+#### `remove_answer-button-name`
 
 Name for button that removes the last answer
 
-#### `input-answer-name`
+#### `input_answer_name`
 
 Name for new answer field
 
-#### `input-answers-initial`
+#### `input_answers_initial`
 
 Default text for answer field
 
-#### `create-button-name`
+#### `create_button_name`
 
 Name for button that creates poll
 
@@ -128,7 +128,7 @@ Name for button that creates poll
 
 <!--@include: @/parts/enable.md-->
 
-### `enable-gui`
+### `enable_gui`
 
 ::: warning WARNING
 
@@ -140,7 +140,7 @@ Adds a new command `/pollgui` (depends on command name itself, i.e., `/name` + `
 
 <!--@include: @/parts/range.md-->
 
-### `last-id`
+### `last_id`
 
 Last poll ID created
 

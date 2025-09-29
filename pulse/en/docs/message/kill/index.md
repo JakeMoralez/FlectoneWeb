@@ -5,6 +5,8 @@ authors:
 
 # Kill
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Server message when using `/kill`
 ![kill](/kill.png)
 

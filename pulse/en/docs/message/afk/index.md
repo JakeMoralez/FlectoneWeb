@@ -28,11 +28,11 @@ If a player is AFK, they receive a specific suffix
 The suffix assigned to a player when they go AFK  
 ![afksuffix](/afksuffix.png)  
 
-### `format-true`  
+### `format_true`  
 
 Message when a player goes AFK  
 
-### `format-false`  
+### `format_false`  
 
 Message when a player returns  
 

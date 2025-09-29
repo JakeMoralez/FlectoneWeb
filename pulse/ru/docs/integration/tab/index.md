@@ -24,19 +24,19 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `disable-flectonepulse-scorebord`
+### `disable_flectonepulse_scorebord`
 
 Выключает модуль [Скорборд](/docs/message/format/scoreboard/)
 
-### `disable-flectonepulse-header`
+### `disable_flectonepulse_header`
 
 Выключает модуль [Верхнее](/docs/message/tab/header/)
 
-### `disable-flectonepulse-footer`
+### `disable_flectonepulse_footer`
 
 Выключает модуль [Нижнее](/docs/message/tab/footer/)
 
-### `disable-flectonepulse-playerlistname`
+### `disable_flectonepulse_playerlistname`
 
 Выключает модуль [Имя в списке](/docs/message/tab/playerlistname/)
 

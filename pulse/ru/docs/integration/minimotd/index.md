@@ -16,7 +16,7 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `disable-flectonepulse-status`
+### `disable_flectonepulse_status`
 
 Выключает модуль [Статус](/docs/message/status/)
 

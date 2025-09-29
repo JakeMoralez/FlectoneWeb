@@ -24,7 +24,7 @@ This command will not work if the [`Tell`](/docs/command/tell/) module is disabl
 <<< @/files/localizations/en_us.yml#reply
 :::
 
-### `null-receiver`
+### `null_receiver`
 
 Message when the recipient is not found
 

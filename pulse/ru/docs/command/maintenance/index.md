@@ -20,11 +20,11 @@ authors:
 <<< @/files/localizations/en_us.yml#maintenance
 :::
 
-### `server-description`
+### `server_description`
 
 Сообщения при просмотре сервера, если включены технические работы
 
-### `server-version`
+### `server_version`
 
 Название версии сервера, если включены технические работы
 
@@ -32,11 +32,11 @@ authors:
 
 Причина исключения с сервера при включении технических работ
 
-### `format-true`
+### `format_true`
 
 Сообщение при включении технических работ
 
-### `format-false`
+### `format_false`
 
 Сообщение при отключении технических работ
 

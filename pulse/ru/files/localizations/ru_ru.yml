@@ -1,13 +1,13 @@
-#  ___       ___  __  ___  __        ___ 
+#  ___       ___  __  ___  __        ___
 # |__  |    |__  /  `  |  /  \ |\ | |__
 # |    |___ |___ \__,  |  \__/ | \| |___
-#  __             __   ___ 
-# |__) |  | |    /__` |__  
+#  __             __   ___
+# |__) |  | |    /__` |__
 # |    \__/ |___ .__/ |___   /\
 #                           /  \
 # __/\___  ____/\_____  ___/    \______
-#        \/           \/  
-# 
+#        \/           \/
+#
 #region message
 cooldown: "<color:#ff7171><b>⁉</b> Слишком быстро, попробуй через <time>"
 time:
@@ -19,10 +19,10 @@ time:
 command:
   exception:
     execution: "<color:#ff7171><b>⁉</b> Произошла ошибка при выполнении команды <br><color:#ff7171><b>⁉</b> <exception>"
-    parse-unknown: "<color:#ff7171><b>⁉</b> Неизвестная ошибка аргумента в <br><input>"
-    parse-boolean: "<color:#ff7171><b>⁉</b> Ожидался boolean аргумент, но ты ввёл <br><input>"
-    parse-number: "<color:#ff7171><b>⁉</b> Ожидался числовой аргумент, но ты ввёл <br><input>"
-    parse-string: "<color:#ff7171><b>⁉</b> Ожидался строковый аргумент, но ты ввёл <br><input>"
+    parse_unknown: "<color:#ff7171><b>⁉</b> Неизвестная ошибка аргумента в <br><input>"
+    parse_boolean: "<color:#ff7171><b>⁉</b> Ожидался boolean аргумент, но ты ввёл <br><input>"
+    parse_number: "<color:#ff7171><b>⁉</b> Ожидался числовой аргумент, но ты ввёл <br><input>"
+    parse_string: "<color:#ff7171><b>⁉</b> Ожидался строковый аргумент, но ты ввёл <br><input>"
     permission: "<color:#ff7171><b>⁉</b> У тебя нет прав на использование этой команды"
     syntax: "<hover:show_text:\"<fcolor:2>Использовать <br><fcolor:1>/<correct_syntax>\"><click:suggest_command:\"/<command> \"><fcolor:2>┌<br>│ Использование →<br>│ <fcolor:1>/<correct_syntax><br><fcolor:2>└"
   prompt:
@@ -35,8 +35,8 @@ command:
     category: "категория"
     id: "айди"
     time: "время"
-    repeat-time: "время повторения"
-    multiple-vote: "мульти голосование"
+    repeat_time: "время повторения"
+    multiple_vote: "мульти голосование"
     player: "игрок"
     number: "число"
     color: "цвет"
@@ -53,39 +53,39 @@ command:
   ball:
     format: "<color:#9370DB>❓ <display_name> спросил: <message><reset> <color:#9370DB><br>🔮 Магический шар: <u><answer></u>"
     answers:
-      - "Бесспорно"
-      - "Никаких сомнений"
-      - "Определённо да"
-      - "Это база"
-      - "Можешь быть уверен в этом"
-      - "Вероятнее всего"
-      - "Хорошие перспективы"
-      - "Да"
-      - "Пока не ясно, попробуй снова"
-      - "Спроси позже"
-      - "Лучше не рассказывать"
-      - "Сейчас нельзя предсказать"
-      - "Сконцентрируйся и спроси опять"
-      - "Даже не думай"
-      - "Нет."
-      - "Перспективы не очень хорошие"
-      - "Весьма сомнительно"
+    - "Бесспорно"
+    - "Никаких сомнений"
+    - "Определённо да"
+    - "Это база"
+    - "Можешь быть уверен в этом"
+    - "Вероятнее всего"
+    - "Хорошие перспективы"
+    - "Да"
+    - "Пока не ясно, попробуй снова"
+    - "Спроси позже"
+    - "Лучше не рассказывать"
+    - "Сейчас нельзя предсказать"
+    - "Сконцентрируйся и спроси опять"
+    - "Даже не думай"
+    - "Нет."
+    - "Перспективы не очень хорошие"
+    - "Весьма сомнительно"
 #endregion ball
 #region ban
   ban:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_time: "<color:#ff7171><b>⁉</b> Невозможное время"
     reasons:
       default: "Ты заблокирован на этом сервере"
     server: "<color:#ff7171>🔒 <fcolor:2><moderator><fcolor:1> заблокировал игрока <fcolor:2><player> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
     person: "<color:#ff7171>🔒 БАН 🔒 <fcolor:1><br><br>Дата: <date><br><br>Время: <time><br><br>Осталось: <time_left><br><br>Модератор: <moderator><br><br>Причина: <reason>"
-    connection-attempt: "<color:#ff7171>🔒 Заблокированный <fcolor:2><player><fcolor:1> попытался подключиться <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
+    connection_attempt: "<color:#ff7171>🔒 Заблокированный <fcolor:2><player><fcolor:1> попытался подключиться <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
 #endregion ban
 #region banlist
   banlist:
     empty: "<color:#98FB98>☺ Блокировки не найдены"
-    null-page: "<color:#ff7171><b>⁉</b> Страница не найдена"
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_page: "<color:#ff7171><b>⁉</b> Страница не найдена"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     global:
       header: "<fcolor:2>▋ Блокировки: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Разблокировать <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
@@ -101,56 +101,47 @@ command:
 #endregion broadcast
 #region chatcolor
   chatcolor:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    null-type: "<color:#ff7171><b>⁉</b> Тип введён неверно"
-    null-color: "<color:#ff7171><b>⁉</b> Цвета введены неверно"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_type: "<color:#ff7171><b>⁉</b> Тип введён неверно"
+    null_color: "<color:#ff7171><b>⁉</b> Цвета введены неверно"
     format: "<br><color:#98FB98>│ Твои цвета выглядят так: <br><color:#98FB98>│ <fcolor:1>(local) <fcolor:2><player><fcolor:3>: привет мир! <br><color:#98FB98>│ <fcolor:1>(global) <fcolor:2><player><fcolor:4>: привет мир! <br>"
 #endregion chatcolor
 #region chatsetting
   chatsetting:
-    no-permission: "<color:#ff7171><b>⁉</b> Нет разрешения на изменение этой настройки"
-    disable:
-      you: "<color:#ff7171><b>⁉</b> Команда скрыта, проверь /chatsetting"
-      he: "<color:#ff7171><b>⁉</b> Он выключил команду с помощью /chatsetting"
-      server: "<color:#ff7171><b>⁉</b> Команда отключена на сервере"
+    no_permission: "<color:#ff7171><b>⁉</b> Нет разрешения на изменение этой настройки"
+    disabled_self: "<color:#ff7171><b>⁉</b> Эта функция отключена с помощью /chatsetting"
+    disabled_other: "<color:#ff7171><b>⁉</b> Он отключил эту функцию с помощью /chatsetting"
     inventory: "Настройки чата"
     checkbox:
-      enabled-color: "<color:#98FB98>"
-      enabled-hover: "<color:#98FB98>Отображение включено"
-      disabled-color: "<color:#ff7171>"
-      disabled-hover: "<color:#ff7171>Отображение выключено"
+      enabled_color: "<color:#98FB98>"
+      enabled_hover: "<color:#98FB98>Отображение включено"
+      disabled_color: "<color:#ff7171>"
+      disabled_hover: "<color:#ff7171>Отображение выключено"
       types:
+        AFK: "<status_color>Афк"
         ADVANCEMENT: "<status_color>Достижения"
-        AFK: "<status_color>Команда /afk"
-        ANON: "<status_color>Команда /anon"
-        AUTO: "<status_color>Авто-сообщения"
-        BALL: "<status_color>Команда /ball"
-        BAN: "<status_color>Команда /ban"
-        BROADCAST: "<status_color>Команда /broadcast"
-        COIN: "<status_color>Команда /coin"
+        CHAT: "<status_color>Сообщения чата"
+        COMMAND_ANON: "<status_color>Команда /anon"
+        COMMAND_BALL: "<status_color>Команда /ball"
+        COMMAND_BROADCAST: "<status_color>Команда /broadcast"
+        COMMAND_COIN: "<status_color>Команда /coin"
+        COMMAND_DICE: "<status_color>Команда /dice"
+        COMMAND_DO: "<status_color>Команда /do"
+        COMMAND_MAIL: "<status_color>Команда /mail"
+        COMMAND_ME: "<status_color>Команда /me"
+        COMMAND_POLL: "<status_color>Команда /poll"
+        COMMAND_ROCKPAPERSCISSORS: "<status_color>Команда /rockpaperscissors"
+        COMMAND_STREAM: "<status_color>Команда /stream"
+        COMMAND_TELL: "<status_color>Команда /tell"
+        COMMAND_TICTACTOE: "<status_color>Команда /tictactoe"
+        COMMAND_TRY: "<status_color>Команда /try"
         DEATH: "<status_color>Смерти"
-        DICE: "<status_color>Команда /dice"
-        DISCORD: "<status_color>Сообщения в/из Discord"
-        DO: "<status_color>Команда /do"
-        GREETING: "<status_color>Приветственное сообщение"
+        FROM_DISCORD_TO_MINECRAFT: "<status_color>Сообщения из Discord"
+        FROM_TELEGRAM_TO_MINECRAFT: "<status_color>Сообщения из Telegram"
+        FROM_TWITCH_TO_MINECRAFT: "<status_color>Сообщения из Twitch"
         JOIN: "<status_color>Вход на сервер"
-        KICK: "<status_color>Команда /kick"
-        MAIL: "<status_color>Команда /mail"
-        ME: "<status_color>Команда /me"
-        MUTE: "<status_color>Команда /mute"
-        POLL: "<status_color>Команда /poll"
         QUIT: "<status_color>Выход с сервера"
-        REPLY: "<status_color>Команда /reply"
-        ROCKPAPERSCISSORS: "<status_color>Команда /rockpaperscissors"
-        SPY: "<status_color>Режим слежки"
-        STREAM: "<status_color>Режим стримера"
-        TELL: "<status_color>Команда /tell"
-        TELEGRAM: "<status_color>Сообщения в/из Telegram"
-        TICTACTOE: "<status_color>Команда /tictactoe"
-        TRANSLATETO: "<status_color>Команда /translateto"
-        TRY: "<status_color>Команда /try"
-        TWITCH: "<status_color>Сообщения в/из Twitch"
-        WARN: "<status_color>Команда /warn"
+        SLEEP: "<status_color>Сон"
     menu:
       chat:
         item: "<fcolor:2>Тип чата <br><fcolor:1>Чат для просмотра и отправки сообщений <br><br><fcolor:1>Выбранный чат <fcolor:2><chat>"
@@ -204,24 +195,24 @@ command:
 #endregion chatsetting
 #region clearchat
   clearchat:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     format: "<fcolor:1>💬 Чат очищен"
 #endregion clearchat
 #region clearmail
   clearmail:
-    null-mail: "<color:#ff7171><b>⁉</b> Письма не найдено"
-    format: "<fcolor:2>✉ [УДАЛЕНО] Письмо #<id> для <display_name> » <fcolor:1><message>"
+    null_mail: "<color:#ff7171><b>⁉</b> Письма не найдено"
+    format: "<fcolor:2>✉ [УДАЛЕНО] Письмо #<id> для <target> » <fcolor:1><message>"
 #endregion clearmail
 #region coin
   coin:
     head: "орёл"
     tail: "решка"
     format: "<fcolor:1>✎ <display_name> подбросил монетку - <result>"
-    format-draw: "<fcolor:1>✎ <display_name> неудачно подбросил монетку ребром :)"
+    format_draw: "<fcolor:1>✎ <display_name> неудачно подбросил монетку ребром :)"
 #endregion coin
 #region deletemessage
   deletemessage:
-    null-message: "<color:#ff7171><b>⁉</b> Сообщение не существует"
+    null_message: "<color:#ff7171><b>⁉</b> Сообщение не существует"
     format: "<color:#98FB98>☒ Сообщение успешно удалено"
 #endregion deletemessage
 #region dice
@@ -241,44 +232,44 @@ command:
 #endregion do
 #region flectonepulse
   flectonepulse:
-    null-host-editor: "<color:#ff7171><b>⁉</b> Параметр host должен быть настроен в <u>config.yml"
-    format-false: "<color:#ff7171>★ Возникла проблема при перезагрузке <br>Ошибка: <message>"
-    format-true: "<fcolor:2>★ <u>FlectonePulse</u> успешно перезагружен! (<i><time></i>)"
-    format-web-starting: "<fcolor:2>★ Запуск веб-сервера, подождите..."
-    format-editor: "<fcolor:2>★ Ссылка для веб-редактирования <u><fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url>"
+    null_host_editor: "<color:#ff7171><b>⁉</b> Параметр host должен быть настроен в <u>config.yml"
+    format_false: "<color:#ff7171>★ Возникла проблема при перезагрузке <br>Ошибка: <message>"
+    format_true: "<fcolor:2>★ <u>FlectonePulse</u> успешно перезагружен! (<i><time></i>)"
+    format_web_starting: "<fcolor:2>★ Запуск веб-сервера, подождите..."
+    format_editor: "<fcolor:2>★ Ссылка для веб-редактирования <u><fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url>"
 #endregion flectonepulse
 #region geolocate
   geolocate:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    null-or-error: "<color:#ff7171><b>⁉</b> Ошибка, попробуй чуть позже"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_or_error: "<color:#ff7171><b>⁉</b> Ошибка, попробуй чуть позже"
     format: "<fcolor:1>Геолокация <display_name><br>Страна: <fcolor:2><country><br><fcolor:1>Регион: <fcolor:2><region_name><br><fcolor:1>Город: <fcolor:2><city><br><fcolor:1>Часовой пояс: <fcolor:2><timezone><br><fcolor:1>Мобильный интернет? <fcolor:2><mobile><br><fcolor:1>ВПН? <fcolor:2><proxy><br><fcolor:1>Хостинг? <fcolor:2><hosting><br><fcolor:1>Айпи: <fcolor:2><query>"
 #endregion geolocate
 #region helper
   helper:
-    null-helper: "<color:#ff7171><b>⁉</b> Сейчас нет людей, кто бы смог помочь"
+    null_helper: "<color:#ff7171><b>⁉</b> Сейчас нет людей, кто бы смог помочь"
     global: "<fcolor:2>👤 <display_name> просит помощи ⏩ <fcolor:1><message>"
     player: "<fcolor:2>👤 Запрос отправлен, ожидай ответа"
 #endregion helper
 #region ignore
   ignore:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     myself: "<color:#ff7171><b>⁉</b> Нельзя игнорировать самого себя"
     he: "<color:#ff7171><b>⁉</b> Он тебя игнорирует"
     you: "<color:#ff7171><b>⁉</b> Ты его игнорируешь"
-    format-true: "<color:#ff7171>☹ Ты игнорируешь <display_name>"
-    format-false: "<color:#98FB98>☺ Ты перестал игнорировать <display_name>"
+    format_true: "<color:#ff7171>☹ Ты игнорируешь <display_name>"
+    format_false: "<color:#98FB98>☺ Ты перестал игнорировать <display_name>"
 #endregion ignore
 #region ignorelist
   ignorelist:
     empty: "<color:#98FB98>☺ Игнорируемых игроков нет"
-    null-page: "<color:#ff7171><b>⁉</b> Страница не найдена"
+    null_page: "<color:#ff7171><b>⁉</b> Страница не найдена"
     header: "<fcolor:2>▋ Игнорирования: <count> <br>"
     line: "<hover:show_text:\"<fcolor:1>Перестать игнорировать <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1>Дата: <date>"
     footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 #endregion ignorelist
 #region kick
   kick:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     reasons:
       default: "Исключён модератором"
     server: "<color:#ff7171>🔒 <fcolor:2><moderator><fcolor:1> исключил <fcolor:2><player><fcolor:1> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
@@ -286,18 +277,18 @@ command:
 #endregion kick
 #region mail
   mail:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    online-player: "<color:#ff7171><b>⁉</b> Игрок в сети"
-    sender: "<fcolor:2>✉ Письмо #<id> для <display_name> » <fcolor:1><message>"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    online_player: "<color:#ff7171><b>⁉</b> Игрок в сети"
+    sender: "<fcolor:2>✉ Письмо #<id> для <target> » <fcolor:1><message>"
     receiver: "<fcolor:2>✉ Письмо от <display_name> » <fcolor:1><message>"
 #endregion mail
 #region maintenance
   maintenance:
-    server-description: "<color:#ff7171>В настоящее время проводятся технические работы"
-    server-version: "Технические работы"
+    server_description: "<color:#ff7171>В настоящее время проводятся технические работы"
+    server_version: "Технические работы"
     kick: "<color:#ff7171>★ На сервере ведутся технические работы"
-    format-true: "<fcolor:1>★ Ты <fcolor:2>включил <fcolor:1>технические работы на сервере"
-    format-false: "<fcolor:1>★ Ты <fcolor:2>выключил <fcolor:1>технические работы на сервере"
+    format_true: "<fcolor:1>★ Ты <fcolor:2>включил <fcolor:1>технические работы на сервере"
+    format_false: "<fcolor:1>★ Ты <fcolor:2>выключил <fcolor:1>технические работы на сервере"
 #endregion maintenance
 #region me
   me:
@@ -305,8 +296,8 @@ command:
 #endregion me
 #region mute
   mute:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_time: "<color:#ff7171><b>⁉</b> Невозможное время"
     reasons:
       default: "Ты был замучен на сервере"
     server: "<color:#ff7171>🔒 <fcolor:2><moderator><fcolor:1> выдал мут игроку <fcolor:2><player> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
@@ -315,8 +306,8 @@ command:
 #region mutelist
   mutelist:
     empty: "<color:#98FB98>☺ Муты не найдены"
-    null-page: "<color:#ff7171><b>⁉</b> Страница не найдена"
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_page: "<color:#ff7171><b>⁉</b> Страница не найдена"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     global:
       header: "<fcolor:2>▋ Муты: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Размутить <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
@@ -328,59 +319,59 @@ command:
 #endregion mutelist
 #region online
   online:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    format-current: "<fcolor:1>⌛ <display_name> сейчас на сервере"
-    format-first: "<fcolor:1>⌛ <display_name> впервые зашёл на сервер <time> назад"
-    format-last: "<fcolor:1>⌛ <display_name> <fcolor:1>последний раз был на сервере <time> назад"
-    format-total: "<fcolor:1>⌛ <display_name> <fcolor:1>всего провёл на сервере <time>"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    format_current: "<fcolor:1>⌛ <display_name> сейчас на сервере"
+    format_first: "<fcolor:1>⌛ <display_name> впервые зашёл на сервер <time> назад"
+    format_last: "<fcolor:1>⌛ <display_name> <fcolor:1>последний раз был на сервере <time> назад"
+    format_total: "<fcolor:1>⌛ <display_name> <fcolor:1>всего провёл на сервере <time>"
 #endregion online
 #region ping
   ping:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     format: "<fcolor:1>🖧 Пинг игрока <display_name> равен <ping>"
 #endregion ping
 #region poll
   poll:
-    null-poll: "<color:#ff7171><b>⁉</b> Голосование не найдено"
+    null_poll: "<color:#ff7171><b>⁉</b> Голосование не найдено"
     expired: "<color:#ff7171><b>⁉</b> Голосование завершено"
     already: "<color:#ff7171><b>⁉</b> Ты уже проголосовал в этом голосовании"
-    vote-true: "<color:#4eff52>👍 Ты выбрал <answer_id> вариант в голосовании #<id>. Всего таких голосов <count>"
-    vote-false: "<color:#ff4e4e>🖓 Ты передумал об <answer_id> варианте в голосовании #<id>. Всего таких голосов <count> без тебя"
+    vote_true: "<color:#4eff52>👍 Ты выбрал <answer_id> вариант в голосовании #<id>. Всего таких голосов <count>"
+    vote_false: "<color:#ff4e4e>🖓 Ты передумал об <answer_id> варианте в голосовании #<id>. Всего таких голосов <count> без тебя"
     format: "<br><color:#fce303>│ <status> <br>│ <message><reset> <color:#fce303><br>├─────────────<br><answers>"
-    answer-template: "<color:#fce303>│ <count> → <color:#4eff52><hover:show_text:\"<color:#4eff52>Проголосовать за <bold><answer>\"><click:run_command:\"/pollvote <id> <number>\"><answer> [👍]<br>"
+    answer_template: "<color:#fce303>│ <count> → <color:#4eff52><hover:show_text:\"<color:#4eff52>Проголосовать за <bold><answer>\"><click:run_command:\"/pollvote <id> <number>\"><answer> [👍]<br>"
     status:
       start: "Создано новое голосование #<b><id></b>"
       run: "Идёт голосование #<b><id></b>"
       end: "Голосование #<b><id></b> завершено"
     modern:
       header: "Создание голосования"
-      input-name: "Название"
-      input-initial: ""
-      multiple-name: "Разрешить несколько ответов"
-      end-time-name: "Длительность (в минутах)"
-      repeat-time-name: "Интервал (в минутах)"
-      new-answer-button-name: "Добавить ответ"
-      remove-answer-button-name: "Удалить ответ"
-      input-answer-name: "Ответ <number>"
-      input-answers-initial: ""
-      create-button-name: "Создать голосование"
+      input_name: "Название"
+      input_initial: ""
+      multiple_name: "Разрешить несколько ответов"
+      end_time_name: "Длительность (в минутах)"
+      repeat_time_name: "Интервал (в минутах)"
+      new_answer_button_name: "Добавить ответ"
+      remove_answer_button_name: "Удалить ответ"
+      input_answer_name: "Ответ <number>"
+      input_answers_initial: ""
+      create_button_name: "Создать голосование"
 #endregion poll
 #region reply
   reply:
-    null-receiver: "<color:#ff7171><b>⁉</b> Некому отвечать"
+    null_receiver: "<color:#ff7171><b>⁉</b> Некому отвечать"
 #endregion reply
 #region rockpaperscissors
   rockpaperscissors:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    null-game: "<color:#ff7171><b>⁉</b> Этой игры не существует"
-    wrong-move: "<color:#ff7171><b>⁉</b> Такой ход невозможен"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_game: "<color:#ff7171><b>⁉</b> Этой игры не существует"
+    wrong_move: "<color:#ff7171><b>⁉</b> Такой ход невозможен"
     already: "<color:#ff7171><b>⁉</b> Ты уже сходил"
     myself: "<color:#ff7171><b>⁉</b> Ты не можешь играть с самим собой"
     sender: "<fcolor:2>✂ <fcolor:1>Теперь ходит <display_name>"
     receiver: "<fcolor:2>✂ <display_name> <fcolor:1>предложил сыграть в камень-ножницы-бумага"
-    format-move: "<fcolor:2>✂ <fcolor:1>Выбери свой ход <fcolor:2><click:run_command:\"/rps <target> rock <uuid>\">[🪨 камень]</click> <click:run_command:\"/rps <target> scissors <uuid>\">[✂ ножницы]</click> <click:run_command:\"/rps <target> paper <uuid>\">[🧻 бумага]</click>"
-    format-win: "<color:#98FB98>✂ Выиграл <display_name>! <b><sender_move></b> на <b><receiver_move></b>"
-    format-draw: "<color:#98FB98>✂ Ничья! Вы оба выбрали <b><move>"
+    format_move: "<fcolor:2>✂ <fcolor:1>Выбери свой ход <fcolor:2><click:run_command:\"/rps <target> rock <uuid>\">[🪨 камень]</click> <click:run_command:\"/rps <target> scissors <uuid>\">[✂ ножницы]</click> <click:run_command:\"/rps <target> paper <uuid>\">[🧻 бумага]</click>"
+    format_win: "<color:#98FB98>✂ Выиграл <display_name>! <b><sender_move></b> на <b><receiver_move></b>"
+    format_draw: "<color:#98FB98>✂ Ничья! Вы оба выбрали <b><move>"
     strategies:
       paper: "бумага"
       rock: "камень"
@@ -388,19 +379,19 @@ command:
 #endregion rockpaperscissors
 #region spy
   spy:
-    format-true: "<fcolor:1>[👁] Ты <color:#98FB98>включил <fcolor:1>слежку"
-    format-false: "<fcolor:1>[👁] Ты <color:#F08080>выключил <fcolor:1>слежку"
-    format-log: "<fcolor:1>[👁] <display_name> <color:#98FB98><action> <fcolor:1>→ <fcolor:2><message>"
+    format_true: "<fcolor:1>[👁] Ты <color:#98FB98>включил <fcolor:1>слежку"
+    format_false: "<fcolor:1>[👁] Ты <color:#F08080>выключил <fcolor:1>слежку"
+    format_log: "<fcolor:1>[👁] <display_name> <color:#98FB98><action> <fcolor:1>→ <fcolor:2><message>"
 #endregion spy
 #region stream
   stream:
     already: "<color:#ff7171><b>⁉</b> Ты уже включил трансляцию"
     not: "<color:#ff7171><b>⁉</b> Ты не включил трансляцию"
-    prefix-true: "<color:#ff4e4e>⏻</color:#ff4e4e> "
-    prefix-false: ""
-    url-template: "<color:#ff4e4e>│ <fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url></hover></click>"
-    format-start: "<br><color:#ff4e4e>│ 🔔 <fcolor:1>Объявление <br><color:#ff4e4e>│<br><color:#ff4e4e>│ <fcolor:1><display_name> начал трансляцию<br><color:#ff4e4e>│<br><urls><br>"
-    format-end: "<fcolor:2>★ Спасибо за трансляцию на нашем сервере!"
+    prefix_true: "<color:#ff4e4e>⏻</color:#ff4e4e> "
+    prefix_false: ""
+    url_template: "<color:#ff4e4e>│ <fcolor:2><click:open_url:\"<url>\"><hover:show_text:\"<fcolor:2><url>\"><url></hover></click>"
+    format_start: "<br><color:#ff4e4e>│ 🔔 <fcolor:1>Объявление <br><color:#ff4e4e>│<br><color:#ff4e4e>│ <fcolor:1><display_name> начал трансляцию<br><color:#ff4e4e>│<br><urls><br>"
+    format_end: "<fcolor:2>★ Спасибо за трансляцию на нашем сервере!"
 #endregion stream
 #region symbol
   symbol:
@@ -408,74 +399,74 @@ command:
 #endregion symbol
 #region tell
   tell:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    sender: "<fcolor:2>✉ Ты → <display_name> » <fcolor:1><message>"
-    receiver: "<fcolor:2>✉ <display_name> → Тебе » <fcolor:1><message>"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    sender: "<fcolor:2>✉ <display_name> → <target> » <fcolor:1><message>"
+    receiver: "<fcolor:2>✉ <display_name> → <target> » <fcolor:1><message>"
     myself: "<fcolor:2>✉ [Заметка] <fcolor:1><message>"
 #endregion tell
 #region tictactoe
   tictactoe:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     myself: "<color:#ff7171><b>⁉</b> Ты не можешь играть с самим собой"
-    wrong-game: "<color:#ff7171><b>⁉</b> Этой игры не существует"
-    wrong-move: "<color:#ff7171><b>⁉</b> Такой ход невозможен"
-    wrong-by-player: "<color:#ff7171><b>⁉</b> Игра закончена, потому что один из игроков не в сети"
+    wrong_game: "<color:#ff7171><b>⁉</b> Этой игры не существует"
+    wrong_move: "<color:#ff7171><b>⁉</b> Такой ход невозможен"
+    wrong_by_player: "<color:#ff7171><b>⁉</b> Игра закончена, потому что один из игроков не в сети"
     symbol:
       blank: "<fcolor:1><hover:show_text:\"<fcolor:1>Ход <move>\"><click:run_command:\"/tictactoemove %d <move>\">☐</click></hover>"
       first: "<fcolor:2>☑"
-      first-remove: "<color:#ff7171>☑</color:#ff7171>"
-      first-win: "<color:#98FB98>☑</color:#98FB98>"
+      first_remove: "<color:#ff7171>☑</color:#ff7171>"
+      first_win: "<color:#98FB98>☑</color:#98FB98>"
       second: "<fcolor:2>☒"
-      second-remove: "<color:#ff7171>☒</color:#ff7171>"
-      second-win: "<color:#98FB98>☒</color:#98FB98>"
+      second_remove: "<color:#ff7171>☒</color:#ff7171>"
+      second_win: "<color:#98FB98>☒</color:#98FB98>"
     field: "<fcolor:1><br>|[#][#][#]<fcolor:1>| <title> <current_move> <br><fcolor:1>|[#][#][#]<fcolor:1>| <br>|[#][#][#]<fcolor:1>| <last_move><br>"
-    current-move: "<fcolor:2>☐ → <symbol>"
-    last-move: "<fcolor:2>Последний ход (<move>)"
-    format-move: "<fcolor:2>Ход <display_name> "
-    format-win: "<color:#98FB98><display_name> выиграл</color:#98FB98>"
-    format-draw: "<color:#98FB98>Ничья 👬</color:#98FB98>"
-    sender: "<fcolor:1>☐ Предложение сыграть в крестики-нолики отправлено для <display_name>"
+    current_move: "<fcolor:2>☐ → <symbol>"
+    last_move: "<fcolor:2>Последний ход (<move>)"
+    format_move: "<fcolor:2>Ход <target> "
+    format_win: "<color:#98FB98><target> выиграл</color:#98FB98>"
+    format_draw: "<color:#98FB98>Ничья 👬</color:#98FB98>"
+    sender: "<fcolor:1>☐ Предложение сыграть в крестики-нолики отправлено для <target>"
     receiver: "<click:run_command:\"/tictactoemove %d create\"><fcolor:1>☐ Есть предложение сыграть в крестики-нолики от <display_name>, принять? [+]"
 #endregion tictactoe
 #region toponline
   toponline:
-    null-page: "<color:#ff7171><b>⁉</b> Страница не найдена"
+    null_page: "<color:#ff7171><b>⁉</b> Страница не найдена"
     header: "<fcolor:2>▋ Игроков: <count> <br>"
     line: "<fcolor:2><time_player> <fcolor:1>наиграл <fcolor:2><time>"
-    footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
+    footer: "<br><fcolor:2>▋ <click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
 #endregion toponline
 #region translateto
   translateto:
-    null-or-error: "<color:#ff7171><b>⁉</b> Ошибка, возможно указан неправильный язык"
+    null_or_error: "<color:#ff7171><b>⁉</b> Ошибка, возможно указан неправильный язык"
     format: "<fcolor:1>📖 Перевод на [<language>] → <fcolor:2><message>"
 #endregion translateto
 #region try
   try:
-    format-true: "<color:#98FB98>☺ <display_name> <message><reset> <color:#98FB98><percent>%"
-    format-false: "<color:#F08080>☹ <display_name> <message><reset> <color:#F08080><percent>%"
+    format_true: "<color:#98FB98>☺ <display_name> <message><reset> <color:#98FB98><percent>%"
+    format_false: "<color:#F08080>☹ <display_name> <message><reset> <color:#F08080><percent>%"
 #endregion try
 #region unban
   unban:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    not-banned: "<color:#ff7171><b>⁉</b> Игрок не заблокирован"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    not_banned: "<color:#ff7171><b>⁉</b> Игрок не заблокирован"
     format: "<color:#98FB98>🔓 <fcolor:2><moderator><color:#98FB98> разблокировал игрока <fcolor:2><player>"
 #endregion unban
 #region unmute
   unmute:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    not-muted: "<color:#ff7171><b>⁉</b> Игрок не замучен"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    not_muted: "<color:#ff7171><b>⁉</b> Игрок не замучен"
     format: "<color:#98FB98>🔓 <fcolor:2><moderator><color:#98FB98> размутил игрока <fcolor:2><player>"
 #endregion unmute
 #region unwarn
   unwarn:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    not-warned: "<color:#ff7171><b>⁉</b> Игрок не имеет предупреждений"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    not_warned: "<color:#ff7171><b>⁉</b> Игрок не имеет предупреждений"
     format: "<color:#98FB98>🔓 <fcolor:2><moderator><color:#98FB98> снял предупреждение с игрока <fcolor:2><player>"
 #endregion unwarn
 #region warn
   warn:
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-    null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_time: "<color:#ff7171><b>⁉</b> Невозможное время"
     reasons:
       default: "Ты получил предупреждение"
     server: "<color:#ff7171>🔒 <fcolor:2><moderator><fcolor:1> выдал предупреждение игроку <fcolor:2><player> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Осталось: <time_left><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
@@ -484,8 +475,8 @@ command:
 #region warnlist
   warnlist:
     empty: "<color:#98FB98>☺ Предупреждения не найдены"
-    null-page: "<color:#ff7171><b>⁉</b> Страница не найдена"
-    null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
+    null_page: "<color:#ff7171><b>⁉</b> Страница не найдена"
+    null_player: "<color:#ff7171><b>⁉</b> Игрок не найден"
     global:
       header: "<fcolor:2>▋ Предупреждения: <count> <br>"
       line: "<hover:show_text:\"<fcolor:1>Снять предупреждение <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Айди: <id><br>Дата: <date><br>Время: <time><br>Модератор: <moderator><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
@@ -500,10 +491,10 @@ integration:
 #endregion integration
 #region discord
   discord:
-    for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-    info-channel:
+    for_minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
+    info_channel:
       айди: "ТПС <tps>"
-    message-channel:
+    message_channel:
       CHAT_GLOBAL:
         content: "<final_message>"
         webhook:
@@ -518,25 +509,29 @@ integration:
           author:
             name: ""
             url: ""
-            icon-url: "https://mc-heads.net/avatar/<skin>/16.png"
+            icon_url: "https://mc-heads.net/avatar/<skin>/16.png"
           description: ""
           thumbnail: ""
+          fields:
+          - name: ""
+            value: ""
+            inline: false
           image: ""
           timestamp: true
           footer:
             text: ""
-            icon-url: "https://mc-heads.net/avatar/<skin>/16.png"
+            icon_url: "https://mc-heads.net/avatar/<skin>/16.png"
 #endregion discord
 #region telegram
   telegram:
-    for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-    message-channel:
+    for_minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
+    message_channel:
       CHAT_GLOBAL: "<final_message>"
 #endregion telegram
 #region twitch
   twitch:
-    for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-    message-channel:
+    for_minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
+    message_channel:
       CHAT_GLOBAL: "<final_message>"
 #endregion twitch
 #region message
@@ -544,57 +539,72 @@ message:
 #endregion message
 #region advancement
   advancement:
-    task:
-      format: "<color:#4eff52>🌠 <fcolor:2><display_name> <fcolor:1>получил достижение <advancement>"
-      tag: "<color:#4eff52>[<hover:show_text:\"<color:#4eff52><lang:'<title>'> <br><lang:'<description>'>\"><lang:'<title>'></hover>]"
-    taken:
-      format: "<color:#4eff52>🌠 <fcolor:2><display_name> <fcolor:1>потерял достижение <advancement>"
-      tag: "<color:#4eff52>[<hover:show_text:\"<color:#4eff52><lang:'<title>'> <br><lang:'<description>'>\"><lang:'<title>'></hover>]"
-    goal:
-      format: "<color:#FFFF00>🌠 <fcolor:2><display_name> <fcolor:1>выполнил цель <advancement>"
-      tag: "<color:#FFFF00>[<hover:show_text:\"<color:#FFFF00><lang:'<title>'> <br><lang:'<description>'>\"><lang:'<title>'></hover>]"
-    challenge:
-      format: "<color:#834eff>🌠 <fcolor:2><display_name> <fcolor:1>завершил испытание <advancement>"
-      tag: "<color:#834eff>[<hover:show_text:\"<color:#834eff><lang:'<title>'> <br><lang:'<description>'>\"><lang:'<title>'></hover>]"
+    format_task: "<fcolor:1>🌠 <display_name> получил достижение «<advancement>»"
+    format_goal: "<fcolor:1>🌠 <display_name> достиг цели «<advancement>»"
+    format_challenge: "<fcolor:1>🌠 <display_name> завершил испытание «<advancement>»"
+    format_taken: "<fcolor:1>🌠 <display_name> потерял достижение «<advancement>»"
+    tag:
+      task: "<color:#4eff52>[<hover:show_text:\"<color:#4eff52><advancement>\"><advancement></hover>]"
+      challenge: "<color:#834eff>[<hover:show_text:\"<color:#834eff><advancement>\"><advancement></hover>]"
     revoke:
-      many-to-one: "<fcolor:1>🌠 Отозвано <fcolor:2><number> <fcolor:1>достижений у игрока <display_name>"
-      one-to-one: "<fcolor:1>🌠 Отозвано достижение <fcolor:2><advancement> <fcolor:1>у игрока <display_name>"
+      many_to_one: "<fcolor:1>🌠 Отозвано <fcolor:2><advancements> <fcolor:1>достижений у игрока <target>"
+      one_to_many: "<fcolor:1>🌠 Достижение «<advancement>» отозвано у <fcolor:2><players> <fcolor:1>игрокам"
+      many_to_many: "<fcolor:1>🌠 Отозвано <fcolor:2><advancements> <fcolor:1>достижений у <fcolor:2><players> <fcolor:1>игроков"
+      one_to_one: "<fcolor:1>🌠 Отозвано достижение «<advancement>» у игрока <target>"
+      criterion_to_many: "<fcolor:1>🌠 Отозвано условие «<fcolor:2><criterion><fcolor:1>» достижения <advancement> у <fcolor:2><players> <fcolor:1>игроков"
+      criterion_to_one: "<fcolor:1>🌠 Отозвано условие «<fcolor:2><criterion><fcolor:1>» достижения <advancement> у игрока <target>"
     grant:
-      many-to-one: "<fcolor:1>🌠 Выдано <fcolor:2><number> <fcolor:1>достижений игроку <display_name>"
-      one-to-one: "<fcolor:1>🌠 Достижение <fcolor:2><advancement> <fcolor:1>выдано игроку <display_name>"
+      many_to_one: "<fcolor:1>🌠 Выдано <fcolor:2><advancements> <fcolor:1>достижений игроку <target>"
+      one_to_many: "<fcolor:1>🌠 Достижение «<advancement>» выдано <fcolor:2><players> <fcolor:1>игрокам"
+      many_to_many: "<fcolor:1>🌠 Выдано <fcolor:2><advancements> <fcolor:1>достижений <fcolor:2><players> <fcolor:1>игрокам"
+      one_to_one: "<fcolor:1>🌠 Достижение «<advancement>» выдано игроку <target>"
+      criterion_to_many: "<fcolor:1>🌠 Условие «<fcolor:2><criterion><fcolor:1>» достижения <advancement> зачтено <fcolor:2><players> <fcolor:1>игрокам"
+      criterion_to_one: "<fcolor:1>🌠 Условие «<fcolor:2><criterion><fcolor:1>» достижения <advancement> зачтено игроку <target>"
 #endregion advancement
 #region afk
   afk:
     suffix: " <color:#FFFF00>⌚</color>"
-    format-true:
+    format_true:
       global: "<gradient:#ffd500:#FFFF00>⌚ <player> отошёл"
       local: "<gradient:#ffd500:#FFFF00>⌚ Ты отошёл от игры"
-    format-false:
+    format_false:
       global: "<gradient:#ffd500:#FFFF00>⌚ <player> вернулся"
       local: "<gradient:#ffd500:#FFFF00>⌚ Ты вернулся в игру"
 #endregion afk
+#region attribute
+  attribute:
+    base_value:
+      get: "<fcolor:1>❤ Базовое значение атрибута «<fcolor:2><lang:'<attribute>'><fcolor:1>» у сущности <target> равно <fcolor:2><value>"
+      reset: "<fcolor:1>❤ Базовое значение атрибута «<fcolor:2><lang:'<attribute>'><fcolor:1>» у сущности <target> возвращено к <fcolor:2><value>"
+      set: "<fcolor:1>❤ Базовое значение атрибута «<fcolor:2><lang:'<attribute>'><fcolor:1>» у сущности <target> изменено на <fcolor:2><value>"
+    modifier:
+      add: "<fcolor:1>❤ Добавлен модификатор <fcolor:2><modifier> <fcolor:1>к атрибуту «<fcolor:2><lang:'<attribute>'><fcolor:1>» у сущности <target>"
+      remove: "<fcolor:1>❤ Удалён модификатор <fcolor:2><modifier> <fcolor:1>с атрибута «<fcolor:2><lang:'<attribute>'><fcolor:1>» у сущности <target>"
+      value_get: "<fcolor:1>❤ Значение модификатора <fcolor:2><modifier> <fcolor:1>атрибута «<fcolor:2><lang:'<attribute>'><fcolor:1>» у сущности <target> равно <fcolor:2><value>"
+    value_get: "<fcolor:1>❤ Значение атрибута «<fcolor:2><lang:'<attribute>'><fcolor:1>» у сущности <target> равно <fcolor:2><value>"
+#endregion attribute
 #region auto
   auto:
     types:
       announcement:
-        - "<br><fcolor:1>   ✉ Заходи в телеграм ✉ <br><fcolor:2>    <u><click:open_url:\"https://t.me/flectone\"><hover:show_text:\"<fcolor:2>https://t.me/flectone\">https://t.me/flectone</hover></click></u><br>"
-        - "<br><fcolor:1>⚡ Поддержи <fcolor:2>FlectonePulse <fcolor:1>на Boosty <br><fcolor:1>⚡ <u><click:open_url:\"https://boosty.to/thefaser/\"><hover:show_text:\"<fcolor:2>https://boosty.to/thefaser/\">https://boosty.to/thefaser/</hover></click></u><br>"
-        - "<br><fcolor:1>      ❝ Заходи в дискорд ❠<br><fcolor:2>    <u><click:open_url:\"https://discord.flectone.net\"><hover:show_text:\"<fcolor:2>https://discord.flectone.net\">https://discord.flectone.net</hover></click></u><br>"
-        - "<br><fcolor:1>◇ Сервер использует <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
+      - "<br><fcolor:1>◇ Сервер использует <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
+      - "<br><fcolor:1>      ❝ Заходи в дискорд ❠<br><fcolor:2>    <u><click:open_url:\"https://discord.flectone.net\"><hover:show_text:\"<fcolor:2>https://discord.flectone.net\">https://discord.flectone.net</hover></click></u><br>"
+      - "<br><fcolor:1>⚡ Поддержи <fcolor:2>FlectonePulse <fcolor:1>на Boosty <br><fcolor:1>⚡ <u><click:open_url:\"https://boosty.to/thefaser/\"><hover:show_text:\"<fcolor:2>https://boosty.to/thefaser/\">https://boosty.to/thefaser/</hover></click></u><br>"
+      - "<br><fcolor:1>   ✉ Заходи в телеграм ✉ <br><fcolor:2>    <u><click:open_url:\"https://t.me/flectone\"><hover:show_text:\"<fcolor:2>https://t.me/flectone\">https://t.me/flectone</hover></click></u><br>"
 #endregion auto
 #region bed
   bed:
-    no-sleep: "<fcolor:1>🛌 Вы можете спать только ночью или во время грозы"
-    not-safe: "<fcolor:1>🛌 Вы не можете уснуть, пока рядом есть монстры"
+    no_sleep: "<fcolor:1>🛌 Вы можете спать только ночью или во время грозы"
+    not_safe: "<fcolor:1>🛌 Вы не можете уснуть, пока рядом есть монстры"
     obstructed: "<fcolor:1>🛌 Эта кровать заблокирована"
     occupied: "<fcolor:1>🛌 Эта кровать занята"
-    too-far-away: "<fcolor:1>🛌 Вы не можете уснуть, кровать слишком далеко"
+    too_far_away: "<fcolor:1>🛌 Вы не можете уснуть, кровать слишком далеко"
 #endregion bed
 #region brand
   brand:
     values:
-      - "<white>Майнкрафт"
-      - "<aqua>Майнкрафт"
+    - "<white>Майнкрафт"
+    - "<aqua>Майнкрафт"
 #endregion brand
 #region bubble
   bubble:
@@ -602,138 +612,216 @@ message:
 #endregion bubble
 #region chat
   chat:
-    null-chat: "<color:#ff7171><b>⁉</b> На сервер выключен чат"
-    null-receiver: "<color:#ff7171><b>⁉</b> Тебя никто не услышал"
+    null_chat: "<color:#ff7171><b>⁉</b> На сервер выключен чат"
+    null_receiver: "<color:#ff7171><b>⁉</b> Тебя никто не услышал"
     types:
-      local: "<delete><display_name><fcolor:3>: <message><reset><translate>"
       global: "<delete><display_name> <world_prefix>»<fcolor:4> <message><reset><translate>"
+      local: "<delete><display_name><fcolor:3>: <message><reset><translate>"
 #endregion chat
 #region clear
   clear:
-    single: "<fcolor:1>🌊 Удалено <fcolor:2><number> <fcolor:1>предметов у игрока <display_name>"
-    multiple: "<fcolor:1>🌊 Удалено <fcolor:2><number> <fcolor:1>предметов у <fcolor:2><count> <fcolor:1>игроков"
+    single: "<fcolor:1>🌊 Удалено <fcolor:2><items> <fcolor:1>предметов у игрока <target>"
+    multiple: "<fcolor:1>🌊 Удалено <fcolor:2><items> <fcolor:1>предметов у <fcolor:2><players> <fcolor:1>игроков"
 #endregion clear
+#region clone
+  clone:
+    format: "<fcolor:1>⏹ Успешно скопировано <fcolor:2><blocks> <fcolor:1>блоков"
+#endregion clone
+#region commandblock
+  commandblock:
+    not_enabled: "<fcolor:1>🤖 На этом сервере командные блоки отключены"
+    format: "<fcolor:1>🤖 Команда задана: <fcolor:2><command>"
+#endregion commandblock
+#region damage
+  damage:
+    format: "<fcolor:1>🗡 Нанесено <fcolor:2><amount> <fcolor:1>урона <target>"
+#endregion damage
 #region death
   death:
-    killer-player: "<display_name>"
-    killer-entity: "<display_name>"
     types:
-      death.attack.anvil: "<color:#778899>🪦 <fcolor:1><display_name> раздавлен упавшей наковальней"
-      death.attack.anvil.player: "<color:#778899>🪦 <fcolor:1><display_name> был раздавлен упавшей наковальней, пока боролся с <killer>"
-      death.attack.arrow: "<color:#778899>🪦 <fcolor:1><display_name> застрелен <killer>"
-      death.attack.arrow.item: "<color:#778899>🪦 <fcolor:1><display_name> застрелен <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.badRespawnPoint.message: "<color:#778899>🪦 <fcolor:1><display_name> стал жертвой <fcolor:2>[<click:open_url:\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"><hover:show_text:\"<fcolor:2>MCPE-28723\">жестоких правил игры</hover></click>]"
-      death.attack.cactus: "<color:#778899>🪦 <fcolor:1><display_name> исколот до смерти"
-      death.attack.cactus.player: "<color:#778899>🪦 <fcolor:1><display_name> наткнулся на кактус, спасаясь от <killer>"
-      death.attack.cramming: "<color:#778899>🪦 <fcolor:1><display_name> расплющен в лепёшку"
-      death.attack.cramming.player: "<color:#778899>🪦 <fcolor:1><display_name> расплющен <killer>"
-      death.attack.dragonBreath: "<color:#778899>🪦 <fcolor:1><display_name> испепелён дыханием дракона"
-      death.attack.dragonBreath.player: "<color:#778899>🪦 <fcolor:1><display_name> сварился заживо в драконьем дыхании из-за <killer>"
-      death.attack.drown: "<color:#778899>🪦 <fcolor:1><display_name> утонул"
-      death.attack.drown.player: "<color:#778899>🪦 <fcolor:1><display_name> утонул, спасаясь от <killer>"
-      death.attack.dryout: "<color:#778899>🪦 <fcolor:1><display_name> умер от обезвоживания"
-      death.attack.dryout.player: "<color:#778899>🪦 <fcolor:1><display_name> умер от обезвоживания, спасаясь от <killer>"
-      death.attack.even_more_magic: "<color:#778899>🪦 <fcolor:1><display_name> был убит неизведанной магией"
-      death.attack.explosion: "<color:#778899>🪦 <fcolor:1><display_name> взорвался"
-      death.attack.explosion.player: "<color:#778899>🪦 <fcolor:1><display_name> был взорван <killer>"
-      death.attack.explosion.item: "<color:#778899>🪦 <fcolor:1><display_name> был взорван <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.explosion.player.item: "<color:#778899>🪦 <fcolor:1><display_name> был взорван <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.fall: "<color:#778899>🪦 <fcolor:1><display_name> разбился вдребезги"
-      death.attack.fall.player: "<color:#778899>🪦 <fcolor:1><display_name> разбился вдребезги, спасаясь от <killer>"
-      death.attack.fallingBlock: "<color:#778899>🪦 <fcolor:1><display_name> раздавлен упавшим блоком"
-      death.attack.fallingBlock.player: "<color:#778899>🪦 <fcolor:1><display_name> был раздавлен упавшим блоком, пока боролся с <killer>"
-      death.attack.fallingStalactite: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён обрушившимся сталактитом"
-      death.attack.fallingStalactite.player: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён обрушившимся сталактитом, пока боролся с <killer>"
-      death.attack.fireball: "<color:#778899>🪦 <fcolor:1><display_name> убит файерболом <killer>"
-      death.attack.fireball.item: "<color:#778899>🪦 <fcolor:1><display_name> убит файерболом <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.fireworks: "<color:#778899>🪦 <fcolor:1><display_name> с треском разлетелся"
-      death.attack.fireworks.item: "<color:#778899>🪦 <fcolor:1><display_name> с треском разлетелся из-за фейерверка <killer>, выпущенного из <fcolor:2>[<i><by_item></i>]"
-      death.attack.fireworks.player: "<color:#778899>🪦 <fcolor:1><display_name> с треском разлетелся, пока боролся с <killer>"
-      death.attack.flyIntoWall: "<color:#778899>🪦 <fcolor:1><display_name> преобразовал кинетическую энергию во внутреннюю"
-      death.attack.flyIntoWall.player: "<color:#778899>🪦 <fcolor:1><display_name> преобразовал кинетическую энергию во внутреннюю, спасаясь от <killer>"
-      death.attack.freeze: "<color:#778899>🪦 <fcolor:1><display_name> замёрз насмерть"
-      death.attack.freeze.player: "<color:#778899>🪦 <fcolor:1><display_name> замёрз насмерть благодаря <killer>"
-      death.attack.generic: "<color:#778899>🪦 <fcolor:1><display_name> умер"
-      death.attack.generic.player: "<color:#778899>🪦 <fcolor:1><display_name> умер из-за <killer>"
-      death.attack.genericKill: "<color:#778899>🪦 <fcolor:1><display_name> убит"
-      death.attack.genericKill.player: "<color:#778899>🪦 <fcolor:1><display_name> был убит, сражаясь с <killer>"
-      death.attack.hotFloor: "<color:#778899>🪦 <fcolor:1><display_name> обнаружил, что пол — это лава"
-      death.attack.hotFloor.player: "<color:#778899>🪦 <fcolor:1><display_name> зашёл в опасную зону из-за <killer>"
-      death.attack.indirectMagic: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer> с помощью магии"
-      death.attack.indirectMagic.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.inFire: "<color:#778899>🪦 <fcolor:1><display_name> умер в огне"
-      death.attack.inFire.player: "<color:#778899>🪦 <fcolor:1><display_name> сгорел в огне, пока боролся с <killer>"
-      death.attack.inWall: "<color:#778899>🪦 <fcolor:1><display_name> погребён заживо"
-      death.attack.inWall.player: "<color:#778899>🪦 <fcolor:1><display_name> был погребён заживо, пока боролся с <killer>"
-      death.attack.lava: "<color:#778899>🪦 <fcolor:1><display_name> решил поплавать в лаве"
-      death.attack.lava.player: "<color:#778899>🪦 <fcolor:1><display_name> упал в лаву, убегая от <killer>"
-      death.attack.lightningBolt: "<color:#778899>🪦 <fcolor:1><display_name> был поражён молнией"
-      death.attack.lightningBolt.player: "<color:#778899>🪦 <fcolor:1><display_name> был поражён молнией, пока боролся с <killer>"
-      death.attack.mace_smash: "<color:#778899>🪦 <fcolor:1><display_name> был сокрушён <killer>"
-      death.attack.mace_smash.item: "<color:#778899>🪦 <fcolor:1><display_name> был сокрушён <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.magic: "<color:#778899>🪦 <fcolor:1><display_name> был убит магией"
-      death.attack.magic.player: "<color:#778899>🪦 <fcolor:1><display_name> был убит магией, убегая от <killer>"
-      death.attack.mob: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer>"
-      death.attack.mob.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.onFire: "<color:#778899>🪦 <fcolor:1><display_name> сгорел заживо"
-      death.attack.onFire.item: "<color:#778899>🪦 <fcolor:1><display_name> был сожжён дотла, пока боролся с <killer>, держащим <fcolor:2>[<i><by_item></i>]"
-      death.attack.onFire.player: "<color:#778899>🪦 <fcolor:1><display_name> был сожжён дотла, пока боролся с <killer>"
-      death.attack.outOfWorld: "<color:#778899>🪦 <fcolor:1><display_name> выпал из мира"
-      death.attack.outOfWorld.player: "<color:#778899>🪦 <fcolor:1><display_name> не захотел жить в том же мире, что и <killer>"
-      death.attack.outsideBorder: "<color:#778899>🪦 <fcolor:1><display_name> покинул пределы этого мира"
-      death.attack.outsideBorder.player: "<color:#778899>🪦 <fcolor:1><display_name> покинул пределы этого мира, пока боролся с <killer>"
-      death.attack.player: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer>"
-      death.attack.player.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.sonic_boom: "<color:#778899>🪦 <fcolor:1><display_name> был уничтожен звуковым зарядом"
-      death.attack.sonic_boom.item: "<color:#778899>🪦 <fcolor:1><display_name> был уничтожен звуковым зарядом, спасаясь от <killer>, держащего <fcolor:2>[<i><by_item></i>]"
-      death.attack.sonic_boom.player: "<color:#778899>🪦 <fcolor:1><display_name> был уничтожен звуковым зарядом, спасаясь от <killer>"
-      death.attack.stalagmite: "<color:#778899>🪦 <fcolor:1><display_name> пронзён сталагмитом"
-      death.attack.stalagmite.player: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён сталагмитом, пока боролся с <killer>"
-      death.attack.starve: "<color:#778899>🪦 <fcolor:1><display_name> умер от голода"
-      death.attack.starve.player: "<color:#778899>🪦 <fcolor:1><display_name> умер от голода, пока боролся с <killer>"
-      death.attack.sting: "<color:#778899>🪦 <fcolor:1><display_name> изжален до смерти"
-      death.attack.sting.item: "<color:#778899>🪦 <fcolor:1><display_name> был изжален до смерти <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.sting.player: "<color:#778899>🪦 <fcolor:1><display_name> изжален до смерти <killer>"
-      death.attack.sweetBerryBush: "<color:#778899>🪦 <fcolor:1><display_name> искололся до смерти в кустах сладких ягод"
-      death.attack.sweetBerryBush.player: "<color:#778899>🪦 <fcolor:1><display_name> искололся до смерти в кустах сладких ягод, спасаясь от <killer>"
-      death.attack.thorns: "<color:#778899>🪦 <fcolor:1><display_name> был убит, пытаясь навредить <killer>"
-      death.attack.thorns.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <fcolor:2>[<i><by_item></i>]<fcolor:1>, пытаясь навредить <killer>"
-      death.attack.thrown: "<color:#778899>🪦 <fcolor:1><display_name> был избит <killer>"
-      death.attack.thrown.item: "<color:#778899>🪦 <fcolor:1><display_name> был избит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.trident: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён <killer>"
-      death.attack.trident.item: "<color:#778899>🪦 <fcolor:1><display_name> пронзён <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.attack.wither: "<color:#778899>🪦 <fcolor:1><display_name> иссушён"
-      death.attack.wither.player: "<color:#778899>🪦 <fcolor:1><display_name> был иссушён, пока боролся с <killer>"
-      death.attack.witherSkull: "<color:#778899>🪦 <fcolor:1><display_name> был поражён черепом из <killer>"
-      death.attack.witherSkull.item: "<color:#778899>🪦 <fcolor:1><display_name> был поражён черепом из <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.fell.accident.generic: "<color:#778899>🪦 <fcolor:1><display_name> разбился насмерть"
-      death.fell.accident.ladder: "<color:#778899>🪦 <fcolor:1><display_name> свалился с лестницы"
-      death.fell.accident.other_climbable: "<color:#778899>🪦 <fcolor:1><display_name> сорвался"
-      death.fell.accident.scaffolding: "<color:#778899>🪦 <fcolor:1><display_name> сорвался с подмосток"
-      death.fell.accident.twisting_vines: "<color:#778899>🪦 <fcolor:1><display_name> сорвался с вьющейся лозы"
-      death.fell.accident.vines: "<color:#778899>🪦 <fcolor:1><display_name> сорвался с лианы"
-      death.fell.accident.weeping_vines: "<color:#778899>🪦 <fcolor:1><display_name> сорвался с плакучей лозы"
-      death.fell.assist: "<color:#778899>🪦 <fcolor:1><display_name> свалился благодаря <killer>"
-      death.fell.assist.item: "<color:#778899>🪦 <fcolor:1><display_name> был обречён на падение <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.fell.finish: "<color:#778899>🪦 <fcolor:1><display_name> упал с высоты и был добит <killer>"
-      death.fell.finish.item: "<color:#778899>🪦 <fcolor:1><display_name> упал с высоты и был добит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
-      death.fell.killer: "<color:#778899>🪦 <fcolor:1><display_name> был обречён на падение"
+      death.attack.anvil: "<fcolor:1>☠ <target> раздавлен упавшей наковальней"
+      death.attack.anvil.player: "<fcolor:1>☠ <target> был раздавлен упавшей наковальней, пока боролся с <killer>"
+      death.attack.arrow: "<fcolor:1>☠ <target> застрелен <killer>"
+      death.attack.arrow.item: "<fcolor:1>☠ <target> застрелен <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.badRespawnPoint.message: "<fcolor:1>☠ <target> стал жертвой <fcolor:2>[<click:open_url:\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"><hover:show_text:\"<fcolor:2>MCPE-28723\">жестоких правил игры</hover></click>]"
+      death.attack.cactus: "<fcolor:1>☠ <target> исколот до смерти"
+      death.attack.cactus.player: "<fcolor:1>☠ <target> наткнулся на кактус, спасаясь от <killer>"
+      death.attack.cramming: "<fcolor:1>☠ <target> расплющен в лепёшку"
+      death.attack.cramming.player: "<fcolor:1>☠ <target> расплющен <killer>"
+      death.attack.dragonBreath: "<fcolor:1>☠ <target> испепелён дыханием дракона"
+      death.attack.dragonBreath.player: "<fcolor:1>☠ <target> сварился заживо в драконьем дыхании из-за <killer>"
+      death.attack.drown: "<fcolor:1>☠ <target> утонул"
+      death.attack.drown.player: "<fcolor:1>☠ <target> утонул, спасаясь от <killer>"
+      death.attack.dryout: "<fcolor:1>☠ <target> умер от обезвоживания"
+      death.attack.dryout.player: "<fcolor:1>☠ <target> умер от обезвоживания, спасаясь от <killer>"
+      death.attack.even_more_magic: "<fcolor:1>☠ <target> был убит неизведанной магией"
+      death.attack.explosion: "<fcolor:1>☠ <target> взорвался"
+      death.attack.explosion.player: "<fcolor:1>☠ <target> был взорван <killer>"
+      death.attack.explosion.item: "<fcolor:1>☠ <target> был взорван <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.explosion.player.item: "<fcolor:1>☠ <target> был взорван <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.fall: "<fcolor:1>☠ <target> разбился вдребезги"
+      death.attack.fall.player: "<fcolor:1>☠ <target> разбился вдребезги, спасаясь от <killer>"
+      death.attack.fallingBlock: "<fcolor:1>☠ <target> раздавлен упавшим блоком"
+      death.attack.fallingBlock.player: "<fcolor:1>☠ <target> был раздавлен упавшим блоком, пока боролся с <killer>"
+      death.attack.fallingStalactite: "<fcolor:1>☠ <target> был пронзён обрушившимся сталактитом"
+      death.attack.fallingStalactite.player: "<fcolor:1>☠ <target> был пронзён обрушившимся сталактитом, пока боролся с <killer>"
+      death.attack.fireball: "<fcolor:1>☠ <target> убит файерболом <killer>"
+      death.attack.fireball.item: "<fcolor:1>☠ <target> убит файерболом <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.fireworks: "<fcolor:1>☠ <target> с треском разлетелся"
+      death.attack.fireworks.item: "<fcolor:1>☠ <target> с треском разлетелся из-за фейерверка <killer>, выпущенного из <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.fireworks.player: "<fcolor:1>☠ <target> с треском разлетелся, пока боролся с <killer>"
+      death.attack.flyIntoWall: "<fcolor:1>☠ <target> преобразовал кинетическую энергию во внутреннюю"
+      death.attack.flyIntoWall.player: "<fcolor:1>☠ <target> преобразовал кинетическую энергию во внутреннюю, спасаясь от <killer>"
+      death.attack.freeze: "<fcolor:1>☠ <target> замёрз насмерть"
+      death.attack.freeze.player: "<fcolor:1>☠ <target> замёрз насмерть благодаря <killer>"
+      death.attack.generic: "<fcolor:1>☠ <target> умер"
+      death.attack.generic.player: "<fcolor:1>☠ <target> умер из-за <killer>"
+      death.attack.genericKill: "<fcolor:1>☠ <target> убит"
+      death.attack.genericKill.player: "<fcolor:1>☠ <target> был убит, сражаясь с <killer>"
+      death.attack.hotFloor: "<fcolor:1>☠ <target> обнаружил, что пол — это лава"
+      death.attack.hotFloor.player: "<fcolor:1>☠ <target> зашёл в опасную зону из-за <killer>"
+      death.attack.inFire: "<fcolor:1>☠ <target> умер в огне"
+      death.attack.inFire.player: "<fcolor:1>☠ <target> сгорел в огне, пока боролся с <killer>"
+      death.attack.inWall: "<fcolor:1>☠ <target> погребён заживо"
+      death.attack.inWall.player: "<fcolor:1>☠ <target> был погребён заживо, пока боролся с <killer>"
+      death.attack.indirectMagic: "<fcolor:1>☠ <target> был убит <killer> с помощью магии"
+      death.attack.indirectMagic.item: "<fcolor:1>☠ <target> был убит <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.lava: "<fcolor:1>☠ <target> решил поплавать в лаве"
+      death.attack.lava.player: "<fcolor:1>☠ <target> упал в лаву, убегая от <killer>"
+      death.attack.lightningBolt: "<fcolor:1>☠ <target> был поражён молнией"
+      death.attack.lightningBolt.player: "<fcolor:1>☠ <target> был поражён молнией, пока боролся с <killer>"
+      death.attack.mace_smash: "<fcolor:1>☠ <target> был сокрушён <killer>"
+      death.attack.mace_smash.item: "<fcolor:1>☠ <target> был сокрушён <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.magic: "<fcolor:1>☠ <target> был убит магией"
+      death.attack.magic.player: "<fcolor:1>☠ <target> был убит магией, убегая от <killer>"
+      death.attack.mob: "<fcolor:1>☠ <target> был убит <killer>"
+      death.attack.mob.item: "<fcolor:1>☠ <target> был убит <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.onFire: "<fcolor:1>☠ <target> сгорел заживо"
+      death.attack.onFire.item: "<fcolor:1>☠ <target> был сожжён дотла, пока боролся с <killer>, держащим <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.onFire.player: "<fcolor:1>☠ <target> был сожжён дотла, пока боролся с <killer>"
+      death.attack.outOfWorld: "<fcolor:1>☠ <target> выпал из мира"
+      death.attack.outOfWorld.player: "<fcolor:1>☠ <target> не захотел жить в том же мире, что и <killer>"
+      death.attack.outsideBorder: "<fcolor:1>☠ <target> покинул пределы этого мира"
+      death.attack.outsideBorder.player: "<fcolor:1>☠ <target> покинул пределы этого мира, пока боролся с <killer>"
+      death.attack.player: "<fcolor:1>☠ <target> был убит <killer>"
+      death.attack.player.item: "<fcolor:1>☠ <target> был убит <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.sonic_boom: "<fcolor:1>☠ <target> был уничтожен звуковым зарядом"
+      death.attack.sonic_boom.item: "<fcolor:1>☠ <target> был уничтожен звуковым зарядом, спасаясь от <killer>, держащего <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.sonic_boom.player: "<fcolor:1>☠ <target> был уничтожен звуковым зарядом, спасаясь от <killer>"
+      death.attack.stalagmite: "<fcolor:1>☠ <target> пронзён сталагмитом"
+      death.attack.stalagmite.player: "<fcolor:1>☠ <target> был пронзён сталагмитом, пока боролся с <killer>"
+      death.attack.starve: "<fcolor:1>☠ <target> умер от голода"
+      death.attack.starve.player: "<fcolor:1>☠ <target> умер от голода, пока боролся с <killer>"
+      death.attack.sting: "<fcolor:1>☠ <target> изжален до смерти"
+      death.attack.sting.item: "<fcolor:1>☠ <target> был изжален до смерти <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.sting.player: "<fcolor:1>☠ <target> изжален до смерти <killer>"
+      death.attack.sweetBerryBush: "<fcolor:1>☠ <target> искололся до смерти в кустах сладких ягод"
+      death.attack.sweetBerryBush.player: "<fcolor:1>☠ <target> искололся до смерти в кустах сладких ягод, спасаясь от <killer>"
+      death.attack.thorns: "<fcolor:1>☠ <target> был убит, пытаясь навредить <killer>"
+      death.attack.thorns.item: "<fcolor:1>☠ <target> был убит <fcolor:2>[<killer_item>]<fcolor:1>, пытаясь навредить <killer>"
+      death.attack.thrown: "<fcolor:1>☠ <target> был избит <killer>"
+      death.attack.thrown.item: "<fcolor:1>☠ <target> был избит <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.trident: "<fcolor:1>☠ <target> был пронзён <killer>"
+      death.attack.trident.item: "<fcolor:1>☠ <target> пронзён <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.attack.wither: "<fcolor:1>☠ <target> иссушён"
+      death.attack.wither.player: "<fcolor:1>☠ <target> был иссушён, пока боролся с <killer>"
+      death.attack.witherSkull: "<fcolor:1>☠ <target> был поражён черепом из <killer>"
+      death.attack.witherSkull.item: "<fcolor:1>☠ <target> был поражён черепом из <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.fell.accident.generic: "<fcolor:1>☠ <target> разбился насмерть"
+      death.fell.accident.ladder: "<fcolor:1>☠ <target> свалился с лестницы"
+      death.fell.accident.other_climbable: "<fcolor:1>☠ <target> сорвался"
+      death.fell.accident.scaffolding: "<fcolor:1>☠ <target> сорвался с подмосток"
+      death.fell.accident.twisting_vines: "<fcolor:1>☠ <target> сорвался с вьющейся лозы"
+      death.fell.accident.vines: "<fcolor:1>☠ <target> сорвался с лианы"
+      death.fell.accident.weeping_vines: "<fcolor:1>☠ <target> сорвался с плакучей лозы"
+      death.fell.assist: "<fcolor:1>☠ <target> свалился благодаря <killer>"
+      death.fell.assist.item: "<fcolor:1>☠ <target> был обречён на падение <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.fell.finish: "<fcolor:1>☠ <target> упал с высоты и был добит <killer>"
+      death.fell.finish.item: "<fcolor:1>☠ <target> упал с высоты и был добит <killer> с помощью <fcolor:2>[<killer_item>]<fcolor:1>"
+      death.fell.killer: "<fcolor:1>☠ <target> был обречён на падение"
 #endregion death
+#region debugstick
+  debugstick:
+    empty: "<fcolor:1>🔧 Свойства объекта <fcolor:2><property> <fcolor:1>не заданы"
+    select: "<fcolor:1>🔧 выбрано «<fcolor:2><property><fcolor:1>» (<fcolor:2><value><fcolor:1>)"
+    update: "<fcolor:1>🔧 «<fcolor:2><property><fcolor:1>»: <fcolor:2><value>"
+#endregion debugstick
 #region deop
   deop:
-    format: "<fcolor:1>🤖 <display_name> больше не является оператором сервера"
+    format: "<fcolor:1>🤖 <target> больше не является оператором сервера"
 #endregion deop
+#region dialog
+  dialog:
+    clear:
+      single: "<fcolor:1>🗔 Убран диалог у игрока «<target>»"
+      multiple: "<fcolor:1>🗔 Убран диалог у <fcolor:2><players> <fcolor:1>игроков"
+    show:
+      single: "<fcolor:1>🗔 Отображён диалог игроку «<target>»"
+      multiple: "<fcolor:1>🗔 Отображён диалог <fcolor:2><players> <fcolor:1>игрокам"
+#endregion dialog
+#region difficulty
+  difficulty:
+    query: "<fcolor:1>⚔ Сложность игры: <fcolor:2><lang:'<difficulty>'>"
+    success: "<fcolor:1>⚔ Установлена сложность игры: <fcolor:2><lang:'<difficulty>'>"
+#endregion difficulty
+#region effect
+  effect:
+    clear:
+      everything:
+        single: "<fcolor:1>⚗ Убраны все эффекты с <target>"
+        multiple: "<fcolor:1>⚗ Убраны все эффекты с <fcolor:2><players> <fcolor:1>целей"
+      specific:
+        single: "<fcolor:1>⚗ Убран эффект «<fcolor:2><lang:'<effect>'><fcolor:1>» с <target>"
+        multiple: "<fcolor:1>⚗ Убран эффект «<fcolor:2><lang:'<effect>'><fcolor:1>» с <fcolor:2><players> <fcolor:1>целей"
+    give:
+      single: "<fcolor:1>⚗ Применён эффект «<fcolor:2><lang:'<effect>'><fcolor:1>» к <target>"
+      multiple: "<fcolor:1>⚗ Применён эффект <fcolor:2><lang:'<effect>'><fcolor:1>» к <fcolor:2><players> <fcolor:1>целям"
+#endregion effect
 #region enchant
   enchant:
-    single: "<fcolor:1>📖 Наложены чары «<fcolor:2><lang:'<enchant>'> <lang:'<level>'><fcolor:1>» на предмет <display_name>"
-    multiple: "<fcolor:1>📖 Наложены чары «<fcolor:2><lang:'<enchant>'> <lang:'<level>'><fcolor:1>» на предмет <fcolor:2><count><fcolor:1> сущностей"
+    single: "<fcolor:1>📖 Наложены чары «<fcolor:2><enchantment><fcolor:1>» на предмет <target>"
+    multiple: "<fcolor:1>📖 Наложены чары «<fcolor:2><enchantment><fcolor:1>» на предмет <fcolor:2><players><fcolor:1> сущностей"
 #endregion enchant
+#region execute
+  execute:
+    pass: "<fcolor:1>⚡ Условие выполнено"
+    pass_count: "<fcolor:1>⚡ Условие выполнено; счётчик: <fcolor:2><count>"
+#endregion execute
+#region experience
+  experience:
+    add:
+      levels:
+        single: "<fcolor:1>⏺ Выдано <fcolor:2><amount> <fcolor:1>уровней игроку <target>"
+        multiple: "<fcolor:1>⏺ Выдано <fcolor:2><amount> <fcolor:1>уровней <fcolor:2><players> <fcolor:1>игрокам"
+      points:
+        single: "<fcolor:1>⏺ Выдано <fcolor:2><amount> <fcolor:1>единиц опыта игроку <target>"
+        multiple: "<fcolor:1>⏺ Выдано <fcolor:2><amount> <fcolor:1>единиц опыта <fcolor:2><players> <fcolor:1>игрокам"
+    query:
+      levels: "<fcolor:1>⏺ <target> имеет <fcolor:2><amount> <fcolor:1>уровней"
+      points: "<fcolor:1>⏺ <target> имеет <fcolor:2><amount> <fcolor:1>ед. опыта"
+    set:
+      levels:
+        single: "<fcolor:1>⏺ Установлено <fcolor:2><amount> <fcolor:1>уровней игроку <target>"
+        multiple: "<fcolor:1>⏺ Установлено <fcolor:2><amount> <fcolor:1>уровней <fcolor:2><players> <fcolor:1>игрокам"
+      points:
+        single: "<fcolor:1>⏺ Установлено <fcolor:2><amount> <fcolor:1>единиц опыта игроку <target>"
+        multiple: "<fcolor:1>⏺ Установлено <fcolor:2><amount> <fcolor:1>единиц опыта <fcolor:2><players> <fcolor:1>игрокам"
+#endregion experience
+#region fill
+  fill:
+    format: "<fcolor:1>⏹ Успешно заполнено <fcolor:2><blocks> <fcolor:1>блоков"
+#endregion fill
+#region fillbiome
+  fillbiome:
+    format: "<fcolor:1>⏹ Заменены биомы между точками <fcolor:2><x1><fcolor:1>, <fcolor:2><y1><fcolor:1>, <fcolor:2><z1> <fcolor:1>и <fcolor:2><x2><fcolor:1>, <fcolor:2><y2><fcolor:1>, <fcolor:2><z2>"
+    format_count: "<fcolor:1>⏹ Биом был заменён у <fcolor:2><blocks> <fcolor:1>блоков между точками <fcolor:2><x1><fcolor:1>, <fcolor:2><y1><fcolor:1>, <fcolor:2><z1> <fcolor:1>и <fcolor:2><x2><fcolor:1>, <fcolor:2><y2><fcolor:1>, <fcolor:2><z2>"
+#endregion fillbiome
 #region format
   format:
 #endregion format
 #region replacement
     replacement:
-      spoiler-symbol: "█"
+      spoiler_symbol: "█"
       values:
         smile: "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
         big_smile: "<click:suggest_command:\":D\"><hover:show_text:\":D\">☻</hover></click>"
@@ -757,10 +845,10 @@ message:
         online: "<fcolor:2><online>"
         coords: "<fcolor:2><x> <y> <z>"
         stats: "<color:#ff7171><hp>♥</color> <color:#3de0d8><armor>🛡 <color:#e33059><attack>🗡 <color:#4eff52><exp>⏺ <color:#f0a01f><food>🍖"
-        skin: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2><pixels>\"><fcolor:2><u>👨 Скин</u></hover></click>"
+        skin: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2><pixels>\"><fcolor:2><u>👨 Skin</u></hover></click>"
         item: "<fcolor:2>[<message_1>]"
-        url: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2>Открыть ссылку <br><u><message_1>\"><fcolor:2><u>🗗 Ссылка</u></hover></click>"
-        image: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2><pixels>\"><fcolor:2><u>🖃 Картинка</u></hover></click>"
+        url: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2>Open url <br><u><message_1>\"><fcolor:2><u>🗗 Url</u></hover></click>"
+        image: "<click:open_url:\"<message_1>\"><hover:show_text:\"<fcolor:2><pixels>\"><fcolor:2><u>🖃 Image</u></hover></click>"
         spoiler: "<hover:show_text:\"<fcolor:2><message_1>\"><fcolor:2><symbols></hover>"
         bold: "<b><message_1></b>"
         italic: "<i><message_1></i>"
@@ -790,15 +878,15 @@ message:
         symbol: "❤"
 #endregion swear
 #region name_
-    name-:
+    name_:
       constant: ""
       display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Написать <player>\"><vault_prefix><stream_prefix><fcolor:2><player><afk_suffix><vault_suffix></hover></click>"
-      entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:'<name>'> <br><fcolor:1>Тип <fcolor:2><lang:'<type>'> <br><fcolor:1>Айди <fcolor:2><uuid>\"><lang:'<name>'></hover>"
+      entity: "<fcolor:2><hover:show_text:\"<fcolor:2><name> <br><fcolor:1>Тип <fcolor:2><lang:'<type>'> <br><fcolor:1>Айди <fcolor:2><uuid>\"><name></hover>"
       unknown: "<fcolor:2><name>"
       invisible: "<fcolor:2>👻 Невидимка"
 #endregion name_
 #region questionanswer
-    question-answer:
+    question_answer:
       questions:
         server: "<fcolor:2>[Вопрос-Ответ] @<player><fcolor:1>, это ванильный сервер в Майнкрафте!"
         flectone: "<fcolor:2>[Вопрос-Ответ] @<player><fcolor:1>, это бренд и проекты созданные TheFaser'ом"
@@ -809,9 +897,20 @@ message:
 #endregion translate
 #region gamemode
   gamemode:
-    format-self: "<fcolor:1>🗘 Твой режим игры изменён на <fcolor:2><lang:gameMode.<gamemode>>"
-    format-other: "<fcolor:1>🗘 Режим игры игрока <display_name> изменён на <fcolor:2><lang:gameMode.<gamemode>>"
+    set_default: "<fcolor:1>🗘 Новый режим игры по умолчанию: <fcolor:2><lang:'<gamemode>'>"
+    self: "<fcolor:1>🗘 Твой режим игры изменён на <fcolor:2><lang:'<gamemode>'>"
+    other: "<fcolor:1>🗘 Режим игры игрока <target> изменён на <fcolor:2><lang:'<gamemode>'>"
 #endregion gamemode
+#region gamerule
+  gamerule:
+    query: "<fcolor:1>🗐 Значение игрового правила <fcolor:2><gamerule><fcolor:1>: <fcolor:2><value>"
+    set: "<fcolor:1>🗐 Установлено значение игрового правила <fcolor:2><gamerule><fcolor:1>: <fcolor:2><value>"
+#endregion gamerule
+#region give
+  give:
+    single: "<fcolor:1>⛏ Выдано <fcolor:2><items> <fcolor:1>[<fcolor:2><hover:show_text:\"<fcolor:2><give_item>\"><give_item></hover><fcolor:1>] игроку <target>"
+    multiple: "<fcolor:1>⛏ Выдано <fcolor:2><items> <fcolor:1>[<fcolor:2><hover:show_text:\"<fcolor:2><give_item>\"><give_item></hover><fcolor:1>] <fcolor:2><players> <fcolor:1>игрокам"
+#endregion give
 #region greeting
   greeting:
     format: "<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]  <fcolor:1>Привет,<br>[#][#][#][#][#][#][#][#]  <player><br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>"
@@ -819,13 +918,19 @@ message:
 #region join
   join:
     format: "<color:#4eff52>→ <display_name>"
-    format-first-time: "<color:#4eff52>→ <display_name> <fcolor:1>впервые тут!"
+    format_first_time: "<color:#4eff52>→ <display_name> <fcolor:1>впервые тут!"
 #endregion join
 #region kill
   kill:
-    single: "<color:#778899>🪦 <fcolor:1><display_name> убит"
-    multiple: "<color:#778899>🪦 <fcolor:1>Уничтожено <fcolor:2><count> <fcolor:1>сущностей"
+    single: "<fcolor:1>☠ <fcolor:1><target> был убит"
+    multiple: "<fcolor:1>☠ <fcolor:1>Уничтожено <fcolor:2><entities> <fcolor:1>сущностей"
 #endregion kill
+#region locate
+  locate:
+    biome: "<fcolor:1>🗺 Ближайший биом с типом <fcolor:2><value> <fcolor:1>находится по координатам <fcolor:2><hover:show_text:\"<fcolor:2>Нажми для телепортации\"><click:suggest_command:\"/tp @s <x> <y> <z>\">[<x>, <y>, <z>]</click></hover> <fcolor:1>(в <fcolor:2><blocks> <fcolor:1>блоках отсюда)"
+    poi: "<fcolor:1>🗺 Ближайшая точка интереса с типом <fcolor:2><value> <fcolor:1>находится по координатам <fcolor:2><fcolor:2><hover:show_text:\"<fcolor:2>Нажми для телепортации\"><click:suggest_command:\"/tp @s <x> <y> <z>\">[<x>, <y>, <z>]</click></hover> <fcolor:1>(в <fcolor:2><blocks> <fcolor:1>блоках отсюда)"
+    structure: "<fcolor:1>🗺 Ближайшее строение типа <fcolor:2><value> <fcolor:1>находится по координатам <fcolor:2><fcolor:2><hover:show_text:\"<fcolor:2>Нажми для телепортации\"><click:suggest_command:\"/tp @s <x> <y> <z>\">[<x>, <y>, <z>]</click></hover> <fcolor:1>(в <fcolor:2><blocks> <fcolor:1>блоках отсюда)"
+#endregion locate
 #region objective
   objective:
 #endregion objective
@@ -835,19 +940,52 @@ message:
 #endregion belowname
 #region op
   op:
-    format: "<fcolor:1>🤖 <display_name> назначен оператором сервера"
+    format: "<fcolor:1>🤖 <target> назначен оператором сервера"
 #endregion op
+#region particle
+  particle:
+    format: "<fcolor:1>❄ Отображена частица «<fcolor:2><particle><fcolor:1>»"
+#endregion particle
 #region quit
   quit:
     format: "<color:#ff4e4e>← <display_name>"
 #endregion quit
+#region recipe
+  recipe:
+    give:
+      single: "<fcolor:1>💡 Выдано <fcolor:2><recipes> <fcolor:1>рецептов игроку <target>"
+      multiple: "<fcolor:1>💡 Выдан(о) <fcolor:2><recipes> <fcolor:1>рецепт(ов) <fcolor:2><players> <fcolor:1>игрокам"
+    take:
+      single: "<fcolor:1>💡 Изъято <fcolor:2><recipes> <fcolor:1>рецептов у игрока <target>"
+      multiple: "<fcolor:1>💡 Изъято <fcolor:2><recipes> <fcolor:1>рецептов у <fcolor:2><players> <fcolor:1>игроков"
+#endregion recipe
+#region reload
+  reload:
+    format: "<fcolor:1>🛈 Перезагрузка!"
+#endregion reload
+#region ride
+  ride:
+    dismount: "<fcolor:1>🏇 <target> больше не сидит на <second_target>"
+    mount: "<fcolor:1>🏇 <target> теперь сидит на <second_target>"
+#endregion ride
 #region rightclick
   rightclick:
     format: "<fcolor:1>◁ <display_name> ▷"
 #endregion rightclick
+#region rotate
+  rotate:
+    format: "<fcolor:1>🤸 <target> повёрнут"
+#endregion rotate
+#region save
+  save:
+    disabled: "<fcolor:1>🛈 Автосохранение отключено"
+    enabled: "<fcolor:1>🛈 Автосохранение включено"
+    saving: "<fcolor:1>🛈 Сохранение мира (может занять некоторое время!)"
+    success: "<fcolor:1>🛈 Игра сохранена"
+#endregion save
 #region seed
   seed:
-    format: "<fcolor:1>🌐 Ключ генератора: [<fcolor:2><hover:show_text:'<fcolor:2>Нажми, чтобы скопировать в буфер обмена'><click:copy_to_clipboard:<seed>><seed></click>]"
+    format: "<fcolor:1>🔑 Ключ генератора: [<fcolor:2><hover:show_text:'<fcolor:2>Нажми, чтобы скопировать в буфер обмена'><click:copy_to_clipboard:<seed>><seed></click></hover><fcolor:1>]"
 #endregion seed
 #region setblock
   setblock:
@@ -856,27 +994,39 @@ message:
 #region sidebar
   sidebar:
     values:
-      - - "<fcolor:2>FlectonePulse"
-        - " "
-        - "<fcolor:2>ТПС <tps>"
-        - " "
-      - - "<fcolor:1>FlectonePulse"
-        - " "
-        - "<fcolor:1>Пинг <ping>"
-        - " "
+    - - " "
+      - "<fcolor:1>Пинг <ping>"
+      - " "
+      - "<fcolor:1>FlectonePulse"
+    - - " "
+      - "<fcolor:2>ТПС <tps>"
+      - " "
+      - "<fcolor:2>FlectonePulse"
 #endregion sidebar
 #region sleep
   sleep:
-    not-possible: "<fcolor:1>🛌 Никакой отдых не поможет пропустить эту ночь"
-    players-sleeping: "<fcolor:1>🛌 <fcolor:2><sleep_count> <fcolor:1>из <fcolor:2><all_count> <fcolor:1>игроков спят"
-    skipping-night: "<fcolor:1>🛌 Вы проспите всю ночь"
+    not_possible: "<fcolor:1>🛌 Никакой отдых не поможет пропустить эту ночь"
+    players_sleeping: "<fcolor:1>🛌 <fcolor:2><players_sleeping> <fcolor:1>из <fcolor:2><players> <fcolor:1>игроков спят"
+    skipping_night: "<fcolor:1>🛌 Вы проспите всю ночь"
 #endregion sleep
+#region sound
+  sound:
+    play:
+      multiple: "<fcolor:1>🔊 Воспроизведён звук «<fcolor:2><sound><fcolor:1>» <fcolor:2><players> <fcolor:1>игрокам"
+      single: "<fcolor:1>🔊 Воспроизведён звук «<fcolor:2><sound><fcolor:1>» игроку <target>"
+    stop:
+      source_any: "<fcolor:1>🔇 Отключены все звуки от источника «<fcolor:2><source><fcolor:1>»"
+      source_sound: "<fcolor:1>🔇 Отключён звук «<fcolor:2><sound><fcolor:1>» от источника «<fcolor:2><source><fcolor:1>»"
+      sourceless_any: "<fcolor:1>🔇 Отключены все звуки"
+      sourceless_sound: "<fcolor:1>🔇 Отключён звук «<fcolor:2><sound><fcolor:1>»"
+#endregion sound
 #region spawn
   spawn:
-    not-valid: "<fcolor:1>🛌 У вас нет кровати или заряженного якоря возрождения, либо доступ к ним затруднён"
+    not_valid: "<fcolor:1>🛌 У вас нет кровати или заряженного якоря возрождения, либо доступ к ним затруднён"
     set: "<fcolor:1>🛌 Точка возрождения установлена"
-    single: "<fcolor:1>🛌 Установлена точка возрождения <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1> [<fcolor:2><angle><fcolor:1>] в <fcolor:2><world> <fcolor:1>для <display_name>"
-    multiple: "<fcolor:1>🛌 Установлена точка возрождения <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1> [<fcolor:2><angle><fcolor:1>] в <fcolor:2><world> <fcolor:1>для <fcolor:2><count><fcolor:1> игроков"
+    set_world: "<fcolor:1>🛌 Установлена точка возрождения мира <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1> [<fcolor:2><angle><fcolor:1>]"
+    single: "<fcolor:1>🛌 Установлена точка возрождения <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1> [<fcolor:2><angle><fcolor:1>] в <fcolor:2><world> <fcolor:1>для <target>"
+    multiple: "<fcolor:1>🛌 Установлена точка возрождения <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1> [<fcolor:2><angle><fcolor:1>] в <fcolor:2><world> <fcolor:1>для <fcolor:2><players><fcolor:1> игроков"
 #endregion spawn
 #region status
   status:
@@ -884,51 +1034,93 @@ message:
 #region motd
     motd:
       values:
-        - "<fcolor:1>Добро пожаловать на сервер!"
-        - "<fcolor:1>Присоединяйся и наслаждайся уникальным опытом игры!"
-        - "<fcolor:1>У нас дружелюбное сообщество - будь вежлив и уважай других!"
-        - "<fcolor:1>Приятной игры! Если есть вопросы, обращайся к администрации"
+      - "<fcolor:1>Добро пожаловать на сервер!"
+      - "<fcolor:1>Присоединяйся и наслаждайся уникальным опытом игры!"
+      - "<fcolor:1>У нас дружелюбное сообщество - будь вежлив и уважай других!"
+      - "<fcolor:1>Приятной игры! Если есть вопросы, обращайся к администрации"
 #endregion motd
 #region players
     players:
       samples:
-        - name: "<players>"
-          id: null
+      - name: "<players>"
       full: "<color:#ff7171>Сервер полон"
 #endregion players
 #region version
     version:
       name: "Майнкрафт сервер"
 #endregion version
+#region stop
+  stop:
+    format: "<fcolor:1>🛈 Выключение сервера"
+#endregion stop
+#region summon
+  summon:
+    format: "<fcolor:1>🐺 Сущность «<target>» создана"
+#endregion summon
 #region tab
   tab:
 #endregion tab
 #region header
     header:
       lists:
-        - - " "
-          - "<fcolor:1>👾"
-          - " "
-        - - " "
-          - "<fcolor:1>❤"
-          - " "
+      - - " "
+        - "<fcolor:1>❤"
+        - " "
+      - - " "
+        - "<fcolor:1>👾"
+        - " "
 #endregion header
 #region footer
     footer:
       lists:
-        - - " "
-          - "<fcolor:1>ТПС <tps>, Онлайн <online>"
-          - " "
-        - - " "
-          - "<fcolor:1>Привет <fcolor:2><player><fcolor:1>!"
-          - " "
+      - - " "
+        - "<fcolor:1>Привет <fcolor:2><player><fcolor:1>!"
+        - " "
+      - - " "
+        - "<fcolor:1>ТПС <tps>, Онлайн <online>"
+        - " "
 #endregion footer
 #region playerlistname
     playerlistname:
       format: "<world_prefix>▋ <reset><vault_prefix><stream_prefix><fcolor:2><player><afk_suffix><vault_suffix>"
 #endregion playerlistname
+#region teleport
+  teleport:
+    entity:
+      single: "<fcolor:1>🌀 <target> телепортирован к <second_target>"
+      multiple: "<fcolor:1>🌀 <fcolor:2><entities> <fcolor:1>сущностей телепортированы к <second_target>"
+    location:
+      single: "<fcolor:1>🌀 <target> телепортирован в точку <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1>"
+      multiple: "<fcolor:1>🌀 <fcolor:2><entities> <fcolor:1>сущностей телепортированы в точку <fcolor:2><x><fcolor:1>, <fcolor:2><y><fcolor:1>, <fcolor:2><z><fcolor:1>"
+#endregion teleport
+#region time
+  time:
+    query: "<fcolor:1>☽ Время: <fcolor:2><time>"
+    set: "<fcolor:1>☽ Установлено время: <fcolor:2><time>"
+#endregion time
 #region update
   update:
-    format-player: "<fcolor:1><fcolor:2>(FlectonePulse) <fcolor:1>Твоя версия <fcolor:2><current_version> <fcolor:1>устарела! Обновись до <fcolor:2><latest_version> <fcolor:1>с помощью <url:https://modrinth.com/plugin/flectonepulse>, чтобы получить новые возможности!"
-    format-console: "<fcolor:1>Твоя версия <fcolor:2><current_version> <fcolor:1>устарела! Обновись до <fcolor:2><latest_version> <fcolor:1>с помощью <click:open_url:https://modrinth.com/plugin/flectonepulse>https://modrinth.com/plugin/flectonepulse"
+    format_player: "<fcolor:1><fcolor:2>(FlectonePulse) <fcolor:1>Твоя версия <fcolor:2><current_version> <fcolor:1>устарела! Обновись до <fcolor:2><latest_version> <fcolor:1>с помощью <url:https://modrinth.com/plugin/flectonepulse>, чтобы получить новые возможности!"
+    format_console: "<fcolor:1>Твоя версия <fcolor:2><current_version> <fcolor:1>устарела! Обновись до <fcolor:2><latest_version> <fcolor:1>с помощью <click:open_url:https://modrinth.com/plugin/flectonepulse>https://modrinth.com/plugin/flectonepulse"
 #endregion update
+#region weather
+  weather:
+    clear: "<fcolor:1>☀ Установлена <fcolor:2>ясная <fcolor:1>погода"
+    rain: "<fcolor:1>🌧 Установлена <fcolor:2>дождливая <fcolor:1>погода"
+    thunder: "<fcolor:1>⛈ Установлена <fcolor:2>грозовая <fcolor:1>погода"
+#endregion weather
+#region worldborder
+  worldborder:
+    center: "<fcolor:1>🚫 Установлен центр границ мира: <fcolor:2><value><fcolor:1>, <fcolor:2><second_value>"
+    damage:
+      amount: "<fcolor:1>🚫 Установлено значение урона, ежесекундно наносимого за границами мира: <fcolor:2><value> <fcolor:1>за блок"
+      buffer: "<fcolor:1>🚫 Установлен предел нанесения урона за границами мира: <fcolor:2><value> <fcolor:1>блоков"
+    get: "<fcolor:1>🚫 Ширина границы мира: <fcolor:2><value> <fcolor:1>блоков"
+    set:
+      grow: "<fcolor:1>🚫 Через <fcolor:2><second_value> <fcolor:1>секунд ширина границы мира увеличится до <fcolor:2><value> <fcolor:1>блоков"
+      immediate: "<fcolor:1>🚫 Установлена граница мира шириной <fcolor:2><value> <fcolor:1>блоков"
+      shrink: "<fcolor:1>🚫 Через <fcolor:2><second_value> <fcolor:1>секунд ширина границы мира уменьшится до <fcolor:2><value> <fcolor:1>блоков"
+    warning:
+      distance: "<fcolor:1>🚫 Установлено расстояние предупреждения о пересечении границы мира: <fcolor:2><value> <fcolor:1>блоков"
+      time: "<fcolor:1>🚫 Установлено время предупреждения о столкновении с границей мира: <fcolor:2><value> <fcolor:1>секунд"
+#endregion worldborder

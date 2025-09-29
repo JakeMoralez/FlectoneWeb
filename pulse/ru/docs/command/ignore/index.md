@@ -22,7 +22,7 @@ authors:
 <<< @/files/localizations/en_us.yml#ignore
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
@@ -38,11 +38,11 @@ authors:
 
 Сообщение, если отправитель игнорирует получателя
 
-### `format-true`
+### `format_true`
 
 Сообщение при успешном игнорировании
 
-### `format-false`
+### `format_false`
 
 Сообщение при снятии игнорирования
 

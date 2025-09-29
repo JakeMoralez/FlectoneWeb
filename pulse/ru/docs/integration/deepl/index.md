@@ -16,7 +16,7 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `auth-key`
+### `auth_key`
 
 Токен авторизации для Deepl
 

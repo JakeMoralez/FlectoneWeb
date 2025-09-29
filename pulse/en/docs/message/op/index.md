@@ -6,6 +6,8 @@ authors:
 
 # Op
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Message from the server when using `/op`
 ![op](/op.png)
 

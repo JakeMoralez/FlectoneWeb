@@ -29,7 +29,7 @@ authors:
 <<< @/files/localizations/en_us.yml#poll
 :::
 
-### `null-poll`
+### `null_poll`
 
 Сообщение, если голосование не найдено
 
@@ -41,11 +41,11 @@ authors:
 
 Сообщение, если игрок пытается проголосовать в голосовании ещё один раз
 
-### `vote-true`
+### `vote_true`
 
 Сообщение, если игрок проголосовал за какой-то вариант
 
-### `vote-false`
+### `vote_false`
 
 Сообщение, если игрок убрал свой голос
 
@@ -53,7 +53,7 @@ authors:
 
 Формат сообщения, которое будет отправлено
 
-### `answer-template`
+### `answer_template`
 
 Шаблон для каждого ответа
 
@@ -83,43 +83,43 @@ authors:
 
 Имя диалога
 
-#### `input-name`
+#### `input_name`
 
 Название для поля "название"
 
-#### `input-initial`
+#### `input_initial`
 
 Текст по умолчанию для поля "название"
 
-#### `multiple-name`
+#### `multiple_name`
 
 Название для поля-переключателя "разрешить несколько ответов"
 
-#### `end-time-name`
+#### `end_time_name`
 
 Название для поля с длительностью
 
-#### `repeat-time-name`
+#### `repeat_time_name`
 
 Название для поля с интервалом
 
-#### `new-answer-button-name`
+#### `new_answer_button_name`
 
 Название для кнопки, которая создаёт новый ответ
 
-#### `remove-answer-button-name`
+#### `remove_answer_button_name`
 
 Название для кнопки, которая удаляет последний ответ
 
-#### `input-answer-name`
+#### `input_answer_name`
 
 Название для нового поля с ответом
 
-#### `input-answers-initial`
+#### `input_answers_initial`
 
 Текст по умолчанию для поля с ответом
 
-#### `create-button-name`
+#### `create_button_name`
 
 Название для кнопки, которая создаёт голосование
 
@@ -134,7 +134,7 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `enable-gui`
+### `enable_gui`
 
 ::: warning ПРЕДУПРЕЖДЕНИЕ
 
@@ -146,7 +146,7 @@ authors:
 
 <!--@include: @/parts/range.md-->
 
-### `last-id`
+### `last_id`
 
 Последний номер созданного голосования
 

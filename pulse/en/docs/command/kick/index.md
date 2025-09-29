@@ -20,7 +20,7 @@ Command to kick a player from the server
 <<< @/files/localizations/en_us.yml#kick
 :::
 
-### `null-player`
+### `null_player`
 
 Message displayed if the entered player is not found
 

@@ -30,15 +30,15 @@ If you have the `other` permission, you can change other players' colors by addi
 <<< @/files/localizations/en_us.yml#chatcolor
 :::
 
-### `null-player`
+### `null_player`
 
 Message if the entered player is not found
 
-### `null-color`
+### `null_color`
 
 Message if the colors are entered incorrectly
 
-### `null-type`
+### `null_type`
 
 Message if the type is entered incorrectly
 

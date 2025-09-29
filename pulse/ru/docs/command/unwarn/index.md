@@ -19,11 +19,11 @@ authors:
 <<< @/files/localizations/en_us.yml#unwarn
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `not-warned`
+### `not_warned`
 
 Сообщение, если введённый игрок не имеет предупреждения
 

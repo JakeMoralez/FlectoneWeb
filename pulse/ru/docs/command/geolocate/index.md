@@ -19,11 +19,11 @@ authors:
 <<< @/files/localizations/en_us.yml#geolocate
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `null-or-error`
+### `null_or_error`
 
 Сообщение, если произошла ошибка при получении информации
 

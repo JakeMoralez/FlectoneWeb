@@ -5,6 +5,8 @@ authors:
 
 # Режим игры
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Сообщение от сервера, когда игрок изменил режим игры
 ![gamemode](/gamemode.png)
 
@@ -19,11 +21,11 @@ authors:
 <<< @/files/localizations/en_us.yml#gamemode
 :::
 
-### `format-self`
+### `format_self`
 
 Сообщение при смене режима игры самому себе или получателю, когда его режим изменён
 
-### `format-multiple`
+### `format_multiple`
 
 Сообщение при смене режима игры другому игроку
 

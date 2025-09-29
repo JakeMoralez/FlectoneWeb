@@ -19,7 +19,7 @@ authors:
 <<< @/files/localizations/en_us.yml#translateto
 :::
 
-### `null-or-error`
+### `null_or_error`
 
 Сообщение, если произошла ошибка при переводе
 

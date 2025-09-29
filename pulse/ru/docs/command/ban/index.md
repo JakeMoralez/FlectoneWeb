@@ -19,11 +19,11 @@ authors:
 <<< @/files/localizations/en_us.yml#ban
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `null-time`
+### `null_time`
 
 Сообщение, если введено невозможное время
 
@@ -48,7 +48,7 @@ random_kek: "Random reason"
 
 Сообщение для игрока
 
-### `connection-attempt`
+### `connection_attempt`
 
 Сообщение, если заблокированный игрок пытался подключиться
 
@@ -61,7 +61,7 @@ random_kek: "Random reason"
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/suggestOfflinePlayers.md-->
 
-### `show-connection-attempts`
+### `show_connection_attempts`
 
 Если включено, то будет показывать сообщение, что заблокированный игрок пытался подключиться
 ![command ban connect](/commandbanconnect.png)

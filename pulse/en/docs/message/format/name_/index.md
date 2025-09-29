@@ -60,7 +60,7 @@ Responsible for the player name when under invisibility
 
 <!--@include: @/parts/enable.md-->
 
-### `should-check-invisibility`
+### `should_check_invisibility`
 
 Whether to check if the player is under an invisibility potion effect. If enabled, the name `invisible` will be used
 

@@ -21,7 +21,7 @@ Integration with `MOTD` disables the [Status](/docs/message/status/) module in `
 
 <!--@include: @/parts/enable.md-->  
 
-### `disable-flectonepulse-status`
+### `disable_flectonepulse_status`
 Disables the [Status](/docs/message/status/) module
 
 [//]: # (permission.yml)

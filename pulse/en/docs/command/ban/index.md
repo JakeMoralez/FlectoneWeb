@@ -20,11 +20,11 @@ Command to ban a player
 <<< @/files/localizations/en_us.yml#ban
 :::
 
-### `null-player`
+### `null_player`
 
 Message if the entered player is not found
 
-### `null-time`
+### `null_time`
 
 Message if an invalid time is entered
 
@@ -49,7 +49,7 @@ Message for everyone
 
 Message for the player
 
-### `connection-attempt`
+### `connection_attempt`
 
 Message if a banned player tries to connect
 
@@ -62,7 +62,7 @@ Message if a banned player tries to connect
 <!--@include: @/parts/enable.md-->
 <!--@include: @/parts/suggestOfflinePlayers.md-->
 
-### `show-connection-attempts`
+### `show_connection_attempts`
 
 If enabled, it will show a message when a banned player tries to connect
 ![command ban connect](/commandbanconnect.png)

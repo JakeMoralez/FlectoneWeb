@@ -6,6 +6,8 @@ authors:
 
 # Bed
 
+<!--@include: @/parts/vanillaWarn.md#message-->
+
 Messages related to using a bed
 ![bed](/bed.png)
 
@@ -20,11 +22,11 @@ Messages related to using a bed
 <<< @/files/localizations/en_us.yml#bed
 :::
 
-### `no-sleep`
+### `no_sleep`
 
 Message displayed when sleeping is not allowed due to it being daytime
 
-### `not-safe`
+### `not_safe`
 
 Message displayed when sleeping is not allowed due to nearby monsters
 
@@ -36,7 +38,7 @@ Message displayed when the bed is obstructed by blocks
 
 Message displayed when the bed is occupied by someone else
 
-### `too-far-away`
+### `too_far_away`
 
 Message displayed when the bed is too far away
 

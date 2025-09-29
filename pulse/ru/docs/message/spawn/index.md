@@ -5,6 +5,8 @@ authors:
 
 # Спавн
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Сообщения связанные с точкой возрождения игрока
 ![spawnpoint](/spawnpoint.png)
 
@@ -19,7 +21,7 @@ authors:
 <<< @/files/localizations/en_us.yml#spawn
 :::
 
-### `not-valid`
+### `not_valid`
 
 Сообщение при возрождении, когда прошлая точка возрождения не доступна
 

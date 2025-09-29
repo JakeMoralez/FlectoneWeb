@@ -18,15 +18,15 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `end-dot`
+### `end_dot`
 
 Будет ли в конце сообщения добавлена точка, если её нет
 
-### `first-letter-uppercase`
+### `first_letter_uppercase`
 
 Будет ли первая буква в сообщении всегда заглавной
 
-### `non-dot-symbols`
+### `non_dot_symbols`
 
 Список символов (могут быть и слова), после которых не нужно ставить точку
 

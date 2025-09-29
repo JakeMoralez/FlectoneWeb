@@ -23,7 +23,7 @@ Usage: `<fcolor:number>`
 
 <!--@include: @/parts/enable.md-->
 
-### `default-colors`
+### `default_colors`
 
 List of all default colors used. Each number represents a specific color. By default:
 - `<fcolor:1>` - primary color

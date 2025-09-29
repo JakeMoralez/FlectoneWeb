@@ -19,15 +19,15 @@ The module formats the player's message so that the first letter is capitalized,
 
 <!--@include: @/parts/enable.md-->
 
-### `end-dot`
+### `end_dot`
 
 Determines whether a period will be added at the end of the message if there isn't one
 
-### `first-letter-uppercase`
+### `first_letter_uppercase`
 
 Determines whether the first letter of the message will always be uppercase
 
-### `non-dot-symbols`
+### `non_dot_symbols`
 
 A list of symbols (can also be words) after which a period should not be added
 

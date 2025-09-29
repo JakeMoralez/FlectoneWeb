@@ -5,6 +5,8 @@ authors:
 
 # Сетблок
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Сообщение от сервера при использовании `/setblock`
 ![setblock](/setblock.png)
 

@@ -61,7 +61,7 @@ display: "<constant>"
 
 <!--@include: @/parts/enable.md-->
 
-### `should-check-invisibility`
+### `should_check_invisibility`
 
 Нужно ли проверять, что игрок под зельем невидимости. Если да, то будет использовано имя `invisible`
 

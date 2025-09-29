@@ -1,6 +1,6 @@
 ### `range`
 
-How far in blocks the message will be displayed
+::: details How far in blocks the message will be displayed
 
 | Value                                            | Explanation                                                                                                                                                     |
 |--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -10,3 +10,5 @@ How far in blocks the message will be displayed
 | `SERVER`                                         | The message will be sent to all players on the server                                                                                                           |
 | `PLAYER`                                         | The message will only be sent to the sender                                                                                                                     |
 | Any number greater than `0` (e.g., `range: 100`) | The message will be sent to players whose distance from the sender is **less** than this number. Players must also be in the same world as the sender           |
+
+:::

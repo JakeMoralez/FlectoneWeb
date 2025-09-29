@@ -5,6 +5,8 @@ authors:
 
 # Зачарование
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Сообщение от сервера при использовании `/enchant`
 ![enchant](/enchant.png)
 

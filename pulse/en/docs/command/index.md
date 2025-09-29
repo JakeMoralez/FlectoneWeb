@@ -27,19 +27,19 @@ Category responsible for configuring all commands
 
 Message if an error occurs during command execution
 
-#### `parse-unknown`
+#### `parse_unknown`
 
 Message if an unknown argument is entered
 
-#### `parse-boolean`
+#### `parse_boolean`
 
 Message if a `boolean` argument is expected
 
-#### `parse-number`
+#### `parse_number`
 
 Message if a `number` argument is expected
 
-#### `parse-string`
+#### `parse_string`
 
 Message if a `string` argument is expected
 
@@ -94,11 +94,11 @@ Prompt for commands where an ID is entered
 
 Prompt for commands where time is entered
 
-#### `repeat-time`
+#### `repeat_time`
 
 Prompt for commands where repeat time is entered
 
-#### `multiple-vote`
+#### `multiple_vote`
 
 Prompt for commands where multiple voting is asked
 

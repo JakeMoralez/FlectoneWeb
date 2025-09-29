@@ -63,7 +63,7 @@ Used to replace triggers with specific values
 <<< @/files/localizations/en_us.yml#replacement
 :::
 
-### `spoiler-symbol`
+### `spoiler_symbol`
 
 Character that will replace each letter in words marked as `spoiler`
 

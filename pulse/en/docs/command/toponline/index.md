@@ -19,7 +19,7 @@ Command to view the top players by playing time
 <<< @/files/localizations/en_us.yml#toponline
 :::
 
-### `null-page`
+### `null_page`
 
 Message when the specified page does not exist
 

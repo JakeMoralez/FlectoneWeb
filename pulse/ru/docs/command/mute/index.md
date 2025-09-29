@@ -19,11 +19,11 @@ authors:
 <<< @/files/localizations/en_us.yml#mute
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `null-time`
+### `null_time`
 
 Сообщение, если введено невозможное время
 

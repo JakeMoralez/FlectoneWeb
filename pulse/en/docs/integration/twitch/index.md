@@ -43,18 +43,18 @@ There are also placeholders that WILL DEFINITELY be replaced in any message
 
 Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work
 
-### `for-minecraft`
+### `for_minecraft`
 - By default `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
 
 The format of the message that will be sent from Twitch to Minecraft
 
-### `message-channel`
+### `message_channel`
 
 A list of messages with the format of the final message
 
 ::: tip IF YOU WANT TO ADD ANOTHER MESSAGE:
 1. Take the name from the list of `message types`
-2. Insert into `message-channel`
+2. Insert into `message_channel`
 ```yaml
 message_name: "<final_message>"
 ```
@@ -74,7 +74,7 @@ message_name: "<final_message>"
 - After enabling, it is **RECOMMENDED** to restart the server, otherwise, the plugin might cause freezing
   :::
 
-### `client-id`
+### `client_id`
 
 [User identifier](https://twitchtokengenerator.com/). You can use environment variables, for example `${VALUE}`
 ![client id](/twitchclientid.png)
@@ -84,7 +84,7 @@ message_name: "<final_message>"
 [User token](https://twitchtokengenerator.com/) for connecting. You can use environment variables, for example `${VALUE}`
 ![token](/twitchtoken.png)
 
-### `message-channel`
+### `message_channel`
 
 A list of message types and Twitch channel names
 
@@ -100,7 +100,7 @@ message-channel:
 There can be any number of channels, as long as the connected account has access to them
 :::
 
-### `follow-channel`
+### `follow_channel`
 
 A list where the key is the channel name, and the value is a list of commands to be executed when the stream starts
 

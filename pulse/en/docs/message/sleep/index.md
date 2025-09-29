@@ -6,6 +6,8 @@ authors:
 
 # Sleep
 
+<!--@include: @/parts/vanillaWarn.md#message-->
+
 Messages related to sleeping
 ![sleep](/sleep.png)
 
@@ -20,15 +22,15 @@ Messages related to sleeping
 <<< @/files/localizations/en_us.yml#sleep
 :::
 
-### `not-possible`
+### `not_possible`
 
 Message displayed when skipping the night is not possible
 
-### `players-sleeping`
+### `players_sleeping`
 
 Message displayed when there are not enough players to skip the night
 
-### `skipping-night`
+### `skipping_night`
 
 Message displayed when skipping the night
 

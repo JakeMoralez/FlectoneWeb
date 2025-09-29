@@ -19,15 +19,15 @@ authors:
 <<< @/files/localizations/en_us.yml#rockpaperscissors
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `null-game`
+### `null_game`
 
 Сообщение, если игры не существует
 
-### `wrong-move`
+### `wrong_move`
 
 Сообщение при невозможном ходе
 
@@ -47,15 +47,15 @@ authors:
 
 Сообщение для получателя
 
-### `format-move`
+### `format_move`
 
 Сообщение при ходе
 
-### `format-win`
+### `format_win`
 
 Сообщение при победе
 
-### `forma-draw`
+### `forma_draw`
 
 Сообщение при ничье
 

@@ -20,11 +20,11 @@ Command to unban a player
 <<< @/files/localizations/en_us.yml#unban
 :::
 
-### `null-player`
+### `null_player`
 
 Message when the player cannot be found
 
-### `not-banned`
+### `not_banned`
 
 Message when the player is not banned
 

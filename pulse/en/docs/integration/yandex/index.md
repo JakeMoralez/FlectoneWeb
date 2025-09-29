@@ -19,9 +19,9 @@ Integration with Yandex allows translating messages from one language to another
 
 ### `token`
 
-Authorization token for Yandex [`iam-token`](https://yandex.cloud/ru/docs/translate/api-ref/authentication)
+Authorization token for Yandex [`iam_token`](https://yandex.cloud/ru/docs/translate/api-ref/authentication)
 
-### `folder-id`
+### `folder_id`
 
 Folder ID with access
 

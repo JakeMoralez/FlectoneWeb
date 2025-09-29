@@ -18,7 +18,7 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `tab-sort`
+### `tab_sort`
 
 Включает или выключает сортировку в ТАБе по [весу группы](https://luckperms.net/wiki/Weight)
 

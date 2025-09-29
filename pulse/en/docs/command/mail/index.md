@@ -26,7 +26,7 @@ If the player is already on the server and the [Tell](/docs/command/tell/) modul
 <<< @/files/localizations/en_us.yml#mail
 :::
 
-### `null-player`
+### `null_player`
 
 Message displayed if the entered player is not found
 

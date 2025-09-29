@@ -25,7 +25,7 @@ authors:
 <<< @/files/localizations/en_us.yml#mail
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 

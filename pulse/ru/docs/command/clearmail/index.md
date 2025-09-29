@@ -19,7 +19,7 @@ authors:
 <<< @/files/localizations/en_us.yml#clearmail
 :::
 
-### `null-mail`
+### `null_mail`
 
 Сообщение, если введённое письмо не найдено
 

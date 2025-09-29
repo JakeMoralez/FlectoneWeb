@@ -21,11 +21,11 @@ A module responsible for messages sent by players in chat
 <<< @/files/localizations/en_us.yml#chat  
 :::  
 
-### `null-chat`  
+### `null_chat`  
 
 Message if nothing was sent to chat  
 
-### `null-receiver`  
+### `null_receiver`  
 
 Message if no one saw the player's message  
 
@@ -58,7 +58,7 @@ If you need another plugin to see chat messages, set `mode: "BUKKIT"`. In rare c
 
 :::
 
-### `event-priority`
+### `event_priority`
 
 The priority of a chat message event. Change this value if there is a conflict with other plugins that also use the chat
 
@@ -100,7 +100,7 @@ chat_name:
 
 Enables chat functionality  
 
-### `null-recipient`
+### `null_recipient`
 
 ![null recipient](/nullrecipient.png)
 

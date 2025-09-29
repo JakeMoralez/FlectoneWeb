@@ -23,7 +23,7 @@ Can be used for notes if you type your own username
 <<< @/files/localizations/en_us.yml#tell
 :::
 
-### `null-player`
+### `null_player`
 
 Message if the entered player is not found
 

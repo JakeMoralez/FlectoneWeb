@@ -19,7 +19,7 @@ authors:
 <<< @/files/localizations/en_us.yml#kick
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 

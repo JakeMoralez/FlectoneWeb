@@ -25,7 +25,7 @@ authors:
 <<< @/files/localizations/en_us.yml#deletemessage
 :::
 
-### `null-message`
+### `null_message`
 
 Сообщение, если при удалении сообщения не существует
 

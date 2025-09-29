@@ -24,11 +24,11 @@ Command to view the list of muted players
 
 Message when the list of muted players is empty
 
-### `null-page`
+### `null_page`
 
 Message when the specified page does not exist
 
-### `null-player`
+### `null_player`
 
 Message when the specified player is not found
 

@@ -6,6 +6,8 @@ authors:
 
 # Gamemode
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Message from the server when a player changes their game mode  
 ![gamemode](/gamemode.png)
 
@@ -20,11 +22,11 @@ Message from the server when a player changes their game mode
 <<< @/files/localizations/en_us.yml#gamemode
 :::
 
-### `format-self`
+### `format_self`
 
 Message when changing your own game mode or the recipient’s game mode has been changed
 
-### `format-multiple`
+### `format_multiple`
 
 Message when changing the game mode of another player
 

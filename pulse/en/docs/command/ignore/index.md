@@ -23,7 +23,7 @@ The ignore can be removed by using the command again
 <<< @/files/localizations/en_us.yml#ignore
 :::
 
-### `null-player`
+### `null_player`
 
 Message displayed if the entered player is not found
 
@@ -39,11 +39,11 @@ Message displayed if the recipient is ignoring the sender
 
 Message displayed if the sender is ignoring the recipient
 
-### `format-true`
+### `format_true`
 
 Message displayed when the player successfully ignores another player
 
-### `format-false`
+### `format_false`
 
 Message displayed when the player removes the ignore
 

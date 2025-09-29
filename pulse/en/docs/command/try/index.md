@@ -20,11 +20,11 @@ Command to attempt an action with a random chance of success
 <<< @/files/localizations/en_us.yml#try
 :::
 
-### `format-true`
+### `format_true`
 
 Format for the message that will be sent if the action succeeds
 
-### `format-false`
+### `format_false`
 
 Format for the message that will be sent if the action fails
 

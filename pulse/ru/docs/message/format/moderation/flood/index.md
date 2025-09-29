@@ -17,15 +17,15 @@ authors:
 
 <!--@include: @/parts/enable.md-->  
 
-### `trim-to-single`
+### `trim_to_single`
 
-Заменять ли ВЕСЬ флуд на одну букву/слово или просто сокращать до лимита `max-repeated-symbols`/`max-repeated-words`
+Заменять ли ВЕСЬ флуд на одну букву/слово или просто сокращать до лимита `max_repeated_symbols`/`max_repeated_words`
 
-### `max-repeated-symbols`
+### `max_repeated_symbols`
 
 Максимальное количество одинаковых букв подряд
 
-### `max-repeated-words`
+### `max_repeated_words`
 
 Максимальное количество одинаковых слов подряд
 

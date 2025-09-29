@@ -10,7 +10,7 @@ authors:
 
 [//]: # (localization)
 <!--@include: @/parts/words.md#localization--> 
-<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.question-answer`
+<!--@include: @/parts/words.md#path--> `localizations → язык.yml → message.format.question_answer`
 
 <!--@include: @/parts/words.md#default--> 
 
@@ -47,7 +47,7 @@ authors:
 
 [//]: # (permission.yml)
 <!--@include: @/parts/words.md#permission-->
-<!--@include: @/parts/words.md#path--> `permission.yml → message.format.question-answer`
+<!--@include: @/parts/words.md#path--> `permission.yml → message.format.question_answer`
 
 <!--@include: @/parts/words.md#default-->
 <<< @/files/permission.yml#questionanswer

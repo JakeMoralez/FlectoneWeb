@@ -8,7 +8,7 @@ authors:
 Категория, отвечающая за сообщения в ТАБе
 
 ::: warning ВАЖНО
-Чтобы ТАБ сортировался в зависимости от донатной группы, включи [`tab-sort`](/docs/integration/luckperms/#tab-sort)
+Чтобы ТАБ сортировался в зависимости от донатной группы, включи [`tab_sort`](/docs/integration/luckperms/#tab-sort)
 :::
 
 [//]: # (message.yml)

@@ -20,7 +20,7 @@ Command to translate a message from one language to another
 <<< @/files/localizations/en_us.yml#translateto
 :::
 
-### `null-or-error`
+### `null_or_error`
 
 Message if there was an error during translation
 

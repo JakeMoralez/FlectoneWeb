@@ -19,7 +19,7 @@ Integration with LuckPerms allows:
 
 <!--@include: @/parts/enable.md-->
 
-### `tab-sort`
+### `tab_sort`
 
 Enables or disables sorting in TAB by [group weight](https://luckperms.net/wiki/Weight)
 

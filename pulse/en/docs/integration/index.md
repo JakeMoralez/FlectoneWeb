@@ -17,11 +17,11 @@ Category responsible for configuring all integrations
 
 <!--@include: @/parts/enable.md-->
 
-### `avatar-api-url`
+### `avatar_api_url`
 
 API URL for fetching a player's head avatar. Final URL will look like this: https://mc-heads.net/avatar/59c987a2-4ef3-48e5-a291-00abe9ca8f12/8.png
 
-### `body-api-url`
+### `body_api_url`
 
 API URL for fetching a player's full body skin. Final URL will look like this: https://mc-heads.net/player/59c987a2-4ef3-48e5-a291-00abe9ca8f12/8.png
 

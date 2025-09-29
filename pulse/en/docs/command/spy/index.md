@@ -20,15 +20,15 @@ Command to track player actions
 <<< @/files/localizations/en_us.yml#spy
 :::
 
-### `format-true`
+### `format_true`
 
 Message when spying is enabled
 
-### `format-false`
+### `format_false`
 
 Message when spying is disabled
 
-### `format-log`
+### `format_log`
 
 Message format that will be sent during the tracking of an action
 

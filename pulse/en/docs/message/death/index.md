@@ -6,6 +6,8 @@ authors:
 
 # Death 
 
+<!--@include: @/parts/vanillaWarn.md#message-->
+
 A message from the server when a player dies
 ![death server](/deathserver.png)  
 ![death player](/deathplayer.png)
@@ -21,11 +23,11 @@ A message from the server when a player dies
 <<< @/files/localizations/en_us.yml#death
 :::
 
-### `killer-player`
+### `killer_player`
 
 Message that replaces the `<killer>` tag when the killer is a player
 
-### `killer-entity`
+### `killer_entity`
 
 Message that replaces the `<killer>` tag when the killer is a mob/entity
 

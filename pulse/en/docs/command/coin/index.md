@@ -32,7 +32,7 @@ Name of the other side of the coin
 
 Format of the message to be sent
 
-### `format-draw`
+### `format_draw`
 
 Message if the coin lands on its edge
 

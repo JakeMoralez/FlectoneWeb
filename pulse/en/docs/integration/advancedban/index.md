@@ -21,16 +21,16 @@ It's better to manually disable these commands in `command.yml`, as they may not
 
 <!--@include: @/parts/enable.md-->  
 
-### `disable-flectonepulse-ban`
+### `disable_flectonepulse_ban`
 Disables the `/ban`, `/banlist`, and `/unban` commands in `FlectonePulse`
 
-### `disable-flectonepulse-mute`
+### `disable_flectonepulse_mute`
 Disables the `/mute`, `/mutelist`, and `/unmute` commands in `FlectonePulse`
 
-### `disable-flectonepulse-warn`
+### `disable_flectonepulse_warn`
 Disables the `/warn`, `/warnlist`, and `/unwarn` commands in `FlectonePulse`
 
-### `disable-flectonepulse-kick`
+### `disable_flectonepulse_kick`
 Disables the `/kick` command in `FlectonePulse`
 
 [//]: # (permission.yml)

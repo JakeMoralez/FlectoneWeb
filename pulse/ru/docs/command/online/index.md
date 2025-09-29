@@ -19,23 +19,23 @@ authors:
 <<< @/files/localizations/en_us.yml#online
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `format-current`
+### `format_current`
 
 Сообщение, если введённый игрок на сервере
 
-### `format-first`
+### `format_first`
 
 Формат сообщения `/online first`, которое будет отправлено
 
-### `format-last`
+### `format_last`
 
 Формат сообщения `/online last`, которое будет отправлено
 
-### `format-total`
+### `format_total`
 
 Формат сообщения `/online total`, которое будет отправлено
 

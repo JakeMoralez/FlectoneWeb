@@ -19,11 +19,11 @@ Notification about a new `FlectonePulse` version release. Only sent to admins an
 <<< @/files/localizations/en_us.yml#update
 :::
 
-### `format-player`
+### `format_player`
 
 The message displayed to admin players
 
-### `format-console`
+### `format_console`
 
 The message displayed in the console
 

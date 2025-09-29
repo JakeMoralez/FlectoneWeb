@@ -20,11 +20,11 @@ Command to give a warning to a player
 <<< @/files/localizations/en_us.yml#warn
 :::
 
-### `null-player`
+### `null_player`
 
 Message when the player cannot be found
 
-### `null-time`
+### `null_time`
 
 Message when an invalid time is entered
 

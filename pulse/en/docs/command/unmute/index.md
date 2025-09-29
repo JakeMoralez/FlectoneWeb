@@ -20,11 +20,11 @@ Command to unmute a player
 <<< @/files/localizations/en_us.yml#unmute
 :::
 
-### `null-player`
+### `null_player`
 
 Message when the player cannot be found
 
-### `not-muted`
+### `not_muted`
 
 Message when the player is not muted
 

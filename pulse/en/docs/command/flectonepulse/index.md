@@ -26,19 +26,19 @@ On older versions (1.9 and 1.10 for sure) it was noticed that players might get 
 <<< @/files/localizations/en_us.yml#flectonepulse
 :::
 
-### `format-false`
+### `format_false`
 
 Message displayed when an error occurs
 
-### `format-true`
+### `format_true`
 
 Message format sent when `FlectonePulse` is fully reloaded
 
-### `format-web-starting`
+### `format_web_starting`
 
 Message format sent when the web server starts
 
-### `format-editor`
+### `format_editor`
 
 Message format sent when the web server has successfully started
 

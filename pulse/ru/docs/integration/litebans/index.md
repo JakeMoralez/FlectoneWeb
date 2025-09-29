@@ -20,19 +20,19 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `disable-flectonepulse-ban`
+### `disable_flectonepulse_ban`
 
 Выключает команды `/ban`, `/banlist` и `/unban` в `FlectonePulse`
 
-### `disable-flectonepulse-mute`
+### `disable_flectonepulse_mute`
 
 Выключает команды `/mute`, `/mutelist` и `/unmute` в `FlectonePulse`
 
-### `disable-flectonepulse-warn`
+### `disable_flectonepulse_warn`
 
 Выключает команды `/warn`, `/warnlist` и `/unwarn` в `FlectonePulse`
 
-### `disable-flectonepulse-kick`
+### `disable_flectonepulse_kick`
 
 Выключает команды `/kick` в `FlectonePulse`
 

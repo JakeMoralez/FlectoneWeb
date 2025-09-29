@@ -31,23 +31,23 @@ Message if a player who is already streaming tries to start another stream
 
 Message if a player who is not streaming tries to end the stream
 
-### `prefix-true`
+### `prefix_true`
 
 Prefix for a player who is currently streaming
 
-### `prefix-false`
+### `prefix_false`
 
 Prefix for a player who has permission to stream but is not streaming at the moment
 
-### `url-tag`
+### `url_tag`
 
 Format for each link in the notification
 
-### `format-start`
+### `format_start`
 
 Notification when a stream starts
 
-### `format-end`
+### `format_end`
 
 Message when a player ends their stream
 

@@ -5,6 +5,8 @@ authors:
 
 # Смерть
 
+<!--@include: @/parts/vanillaWarn.md#message-->
+
 Сообщение от сервера, когда игрок умирает
 ![death server](/deathserver.png)  
 ![death player](/deathplayer.png)
@@ -20,11 +22,11 @@ authors:
 <<< @/files/localizations/en_us.yml#death
 :::
 
-### `killer-player`
+### `killer_player`
 
 Сообщение, которое заменяет тег `<killer>`, если убийца является игроком
 
-### `killer-entity`
+### `killer_entity`
 
 Сообщение, которое заменяет тег `<killer>`, если убийца является мобом
 

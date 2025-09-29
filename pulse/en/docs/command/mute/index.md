@@ -20,11 +20,11 @@ Command to mute a player
 <<< @/files/localizations/en_us.yml#mute
 :::
 
-### `null-player`
+### `null_player`
 
 Message when the specified player is not found
 
-### `null-time`
+### `null_time`
 
 Message when the time provided is invalid
 

@@ -23,7 +23,7 @@ From the assistant's perspective
 <<< @/files/localizations/en_us.yml#helper
 :::
 
-### `null-helper`
+### `null_helper`
 
 Message displayed if no one on the server is available to help
 
@@ -44,7 +44,7 @@ Message for the player
 
 <!--@include: @/parts/enable.md-->
 
-### `null-helper`
+### `null_helper`
 
 Will it be checked that there are no people on server who can respond to request
 

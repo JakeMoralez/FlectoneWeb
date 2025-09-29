@@ -19,15 +19,15 @@ authors:
 <<< @/files/localizations/en_us.yml#spy
 :::
 
-### `format-true`
+### `format_true`
 
 Сообщение при включении слежки
 
-### `format-false`
+### `format_false`
 
 Сообщение при выключении слежки
 
-### `format-log`
+### `format_log`
 
 Формат сообщения, которое будет отправлено при слежке за действием
 

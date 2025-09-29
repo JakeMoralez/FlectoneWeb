@@ -16,7 +16,7 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `disable-flectonepulse-maintenance`
+### `disable_flectonepulse_maintenance`
 
 Выключает команду `/maintenance` в `FlectonePulse`
 

@@ -1,6 +1,6 @@
 ### `destination`
 
-Where the message will be sent
+::: details Where the message will be sent
 
 | Type          | Explanation                                    | Requires additional configuration? |
 |---------------|------------------------------------------------|-------------------------------------|
@@ -14,7 +14,6 @@ Where the message will be sent
 | `TAB_FOOTER`  | Message in TAB (bottom)                        | No                                  |
 | `TOAST`       | Message in the top-right corner (achievement)  | Yes                                 |
 
-::: info HOW TO CHANGE THE DESTINATION?
 Replace the value `type: here` and restart `FlectonePulse` using the `/flectonepulse reload` command. Additional settings will appear AUTOMATICALLY
 
 <hr>
@@ -82,15 +81,15 @@ Display color
 | `PURPLE`  |
 | `WHITE`   |
 
-#### `play-boos-music`
+#### `play_boos_music`
 
 Whether music will play with the message
 
-#### `create-world-fog`
+#### `create_world_fog`
 
 Whether fog will appear with the message
 
-#### `darken-screen`
+#### `darken_screen`
 
 Whether the screen will darken with the message
 
@@ -116,9 +115,9 @@ Message for the second part of the display. For example, if `TITLE` is selected,
 
 | Field       | Explanation                            |
 |-------------|----------------------------------------|
-| `fade-in`   | Time in ticks for the message to appear |
+| `fade_in`   | Time in ticks for the message to appear |
 | `stay`      | Time in ticks to hold the message      |
-| `fade-out`  | Time in ticks for the message to disappear |
+| `fade_out`  | Time in ticks for the message to disappear |
 
 <br>
 

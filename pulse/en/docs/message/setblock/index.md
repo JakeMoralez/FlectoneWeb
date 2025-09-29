@@ -6,6 +6,8 @@ authors:
 
 # Setblock
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Message from the server when using `/setblock`
 ![setblock](/setblock.png)
 

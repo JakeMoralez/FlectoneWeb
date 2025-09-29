@@ -41,11 +41,11 @@ Format of the overhead message
 
 <!--@include: @/parts/enable.md-->
 
-### `max-count`
+### `max_count`
 
 Maximum number of overhead messages displayed simultaneously
 
-### `max-length`
+### `max_length`
 
 Maximum length of a single overhead message. If the text is longer, it will be split into multiple parts
 
@@ -57,15 +57,15 @@ How high overhead will the message be
 
 How far away a player's overhead message can be seen
 
-### `read-speed`
+### `read_speed`
 
 Reading speed in words per minute
 
-### `handicap-chars`
+### `handicap_chars`
 
 Additional time for short messages
 
-### `word-break-hint`
+### `word_break_hint`
 
 A hint symbol placed when a word breaks across two lines
 
@@ -100,7 +100,7 @@ This will only be used for servers running version `1.19.4` or higher
 
 Enables functionality
 
-#### `has-shadow`
+#### `has_shadow`
 
 Enables text shadow
 

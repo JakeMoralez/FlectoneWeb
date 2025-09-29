@@ -25,7 +25,7 @@ This command will be useless if the main [`Delete`](/docs/message/format/moderat
 <<< @/files/localizations/en_us.yml#deletemessage
 :::
 
-### `null-message`
+### `null_message`
 
 Message displayed when attempting to delete a non-existent message
 

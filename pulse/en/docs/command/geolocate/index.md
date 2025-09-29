@@ -20,11 +20,11 @@ Command for tracking IP addresses and obtaining player information
 <<< @/files/localizations/en_us.yml#geolocate
 :::
 
-### `null-player`
+### `null_player`
 
 Message displayed if the entered player is not found
 
-### `null-or-error`
+### `null_or_error`
 
 Message displayed if an error occurs when retrieving information
 

@@ -23,7 +23,7 @@ authors:
 <<< @/files/localizations/en_us.yml#reply
 :::
 
-### `null-receiver`
+### `null_receiver`
 
 Сообщение, если получатель не найден
 

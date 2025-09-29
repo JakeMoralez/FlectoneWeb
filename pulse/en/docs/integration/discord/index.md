@@ -43,15 +43,15 @@ There are also placeholders that will ALWAYS be replaced in any message:
 
 Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work.
 
-### `for-minecraft`
+### `for_minecraft`
 
 Message format that will be sent from Discord to Minecraft.
 
-### `info-channel`
+### `info_channel`
 
 List of channel IDs and their names.
 
-### `message-channel`
+### `message_channel`
 
 List of messages and their configurations.
 
@@ -116,7 +116,7 @@ Name of the embed message author.
 
 URL of the embed message author.
 
-###### `icon-url`
+###### `icon_url`
 
 Link to the avatar of the embed message author. If you change it, the link should contain `<skin>`.
 
@@ -156,7 +156,7 @@ Footer of the embed message.
 
 Text in the footer of the embed message.
 
-###### `icon-url`
+###### `icon_url`
 
 Image in the footer of the embed message.
 
@@ -164,7 +164,7 @@ Image in the footer of the embed message.
 
 ::: info IF YOU WANT TO ADD ANOTHER MESSAGE:
 1. Take the name from the "Message Types" list.
-2. Add it to `message-channel`.
+2. Add it to `message_channel`.
 ```yaml
 message_name:
   content: ""
@@ -262,7 +262,7 @@ Link for the activity.
 
 :::
 
-### `channel-info`
+### `channel_info`
 
 ![discord channel info](/discordchannelinfo.png)
 
@@ -273,7 +273,7 @@ Whether channel information is needed.
 
 <!--@include: @/parts/ticker.md-->
 
-### `message-channel`
+### `message_channel`
 
 List of message types and [channel IDs](https://support.discord.com/hc/ru/articles/206346498-%D0%93%D0%94%D0%95-%D0%9C%D0%9D%D0%95-%D0%9D%D0%90%D0%99%D0%A2%D0%98-ID-%D0%9F%D0%9E%D0%9B%D0%AC%D0%97%D0%9E%D0%92%D0%90%D0%A2%D0%95%D0%9B%D0%AF-%D0%A1%D0%95%D0%A0%D0%92%D0%95%D0%A0%D0%90-%D0%A1%D0%9E%D0%9E%D0%91%D0%9A%D0%9E%D0%92) in Discord.
 

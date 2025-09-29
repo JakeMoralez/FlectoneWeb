@@ -5,6 +5,8 @@ authors:
 
 # Кровать
 
+<!--@include: @/parts/vanillaWarn.md#message-->
+
 Сообщения при использовании кровати
 ![bed](/bed.png)
 
@@ -19,11 +21,11 @@ authors:
 <<< @/files/localizations/en_us.yml#bed
 :::
 
-### `no-sleep`
+### `no_sleep`
 
 Сообщение, когда нельзя спать из-за дня
 
-### `not-safe`
+### `not_safe`
 
 Сообщение, когда нельзя спать из-за монстров
 
@@ -35,7 +37,7 @@ authors:
 
 Сообщение, когда кровать кем-то занята
 
-### `too-far-away`
+### `too_far_away`
 
 Сообщение, когда кровать далеко
 

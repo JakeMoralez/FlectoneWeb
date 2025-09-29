@@ -20,15 +20,15 @@ Command to offer to play rock-paper-scissors
 <<< @/files/localizations/en_us.yml#rockpaperscissors
 :::
 
-### `null-player`
+### `null_player`
 
 Message when the entered player is not found
 
-### `null-game`
+### `null_game`
 
 Message when the game does not exist
 
-### `wrong-move`
+### `wrong_move`
 
 Message when the move is impossible
 
@@ -48,15 +48,15 @@ Message for the sender
 
 Message for the receiver
 
-### `format-move`
+### `format_move`
 
 Message during a move
 
-### `format-win`
+### `format_win`
 
 Message when the player wins
 
-### `forma-draw`
+### `forma_draw`
 
 Message for a draw
 

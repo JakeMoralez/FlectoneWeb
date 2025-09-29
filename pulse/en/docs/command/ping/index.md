@@ -20,7 +20,7 @@ Command to check player latency
 <<< @/files/localizations/en_us.yml#ping
 :::
 
-### `null-player`
+### `null_player`
 
 Message when the specified player is not found
 

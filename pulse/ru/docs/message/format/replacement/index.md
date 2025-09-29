@@ -62,7 +62,7 @@ authors:
 <<< @/files/localizations/en_us.yml#replacement
 :::
 
-### `spoiler-symbol`
+### `spoiler_symbol`
 
 Символ, который будет заменять каждую букву слов у `spoiler`
 

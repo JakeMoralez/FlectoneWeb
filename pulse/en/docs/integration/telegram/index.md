@@ -43,17 +43,17 @@ There are also placeholders that WILL DEFINITELY be replaced in any message:
 
 Obviously, all placeholders from `PlaceholderAPI` and `FlectonePulse` will also work.
 
-### `for-minecraft`
+### `for_minecraft`
 
 The format of the message that will be sent from Telegram to Minecraft.
 
-### `message-channel`
+### `message_channel`
 
 A list of messages with the format of the final message.
 
 ::: info IF YOU WANT TO ADD ANOTHER MESSAGE:
 1. Take the name from the list of `message types`.
-2. Insert it into `message-channel`:
+2. Insert it into `message_channel`:
 ```yaml
 message_name: "<final_message>"
 ```
@@ -77,7 +77,7 @@ message_name: "<final_message>"
 
 The [token](https://core.telegram.org/bots/faq#how-do-i-create-a-bot) of the bot for connection. You can use environment variables, for example `${VALUE}`.
 
-### `message-channel`
+### `message_channel`
 
 A list of message types and chat IDs in Telegram.
 

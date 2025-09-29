@@ -5,6 +5,8 @@ authors:
 
 # Сид
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Сообщение от сервера при использовании `/seed`
 ![seed](/seed.png)
 

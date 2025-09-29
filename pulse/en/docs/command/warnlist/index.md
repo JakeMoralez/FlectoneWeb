@@ -24,11 +24,11 @@ Command to view the list of warnings
 
 Message when the list of player warnings is empty
 
-### `null-page`
+### `null_page`
 
 Message when the entered page does not exist
 
-### `null-player`
+### `null_player`
 
 Message when the entered player cannot be found
 

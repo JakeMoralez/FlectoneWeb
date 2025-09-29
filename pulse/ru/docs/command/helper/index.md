@@ -22,7 +22,7 @@ authors:
 <<< @/files/localizations/en_us.yml#helper
 :::
 
-### `null-helper`
+### `null_helper`
 
 Сообщение, если на сервере нет людей, которые смогут помочь
 
@@ -43,7 +43,7 @@ authors:
 
 <!--@include: @/parts/enable.md-->
 
-### `null-helper`
+### `null_helper`
 
 Будет ли проверяться, что на сервере нет людей, способные ответить на запрос
 

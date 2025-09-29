@@ -50,7 +50,7 @@ I want to translate the plugin into Belarusian
 3. Done!
 :::
 
-### `language-player`
+### `language_player`
 
 When enabled, each player's Minecraft localization will be checked, and based on that, the message from [localizations](/docs/message/) will be shown
 
@@ -59,10 +59,10 @@ When enabled, each player's Minecraft localization will be checked, and based on
 If the localization does not exist, the one from [configuration](#language) will be used.
 
 ::: danger VERY IMPORTANT TO UNDERSTAND
-If you modify the message lists with `language-player` enabled, you need to do this in all localizations, otherwise visual errors may occur
+If you modify the message lists with `language_player` enabled, you need to do this in all localizations, otherwise visual errors may occur
 :::
 
-### `unregister-own-commands`
+### `unregister_own_commands`
 
 If enabled, `FlectonePulse` will remove and re-add its own commands during `/flectonepulse reload`. This may cause `tps` and `mspt` drops due to the large number of packets, so it's better to disable this setting if you encounter such an issue.
 
@@ -99,7 +99,7 @@ Integration with `Velocity`
 2. Selected database must be `MYSQL`
 :::
 
-### `fabric-disabled-commands`
+### `fabric_disabled_commands`
 
 A list of non-`FlectonePulse` commands that should be disabled when the `Fabric` server starts. This allows replacing already taken commands in `Fabric`, such as `/me` or `/ban`
 
@@ -118,7 +118,7 @@ clusters:
 This connects the servers together, and messages will only be exchanged between these clusters.
 :::
 
-### `log-filter`
+### `log_filter`
 
 The idea is borrowed from [here](https://github.com/Whitescan/ConsoleFilter/blob/master/src/main/java/dev/whitescan/consolefilter/share/LogFilter.java), thanks to @Whitescan
 

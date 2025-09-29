@@ -27,11 +27,11 @@ authors:
 Суффикс, который выдаётся игроку, если он встал в АФК
 ![afksuffix](/afksuffix.png)
 
-### `format-true`
+### `format_true`
 
 Сообщение, если игрок отошёл
 
-### `format-false`
+### `format_false`
 
 Сообщение, если игрок вернулся
 

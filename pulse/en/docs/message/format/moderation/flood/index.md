@@ -18,15 +18,15 @@ This formatting removes flood in the message
 
 <!--@include: @/parts/enable.md-->
 
-### `trim-to-single`
+### `trim_to_single`
 
-Whether to replace ALL flood with a single letter or word, otherwise the flood will be reduced to the limit of `max-repeated-symbols` or `max-repeated-words`
+Whether to replace ALL flood with a single letter or word, otherwise the flood will be reduced to the limit of `max_repeated_symbols` or `max_repeated_words`
 
-### `max-repeated-symbols`
+### `max_repeated_symbols`
 
 Maximum number of identical letters
 
-### `max-repeated-words`
+### `max_repeated_words`
 
 Maximum number of identical words
 

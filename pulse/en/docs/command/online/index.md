@@ -20,23 +20,23 @@ Command to check player online status
 <<< @/files/localizations/en_us.yml#online
 :::
 
-### `null-player`
+### `null_player`
 
 Message when the specified player is not found
 
-### `format-current`
+### `format_current`
 
 Message when the specified player is currently online
 
-### `format-first`
+### `format_first`
 
 Format of the message for `/online first` command
 
-### `format-last`
+### `format_last`
 
 Format of the message for `/online last` command
 
-### `format-total`
+### `format_total`
 
 Format of the message for `/online total` command
 

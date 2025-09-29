@@ -25,19 +25,19 @@ Integration with `TAB` resolves compatibility issues by disabling certain featur
 
 <!--@include: @/parts/enable.md-->
 
-### `disable-flectonepulse-scoreboard`
+### `disable_flectonepulse_scoreboard`
 
 Disables the [Scoreboard](/docs/message/format/scoreboard/) module
 
-### `disable-flectonepulse-header`
+### `disable_flectonepulse_header`
 
 Disables the [Header](/docs/message/tab/header/) module
 
-### `disable-flectonepulse-footer`
+### `disable_flectonepulse_footer`
 
 Disables the [Footer](/docs/message/tab/footer/) module
 
-### `disable-flectonepulse-playerlistname`
+### `disable_flectonepulse_playerlistname`
 
 Disables the [Player List Name](/docs/message/tab/playerlistname/) module
 

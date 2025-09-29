@@ -19,11 +19,11 @@ authors:
 <<< @/files/localizations/en_us.yml#unmute
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `not-muted`
+### `not_muted`
 
 Сообщение, если введённый игрок не замучен
 

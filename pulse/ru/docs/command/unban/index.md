@@ -19,11 +19,11 @@ authors:
 <<< @/files/localizations/en_us.yml#unban
 :::
 
-### `null-player`
+### `null_player`
 
 Сообщение, если введённый игрок не найден
 
-### `not-banned`
+### `not_banned`
 
 Сообщение, если введённый игрок не заблокирован
 

@@ -5,6 +5,8 @@ authors:
 
 # Убийство
 
+<!--@include: @/parts/vanillaWarn.md#command-->
+
 Сообщение от сервера при использовании `/kill`
 ![kill](/kill.png)
 

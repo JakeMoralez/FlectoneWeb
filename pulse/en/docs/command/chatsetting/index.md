@@ -75,7 +75,7 @@ The item name and description are displayed in a single line, with line breaks a
 
 :::
 
-### `no-permission`
+### `no_permission`
 
 Message if a specific permission is required to change the setting
 
@@ -104,19 +104,19 @@ Name for the main GUI
 
 ::: details Checkbox settings
 
-#### `enabled-color`
+#### `enabled_color`
 
 Color when the setting is enabled. Replaces `<status_color>`
 
-#### `enabled-hover`
+#### `enabled_hover`
 
 Message if the setting is enabled
 
-#### `disabled-color`
+#### `disabled_color`
 
 Color when the setting is disabled. Replaces `<status_color>`
 
-#### `disabled-hover`
+#### `disabled_hover`
 
 Message if the setting is disabled
 
@@ -170,7 +170,7 @@ Only works for versions `1.21.6` and newer. Older versions will use the inventor
 
 Enables the use of dialogs instead of inventories
 
-#### `button-width`
+#### `button_width`
 
 Width of each button
 
@@ -184,11 +184,11 @@ Number of buttons per row
 
 ::: details Checkbox settings
 
-#### `disabled-material`
+#### `disabled_material`
 
 Material if the setting is disabled
 
-#### `enabled-material`
+#### `enabled_material`
 
 Material if the setting is enabled
 

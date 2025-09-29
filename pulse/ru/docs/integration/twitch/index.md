@@ -42,18 +42,18 @@ authors:
 
 Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
 
-### `for-minecraft`
+### `for_minecraft`
 - По умолчанию `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
 
 Формат сообщения, которое будет отправлено из Твича в Майнкрафт
 
-### `message-channel`
+### `message_channel`
 
 Список сообщений с форматом итогового сообщения
 
 ::: info ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
 1. Возьми название из списка `типы сообщений`
-2. Вставь в `message-channel`
+2. Вставь в `message_channel`
 ```yaml
 название_сообщения: "<final_message>"
 ```
@@ -73,7 +73,7 @@ authors:
 - После включения, **ЖЕЛАТЕЛЬНО** перезагрузить сервер, иначе плагин может вызвать зависание
 :::
 
-### `client-id`
+### `client_id`
 
 [Идентификатор](https://twitchtokengenerator.com/) пользователя. Можно использовать environment variables, например `${VALUE}`
 ![client id](/twitchclientid.png)
@@ -83,7 +83,7 @@ authors:
 [Токен](https://twitchtokengenerator.com/) пользователя для подключения. Можно использовать environment variables, например `${VALUE}`
 ![token](/twitchtoken.png)
 
-### `message-channel`
+### `message_channel`
 
 Список типов сообщений и названий каналов на Twitch
 
@@ -99,7 +99,7 @@ message-channel:
 Каналов может быть сколько угодно, главное, чтобы к ним был доступ у подключенного аккаунта
 :::
 
-### `follow-channel`
+### `follow_channel`
 
 Список, где ключом является имя канала, а значением список комманд, которые выполняться при старте трансляции
 

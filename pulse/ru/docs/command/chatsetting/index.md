@@ -74,7 +74,7 @@ authors:
 
 :::
 
-### `no-permission`
+### `no_permission`
 
 Сообщение, если для изменения настройки требуется определённое право
 
@@ -102,19 +102,19 @@ authors:
 
 ::: details Настройка переключателей
 
-#### `enabled-color`
+#### `enabled_color`
 
 Цвет, если настройка включена. Заменяет `<status_color>`
 
-#### `enabled-hover`
+#### `enabled_hover`
 
 Сообщение, если настройка включена
 
-#### `disabled-color`
+#### `disabled_color`
 
 Цвет, если настройка выключена. Заменяет `<status_color>`
 
-#### `disabled-hover`
+#### `disabled_hover`
 
 Сообщение, если настройка выключена
 
@@ -168,7 +168,7 @@ authors:
 
 Включает использование диалгов, вместо инвентарей
 
-#### `button-width`
+#### `button_width`
 
 Ширина каждой кнопки
 
@@ -182,11 +182,11 @@ authors:
 
 ::: details Настройка переключателей
 
-#### `disabled-material`
+#### `disabled_material`
 
 Материал, если настройка выключена
 
-#### `enabled-material`
+#### `enabled_material`
 
 Материал, если настройка включена
 

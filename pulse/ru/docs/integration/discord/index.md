@@ -41,15 +41,15 @@ authors:
 
 Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
 
-### `for-minecraft`
+### `for_minecraft`
 
 Формат сообщения, которое будет отправлено из Дискорда в Майнкрафт
 
-### `info-channel`
+### `info_channel`
 
 Список айди каналов и их названий
 
-### `message-channel`
+### `message_channel`
 
 Список сообщений с их настройкой
 
@@ -115,7 +115,7 @@ authors:
 
 Ссылка на автора `embed` сообщения
 
-###### `icon-url`
+###### `icon_url`
 
 Ссылка на аватарку автора `embed` сообщения. Если будешь менять на свою, то ссылка должна содержать `<skin>`
 
@@ -126,6 +126,10 @@ authors:
 ##### `thumbnail`
 
 Маленькое изображение внутри `embed` сообщения
+
+##### `fields`
+
+Нижние поля внутри `embed` сообщения
 
 ###### `name`
 
@@ -155,7 +159,7 @@ authors:
 
 Текст в нижней части `embed` сообщения
 
-###### `icon-url`
+###### `icon_url`
 
 Изображение в нижней части `embed` сообщения
 
@@ -163,7 +167,7 @@ authors:
 
 ::: info ЕСЛИ ХОЧЕШЬ ДОБАВИТЬ ДРУГОЕ СООБЩЕНИЕ:
 1. Возьми название из списка `типы сообщений`
-2. Вставь в `message-channel`
+2. Вставь в `message_channel`
 ```yaml
 название_сообщения:
   content: ""
@@ -261,7 +265,7 @@ authors:
 
 :::
 
-### `channel-info`
+### `channel_info`
 
 ![discord channel info](/discordchannelinfo.png)
 
@@ -272,7 +276,7 @@ authors:
 
 <!--@include: @/parts/ticker.md-->
 
-### `message-channel`
+### `message_channel`
 
 Список типов сообщений и [ID каналов](https://support.discord.com/hc/ru/articles/206346498-%D0%93%D0%B4%D0%B5-%D0%BC%D0%BD%D0%B5-%D0%BD%D0%B0%D0%B9%D1%82%D0%B8-ID-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F) в Discord
 

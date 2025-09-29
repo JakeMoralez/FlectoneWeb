@@ -24,11 +24,11 @@ Command to view the list of bans
 
 Message if the list of banned players is empty
 
-### `null-page`
+### `null_page`
 
 Message if the entered page does not exist
 
-### `null-player`
+### `null_player`
 
 Message if the entered player is not found
 

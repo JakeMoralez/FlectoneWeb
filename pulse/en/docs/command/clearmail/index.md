@@ -20,7 +20,7 @@ Command to delete sent [mails](/docs/command/mail/)
 <<< @/files/localizations/en_us.yml#clearmail
 :::
 
-### `null-mail`
+### `null_mail`
 
 Message if the entered mail is not found
 
